@@ -279,8 +279,6 @@ header .badge {
   border-radius: 12px;
   overflow-x: auto;
   margin-bottom: 12px;
-  max-height: 75vh;
-  overflow-y: auto;
 }
 table { width: 100%; border-collapse: collapse; font-size: 13px; }
 thead {
@@ -323,15 +321,14 @@ tr.occ-tint-full:hover td { background: #f8514914; }
 tr.occ-tint-empty.own-row td, tr.occ-tint-half.own-row td, tr.occ-tint-full.own-row td { background: #d2992211; }
 tr.occ-tint-empty.own-row:hover td, tr.occ-tint-half.own-row:hover td, tr.occ-tint-full.own-row:hover td { background: #d2992218; }
 
-/* sort animation: modern cascade — blur+scale+fade with stagger */
+/* sort animation: modern cascade — subtle fade+slide with stagger */
 @keyframes rowIn {
-  0%   { opacity: 0; transform: translateY(12px) scale(0.97); filter: blur(4px); }
-  60%  { filter: blur(1px); }
-  100% { opacity: 1; transform: translateY(0) scale(1); filter: blur(0); }
+  0%   { opacity: 0; transform: translateY(8px); }
+  100% { opacity: 1; transform: translateY(0); }
 }
 #tableWrap tbody tr {
-  animation: rowIn .45s cubic-bezier(0.16, 1, 0.3, 1) backwards;
-  will-change: opacity, transform, filter;
+  animation: rowIn .35s cubic-bezier(0.16, 1, 0.3, 1) backwards;
+  will-change: opacity, transform;
 }
 
 /* expandable detail row */
@@ -640,10 +637,10 @@ footer {
     </select>
     <select class="filter-select" id="pageSizeSelect" onchange="changePageSize(this.value)">
       <option value="10">۱۰ در هر صفحه</option>
-      <option value="15" selected>۱۵ در هر صفحه</option>
+      <option value="15">۱۵ در هر صفحه</option>
       <option value="25">۲۵ در هر صفحه</option>
       <option value="50">۵۰ در هر صفحه</option>
-      <option value="all">همه در یک صفحه</option>
+      <option value="all" selected>همه در یک صفحه</option>
     </select>
     <div class="price-range">
       <label>قیمت:</label>
@@ -1059,7 +1056,7 @@ function renderVillages() {
 }
 
 // ========== TABLE STATE ==========
-const DEFAULT_PAGE_SIZE = 15;
+const DEFAULT_PAGE_SIZE = Infinity; // show all cabins by default
 let tableState = {
   sortKey: 'price',
   sortDir: 'asc',
