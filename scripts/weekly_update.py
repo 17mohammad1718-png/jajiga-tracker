@@ -41,6 +41,8 @@ HEADERS = {
     "Accept": "application/json",
 }
 BASE = "https://www.jajiga.com"
+sys.path.insert(0, SCRIPT_DIR)
+from normalize_titles import normalize_title
 API = "https://api.jajiga.com"
 
 CATALOG_URL = "/s/babolkenar/cottage"  # all cottages in Babolkenar
@@ -217,7 +219,7 @@ def merge_room(cabin, top):
     if host.get("name") and (not cabin.get("host") or cabin.get("host") == "نام میزبان"):
         cabin["host"] = host["name"]
 
-    cabin["title"] = top.get("title") or cabin.get("title")
+    cabin["title"] = normalize_title(top.get("title") or cabin.get("title"))
     cabin["url"] = f"{BASE}/room/{cabin['id']}"
     cabin["last_scrape_status"] = "ok"
     cabin["last_scrape_attempt"] = datetime.now(timezone.utc).isoformat()
@@ -230,7 +232,7 @@ def new_cabin(rid, top, village):
     active = top.get("status") == "active"
     return {
         "id": rid,
-        "title": top.get("title") or "نامشخص",
+        "title": normalize_title(top.get("title") or "نامشخص"),
         "price": top.get("min_price") if active else 0,
         "price_source": "api_min_price" if active else "inactive",
         "rooms": top.get("bedrooms") or 0,
