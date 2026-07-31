@@ -1212,7 +1212,7 @@ function toggleExpand(id) {
 }
 
 // ========== EDIT MODAL + LOCALSTORAGE ==========
-const STORAGE_KEY = 'jajiga_tracker_v1';
+const STORAGE_KEY = 'jajiga_tracker_v2';
 let editingId = null;
 
 function saveAllToStorage() {
@@ -1350,18 +1350,19 @@ function init() {
     if (saved) {
       const parsed = JSON.parse(saved);
       if (Array.isArray(parsed) && parsed.length > 0) {
-        // MERGE strategy:
-        // - keep every field the user edited (title, price, host, etc.)
-        // - BUT if a stored host is still the placeholder "نام میزبان",
-        //   fill it from the built-in data (real host names we scraped).
-        // This protects user-entered host names while upgrading placeholders.
+        // MERGE strategy (v2):
+        // - ONLY the user's manually-entered host name is taken from localStorage.
+        // - All scraped/system fields (jacuzzi, pool, occupancy, price, rating,
+        //   success_books, title, village...) come from the embedded data,
+        //   which is always newer than the browser's stored copy.
+        // This prevents stale localStorage (e.g. jacuzzi=0 from an old export)
+        // from overriding corrected data in all-cabins.json.
         const savedById = {};
         parsed.forEach(p => { savedById[p.id] = p; });
         ALL_CABINS.forEach(c => {
           const sc = savedById[c.id];
           if (!sc) return;
           const userHost = (sc.host && sc.host !== 'نام میزبان') ? sc.host : c.host;
-          Object.assign(c, sc);
           c.host = userHost; // keep user's manual host, or use scraped one
         });
         // persist merged result so future loads stay consistent
