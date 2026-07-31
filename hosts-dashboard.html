@@ -56,7 +56,7 @@ h1 { font-size: 1.5rem; margin-bottom: 4px; }
 .table-wrap { background: var(--card); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
 table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
 thead th {
-  background: var(--card2); color: var(--muted); text-align: right; padding: 10px 12px;
+  background: var(--card2); color: var(--muted); text-align: center; padding: 10px 12px;
   cursor: pointer; user-select: none; white-space: nowrap; font-size: 0.78rem;
   border-bottom: 2px solid var(--border);
 }
@@ -65,8 +65,9 @@ thead th .arrow { font-size: 0.65rem; }
 tbody tr { border-top: 1px solid var(--border); cursor: pointer; transition: background 0.15s; }
 tbody tr:nth-child(even) { background: rgba(255,255,255,0.015); }
 tbody tr:hover { background: rgba(59,130,246,0.08); }
-tbody td { padding: 9px 12px; vertical-align: middle; }
-td.num { text-align: left; font-variant-numeric: tabular-nums; }
+tbody td { padding: 9px 12px; vertical-align: middle; text-align: center; }
+td.num { text-align: center; font-variant-numeric: tabular-nums; }
+td.host-name { text-align: right; }
 
 /* English digit font */
 .en { font-family: Consolas, 'Courier New', monospace; font-variant-numeric: tabular-nums; direction: ltr; unicode-bidi: isolate; }
@@ -152,15 +153,15 @@ footer { text-align: center; color: var(--muted); font-size: 0.7rem; margin-top:
     <table>
       <thead>
         <tr>
-          <th>#</th>
+          <th data-key="rank"># <span class="arrow"></span></th>
           <th data-key="name">میزبان <span class="arrow"></span></th>
-          <th data-key="host_level">سطح</th>
-          <th data-key="rooms_count">اقامتگاه</th>
-          <th data-key="total_success_books">رزرو موفق</th>
-          <th data-key="avg_price">میانگین قیمت</th>
-          <th data-key="accept_rate">پذیرش</th>
-          <th data-key="response_time_min">پاسخ</th>
-          <th data-key="member_since">عضویت</th>
+          <th data-key="host_level">سطح <span class="arrow"></span></th>
+          <th data-key="rooms_count">اقامتگاه <span class="arrow"></span></th>
+          <th data-key="total_success_books">رزرو موفق <span class="arrow"></span></th>
+          <th data-key="avg_price">میانگین قیمت <span class="arrow"></span></th>
+          <th data-key="accept_rate">پذیرش <span class="arrow"></span></th>
+          <th data-key="response_time_min">پاسخ <span class="arrow"></span></th>
+          <th data-key="member_since">عضویت <span class="arrow"></span></th>
         </tr>
       </thead>
       <tbody id="tbody"></tbody>
@@ -219,6 +220,7 @@ function renderStats() {
 const LEVEL_ORDER = {'حرفه‌ای': 4, 'فعال': 3, 'تازه‌کار': 2, 'مبتدی': 1};
 
 function sortValue(h, key) {
+  if (key === 'rank' || key === 'total_success_books') return h.total_success_books ?? 0;
   if (key === 'host_level') return LEVEL_ORDER[h.host_level] || 0;
   if (key === 'member_since') return h.member_since ? parseInt(h.member_since.slice(0, 4)) || 0 : 0;
   if (key === 'name') return h.name || '';
@@ -269,7 +271,7 @@ function render() {
     const respTxt = respMin == null ? '—' : `<span class="en">${respMin < 60 ? en(respMin) : (respMin/60).toFixed(1)}</span>`;
     return `<tr onclick="toggleDetail(${h.id})">
       <td><span class="rank ${rankCls} en">${rank}</span></td>
-      <td><strong>${h.name}</strong>${h.description ? `<div style="font-size:0.68rem;color:var(--muted)">${h.description.slice(0,40)}</div>` : ''}</td>
+      <td class="host-name"><strong>${h.name}</strong>${h.description ? `<div style="font-size:0.68rem;color:var(--muted)">${h.description.slice(0,40)}</div>` : ''}</td>
       <td>${levelBadge(h.host_level)}</td>
       <td class="num"><span class="en">${en(h.rooms_count)}</span></td>
       <td class="num">
@@ -317,17 +319,18 @@ function toggleDetail(id) {
 document.querySelectorAll('thead th').forEach(th => {
   th.addEventListener('click', () => {
     const key = th.dataset.key;
-    if (!key) return; // ستون # سورتی ندارد
+    if (!key) return;
     if (sortKey === key) {
-      // چرخه: صعودی → نزولی → بدون سورت
-      if (sortDir === 1) sortDir = -1;
-      else if (sortDir === -1) { sortKey = null; sortDir = 1; }
+      // چرخه: زیاد→کم ▼ → کم→زیاد ▲ → بدون سورت
+      if (sortDir === -1) { sortDir = 1; }
+      else if (sortDir === 1) { sortKey = null; sortDir = -1; }
     } else {
       sortKey = key;
+      // برای نام: الفبایی (کم→زیاد)؛ بقیه: زیاد→کم
       sortDir = key === 'name' ? 1 : -1;
     }
     document.querySelectorAll('thead th .arrow').forEach(a => a.textContent = '');
-    if (sortKey !== null) th.querySelector('.arrow').textContent = sortDir === 1 ? '▲' : '▼';
+    if (sortKey !== null) th.querySelector('.arrow').textContent = sortDir === -1 ? '▼' : '▲';
     render();
   });
 });

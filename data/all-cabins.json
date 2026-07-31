@@ -343,7 +343,7 @@
         "occupancy_30_total": 30,
         "last_occupancy_attempt": "2026-07-31T15:34:49.371764+00:00",
         "pool": 0,
-        "jacuzzi": 0,
+        "jacuzzi": 1,
         "own": false
       },
       {
@@ -431,7 +431,9 @@
         "occupancy_30": 10,
         "occupancy_30_unavailable": 3,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-07-31T15:35:03.093797+00:00"
+        "last_occupancy_attempt": "2026-07-31T15:35:03.093797+00:00",
+        "jacuzzi": 0,
+        "pool": 1
       },
       {
         "id": 3195220,
@@ -777,7 +779,9 @@
         "occupancy_30": 10,
         "occupancy_30_unavailable": 3,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-07-31T15:35:52.323638+00:00"
+        "last_occupancy_attempt": "2026-07-31T15:35:52.323638+00:00",
+        "jacuzzi": 1,
+        "pool": 0
       }
     ],
     "گونه کلا": [
@@ -1018,7 +1022,9 @@
         "occupancy_30": 27,
         "occupancy_30_unavailable": 8,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-07-31T15:36:30.737787+00:00"
+        "last_occupancy_attempt": "2026-07-31T15:36:30.737787+00:00",
+        "jacuzzi": 1,
+        "pool": 0
       },
       {
         "id": 3198940,
@@ -1039,7 +1045,9 @@
         "occupancy_30": 27,
         "occupancy_30_unavailable": 8,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-07-31T15:36:33.465042+00:00"
+        "last_occupancy_attempt": "2026-07-31T15:36:33.465042+00:00",
+        "jacuzzi": 1,
+        "pool": 0
       },
       {
         "id": 3199786,
@@ -1060,7 +1068,9 @@
         "occupancy_30": 3,
         "occupancy_30_unavailable": 1,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-07-31T15:36:37.374578+00:00"
+        "last_occupancy_attempt": "2026-07-31T15:36:37.374578+00:00",
+        "jacuzzi": 1,
+        "pool": 0
       },
       {
         "id": 3212575,
@@ -1146,7 +1156,9 @@
         "occupancy_30": 0,
         "occupancy_30_unavailable": 0,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-07-31T15:36:49.101139+00:00"
+        "last_occupancy_attempt": "2026-07-31T15:36:49.101139+00:00",
+        "jacuzzi": 1,
+        "pool": 0
       },
       {
         "id": 3240990,
@@ -1190,7 +1202,9 @@
         "occupancy_30": 0,
         "occupancy_30_unavailable": 0,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-07-31T15:36:55.796021+00:00"
+        "last_occupancy_attempt": "2026-07-31T15:36:55.796021+00:00",
+        "jacuzzi": 1,
+        "pool": 0
       },
       {
         "id": 3263831,
@@ -1232,7 +1246,9 @@
         "occupancy_30": 0,
         "occupancy_30_unavailable": 0,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-07-31T15:37:02.019875+00:00"
+        "last_occupancy_attempt": "2026-07-31T15:37:02.019875+00:00",
+        "jacuzzi": 1,
+        "pool": 0
       },
       {
         "id": 3273563,
@@ -1253,7 +1269,9 @@
         "occupancy_30": 0,
         "occupancy_30_unavailable": 0,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-07-31T15:37:05.449911+00:00"
+        "last_occupancy_attempt": "2026-07-31T15:37:05.449911+00:00",
+        "jacuzzi": 1,
+        "pool": 0
       },
       {
         "id": 3281370,
@@ -1295,7 +1313,9 @@
         "occupancy_30": 7,
         "occupancy_30_unavailable": 2,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-07-31T15:37:11.964166+00:00"
+        "last_occupancy_attempt": "2026-07-31T15:37:11.964166+00:00",
+        "jacuzzi": 1,
+        "pool": 0
       },
       {
         "id": 3308372,
@@ -1653,7 +1673,7 @@
         "occupancy_30_total": 30,
         "last_occupancy_attempt": "2026-07-31T15:38:02.564275+00:00",
         "pool": 0,
-        "jacuzzi": 0,
+        "jacuzzi": 1,
         "own": false
       },
       {
@@ -1815,7 +1835,9 @@
         "occupancy_30": 7,
         "occupancy_30_unavailable": 2,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-07-31T15:38:27.022977+00:00"
+        "last_occupancy_attempt": "2026-07-31T15:38:27.022977+00:00",
+        "jacuzzi": 1,
+        "pool": 0
       },
       {
         "id": 3293613,
@@ -1859,7 +1881,9 @@
         "occupancy_30": 0,
         "occupancy_30_unavailable": 0,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-07-31T15:38:34.038929+00:00"
+        "last_occupancy_attempt": "2026-07-31T15:38:34.038929+00:00",
+        "jacuzzi": 1,
+        "pool": 0
       }
     ]
   }
