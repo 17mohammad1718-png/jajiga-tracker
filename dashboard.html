@@ -323,12 +323,16 @@ tr.occ-tint-full:hover td { background: #f8514914; }
 tr.occ-tint-empty.own-row td, tr.occ-tint-half.own-row td, tr.occ-tint-full.own-row td { background: #d2992211; }
 tr.occ-tint-empty.own-row:hover td, tr.occ-tint-half.own-row:hover td, tr.occ-tint-full.own-row:hover td { background: #d2992218; }
 
-/* sort animation: subtle fade on tbody re-render */
+/* sort animation: modern cascade — blur+scale+fade with stagger */
 @keyframes rowIn {
-  from { opacity: 0; transform: translateY(4px); }
-  to   { opacity: 1; transform: translateY(0); }
+  0%   { opacity: 0; transform: translateY(12px) scale(0.97); filter: blur(4px); }
+  60%  { filter: blur(1px); }
+  100% { opacity: 1; transform: translateY(0) scale(1); filter: blur(0); }
 }
-#tableWrap tbody tr { animation: rowIn .25s ease-out; }
+#tableWrap tbody tr {
+  animation: rowIn .45s cubic-bezier(0.16, 1, 0.3, 1) backwards;
+  will-change: opacity, transform, filter;
+}
 
 /* expandable detail row */
 .detail-row td {
@@ -1172,7 +1176,7 @@ function renderTable() {
     else occTint = 'occ-tint-full ';
     const expanded = tableState.expanded[c.id];
 
-    html += `<tr class="${rowClass}${occTint}">
+    html += `<tr class="${rowClass}${occTint}" style="animation-delay:${Math.min(i, 12) * 35}ms">
       <td>${idx}</td>
       <td>${c.title}${own}</td>
       <td>${c.host || 'نام میزبان'}</td>
