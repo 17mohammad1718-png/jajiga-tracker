@@ -422,6 +422,24 @@ tr.inactive-row:hover td { opacity: 1; }
 .btn-primary { background: #58a6ff; color: #0d1117; }
 .btn-ghost { background: #21262d; color: #8b949e; }
 
+/* toast */
+.toast {
+  position: fixed;
+  bottom: 24px;
+  right: 50%;
+  transform: translateX(50%) translateY(80px);
+  background: #238636;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-size: 13px;
+  z-index: 2000;
+  opacity: 0;
+  transition: all .3s;
+  pointer-events: none;
+}
+.toast.show { opacity: 1; transform: translateX(50%) translateY(0); }
+
 .village-tag {
   display: inline-block;
   font-size: 11px;
@@ -544,6 +562,8 @@ footer {
   </div>
   <div class="toolbar">
     <input class="search-box" id="searchBox" placeholder="جستجو در عنوان کلبه..." oninput="renderTable()">
+    <button class="btn btn-ghost" onclick="exportData()" title="دانلود دیتای کامل (شامل ویرایش‌های دستی)">⬇ خروجی</button>
+    <button class="btn btn-ghost" onclick="importData()" title="بارگذاری دیتای قبلی">⬆ ورودی</button>
     <button class="btn btn-ghost" onclick="resetData()" title="پاک کردن ویرایش‌ها و برگشت به دیتای اصلی">↺ بازنشانی</button>
     <select class="filter-select" id="villageFilter" onchange="renderTable()">
       <option value="all">همه روستاها</option>
@@ -1197,6 +1217,59 @@ function resetData() {
   if (!confirm('همه ویرایش‌ها پاک شده و دیتا به حالت اولیه برمی‌گردد. ادامه می‌دهید؟')) return;
   localStorage.removeItem(STORAGE_KEY);
   location.reload();
+}
+
+// ========== EXPORT / IMPORT (JSON backup) ==========
+function exportData() {
+  const blob = new Blob([JSON.stringify(ALL_CABINS, null, 2)], { type: 'application/json' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  const d = new Date();
+  const dateStr = d.getFullYear() + '-' + String(d.getMonth()+1).padStart(2,'0') + '-' + String(d.getDate()).padStart(2,'0');
+  a.download = 'jajiga-cabins-backup-' + dateStr + '.json';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(a.href);
+  showToast('✅ دیتا دانلود شد — توی پوشه پروژه نگهش دار');
+}
+
+function importData() {
+  const input = document.createElement('input');
+  input.type = 'file';
+  input.accept = '.json,application/json';
+  input.onchange = (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = () => {
+      try {
+        const parsed = JSON.parse(reader.result);
+        if (!Array.isArray(parsed) || parsed.length === 0) throw new Error('empty');
+        if (!confirm('دیتای ذخیره‌شده جایگزین دیتای فعلی می‌شود. ادامه می‌دهید؟')) return;
+        ALL_CABINS.length = 0;
+        parsed.forEach(c => ALL_CABINS.push(c));
+        saveAllToStorage();
+        renderTable();
+        renderStats();
+        renderVillages();
+        renderCharts();
+        showToast('✅ دیتا بارگذاری شد');
+      } catch(err) {
+        alert('فایل معتبر نیست — باید JSON خروجی قبلی باشه');
+      }
+    };
+    reader.readAsText(file);
+  };
+  input.click();
+}
+
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  if (!t) return;
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 3000);
 }
 
 // ========== INIT ==========
