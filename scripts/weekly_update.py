@@ -58,12 +58,13 @@ EXCLUDE_TITLE = "سوادکوه"
 
 DELAY_MIN, DELAY_MAX = 2.0, 4.0  # seconds between requests (rate-limit safe)
 MAX_RETRIES = 3
+QUIET = False  # set via --quiet in main()
 
 # Fields the scraper owns; EVERYTHING else is preserved (manual edits survive)
 SCRAPER_FIELDS = {
     "title", "url", "price", "price_source", "rating", "reviews",
     "guests", "rooms", "floor", "standard_capacity", "extra_capacity",
-    "active", "last_scrape_status", "last_scrape_attempt",
+    "active", "success_books", "last_scrape_status", "last_scrape_attempt",
 }
 
 
@@ -125,8 +126,9 @@ def discover_catalog():
                     "price": it.get("price") or it.get("min_price"),
                 }
                 new += 1
-        print(f"  catalog page {page}: {len(items)} items, {new} new "
-              f"(unique={len(found)}, total={total})", flush=True)
+        if not QUIET:
+            print(f"  catalog page {page}: {len(items)} items, {new} new "
+                  f"(unique={len(found)}, total={total})", flush=True)
         if len(items) < PER_PAGE or page * PER_PAGE >= total or new == 0:
             break
         page += 1
@@ -197,6 +199,12 @@ def merge_room(cabin, top):
         changes.append(f"floor {cabin.get('floor')} -> {new_floor}")
         cabin["floor"] = new_floor
 
+    new_books = top.get("success_books")
+    if new_books is not None:
+        if cabin.get("success_books") != new_books:
+            changes.append(f"success_books {cabin.get('success_books')} -> {new_books}")
+        cabin["success_books"] = new_books
+
     new_active = top.get("status") == "active"
     if cabin.get("active") != new_active:
         changes.append(f"active {cabin.get('active')} -> {new_active}")
@@ -232,6 +240,7 @@ def new_cabin(rid, top, village):
         "reviews": ratings.get("count") or 0,
         "url": f"{BASE}/room/{rid}",
         "active": active,
+        "success_books": top.get("success_books") or 0,
         "host": host.get("name") or "",
         "last_scrape_status": "ok",
         "last_scrape_attempt": datetime.now(timezone.utc).isoformat(),
@@ -244,39 +253,46 @@ def new_cabin(rid, top, village):
 def main():
     dry_run = "--dry-run" in sys.argv
     skip_discover = "--skip-discover" in sys.argv
+    quiet = "--quiet" in sys.argv
+    global QUIET
+    QUIET = quiet
+
+    def log(msg):
+        if not quiet:
+            print(msg, flush=True)
 
     data = load_data()
     villages = data["villages"]
     known_ids = {
         c["id"] for cabins in villages.values() for c in cabins
     }
-    print(f"Loaded {len(known_ids)} known cabins", flush=True)
+    log(f"Loaded {len(known_ids)} known cabins")
 
     # 1) Discovery
     new_ids = set()
     if skip_discover:
-        print("Discovery skipped (--skip-discover)")
+        log("Discovery skipped (--skip-discover)")
     else:
-        print("Catalog sweep:", flush=True)
+        log("Catalog sweep:")
         catalog = discover_catalog()
         matched = {rid: it for rid, it in catalog.items() if detect_village(it["title"])}
         new_ids = set(matched) - known_ids
-        print(f"Catalog: {len(catalog)} items, {len(matched)} in target villages, "
-              f"{len(new_ids)} new", flush=True)
+        log(f"Catalog: {len(catalog)} items, {len(matched)} in target villages, "
+            f"{len(new_ids)} new")
     time.sleep(random.uniform(1.0, 2.0))
 
     # 2) Fetch all rooms (known + new)
     all_ids = sorted(known_ids | new_ids)
-    print(f"Fetching {len(all_ids)} rooms...", flush=True)
+    log(f"Fetching {len(all_ids)} rooms...")
     fresh = {}
     for i, rid in enumerate(all_ids, 1):
         try:
             fresh[rid] = fetch_room(rid)
         except Exception as e:
-            print(f"  [{i}/{len(all_ids)}] {rid} ERROR: {e}", flush=True)
+            log(f"  [{i}/{len(all_ids)}] {rid} ERROR: {e}")
             continue
         if i % 5 == 0 or i == len(all_ids):
-            print(f"  [{i}/{len(all_ids)}] done", flush=True)
+            log(f"  [{i}/{len(all_ids)}] done")
         if i < len(all_ids):
             time.sleep(random.uniform(DELAY_MIN, DELAY_MAX))
 
@@ -303,8 +319,7 @@ def main():
             cabin = new_cabin(rid, top, vname)
             villages[vname].append(cabin)
             report["new"].append((vname, rid, cabin["title"][:45], cabin["price"]))
-            print(f"  NEW {vname} | {rid} | {cabin['title'][:45]} | {cabin['price']:,}",
-                  flush=True)
+            log(f"  NEW {vname} | {rid} | {cabin['title'][:45]} | {cabin['price']:,}")
         else:
             cabin = None
             for c in villages[vname]:
@@ -316,10 +331,21 @@ def main():
             changes = merge_room(cabin, top)
             if changes:
                 report["price_changes"].append((vname, rid, cabin["title"][:45], changes))
-                print(f"  CHG {vname} | {rid} | {cabin['title'][:40]} | "
-                      + "; ".join(changes), flush=True)
+                log(f"  CHG {vname} | {rid} | {cabin['title'][:40]} | "
+                    + "; ".join(changes))
 
-    # 4) Recompute meta
+    # 4) Remove inactive cabins
+    removed = []
+    for vname in list(villages.keys()):
+        before = len(villages[vname])
+        villages[vname] = [c for c in villages[vname] if c.get("active", True)]
+        after = len(villages[vname])
+        for c in villages[vname][after:] if after < before else []:
+            removed.append((vname, c["id"], c["title"][:45]))
+        if before != after:
+            log(f"  Removed {before - after} inactive from {vname}")
+
+    # 5) Recompute meta
     total = sum(len(v) for v in villages.values())
     prices = [c["price"] for cabins in villages.values() for c in cabins if c.get("price")]
     data["meta"]["total_cabins"] = total
@@ -331,11 +357,13 @@ def main():
     print("\n" + "=" * 60)
     print(f"REPORT: {total} total cabins | {len(fresh)} fetched | "
           f"{len(report['new'])} new | {len(report['price_changes'])} changed | "
-          f"{len(report['errors'])} errors")
+          f"{len(removed)} removed | {len(report['errors'])} errors")
     for v, rid, t, changes in report["price_changes"]:
         print(f"  CHG {v} {rid}: {'; '.join(changes)}")
     for v, rid, t, p in report["new"]:
         print(f"  NEW {v} {rid}: {t} | {p:,}")
+    for v, rid, t in removed:
+        print(f"  REM {v} {rid}: {t}")
     for e in report["errors"]:
         print(f"  ERR {e}")
     print("=" * 60)

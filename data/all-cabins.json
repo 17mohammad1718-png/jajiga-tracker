@@ -3,7 +3,7 @@
     "last_updated": "2026-07-31",
     "source": "jajiga.com",
     "region": "بابلکنار",
-    "total_cabins": 81,
+    "total_cabins": 80,
     "price_range": "1,300,000 - 9,000,000 تومان/شب"
   },
   "villages": {
@@ -22,7 +22,8 @@
         "host": "محمدرضا",
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.421425+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.233113+00:00",
+        "success_books": 50
       },
       {
         "id": 3206573,
@@ -38,7 +39,8 @@
         "host": "ابوالفضل",
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.421425+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.234122+00:00",
+        "success_books": 200
       },
       {
         "id": 3179336,
@@ -54,7 +56,8 @@
         "host": "حسن",
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.420424+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.233113+00:00",
+        "success_books": 300
       },
       {
         "id": 3181918,
@@ -70,7 +73,8 @@
         "host": "عیسی",
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.420424+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.233113+00:00",
+        "success_books": 500
       },
       {
         "id": 3240445,
@@ -86,7 +90,8 @@
         "host": "امیر",
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.422425+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.236484+00:00",
+        "success_books": 50
       },
       {
         "id": 3190700,
@@ -102,7 +107,8 @@
         "host": "لیلا",
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.420424+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.233113+00:00",
+        "success_books": 50
       },
       {
         "id": 3293951,
@@ -118,7 +124,8 @@
         "host": "سیدمهدی",
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.423425+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.239951+00:00",
+        "success_books": 20
       },
       {
         "id": 3237859,
@@ -134,7 +141,8 @@
         "host": "حبیب",
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.422425+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.236484+00:00",
+        "success_books": 10
       },
       {
         "id": 3149747,
@@ -150,7 +158,8 @@
         "host": "میراحسان",
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.419431+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.233113+00:00",
+        "success_books": 50
       },
       {
         "id": 3225446,
@@ -166,7 +175,8 @@
         "host": "لیلا",
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.422425+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.236484+00:00",
+        "success_books": 50
       },
       {
         "id": 3297585,
@@ -183,7 +193,8 @@
         "host": "محدثه",
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.423425+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.239951+00:00",
+        "success_books": 5
       },
       {
         "id": 3215808,
@@ -199,7 +210,8 @@
         "host": "یوسفعلی",
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.421425+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.234122+00:00",
+        "success_books": 20
       },
       {
         "id": 3206720,
@@ -215,7 +227,8 @@
         "host": "عاطفه",
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.421425+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.234122+00:00",
+        "success_books": 10
       },
       {
         "id": 3253520,
@@ -231,7 +244,8 @@
         "host": "کاظم",
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.422425+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.236484+00:00",
+        "success_books": 0
       },
       {
         "id": 3198234,
@@ -247,7 +261,8 @@
         "host": "محمدرضا",
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.421425+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.233113+00:00",
+        "success_books": 10
       },
       {
         "id": 3149749,
@@ -263,7 +278,8 @@
         "active": true,
         "host": "میراحسان",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.420424+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.233113+00:00",
+        "success_books": 20
       },
       {
         "id": 3179404,
@@ -279,7 +295,8 @@
         "active": true,
         "host": "محمدرضا",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.420424+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.233113+00:00",
+        "success_books": 5
       },
       {
         "id": 3184142,
@@ -295,7 +312,8 @@
         "active": true,
         "host": "کاظم",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.420424+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.233113+00:00",
+        "success_books": 20
       },
       {
         "id": 3195220,
@@ -311,7 +329,8 @@
         "active": true,
         "host": "محمدرضا",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.420424+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.233113+00:00",
+        "success_books": 0
       },
       {
         "id": 3198301,
@@ -327,7 +346,8 @@
         "active": true,
         "host": "محمدرضا",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.421425+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.233113+00:00",
+        "success_books": 5
       },
       {
         "id": 3294040,
@@ -343,7 +363,8 @@
         "active": true,
         "host": "محمدرضا",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.423425+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.239951+00:00",
+        "success_books": 10
       },
       {
         "id": 3299045,
@@ -359,7 +380,8 @@
         "active": true,
         "host": "حبیب",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.423425+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.241152+00:00",
+        "success_books": 0
       }
     ],
     "قرآن تالار": [
@@ -377,7 +399,8 @@
         "host": "معصومه",
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.423425+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.239951+00:00",
+        "success_books": 10
       },
       {
         "id": 3212511,
@@ -393,7 +416,8 @@
         "host": "مهدی",
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.421425+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.234122+00:00",
+        "success_books": 50
       },
       {
         "id": 3283885,
@@ -409,7 +433,8 @@
         "host": "معصومه",
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.423425+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.237682+00:00",
+        "success_books": 20
       },
       {
         "id": 3289641,
@@ -425,7 +450,8 @@
         "host": "محسن",
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.423425+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.239951+00:00",
+        "success_books": 50
       },
       {
         "id": 3291421,
@@ -441,7 +467,8 @@
         "host": "رضا",
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.423425+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.239951+00:00",
+        "success_books": 50
       },
       {
         "id": 3289341,
@@ -457,7 +484,8 @@
         "host": "محسن",
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.423425+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.239951+00:00",
+        "success_books": 50
       },
       {
         "id": 3293846,
@@ -473,7 +501,8 @@
         "host": "محسن",
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.423425+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.239951+00:00",
+        "success_books": 20
       },
       {
         "id": 3212136,
@@ -489,7 +518,8 @@
         "host": "محسن",
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.421425+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.234122+00:00",
+        "success_books": 300
       },
       {
         "id": 3281922,
@@ -505,7 +535,8 @@
         "host": "رضا",
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.423425+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.237682+00:00",
+        "success_books": 0
       },
       {
         "id": 3209086,
@@ -521,7 +552,8 @@
         "active": true,
         "host": "سید کاظم",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.421425+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.234122+00:00",
+        "success_books": 50
       },
       {
         "id": 3245010,
@@ -537,7 +569,8 @@
         "active": true,
         "host": "جعفر",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.422425+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.236484+00:00",
+        "success_books": 5
       }
     ],
     "گونه کلا": [
@@ -555,7 +588,8 @@
         "host": "عبدالله",
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.422425+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.236484+00:00",
+        "success_books": 20
       },
       {
         "id": 3240255,
@@ -573,7 +607,8 @@
         "active": true,
         "host": "سید ابراهیم",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.422425+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.236484+00:00",
+        "success_books": 50
       },
       {
         "id": 3186964,
@@ -589,7 +624,8 @@
         "host": "الناز",
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.420424+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.233113+00:00",
+        "success_books": 100
       },
       {
         "id": 3292527,
@@ -605,23 +641,8 @@
         "host": "احمدرضا",
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.423425+00:00"
-      },
-      {
-        "id": 3290627,
-        "title": "کلبه سوئیسی در شیرگاه - گونه کلا",
-        "price": 0,
-        "rooms": 1,
-        "floor": 52,
-        "guests": 4,
-        "rating": 5.0,
-        "reviews": 1,
-        "url": "https://www.jajiga.com/room/3290627",
-        "active": false,
-        "host": "مهرنوش",
-        "price_source": "inactive",
-        "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.423425+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.239951+00:00",
+        "success_books": 20
       },
       {
         "id": 3228478,
@@ -637,7 +658,8 @@
         "host": "شهریار",
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.422425+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.236484+00:00",
+        "success_books": 20
       },
       {
         "id": 3285480,
@@ -653,7 +675,8 @@
         "host": "پویا",
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.423425+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.239951+00:00",
+        "success_books": 0
       },
       {
         "id": 3259364,
@@ -669,7 +692,8 @@
         "host": "مهدی",
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.423425+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.236484+00:00",
+        "success_books": 5
       },
       {
         "id": 3298479,
@@ -685,7 +709,8 @@
         "host": "امیر حسین",
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.423425+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.239951+00:00",
+        "success_books": 0
       },
       {
         "id": 3224334,
@@ -701,7 +726,8 @@
         "host": "سمیرا",
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.422425+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.234122+00:00",
+        "success_books": 0
       },
       {
         "id": 3161999,
@@ -717,7 +743,8 @@
         "active": true,
         "host": "پویا",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.420424+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.233113+00:00",
+        "success_books": 5
       },
       {
         "id": 3198940,
@@ -733,7 +760,8 @@
         "active": true,
         "host": "پوریا",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.421425+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.233113+00:00",
+        "success_books": 20
       },
       {
         "id": 3199786,
@@ -749,7 +777,8 @@
         "active": true,
         "host": "ابراهیم",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.421425+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.234122+00:00",
+        "success_books": 10
       },
       {
         "id": 3212575,
@@ -765,7 +794,8 @@
         "active": true,
         "host": "رمضانعلی",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.421425+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.234122+00:00",
+        "success_books": 20
       },
       {
         "id": 3223870,
@@ -781,7 +811,8 @@
         "active": true,
         "host": "سید میثم",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.422425+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.234122+00:00",
+        "success_books": 20
       },
       {
         "id": 3235299,
@@ -797,7 +828,8 @@
         "active": true,
         "host": "مختار",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.422425+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.236484+00:00",
+        "success_books": 50
       },
       {
         "id": 3236158,
@@ -813,7 +845,8 @@
         "active": true,
         "host": "پوریا",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.422425+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.236484+00:00",
+        "success_books": 10
       },
       {
         "id": 3240990,
@@ -829,7 +862,8 @@
         "active": true,
         "host": "حسین",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.422425+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.236484+00:00",
+        "success_books": 20
       },
       {
         "id": 3252868,
@@ -845,7 +879,8 @@
         "active": true,
         "host": "ندا",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.422425+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.236484+00:00",
+        "success_books": 10
       },
       {
         "id": 3263831,
@@ -861,7 +896,8 @@
         "active": true,
         "host": "پویا",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.423425+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.236484+00:00",
+        "success_books": 0
       },
       {
         "id": 3263833,
@@ -877,7 +913,8 @@
         "active": true,
         "host": "پویا",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.423425+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.236484+00:00",
+        "success_books": 0
       },
       {
         "id": 3273563,
@@ -893,7 +930,8 @@
         "active": true,
         "host": "مهدی",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.423425+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.237682+00:00",
+        "success_books": 5
       },
       {
         "id": 3281370,
@@ -909,7 +947,8 @@
         "active": true,
         "host": "پویا",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.423425+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.237682+00:00",
+        "success_books": 5
       },
       {
         "id": 3284804,
@@ -925,7 +964,8 @@
         "active": true,
         "host": "پویا",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.423425+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.237682+00:00",
+        "success_books": 0
       },
       {
         "id": 3308372,
@@ -941,7 +981,8 @@
         "active": true,
         "host": "آرش",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.424422+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.241152+00:00",
+        "success_books": 0
       }
     ],
     "شیردارکلا": [
@@ -959,7 +1000,8 @@
         "host": "ابوالحسن",
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.421425+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.234122+00:00",
+        "success_books": 20
       },
       {
         "id": 3248416,
@@ -975,7 +1017,8 @@
         "host": "نیره",
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.422425+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.236484+00:00",
+        "success_books": 10
       },
       {
         "id": 3258434,
@@ -991,7 +1034,8 @@
         "host": "محمدرضا",
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.422425+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.236484+00:00",
+        "success_books": 50
       },
       {
         "id": 3279598,
@@ -1007,7 +1051,8 @@
         "host": "مجتبی",
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.423425+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.237682+00:00",
+        "success_books": 20
       },
       {
         "id": 3199443,
@@ -1023,7 +1068,8 @@
         "host": "علی",
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.421425+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.234122+00:00",
+        "success_books": 0
       },
       {
         "id": 3209080,
@@ -1039,7 +1085,8 @@
         "host": "سعید",
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.421425+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.234122+00:00",
+        "success_books": 10
       },
       {
         "id": 3305898,
@@ -1055,7 +1102,8 @@
         "host": "لیلا",
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.424422+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.241152+00:00",
+        "success_books": 0
       },
       {
         "id": 3264357,
@@ -1071,7 +1119,8 @@
         "host": "وحید",
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.423425+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.236484+00:00",
+        "success_books": 20
       },
       {
         "id": 3280978,
@@ -1087,7 +1136,8 @@
         "host": "احسان",
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.423425+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.237682+00:00",
+        "success_books": 100
       },
       {
         "id": 3283844,
@@ -1103,7 +1153,8 @@
         "host": "سپیده",
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.423425+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.237682+00:00",
+        "success_books": 0
       },
       {
         "id": 3224492,
@@ -1119,7 +1170,8 @@
         "host": "عقیل",
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.422425+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.235252+00:00",
+        "success_books": 5
       },
       {
         "id": 3222812,
@@ -1135,7 +1187,8 @@
         "host": "ضرغام",
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.421425+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.234122+00:00",
+        "success_books": 20
       },
       {
         "id": 3154396,
@@ -1151,7 +1204,8 @@
         "host": "علیرضا",
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.420424+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.233113+00:00",
+        "success_books": 20
       },
       {
         "id": 3234782,
@@ -1167,7 +1221,8 @@
         "host": "کاوه",
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.422425+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.236484+00:00",
+        "success_books": 50
       },
       {
         "id": 3176224,
@@ -1183,7 +1238,8 @@
         "host": "علیرضا",
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.420424+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.233113+00:00",
+        "success_books": 50
       },
       {
         "id": 3178917,
@@ -1199,7 +1255,8 @@
         "host": "محمد مهدی",
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.420424+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.233113+00:00",
+        "success_books": 200
       },
       {
         "id": 3304015,
@@ -1215,7 +1272,8 @@
         "host": "لیلا",
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.424422+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.241152+00:00",
+        "success_books": 0
       },
       {
         "id": 3190268,
@@ -1231,7 +1289,8 @@
         "host": "میلاد",
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.420424+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.233113+00:00",
+        "success_books": 20
       },
       {
         "id": 3258654,
@@ -1247,7 +1306,8 @@
         "active": true,
         "host": "رضا",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.423425+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.236484+00:00",
+        "success_books": 5
       },
       {
         "id": 3264676,
@@ -1263,7 +1323,8 @@
         "active": true,
         "host": "رحمت",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.423425+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.236484+00:00",
+        "success_books": 50
       },
       {
         "id": 3267118,
@@ -1279,7 +1340,8 @@
         "active": true,
         "host": "امیرحسین",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.423425+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.236484+00:00",
+        "success_books": 20
       },
       {
         "id": 3293613,
@@ -1295,7 +1357,8 @@
         "active": true,
         "host": "روزبه",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.423425+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.239951+00:00",
+        "success_books": 5
       },
       {
         "id": 3298750,
@@ -1311,7 +1374,8 @@
         "active": true,
         "host": "سپیده",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-07-31T13:59:22.423425+00:00"
+        "last_scrape_attempt": "2026-07-31T14:20:29.239951+00:00",
+        "success_books": 5
       }
     ]
   }
