@@ -60,5 +60,45 @@ def main():
     print("=" * 60)
 
 
+def main_with_occupancy():
+    """Run update + occupancy fetch + dashboard rebuild."""
+    print("Jajiga weekly update starting...", flush=True)
+
+    update = run("weekly_update.py", "--quiet")
+    print(update.stdout, end="")
+    if update.returncode != 0:
+        print("ERROR: weekly_update.py failed:")
+        print(update.stderr[-3000:] if update.stderr else "(no stderr)")
+        sys.exit(1)
+
+    summary_line = ""
+    for line in update.stdout.splitlines():
+        if line.startswith("REPORT:"):
+            summary_line = line
+            break
+
+    # Fetch occupancy (calendar API) for all cabins
+    occ = run("fetch_occupancy.py")
+    print(occ.stdout, end="")
+    if occ.returncode != 0:
+        print("WARNING: fetch_occupancy.py had issues:")
+        print(occ.stderr[-1500:] if occ.stderr else "(no stderr)")
+
+    # Rebuild dashboard
+    rebuild = run("rebuild_dashboard_data.py")
+    if rebuild.returncode != 0:
+        print("ERROR: dashboard rebuild failed:")
+        print(rebuild.stderr[-2000:] if rebuild.stderr else "(no stderr)")
+        sys.exit(1)
+
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    print("\n" + "=" * 60)
+    print(f"گزارش هفتگی جاجیگا — {today}")
+    print(summary_line)
+    print("اشغال ۳۰ روز: محاسبه شد")
+    print("داشبورد: dashboard.html بازسازی شد")
+    print("=" * 60)
+
+
 if __name__ == "__main__":
-    main()
+    main_with_occupancy()

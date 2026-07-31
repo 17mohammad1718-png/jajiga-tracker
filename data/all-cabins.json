@@ -4,7 +4,8 @@
     "source": "jajiga.com",
     "region": "بابلکنار",
     "total_cabins": 80,
-    "price_range": "1,300,000 - 9,000,000 تومان/شب"
+    "price_range": "1,300,000 - 9,000,000 تومان/شب",
+    "occupancy_updated": "2026-07-31"
   },
   "villages": {
     "سیدکلا": [
@@ -23,7 +24,11 @@
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.233113+00:00",
-        "success_books": 50
+        "success_books": 50,
+        "occupancy_30": 0,
+        "occupancy_30_unavailable": 0,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:34:05.776788+00:00"
       },
       {
         "id": 3206573,
@@ -40,7 +45,11 @@
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.234122+00:00",
-        "success_books": 200
+        "success_books": 200,
+        "occupancy_30": 13,
+        "occupancy_30_unavailable": 4,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:34:09.462224+00:00"
       },
       {
         "id": 3179336,
@@ -57,7 +66,11 @@
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.233113+00:00",
-        "success_books": 300
+        "success_books": 300,
+        "occupancy_30": 47,
+        "occupancy_30_unavailable": 14,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:34:13.051181+00:00"
       },
       {
         "id": 3181918,
@@ -74,7 +87,11 @@
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.233113+00:00",
-        "success_books": 500
+        "success_books": 500,
+        "occupancy_30": 63,
+        "occupancy_30_unavailable": 19,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:34:17.301245+00:00"
       },
       {
         "id": 3240445,
@@ -91,7 +108,11 @@
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.236484+00:00",
-        "success_books": 50
+        "success_books": 50,
+        "occupancy_30": 57,
+        "occupancy_30_unavailable": 17,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:34:19.968965+00:00"
       },
       {
         "id": 3190700,
@@ -108,7 +129,11 @@
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.233113+00:00",
-        "success_books": 50
+        "success_books": 50,
+        "occupancy_30": 7,
+        "occupancy_30_unavailable": 2,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:34:22.773690+00:00"
       },
       {
         "id": 3293951,
@@ -125,7 +150,11 @@
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.239951+00:00",
-        "success_books": 20
+        "success_books": 20,
+        "occupancy_30": 0,
+        "occupancy_30_unavailable": 0,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:34:26.213494+00:00"
       },
       {
         "id": 3237859,
@@ -142,7 +171,11 @@
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.236484+00:00",
-        "success_books": 10
+        "success_books": 10,
+        "occupancy_30": 23,
+        "occupancy_30_unavailable": 7,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:34:30.435954+00:00"
       },
       {
         "id": 3149747,
@@ -159,7 +192,11 @@
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.233113+00:00",
-        "success_books": 50
+        "success_books": 50,
+        "occupancy_30": 0,
+        "occupancy_30_unavailable": 0,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:34:33.879918+00:00"
       },
       {
         "id": 3225446,
@@ -176,7 +213,11 @@
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.236484+00:00",
-        "success_books": 50
+        "success_books": 50,
+        "occupancy_30": 40,
+        "occupancy_30_unavailable": 12,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:34:37.617805+00:00"
       },
       {
         "id": 3297585,
@@ -194,7 +235,11 @@
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.239951+00:00",
-        "success_books": 5
+        "success_books": 5,
+        "occupancy_30": 0,
+        "occupancy_30_unavailable": 0,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:34:41.368685+00:00"
       },
       {
         "id": 3215808,
@@ -211,7 +256,11 @@
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.234122+00:00",
-        "success_books": 20
+        "success_books": 20,
+        "occupancy_30": 17,
+        "occupancy_30_unavailable": 5,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:34:43.701541+00:00"
       },
       {
         "id": 3206720,
@@ -228,7 +277,11 @@
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.234122+00:00",
-        "success_books": 10
+        "success_books": 10,
+        "occupancy_30": 37,
+        "occupancy_30_unavailable": 11,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:34:46.235636+00:00"
       },
       {
         "id": 3253520,
@@ -245,7 +298,11 @@
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.236484+00:00",
-        "success_books": 0
+        "success_books": 0,
+        "occupancy_30": 7,
+        "occupancy_30_unavailable": 2,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:34:49.371764+00:00"
       },
       {
         "id": 3198234,
@@ -262,7 +319,11 @@
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.233113+00:00",
-        "success_books": 10
+        "success_books": 10,
+        "occupancy_30": 0,
+        "occupancy_30_unavailable": 0,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:34:52.348315+00:00"
       },
       {
         "id": 3149749,
@@ -279,7 +340,11 @@
         "host": "میراحسان",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.233113+00:00",
-        "success_books": 20
+        "success_books": 20,
+        "occupancy_30": 0,
+        "occupancy_30_unavailable": 0,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:34:55.340837+00:00"
       },
       {
         "id": 3179404,
@@ -296,7 +361,11 @@
         "host": "محمدرضا",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.233113+00:00",
-        "success_books": 5
+        "success_books": 5,
+        "occupancy_30": 0,
+        "occupancy_30_unavailable": 0,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:34:58.944739+00:00"
       },
       {
         "id": 3184142,
@@ -313,7 +382,11 @@
         "host": "کاظم",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.233113+00:00",
-        "success_books": 20
+        "success_books": 20,
+        "occupancy_30": 10,
+        "occupancy_30_unavailable": 3,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:35:03.093797+00:00"
       },
       {
         "id": 3195220,
@@ -330,7 +403,11 @@
         "host": "محمدرضا",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.233113+00:00",
-        "success_books": 0
+        "success_books": 0,
+        "occupancy_30": 0,
+        "occupancy_30_unavailable": 0,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:35:05.588610+00:00"
       },
       {
         "id": 3198301,
@@ -347,7 +424,11 @@
         "host": "محمدرضا",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.233113+00:00",
-        "success_books": 5
+        "success_books": 5,
+        "occupancy_30": 0,
+        "occupancy_30_unavailable": 0,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:35:08.293732+00:00"
       },
       {
         "id": 3294040,
@@ -364,7 +445,11 @@
         "host": "محمدرضا",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.239951+00:00",
-        "success_books": 10
+        "success_books": 10,
+        "occupancy_30": 0,
+        "occupancy_30_unavailable": 0,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:35:12.328944+00:00"
       },
       {
         "id": 3299045,
@@ -381,7 +466,11 @@
         "host": "حبیب",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.241152+00:00",
-        "success_books": 0
+        "success_books": 0,
+        "occupancy_30": 17,
+        "occupancy_30_unavailable": 5,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:35:15.696166+00:00"
       }
     ],
     "قرآن تالار": [
@@ -400,7 +489,11 @@
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.239951+00:00",
-        "success_books": 10
+        "success_books": 10,
+        "occupancy_30": 3,
+        "occupancy_30_unavailable": 1,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:35:19.996950+00:00"
       },
       {
         "id": 3212511,
@@ -417,7 +510,11 @@
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.234122+00:00",
-        "success_books": 50
+        "success_books": 50,
+        "occupancy_30": 13,
+        "occupancy_30_unavailable": 4,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:35:22.778752+00:00"
       },
       {
         "id": 3283885,
@@ -434,7 +531,11 @@
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.237682+00:00",
-        "success_books": 20
+        "success_books": 20,
+        "occupancy_30": 7,
+        "occupancy_30_unavailable": 2,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:35:25.625976+00:00"
       },
       {
         "id": 3289641,
@@ -451,7 +552,11 @@
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.239951+00:00",
-        "success_books": 50
+        "success_books": 50,
+        "occupancy_30": 7,
+        "occupancy_30_unavailable": 2,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:35:29.710861+00:00"
       },
       {
         "id": 3291421,
@@ -468,7 +573,11 @@
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.239951+00:00",
-        "success_books": 50
+        "success_books": 50,
+        "occupancy_30": 47,
+        "occupancy_30_unavailable": 14,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:35:33.149843+00:00"
       },
       {
         "id": 3289341,
@@ -485,7 +594,11 @@
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.239951+00:00",
-        "success_books": 50
+        "success_books": 50,
+        "occupancy_30": 37,
+        "occupancy_30_unavailable": 11,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:35:36.536024+00:00"
       },
       {
         "id": 3293846,
@@ -502,7 +615,11 @@
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.239951+00:00",
-        "success_books": 20
+        "success_books": 20,
+        "occupancy_30": 23,
+        "occupancy_30_unavailable": 7,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:35:39.922205+00:00"
       },
       {
         "id": 3212136,
@@ -519,7 +636,11 @@
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.234122+00:00",
-        "success_books": 300
+        "success_books": 300,
+        "occupancy_30": 17,
+        "occupancy_30_unavailable": 5,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:35:43.600603+00:00"
       },
       {
         "id": 3281922,
@@ -536,7 +657,11 @@
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.237682+00:00",
-        "success_books": 0
+        "success_books": 0,
+        "occupancy_30": 0,
+        "occupancy_30_unavailable": 0,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:35:46.768396+00:00"
       },
       {
         "id": 3209086,
@@ -553,7 +678,11 @@
         "host": "سید کاظم",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.234122+00:00",
-        "success_books": 50
+        "success_books": 50,
+        "occupancy_30": 17,
+        "occupancy_30_unavailable": 5,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:35:49.526396+00:00"
       },
       {
         "id": 3245010,
@@ -570,7 +699,11 @@
         "host": "جعفر",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.236484+00:00",
-        "success_books": 5
+        "success_books": 5,
+        "occupancy_30": 10,
+        "occupancy_30_unavailable": 3,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:35:52.323638+00:00"
       }
     ],
     "گونه کلا": [
@@ -589,7 +722,11 @@
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.236484+00:00",
-        "success_books": 20
+        "success_books": 20,
+        "occupancy_30": 0,
+        "occupancy_30_unavailable": 0,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:35:56.113079+00:00"
       },
       {
         "id": 3240255,
@@ -608,7 +745,11 @@
         "host": "سید ابراهیم",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.236484+00:00",
-        "success_books": 50
+        "success_books": 50,
+        "occupancy_30": 17,
+        "occupancy_30_unavailable": 5,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:35:59.988375+00:00"
       },
       {
         "id": 3186964,
@@ -625,7 +766,11 @@
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.233113+00:00",
-        "success_books": 100
+        "success_books": 100,
+        "occupancy_30": 47,
+        "occupancy_30_unavailable": 14,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:36:03.412868+00:00"
       },
       {
         "id": 3292527,
@@ -642,7 +787,11 @@
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.239951+00:00",
-        "success_books": 20
+        "success_books": 20,
+        "occupancy_30": 50,
+        "occupancy_30_unavailable": 15,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:36:07.220628+00:00"
       },
       {
         "id": 3228478,
@@ -659,7 +808,11 @@
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.236484+00:00",
-        "success_books": 20
+        "success_books": 20,
+        "occupancy_30": 43,
+        "occupancy_30_unavailable": 13,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:36:11.173109+00:00"
       },
       {
         "id": 3285480,
@@ -676,7 +829,11 @@
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.239951+00:00",
-        "success_books": 0
+        "success_books": 0,
+        "occupancy_30": 0,
+        "occupancy_30_unavailable": 0,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:36:14.930573+00:00"
       },
       {
         "id": 3259364,
@@ -693,7 +850,11 @@
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.236484+00:00",
-        "success_books": 5
+        "success_books": 5,
+        "occupancy_30": 17,
+        "occupancy_30_unavailable": 5,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:36:19.235814+00:00"
       },
       {
         "id": 3298479,
@@ -710,7 +871,11 @@
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.239951+00:00",
-        "success_books": 0
+        "success_books": 0,
+        "occupancy_30": 13,
+        "occupancy_30_unavailable": 4,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:36:23.606394+00:00"
       },
       {
         "id": 3224334,
@@ -727,7 +892,11 @@
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.234122+00:00",
-        "success_books": 0
+        "success_books": 0,
+        "occupancy_30": 27,
+        "occupancy_30_unavailable": 8,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:36:26.370905+00:00"
       },
       {
         "id": 3161999,
@@ -744,7 +913,11 @@
         "host": "پویا",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.233113+00:00",
-        "success_books": 5
+        "success_books": 5,
+        "occupancy_30": 27,
+        "occupancy_30_unavailable": 8,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:36:30.737787+00:00"
       },
       {
         "id": 3198940,
@@ -761,7 +934,11 @@
         "host": "پوریا",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.233113+00:00",
-        "success_books": 20
+        "success_books": 20,
+        "occupancy_30": 27,
+        "occupancy_30_unavailable": 8,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:36:33.465042+00:00"
       },
       {
         "id": 3199786,
@@ -778,7 +955,11 @@
         "host": "ابراهیم",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.234122+00:00",
-        "success_books": 10
+        "success_books": 10,
+        "occupancy_30": 3,
+        "occupancy_30_unavailable": 1,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:36:37.374578+00:00"
       },
       {
         "id": 3212575,
@@ -795,7 +976,11 @@
         "host": "رمضانعلی",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.234122+00:00",
-        "success_books": 20
+        "success_books": 20,
+        "occupancy_30": 0,
+        "occupancy_30_unavailable": 0,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:36:40.432151+00:00"
       },
       {
         "id": 3223870,
@@ -812,7 +997,11 @@
         "host": "سید میثم",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.234122+00:00",
-        "success_books": 20
+        "success_books": 20,
+        "occupancy_30": 77,
+        "occupancy_30_unavailable": 23,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:36:43.057532+00:00"
       },
       {
         "id": 3235299,
@@ -829,7 +1018,11 @@
         "host": "مختار",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.236484+00:00",
-        "success_books": 50
+        "success_books": 50,
+        "occupancy_30": 17,
+        "occupancy_30_unavailable": 5,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:36:46.187070+00:00"
       },
       {
         "id": 3236158,
@@ -846,7 +1039,11 @@
         "host": "پوریا",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.236484+00:00",
-        "success_books": 10
+        "success_books": 10,
+        "occupancy_30": 0,
+        "occupancy_30_unavailable": 0,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:36:49.101139+00:00"
       },
       {
         "id": 3240990,
@@ -863,7 +1060,11 @@
         "host": "حسین",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.236484+00:00",
-        "success_books": 20
+        "success_books": 20,
+        "occupancy_30": 13,
+        "occupancy_30_unavailable": 4,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:36:52.515068+00:00"
       },
       {
         "id": 3252868,
@@ -880,7 +1081,11 @@
         "host": "ندا",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.236484+00:00",
-        "success_books": 10
+        "success_books": 10,
+        "occupancy_30": 0,
+        "occupancy_30_unavailable": 0,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:36:55.796021+00:00"
       },
       {
         "id": 3263831,
@@ -897,7 +1102,11 @@
         "host": "پویا",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.236484+00:00",
-        "success_books": 0
+        "success_books": 0,
+        "occupancy_30": 0,
+        "occupancy_30_unavailable": 0,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:36:59.572035+00:00"
       },
       {
         "id": 3263833,
@@ -914,7 +1123,11 @@
         "host": "پویا",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.236484+00:00",
-        "success_books": 0
+        "success_books": 0,
+        "occupancy_30": 0,
+        "occupancy_30_unavailable": 0,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:37:02.019875+00:00"
       },
       {
         "id": 3273563,
@@ -931,7 +1144,11 @@
         "host": "مهدی",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.237682+00:00",
-        "success_books": 5
+        "success_books": 5,
+        "occupancy_30": 0,
+        "occupancy_30_unavailable": 0,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:37:05.449911+00:00"
       },
       {
         "id": 3281370,
@@ -948,7 +1165,11 @@
         "host": "پویا",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.237682+00:00",
-        "success_books": 5
+        "success_books": 5,
+        "occupancy_30": 0,
+        "occupancy_30_unavailable": 0,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:37:08.251943+00:00"
       },
       {
         "id": 3284804,
@@ -965,7 +1186,11 @@
         "host": "پویا",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.237682+00:00",
-        "success_books": 0
+        "success_books": 0,
+        "occupancy_30": 7,
+        "occupancy_30_unavailable": 2,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:37:11.964166+00:00"
       },
       {
         "id": 3308372,
@@ -982,7 +1207,11 @@
         "host": "آرش",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.241152+00:00",
-        "success_books": 0
+        "success_books": 0,
+        "occupancy_30": 7,
+        "occupancy_30_unavailable": 2,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:37:15.323679+00:00"
       }
     ],
     "شیردارکلا": [
@@ -1001,7 +1230,11 @@
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.234122+00:00",
-        "success_books": 20
+        "success_books": 20,
+        "occupancy_30": 3,
+        "occupancy_30_unavailable": 1,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:37:18.564424+00:00"
       },
       {
         "id": 3248416,
@@ -1018,7 +1251,11 @@
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.236484+00:00",
-        "success_books": 10
+        "success_books": 10,
+        "occupancy_30": 0,
+        "occupancy_30_unavailable": 0,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:37:22.076522+00:00"
       },
       {
         "id": 3258434,
@@ -1035,7 +1272,11 @@
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.236484+00:00",
-        "success_books": 50
+        "success_books": 50,
+        "occupancy_30": 10,
+        "occupancy_30_unavailable": 3,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:37:25.919171+00:00"
       },
       {
         "id": 3279598,
@@ -1052,7 +1293,11 @@
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.237682+00:00",
-        "success_books": 20
+        "success_books": 20,
+        "occupancy_30": 10,
+        "occupancy_30_unavailable": 3,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:37:28.399065+00:00"
       },
       {
         "id": 3199443,
@@ -1069,7 +1314,11 @@
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.234122+00:00",
-        "success_books": 0
+        "success_books": 0,
+        "occupancy_30": 30,
+        "occupancy_30_unavailable": 9,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:37:31.776446+00:00"
       },
       {
         "id": 3209080,
@@ -1086,7 +1335,11 @@
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.234122+00:00",
-        "success_books": 10
+        "success_books": 10,
+        "occupancy_30": 7,
+        "occupancy_30_unavailable": 2,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:37:35.476560+00:00"
       },
       {
         "id": 3305898,
@@ -1103,7 +1356,11 @@
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.241152+00:00",
-        "success_books": 0
+        "success_books": 0,
+        "occupancy_30": 0,
+        "occupancy_30_unavailable": 0,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:37:38.841907+00:00"
       },
       {
         "id": 3264357,
@@ -1120,7 +1377,11 @@
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.236484+00:00",
-        "success_books": 20
+        "success_books": 20,
+        "occupancy_30": 27,
+        "occupancy_30_unavailable": 8,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:37:42.747589+00:00"
       },
       {
         "id": 3280978,
@@ -1137,7 +1398,11 @@
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.237682+00:00",
-        "success_books": 100
+        "success_books": 100,
+        "occupancy_30": 3,
+        "occupancy_30_unavailable": 1,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:37:45.822844+00:00"
       },
       {
         "id": 3283844,
@@ -1154,7 +1419,11 @@
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.237682+00:00",
-        "success_books": 0
+        "success_books": 0,
+        "occupancy_30": 10,
+        "occupancy_30_unavailable": 3,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:37:49.180699+00:00"
       },
       {
         "id": 3224492,
@@ -1171,7 +1440,11 @@
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.235252+00:00",
-        "success_books": 5
+        "success_books": 5,
+        "occupancy_30": 17,
+        "occupancy_30_unavailable": 5,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:37:52.214855+00:00"
       },
       {
         "id": 3222812,
@@ -1188,7 +1461,11 @@
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.234122+00:00",
-        "success_books": 20
+        "success_books": 20,
+        "occupancy_30": 30,
+        "occupancy_30_unavailable": 9,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:37:56.189738+00:00"
       },
       {
         "id": 3154396,
@@ -1205,7 +1482,11 @@
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.233113+00:00",
-        "success_books": 20
+        "success_books": 20,
+        "occupancy_30": 0,
+        "occupancy_30_unavailable": 0,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:37:59.119607+00:00"
       },
       {
         "id": 3234782,
@@ -1222,7 +1503,11 @@
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.236484+00:00",
-        "success_books": 50
+        "success_books": 50,
+        "occupancy_30": 0,
+        "occupancy_30_unavailable": 0,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:38:02.564275+00:00"
       },
       {
         "id": 3176224,
@@ -1239,7 +1524,11 @@
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.233113+00:00",
-        "success_books": 50
+        "success_books": 50,
+        "occupancy_30": 7,
+        "occupancy_30_unavailable": 2,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:38:05.133886+00:00"
       },
       {
         "id": 3178917,
@@ -1256,7 +1545,11 @@
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.233113+00:00",
-        "success_books": 200
+        "success_books": 200,
+        "occupancy_30": 73,
+        "occupancy_30_unavailable": 22,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:38:08.553185+00:00"
       },
       {
         "id": 3304015,
@@ -1273,7 +1566,11 @@
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.241152+00:00",
-        "success_books": 0
+        "success_books": 0,
+        "occupancy_30": 7,
+        "occupancy_30_unavailable": 2,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:38:11.644362+00:00"
       },
       {
         "id": 3190268,
@@ -1290,7 +1587,11 @@
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.233113+00:00",
-        "success_books": 20
+        "success_books": 20,
+        "occupancy_30": 0,
+        "occupancy_30_unavailable": 0,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:38:15.452419+00:00"
       },
       {
         "id": 3258654,
@@ -1307,7 +1608,11 @@
         "host": "رضا",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.236484+00:00",
-        "success_books": 5
+        "success_books": 5,
+        "occupancy_30": 0,
+        "occupancy_30_unavailable": 0,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:38:18.916552+00:00"
       },
       {
         "id": 3264676,
@@ -1324,7 +1629,11 @@
         "host": "رحمت",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.236484+00:00",
-        "success_books": 50
+        "success_books": 50,
+        "occupancy_30": 43,
+        "occupancy_30_unavailable": 13,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:38:22.735629+00:00"
       },
       {
         "id": 3267118,
@@ -1341,7 +1650,11 @@
         "host": "امیرحسین",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.236484+00:00",
-        "success_books": 20
+        "success_books": 20,
+        "occupancy_30": 7,
+        "occupancy_30_unavailable": 2,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:38:27.022977+00:00"
       },
       {
         "id": 3293613,
@@ -1358,7 +1671,11 @@
         "host": "روزبه",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.239951+00:00",
-        "success_books": 5
+        "success_books": 5,
+        "occupancy_30": 7,
+        "occupancy_30_unavailable": 2,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:38:30.815543+00:00"
       },
       {
         "id": 3298750,
@@ -1375,7 +1692,11 @@
         "host": "سپیده",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.239951+00:00",
-        "success_books": 5
+        "success_books": 5,
+        "occupancy_30": 0,
+        "occupancy_30_unavailable": 0,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-07-31T15:38:34.038929+00:00"
       }
     ]
   }
