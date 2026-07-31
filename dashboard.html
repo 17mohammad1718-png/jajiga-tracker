@@ -1,0 +1,1261 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ردیاب قیمت کلبه‌های بابلکنار</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Vazirmatn:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<style>
+/* ========== RESET & BASE ========== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Vazirmatn', system-ui, 'Segoe UI', Tahoma, sans-serif;
+  background: #0d1117;
+  color: #e6edf3;
+  line-height: 1.7;
+  padding: 20px;
+  direction: rtl;
+}
+
+/* English numbers */
+.num, .price-cell, .rating-cell, .stat-card .num,
+.price-bar-wrap, td, .v-info strong, .count,
+#footerCount, .badge, .unit, .review-count,
+.chart-tick, .filter-price input, .filter-extras input, .filter-extras label {
+  font-family: 'Inter', 'Vazirmatn', system-ui, monospace;
+  font-variant-numeric: tabular-nums lining-nums;
+  letter-spacing: -0.01em;
+}
+
+/* ========== LAYOUT ========== */
+.container { max-width: 1280px; margin: 0 auto; }
+
+/* ========== HEADER ========== */
+header {
+  text-align: center;
+  padding: 40px 20px 30px;
+  border-bottom: 1px solid #21262d;
+  margin-bottom: 30px;
+}
+header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #58a6ff, #3fb950);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+header p { color: #8b949e; font-size: 14px; margin-top: 6px; }
+header .badge {
+  display: inline-block;
+  background: #21262d;
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  color: #8b949e;
+  margin-top: 10px;
+}
+
+/* ========== STATS ========== */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 14px;
+  margin-bottom: 30px;
+}
+.stat-card {
+  background: #161b22;
+  border: 1px solid #21262d;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  transition: border-color .2s;
+}
+.stat-card:hover { border-color: #30363d; }
+.stat-card .num { font-size: 28px; font-weight: 700; color: #f0f6fc; }
+.stat-card .label { font-size: 13px; color: #8b949e; margin-top: 4px; }
+.stat-card.green .num { color: #3fb950; }
+.stat-card.blue .num { color: #58a6ff; }
+.stat-card.orange .num { color: #d29922; }
+.stat-card.purple .num { color: #bc8cff; }
+.stat-card.pink .num { color: #f778ba; }
+
+/* ========== SECTION TITLE ========== */
+.section-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 30px 0 16px;
+  color: #f0f6fc;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.section-title .count {
+  background: #21262d;
+  font-size: 12px;
+  padding: 2px 10px;
+  border-radius: 12px;
+  color: #8b949e;
+  font-weight: 400;
+}
+
+/* ========== CHARTS ========== */
+.charts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 14px;
+  margin-bottom: 10px;
+}
+.chart-card {
+  background: #161b22;
+  border: 1px solid #21262d;
+  border-radius: 12px;
+  padding: 16px;
+}
+.chart-card h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #8b949e;
+  margin-bottom: 12px;
+  text-align: center;
+}
+.chart-box { position: relative; height: 240px; }
+.chart-fallback {
+  display: none;
+  padding: 40px;
+  text-align: center;
+  color: #8b949e;
+  font-size: 13px;
+}
+.chart-legend {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  font-size: 12px;
+  color: #8b949e;
+}
+.chart-legend .dot {
+  display: inline-block;
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+/* ========== VILLAGE CARDS ========== */
+.village-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 14px;
+  margin-bottom: 30px;
+}
+.village-card {
+  background: #161b22;
+  border: 1px solid #21262d;
+  border-radius: 12px;
+  padding: 20px;
+}
+.village-card .v-name { font-size: 16px; font-weight: 600; color: #f0f6fc; margin-bottom: 10px; }
+.village-card .v-info { font-size: 13px; color: #8b949e; line-height: 2; }
+.village-card .v-info strong { color: #e6edf3; }
+.village-card[data-village="سیدکلا"] { border-right: 3px solid #3fb950; }
+.village-card[data-village="قرآن تالار"] { border-right: 3px solid #d29922; }
+.village-card[data-village="گونه کلا"] { border-right: 3px solid #bc8cff; }
+.village-card[data-village="شیردارکلا"] { border-right: 3px solid #f778ba; }
+
+/* ========== TOOLBAR ========== */
+.toolbar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.search-box {
+  flex: 1;
+  min-width: 200px;
+  background: #0d1117;
+  border: 1px solid #21262d;
+  border-radius: 8px;
+  padding: 10px 14px;
+  color: #e6edf3;
+  font-size: 14px;
+  font-family: inherit;
+}
+.search-box:focus { outline: none; border-color: #58a6ff; }
+.search-box::placeholder { color: #484f58; }
+.filter-select {
+  background: #0d1117;
+  border: 1px solid #21262d;
+  border-radius: 8px;
+  padding: 10px 14px;
+  color: #e6edf3;
+  font-size: 14px;
+  font-family: inherit;
+  cursor: pointer;
+}
+.filter-select:focus { outline: none; border-color: #58a6ff; }
+.hint { color: #484f58; font-size: 12px; }
+
+/* price range */
+.price-range {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #0d1117;
+  border: 1px solid #21262d;
+  border-radius: 8px;
+  padding: 4px 10px;
+}
+.price-range label { font-size: 12px; color: #8b949e; }
+.filter-price {
+  width: 90px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #30363d;
+  color: #e6edf3;
+  font-size: 13px;
+  padding: 4px 2px;
+  text-align: center;
+}
+.filter-price:focus { outline: none; border-color: #58a6ff; }
+
+/* amenity checkboxes */
+.filter-extras {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  background: #0d1117;
+  border: 1px solid #21262d;
+  border-radius: 8px;
+  padding: 8px 12px;
+}
+.filter-extras label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+  color: #c9d1d9;
+  cursor: pointer;
+  user-select: none;
+}
+.filter-extras input {
+  accent-color: #58a6ff;
+  width: 15px; height: 15px;
+  cursor: pointer;
+}
+
+/* ========== TABLE ========== */
+.table-wrap {
+  background: #161b22;
+  border: 1px solid #21262d;
+  border-radius: 12px;
+  overflow-x: auto;
+  margin-bottom: 12px;
+}
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+thead { background: #0d1117; position: sticky; top: 0; }
+th {
+  padding: 12px 14px;
+  text-align: right;
+  font-weight: 600;
+  color: #8b949e;
+  border-bottom: 1px solid #21262d;
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
+}
+th:hover { color: #e6edf3; }
+th .sort-icon { margin-right: 4px; opacity: .5; font-size: 10px; }
+th.sorted { color: #58a6ff; }
+th.sorted .sort-icon { opacity: 1; }
+td { padding: 10px 14px; border-bottom: 1px solid #1c2128; vertical-align: middle; }
+tr:hover td { background: #1c2128; }
+tr:last-child td { border-bottom: none; }
+tr.own-row td { background: #d2992211; }
+tr.own-row:hover td { background: #d2992218; }
+tr.inactive-row td { opacity: .55; }
+tr.inactive-row:hover td { opacity: 1; }
+
+/* expandable detail row */
+.detail-row td {
+  background: #0d1117;
+  padding: 14px 18px;
+  border-bottom: 1px solid #1c2128;
+}
+.detail-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  font-size: 12px;
+}
+.detail-item {
+  background: #161b22;
+  border: 1px solid #21262d;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+}
+.detail-item .k { color: #8b949e; font-size: 11px; }
+.detail-item .v { color: #e6edf3; font-weight: 600; margin-top: 3px; }
+.expand-btn {
+  background: none;
+  border: 1px solid #30363d;
+  color: #8b949e;
+  border-radius: 6px;
+  width: 26px; height: 26px;
+  cursor: pointer;
+  font-size: 13px;
+  line-height: 1;
+  transition: all .15s;
+}
+.expand-btn:hover { color: #58a6ff; border-color: #58a6ff; }
+.expand-btn.open { transform: rotate(180deg); color: #58a6ff; border-color: #58a6ff; }
+
+/* badges */
+.status-badge {
+  display: inline-block;
+  font-size: 10px;
+  padding: 1px 8px;
+  border-radius: 10px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.status-active { background: #3fb95022; color: #3fb950; }
+.status-inactive { background: #f8514922; color: #f85149; }
+
+/* pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+.page-btn {
+  background: #161b22;
+  border: 1px solid #21262d;
+  color: #8b949e;
+  border-radius: 8px;
+  min-width: 34px;
+  height: 34px;
+  padding: 0 10px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 13px;
+  transition: all .15s;
+}
+.page-btn:hover:not(:disabled) { color: #58a6ff; border-color: #58a6ff; }
+.page-btn.active { background: #58a6ff; border-color: #58a6ff; color: #0d1117; font-weight: 700; }
+.page-btn:disabled { opacity: .35; cursor: default; }
+.page-info { color: #484f58; font-size: 12px; }
+
+/* ========== MODAL ========== */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.6);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.modal-overlay.open { display: flex; }
+.modal {
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 14px;
+  width: 100%;
+  max-width: 560px;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 24px;
+}
+.modal h2 {
+  font-size: 17px;
+  color: #f0f6fc;
+  margin-bottom: 18px;
+}
+.modal-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.modal-field { display: flex; flex-direction: column; gap: 5px; }
+.modal-field.full { grid-column: 1 / -1; }
+.modal-field label { font-size: 12px; color: #8b949e; }
+.modal-field input, .modal-field select {
+  background: #0d1117;
+  border: 1px solid #21262d;
+  border-radius: 8px;
+  padding: 9px 12px;
+  color: #e6edf3;
+  font-size: 13px;
+  font-family: inherit;
+}
+.modal-field input:focus, .modal-field select:focus { outline: none; border-color: #58a6ff; }
+.modal-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  justify-content: flex-end;
+}
+.btn {
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 13px;
+  font-family: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity .15s;
+}
+.btn:hover { opacity: .85; }
+.btn-primary { background: #58a6ff; color: #0d1117; }
+.btn-ghost { background: #21262d; color: #8b949e; }
+
+.village-tag {
+  display: inline-block;
+  font-size: 11px;
+  padding: 2px 10px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+.tag-seyedkola { background: #3fb95022; color: #3fb950; }
+.tag-ghoran { background: #d2992222; color: #d29922; }
+.tag-guneh { background: #bc8cff22; color: #bc8cff; }
+.tag-shirdar { background: #f778ba22; color: #f778ba; }
+
+.own-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #d29922, #f778ba);
+  color: #0d1117;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 1px 8px;
+  border-radius: 10px;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+.amenity-icons { font-size: 13px; letter-spacing: 2px; }
+
+.price-cell { font-weight: 600; direction: ltr; text-align: left; white-space: nowrap; }
+.price-cell .unit { font-weight: 400; color: #8b949e; font-size: 11px; }
+.rating-cell { direction: ltr; text-align: left; white-space: nowrap; }
+.star { color: #d29922; }
+.review-count { color: #8b949e; font-size: 11px; }
+.link-cell a { color: #58a6ff; text-decoration: none; font-size: 12px; }
+.link-cell a:hover { text-decoration: underline; }
+
+.price-bar-wrap {
+  width: 100%;
+  height: 6px;
+  background: #1c2128;
+  border-radius: 3px;
+  margin-top: 4px;
+  direction: ltr;
+}
+.price-bar {
+  height: 100%;
+  border-radius: 3px;
+  background: linear-gradient(90deg, #3fb950, #d29922, #f778ba);
+  transition: width .4s;
+}
+
+/* ========== FOOTER ========== */
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #484f58;
+  font-size: 13px;
+  border-top: 1px solid #21262d;
+  margin-top: 30px;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 640px) {
+  body { padding: 10px; }
+  header h1 { font-size: 22px; }
+  .stats { grid-template-columns: repeat(2, 1fr); }
+  .village-grid { grid-template-columns: 1fr; }
+  .charts-grid { grid-template-columns: 1fr; }
+  th, td { padding: 8px 10px; font-size: 12px; }
+}
+
+/* ========== LOADING ========== */
+.loading { text-align: center; padding: 60px 20px; color: #8b949e; }
+.spinner {
+  width: 36px; height: 36px;
+  border: 3px solid #21262d;
+  border-top-color: #58a6ff;
+  border-radius: 50%;
+  animation: spin .8s linear infinite;
+  margin: 0 auto 12px;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+</style>
+</head>
+<body>
+
+<div class="container" id="app">
+
+  <!-- HEADER -->
+  <header>
+    <h1>🏡 ردیاب قیمت کلبه‌های بابلکنار</h1>
+    <p>پایش قیمت رقبا در روستاهای سیدکلا · قرآن تالار · گونه کلا · شیردارکلا</p>
+    <div class="badge" id="updateBadge">📅 آخرین به‌روزرسانی: —</div>
+  </header>
+
+  <!-- STATS -->
+  <div class="stats" id="statsRow"></div>
+
+  <!-- CHARTS -->
+  <div class="section-title">📈 تحلیل قیمت</div>
+  <div class="charts-grid">
+    <div class="chart-card">
+      <h3>میانگین قیمت هر روستا (تومان/شب)</h3>
+      <div class="chart-box"><canvas id="chartAvgPrice"></canvas></div>
+      <div class="chart-fallback" id="fallbackAvgPrice">نمودار در دسترس نیست (نیاز به اینترنت)</div>
+    </div>
+    <div class="chart-card">
+      <h3>قیمت × امتیاز</h3>
+      <div class="chart-box"><canvas id="chartScatter"></canvas></div>
+      <div class="chart-fallback" id="fallbackScatter">نمودار در دسترس نیست (نیاز به اینترنت)</div>
+      <div class="chart-legend" id="chartLegend"></div>
+    </div>
+  </div>
+
+  <!-- VILLAGE CARDS -->
+  <div class="section-title">📊 خلاصه روستاها</div>
+  <div class="village-grid" id="villageGrid"></div>
+
+  <!-- TOOLBAR -->
+  <div class="section-title">
+    📋 لیست کامل کلبه‌ها
+    <span class="count" id="totalCount"></span>
+  </div>
+  <div class="toolbar">
+    <input class="search-box" id="searchBox" placeholder="جستجو در عنوان کلبه..." oninput="renderTable()">
+    <button class="btn btn-ghost" onclick="resetData()" title="پاک کردن ویرایش‌ها و برگشت به دیتای اصلی">↺ بازنشانی</button>
+    <select class="filter-select" id="villageFilter" onchange="renderTable()">
+      <option value="all">همه روستاها</option>
+    </select>
+    <select class="filter-select" id="roomsFilter" onchange="renderTable()">
+      <option value="all">همه خواب‌ها</option>
+      <option value="1">۱ خوابه</option>
+      <option value="2">۲ خوابه</option>
+      <option value="3">۳+ خوابه</option>
+    </select>
+    <select class="filter-select" id="pageSizeSelect" onchange="changePageSize(this.value)">
+      <option value="10">۱۰ در هر صفحه</option>
+      <option value="15" selected>۱۵ در هر صفحه</option>
+      <option value="25">۲۵ در هر صفحه</option>
+      <option value="50">۵۰ در هر صفحه</option>
+      <option value="all">همه در یک صفحه</option>
+    </select>
+    <div class="price-range">
+      <label>قیمت:</label>
+      <input class="filter-price" id="priceMin" type="number" placeholder="از" min="0" step="100000" oninput="renderTable()">
+      <span style="color:#484f58">—</span>
+      <input class="filter-price" id="priceMax" type="number" placeholder="تا" min="0" step="100000" oninput="renderTable()">
+    </div>
+    <div class="filter-extras">
+      <label><input type="checkbox" id="jacuzziFilter" onchange="renderTable()"> 🛁 جکوزی</label>
+      <label><input type="checkbox" id="poolFilter" onchange="renderTable()"> 🏊 استخر</label>
+    </div>
+    <span class="hint">💡 مرتب‌سازی: روی عنوان ستون‌ها کلیک کنید</span>
+  </div>
+
+  <!-- TABLE -->
+  <div class="table-wrap" id="tableWrap">
+    <div class="loading"><div class="spinner"></div>در حال بارگذاری...</div>
+  </div>
+  <div class="pagination" id="pagination"></div>
+
+  <!-- FOOTER -->
+  <footer>
+    Jajiga Tracker · پروژه Swiss Chalet Babolkenar · <span id="footerCount">—</span> کلبه
+  </footer>
+
+</div>
+
+<div class="toast" id="toast"></div>
+
+<!-- EDIT MODAL -->
+<div class="modal-overlay" id="editModal">
+  <div class="modal">
+    <h2 id="editModalTitle">ویرایش کلبه</h2>
+    <div class="modal-grid">
+      <div class="modal-field full">
+        <label>عنوان</label>
+        <input type="text" id="edTitle">
+      </div>
+      <div class="modal-field">
+        <label>میزبان</label>
+        <input type="text" id="edHost">
+      </div>
+      <div class="modal-field">
+        <label>روستا</label>
+        <select id="edVillage">
+          <option value="سیدکلا">سیدکلا</option>
+          <option value="قرآن تالار">قرآن تالار</option>
+          <option value="گونه کلا">گونه کلا</option>
+          <option value="شیردارکلا">شیردارکلا</option>
+        </select>
+      </div>
+      <div class="modal-field">
+        <label>قیمت (تومان/شب)</label>
+        <input type="number" id="edPrice" min="0" step="10000">
+      </div>
+      <div class="modal-field">
+        <label>اتاق خواب</label>
+        <input type="number" id="edRooms" min="0">
+      </div>
+      <div class="modal-field">
+        <label>متراژ (متر)</label>
+        <input type="number" id="edFloor" min="0">
+      </div>
+      <div class="modal-field">
+        <label>ظرفیت (نفر)</label>
+        <input type="number" id="edGuests" min="0">
+      </div>
+      <div class="modal-field">
+        <label>امتیاز</label>
+        <input type="number" id="edRating" min="0" max="5" step="0.1">
+      </div>
+      <div class="modal-field">
+        <label>نظرات</label>
+        <input type="number" id="edReviews" min="0">
+      </div>
+      <div class="modal-field">
+        <label>وضعیت</label>
+        <select id="edActive">
+          <option value="1">فعال</option>
+          <option value="0">غیرفعال</option>
+        </select>
+      </div>
+      <div class="modal-field">
+        <label>امکانات</label>
+        <select id="edAmenities">
+          <option value="">—</option>
+          <option value="j">جکوزی</option>
+          <option value="p">استخر</option>
+          <option value="jp">جکوزی + استخر</option>
+        </select>
+      </div>
+    </div>
+    <div class="modal-actions">
+      <button class="btn btn-ghost" onclick="closeEdit()">انصراف</button>
+      <button class="btn btn-primary" onclick="saveEdit()">ذخیره</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// ========== FULL DATA ==========
+const EMBEDDED_DATA = {"meta":{"last_updated":"2026-07-30","source":"jajiga.com","region":"بابلکنار","type":"cottage","total_cabins":52},"villages":{}};
+
+const ALL_CABINS = [
+  {village:"سیدکلا",host:"محمدرضا",id:3195933,title:"کلبه سوئیسی نزدیک لفور",price:2200000,rooms:1,floor:65,guests:4,rating:4.5,reviews:28,jacuzzi:0,pool:0,own:false,active:true,url:"https://www.jajiga.com/room/3195933"},
+  {village:"سیدکلا",host:"ابوالفضل",id:3206573,title:"کلبه چوبی دوبلکس نزدیک لفور",price:2000000,rooms:2,floor:60,guests:6,rating:4.7,reviews:117,jacuzzi:0,pool:0,own:false,active:true,url:"https://www.jajiga.com/room/3206573"},
+  {village:"سیدکلا",host:"حسن",id:3179336,title:"کلبه سوئیسی با وان جکوزی",price:1900000,rooms:1,floor:68,guests:5,rating:4.8,reviews:174,jacuzzi:1,pool:0,own:false,active:true,url:"https://www.jajiga.com/room/3179336"},
+  {village:"سیدکلا",host:"عیسی",id:3181918,title:"کلبه سوئیسی جکوزی دار نزدیک لفور",price:1900000,rooms:1,floor:78,guests:7,rating:4.5,reviews:281,jacuzzi:1,pool:0,own:false,active:true,url:"https://www.jajiga.com/room/3181918"},
+  {village:"سیدکلا",host:"امیر",id:3240445,title:"کلبه سوئیسی با وان جکوزی",price:1980000,rooms:1,floor:100,guests:5,rating:4.7,reviews:32,jacuzzi:1,pool:0,own:false,active:true,url:"https://www.jajiga.com/room/3240445"},
+  {village:"سیدکلا",host:"لیلا",id:3190700,title:"اجاره کلبه چوبی",price:2490000,rooms:2,floor:100,guests:6,rating:4.9,reviews:38,jacuzzi:0,pool:0,own:false,active:true,url:"https://www.jajiga.com/room/3190700"},
+  {village:"سیدکلا",host:"سیدمهدی",id:3293951,title:"کلبه سوئیسی",price:2500000,rooms:1,floor:40,guests:6,rating:4.9,reviews:19,jacuzzi:0,pool:0,own:false,active:true,url:"https://www.jajiga.com/room/3293951"},
+  {village:"سیدکلا",host:"حبیب",id:3237859,title:"کلبه سوئیسی",price:2200000,rooms:1,floor:50,guests:4,rating:4.7,reviews:0,jacuzzi:0,pool:0,own:false,active:true,url:"https://www.jajiga.com/room/3237859"},
+  {village:"سیدکلا",host:"میراحسان",id:3149747,title:"کلبه دوبلکس",price:2500000,rooms:1,floor:56,guests:5,rating:4.5,reviews:28,jacuzzi:0,pool:0,own:false,active:true,url:"https://www.jajiga.com/room/3149747"},
+  {village:"سیدکلا",host:"لیلا",id:3225446,title:"کلبه سوئیسی با جکوزی",price:2700000,rooms:1,floor:80,guests:4,rating:4.9,reviews:40,jacuzzi:1,pool:0,own:false,active:true,url:"https://www.jajiga.com/room/3225446"},
+  {village:"سیدکلا",host:"محدثه",id:3297585,title:"کلبه سوئیسی",price:2750000,rooms:1,floor:100,guests:6,rating:5.0,reviews:4,jacuzzi:0,pool:0,own:true,active:true,url:"https://www.jajiga.com/room/3297585"},
+  {village:"سیدکلا",host:"یوسفعلی",id:3215808,title:"کلبه سوئیسی جکوزی دار",price:5000000,rooms:2,floor:130,guests:6,rating:4.5,reviews:21,jacuzzi:1,pool:0,own:false,active:true,url:"https://www.jajiga.com/room/3215808"},
+  {village:"سیدکلا",host:"عاطفه",id:3206720,title:"کلبه چوبی جکوزی دار",price:5500000,rooms:2,floor:75,guests:7,rating:4.7,reviews:10,jacuzzi:1,pool:0,own:false,active:true,url:"https://www.jajiga.com/room/3206720"},
+  {village:"سیدکلا",host:"کاظم",id:3253520,title:"اجاره کلبه سوئیسی",price:4000000,rooms:2,floor:80,guests:8,rating:5.0,reviews:1,jacuzzi:0,pool:0,own:false,active:true,url:"https://www.jajiga.com/room/3253520"},
+  {village:"سیدکلا",host:"محمدرضا",id:3198234,title:"اجاره کلبه سوئدی نزدیک لفور",price:1680000,rooms:1,floor:80,guests:4,rating:4.2,reviews:13,jacuzzi:0,pool:0,own:false,active:true,url:"https://www.jajiga.com/room/3198234"},
+  {village:"قرآن تالار",host:"معصومه",id:3285158,title:"کلبه سوئیسی",price:1400000,rooms:1,floor:70,guests:7,rating:4.7,reviews:11,jacuzzi:0,pool:0,own:false,active:true,url:"https://www.jajiga.com/room/3285158"},
+  {village:"قرآن تالار",host:"مهدی",id:3212511,title:"کلبه چوبی دوبلکس",price:1600000,rooms:1,floor:40,guests:6,rating:4.8,reviews:34,jacuzzi:0,pool:0,own:false,active:true,url:"https://www.jajiga.com/room/3212511"},
+  {village:"قرآن تالار",host:"معصومه",id:3283885,title:"کلبه سوئیسی جکوزی دار",price:2000000,rooms:1,floor:70,guests:6,rating:4.5,reviews:14,jacuzzi:1,pool:0,own:false,active:true,url:"https://www.jajiga.com/room/3283885"},
+  {village:"قرآن تالار",host:"محسن",id:3289641,title:"کلبه سوئیسی با جکوزی",price:2200000,rooms:2,floor:75,guests:6,rating:4.6,reviews:0,jacuzzi:1,pool:0,own:false,active:true,url:"https://www.jajiga.com/room/3289641"},
+  {village:"قرآن تالار",host:"رضا",id:3291421,title:"کلبه با وان جکوزی",price:2650000,rooms:1,floor:75,guests:5,rating:4.9,reviews:56,jacuzzi:1,pool:0,own:false,active:true,url:"https://www.jajiga.com/room/3291421"},
+  {village:"قرآن تالار",host:"محسن",id:3289341,title:"کلبه سوئیسی رو به جنگل",price:2800000,rooms:2,floor:90,guests:6,rating:4.8,reviews:0,jacuzzi:0,pool:0,own:false,active:true,url:"https://www.jajiga.com/room/3289341"},
+  {village:"قرآن تالار",host:"محسن",id:3293846,title:"کلبه بالکن دار با جکوزی",price:3200000,rooms:3,floor:130,guests:6,rating:4.6,reviews:18,jacuzzi:1,pool:0,own:false,active:true,url:"https://www.jajiga.com/room/3293846"},
+  {village:"قرآن تالار",host:"محسن",id:3212136,title:"کلبه سوئیسی جکوزی دار",price:3200000,rooms:2,floor:70,guests:6,rating:4.7,reviews:171,jacuzzi:1,pool:0,own:false,active:true,url:"https://www.jajiga.com/room/3212136"},
+  {village:"قرآن تالار",host:"رضا",id:3281922,title:"کلبه چوبی",price:3000000,rooms:1,floor:110,guests:4,rating:0,reviews:0,jacuzzi:0,pool:0,own:false,active:true,url:"https://www.jajiga.com/room/3281922"},
+  {village:"گونه کلا",host:"عبدالله",id:3228941,title:"اجاره کلبه چوبی",price:1500000,rooms:1,floor:70,guests:4,rating:4.8,reviews:20,jacuzzi:0,pool:0,own:false,active:true,url:"https://www.jajiga.com/room/3228941"},
+  {village:"گونه کلا",host:"سید ابراهیم",id:3240255,title:"کلبه سوئیسی استخردار",price:8100000,rooms:3,floor:180,guests:10,rating:4.7,reviews:54,jacuzzi:0,pool:1,own:false,active:true,url:"https://www.jajiga.com/room/3240255"},
+  {village:"گونه کلا",host:"الناز",id:3186964,title:"کلبه سوئیسی با جکوزی",price:3700000,rooms:1,floor:150,guests:4,rating:5.0,reviews:113,jacuzzi:1,pool:0,own:false,active:true,url:"https://www.jajiga.com/room/3186964"},
+  {village:"گونه کلا",host:"احمدرضا",id:3292527,title:"کلبه جنگلی استخردار - ۳ خوابه",price:8100000,rooms:3,floor:180,guests:10,rating:4.5,reviews:12,jacuzzi:0,pool:1,own:false,active:true,url:"https://www.jajiga.com/room/3292527"},
+  {village:"گونه کلا",host:"مهرنوش",id:3290627,title:"کلبه سوئیسی",price:0,rooms:1,floor:52,guests:4,rating:5.0,reviews:1,jacuzzi:0,pool:0,own:false,active:false,url:"https://www.jajiga.com/room/3290627"},
+  {village:"گونه کلا",host:"شهریار",id:3228478,title:"کلبه سوئیسی استخردار",price:7000000,rooms:2,floor:200,guests:6,rating:4.8,reviews:31,jacuzzi:0,pool:1,own:false,active:true,url:"https://www.jajiga.com/room/3228478"},
+  {village:"گونه کلا",host:"پویا",id:3285480,title:"کلبه جکوزی دار",price:2990000,rooms:1,floor:35,guests:4,rating:5.0,reviews:1,jacuzzi:1,pool:0,own:false,active:true,url:"https://www.jajiga.com/room/3285480"},
+  {village:"گونه کلا",host:"مهدی",id:3259364,title:"کلبه سوئیسی",price:3500000,rooms:2,floor:70,guests:6,rating:4.5,reviews:5,jacuzzi:0,pool:0,own:false,active:true,url:"https://www.jajiga.com/room/3259364"},
+  {village:"گونه کلا",host:"امیر حسین",id:3298479,title:"کلبه سوئیسی",price:1500000,rooms:2,floor:75,guests:6,rating:4.8,reviews:3,jacuzzi:0,pool:0,own:false,active:true,url:"https://www.jajiga.com/room/3298479"},
+  {village:"گونه کلا",host:"سمیرا",id:3224334,title:"اجاره کلبه سوئیسی",price:3000000,rooms:1,floor:80,guests:8,rating:5.0,reviews:1,jacuzzi:0,pool:0,own:false,active:true,url:"https://www.jajiga.com/room/3224334"},
+  {village:"شیردارکلا",host:"ابوالحسن",id:3207306,title:"اجاره کلبه سوئیسی",price:1300000,rooms:1,floor:70,guests:6,rating:4.6,reviews:24,jacuzzi:0,pool:0,own:false,active:true,url:"https://www.jajiga.com/room/3207306"},
+  {village:"شیردارکلا",host:"نیره",id:3248416,title:"اجاره کلبه سوئیسی",price:1850000,rooms:1,floor:70,guests:5,rating:4.3,reviews:6,jacuzzi:0,pool:0,own:false,active:true,url:"https://www.jajiga.com/room/3248416"},
+  {village:"شیردارکلا",host:"محمدرضا",id:3258434,title:"اجاره کلبه سوئیسی",price:2000000,rooms:1,floor:60,guests:6,rating:4.8,reviews:33,jacuzzi:0,pool:0,own:false,active:true,url:"https://www.jajiga.com/room/3258434"},
+  {village:"شیردارکلا",host:"مجتبی",id:3279598,title:"کلبه سوئیسی",price:2950000,rooms:1,floor:110,guests:6,rating:4.7,reviews:15,jacuzzi:0,pool:0,own:false,active:true,url:"https://www.jajiga.com/room/3279598"},
+  {village:"شیردارکلا",host:"علی",id:3199443,title:"اجاره کلبه چوبی",price:2980000,rooms:1,floor:75,guests:6,rating:5.0,reviews:1,jacuzzi:0,pool:0,own:false,active:true,url:"https://www.jajiga.com/room/3199443"},
+  {village:"شیردارکلا",host:"سعید",id:3209080,title:"کلبه سوئیسی استخردار",price:3000000,rooms:1,floor:70,guests:4,rating:4.4,reviews:9,jacuzzi:0,pool:1,own:false,active:true,url:"https://www.jajiga.com/room/3209080"},
+  {village:"شیردارکلا",host:"لیلا",id:3305898,title:"کلبه سوئیسی",price:3500000,rooms:1,floor:75,guests:4,rating:0,reviews:0,jacuzzi:0,pool:0,own:false,active:true,url:"https://www.jajiga.com/room/3305898"},
+  {village:"شیردارکلا",host:"وحید",id:3264357,title:"کلبه چوبی جکوزی دار",price:3600000,rooms:1,floor:142,guests:6,rating:4.8,reviews:26,jacuzzi:1,pool:0,own:false,active:true,url:"https://www.jajiga.com/room/3264357"},
+  {village:"شیردارکلا",host:"احسان",id:3280978,title:"کلبه با وان جکوزی - ط۳",price:4000000,rooms:2,floor:85,guests:8,rating:4.6,reviews:44,jacuzzi:1,pool:0,own:false,active:true,url:"https://www.jajiga.com/room/3280978"},
+  {village:"شیردارکلا",host:"سپیده",id:3283844,title:"کلبه سوئیسی با جکوزی",price:4200000,rooms:2,floor:153,guests:8,rating:3.9,reviews:4,jacuzzi:1,pool:0,own:false,active:true,url:"https://www.jajiga.com/room/3283844"},
+  {village:"شیردارکلا",host:"عقیل",id:3224492,title:"کلبه سوئیسی استخردار",price:6200000,rooms:2,floor:100,guests:6,rating:4.7,reviews:4,jacuzzi:0,pool:1,own:false,active:true,url:"https://www.jajiga.com/room/3224492"},
+  {village:"شیردارکلا",host:"ضرغام",id:3222812,title:"کلبه چوبی استخردار",price:4900000,rooms:2,floor:105,guests:8,rating:4.9,reviews:25,jacuzzi:0,pool:1,own:false,active:true,url:"https://www.jajiga.com/room/3222812"},
+  {village:"شیردارکلا",host:"علیرضا",id:3154396,title:"کلبه چوبی جکوزی دار",price:4950000,rooms:0,floor:70,guests:5,rating:4.7,reviews:29,jacuzzi:1,pool:0,own:false,active:true,url:"https://www.jajiga.com/room/3154396"},
+  {village:"شیردارکلا",host:"کاوه",id:3234782,title:"اجاره کلبه سوئیسی",price:5500000,rooms:1,floor:65,guests:4,rating:4.3,reviews:25,jacuzzi:0,pool:0,own:false,active:true,url:"https://www.jajiga.com/room/3234782"},
+  {village:"شیردارکلا",host:"علیرضا",id:3176224,title:"کلبه سوئیسی استخردار",price:6820000,rooms:2,floor:90,guests:5,rating:5.0,reviews:36,jacuzzi:0,pool:1,own:false,active:true,url:"https://www.jajiga.com/room/3176224"},
+  {village:"شیردارکلا",host:"محمد مهدی",id:3178917,title:"کلبه سوئیسی استخردار",price:7800000,rooms:3,floor:120,guests:6,rating:4.9,reviews:163,jacuzzi:0,pool:1,own:false,active:true,url:"https://www.jajiga.com/room/3178917"},
+  {village:"شیردارکلا",host:"لیلا",id:3304015,title:"کلبه سوئیسی با استخر و جکوزی",price:8000000,rooms:2,floor:180,guests:6,rating:4.3,reviews:3,jacuzzi:1,pool:1,own:false,active:true,url:"https://www.jajiga.com/room/3304015"},
+  {village:"شیردارکلا",host:"میلاد",id:3190268,title:"کلبه چوبی - ط بالا",price:2000000,rooms:1,floor:55,guests:6,rating:4.8,reviews:24,jacuzzi:0,pool:0,own:false,active:true,url:"https://www.jajiga.com/room/3190268"},
+];
+
+// ========== VILLAGE COLORS ==========
+const VILLAGE_COLORS = {
+  "سیدکلا": "#3fb950",
+  "قرآن تالار": "#d29922",
+  "گونه کلا": "#bc8cff",
+  "شیردارکلا": "#f778ba"
+};
+const VILLAGE_ORDER = ["سیدکلا", "قرآن تالار", "گونه کلا", "شیردارکلا"];
+
+// ========== GROUP BY VILLAGE ==========
+const GROUPED = {};
+ALL_CABINS.forEach(c => {
+  if (!GROUPED[c.village]) GROUPED[c.village] = [];
+  GROUPED[c.village].push(c);
+});
+
+// ========== HELPERS ==========
+function villageTag(v) {
+  const map = {
+    "سیدکلا": "tag-seyedkola",
+    "قرآن تالار": "tag-ghoran",
+    "گونه کلا": "tag-guneh",
+    "شیردارکلا": "tag-shirdar"
+  };
+  return map[v] || "";
+}
+
+function fmtPrice(p) {
+  if (!p) return '\u2014';
+  return p.toLocaleString('en-US') + ' <span class="unit">تومان</span>';
+}
+
+function fmtMillions(v) {
+  if (!v) return '0';
+  return (v / 1e6).toFixed(2).replace(/\.?0+$/, '') + 'M';
+}
+
+function fmtRating(r, n) {
+  if (!r && !n) return '\u2014';
+  const stars = r ? '<span class="star">★</span> ' + r.toFixed(1) : '';
+  const revs = n ? ' <span class="review-count">(' + n + ')</span>' : '';
+  return stars + revs;
+}
+
+function fmtAmenities(c) {
+  let s = '';
+  if (c.jacuzzi) s += '🛁';
+  if (c.pool) s += '🏊';
+  return s;
+}
+
+// ========== RENDER STATS ==========
+function renderStats() {
+  const el = document.getElementById('statsRow');
+  const withPrice = ALL_CABINS.filter(c => c.price > 0);
+  const prices = withPrice.map(c => c.price);
+  const min = Math.min(...prices);
+  const max = Math.max(...prices);
+  const avg = Math.round(prices.reduce((a,b)=>a+b,0) / prices.length);
+  const ratings = ALL_CABINS.filter(c => c.rating > 0);
+  const avgRating = ratings.reduce((a,b)=>a+b.rating,0) / ratings.length;
+  const totalReviews = ALL_CABINS.reduce((a,b)=>a+(b.reviews||0),0);
+
+  el.innerHTML = `
+    <div class="stat-card green"><div class="num">${ALL_CABINS.length}</div><div class="label">تعداد کلبه‌ها</div></div>
+    <div class="stat-card blue"><div class="num">${min.toLocaleString('en-US')} — ${max.toLocaleString('en-US')}</div><div class="label">بازه قیمت (تومان/شب)</div></div>
+    <div class="stat-card orange"><div class="num">${avg.toLocaleString('en-US')}</div><div class="label">میانگین قیمت (تومان/شب)</div></div>
+    <div class="stat-card purple"><div class="num">${avgRating.toFixed(1)}</div><div class="label">میانگین امتیاز ★</div></div>
+    <div class="stat-card pink"><div class="num">${totalReviews.toLocaleString('en-US')}</div><div class="label">مجموع نظرات</div></div>
+  `;
+}
+
+// ========== RENDER CHARTS ==========
+let charts = {};
+
+function villageAverages() {
+  const out = {};
+  VILLAGE_ORDER.forEach(v => {
+    const cabins = (GROUPED[v] || []).filter(c => c.price > 0);
+    if (!cabins.length) { out[v] = { price: 0, count: 0 }; return; }
+    const avgPrice = cabins.reduce((a,c)=>a+c.price,0) / cabins.length;
+    out[v] = { price: avgPrice, count: cabins.length };
+  });
+  return out;
+}
+
+function renderCharts() {
+  if (typeof Chart === 'undefined') {
+    document.querySelectorAll('.chart-fallback').forEach(el => el.style.display = 'block');
+    document.querySelectorAll('.chart-box canvas').forEach(el => el.style.display = 'none');
+    return;
+  }
+
+  const avgs = villageAverages();
+  const labels = VILLAGE_ORDER;
+  const colors = labels.map(v => VILLAGE_COLORS[v]);
+  const dataPrice = labels.map(v => Math.round(avgs[v].price));
+
+  Chart.defaults.color = '#8b949e';
+  Chart.defaults.borderColor = '#21262d';
+  Chart.defaults.font.family = "'Inter', 'Vazirmatn', sans-serif";
+
+  const baseOpts = {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        callbacks: {
+          label: ctx => ' ' + ctx.parsed.y.toLocaleString('en-US') + ' تومان'
+        }
+      }
+    },
+    scales: {
+      y: { beginAtZero: true, ticks: { callback: v => fmtMillions(v) } }
+    }
+  };
+
+  // Chart 1: avg price per village
+  if (charts.avgPrice) charts.avgPrice.destroy();
+  charts.avgPrice = new Chart(document.getElementById('chartAvgPrice'), {
+    type: 'bar',
+    data: {
+      labels,
+      datasets: [{
+        data: dataPrice,
+        backgroundColor: colors.map(c => c + 'cc'),
+        borderColor: colors,
+        borderWidth: 1,
+        borderRadius: 6
+      }]
+    },
+    options: { ...baseOpts, plugins: { ...baseOpts.plugins, tooltip: { callbacks: { label: ctx => ' میانگین: ' + ctx.parsed.y.toLocaleString('en-US') + ' تومان' } } } }
+  });
+
+  // Chart 2: scatter price x rating
+  const scatterPoints = [];
+  const scatterColors = [];
+  ALL_CABINS.forEach(c => {
+    if (c.price > 0 && c.rating > 0) {
+      scatterPoints.push({ x: c.price / 1e6, y: c.rating });
+      scatterColors.push(VILLAGE_COLORS[c.village] || '#8b949e');
+    }
+  });
+
+  if (charts.scatter) charts.scatter.destroy();
+  charts.scatter = new Chart(document.getElementById('chartScatter'), {
+    type: 'scatter',
+    data: {
+      datasets: [{
+        data: scatterPoints,
+        backgroundColor: scatterColors,
+        pointRadius: 6,
+        pointHoverRadius: 8
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          callbacks: {
+            label: ctx => ' قیمت: ' + ctx.parsed.x + 'M تومان · امتیاز: ' + ctx.parsed.y
+          }
+        }
+      },
+      scales: {
+        x: {
+          title: { display: true, text: 'قیمت (میلیون تومان)' },
+          grid: { color: '#1c2128' }
+        },
+        y: {
+          min: 3.5,
+          max: 5.2,
+          title: { display: true, text: 'امتیاز' },
+          grid: { color: '#1c2128' }
+        }
+      }
+    }
+  });
+
+  // legend
+  const legendEl = document.getElementById('chartLegend');
+  legendEl.innerHTML = VILLAGE_ORDER.map(v =>
+    `<span><span class="dot" style="background:${VILLAGE_COLORS[v]}"></span>${v}</span>`
+  ).join('');
+}
+
+// ========== RENDER VILLAGES ==========
+function renderVillages() {
+  const el = document.getElementById('villageGrid');
+  el.innerHTML = VILLAGE_ORDER.map(v => {
+    const cabins = GROUPED[v] || [];
+    const withPrice = cabins.filter(c => c.price > 0);
+    const prices = withPrice.map(c => c.price);
+    const minP = prices.length ? Math.min(...prices) : 0;
+    const maxP = prices.length ? Math.max(...prices) : 0;
+    const avgP = prices.length ? Math.round(prices.reduce((a,b)=>a+b,0)/prices.length) : 0;
+    const rated = cabins.filter(c => c.rating > 0);
+    const avgR = rated.length ? rated.reduce((a,b)=>a+b.rating,0)/rated.length : 0;
+    return `<div class="village-card" data-village="${v}">
+      <div class="v-name">${v}</div>
+      <div class="v-info">
+        <strong>${cabins.length}</strong> کلبه ·
+        <strong>${minP.toLocaleString('en-US')}</strong> تا <strong>${maxP.toLocaleString('en-US')}</strong> تومان<br>
+        میانگین: <strong>${avgP.toLocaleString('en-US')}</strong> تومان · ★ <strong>${avgR.toFixed(1)}</strong>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+// ========== TABLE STATE ==========
+const DEFAULT_PAGE_SIZE = 15;
+let tableState = {
+  sortKey: 'price',
+  sortDir: 'asc',
+  page: 1,
+  pageSize: DEFAULT_PAGE_SIZE, // number, or Infinity for "all"
+  expanded: {} // id -> true
+};
+
+const SORT_COLS = {
+  title: { label: 'عنوان', val: c => c.title },
+  host: { label: 'میزبان', val: c => c.host },
+  village: { label: 'روستا', val: c => c.village },
+  price: { label: 'قیمت/شب', val: c => c.price || (c.active ? 0 : Infinity) },
+  rooms: { label: 'خواب', val: c => c.rooms || 0 },
+  floor: { label: 'متراژ', val: c => c.floor || 0 },
+  guests: { label: 'ظرفیت', val: c => c.guests || 0 },
+  rating: { label: 'امتیاز', val: c => c.rating || 0 },
+  reviews: { label: 'نظرات', val: c => c.reviews || 0 }
+};
+
+// ========== FILTER + RENDER TABLE ==========
+function getFiltered() {
+  const search = document.getElementById('searchBox').value.trim();
+  const villageFilter = document.getElementById('villageFilter').value;
+  const roomsFilter = document.getElementById('roomsFilter').value;
+  const priceMin = parseInt(document.getElementById('priceMin').value, 10) || 0;
+  const priceMax = parseInt(document.getElementById('priceMax').value, 10) || Infinity;
+  const jacuzzi = document.getElementById('jacuzziFilter').checked;
+  const pool = document.getElementById('poolFilter').checked;
+
+  return ALL_CABINS.filter(c => {
+    if (villageFilter !== 'all' && c.village !== villageFilter) return false;
+    if (roomsFilter !== 'all') {
+      const r = c.rooms || 0;
+      if (roomsFilter === '3' ? r < 3 : r !== parseInt(roomsFilter, 10)) return false;
+    }
+    if (c.price > 0 && (c.price < priceMin || c.price > priceMax)) return false;
+    if (jacuzzi && !c.jacuzzi) return false;
+    if (pool && !c.pool) return false;
+    if (search && !c.title.includes(search)) return false;
+    return true;
+  });
+}
+
+function sortRows(rows) {
+  const col = SORT_COLS[tableState.sortKey] || SORT_COLS.price;
+  const dir = tableState.sortDir === 'asc' ? 1 : -1;
+  rows.sort((a, b) => {
+    const va = col.val(a), vb = col.val(b);
+    if (va === vb) return 0;
+    if (va === Infinity) return 1;
+    if (vb === Infinity) return -1;
+    return (va < vb ? -1 : 1) * dir;
+  });
+}
+
+function renderTable() {
+  const filtered = getFiltered();
+  sortRows(filtered);
+
+  const totalPages = Math.max(1, Math.ceil(filtered.length / tableState.pageSize));
+  if (tableState.page > totalPages) tableState.page = totalPages;
+  // Infinity pageSize (all) — avoid 0 * Infinity = NaN
+  const start = tableState.pageSize === Infinity ? 0 : (tableState.page - 1) * tableState.pageSize;
+  const pageRows = tableState.pageSize === Infinity
+    ? filtered
+    : filtered.slice(start, start + tableState.pageSize);
+
+  const maxPrice = Math.max(...ALL_CABINS.map(c => c.price || 0));
+  document.getElementById('totalCount').textContent = filtered.length + ' مورد';
+  document.getElementById('footerCount').textContent = ALL_CABINS.length;
+
+  if (!filtered.length) {
+    document.getElementById('tableWrap').innerHTML = '<div style="padding:40px;text-align:center;color:#8b949e;">🔍 موردی یافت نشد — فیلترها را تغییر دهید</div>';
+    document.getElementById('pagination').innerHTML = '';
+    return;
+  }
+
+  // header
+  const headerCells = Object.entries(SORT_COLS).map(([key, col]) => {
+    const isSorted = tableState.sortKey === key;
+    const icon = isSorted ? (tableState.sortDir === 'asc' ? '▲' : '▼') : '↕';
+    return `<th data-sort="${key}" class="${isSorted ? 'sorted' : ''}" onclick="sortBy('${key}')">
+      ${col.label} <span class="sort-icon">${icon}</span>
+    </th>`;
+  }).join('');
+
+  let html = `<table>
+    <thead><tr>
+      <th style="cursor:default">#</th>
+      ${headerCells}
+      <th style="cursor:default">وضعیت</th>
+      <th style="cursor:default">امکانات</th>
+      <th style="cursor:default">لینک</th>
+      <th style="cursor:default"></th>
+    </tr></thead><tbody>`;
+
+  pageRows.forEach((c, i) => {
+    const idx = start + i + 1;
+    const pct = c.price ? Math.round((c.price / maxPrice) * 100) : 0;
+    const own = c.own ? '<span class="own-badge">اقامتگاه من</span>' : '';
+    const status = c.active
+      ? '<span class="status-badge status-active">فعال</span>'
+      : '<span class="status-badge status-inactive">غیرفعال</span>';
+    const rowClass = (c.own ? 'own-row ' : '') + (c.active ? '' : 'inactive-row ');
+    const expanded = tableState.expanded[c.id];
+
+    html += `<tr class="${rowClass}">
+      <td>${idx}</td>
+      <td>${c.title}${own}</td>
+      <td>${c.host || 'نام میزبان'}</td>
+      <td><span class="village-tag ${villageTag(c.village)}">${c.village}</span></td>
+      <td class="price-cell">${fmtPrice(c.price)}</td>
+      <td><div class="price-bar-wrap"><div class="price-bar" style="width:${pct}%"></div></div></td>
+      <td>${c.rooms || '—'}</td>
+      <td>${c.floor ? c.floor + 'م' : '—'}</td>
+      <td>${c.guests || '—'} نفر</td>
+      <td class="rating-cell">${fmtRating(c.rating, c.reviews)}</td>
+      <td>${status}</td>
+      <td class="amenity-icons">${fmtAmenities(c)}</td>
+      <td class="link-cell"><a href="${c.url}" target="_blank">🔗</a></td>
+      <td><button class="expand-btn" title="ویرایش" onclick="openEdit(${c.id})">✏️</button>
+          <button class="expand-btn ${expanded ? 'open' : ''}" title="جزئیات" onclick="toggleExpand(${c.id})">▼</button></td>
+    </tr>`;
+
+    if (expanded) {
+      html += `<tr class="detail-row"><td colspan="14"><div class="detail-grid">
+        <div class="detail-item"><div class="k">قیمت هر شب</div><div class="v">${c.price ? c.price.toLocaleString('en-US') + ' تومان' : '—'}</div></div>
+        <div class="detail-item"><div class="k">متراژ</div><div class="v">${c.floor ? c.floor + ' متر' : '—'}</div></div>
+        <div class="detail-item"><div class="k">اتاق خواب</div><div class="v">${c.rooms || '—'}</div></div>
+        <div class="detail-item"><div class="k">ظرفیت</div><div class="v">${c.guests || '—'} نفر</div></div>
+        <div class="detail-item"><div class="k">امتیاز</div><div class="v">${c.rating ? '★ ' + c.rating.toFixed(1) : '—'}</div></div>
+        <div class="detail-item"><div class="k">نظرات</div><div class="v">${c.reviews || '—'}</div></div>
+        <div class="detail-item"><div class="k">جکوزی</div><div class="v">${c.jacuzzi ? '✅' : '—'}</div></div>
+        <div class="detail-item"><div class="k">استخر</div><div class="v">${c.pool ? '✅' : '—'}</div></div>
+        <div class="detail-item"><div class="k">وضعیت</div><div class="v">${c.active ? 'فعال' : 'غیرفعال'}</div></div>
+      </div></td></tr>`;
+    }
+  });
+
+  html += `</tbody></table>`;
+  document.getElementById('tableWrap').innerHTML = html;
+  renderPagination(filtered.length, totalPages);
+}
+
+function renderPagination(total, totalPages) {
+  if (tableState.pageSize === Infinity || totalPages <= 1) {
+    document.getElementById('pagination').innerHTML = totalPages <= 1
+      ? `<span class="page-info">${total.toLocaleString('en-US')} کلبه</span>`
+      : '';
+    return;
+  }
+  let html = '<button class="page-btn" onclick="gotoPage(1)" ' + (tableState.page === 1 ? 'disabled' : '') + '>«</button>';
+  html += '<button class="page-btn" onclick="gotoPage(' + (tableState.page - 1) + ')" ' + (tableState.page === 1 ? 'disabled' : '') + '>‹</button>';
+
+  const startP = Math.max(1, tableState.page - 2);
+  const endP = Math.min(totalPages, startP + 4);
+  for (let p = startP; p <= endP; p++) {
+    html += `<button class="page-btn ${p === tableState.page ? 'active' : ''}" onclick="gotoPage(${p})">${p.toLocaleString('en-US')}</button>`;
+  }
+
+  html += '<button class="page-btn" onclick="gotoPage(' + (tableState.page + 1) + ')" ' + (tableState.page === totalPages ? 'disabled' : '') + '>›</button>';
+  html += '<button class="page-btn" onclick="gotoPage(' + totalPages + ')" ' + (tableState.page === totalPages ? 'disabled' : '') + '>»</button>';
+  html += `<span class="page-info">${tableState.page.toLocaleString('en-US')} از ${totalPages.toLocaleString('en-US')} · ${total.toLocaleString('en-US')} کلبه</span>`;
+
+  document.getElementById('pagination').innerHTML = html;
+}
+
+function sortBy(key) {
+  if (tableState.sortKey === key) {
+    tableState.sortDir = tableState.sortDir === 'asc' ? 'desc' : 'asc';
+  } else {
+    tableState.sortKey = key;
+    tableState.sortDir = 'asc';
+  }
+  tableState.page = 1;
+  renderTable();
+}
+
+function gotoPage(p) {
+  tableState.page = p;
+  renderTable();
+}
+
+function changePageSize(val) {
+  tableState.pageSize = val === 'all' ? Infinity : parseInt(val, 10) || DEFAULT_PAGE_SIZE;
+  tableState.page = 1;
+  renderTable();
+}
+
+function toggleExpand(id) {
+  tableState.expanded[id] = !tableState.expanded[id];
+  renderTable();
+}
+
+// ========== EDIT MODAL + LOCALSTORAGE ==========
+const STORAGE_KEY = 'jajiga_tracker_v1';
+let editingId = null;
+
+function saveAllToStorage() {
+  try {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(ALL_CABINS));
+  } catch(e) {
+    console.warn('localStorage not available', e);
+  }
+}
+
+function openEdit(id) {
+  const c = ALL_CABINS.find(x => x.id === id);
+  if (!c) return;
+  editingId = id;
+  document.getElementById('edTitle').value = c.title || '';
+  document.getElementById('edHost').value = c.host || '';
+  document.getElementById('edVillage').value = c.village || 'سیدکلا';
+  document.getElementById('edPrice').value = c.price || 0;
+  document.getElementById('edRooms').value = c.rooms || 0;
+  document.getElementById('edFloor').value = c.floor || 0;
+  document.getElementById('edGuests').value = c.guests || 0;
+  document.getElementById('edRating').value = c.rating || 0;
+  document.getElementById('edReviews').value = c.reviews || 0;
+  document.getElementById('edActive').value = c.active ? '1' : '0';
+  const am = (c.jacuzzi ? 'j' : '') + (c.pool ? 'p' : '');
+  document.getElementById('edAmenities').value = am;
+  document.getElementById('editModalTitle').textContent = 'ویرایش: ' + (c.title || 'کلبه');
+  document.getElementById('editModal').classList.add('open');
+}
+
+function closeEdit() {
+  document.getElementById('editModal').classList.remove('open');
+  editingId = null;
+}
+
+function saveEdit() {
+  const c = ALL_CABINS.find(x => x.id === editingId);
+  if (!c) return;
+
+  const title = document.getElementById('edTitle').value.trim();
+  if (!title) { alert('عنوان نمی‌تواند خالی باشد'); return; }
+
+  c.title = title;
+  c.host = document.getElementById('edHost').value.trim() || 'نام میزبان';
+  c.village = document.getElementById('edVillage').value;
+  c.price = Math.max(0, parseInt(document.getElementById('edPrice').value, 10) || 0);
+  c.rooms = Math.max(0, parseInt(document.getElementById('edRooms').value, 10) || 0);
+  c.floor = Math.max(0, parseInt(document.getElementById('edFloor').value, 10) || 0);
+  c.guests = Math.max(0, parseInt(document.getElementById('edGuests').value, 10) || 0);
+  c.rating = Math.min(5, Math.max(0, parseFloat(document.getElementById('edRating').value) || 0));
+  c.reviews = Math.max(0, parseInt(document.getElementById('edReviews').value, 10) || 0);
+  c.active = document.getElementById('edActive').value === '1';
+  const am = document.getElementById('edAmenities').value;
+  c.jacuzzi = am.includes('j') ? 1 : 0;
+  c.pool = am.includes('p') ? 1 : 0;
+
+  saveAllToStorage();
+  closeEdit();
+  renderTable();
+  renderStats();
+  renderVillages();
+  renderCharts();
+}
+
+function resetData() {
+  if (!confirm('همه ویرایش‌ها پاک شده و دیتا به حالت اولیه برمی‌گردد. ادامه می‌دهید؟')) return;
+  localStorage.removeItem(STORAGE_KEY);
+  location.reload();
+}
+
+// ========== INIT ==========
+function init() {
+  document.getElementById('updateBadge').textContent = '📅 آخرین به‌روزرسانی: ۳۰ تیر ۱۴۰۵';
+
+  // Load saved edits from localStorage (if any)
+  try {
+    const saved = localStorage.getItem(STORAGE_KEY);
+    if (saved) {
+      const parsed = JSON.parse(saved);
+      if (Array.isArray(parsed) && parsed.length > 0) {
+        // MERGE strategy:
+        // - keep every field the user edited (title, price, host, etc.)
+        // - BUT if a stored host is still the placeholder "نام میزبان",
+        //   fill it from the built-in data (real host names we scraped).
+        // This protects user-entered host names while upgrading placeholders.
+        const savedById = {};
+        parsed.forEach(p => { savedById[p.id] = p; });
+        ALL_CABINS.forEach(c => {
+          const sc = savedById[c.id];
+          if (!sc) return;
+          const userHost = (sc.host && sc.host !== 'نام میزبان') ? sc.host : c.host;
+          Object.assign(c, sc);
+          c.host = userHost; // keep user's manual host, or use scraped one
+        });
+        // persist merged result so future loads stay consistent
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(ALL_CABINS));
+      }
+    }
+  } catch(e) {
+    console.warn('Failed to load saved data', e);
+  }
+
+  // populate village filter
+  const sel = document.getElementById('villageFilter');
+  VILLAGE_ORDER.forEach(v => {
+    const opt = document.createElement('option');
+    opt.value = v;
+    opt.textContent = v + ' (' + (GROUPED[v]?.length || 0) + ')';
+    sel.appendChild(opt);
+  });
+
+  renderStats();
+  renderCharts();
+  renderVillages();
+  renderTable();
+}
+
+// close modal on overlay click or Escape
+document.getElementById('editModal').addEventListener('click', e => {
+  if (e.target === document.getElementById('editModal')) closeEdit();
+});
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeEdit();
+});
+
+document.addEventListener('DOMContentLoaded', init);
+</script>
+
+</body>
+</html>
