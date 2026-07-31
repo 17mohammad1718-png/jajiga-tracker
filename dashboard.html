@@ -824,11 +824,9 @@ function fmtMillions(v) {
   return (v / 1e6).toFixed(2).replace(/\.?0+$/, '') + 'M';
 }
 
-function fmtRating(r, n) {
-  if (!r && !n) return '\u2014';
-  const stars = r ? '<span class="star">★</span> ' + r.toFixed(1) : '';
-  const revs = n ? ' <span class="review-count">(' + n + ')</span>' : '';
-  return stars + revs;
+function fmtRating(r) {
+  if (!r) return '\u2014';
+  return '<span class="star">★</span> ' + r.toFixed(1);
 }
 
 function fmtAmenities(c) {
@@ -1125,12 +1123,13 @@ function renderTable() {
       <td>${c.title}${own}</td>
       <td>${c.host || 'نام میزبان'}</td>
       <td><span class="village-tag ${villageTag(c.village)}">${c.village}</span></td>
-      <td class="price-cell">${fmtPrice(c.price)}</td>
-      <td><div class="price-bar-wrap"><div class="price-bar" style="width:${pct}%"></div></div></td>
+      <td class="price-cell">${fmtPrice(c.price)}
+        <div class="price-bar-wrap"><div class="price-bar" style="width:${pct}%"></div></div></td>
       <td>${c.rooms || '—'}</td>
       <td>${c.floor ? c.floor + 'م' : '—'}</td>
       <td>${c.guests || '—'} نفر</td>
-      <td class="rating-cell">${fmtRating(c.rating, c.reviews)}</td>
+      <td class="rating-cell">${fmtRating(c.rating)}</td>
+      <td>${c.reviews || 0}</td>
       <td>${c.success_books || 0}</td>
       <td class="occupancy-cell">${fmtOccupancy(c.occupancy_30)}</td>
       <td>${status}</td>
