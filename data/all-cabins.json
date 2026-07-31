@@ -116,7 +116,7 @@
         "reviews": 32,
         "url": "https://www.jajiga.com/room/3240445",
         "active": true,
-        "host": "امیر",
+        "host": "امیر پورحسین",
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.236484+00:00",
@@ -285,7 +285,7 @@
         "reviews": 21,
         "url": "https://www.jajiga.com/room/3215808",
         "active": true,
-        "host": "یوسفعلی",
+        "host": "آهنگر",
         "price_source": "api_min_price",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.234122+00:00",
@@ -348,7 +348,7 @@
       },
       {
         "id": 3198234,
-        "title": "اجاره کلبه سوئدی نزدیک لفور - ۲",
+        "title": "اجاره کلبه سوئدی نزدیک لفور",
         "price": 1680000,
         "rooms": 1,
         "floor": 80,
@@ -515,7 +515,9 @@
         "occupancy_30": 17,
         "occupancy_30_unavailable": 5,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-07-31T15:35:15.696166+00:00"
+        "last_occupancy_attempt": "2026-07-31T15:35:15.696166+00:00",
+        "jacuzzi": 1,
+        "pool": 0
       }
     ],
     "قرآن تالار": [
@@ -617,7 +619,7 @@
       },
       {
         "id": 3291421,
-        "title": "کلبه با وان‌ جکوزی",
+        "title": "کلبه با وان جکوزی",
         "price": 2650000,
         "rooms": 1,
         "floor": 75,
@@ -660,7 +662,7 @@
         "occupancy_30_total": 30,
         "last_occupancy_attempt": "2026-07-31T15:35:36.536024+00:00",
         "pool": 0,
-        "jacuzzi": 0,
+        "jacuzzi": 1,
         "own": false
       },
       {
@@ -1093,14 +1095,16 @@
         "reviews": 20,
         "url": "https://www.jajiga.com/room/3223870",
         "active": true,
-        "host": "سید میثم",
+        "host": "سید میثم بازدان",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-07-31T14:20:29.234122+00:00",
         "success_books": 20,
         "occupancy_30": 77,
         "occupancy_30_unavailable": 23,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-07-31T15:36:43.057532+00:00"
+        "last_occupancy_attempt": "2026-07-31T15:36:43.057532+00:00",
+        "jacuzzi": 0,
+        "pool": 1
       },
       {
         "id": 3235299,
@@ -1163,7 +1167,9 @@
         "occupancy_30": 13,
         "occupancy_30_unavailable": 4,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-07-31T15:36:52.515068+00:00"
+        "last_occupancy_attempt": "2026-07-31T15:36:52.515068+00:00",
+        "jacuzzi": 0,
+        "pool": 1
       },
       {
         "id": 3252868,
@@ -1431,7 +1437,7 @@
         "occupancy_30_total": 30,
         "last_occupancy_attempt": "2026-07-31T15:37:31.776446+00:00",
         "pool": 0,
-        "jacuzzi": 0,
+        "jacuzzi": 1,
         "own": false
       },
       {
@@ -1786,7 +1792,9 @@
         "occupancy_30": 43,
         "occupancy_30_unavailable": 13,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-07-31T15:38:22.735629+00:00"
+        "last_occupancy_attempt": "2026-07-31T15:38:22.735629+00:00",
+        "jacuzzi": 0,
+        "pool": 1
       },
       {
         "id": 3267118,
@@ -1828,7 +1836,9 @@
         "occupancy_30": 7,
         "occupancy_30_unavailable": 2,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-07-31T15:38:30.815543+00:00"
+        "last_occupancy_attempt": "2026-07-31T15:38:30.815543+00:00",
+        "jacuzzi": 0,
+        "pool": 1
       },
       {
         "id": 3298750,
