@@ -61,7 +61,7 @@ td.title { text-align:right; max-width:220px; overflow:hidden; text-overflow:ell
 
 tbody tr.detail-row > td { padding:0; background:var(--card); }
 .detail-inner { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:14px; padding:16px 18px; text-align:right; }
-.detail-block { background:var(--card2); border:1px solid var(--border); border-radius:10px; padding:12px; }
+.detail-block { background:var(--card2); border:1px solid var(--border); border-radius:10px; padding:12px; min-width:0; overflow:hidden; }
 .detail-block h4 { font-size:12px; color:var(--muted); margin-bottom:8px; font-weight:600; }
 .detail-block h4::after { content:''; display:block; width:34px; height:2px; background:var(--accent); margin-top:4px; border-radius:2px; }
 .feat-chip { display:inline-flex; align-items:center; gap:4px; background:rgba(139,148,158,.1); border:1px solid var(--border); border-radius:8px; padding:3px 8px; font-size:11px; margin:2px; }
@@ -144,6 +144,27 @@ const SORT_COLS = [
 
 let sortKey = null, sortDir = -1;
 let tbody, headRow, statsRow, searchBox;
+
+// Gregorian -> Jalali (month names included)
+const JM = ['فروردین','اردیبهشت','خرداد','تیر','مرداد','شهریور','مهر','آبان','آذر','دی','بهمن','اسفند'];
+function g2j(gy, gm, gd) {
+  const gdm = [0,31,59,90,120,151,181,212,243,273,304,334];
+  const gy2 = gm > 2 ? gy + 1 : gy;
+  let d = 355666 + 365*gy + ~~((gy2+3)/4) - ~~((gy2+99)/100) + ~~((gy2+399)/400) + gd + gdm[gm-1];
+  let jy = -1595 + 33 * ~~(d/12053); d %= 12053;
+  jy += 4 * ~~(d/1461); d %= 1461;
+  if (d > 365) { jy += ~~((d-1)/365); d = (d-1) % 365; }
+  let jm, jd;
+  if (d < 186) { jm = 1 + ~~(d/31); jd = 1 + (d%31); }
+  else { jm = 7 + ~~((d-186)/30); jd = 1 + ((d-186)%30); }
+  return [jy, jm, jd];
+}
+function toJalali(dateStr) {
+  if (!dateStr) return null;
+  const [y,m,d] = dateStr.split('-').map(Number);
+  const [jy,jm,jd] = g2j(y,m,d);
+  return `از ${JM[jm-1]} ${jy}`;
+}
 
 function defaultOrder() { return [...DATA].sort((a,b)=>(a.min_price||0)-(b.min_price||0)); }
 
@@ -266,7 +287,7 @@ function detailHtml(c) {
   const types = (c.types||[]).join('، ') || '—';
   const regions = (c.regions||[]).join('، ') || '—';
   const geo = c.geo ? `${c.geo.lat}, ${c.geo.lng}` : '—';
-  const hostSince = c.host_created_at ? `از ${c.host_created_at}` : '—';
+  const hostSince = toJalali(c.host_created_at) || '—';
   const rt = c.host_response_time === null || c.host_response_time === undefined ? '—' :
     (c.host_response_time < 60 ? `${c.host_response_time} دقیقه` : `${(c.host_response_time/60).toFixed(1)} ساعت`);
   return `<div class="detail-inner">
