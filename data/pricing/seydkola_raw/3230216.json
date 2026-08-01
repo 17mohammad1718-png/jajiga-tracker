@@ -1,0 +1,418 @@
+{
+ "id": 3230216,
+ "status": "active",
+ "units_count": 1,
+ "url": "/room/3230216",
+ "short_url": "/r/1yds",
+ "title": "ویلا دوبلکس با جکوزی در بابلکنار - سیدکلا",
+ "description": "این ویلا دوبلکس دو خوابه با بالکنی دلباز رو به منظره سرسبز سیدکلا در فاصله حدود ۱۵ کیلومتری از شیرگاه و حدود ۳۰ کیلومتری شهر بابل در روستای سیدکلا قرار دارد.\nویلا در طبقه همکف دارای پذیرایی، آشپزخانه، یک اتاق خواب، حمام با سرویس فرنگی و ایرانی می باشد و در طبقه دوم نیز شامل  بالکن دلباز و یک اتاق خواب است.\nحیاط ویلا از یک طرف با دیوار و سه طرف بدون حصار می باشد و میزبان نیز در فاصله نزدیکی از اقامتگاه سکونت دارد، مهمانان گرامی می توانند برای تهیه مایحتاج روزانه خود از سوپرمارکت و نانوایی در فاصله حدود ۵۰۰ متری اقامتگاه استفاده نمایند.\nآب لوله کشی ویلا از طریق چاه تامین می گردد و فاقد کیفیت لازم جهت آشامیدن است لذا توصیه می شود آب معدنی به همراه داشته باشید، همچنین سوخت اقامتگاه از طریق کپسول گاز مایع تامین می گردد.\nپوشش شبکه تلفن همراه برای دو اپراتور ایرانسل و همراه اول در مکالمه خوب و دسترسی به اینترنت به صورت ۴g می باشد.\nمنطقه سوادکوه با برخورداری از آب و هوای دل انگیز و خنک، طبیعت چشم نواز از کوه و جنگل، آبشارهای طبیعی و خروشان نظیر هفت آبشار زال، گزو، پلنگ‌دره با حوضچه های سنگی، سد لفور و پوشش های گیاهی متعدد سفری آرامش بخش و فراموش نشدنی را با جاذبه های بی نظیر برایتان به ارمغان خواهد داشت.",
+ "geo": {
+  "lat": 36.3106,
+  "lng": 52.8037
+ },
+ "province": {
+  "id": "p26",
+  "name": "مازندران",
+  "url": "/s/mazandaran"
+ },
+ "city": {
+  "id": 467,
+  "name": "بابلکنار",
+  "url": "/s/babolkenar"
+ },
+ "pictures": [
+  {
+   "name": "3230216250310121806.jpg",
+   "url": "2025/03/10/3230216250310121806.jpg",
+   "preview": "UECGoF~WNfSz_K%LkBNGJ5R%oMo3yUW=s;xb",
+   "description": "نما ویلا",
+   "created_at": "2025-01-11"
+  },
+  {
+   "name": "3230216240430205116.jpg",
+   "url": "2024/04/30/3230216240430205116.jpg",
+   "preview": "U+Gl3Lt6IUt7~qofM{of?vkCRja}?boLRjaz",
+   "description": "تراس",
+   "created_at": "2024-04-30"
+  },
+  {
+   "name": "3230216250114175337.jpg",
+   "url": "2025/01/14/3230216250114175337.jpg",
+   "preview": "UwF5,IxbM{oz?wt8aKt6-?t7e-of-=ogR%kC",
+   "description": null,
+   "created_at": "2025-01-14"
+  },
+  {
+   "name": "3230216250320090101.jpg",
+   "url": "2025/03/20/3230216250320090101.jpg",
+   "preview": "UaHV;T?]a1.7_MxuV@ofMKjFozaL-otQtRtQ",
+   "description": "جکوزی",
+   "created_at": "2025-03-20"
+  },
+  {
+   "name": "3230216240430205215.jpg",
+   "url": "2024/04/30/3230216240430205215.jpg",
+   "preview": "UfH2NA_3_3_2-;of%Mxu%MWCxut7~qxu%2xu",
+   "description": "نمای ویلا",
+   "created_at": "2024-04-30"
+  },
+  {
+   "name": "3230216240430205149.jpg",
+   "url": "2024/04/30/3230216240430205149.jpg",
+   "preview": "USF$Lh.70Kt6~ptRM{xt%Lt7ofxt~px[Iot7",
+   "description": "چشم انداز",
+   "created_at": "2024-04-30"
+  },
+  {
+   "name": "3230216240627114037.jpg",
+   "url": "2024/06/27/3230216240627114037.jpg",
+   "preview": "UQEUfGRPNa={~9IoWWxts+WVofax$gxZayjZ",
+   "description": "پذیرایی",
+   "created_at": "2024-06-27"
+  },
+  {
+   "name": "3230216240627114043.jpg",
+   "url": "2024/06/27/3230216240627114043.jpg",
+   "preview": "UfG87R~Ut6%1^%-os:t6s.f6WBWB$%s.ayoL",
+   "description": "پذیرایی",
+   "created_at": "2024-06-27"
+  },
+  {
+   "name": "3230216250311093116.jpg",
+   "url": "2025/03/11/3230216250311093116.jpg",
+   "preview": "UVCit1%NtR%1^#R%WTxW^coHkBxa~U%2t7xa",
+   "description": "پذیرایی",
+   "created_at": "2025-03-11"
+  },
+  {
+   "name": "3230216250314213358.jpg",
+   "url": "2025/03/14/3230216250314213358.jpg",
+   "preview": "UeG8v6m*IU%N~pi]WTxu%foHoIt7-:slWAt7",
+   "description": null,
+   "created_at": "2025-03-14"
+  },
+  {
+   "name": "3230216250311093114.jpg",
+   "url": "2025/03/11/3230216250311093114.jpg",
+   "preview": "UYD9beogNb%L^#xaj?t2^$xYWBs.~Vt6NHt7",
+   "description": "پذیرایی",
+   "created_at": "2025-03-11"
+  },
+  {
+   "name": "3230216240627114026.jpg",
+   "url": "2024/06/27/3230216240627114026.jpg",
+   "preview": "UfHBh=i_4oRj~VRjIVayRjWCxtofoIoJt6j[",
+   "description": null,
+   "created_at": "2024-06-27"
+  },
+  {
+   "name": "3230216240430205202.jpg",
+   "url": "2024/04/30/3230216240430205202.jpg",
+   "preview": "UoHU^DWAae%M~pjsRjofs:t7WURjoLWBxat6",
+   "description": "آشپزخانه",
+   "created_at": "2024-04-30"
+  },
+  {
+   "name": "3230216240627114012.jpg",
+   "url": "2024/06/27/3230216240627114012.jpg",
+   "preview": "UCBph7?H004n~pxuIVM{D%ay%MxuRiWBofof",
+   "description": "اتاق خواب  1",
+   "created_at": "2024-06-27"
+  },
+  {
+   "name": "3230216250314213344.jpg",
+   "url": "2025/03/14/3230216250314213344.jpg",
+   "preview": "UcJj#hi_9Z-o?ctSnhwbX:tRr?rq~WaKM{t6",
+   "description": null,
+   "created_at": "2025-03-14"
+  },
+  {
+   "name": "3230216240627114008.jpg",
+   "url": "2024/06/27/3230216240627114008.jpg",
+   "preview": "UrHURd-:IVr=~V%MNGadkCt7j[WBadayofj@",
+   "description": "اتاق خواب  2",
+   "created_at": "2024-06-27"
+  },
+  {
+   "name": "3230216250311093123.jpg",
+   "url": "2025/03/11/3230216250311093123.jpg",
+   "preview": "U$HB}HxuM_xu~pt7Rjt7%Lt7WXofx]ofayof",
+   "description": null,
+   "created_at": "2025-03-11"
+  },
+  {
+   "name": "3230216240629205223.jpg",
+   "url": "2024/06/29/3230216240629205223.jpg",
+   "preview": "UVG921~q%M-p~q-;xut7oft7xuof-:xuxut7",
+   "description": null,
+   "created_at": "2024-06-29"
+  },
+  {
+   "name": "3230216240629205228.jpg",
+   "url": "2024/06/29/3230216240629205228.jpg",
+   "preview": "UgIE^TxuIU-:~qt7Rjt7xuofayj[?bofWBt7",
+   "description": null,
+   "created_at": "2024-06-29"
+  },
+  {
+   "name": "3230216240629205233.jpg",
+   "url": "2024/06/29/3230216240629205233.jpg",
+   "preview": "UaHV6p_3ay%M~q%Moft7t7ayWBRj?bt7WBj[",
+   "description": null,
+   "created_at": "2024-06-29"
+  },
+  {
+   "name": "3230216240627114017.jpg",
+   "url": "2024/06/27/3230216240627114017.jpg",
+   "preview": "UaHKh4~B?b?a^jxZ%2xaIpa{oday%1xtt7xa",
+   "description": null,
+   "created_at": "2024-06-27"
+  },
+  {
+   "name": "3230216240627113715.jpg",
+   "url": "2024/06/27/3230216240627113715.jpg",
+   "preview": "UnI5G3%M01WC~pt79Zaft6WBRjjt%LofNGju",
+   "description": null,
+   "created_at": "2024-06-27"
+  },
+  {
+   "name": "3230216250314213408.jpg",
+   "url": "2025/03/14/3230216250314213408.jpg",
+   "preview": "UJFYuz-:NF-;NGoyoyR*01t7ocIU~pt6ROob",
+   "description": null,
+   "created_at": "2025-03-14"
+  },
+  {
+   "name": "3230216250320090057.jpg",
+   "url": "2025/03/20/3230216250320090057.jpg",
+   "preview": "UeH2.v?cRN%f_N%MadoyMboIo#WA$|xto#t7",
+   "description": null,
+   "created_at": "2025-03-20"
+  },
+  {
+   "name": "3230216250320090053.jpg",
+   "url": "2025/03/20/3230216250320090053.jpg",
+   "preview": "UZI5ra_4bC.7~qt7V?odMbV?t8e--.tRxvxu",
+   "description": null,
+   "created_at": "2025-03-20"
+  },
+  {
+   "name": "32302162605021513588021236.jpg",
+   "url": "2026/05/02/32302162605021513588021236.jpg",
+   "preview": "UDE^}]}@04I;t8WF$z-T0MEM^Os:V?oII@EN",
+   "description": null,
+   "created_at": "2026-05-02"
+  },
+  {
+   "name": "32302162605021513551895437.jpg",
+   "url": "2026/05/02/32302162605021513551895437.jpg",
+   "preview": "UDBDZq^+%Lx@~q%MWANF-;t7RjWB_3ozt7xu",
+   "description": null,
+   "created_at": "2026-05-02"
+  },
+  {
+   "name": "32302162605021513501259655.jpg",
+   "url": "2026/05/02/32302162605021513501259655.jpg",
+   "preview": "UjDw1:x[kB%L.TtRa}o#x{ohf9bJ.9t8j[t7",
+   "description": null,
+   "created_at": "2026-05-02"
+  },
+  {
+   "name": "32302162605021513461981899.jpg",
+   "url": "2026/05/02/32302162605021513461981899.jpg",
+   "preview": "UpE3q[xuWFxu?wxuWXo#%it7WVkD?bt6a}oz",
+   "description": null,
+   "created_at": "2026-05-02"
+  },
+  {
+   "name": "32302162605021513428345750.jpg",
+   "url": "2026/05/02/32302162605021513428345750.jpg",
+   "preview": "UyGSS_xuR*xu.Tt8WBogTfbJoLkCx_ofj?oy",
+   "description": null,
+   "created_at": "2026-05-02"
+  }
+ ],
+ "vr_photo": null,
+ "video_url": null,
+ "allocation": "shared_place",
+ "types": [
+  "villa"
+ ],
+ "regions": [
+  "forest",
+  "rural"
+ ],
+ "floor_area": 45,
+ "land_area": 200,
+ "floors_count": 0,
+ "bedrooms": 2,
+ "sleep_arrange": [
+  {
+   "space_id": 1,
+   "single": 0,
+   "double": 1,
+   "mattress": 0,
+   "sofa_bed": 0,
+   "etc": ""
+  },
+  {
+   "space_id": 2,
+   "single": 0,
+   "double": 1,
+   "mattress": 4,
+   "sofa_bed": 0,
+   "etc": ""
+  },
+  {
+   "space_id": 0,
+   "single": 0,
+   "double": 2,
+   "mattress": 0,
+   "sofa_bed": 0,
+   "etc": ""
+  }
+ ],
+ "sleep_description": null,
+ "guest_number": 4,
+ "max_guest_number": 8,
+ "stays_min": 1,
+ "stays_max": null,
+ "entrance_time_min": 13,
+ "entrance_time_max": 22,
+ "leaving_time": 12,
+ "features": [
+  {
+   "name": "essentials",
+   "description": "مایع ظرفشویی، مایع دستشویی"
+  },
+  {
+   "name": "electricity",
+   "description": null
+  },
+  {
+   "name": "water",
+   "description": "آب لوله کشی چاه و غیر قابل آشامیدن"
+  },
+  {
+   "name": "tv",
+   "description": "تلویزیون معمولی"
+  },
+  {
+   "name": "heating",
+   "description": "یک شعله بخاری گازی در پذیرایی و دو عدد بخاری برقی"
+  },
+  {
+   "name": "cooler",
+   "description": "یک دستگاه کولر پنجره ایی"
+  },
+  {
+   "name": "kitchen",
+   "description": "برای 6 نفر به صورت کامل موجود است."
+  },
+  {
+   "name": "stave",
+   "description": null
+  },
+  {
+   "name": "refrigerator",
+   "description": null
+  },
+  {
+   "name": "vacuumcleaner",
+   "description": null
+  },
+  {
+   "name": "furniture",
+   "description": "مبلمان 5 نفره"
+  },
+  {
+   "name": "table",
+   "description": "۴ نفره"
+  },
+  {
+   "name": "parking",
+   "description": "پارکینگ روباز برای سه خودرو در حیاط"
+  },
+  {
+   "name": "islamictoilet",
+   "description": "با حمام"
+  },
+  {
+   "name": "barbecue",
+   "description": "باربیکیو ذغالی"
+  },
+  {
+   "name": "jacuzzi",
+   "description": "جکوزی 4 نفره"
+  },
+  {
+   "name": "janitor",
+   "description": "میزبان در فاصله نزدیکی اقامتگاه سکونت دارد."
+  },
+  {
+   "name": "bathroom",
+   "description": "با سرویس ایرانی"
+  }
+ ],
+ "properties": [],
+ "additional_feature": null,
+ "additional_safety": null,
+ "rules": [
+  "pet"
+ ],
+ "additional_rule": null,
+ "cancellation_policy": "middle",
+ "min_price": 2000000,
+ "extra_price": 500000,
+ "is_clean": false,
+ "is_new": false,
+ "is_instant": false,
+ "is_plus": false,
+ "success_books": 0,
+ "discounts": [
+  {
+   "percent": 5,
+   "type": "duration",
+   "min_nights": 3
+  },
+  {
+   "percent": 10,
+   "type": "duration",
+   "min_nights": 10
+  }
+ ],
+ "current_discount": null,
+ "current_discount_percent": 0,
+ "ratings": {
+  "count": 2,
+  "total": 3.3,
+  "accuracy": 4,
+  "communication": 4,
+  "cleanliness": 2,
+  "location": 2,
+  "checkin": 5,
+  "value": 2.5,
+  "comments_grouped_by_rating": {
+   "2": 1,
+   "3": 1
+  },
+  "is_recently": false,
+  "is_bad_host": false
+ },
+ "host": {
+  "id": 2096023,
+  "name": "حسین",
+  "avatar": "2024/04/16/2404161455572096023.jpg",
+  "gender": "male",
+  "description": null,
+  "created_at": "2024-05-04",
+  "response_time": 122,
+  "accept_rate": 15,
+  "host_communication_rate": 4
+ },
+ "meta": {
+  "title": "ویلا دوبلکس با جکوزی در بابلکنار - سیدکلا",
+  "description": "اجاره روزانه ویلا جنگلی 2 خوابه در بابلکنار، مازندران برای 8 نفر مهمان با قیمت مناسب و ضمانت تحویل جاجیگا.",
+  "keywords": null
+ }
+}

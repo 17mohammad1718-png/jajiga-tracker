@@ -1,0 +1,581 @@
+{
+ "id": 3237859,
+ "status": "active",
+ "units_count": 1,
+ "url": "/room/3237859",
+ "short_url": "/r/24a3",
+ "title": "کلبه سوئیسی در بابلکنار - سیدکلا",
+ "description": "این کلبه سوئیسی دو خوابه با تراسی دلباز و چشم اندازی زیبا رو به استخر پرورش ماهی در روستای خوش آب و هوای سید کلا واقع شده است که حدود ۱۸ کیلومتر تا جنگل لفور و حدود ۴۰ کیلومتر با شهر شیرگاه فاصله دارد.\nاین کلبه سوئیسی به گونه ای طراحی شده است که در طبقه پایین دارای پذیرایی، آشپزخانه، اتاق خواب حمام با سرویس ایرانی و فرنگی می باشد و در طبقه بالا یک اتاق خواب بدون در قرار دارد.\nمحوطه کلبه با توجه به بافت روستایی منطقه از چهار طرف با فنس محصور است و سرایدار در همسایگی سکونت دارد.\nدر نظر داشته باشید آب لوله کشی کلبه از طریق چاه تامین می گردد و غیر قابل شرب است، لذا توصیه می شود مهمانان گرامی جهت آشامیدن با خود آب معدنی همراه داشته باشند\nبه منظور تهیه مایحتاج روزانه، دسترسی به سوپرمارکت و نانوایی با پیمودن مسافتی در حدود ۵۰۰ متر ممکن است.\nکیفیت آنتن دهی اپراتورهای ایرانسل و همراه اول در مکالمه خوب و پوشش شبکه اینترنت نیز به صورت ۴g می باشد.\nلازم به ذکر است مسیر در ۱۵۰ متر منتهی به اقامتگاه به صورت جاده خاکی و قابل تردد با خودرو می باشد.",
+ "geo": {
+  "lat": 36.3154,
+  "lng": 52.7969
+ },
+ "province": {
+  "id": "p26",
+  "name": "مازندران",
+  "url": "/s/mazandaran"
+ },
+ "city": {
+  "id": 467,
+  "name": "بابلکنار",
+  "url": "/s/babolkenar"
+ },
+ "pictures": [
+  {
+   "name": "3237859240709145333.jpg",
+   "url": "2024/07/09/3237859240709145333.jpg",
+   "preview": "UeGSP=MwIW-=_4IUWCxvxwRjWBj]?boLRjkC",
+   "description": "نمای کلبه",
+   "created_at": "2024-07-09"
+  },
+  {
+   "name": "3237859240709145354.jpg",
+   "url": "2024/07/09/3237859240709145354.jpg",
+   "preview": "UPFY_7-.ja?ZOsR+oekC0NNHkBRk~oxaj[xt",
+   "description": "برکه اختصاصی روبروی کلبه",
+   "created_at": "2024-07-09"
+  },
+  {
+   "name": "3237859240709145205.jpg",
+   "url": "2024/07/09/3237859240709145205.jpg",
+   "preview": "UwFsVrtOM{x[?wt6WTog.9oyWBa~_NoyRjt7",
+   "description": "چشم انداز کلبه",
+   "created_at": "2024-07-09"
+  },
+  {
+   "name": "3237859240709145246.jpg",
+   "url": "2024/07/09/3237859240709145246.jpg",
+   "preview": "UXGus@_MI;-o_1x[NGoeIoNGf6j[%KbGWCxa",
+   "description": "بالکن",
+   "created_at": "2024-07-09"
+  },
+  {
+   "name": "3237859240709145343.jpg",
+   "url": "2024/07/09/3237859240709145343.jpg",
+   "preview": "UcF$eF_No|%M--xtt7t7M^M_oeoJ-;t7oeof",
+   "description": "پذیرایی",
+   "created_at": "2024-07-09"
+  },
+  {
+   "name": "3237859240709144846.jpg",
+   "url": "2024/07/09/3237859240709144846.jpg",
+   "preview": "UKE:3l_N9GRP~ooyWCoeD$IU%fxu-;t7ofof",
+   "description": "پذیرایی",
+   "created_at": "2024-07-09"
+  },
+  {
+   "name": "3237859240709145146.jpg",
+   "url": "2024/07/09/3237859240709145146.jpg",
+   "preview": "UKF$e0_ME1?Y?sbuWVxt9ZM{oLbH?akCRjt6",
+   "description": "بالکن",
+   "created_at": "2024-07-09"
+  },
+  {
+   "name": "3237859240709145049.jpg",
+   "url": "2024/07/09/3237859240709145049.jpg",
+   "preview": "UMG*[@%gIp?G^$Wot7%LW9Rjs:t6~VtRoft6",
+   "description": "پذیرایی",
+   "created_at": "2024-07-09"
+  },
+  {
+   "name": "3237859240709145056.jpg",
+   "url": "2024/07/09/3237859240709145056.jpg",
+   "preview": "UOFh;W=rnh^+~V%0s.xtM{bHR*WB%LadM|t7",
+   "description": "پذیرایی",
+   "created_at": "2024-07-09"
+  },
+  {
+   "name": "3237859240709145054.jpg",
+   "url": "2024/07/09/3237859240709145054.jpg",
+   "preview": "UUE.|V_N%g_3~pxuRk%M-:RjIUjr?bozR*xa",
+   "description": "پذیرایی",
+   "created_at": "2024-07-09"
+  },
+  {
+   "name": "3237859240709145102.jpg",
+   "url": "2024/07/09/3237859240709145102.jpg",
+   "preview": "UNH21M~px]^*~Uxu-p-:xs%L%Mt7~V-;xuoe",
+   "description": "پذیرایی",
+   "created_at": "2024-07-09"
+  },
+  {
+   "name": "3237859240709145052.jpg",
+   "url": "2024/07/09/3237859240709145052.jpg",
+   "preview": "UNEM2nDNMx~q_2RPM{xuROt8RkM{-pn#jZof",
+   "description": "پذیرایی",
+   "created_at": "2024-07-09"
+  },
+  {
+   "name": "3237859240709145213.jpg",
+   "url": "2024/07/09/3237859240709145213.jpg",
+   "preview": "UZGa%c$dsm%0}=sms.%1$yRjofs:?GRjj[jZ",
+   "description": "پذیرایی",
+   "created_at": "2024-07-09"
+  },
+  {
+   "name": "3237859240709145158.jpg",
+   "url": "2024/07/09/3237859240709145158.jpg",
+   "preview": "UbHK:^?Gj@-o]}-nt6s,-QxZoes.~VxZWBxa",
+   "description": "پذیرایی",
+   "created_at": "2024-07-09"
+  },
+  {
+   "name": "3237859240709145324.jpg",
+   "url": "2024/07/09/3237859240709145324.jpg",
+   "preview": "UPG9BR-98_xu~qs,Rjt7D%t7%Ms:xut7s:t7",
+   "description": "پذیرایی",
+   "created_at": "2024-07-09"
+  },
+  {
+   "name": "3237859240709145322.jpg",
+   "url": "2024/07/09/3237859240709145322.jpg",
+   "preview": "UpFicA?wo#t7~q-=ogof%Mt7ofkCx]ozofof",
+   "description": "پذیرایی",
+   "created_at": "2024-07-09"
+  },
+  {
+   "name": "3237859240709144900.jpg",
+   "url": "2024/07/09/3237859240709144900.jpg",
+   "preview": "UcG9Qe?Zt6~obXWUoeWUD*Rjj[M{.6t6oext",
+   "description": "پذیرایی",
+   "created_at": "2024-07-09"
+  },
+  {
+   "name": "3237859240709145051.jpg",
+   "url": "2024/07/09/3237859240709145051.jpg",
+   "preview": "UiJj;r?HR6$y~Vxuaes.%MxtRjM|^*xaM|Rj",
+   "description": "آشپزخانه",
+   "created_at": "2024-07-09"
+  },
+  {
+   "name": "3237859240709145047.jpg",
+   "url": "2024/07/09/3237859240709145047.jpg",
+   "preview": "UnJtL]?bo#%1~VxuWXs.xaofWBWB?Gt7a}o0",
+   "description": "آشپزخانه",
+   "created_at": "2024-07-09"
+  },
+  {
+   "name": "3237859240709145057.jpg",
+   "url": "2024/07/09/3237859240709145057.jpg",
+   "preview": "UhIXT+-;S5%1~VxuWXxaWBWBazs:%1WWa#t6",
+   "description": "آشپزخانه",
+   "created_at": "2024-07-09"
+  },
+  {
+   "name": "3237859240709144905.jpg",
+   "url": "2024/07/09/3237859240709144905.jpg",
+   "preview": "UfHKznwH$}?F~UnhRjt6t6j[RkRk-on$t6s.",
+   "description": "اتاق خواب 1",
+   "created_at": "2024-07-09"
+  },
+  {
+   "name": "3237859240709144840.jpg",
+   "url": "2024/07/09/3237859240709144840.jpg",
+   "preview": "UWFX;Tj]E2?F~BxaNGxaayt6ofR*xDazoff5",
+   "description": "اتاق خواب 1",
+   "created_at": "2024-07-09"
+  },
+  {
+   "name": "3237859240709144850.jpg",
+   "url": "2024/07/09/3237859240709144850.jpg",
+   "preview": "UIFq?x%NEM={~Bt7R*oJM{RjjZf6^jWWof%2",
+   "description": "اتاق خواب 2",
+   "created_at": "2024-07-09"
+  },
+  {
+   "name": "3237859240709144854.jpg",
+   "url": "2024/07/09/3237859240709144854.jpg",
+   "preview": "UOFq:r-oNF=|~AxZs:xtW9s:xaoe-ot6xaxZ",
+   "description": "اتاق خواب 2",
+   "created_at": "2024-07-09"
+  },
+  {
+   "name": "3237859240709144856.jpg",
+   "url": "2024/07/09/3237859240709144856.jpg",
+   "preview": "UNEoDD?Hbb^*~V%2t7-pWVoejsM|xDWBayM{",
+   "description": "اتاق خواب 2",
+   "created_at": "2024-07-09"
+  },
+  {
+   "name": "3237859240709144911.jpg",
+   "url": "2024/07/09/3237859240709144911.jpg",
+   "preview": "USF4$P$jE1xC~As.NGxZs+WBj[xa-UWBj@xZ",
+   "description": "اتاق خواب 2",
+   "created_at": "2024-07-09"
+  },
+  {
+   "name": "3237859240709144915.jpg",
+   "url": "2024/07/09/3237859240709144915.jpg",
+   "preview": "ULG*G=-TM|^j}?%1-oxZIoj@xaj?^ijFM|xZ",
+   "description": "اتاق خواب 2",
+   "created_at": "2024-07-09"
+  },
+  {
+   "name": "3237859240709145138.jpg",
+   "url": "2024/07/09/3237859240709145138.jpg",
+   "preview": "UPGbr2_3Rj?bj]-;xuxuD*ayxut7~qt7of%L",
+   "description": "سرویس فرنگی و ایرانی",
+   "created_at": "2024-07-09"
+  },
+  {
+   "name": "3237859240709145140.jpg",
+   "url": "2024/07/09/3237859240709145140.jpg",
+   "preview": "UtGIo-~q?b-;-;%Mxuxuofofofof-:xut7t7",
+   "description": "حمام",
+   "created_at": "2024-07-09"
+  },
+  {
+   "name": "3237859240709145142.jpg",
+   "url": "2024/07/09/3237859240709145142.jpg",
+   "preview": "USFY+2?bs;-:M{WBxuofM{Rjjuj[~pxuRjt7",
+   "description": "سرویس ایرانی با سرویس فرنگی",
+   "created_at": "2024-07-09"
+  },
+  {
+   "name": "3237859240709145233.jpg",
+   "url": "2024/07/09/3237859240709145233.jpg",
+   "preview": "UND]6qxuE1jY~VRjIojsofM|ayt7%2ayj[xa",
+   "description": "خواب 2",
+   "created_at": "2024-07-09"
+  },
+  {
+   "name": "3237859240709145328.jpg",
+   "url": "2024/07/09/3237859240709145328.jpg",
+   "preview": "UQGuaJ?EDj-o~UxZRjt6M{t6xtWB?FxZo1oK",
+   "description": null,
+   "created_at": "2024-07-09"
+  },
+  {
+   "name": "3237859240709145350.jpg",
+   "url": "2024/07/09/3237859240709145350.jpg",
+   "preview": "UwFsVrtOM{x[?wt6WTog.9oyWBa~_NoyRjt7",
+   "description": null,
+   "created_at": "2024-07-09"
+  },
+  {
+   "name": "3237859240709145400.jpg",
+   "url": "2024/07/09/3237859240709145400.jpg",
+   "preview": "UTF~$|?aIV%fS0WVayof9FNGofj[~pt7V[xt",
+   "description": "برکه اختصاصی کلبه",
+   "created_at": "2024-07-09"
+  }
+ ],
+ "vr_photo": null,
+ "video_url": null,
+ "allocation": "shared_place",
+ "types": [
+  "cottage",
+  "swiss_cottage",
+  "wooden_cottage"
+ ],
+ "regions": [
+  "rural"
+ ],
+ "floor_area": 80,
+ "land_area": 300,
+ "floors_count": 0,
+ "bedrooms": 2,
+ "sleep_arrange": [
+  {
+   "space_id": 1,
+   "single": 0,
+   "double": 1,
+   "mattress": 1,
+   "sofa_bed": 0,
+   "etc": ""
+  },
+  {
+   "space_id": 2,
+   "single": 0,
+   "double": 1,
+   "mattress": 1,
+   "sofa_bed": 0,
+   "etc": ""
+  },
+  {
+   "space_id": 0,
+   "single": 0,
+   "double": 0,
+   "mattress": 0,
+   "sofa_bed": 0,
+   "etc": ""
+  }
+ ],
+ "sleep_description": "مهمانان بیشتر از ۶ نفر با خود سرویس خواب همراه داشته باشند.",
+ "guest_number": 4,
+ "max_guest_number": 8,
+ "stays_min": 1,
+ "stays_max": null,
+ "entrance_time_min": 14,
+ "entrance_time_max": 12,
+ "leaving_time": 12,
+ "features": [
+  {
+   "name": "essentials",
+   "description": "کاغذ توالت، مایع ظرفشویی، مایع دستشویی"
+  },
+  {
+   "name": "electricity",
+   "description": null
+  },
+  {
+   "name": "water",
+   "description": "آب لوله کشی از چاه"
+  },
+  {
+   "name": "tv",
+   "description": "تلویزیون ال ای دی 24 اینچ"
+  },
+  {
+   "name": "heating",
+   "description": "یک دستگاه بخاری برقی در هر طبقه"
+  },
+  {
+   "name": "cooler",
+   "description": "یک دستگاه اسپلیت 24000 در پذیرایی"
+  },
+  {
+   "name": "kitchen",
+   "description": "برای 6 نفر بصورت کامل موجود می باشد."
+  },
+  {
+   "name": "stave",
+   "description": "برقی"
+  },
+  {
+   "name": "refrigerator",
+   "description": null
+  },
+  {
+   "name": "vacuumcleaner",
+   "description": null
+  },
+  {
+   "name": "furniture",
+   "description": "مبلمان 7 نفره"
+  },
+  {
+   "name": "table",
+   "description": "4 نفره"
+  },
+  {
+   "name": "drawer",
+   "description": null
+  },
+  {
+   "name": "parking",
+   "description": "پارکینگ روباز برای 2 خودرو در محوطه"
+  },
+  {
+   "name": "toilet",
+   "description": null
+  },
+  {
+   "name": "islamictoilet",
+   "description": null
+  },
+  {
+   "name": "janitor",
+   "description": "سرایدار در همسایگی سکونت دارد."
+  },
+  {
+   "name": "bathroom",
+   "description": null
+  }
+ ],
+ "properties": [
+  {
+   "id": 53,
+   "name": "لب آب"
+  },
+  {
+   "id": 39,
+   "name": "جذاب"
+  }
+ ],
+ "additional_feature": null,
+ "additional_safety": null,
+ "rules": [
+  "pet"
+ ],
+ "additional_rule": null,
+ "cancellation_policy": "hard",
+ "min_price": 2000000,
+ "extra_price": 500000,
+ "is_clean": false,
+ "is_new": false,
+ "is_instant": false,
+ "is_plus": false,
+ "success_books": 10,
+ "discounts": [
+  {
+   "percent": 5,
+   "type": "duration",
+   "min_nights": 5
+  },
+  {
+   "percent": 10,
+   "type": "duration",
+   "min_nights": 10
+  }
+ ],
+ "current_discount": null,
+ "current_discount_percent": 0,
+ "ratings": {
+  "count": 12,
+  "total": 3.9,
+  "accuracy": 4.4,
+  "communication": 4.4,
+  "cleanliness": 2.8,
+  "location": 3.8,
+  "checkin": 5,
+  "value": 3.2,
+  "comments_grouped_by_rating": {
+   "2": 1,
+   "3": 1,
+   "4": 2,
+   "5": 1
+  },
+  "is_recently": true,
+  "is_bad_host": true
+ },
+ "host": {
+  "id": 2176828,
+  "name": "حبیب",
+  "avatar": "2024/07/14/2407141552052176828.jpg",
+  "gender": "male",
+  "description": "دوستدار طبیعت",
+  "created_at": "2024-07-14",
+  "response_time": 214,
+  "accept_rate": 74,
+  "host_communication_rate": 4.4
+ },
+ "meta": {
+  "title": "کلبه سوئیسی در بابلکنار - سیدکلا",
+  "description": "اجاره روزانه کلبه روستایی 2 خوابه در بابلکنار، مازندران برای 8 نفر مهمان با قیمت مناسب و ضمانت تحویل جاجیگا.",
+  "keywords": null
+ },
+ "group_rooms": {
+  "items": [
+   {
+    "id": 3299045,
+    "units_count": 1,
+    "url": "/room/3299045",
+    "short_url": "/r/3fhp",
+    "title": "کبه سوئیسی ۱۰۰ متری",
+    "bedrooms": 2,
+    "floor_area": 100,
+    "guest_number": 4,
+    "max_guest_number": 10,
+    "min_price": 2500000,
+    "invoice": {
+     "extra": {
+      "count": 0,
+      "price": 500000,
+      "total": 0
+     },
+     "discount": {
+      "type": "first_book",
+      "percent": 10,
+      "amount": 250000
+     },
+     "discounts": [
+      {
+       "type": "first_book",
+       "percent": 10,
+       "amount": 250000
+      }
+     ],
+     "final": 2250000,
+     "prices": [
+      1
+     ],
+     "is_bill": false
+    },
+    "pictures": {
+     "total": 1,
+     "items": [
+      {
+       "name": "32990452604220910576895971.jpg",
+       "preview": "USECd$?IjJ%L?vt9jKt7.8tSoNt7~p-qozt7",
+       "url": "2026/04/22/32990452604220910576895971.jpg"
+      }
+     ]
+    }
+   }
+  ],
+  "count": 1
+ },
+ "group": {
+  "count": 1,
+  "items": [
+   {
+    "id": 3299045,
+    "units_count": 1,
+    "url": "/room/3299045",
+    "short_url": "/r/3fhp",
+    "title": "کبه سوئیسی ۱۰۰ متری",
+    "city": "بابلکنار",
+    "bedrooms": 2,
+    "floor_area": 100,
+    "guest_number": 4,
+    "max_guest_number": 10,
+    "is_clean": false,
+    "is_new": true,
+    "is_instant": false,
+    "is_plus": false,
+    "min_price": 2500000,
+    "discount": {
+     "percent": 10,
+     "type": "first_book"
+    },
+    "success_books": 0,
+    "rating": {
+     "count": 0,
+     "total": 0
+    },
+    "host": {
+     "id": 2176828,
+     "avatar": "2024/07/14/2407141552052176828.jpg"
+    },
+    "invoice": {
+     "extra": {
+      "count": 0,
+      "price": 500000,
+      "total": 0
+     },
+     "discount": {
+      "type": "first_book",
+      "percent": 10,
+      "amount": 250000
+     },
+     "discounts": [
+      {
+       "type": "first_book",
+       "percent": 10,
+       "amount": 250000
+      }
+     ],
+     "final": 2250000,
+     "prices": {
+      "2500000": 1
+     },
+     "is_bill": false
+    },
+    "pictures": {
+     "total": 1,
+     "items": [
+      {
+       "name": "32990452604220910576895971.jpg",
+       "preview": "USECd$?IjJ%L?vt9jKt7.8tSoNt7~p-qozt7",
+       "url": "2026/04/22/32990452604220910576895971.jpg"
+      }
+     ]
+    },
+    "properties": [
+     "is_new"
+    ]
+   }
+  ]
+ }
+}

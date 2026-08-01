@@ -1,0 +1,417 @@
+{
+ "id": 3255298,
+ "status": "active",
+ "units_count": 1,
+ "url": "/room/3255298",
+ "short_url": "/r/2hqi",
+ "title": "کلبه چوبی با وان جکوزی در بابلکنار - هلی خال",
+ "description": "این کلبه چوبی دوبلکس دو خوابه در طبقه دوم (با دسترسی حدود ۱۰ پله) یک ساختمان سه طبقه دو واحدی در روستای هلی خال با فاصله حدود ۲۵ کیلومتری از بابل واقع شده است. \nکلبه در طبقه اول دارای سالن پذیرایی، آشپزخانه و حمام با سرویس ایرانی و فرنگی می باشد و دو اتاق خواب و تراس در طبقه دوم قرار دارد.\nمحوطه اطراف کلبه با فنس محصور شده است و میزبان نیز در برخی از مواقع در طبقه همکف حضور دارد، همچنین یک سگ نگهبان وفادار در این حیاط زندگی می کند.\nسفارش وعده های غذایی صبحانه، ناهار و شام با هماهنگی میزبان و پرداخت هزینه جداگانه امکان پذیر است.\nمهمانان گرامی می توانند با طی مسافت حدود ۵۰۰ متری به سوپرمارکت و نانوایی دسترسی داشته باشند.\nکیفیت پوشش شبکه تلفن همراه برای دو اپراتور ایرانسل و همراه اول در مکالمه عالی و دسترسی به اینترنت به صورت ۴g می باشد.\n۲۰۰ متر انتهایی مسیر کلبه به صورت خاکی است اما این مسیر با همه وسایل نقلیه قابل تردد می باشد.\nسد لفور، پارک جنگلی بزچفت، هفت آبشار تیرکن، آبشار ترز، سد سنبل رود و آبشار گزو بخشی از جاذبه های توریستی این منطقه می باشد.",
+ "geo": {
+  "lat": 36.3367,
+  "lng": 52.6869
+ },
+ "province": {
+  "id": "p26",
+  "name": "مازندران",
+  "url": "/s/mazandaran"
+ },
+ "city": {
+  "id": 467,
+  "name": "بابلکنار",
+  "url": "/s/babolkenar"
+ },
+ "pictures": [
+  {
+   "name": "3255298250312084745.jpg",
+   "url": "2025/03/12/3255298250312084745.jpg",
+   "preview": "UfIgiivyV?^*.SVYi_x]yDR4Rkkr~WVYRj%M",
+   "description": "بالکن",
+   "created_at": "2025-03-12"
+  },
+  {
+   "name": "32552982512251920537395043.jpg",
+   "url": "2025/12/25/32552982512251920537395043.jpg",
+   "preview": "UPE36tw]M{x]?cDhj[%gs;8^oe%N~XVraexu",
+   "description": "وان جکوزی",
+   "created_at": "2025-12-25"
+  },
+  {
+   "name": "3255298250312084420.jpg",
+   "url": "2025/03/12/3255298250312084420.jpg",
+   "preview": "UGE2qW?wtm^*x[%h%htlNGtRo#Sh~BnhM{w^",
+   "description": "پذیرایی",
+   "created_at": "2025-03-12"
+  },
+  {
+   "name": "3255298250312084346.jpg",
+   "url": "2025/03/12/3255298250312084346.jpg",
+   "preview": "UEAmh]R4Dh%M_NMxMx%MR*oKjZWBVXxuo#RQ",
+   "description": "پذیرایی",
+   "created_at": "2025-03-12"
+  },
+  {
+   "name": "3255298250312084248.jpg",
+   "url": "2025/03/12/3255298250312084248.jpg",
+   "preview": "UVEVmJxGDhR5~qj]IAROo#ofM{Rixus:WARj",
+   "description": "آشپزخانه",
+   "created_at": "2025-03-12"
+  },
+  {
+   "name": "3255298250312084159.jpg",
+   "url": "2025/03/12/3255298250312084159.jpg",
+   "preview": "UFD9VN?FDNVs_4xaI9Ri8_WEXTWCz.jEtTog",
+   "description": "آشپزخانه",
+   "created_at": "2025-03-12"
+  },
+  {
+   "name": "32552982512251920425303916.jpg",
+   "url": "2025/12/25/32552982512251920425303916.jpg",
+   "preview": "UODvD[~qn}-o-4%L?c?bs7ocx]%N_4%MRit6",
+   "description": "اتاق خواب",
+   "created_at": "2025-12-25"
+  },
+  {
+   "name": "32552982512251920491177000.jpg",
+   "url": "2025/12/25/32552982512251920491177000.jpg",
+   "preview": "UQD+[8wH9E%h~qI99Eo$-=MxRPtR_4jEWBx]",
+   "description": "اتاق خواب",
+   "created_at": "2025-12-25"
+  },
+  {
+   "name": "3255298250303113358.jpg",
+   "url": "2025/03/03/3255298250303113358.jpg",
+   "preview": "UlFrCm-Uo~yE~Xn$X9x^?aM{R+tR?HV?W=tR",
+   "description": "حمام",
+   "created_at": "2025-03-03"
+  },
+  {
+   "name": "3255298250312084456.jpg",
+   "url": "2025/03/12/3255298250312084456.jpg",
+   "preview": "UmI5JT~q?c?b^+xux^xu-UWBX9t7~Vxvbwxu",
+   "description": "سرویس بهداشتی",
+   "created_at": "2025-03-12"
+  },
+  {
+   "name": "32552982602121342379575361.jpg",
+   "url": "2026/02/12/32552982602121342379575361.jpg",
+   "preview": "UPE36tw]M{x]?cDhj[%gs;8^oe%N~XVraexu",
+   "description": "جکوزی 2 نفره",
+   "created_at": "2026-02-12"
+  },
+  {
+   "name": "32552982602121520531333781.jpg",
+   "url": "2026/02/12/32552982602121520531333781.jpg",
+   "preview": "ULFr#C~q9E%2%LxtD%IU00InxvIVxajZ%M%M",
+   "description": null,
+   "created_at": "2026-02-12"
+  },
+  {
+   "name": "32552982602121520173950731.jpg",
+   "url": "2026/02/12/32552982602121520173950731.jpg",
+   "preview": "UpGb*YjFIBxu~qIAIAxa?bM_Mxt7?cjFRjt7",
+   "description": null,
+   "created_at": "2026-02-12"
+  },
+  {
+   "name": "32552982512251923154590277.jpg",
+   "url": "2025/12/25/32552982512251923154590277.jpg",
+   "preview": "UFExd*~7N1^hxtocjbf805E4t5EN$*s-oes:",
+   "description": "فضای حیاط",
+   "created_at": "2025-12-25"
+  },
+  {
+   "name": "32552982602121456032936082.jpg",
+   "url": "2026/02/12/32552982602121456032936082.jpg",
+   "preview": "U,Gb^%x]aexu_4xun$t7?ct7adt7?wozWAt7",
+   "description": "منقل ونشیمن حیاط",
+   "created_at": "2026-02-12"
+  },
+  {
+   "name": "32552982604141802433728572.jpg",
+   "url": "2026/04/14/32552982604141802433728572.jpg",
+   "preview": "UqJ@]~v~?H_3~qV?i^%M-=RiM_t7~WaKj?%M",
+   "description": "منظره بالکن",
+   "created_at": "2026-04-14"
+  },
+  {
+   "name": "32552982604141802475841248.jpg",
+   "url": "2026/04/14/32552982604141802475841248.jpg",
+   "preview": "UVF?3Cv}X2x^.6m,jGtlW7Mco4tR_4M_bYt8",
+   "description": "بالکن",
+   "created_at": "2026-04-14"
+  },
+  {
+   "name": "3255298250415113926.jpg",
+   "url": "2025/04/15/3255298250415113926.jpg",
+   "preview": "UTBg#v.9%%*0pLpI%$%ho#WYb_o#?vogXAkX",
+   "description": "نمای  ساختمان",
+   "created_at": "2025-04-15"
+  },
+  {
+   "name": "32552982602121454048298424.jpg",
+   "url": "2026/02/12/32552982602121454048298424.jpg",
+   "preview": "UbF?C9_2js%LtdobahWUW9RiagoM~p%Lafxb",
+   "description": "فضای حیاط",
+   "created_at": "2026-02-12"
+  },
+  {
+   "name": "32552982604141802428953421.jpg",
+   "url": "2026/04/14/32552982604141802428953421.jpg",
+   "preview": "U]Kd;:%M%g-;~WxuW=t7-pxbRkWC-;xtt7og",
+   "description": null,
+   "created_at": "2026-04-14"
+  },
+  {
+   "name": "32552982604171500012668347.jpg",
+   "url": "2026/04/17/32552982604171500012668347.jpg",
+   "preview": "UWCGY[NZNG%M~XNGNGxb?INGRjt7?bNaR*xa",
+   "description": null,
+   "created_at": "2026-04-17"
+  },
+  {
+   "name": "32552982604171459405794528.jpg",
+   "url": "2026/04/17/32552982604171459405794528.jpg",
+   "preview": "UjFreVrXQ-$*~qROMws:_3M{IUof~WRPM_oy",
+   "description": null,
+   "created_at": "2026-04-17"
+  },
+  {
+   "name": "32552982604171459324261760.jpg",
+   "url": "2026/04/17/32552982604171459324261760.jpg",
+   "preview": "UNA0XU%gS$-n~U%gbv%0^*%MozxZ?a%Loet5",
+   "description": null,
+   "created_at": "2026-04-17"
+  },
+  {
+   "name": "32552982604171459254496028.jpg",
+   "url": "2026/04/17/32552982604171459254496028.jpg",
+   "preview": "U@IFVN.7ofx[%gxuxbof.8xuogoz~q%MbIt7",
+   "description": null,
+   "created_at": "2026-04-17"
+  },
+  {
+   "name": "32552982604171458478232547.jpg",
+   "url": "2026/04/17/32552982604171458478232547.jpg",
+   "preview": "U~FZmJXSV@xu_NXAWBtR.Abda#t7%hg4ofoz",
+   "description": null,
+   "created_at": "2026-04-17"
+  },
+  {
+   "name": "32552982604171458398494997.jpg",
+   "url": "2026/04/17/32552982604171458398494997.jpg",
+   "preview": "U|FZTft7n$xu.TtQjFt7%%t7jroz.At7oJoz",
+   "description": null,
+   "created_at": "2026-04-17"
+  },
+  {
+   "name": "32552982604171458282302905.jpg",
+   "url": "2026/04/17/32552982604171458282302905.jpg",
+   "preview": "U~HVekxuRkxu~qtRWCt7_4t7WCt7_3t7R*t7",
+   "description": null,
+   "created_at": "2026-04-17"
+  },
+  {
+   "name": "32552982604171458065039989.jpg",
+   "url": "2026/04/17/32552982604171458065039989.jpg",
+   "preview": "U~Gl;b%Mj[xu~qxuf6tR_4t7ayt8?vt7a}oz",
+   "description": null,
+   "created_at": "2026-04-17"
+  }
+ ],
+ "vr_photo": null,
+ "video_url": null,
+ "allocation": "shared_place",
+ "types": [
+  "cottage",
+  "wooden_cottage"
+ ],
+ "regions": [
+  "forest",
+  "rural"
+ ],
+ "floor_area": 110,
+ "land_area": 2000,
+ "floors_count": 0,
+ "bedrooms": 2,
+ "sleep_arrange": [
+  {
+   "space_id": 1,
+   "single": 0,
+   "double": 1,
+   "mattress": 0,
+   "sofa_bed": 0,
+   "etc": ""
+  },
+  {
+   "space_id": 2,
+   "single": 0,
+   "double": 1,
+   "mattress": 0,
+   "sofa_bed": 0,
+   "etc": ""
+  },
+  {
+   "space_id": 0,
+   "single": 0,
+   "double": 0,
+   "mattress": 0,
+   "sofa_bed": 0,
+   "etc": ""
+  }
+ ],
+ "sleep_description": "مهمانان بیش از ۴ نفر سرویس خواب به همراه داشته باشند.",
+ "guest_number": 4,
+ "max_guest_number": 6,
+ "stays_min": 1,
+ "stays_max": null,
+ "entrance_time_min": 14,
+ "entrance_time_max": 24,
+ "leaving_time": 12,
+ "features": [
+  {
+   "name": "essentials",
+   "description": "مایع ظرفشویی، مایع دستشویی"
+  },
+  {
+   "name": "electricity",
+   "description": null
+  },
+  {
+   "name": "water",
+   "description": "آب لوله کشی شهری"
+  },
+  {
+   "name": "heating",
+   "description": "پکیج - شوفاژ"
+  },
+  {
+   "name": "cooler",
+   "description": "یک دستگاه اسپیلت 18000 در پذیرایی پایین و یک دستگاه 9000 در یک اتاق خواب"
+  },
+  {
+   "name": "kitchen",
+   "description": "لوازم به تعداد 6 نفر موجود است."
+  },
+  {
+   "name": "stave",
+   "description": null
+  },
+  {
+   "name": "refrigerator",
+   "description": null
+  },
+  {
+   "name": "furniture",
+   "description": "مبلمان 7 نفره"
+  },
+  {
+   "name": "table",
+   "description": "4 نفره"
+  },
+  {
+   "name": "parking",
+   "description": "پارکینگ روباز برای یک خودرو در حیاط"
+  },
+  {
+   "name": "toilet",
+   "description": null
+  },
+  {
+   "name": "islamictoilet",
+   "description": null
+  },
+  {
+   "name": "barbecue",
+   "description": "منقل فلزی در حیاط"
+  },
+  {
+   "name": "jacuzzi",
+   "description": "دو نفره"
+  },
+  {
+   "name": "janitor",
+   "description": "میزبان در برخی از مواقع در طبقه همکف سکونت دارد."
+  },
+  {
+   "name": "bathroom",
+   "description": null
+  },
+  {
+   "name": "firstaidkit",
+   "description": "ندارد"
+  },
+  {
+   "name": "fireextingu",
+   "description": "دارد"
+  }
+ ],
+ "properties": [
+  {
+   "id": 52,
+   "name": "خوش منظره"
+  }
+ ],
+ "additional_feature": null,
+ "additional_safety": null,
+ "rules": [
+  "pet",
+  "smoke",
+  "unmarried"
+ ],
+ "additional_rule": null,
+ "cancellation_policy": "middle",
+ "min_price": 4000000,
+ "extra_price": 700000,
+ "is_clean": false,
+ "is_new": false,
+ "is_instant": false,
+ "is_plus": false,
+ "success_books": 5,
+ "discounts": [
+  {
+   "percent": 10,
+   "type": "today_discount"
+  },
+  {
+   "percent": 10,
+   "type": "tomorrow_discount"
+  }
+ ],
+ "current_discount": {
+  "percent": 10,
+  "type": "today_discount"
+ },
+ "current_discount_percent": 10,
+ "ratings": {
+  "count": 6,
+  "total": 5,
+  "accuracy": 5,
+  "communication": 5,
+  "cleanliness": 5,
+  "location": 5,
+  "checkin": 4.8,
+  "value": 5,
+  "comments_grouped_by_rating": {
+   "4": 1,
+   "5": 5
+  },
+  "is_recently": true,
+  "is_bad_host": false
+ },
+ "host": {
+  "id": 2409766,
+  "name": "مرجان",
+  "avatar": "2025/02/26/2502262348102409766.jpg",
+  "gender": "female",
+  "description": null,
+  "created_at": "2025-04-21",
+  "response_time": 408,
+  "accept_rate": 64,
+  "host_communication_rate": 5
+ },
+ "meta": {
+  "title": "کلبه چوبی با وان جکوزی در بابلکنار - هلی خال",
+  "description": "اجاره روزانه کلبه جنگلی 2 خوابه در بابلکنار، مازندران برای 6 نفر مهمان با قیمت مناسب و ضمانت تحویل جاجیگا.",
+  "keywords": null
+ }
+}

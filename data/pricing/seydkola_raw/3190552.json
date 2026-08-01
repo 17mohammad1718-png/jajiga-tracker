@@ -1,0 +1,384 @@
+{
+ "id": 3190552,
+ "status": "active",
+ "units_count": 1,
+ "url": "/room/3190552",
+ "short_url": "/r/13s0",
+ "title": "اجاره کلبه چوبی در سوادکوه - سیدکلا",
+ "description": "**اجاره کلبه چوبی در سوادکوه - سیدکلا**\nاین کلبه چوبی یکخوابه با بالکنی دلباز، تخت سنتی، حیاطی دلنشین و میز و صندلی تاشو در روستای سیدکلا با فاصله حدود ۱۵ کیلومتری از شیرگاه و ۳۰ کیلومتری از بابل واقع شده است.\nطراحی اقامتگاه به گونه ایست که پذیرایی، آشپزخانه و حمام با سرویس ایرانی و فرنگی در طبقه پایین و اتاق خواب (بدون درب) و بالکن در طبقه بالا با دسترسی حدود ۱۳ پله تعبیه شده است.\nاطراف حیاط اقامتگاه با دیوار محصور است و میزبان نیز در همسایگی سکونت دارد.\nبرای تهیه مایحتاج روزانه فاصله اقامتگاه تا سوپرمارکت و نانوایی حدود یک کیلومتر می باشد.\nآنتن دهی تلفن همراه برای دو اپراتور ایرانسل و همراه اول در مکالمه خوب و پوشش اینترنت به صورت ۴G است.\nمنطقه سوادکوه با برخورداری از آب و هوای دل انگیز و خنک، طبیعت چشم نواز از کوه و جنگل، آبشارهای طبیعی و خروشان نظیر هفت آبشار، گزو، پلنگ‌دره با حوضچه های سنگی، سد لفور و پوشش های گیاهی متعدد سفری آرامش بخش و فراموش نشدنی را با جاذبه های بی نظیر برایتان به ارمغان خواهد داشت.",
+ "geo": {
+  "lat": 36.3173,
+  "lng": 52.7811
+ },
+ "province": {
+  "id": "p26",
+  "name": "مازندران",
+  "url": "/s/mazandaran"
+ },
+ "city": {
+  "id": 467,
+  "name": "بابلکنار",
+  "url": "/s/babolkenar"
+ },
+ "pictures": [
+  {
+   "name": "3190552240526194004.jpg",
+   "url": "2024/05/26/3190552240526194004.jpg",
+   "preview": "UbENB-x@M{tO_Lx@M|a{%ftQRjfk?@oyRjox",
+   "description": "نمای کلبه",
+   "created_at": "2024-05-26"
+  },
+  {
+   "name": "3190552251124212813.jpg",
+   "url": "2025/11/24/3190552251124212813.jpg",
+   "preview": "UiEy^+%MIUfz.R%MocR$.8x]jrR$_Mx]M{WA",
+   "description": null,
+   "created_at": "2025-11-24"
+  },
+  {
+   "name": "3190552240526193930.jpg",
+   "url": "2024/05/26/3190552240526193930.jpg",
+   "preview": "ULEoMb_NpJ-;^*-:bcbIM{V@oLj[?GtRozxu",
+   "description": "پذیرایی",
+   "created_at": "2024-05-26"
+  },
+  {
+   "name": "3190552251124213133.jpg",
+   "url": "2025/11/24/3190552251124213133.jpg",
+   "preview": "UgGaUU=cIV%1~9$gnO%0${xFxGxY$zxZs:sm",
+   "description": null,
+   "created_at": "2025-11-24"
+  },
+  {
+   "name": "3190552251124212732.jpg",
+   "url": "2025/11/24/3190552251124212732.jpg",
+   "preview": "UREoC+~ntk-n$xj;WBoI9IIDRlafw~sqoMfS",
+   "description": null,
+   "created_at": "2025-11-24"
+  },
+  {
+   "name": "3190552231030193613.jpg",
+   "url": "2023/10/30/3190552231030193613.jpg",
+   "preview": "UpKl:4?Gxa=_}?s:j[s.V@WBs:j@-Tt6s:s:",
+   "description": "آشپزخانه",
+   "created_at": "2023-10-30"
+  },
+  {
+   "name": "3190552251124212748.jpg",
+   "url": "2025/11/24/3190552251124212748.jpg",
+   "preview": "URF#y:_KxG#S^gb[aev$rXaKnisC^h%0s.s:",
+   "description": null,
+   "created_at": "2025-11-24"
+  },
+  {
+   "name": "3190552240410171643.jpg",
+   "url": "2024/04/10/3190552240410171643.jpg",
+   "preview": "UiJ$pE-9RQ=^}?soM}s.%1fQNHj@^hxFRkxF",
+   "description": null,
+   "created_at": "2024-04-10"
+  },
+  {
+   "name": "3190552240410172408.jpg",
+   "url": "2024/04/10/3190552240410172408.jpg",
+   "preview": "UUF}J;s,R*%1~Aaxs:s.-oWVs:WB~AoekBWB",
+   "description": null,
+   "created_at": "2024-04-10"
+  },
+  {
+   "name": "3190552240412215338.jpg",
+   "url": "2024/04/12/3190552240412215338.jpg",
+   "preview": "UOG@6a^N$y}:}:s,oJ$$R+oKR+R+}qxYn%xE",
+   "description": null,
+   "created_at": "2024-04-12"
+  },
+  {
+   "name": "3190552240412215155.jpg",
+   "url": "2024/04/12/3190552240412215155.jpg",
+   "preview": "UTHcYzEP9_^N#ooebHafIrxYoeNI}qR,R+xY",
+   "description": null,
+   "created_at": "2024-04-12"
+  },
+  {
+   "name": "3190552240410173009.jpg",
+   "url": "2024/04/10/3190552240410173009.jpg",
+   "preview": "UZHxyj-;xt-;~pxut7xuxuofoft6^+t7oft7",
+   "description": null,
+   "created_at": "2024-04-10"
+  },
+  {
+   "name": "3190552240410173004.jpg",
+   "url": "2024/04/10/3190552240410173004.jpg",
+   "preview": "UbGIfa-:ofxt~pxtWCt6%MofWBof?bt7jtof",
+   "description": null,
+   "created_at": "2024-04-10"
+  },
+  {
+   "name": "3190552240410172602.jpg",
+   "url": "2024/04/10/3190552240410172602.jpg",
+   "preview": "UKCrZN~99vEM=_%0NHNHRkj[s:oL=_$%bHof",
+   "description": null,
+   "created_at": "2024-04-10"
+  },
+  {
+   "name": "3190552240410173014.jpg",
+   "url": "2024/04/10/3190552240410173014.jpg",
+   "preview": "U26Qk,%K#m}r~A={jGxGxt%1E3M|=wR*M{My",
+   "description": null,
+   "created_at": "2024-04-10"
+  },
+  {
+   "name": "3190552250205155118.jpg",
+   "url": "2025/02/05/3190552250205155118.jpg",
+   "preview": "UMEKrR=vXO-l9xj[NIIr9{NcNINb};s,bF$$",
+   "description": null,
+   "created_at": "2025-02-05"
+  },
+  {
+   "name": "3190552250205155101.jpg",
+   "url": "2025/02/05/3190552250205155101.jpg",
+   "preview": "UHC=V7};R+R.r^NcW:t59wWXWXNH};-SWDNJ",
+   "description": null,
+   "created_at": "2025-02-05"
+  },
+  {
+   "name": "3190552251124212958.jpg",
+   "url": "2025/11/24/3190552251124212958.jpg",
+   "preview": "UAAlag-S5UAGxGSzxps-9_t5w{WC}:$$IsJ9",
+   "description": null,
+   "created_at": "2025-11-24"
+  },
+  {
+   "name": "3190552251124212617.jpg",
+   "url": "2025/11/24/3190552251124212617.jpg",
+   "preview": "U56aLx}:-5=vAHJBE#ADM#RnRoM}}p-7$i-A",
+   "description": null,
+   "created_at": "2025-11-24"
+  },
+  {
+   "name": "3190552251124212554.jpg",
+   "url": "2025/11/24/3190552251124212554.jpg",
+   "preview": "UIC%cm_0yB.P%vRjWBo_xsWDjZt6~nxao|x@",
+   "description": null,
+   "created_at": "2025-11-24"
+  },
+  {
+   "name": "3190552251124221318.jpg",
+   "url": "2025/11/24/3190552251124221318.jpg",
+   "preview": "UMDJtUTGEf%I.R%dkkjFTLxttLRQ?@WYWAoH",
+   "description": null,
+   "created_at": "2025-11-24"
+  },
+  {
+   "name": "3190552240410173018.jpg",
+   "url": "2024/04/10/3190552240410173018.jpg",
+   "preview": "UIEoe;yXk=_1_N.8%g%fF4%M-pbc_1X9ozaz",
+   "description": null,
+   "created_at": "2024-04-10"
+  },
+  {
+   "name": "3190552240412215431.jpg",
+   "url": "2024/04/12/3190552240412215431.jpg",
+   "preview": "UAB_#L^N0NI[}rR*5SR,58I;%1s.#,s.t7oe",
+   "description": null,
+   "created_at": "2024-04-12"
+  },
+  {
+   "name": "3190552251124212656.jpg",
+   "url": "2025/11/24/3190552251124212656.jpg",
+   "preview": "UYGbYJ_2%N-;x^%Nx]kWS*x^kWR+~p.8xvxu",
+   "description": null,
+   "created_at": "2025-11-24"
+  }
+ ],
+ "vr_photo": null,
+ "video_url": null,
+ "allocation": "entire_place",
+ "types": [
+  "cottage",
+  "villa",
+  "wooden_cottage"
+ ],
+ "regions": [
+  "rural"
+ ],
+ "floor_area": 60,
+ "land_area": 800,
+ "floors_count": 0,
+ "bedrooms": 1,
+ "sleep_arrange": [
+  {
+   "space_id": 1,
+   "single": 0,
+   "double": 1,
+   "mattress": 4,
+   "sofa_bed": 0,
+   "etc": ""
+  },
+  {
+   "space_id": 0,
+   "single": 0,
+   "double": 0,
+   "mattress": 0,
+   "sofa_bed": 0,
+   "etc": ""
+  }
+ ],
+ "sleep_description": null,
+ "guest_number": 4,
+ "max_guest_number": 6,
+ "stays_min": 1,
+ "stays_max": null,
+ "entrance_time_min": 14,
+ "entrance_time_max": 0,
+ "leaving_time": 12,
+ "features": [
+  {
+   "name": "essentials",
+   "description": "کاغذ توالت، مایع ظرفشویی، مایع دستشویی"
+  },
+  {
+   "name": "electricity",
+   "description": null
+  },
+  {
+   "name": "water",
+   "description": "آب لوله کشی شهری"
+  },
+  {
+   "name": "tv",
+   "description": "تلویزیون ال سی دی ۳۲ اینچ"
+  },
+  {
+   "name": "heating",
+   "description": "یک شعله بخاری گازی در پذیرایی"
+  },
+  {
+   "name": "cooler",
+   "description": "یک دستگاه اسپلیت ۲۵۰۰۰ در پذیرایی"
+  },
+  {
+   "name": "kitchen",
+   "description": "برای ۸ نفر بصورت کامل موجود می باشد."
+  },
+  {
+   "name": "stave",
+   "description": null
+  },
+  {
+   "name": "microwave",
+   "description": null
+  },
+  {
+   "name": "refrigerator",
+   "description": null
+  },
+  {
+   "name": "iron",
+   "description": null
+  },
+  {
+   "name": "hairdryer",
+   "description": null
+  },
+  {
+   "name": "furniture",
+   "description": "مبلمان ۶ نفره"
+  },
+  {
+   "name": "table",
+   "description": "۶ نفره"
+  },
+  {
+   "name": "drawer",
+   "description": null
+  },
+  {
+   "name": "parking",
+   "description": "پارکینگ روباز برای ۴ خودرو در محوطه"
+  },
+  {
+   "name": "toilet",
+   "description": "با حمام و سرویس ایرانی"
+  },
+  {
+   "name": "islamictoilet",
+   "description": "با حمام و سرویس فرنگی"
+  },
+  {
+   "name": "barbecue",
+   "description": "منقل فلزی در حیاط"
+  },
+  {
+   "name": "janitor",
+   "description": "میزبان در همسایگی سکونت دارد."
+  },
+  {
+   "name": "bathroom",
+   "description": "با سرویس ایرانی و سرویس فرنگی"
+  },
+  {
+   "name": "firstaidkit",
+   "description": "در آشپزخانه"
+  }
+ ],
+ "properties": [
+  {
+   "id": 39,
+   "name": "جذاب"
+  },
+  {
+   "id": 71,
+   "name": "مهمان نواز"
+  }
+ ],
+ "additional_feature": "تخت سنتی و میزو صندلی تاشو",
+ "additional_safety": null,
+ "rules": [
+  "pet",
+  "smoke"
+ ],
+ "additional_rule": null,
+ "cancellation_policy": "middle",
+ "min_price": 2500000,
+ "extra_price": 500000,
+ "is_clean": false,
+ "is_new": false,
+ "is_instant": false,
+ "is_plus": true,
+ "success_books": 50,
+ "discounts": [],
+ "current_discount": null,
+ "current_discount_percent": 0,
+ "ratings": {
+  "count": 35,
+  "total": 4.9,
+  "accuracy": 5,
+  "communication": 5,
+  "cleanliness": 5,
+  "location": 4.7,
+  "checkin": 5,
+  "value": 5,
+  "comments_grouped_by_rating": {
+   "4": 1,
+   "5": 5
+  },
+  "is_recently": true,
+  "is_bad_host": false
+ },
+ "host": {
+  "id": 1706081,
+  "name": "صدیقه",
+  "avatar": "2024/06/13/2406131857161706081.jpg",
+  "gender": "male",
+  "description": null,
+  "created_at": "2023-07-22",
+  "response_time": 60,
+  "accept_rate": 75,
+  "host_communication_rate": 5
+ },
+ "meta": {
+  "title": "اجاره کلبه چوبی در سوادکوه - سیدکلا",
+  "description": "اجاره روزانه کلبه روستایی 1 خوابه در بابلکنار، مازندران برای 6 نفر مهمان با قیمت مناسب و ضمانت تحویل جاجیگا.",
+  "keywords": "اجاره کلبه در سوادکوه,اجاره کلبه در مازندران,روستایی,اجاره کلبه در شمال,اجاره روزانه,سایت اجاره ویلا"
+ }
+}

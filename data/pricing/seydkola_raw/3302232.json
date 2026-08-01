@@ -1,0 +1,489 @@
+{
+ "id": 3302232,
+ "status": "active",
+ "units_count": 1,
+ "url": "/room/3302232",
+ "short_url": "/r/3hy8",
+ "title": "ویلا دوبلکس در بابلکنار - سیدکلا",
+ "description": "این ویلا دوبلکس در روستای خوش آب و هوای سیدکلا از توابع بابلکنار واقع شده است که با شهر مرزیکلا حدود ۹ کیلومتر فاصله دارد.\nطراحی این ویلا به گونه ای است که طبقه پایین با دسترسی حدود ۷ پله دارای پذیرایی، آشپزخانه، حمام و سرویس ایرانی می باشد و با حدود ۱۷ پله دسترسی در طبقه بالا نشیمن، یک اتاق خواب و بالکن دنج قرار دارد. \nاطراف حیاط از چهار طرف با دیوار محصور می باشد و میزبان نیز در همسایگی سکونت دارد. \nمهمانان گرامی می توانند برای تهیه مایحتاج روزانه خود از سوپرمارکت و نانوایی در فاصله حدود ۵۰۰ متری استفاده نمایند.\nکیفیت پوشش شبکه تلفن همراه برای دو اپراتور ایرانسل و همراه اول در مکالمه خوب و پوشش اینترنت به صورت ۴g است.\nبا توجه به محیط کوهستانی، مسیر منتهی به ویلا دارای شیب ملایم می باشد.",
+ "geo": {
+  "lat": 36.3099,
+  "lng": 52.7921
+ },
+ "province": {
+  "id": "p26",
+  "name": "مازندران",
+  "url": "/s/mazandaran"
+ },
+ "city": {
+  "id": 467,
+  "name": "بابلکنار",
+  "url": "/s/babolkenar"
+ },
+ "pictures": [
+  {
+   "name": "33022322606151627179158511.jpg",
+   "url": "2026/06/15/33022322606151627179158511.jpg",
+   "preview": "UhBNmBROROtS.ARiV?o#tTWBocogxvayj?of",
+   "description": "نمای ساختمان",
+   "created_at": "2026-06-15"
+  },
+  {
+   "name": "33022322606011128135381940.jpg",
+   "url": "2026/06/01/33022322606011128135381940.jpg",
+   "preview": "UkGb*J%hNz%L.TyExvt8yFx^t8kD.9x^SPof",
+   "description": "چشم انداز بالکن",
+   "created_at": "2026-05-15"
+  },
+  {
+   "name": "33022322606280919315810924.jpg",
+   "url": "2026/06/28/33022322606280919315810924.jpg",
+   "preview": "UjD0$1x^s=%M.TtSs;xuyFo#j]o#%$t8WYkD",
+   "description": null,
+   "created_at": "2026-06-28"
+  },
+  {
+   "name": "33022322606112057315472898.jpg",
+   "url": "2026/06/11/33022322606112057315472898.jpg",
+   "preview": "UMGR*Z?a0K-o_NxuM|j[X4WBt7t7~Vt6jF%2",
+   "description": "نمای ساختمان در شب",
+   "created_at": "2026-06-11"
+  },
+  {
+   "name": "33022322605292056434690315.jpg",
+   "url": "2026/05/29/33022322605292056434690315.jpg",
+   "preview": "UnI56;?aD*n$~q%MRPoe%gt7V@WB?btQM{Rj",
+   "description": null,
+   "created_at": "2026-05-29"
+  },
+  {
+   "name": "33022322605220719319373471.jpg",
+   "url": "2026/05/22/33022322605220719319373471.jpg",
+   "preview": "UdFPvja_I:%#?^kBS2o}yDx[ozkW_3x[kVtR",
+   "description": "پذیرایی",
+   "created_at": "2026-05-22"
+  },
+  {
+   "name": "33022322605151546596488163.jpg",
+   "url": "2026/05/15/33022322605151546596488163.jpg",
+   "preview": "UdEoxt$hWY%N~WV?R+x]-:NGWBt7-;WBWCs;",
+   "description": "پذیرایی و اشپزخانه",
+   "created_at": "2026-05-15"
+  },
+  {
+   "name": "33022322605151546493902408.jpg",
+   "url": "2026/05/15/33022322605151546493902408.jpg",
+   "preview": "UVE33c%1o2-;~qxaoMxu-;ayj]t7-;M{R*t6",
+   "description": "پذیرایی",
+   "created_at": "2026-05-15"
+  },
+  {
+   "name": "33022322605151546552879967.jpg",
+   "url": "2026/05/15/33022322605151546552879967.jpg",
+   "preview": "UgE{X;_3kWxu~p-;bHof-:xtjFoI%2xaxZxa",
+   "description": "پذیرایی",
+   "created_at": "2026-05-15"
+  },
+  {
+   "name": "33022322605151546587228778.jpg",
+   "url": "2026/05/15/33022322605151546587228778.jpg",
+   "preview": "UQEyPa-pso?b~pV?MxxuxvRjM{j[?Ht7ozt7",
+   "description": "پذیرایی و اشپزخانه",
+   "created_at": "2026-05-15"
+  },
+  {
+   "name": "33022322606032147488699148.jpg",
+   "url": "2026/06/03/33022322606032147488699148.jpg",
+   "preview": "UxI5Sl-pRjxu~qxtWCt7%MRjoet7-;Rjj[xa",
+   "description": null,
+   "created_at": "2026-06-03"
+  },
+  {
+   "name": "33022322605151746396932963.jpg",
+   "url": "2026/05/15/33022322605151746396932963.jpg",
+   "preview": "UWGbn,WUMy-:~pxtWBt7%1xabIae?GRkRkxZ",
+   "description": "پذیرایی",
+   "created_at": "2026-05-15"
+  },
+  {
+   "name": "33022322605151546563950406.jpg",
+   "url": "2026/05/15/33022322605151546563950406.jpg",
+   "preview": "UVG+EwxZIU%M~qt7Rjt7kCbIoext-;oMbHt7",
+   "description": "آشپزخانه",
+   "created_at": "2026-05-15"
+  },
+  {
+   "name": "33022322605220718021639151.jpg",
+   "url": "2026/05/22/33022322605220718021639151.jpg",
+   "preview": "UMEM8x?cMx-p~q%MVt%2s:%LtRxu=|%MtRt7",
+   "description": null,
+   "created_at": "2026-05-22"
+  },
+  {
+   "name": "33022322606081039398564186.jpg",
+   "url": "2026/06/08/33022322606081039398564186.jpg",
+   "preview": "UmIr4@%MW=-;~p%MbbR*-;xvogRk_3xukCtR",
+   "description": "آشپزخانه",
+   "created_at": "2026-06-08"
+  },
+  {
+   "name": "33022322606080024262686564.jpg",
+   "url": "2026/06/08/33022322606080024262686564.jpg",
+   "preview": "UgH2G:_NkX-p?Gx[tQt7sSs:tQaz?Gxuozs:",
+   "description": "آشپزخانه",
+   "created_at": "2026-06-08"
+  },
+  {
+   "name": "33022322605151546522940871.jpg",
+   "url": "2026/05/15/33022322605151546522940871.jpg",
+   "preview": "URGk|4-;xu~W~q%2s.xuI;M{RPM|-;RjM{j[",
+   "description": "راه پله",
+   "created_at": "2026-05-15"
+  },
+  {
+   "name": "33022322605151746375312672.jpg",
+   "url": "2026/05/15/33022322605151746375312672.jpg",
+   "preview": "UkI}FX^*WB%1~VoeaextxtRjWBoe-oxZWqjZ",
+   "description": "اتاق خواب 1",
+   "created_at": "2026-05-15"
+  },
+  {
+   "name": "33022322605151546549862688.jpg",
+   "url": "2026/05/15/33022322605151546549862688.jpg",
+   "preview": "UYHB}E_Nxv-;_3%gt7t7bbofj[bH?bxuoft7",
+   "description": "ورودی سرویس",
+   "created_at": "2026-05-15"
+  },
+  {
+   "name": "33022322605151747042825597.jpg",
+   "url": "2026/05/15/33022322605151747042825597.jpg",
+   "preview": "UYHeUYxYe.%0~pt7RjjFt7ofRjRj?aoLWBjY",
+   "description": "حمام",
+   "created_at": "2026-05-15"
+  },
+  {
+   "name": "33022322605151747053401382.jpg",
+   "url": "2026/05/15/33022322605151747053401382.jpg",
+   "preview": "UeH2J=xYWX-p~pWBt7xu%gRkj[og?aoeWCt7",
+   "description": "سرویس ایرانی",
+   "created_at": "2026-05-15"
+  },
+  {
+   "name": "33022322605151547028577765.jpg",
+   "url": "2026/05/15/33022322605151547028577765.jpg",
+   "preview": "UeEex*r=M{%2~VRPM|xu?aM{Rjxt?GM{R*xt",
+   "description": null,
+   "created_at": "2026-05-15"
+  },
+  {
+   "name": "33022322605151746433866754.jpg",
+   "url": "2026/05/15/33022322605151746433866754.jpg",
+   "preview": "UiGbt}r;Rj%L~qVsazt7s:RPkDofRjadozoe",
+   "description": "چشم انداز",
+   "created_at": "2026-05-15"
+  },
+  {
+   "name": "33022322605151546515956051.jpg",
+   "url": "2026/05/15/33022322605151546515956051.jpg",
+   "preview": "UZB|Nf?aWBM{~q-;WBM{_3%MRjM{?b%MRkRj",
+   "description": null,
+   "created_at": "2026-05-15"
+  },
+  {
+   "name": "33022322605210618585664316.jpg",
+   "url": "2026/05/21/33022322605210618585664316.jpg",
+   "preview": "UaEV[]x]xI-;~px]xc%M.7o}ogt7-=XSR+kC",
+   "description": null,
+   "created_at": "2026-05-21"
+  },
+  {
+   "name": "33022322605220719495014143.jpg",
+   "url": "2026/05/22/33022322605220719495014143.jpg",
+   "preview": "UMAm;y-:RjtROrR*jERjXmM|V@t7_Nt7Rjxu",
+   "description": null,
+   "created_at": "2026-05-22"
+  },
+  {
+   "name": "33022322605281731131700265.jpg",
+   "url": "2026/05/28/33022322605281731131700265.jpg",
+   "preview": "ULDl_o~ono%L_1%Mt8xuohtRxut8?t%Mt8xu",
+   "description": null,
+   "created_at": "2026-05-28"
+  },
+  {
+   "name": "33022322605160525437461287.jpg",
+   "url": "2026/05/16/33022322605160525437461287.jpg",
+   "preview": "UhGl3IoJD%xa~qoKMxofOZjso0WXo#jZWBWV",
+   "description": null,
+   "created_at": "2026-05-16"
+  },
+  {
+   "name": "33022322605170712527233982.jpg",
+   "url": "2026/05/17/33022322605170712527233982.jpg",
+   "preview": "USC%59?H9FIV_N%MITM{tTkDV?jFx]bIV?jY",
+   "description": null,
+   "created_at": "2026-05-17"
+  },
+  {
+   "name": "33022322605160525494262439.jpg",
+   "url": "2026/05/16/33022322605160525494262439.jpg",
+   "preview": "UND]VW.9.9?ca%krtSo#R:%MX9kX~p-;o~x]",
+   "description": "مسیر",
+   "created_at": "2026-05-16"
+  },
+  {
+   "name": "33022322605210620469532680.jpg",
+   "url": "2026/05/21/33022322605210620469532680.jpg",
+   "preview": "UHCZnf~qMx_2X-o~ofM{9FNFt7RP?FxWadxu",
+   "description": null,
+   "created_at": "2026-05-21"
+  },
+  {
+   "name": "33022322605292056157981448.jpg",
+   "url": "2026/05/29/33022322605292056157981448.jpg",
+   "preview": "UDG[[|.6I:~X%hRiR*WF00NGWCIUtOxur[jG",
+   "description": "رودخانه نزدیک ویلا",
+   "created_at": "2026-05-29"
+  },
+  {
+   "name": "33022322606011055077245879.jpg",
+   "url": "2026/06/01/33022322606011055077245879.jpg",
+   "preview": "U[Fsb-X5RitQ_4WCRjt7.9a$Rjof?ckCRjof",
+   "description": null,
+   "created_at": "2026-06-01"
+  },
+  {
+   "name": "33022322606011055032783755.jpg",
+   "url": "2026/06/01/33022322606011055032783755.jpg",
+   "preview": "U~DThoxvaet8.At8ayogx_ohj]ogx_ogj[og",
+   "description": null,
+   "created_at": "2026-06-01"
+  },
+  {
+   "name": "33022322606080021015447815.jpg",
+   "url": "2026/06/08/33022322606080021015447815.jpg",
+   "preview": "UoF?CHn#V@%M?^RPV@of?vRiRja|_4oJRjof",
+   "description": null,
+   "created_at": "2026-06-08"
+  },
+  {
+   "name": "33022322606080020521292891.jpg",
+   "url": "2026/06/08/33022322606080020521292891.jpg",
+   "preview": "U^H2s6xuahxu_NxuoMxu_4tRa#t8_4t8R*t7",
+   "description": "بالکن",
+   "created_at": "2026-06-08"
+  },
+  {
+   "name": "33022322606080020377485840.jpg",
+   "url": "2026/06/08/33022322606080020377485840.jpg",
+   "preview": "UtGS12?Gs:tQ_Nxuj[t7.9ozf6t7_3xuj@t7",
+   "description": "ویو",
+   "created_at": "2026-06-08"
+  },
+  {
+   "name": "33022322606080020459892211.jpg",
+   "url": "2026/06/08/33022322606080020459892211.jpg",
+   "preview": "U#GI$JVrRP%M_NMxV@x]-;M_WBtRxZV?kCt7",
+   "description": "بالکن",
+   "created_at": "2026-06-08"
+  },
+  {
+   "name": "33022322606112101327951408.jpg",
+   "url": "2026/06/11/33022322606112101327951408.jpg",
+   "preview": "U}HLuOV@IAoe_NWAIUoM?bWAM{j[%MWBRjj[",
+   "description": "نمای ساختمان و مسیر دسترسی",
+   "created_at": "2026-06-11"
+  },
+  {
+   "name": "33022322606280919296118967.jpg",
+   "url": "2026/06/28/33022322606280919296118967.jpg",
+   "preview": "U[E3*htRoMxu.Tt8j[t8%$o#j@oz.9t8jst7",
+   "description": null,
+   "created_at": "2026-06-28"
+  }
+ ],
+ "vr_photo": null,
+ "video_url": null,
+ "allocation": "entire_place",
+ "types": [
+  "villa"
+ ],
+ "regions": [
+  "rural"
+ ],
+ "floor_area": 150,
+ "land_area": 300,
+ "floors_count": 0,
+ "bedrooms": 1,
+ "sleep_arrange": [
+  {
+   "space_id": 1,
+   "single": 0,
+   "double": 1,
+   "mattress": 0,
+   "sofa_bed": 0,
+   "etc": ""
+  },
+  {
+   "space_id": 0,
+   "single": 0,
+   "double": 0,
+   "mattress": 10,
+   "sofa_bed": 0,
+   "etc": ""
+  }
+ ],
+ "sleep_description": null,
+ "guest_number": 7,
+ "max_guest_number": 7,
+ "stays_min": 1,
+ "stays_max": null,
+ "entrance_time_min": 14,
+ "entrance_time_max": 0,
+ "leaving_time": 12,
+ "features": [
+  {
+   "name": "essentials",
+   "description": "کاغذ توالت، مایع ظرفشویی، مایع دستشویی"
+  },
+  {
+   "name": "electricity",
+   "description": null
+  },
+  {
+   "name": "water",
+   "description": null
+  },
+  {
+   "name": "tv",
+   "description": "معمولی"
+  },
+  {
+   "name": "heating",
+   "description": "یک شعله بخاری گازی در پذیرایی و یک شعله بخاری گازی در نشیمن بالا"
+  },
+  {
+   "name": "cooler",
+   "description": "یک دستگاه اسپیلت 30000 در راه پله بین طبقات"
+  },
+  {
+   "name": "kitchen",
+   "description": "برای 15 نفر به صورت کامل موجود است."
+  },
+  {
+   "name": "stave",
+   "description": null
+  },
+  {
+   "name": "refrigerator",
+   "description": null
+  },
+  {
+   "name": "vacuumcleaner",
+   "description": null
+  },
+  {
+   "name": "iron",
+   "description": null
+  },
+  {
+   "name": "furniture",
+   "description": "12 نفره"
+  },
+  {
+   "name": "table",
+   "description": "6 نفره"
+  },
+  {
+   "name": "drawer",
+   "description": null
+  },
+  {
+   "name": "parking",
+   "description": "روباز برای یک خودرو در حیاط"
+  },
+  {
+   "name": "islamictoilet",
+   "description": null
+  },
+  {
+   "name": "barbecue",
+   "description": "منقل فلزی در حیاط"
+  },
+  {
+   "name": "janitor",
+   "description": "میزبان در همسایگی سکونت دارد."
+  },
+  {
+   "name": "bathroom",
+   "description": null
+  },
+  {
+   "name": "firstaidkit",
+   "description": "در کابینت اشپزخانه"
+  }
+ ],
+ "properties": [],
+ "additional_feature": "پنکه در ویلا قرار دارد.",
+ "additional_safety": null,
+ "rules": [
+  "party",
+  "pet",
+  "smoke"
+ ],
+ "additional_rule": null,
+ "cancellation_policy": "middle",
+ "min_price": 3000000,
+ "extra_price": 250000,
+ "is_clean": false,
+ "is_new": false,
+ "is_instant": false,
+ "is_plus": false,
+ "success_books": 0,
+ "discounts": [
+  {
+   "percent": 10,
+   "type": "duration",
+   "min_nights": 3
+  },
+  {
+   "percent": 10,
+   "type": "duration",
+   "min_nights": 10
+  }
+ ],
+ "current_discount": null,
+ "current_discount_percent": 0,
+ "ratings": {
+  "count": 3,
+  "total": 4.9,
+  "accuracy": 5,
+  "communication": 5,
+  "cleanliness": 5,
+  "location": 4.3,
+  "checkin": 5,
+  "value": 5,
+  "comments_grouped_by_rating": {
+   "4": 1,
+   "5": 2
+  },
+  "is_recently": false,
+  "is_bad_host": false
+ },
+ "host": {
+  "id": 3089046,
+  "name": "بهنام",
+  "avatar": "2026/06/06/2606060509163089046.jpg",
+  "gender": "male",
+  "description": "دوستدار طبیعت",
+  "created_at": "2026-05-19",
+  "response_time": 474,
+  "accept_rate": 71,
+  "host_communication_rate": 5
+ },
+ "meta": {
+  "title": "ویلا دوبلکس در بابلکنار - سیدکلا",
+  "description": "اجاره روزانه ویلا روستایی 1 خوابه در بابلکنار، مازندران برای 7 نفر مهمان با قیمت مناسب و ضمانت تحویل جاجیگا.",
+  "keywords": null
+ }
+}

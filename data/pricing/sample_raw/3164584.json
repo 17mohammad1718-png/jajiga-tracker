@@ -1,0 +1,529 @@
+{
+ "id": 3164584,
+ "status": "active",
+ "units_count": 1,
+ "url": "/room/3164584",
+ "short_url": "/r/jqo",
+ "title": "کلبه سوئیسی جکوزی دار در سوادکوه",
+ "description": "این کلبه چوبی دوبلکس یکخوابه با طراحی زیبا سوئیسی در روستا کلاریکلا واقع شده است که تا شهر شیرگاه حدود ۲۰ کیلومتر و تا بابل حدود ۲۵ کیلومتر فاصله دارد.\nطراحی کلبه بصورت دوبلکس است و در طبقه اول دارای پذیرایی، آشپزخانه، حمام با سرویس بهداشتی و در طبقه دوم یک اتاق خواب و تراس با صفای ۷ متری با چشم انداز جنگل قرار دارد و در محوطه نیز علاوه بر درختان زیبا ، برای دورهمی ها و شب نشینی های شما میز و صندلی تعبیه شده است.\n**در این اقامتگاه سرو غذای خانگی (کته کباب، اردک و غاز محلی، مرغ شکم پر، فسنجون و ماهی سبزی پلو) و محصولات محلی با سفارش قبلی و پرداخت هزینه جداگانه ممکن است**\nمحوطه کلبه از چهار طرف با دیوار های بلند محصور شده و از بیرون دید ندارد، همچنین با ۱۰۰ الی ۳۰۰ متر پیاده روی به ترتیب می توانید به سوپرمارکت و نانوایی دسترسی پیدا نمایید.\nپوشش اینترنت در این منطقه برای دو اپراتور همراه اول و ایرانسل ۴g است.\nسد سنبل رود، سد زیبای لفور، جنگل های زیبا شیردار کلاه، باغ های نیشکر درازکلاه و دریاچه مصنوعی صحرا (محل زندگی پلیکان ها و غازهای وحشی) همگی نزدیک همین منطقه قرار دارد.\nفاصله این کلبه تا پارک جنگلی حدود ۱۰ کیلومتر، تا هفت آبشار تیرکن حدود ۲۰ کیلومتر ، تا دریاچه سد لفور حدود ۲۵ کیلومتر و تا آبشار درازکش حدود ۳۰ کیلومتر می باشد.\nاگر اهل ماهیگیری هستید در زمان سفر قلاب خود را به همراه داشته باشید تا از رودخانه نزدیک به اقامتگاه نهایت لذت را ببرید.\n**در این اقامتگاه برگزاری مهمانی و جشن های کوچک خانوادگی با هماهنگی قبلی بین ساعت ۳ الی ۶ عصر امکان پذیر می باشد.**",
+ "geo": {
+  "lat": 36.3643,
+  "lng": 52.7164
+ },
+ "province": {
+  "id": "p26",
+  "name": "مازندران",
+  "url": "/s/mazandaran"
+ },
+ "city": {
+  "id": 467,
+  "name": "بابلکنار",
+  "url": "/s/babolkenar"
+ },
+ "pictures": [
+  {
+   "name": "31645842605021925314553796.jpg",
+   "url": "2026/05/02/31645842605021925314553796.jpg",
+   "preview": "UbCjUz-;ov%M%#ozoctRyEozoct8?^x]fht8",
+   "description": "نمای کلبه",
+   "created_at": "2026-05-02"
+  },
+  {
+   "name": "3164584240719172008.jpg",
+   "url": "2024/07/19/3164584240719172008.jpg",
+   "preview": "UPEfAr%KIo%K^~xtWCt6--kAWCj?~okBRjt6",
+   "description": "صبحانه رو تراس",
+   "created_at": "2024-07-19"
+  },
+  {
+   "name": "31645842602111915151655778.jpg",
+   "url": "2026/02/11/31645842602111915151655778.jpg",
+   "preview": "UKD]SQ-;X8-:$_WBbuWAWTE0WAWB_NNGn$t7",
+   "description": "تاب دونفره",
+   "created_at": "2026-02-11"
+  },
+  {
+   "name": "3164584240505142547.jpg",
+   "url": "2024/05/05/3164584240505142547.jpg",
+   "preview": "UcHJ~%KJI:w{}@XRNGn%$jSeWVae^jNtWVs:",
+   "description": "صبحانه رو تراس",
+   "created_at": "2024-05-05"
+  },
+  {
+   "name": "31645842607111528482891299.jpg",
+   "url": "2026/07/11/31645842607111528482891299.jpg",
+   "preview": "URG7e%%1M{^O~A-UV@$#$$smoJxE}rjFj[-T",
+   "description": "فضای داخلی",
+   "created_at": "2026-07-11"
+  },
+  {
+   "name": "31645842607202018577686873.jpg",
+   "url": "2026/07/20/31645842607202018577686873.jpg",
+   "preview": "UOD]0P%LVs-o~nxrnhxttMous,oe=|spoIs:",
+   "description": "پذیرایی",
+   "created_at": "2026-07-20"
+  },
+  {
+   "name": "31645842607202014209544226.jpg",
+   "url": "2026/07/20/31645842607202014209544226.jpg",
+   "preview": "UMF5KbTHE2^5~8pGR*=v#koeSx-n}@aeR%%1",
+   "description": "پذیرایی",
+   "created_at": "2026-07-20"
+  },
+  {
+   "name": "31645842607202028182966420.jpg",
+   "url": "2026/07/20/31645842607202028182966420.jpg",
+   "preview": "UZFqjx%2Shxa}=x[bvoL$zt6WXbH={smRkof",
+   "description": "پذیرایی",
+   "created_at": "2026-07-20"
+  },
+  {
+   "name": "31645842607111528407114587.jpg",
+   "url": "2026/07/11/31645842607111528407114587.jpg",
+   "preview": "UeGQk0$2IVxa}=w^WWof$exExas,-AxEn$xY",
+   "description": "میز نهار خوری",
+   "created_at": "2026-07-11"
+  },
+  {
+   "name": "31645842605021833544568852.jpg",
+   "url": "2026/05/02/31645842605021833544568852.jpg",
+   "preview": "UZG*QN-:9ZVs~VtRIURP?Hf,MxRi^*ofIUae",
+   "description": "اشپزخانه",
+   "created_at": "2026-05-02"
+  },
+  {
+   "name": "31645842602112219583274676.jpg",
+   "url": "2026/02/11/31645842602112219583274676.jpg",
+   "preview": "UTA^E=?bt6t6~p-:WBs:~W-pWBs.~p-;ays.",
+   "description": "جکوزی سقف شیشه ای",
+   "created_at": "2026-02-11"
+  },
+  {
+   "name": "31645842602111915054457405.jpg",
+   "url": "2026/02/11/31645842602111915054457405.jpg",
+   "preview": "UvK_E~~qRjxuxuxuayay00M{t7RjfQWBfQWB",
+   "description": "جکوزی با آب گرم",
+   "created_at": "2026-02-11"
+  },
+  {
+   "name": "3164584250412152926.jpg",
+   "url": "2025/04/12/3164584250412152926.jpg",
+   "preview": "UQC?$V%0VV-=tpRjiut9p0a#ngt8^*xuocxt",
+   "description": "اتاق خواب",
+   "created_at": "2025-04-12"
+  },
+  {
+   "name": "3164584250412153111.jpg",
+   "url": "2025/04/12/3164584250412153111.jpg",
+   "preview": "UXEf7:$xMx-p.AnhZ~t8JYRiaIbJ.9ngROt7",
+   "description": "اتاق خواب",
+   "created_at": "2025-04-12"
+  },
+  {
+   "name": "3164584221102134513.jpg",
+   "url": "3164584221102134513.jpg",
+   "preview": "ULEVsc-;M{-;~qt7Rjxut7WBR%of_3t7Rjt7",
+   "description": "حمام",
+   "created_at": "2022-11-02"
+  },
+  {
+   "name": "3164584221102134518.jpg",
+   "url": "3164584221102134518.jpg",
+   "preview": "UWGuj:%0M{-;~ps-jZ%L%Mxtt6s:_3xuj@s:",
+   "description": "سرویس بهداشتی",
+   "created_at": "2022-11-02"
+  },
+  {
+   "name": "31645842607202014236952207.jpg",
+   "url": "2026/07/20/31645842607202014236952207.jpg",
+   "preview": "UTEMQ.x@S$%e_I%Lx]x@-.tPxutQ_2ofozxt",
+   "description": null,
+   "created_at": "2026-07-20"
+  },
+  {
+   "name": "3164584230605205245.jpg",
+   "url": "2023/06/05/3164584230605205245.jpg",
+   "preview": "UFA,{@-:IUx@.jtPkBtQEdR%%Mx[?tt6oytQ",
+   "description": null,
+   "created_at": "2023-06-05"
+  },
+  {
+   "name": "31645842607111523122022032.jpg",
+   "url": "2026/07/11/31645842607111523122022032.jpg",
+   "preview": "UZD]hixrk9%L~nxsayxZx.oxj]ox%bk9t6tP",
+   "description": "تراس دونفره",
+   "created_at": "2026-07-11"
+  },
+  {
+   "name": "3164584250428232441.jpg",
+   "url": "2025/04/28/3164584250428232441.jpg",
+   "preview": "UfDc]ZPBT1%f.kTeT0tQcXTKbcba%fXTogoe",
+   "description": "تولد سفارش مهمان",
+   "created_at": "2025-04-28"
+  },
+  {
+   "name": "3164584240116230219.jpg",
+   "url": "2024/01/16/3164584240116230219.jpg",
+   "preview": "USD+SB-noe-n~St5bFxs%JfiofxZ-ns.t6xZ",
+   "description": "تراس زیبای کلبه",
+   "created_at": "2024-01-16"
+  },
+  {
+   "name": "3164584250322211906.jpg",
+   "url": "2025/03/22/3164584250322211906.jpg",
+   "preview": "UgFiAK%M?v?b_Nxu.8-;x]xu%MtR%Lt7tRoz",
+   "description": "اتاقک سقف شیشه ای جکوزی",
+   "created_at": "2025-03-22"
+  },
+  {
+   "name": "3164584250502223439.jpg",
+   "url": "2025/05/02/3164584250502223439.jpg",
+   "preview": "UWECCEXo~S?V%4jds*s*E2aLIVM_xdo#s%oZ",
+   "description": "باند جی بی ال کلبه",
+   "created_at": "2025-05-02"
+  },
+  {
+   "name": "31645842603211129524486791.jpg",
+   "url": "2026/03/21/31645842603211129524486791.jpg",
+   "preview": "U36aS4}?V]s;WUbvf8oL0gE3n~WBxuniWUS2",
+   "description": "نمای کلبه در شب",
+   "created_at": "2026-03-21"
+  },
+  {
+   "name": "3164584240719172005.jpg",
+   "url": "2024/07/19/3164584240719172005.jpg",
+   "preview": "ULCF^ia0Rj?G~VRPNG%LoeRjRjofxZRjRkt7",
+   "description": "عصرانه",
+   "created_at": "2024-07-19"
+  },
+  {
+   "name": "3164584241206230202.jpg",
+   "url": "2024/12/06/3164584241206230202.jpg",
+   "preview": "UvNcp6-:%2^*~Vofofxut7RkR*of_1oea#xt",
+   "description": "سالاد ماکارونی سفارش مهمان",
+   "created_at": "2024-12-06"
+  },
+  {
+   "name": "3164584231001075349.jpg",
+   "url": "2023/10/01/3164584231001075349.jpg",
+   "preview": "UCCYv[%f0m%MM#ofxua$0NRk-nWB~AkBIqof",
+   "description": "سفارش مرغ ترش با برنج محلی سبزی محلی",
+   "created_at": "2023-10-01"
+  },
+  {
+   "name": "3164584230628225812.jpg",
+   "url": "2023/06/28/3164584230628225812.jpg",
+   "preview": "UGFEPtn5Ip~9^OxGWCs.IpoexZRk}=aexZxY",
+   "description": "سفارش سبزی پلو با ماهی",
+   "created_at": "2023-06-28"
+  },
+  {
+   "name": "3164584230630170533.jpg",
+   "url": "2023/06/30/3164584230630170533.jpg",
+   "preview": "UIDlfr?Z9b%MoIWBWXWBM|ayfPRk~UxtIpof",
+   "description": "شامی بابلی سفارش شما مهمان عزیز",
+   "created_at": "2023-06-30"
+  },
+  {
+   "name": "3164584231001080424.jpg",
+   "url": "2023/10/01/3164584231001080424.jpg",
+   "preview": "UFEB[r-n0Pi{~R^#NID,WX-m-mM}~8ofs:xY",
+   "description": "سفارش سبزی پلو با گوشت برای مهمان",
+   "created_at": "2023-10-01"
+  },
+  {
+   "name": "31645842604042058504933321.jpg",
+   "url": "2026/04/04/31645842604042058504933321.jpg",
+   "preview": "UGBpqQt1IV-;NDxsxuNGD%RPbaNH~pRiNGxu",
+   "description": "آلاچیق",
+   "created_at": "2026-04-04"
+  },
+  {
+   "name": "31645842603202231315542135.jpg",
+   "url": "2026/03/20/31645842603202231315542135.jpg",
+   "preview": "UC8qH9xHE0kk_MkCITX4t,R-ROba.7afM{t6",
+   "description": null,
+   "created_at": "2026-03-20"
+  },
+  {
+   "name": "3164584241105225828.jpg",
+   "url": "2024/11/05/3164584241105225828.jpg",
+   "preview": "UIB3$l?at7%L~p?Hxu-p%M%Mxu%M?axut7t7",
+   "description": "آلاچیق کلبه",
+   "created_at": "2024-11-05"
+  },
+  {
+   "name": "3164584230315234547.jpg",
+   "url": "3164584230315234547.jpg",
+   "preview": "ULHTs?|2VZ^k=y-VsCo00LbbxtIo^Qwes:s:",
+   "description": "سالگرد ازدواج سفارش مهمان",
+   "created_at": "2023-03-15"
+  },
+  {
+   "name": "31645842605222135358464487.jpg",
+   "url": "2026/05/22/31645842605222135358464487.jpg",
+   "preview": "UIEL1;=|1G6y}Y$QJRF1nOjGXQS#^jbbK0Nt",
+   "description": "سالگرد ازدواج",
+   "created_at": "2026-05-22"
+  },
+  {
+   "name": "3164584240807114802.jpg",
+   "url": "2024/08/07/3164584240807114802.jpg",
+   "preview": "UXEous?w%g?a-;xut7j[RjWBoLM{?Hxvt7t6",
+   "description": "انواع نوشیدنی تخم مرغ محلی در یخچال کلبه با سفارش قبلی",
+   "created_at": "2024-08-07"
+  },
+  {
+   "name": "3164584240721182740.jpg",
+   "url": "2024/07/21/3164584240721182740.jpg",
+   "preview": "UKFN@%viD*w^}@niNGo0afj[WCay^jnjRjjZ",
+   "description": "منو برای سفارش مهمان",
+   "created_at": "2024-07-21"
+  },
+  {
+   "name": "31645842604042158261266034.jpg",
+   "url": "2026/04/04/31645842604042158261266034.jpg",
+   "preview": "UTG8$L-pWA?H~ps:Rjxt%Ns:RjWC^+xujYs:",
+   "description": "پارک جنگلی و کافه یک ربع تا کلبه",
+   "created_at": "2025-03-08"
+  },
+  {
+   "name": "3164584231027212134.jpg",
+   "url": "2023/10/27/3164584231027212134.jpg",
+   "preview": "UB6R;?x@IVov?=owM|t5y8WBRkt6%df$Rkoy",
+   "description": "هفت ابشار تو دل جنگل",
+   "created_at": "2023-10-27"
+  },
+  {
+   "name": "3164584250525220512.jpg",
+   "url": "2025/05/25/3164584250525220512.jpg",
+   "preview": "UzIOtdxuM{%L~qt8aet7-=ozoft7?vozWBt7",
+   "description": "سد زیبا برنجستانک",
+   "created_at": "2025-05-25"
+  },
+  {
+   "name": "3164584230710223508.jpg",
+   "url": "2023/07/10/3164584230710223508.jpg",
+   "preview": "UbEMzbx[8_WW_NxuD$M{%gxuIUM{?btRM{WB",
+   "description": "سد لفور زیبا یه جای دنج با کلی رودخانه‌ای سرد یک رب تا کلبه",
+   "created_at": "2023-07-10"
+  },
+  {
+   "name": "3164584250403114831.jpg",
+   "url": "2025/04/03/3164584250403114831.jpg",
+   "preview": "URF65v_2aIxp-;%LV?awxat7WAWA~o%2j=t5",
+   "description": "آبشار بورخانی",
+   "created_at": "2025-04-03"
+  },
+  {
+   "name": "3164584230710223455.jpg",
+   "url": "2023/07/10/3164584230710223455.jpg",
+   "preview": "UTEfTP%0Rj-:9ER*j]RjIUj[ofWB~pxZaxxt",
+   "description": "آب گرم آرزو جای دنج عالی دل جنگل فقط 50دقیقه تا کلبه",
+   "created_at": "2023-07-10"
+  },
+  {
+   "name": "3164584250403114843.jpg",
+   "url": "2025/04/03/3164584250403114843.jpg",
+   "preview": "UKEo}0?GM{.5.5bFbFtPE2Rkj[fR~nxtRjoe",
+   "description": "گشت گذار در دل جنگل های هیرکانی با چشمه های آب سرد",
+   "created_at": "2025-04-03"
+  },
+  {
+   "name": "3164584250409190550.jpg",
+   "url": "2025/04/09/3164584250409190550.jpg",
+   "preview": "UMFO[Y^%ax-:~VxZoext9tIpofj??GbHWVt7",
+   "description": "رودخانه تا کلبه 5دقیقه",
+   "created_at": "2025-04-09"
+  }
+ ],
+ "vr_photo": null,
+ "video_url": null,
+ "allocation": "entire_place",
+ "types": [
+  "cottage",
+  "swiss_cottage",
+  "wooden_cottage"
+ ],
+ "regions": [
+  "forest",
+  "rural"
+ ],
+ "floor_area": 70,
+ "land_area": 230,
+ "floors_count": 0,
+ "bedrooms": 1,
+ "sleep_arrange": [
+  {
+   "space_id": 1,
+   "single": 0,
+   "double": 1,
+   "mattress": 0,
+   "sofa_bed": 0,
+   "etc": ""
+  },
+  {
+   "space_id": 0,
+   "single": 0,
+   "double": 0,
+   "mattress": 1,
+   "sofa_bed": 0,
+   "etc": ""
+  }
+ ],
+ "sleep_description": null,
+ "guest_number": 2,
+ "max_guest_number": 3,
+ "stays_min": 1,
+ "stays_max": null,
+ "entrance_time_min": 14,
+ "entrance_time_max": 24,
+ "leaving_time": 12,
+ "features": [
+  {
+   "name": "essentials",
+   "description": "مایع ظرفشویی ، مایع دستشویی"
+  },
+  {
+   "name": "electricity",
+   "description": null
+  },
+  {
+   "name": "water",
+   "description": "لوله کشی آب شهری"
+  },
+  {
+   "name": "tv",
+   "description": "تلویزیون ال سی دی ۳۲ اینچ"
+  },
+  {
+   "name": "heating",
+   "description": "شوفاژ"
+  },
+  {
+   "name": "cooler",
+   "description": "اسپلیت ۱۸هزار"
+  },
+  {
+   "name": "kitchen",
+   "description": "برای ۳ نفر بصورت کامل موجود می باشد."
+  },
+  {
+   "name": "stave",
+   "description": "صفحه شیشه ای دو شعله"
+  },
+  {
+   "name": "refrigerator",
+   "description": null
+  },
+  {
+   "name": "furniture",
+   "description": "۷ نفره"
+  },
+  {
+   "name": "parking",
+   "description": "روباز در حیاط ویلا برای دو خودرو"
+  },
+  {
+   "name": "islamictoilet",
+   "description": null
+  },
+  {
+   "name": "barbecue",
+   "description": "منقل فلزی"
+  },
+  {
+   "name": "jacuzzi",
+   "description": "وان جکوزی دو نفره"
+  },
+  {
+   "name": "food",
+   "description": "سرو غذا و محصولات محلی با سفارش قبلی و پرداخت هزینه جداگانه ممکن است."
+  },
+  {
+   "name": "bathroom",
+   "description": null
+  },
+  {
+   "name": "firstaidkit",
+   "description": null
+  },
+  {
+   "name": "fireextingu",
+   "description": null
+  }
+ ],
+ "properties": [
+  {
+   "id": 11,
+   "name": "اقامتگاه خاص"
+  },
+  {
+   "id": 34,
+   "name": "خوش غذا"
+  },
+  {
+   "id": 39,
+   "name": "جذاب"
+  },
+  {
+   "id": 70,
+   "name": "حیاط دار"
+  },
+  {
+   "id": 71,
+   "name": "مهمان نواز"
+  }
+ ],
+ "additional_feature": null,
+ "additional_safety": null,
+ "rules": [
+  "pet",
+  "smoke"
+ ],
+ "additional_rule": "پخش موزیک داخل کلبه تا ساعت ۸ شب مجاز است.",
+ "cancellation_policy": "hard",
+ "min_price": 2500000,
+ "extra_price": 900000,
+ "is_clean": false,
+ "is_new": false,
+ "is_instant": true,
+ "is_plus": true,
+ "success_books": 800,
+ "discounts": [],
+ "current_discount": null,
+ "current_discount_percent": 0,
+ "ratings": {
+  "count": 539,
+  "total": 4.8,
+  "accuracy": 5,
+  "communication": 4.9,
+  "cleanliness": 4.9,
+  "location": 4.7,
+  "checkin": 5,
+  "value": 4.7,
+  "comments_grouped_by_rating": {
+   "2": 1,
+   "4": 29,
+   "5": 56
+  },
+  "is_recently": true,
+  "is_bad_host": false
+ },
+ "host": {
+  "id": 1348528,
+  "name": "صالح",
+  "avatar": "2024/07/02/2407020806451348528.jpg",
+  "gender": "male",
+  "description": "کلبه سویسی ما آماده یه تجربه خاص زیبا همراه با کلی غذاهای محلی صبحانه محلی و آماده سازی تزیینات تولد سالگرد ازدواج آماده پذیرایی شما خوبان میباشد  آماده گرم میزبانی شما مهمان عزیز هستیم",
+  "created_at": "2021-08-18",
+  "response_time": 78,
+  "accept_rate": 98,
+  "host_communication_rate": 4.9
+ },
+ "meta": {
+  "title": "کلبه سوئیسی جکوزی دار در سوادکوه",
+  "description": "اجاره روزانه کلبه جنگلی 1 خوابه در بابلکنار، مازندران برای 3 نفر مهمان با قیمت مناسب و ضمانت تحویل جاجیگا.",
+  "keywords": "اجاره کلبه در سوادکوه,اجاره کلبه در مازندران,جنگلی,روستایی,اجاره کلبه در شمال,اجاره روزانه,رزرو اینترنتی ویلا"
+ }
+}

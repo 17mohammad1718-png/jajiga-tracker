@@ -1,0 +1,486 @@
+{
+ "id": 3149749,
+ "status": "active",
+ "units_count": 3,
+ "url": "/room/3149749",
+ "short_url": "/r/8al",
+ "title": "سوئیت در سیدکلا بابلکنار - همکف",
+ "description": "این سوئیت با ایوان دلباز در یک مجموعه اقامتی در روستای سیدکلا از توابع بابلکنار واقع شده است که با شیرگاه حدود ۱۴ کیلومتر فاصله دارد.\nسوئیت در جوار چند واحد دیگر با باغ پرتقال و در میان شالیزارهای برنج قرار گرفته است.\nطراحی سوئیت به گونه ای است که با پیمودن حدود ۵ پله دارای سالن نشیمن با دو تخت دبل، یخچال، اسپیلت، بخاری گازی، سینک ظرفشویی و سرویس فرنگی با حمام می باشد، در نظر داشته باشید که سوئیت فاقد اتاق خواب و امکانات پخت و پز می باشد.\nاز مشاعات این مجموعه می توان حیاط دلباز، رستوران و سرویس ایرانی را نام برد.\nامکان سفارش صبحانه و سرو غذای محلی در وعده های ناهار و شام از قبیل مرغ انار دون، فسنجون اردک، کباب تابه ای و ... با هماهنگی قبلی و پرداخت هزینه جداگانه فراهم است.\nمحوطه حیاط از چهار طرف با دیوار محصور شده و نگهبان بصورت ۲۴ ساعته در همین محوطه سکونت دارد.\nهمچنین به جهت تامین امنیت بیشتر حیاط و محوطه مجموعه مجهز به دوربین مداربسته می باشد.\nمهمانان گرامی برای تهیه مایحتاج روزانه خود می توانند از سوپرمارکت و نانوایی در فاصله حدود ۲۰۰ متری از مجموعه استفاده نمایند.\nکیفیت پوشش شبکه تلفن همراه برای دو اپراتور ایرانسل و همراه اول در مکالمه خوب و دسترسی به اینترنت به صورت  ۴g است. \nلازم به ذکر است با خودرو می توانید تا جلوی هر کلبه رفت و آمد داشته باشید، ولی پارکینگ اختصاصی در فاصله حدود ۵۰ متری قرار دارد.",
+ "geo": {
+  "lat": 36.3134,
+  "lng": 52.7827
+ },
+ "province": {
+  "id": "p26",
+  "name": "مازندران",
+  "url": "/s/mazandaran"
+ },
+ "city": {
+  "id": 467,
+  "name": "بابلکنار",
+  "url": "/s/babolkenar"
+ },
+ "pictures": [
+  {
+   "name": "31497492604042311142164477.jpg",
+   "url": "2026/04/04/31497492604042311142164477.jpg",
+   "preview": "U~EqBax[WUtR.Tt8jYt8x{ozn%ohx_ogj?og",
+   "description": "نمای اقامتگاه ها",
+   "created_at": "2026-04-04"
+  },
+  {
+   "name": "31497492604042311189817314.jpg",
+   "url": "2026/04/04/31497492604042311189817314.jpg",
+   "preview": "U.DTz[oxjYxu.Abanit8yGoMjFo#%%s;jZt8",
+   "description": null,
+   "created_at": "2026-04-04"
+  },
+  {
+   "name": "31497492604042312083469792.jpg",
+   "url": "2026/04/04/31497492604042312083469792.jpg",
+   "preview": "USI4b3-;Fy?u^j%f%gtSJC-;?at8~W-;x]%f",
+   "description": "نمای سوئیت",
+   "created_at": "2026-04-04"
+  },
+  {
+   "name": "31497492604042311535449590.jpg",
+   "url": "2026/04/04/31497492604042311535449590.jpg",
+   "preview": "UiKTe;~TxV%K?aODRjM{TcIoSgbY~oxBoyx[",
+   "description": "نمونه غذای رستوران",
+   "created_at": "2026-04-04"
+  },
+  {
+   "name": "31497492604042311408510215.jpg",
+   "url": "2026/04/04/31497492604042311408510215.jpg",
+   "preview": "UkKJA0xarw}@}?xZxa$%V^s,s,ah=|sonPxH",
+   "description": "نمونه غذای رستوران",
+   "created_at": "2026-04-04"
+  },
+  {
+   "name": "31497492604042312064402579.jpg",
+   "url": "2026/04/04/31497492604042312064402579.jpg",
+   "preview": "UzKnC-?bx^-;~o%Lxux[%LodoLs:-;t8bcs:",
+   "description": "فضای داخلی سوئیت",
+   "created_at": "2026-04-04"
+  },
+  {
+   "name": "31497492604042312122717060.jpg",
+   "url": "2026/04/04/31497492604042312122717060.jpg",
+   "preview": "UmJthytmjb={~Sw@jExtx@sks;kD_3o#a~s.",
+   "description": "فضای داخلی سوئیت",
+   "created_at": "2026-04-04"
+  },
+  {
+   "name": "31497492604042312144375228.jpg",
+   "url": "2026/04/04/31497492604042312144375228.jpg",
+   "preview": "UpKdrJ^LwI-;~otSX9t6xob_tSoc?a%1%2t8",
+   "description": "فضای داخلی سوئیت",
+   "created_at": "2026-04-04"
+  },
+  {
+   "name": "31497492604042312055209161.jpg",
+   "url": "2026/04/04/31497492604042312055209161.jpg",
+   "preview": "U#K-Uf$ys7-:~pRjWXxus*R*W?of-on$n~of",
+   "description": "فضای داخلی سوئیت",
+   "created_at": "2026-04-04"
+  },
+  {
+   "name": "3149749240104182347.jpg",
+   "url": "2024/01/04/3149749240104182347.jpg",
+   "preview": "UlK1zS^+t7?a~qxuaet7xufQWBay_2xtj[t7",
+   "description": "حمام با سرویس فرنگی",
+   "created_at": "2024-01-04"
+  },
+  {
+   "name": "31497492604042311457970906.jpg",
+   "url": "2026/04/04/31497492604042311457970906.jpg",
+   "preview": "UVFOljo}H@-7yEtQMxM|yDozM_NH~CjcMxt5",
+   "description": null,
+   "created_at": "2026-04-04"
+  },
+  {
+   "name": "31497492604042311488722364.jpg",
+   "url": "2026/04/04/31497492604042311488722364.jpg",
+   "preview": "UXG@[ItjE2-V~pr?IVoftQeUNHt6^QozSgxZ",
+   "description": null,
+   "created_at": "2026-04-04"
+  },
+  {
+   "name": "31497492604042311504235096.jpg",
+   "url": "2026/04/04/31497492604042311504235096.jpg",
+   "preview": "UJCr4G=^S4kC5:baxGbHAGNws.s.}qs-Nbju",
+   "description": null,
+   "created_at": "2026-04-04"
+  },
+  {
+   "name": "31497492604042311389459860.jpg",
+   "url": "2026/04/04/31497492604042311389459860.jpg",
+   "preview": "UPK0f}~T$g^Q=[RnRnsA0dE2I:ELyok8ocf+",
+   "description": null,
+   "created_at": "2026-04-04"
+  },
+  {
+   "name": "31497492604042311378868099.jpg",
+   "url": "2026/04/04/31497492604042311378868099.jpg",
+   "preview": "UOIDR7~B+a}A=w-U%LxE9@WBoyJQ_1bvnNa^",
+   "description": null,
+   "created_at": "2026-04-04"
+  },
+  {
+   "name": "31497492604042311516909370.jpg",
+   "url": "2026/04/04/31497492604042311516909370.jpg",
+   "preview": "UcE{;5%g+X-4~Wxt#+$*ngoIn-ohX9o0M|Rm",
+   "description": null,
+   "created_at": "2026-04-04"
+  },
+  {
+   "name": "31497492604042312106786706.jpg",
+   "url": "2026/04/04/31497492604042312106786706.jpg",
+   "preview": "U8BpI9~9n#t,NMxt0N0N01N1X9IA^$Rl^$~9",
+   "description": null,
+   "created_at": "2026-04-04"
+  },
+  {
+   "name": "31497492604042311033401538.jpg",
+   "url": "2026/04/04/31497492604042311033401538.jpg",
+   "preview": "UC9ali-+aM%J?:XQR+oxx?X6X5oe?pxroJs.",
+   "description": null,
+   "created_at": "2026-04-04"
+  },
+  {
+   "name": "31497492604042311043045091.jpg",
+   "url": "2026/04/04/31497492604042311043045091.jpg",
+   "preview": "U58zfF^+049Z}=M{9vog0MIo%Kxt5Xxv=_jY",
+   "description": null,
+   "created_at": "2026-04-04"
+  },
+  {
+   "name": "31497492604042311082431674.jpg",
+   "url": "2026/04/04/31497492604042311082431674.jpg",
+   "preview": "URD2HK*GRRyVx[nUafW.8wMxWEMx?so_Rkoe",
+   "description": null,
+   "created_at": "2026-04-04"
+  },
+  {
+   "name": "31497492604042311112063032.jpg",
+   "url": "2026/04/04/31497492604042311112063032.jpg",
+   "preview": "UqDmX5xuWBtR_4t8WBt8-?t7n+t8-=t7oet7",
+   "description": null,
+   "created_at": "2026-04-04"
+  },
+  {
+   "name": "31497492604042311153502133.jpg",
+   "url": "2026/04/04/31497492604042311153502133.jpg",
+   "preview": "UWHULB#$KRt,~BRPNHXTxnOFwHt6^~S~X8tQ",
+   "description": null,
+   "created_at": "2026-04-04"
+  },
+  {
+   "name": "31497492604042311176336611.jpg",
+   "url": "2026/04/04/31497492604042311176336611.jpg",
+   "preview": "UKBM_1WFIVs%4pnzxtkEIBtRWWV@~nf-M|e,",
+   "description": null,
+   "created_at": "2026-04-04"
+  },
+  {
+   "name": "31497492604042311421539511.jpg",
+   "url": "2026/04/04/31497492604042311421539511.jpg",
+   "preview": "U}C@$=xvsmtR*0tRoIo#toozobogtnogoIkC",
+   "description": null,
+   "created_at": "2026-04-04"
+  }
+ ],
+ "vr_photo": null,
+ "video_url": "https://www.aparat.com/v/MgWZP",
+ "allocation": "shared_place",
+ "types": [
+  "cottage",
+  "ecolog",
+  "suite"
+ ],
+ "regions": [
+  "rural"
+ ],
+ "floor_area": 40,
+ "land_area": 6000,
+ "floors_count": 0,
+ "bedrooms": 0,
+ "sleep_arrange": [
+  {
+   "space_id": 0,
+   "single": 0,
+   "double": 2,
+   "mattress": 0,
+   "sofa_bed": 0,
+   "etc": ""
+  }
+ ],
+ "sleep_description": null,
+ "guest_number": 4,
+ "max_guest_number": 4,
+ "stays_min": 1,
+ "stays_max": null,
+ "entrance_time_min": 14,
+ "entrance_time_max": 0,
+ "leaving_time": 12,
+ "features": [
+  {
+   "name": "essentials",
+   "description": "مایع ظرفشویی، مایع دستشویی، دستمال توالت،دستمال کاغذی"
+  },
+  {
+   "name": "electricity",
+   "description": null
+  },
+  {
+   "name": "water",
+   "description": null
+  },
+  {
+   "name": "tv",
+   "description": "ال ای دی 32 اینچ"
+  },
+  {
+   "name": "heating",
+   "description": "یک شعله بخاری گازی در پذیرایی"
+  },
+  {
+   "name": "cooler",
+   "description": "یک دستگاه اسپلیت ۱۲۰۰۰ در پذیرایی"
+  },
+  {
+   "name": "kitchen",
+   "description": "کتری و قوری و لیوان"
+  },
+  {
+   "name": "refrigerator",
+   "description": "هتلی"
+  },
+  {
+   "name": "table",
+   "description": "4 نفره در ایوان"
+  },
+  {
+   "name": "parking",
+   "description": "پارکینگ روباز برای یک خودرو در حیاط"
+  },
+  {
+   "name": "toilet",
+   "description": "با حمام"
+  },
+  {
+   "name": "islamictoilet",
+   "description": "در محوطه به صورت مشترک"
+  },
+  {
+   "name": "barbecue",
+   "description": "باربیکیو ذغالی در حیاط به صورت مشترک"
+  },
+  {
+   "name": "food",
+   "description": "سرو غذا با هماهنگی قبلی با میزبان و پرداخت هزینه جداگانه برای وعده صبحانه ناهار و شام امکانپذیر است."
+  },
+  {
+   "name": "janitor",
+   "description": "سرایدار و نگهبان 24 ساعته در محوطه سکونت دارند."
+  },
+  {
+   "name": "bathroom",
+   "description": "با سرویس فرنگی"
+  },
+  {
+   "name": "firstaidkit",
+   "description": "در اختیار سرایدار"
+  },
+  {
+   "name": "fireextingu",
+   "description": "در اختیار سرایدار"
+  }
+ ],
+ "properties": [
+  {
+   "id": 34,
+   "name": "خوش غذا"
+  },
+  {
+   "id": 39,
+   "name": "جذاب"
+  },
+  {
+   "id": 52,
+   "name": "خوش منظره"
+  }
+ ],
+ "additional_feature": null,
+ "additional_safety": null,
+ "rules": [
+  "party",
+  "pet",
+  "smoke"
+ ],
+ "additional_rule": "جهت پذیرش‌، ارائه کارت ملی تمام نفرات الزامی است.\nپخش موزیک و برگزاری جشن به دلیل حفظ آرامش سایر میهمان‌ها و جامعه محلی در کلبه و فضای باز ممنوع می‌باشد.\nامکان پذیرش تعداد افراد بیشتر از ظرفیت کلبه ها وجود ندارد.\nامکان پخت و پز در کلبه و تراس وجود ندارد.",
+ "cancellation_policy": "middle",
+ "min_price": 2000000,
+ "extra_price": 0,
+ "is_clean": true,
+ "is_new": false,
+ "is_instant": true,
+ "is_plus": true,
+ "success_books": 20,
+ "discounts": [
+  {
+   "percent": 10,
+   "type": "duration",
+   "min_nights": 3
+  },
+  {
+   "percent": 20,
+   "type": "duration",
+   "min_nights": 20
+  }
+ ],
+ "current_discount": null,
+ "current_discount_percent": 0,
+ "ratings": {
+  "count": 20,
+  "total": 4.6,
+  "accuracy": 4.9,
+  "communication": 4.6,
+  "cleanliness": 4.3,
+  "location": 4.6,
+  "checkin": 5,
+  "value": 4.5,
+  "comments_grouped_by_rating": {
+   "3": 1,
+   "4": 5,
+   "5": 2
+  },
+  "is_recently": true,
+  "is_bad_host": false
+ },
+ "host": {
+  "id": 1197838,
+  "name": "میراحسان",
+  "avatar": "2025/04/28/2504281116081197838.jpg",
+  "gender": "male",
+  "description": "مالک اقامتگاه کیمه",
+  "created_at": "2019-12-09",
+  "response_time": 94,
+  "accept_rate": 98,
+  "host_communication_rate": 4.5
+ },
+ "meta": {
+  "title": "سوئیت در سیدکلا بابلکنار - همکف",
+  "description": "اجاره روزانه کلبه روستایی در بابلکنار، مازندران برای 4 نفر مهمان با قیمت مناسب و ضمانت تحویل جاجیگا.",
+  "keywords": "اجاره اقامتگاه بوم‌گردی در سوادکوه,اجاره اقامتگاه بوم‌گردی در مازندران,جنگلی,اجاره اقامتگاه بوم‌گردی در شمال,اجاره روزانه,سایت اجاره ویلا"
+ },
+ "group_rooms": {
+  "items": [
+   {
+    "id": 3149747,
+    "units_count": 3,
+    "url": "/room/3149747",
+    "short_url": "/r/8aj",
+    "title": "کلبه دوبلکس",
+    "bedrooms": 1,
+    "floor_area": 56,
+    "guest_number": 5,
+    "max_guest_number": 5,
+    "min_price": 2500000,
+    "invoice": {
+     "extra": {
+      "count": 0,
+      "price": 0,
+      "total": 0
+     },
+     "discount": {
+      "type": null,
+      "percent": 0,
+      "amount": 0
+     },
+     "discounts": [],
+     "final": 2500000,
+     "prices": [
+      1
+     ],
+     "is_bill": false
+    },
+    "pictures": {
+     "total": 1,
+     "items": [
+      {
+       "name": "31497472604042318155495428.jpg",
+       "preview": "ULFYGQyE13?aN~tn%hX75Hb|-=Rl~WS+I]xb",
+       "url": "2026/04/04/31497472604042318155495428.jpg"
+      }
+     ]
+    }
+   }
+  ],
+  "count": 1
+ },
+ "group": {
+  "count": 1,
+  "items": [
+   {
+    "id": 3149747,
+    "units_count": 3,
+    "url": "/room/3149747",
+    "short_url": "/r/8aj",
+    "title": "کلبه دوبلکس",
+    "city": "بابلکنار",
+    "bedrooms": 1,
+    "floor_area": 56,
+    "guest_number": 5,
+    "max_guest_number": 5,
+    "is_clean": true,
+    "is_new": false,
+    "is_instant": true,
+    "is_plus": false,
+    "min_price": 2500000,
+    "discount": null,
+    "success_books": 50,
+    "rating": {
+     "count": 28,
+     "total": 4.5
+    },
+    "host": {
+     "id": 1197838,
+     "avatar": "2025/04/28/2504281116081197838.jpg"
+    },
+    "invoice": {
+     "extra": {
+      "count": 0,
+      "price": 0,
+      "total": 0
+     },
+     "discount": {
+      "type": null,
+      "percent": 0,
+      "amount": 0
+     },
+     "discounts": [],
+     "final": 2500000,
+     "prices": {
+      "2500000": 1
+     },
+     "is_bill": false
+    },
+    "pictures": {
+     "total": 1,
+     "items": [
+      {
+       "name": "31497472604042318155495428.jpg",
+       "preview": "ULFYGQyE13?aN~tn%hX75Hb|-=Rl~WS+I]xb",
+       "url": "2026/04/04/31497472604042318155495428.jpg"
+      }
+     ]
+    },
+    "properties": [
+     "is_clean",
+     "is_instant"
+    ]
+   }
+  ]
+ }
+}

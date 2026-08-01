@@ -1,0 +1,486 @@
+{
+ "id": 3178910,
+ "status": "active",
+ "units_count": 1,
+ "url": "/room/3178910",
+ "short_url": "/r/usm",
+ "title": "ویلا استخردار در بابلکنار - سیدکلا",
+ "description": "این ویلا دو خوابه با حیاطی دلباز و دسترسی ۱۵ پله ای به همراه استخر آبگرم در یک ساختمان دو طبقه و در روستای خوش آب و هوای سیدکلا واقع شده است که با شهر شیرگاه حدود ۲۰ کیلومتر فاصله دارد.\nویلا در طبقه پایین دارای سالن پذیرایی، آشپزخانه، دو اتاق خواب، سرویس ایرانی، سرویس فرنگی مشترک با حمام و در طبقه بالا دارای شاهنشین با چشم اندازی دلنواز می باشد.\nگفتنی است محوطه اطراف اقامتگاه از چهار سمت با دیوار کوتاه و بلند محصور شده و جهت امنیت بیشتر دروبین مداربسته محوطه حیاط و کوچه را تحت پوشش قرار می دهد.\nاز این ویلا امکان دسترسی به نانوایی و سوپرمارکت با طی کردن مسافت حدود ۵۰۰ متری میسر است و کیفیت خطوط شبکه برای تلفن همراه در مکالمه عالی و پوشش اینترنت برای همراه اول و ایرانسل ۴g می باشد.\nاز جمله جاذبه های این منطقه زیبا و سرسبز می توان به دریاچه سد سنبل رود، آبشار زال، آبشار ترز، دریاچه و جنگل لفور و . . . اشاره کرد.",
+ "geo": {
+  "lat": 36.3126,
+  "lng": 52.783
+ },
+ "province": {
+  "id": "p26",
+  "name": "مازندران",
+  "url": "/s/mazandaran"
+ },
+ "city": {
+  "id": 467,
+  "name": "بابلکنار",
+  "url": "/s/babolkenar"
+ },
+ "pictures": [
+  {
+   "name": "3178910240402193040.jpg",
+   "url": "2024/04/02/3178910240402193040.jpg",
+   "preview": "UICG-_%#I]%h.AbdRmo#9IogoLRka^tQkCWB",
+   "description": "چشم انداز شاه نشین",
+   "created_at": "2024-04-02"
+  },
+  {
+   "name": "3178910240419174827.jpg",
+   "url": "2024/04/19/3178910240419174827.jpg",
+   "preview": "UKDl}r%LW-?Y~n%Lx@%Kxut7t6j[_1f+WVxt",
+   "description": "چشم انداز",
+   "created_at": "2024-04-19"
+  },
+  {
+   "name": "3178910240408111627.jpg",
+   "url": "2024/04/08/3178910240408111627.jpg",
+   "preview": "UKEC:*~q9Foe_3%MM{WBRjj[j[WB?b%Mayj[",
+   "description": "استخر",
+   "created_at": "2024-04-08"
+  },
+  {
+   "name": "3178910250428190116.jpg",
+   "url": "2025/04/28/3178910250428190116.jpg",
+   "preview": "UUE{Rg-p%1%2~VxZbIt7aKs,R-afVYjGodjF",
+   "description": "شاهنشین",
+   "created_at": "2025-04-28"
+  },
+  {
+   "name": "3178910250424093227.jpg",
+   "url": "2025/04/24/3178910250424093227.jpg",
+   "preview": "UWG*=_-pM{t6~Wt7jZxat5kCsps.^+xaRjax",
+   "description": "حال و نشیمن",
+   "created_at": "2025-04-24"
+  },
+  {
+   "name": "3178910250225131941.jpg",
+   "url": "2025/02/25/3178910250225131941.jpg",
+   "preview": "UZFrFptS%2?H-VS5$*xa%1X8nio0~Voze.xa",
+   "description": "فوتبال دستی",
+   "created_at": "2025-02-25"
+  },
+  {
+   "name": "3178910250424093214.jpg",
+   "url": "2025/04/24/3178910250424093214.jpg",
+   "preview": "UUGbYZ$gSh-;~pt7bJoztlkDs9js_3ocWAt7",
+   "description": "میز نهارخوری",
+   "created_at": "2025-04-24"
+  },
+  {
+   "name": "3178910250424093220.jpg",
+   "url": "2025/04/24/3178910250424093220.jpg",
+   "preview": "UUFrR|t8ad?H~Ws;jExux]xasmkW?as:oKxt",
+   "description": "حال",
+   "created_at": "2025-04-24"
+  },
+  {
+   "name": "3178910230312171248.jpg",
+   "url": "3178910230312171248.jpg",
+   "preview": "UqJHm,t8az?b~pt7M{oft7oLR*Rj%2j[t7xa",
+   "description": "تلویزیون",
+   "created_at": "2023-03-12"
+  },
+  {
+   "name": "31789102512212233129307908.jpg",
+   "url": "2025/12/21/31789102512212233129307908.jpg",
+   "preview": "UWDJhl?bDiM{_NxvMxWU%NozRiae%gozV@ae",
+   "description": "تصویر ارسالی مهمان",
+   "created_at": "2025-12-21"
+  },
+  {
+   "name": "3178910250221203309.jpg",
+   "url": "2025/02/21/3178910250221203309.jpg",
+   "preview": "UbG[vP-pt6%K~q%MjYocxukCWBoe?Haza}xa",
+   "description": "آشپزخانه",
+   "created_at": "2025-02-21"
+  },
+  {
+   "name": "31789102512212233149052724.jpg",
+   "url": "2025/12/21/31789102512212233149052724.jpg",
+   "preview": "UsG8+itmr[%2?wtSkCt7%hkES3oz?bbJRkt7",
+   "description": "تصویر ارسالی مهمان",
+   "created_at": "2025-12-21"
+  },
+  {
+   "name": "31789102512212233135772655.jpg",
+   "url": "2025/12/21/31789102512212233135772655.jpg",
+   "preview": "UbGu{{^+_3~q_2xuxtxuRPWURjRj%Mt6t7t7",
+   "description": "تصویر ارسالی مهمان",
+   "created_at": "2025-12-21"
+  },
+  {
+   "name": "3178910250424093233.jpg",
+   "url": "2025/04/24/3178910250424093233.jpg",
+   "preview": "UPGR*esCMw.7~poLRPt8%K%Mt8ni~V%Mxuxs",
+   "description": "اتاق خواب",
+   "created_at": "2025-04-24"
+  },
+  {
+   "name": "31789102512212233154091833.jpg",
+   "url": "2025/12/21/31789102512212233154091833.jpg",
+   "preview": "UjI5oR%Nx^.8~qxukDxvjYaeRjae%MWBkCof",
+   "description": "تصویر ارسالی مهمان",
+   "created_at": "2025-12-21"
+  },
+  {
+   "name": "3178910241018145827.jpg",
+   "url": "2024/10/18/3178910241018145827.jpg",
+   "preview": "UiF}yh-qbI%2~Wxba#xa%3a}ayof-ps;a}of",
+   "description": "اتاق خواب 2",
+   "created_at": "2024-10-18"
+  },
+  {
+   "name": "3178910221107130119.jpg",
+   "url": "3178910221107130119.jpg",
+   "preview": "UgHBe+%1t7xu~ps:t7xu%MofWXWV-ps:RkRj",
+   "description": "سرویس فرنگی و حمام",
+   "created_at": "2022-11-07"
+  },
+  {
+   "name": "3178910221107130129.jpg",
+   "url": "3178910221107130129.jpg",
+   "preview": "UUG8o:bwtR_2~pIUNGxu%MRjWBbH?axut7t7",
+   "description": "سرویس ایرانی",
+   "created_at": "2022-11-07"
+  },
+  {
+   "name": "3178910240408111605.jpg",
+   "url": "2024/04/08/3178910240408111605.jpg",
+   "preview": "UTHL6t-=f,?H~Wt8og%M%4oft7%M~WtRt7%M",
+   "description": "منظره استخر",
+   "created_at": "2024-04-08"
+  },
+  {
+   "name": "3178910240408111608.jpg",
+   "url": "2024/04/08/3178910240408111608.jpg",
+   "preview": "UXFFf|-:X6%L~WtQWUxt?bkCRjs:~otQR*t6",
+   "description": "منظره استخر",
+   "created_at": "2024-04-08"
+  },
+  {
+   "name": "3178910240407215143.jpg",
+   "url": "2024/04/07/3178910240407215143.jpg",
+   "preview": "U30d8ck]VBVUkuf-aHe,V?adj]kDkvf-aHe,",
+   "description": "شب استخر",
+   "created_at": "2024-04-07"
+  },
+  {
+   "name": "3178910240407215140.jpg",
+   "url": "2024/04/07/3178910240407215140.jpg",
+   "preview": "UD4;Way;QUieS|bajGafR6V@kCf*y;pGVZjG",
+   "description": "شب استخر",
+   "created_at": "2024-04-07"
+  },
+  {
+   "name": "3178910240408111634.jpg",
+   "url": "2024/04/08/3178910240408111634.jpg",
+   "preview": "USD0=Wx^$K?GX9RkoJj[M{ayRjRj?^xvi^s.",
+   "description": "روز استخر",
+   "created_at": "2024-04-08"
+  },
+  {
+   "name": "3178910240515123938.jpg",
+   "url": "2024/05/15/3178910240515123938.jpg",
+   "preview": "URDv}=%0eT%MS1oet7t7Rjt7t7j[_Mxtn$t7",
+   "description": "استخر",
+   "created_at": "2024-05-15"
+  },
+  {
+   "name": "3178910241022120956.jpg",
+   "url": "2024/10/22/3178910241022120956.jpg",
+   "preview": "UK5?Y+u6R4n#R:bJj?adR5V@j]axyFo~V@js",
+   "description": "شب استخر",
+   "created_at": "2024-10-22"
+  },
+  {
+   "name": "3178910241022120953.jpg",
+   "url": "2024/10/22/3178910241022120953.jpg",
+   "preview": "UH7LWQ%%IAM_RnWEofogMwV@t7of%htSRjRi",
+   "description": "شب استخر",
+   "created_at": "2024-10-22"
+  },
+  {
+   "name": "3178910240408111621.jpg",
+   "url": "2024/04/08/3178910240408111621.jpg",
+   "preview": "UWCtLhNfM{-=O@Rje.W;NxofjYRj?wo}Rkt7",
+   "description": "استخر",
+   "created_at": "2024-04-08"
+  },
+  {
+   "name": "31789102605110854327735141.jpg",
+   "url": "2026/05/11/31789102605110854327735141.jpg",
+   "preview": "UrEDFnt5ROt7.SocV?oft.axV?of.AocV=kC",
+   "description": "حیاط",
+   "created_at": "2026-05-11"
+  },
+  {
+   "name": "31789102605110853434716610.jpg",
+   "url": "2026/05/11/31789102605110853434716610.jpg",
+   "preview": "UXBz,gxoM|x[?[XORktQ%gouodoz.9t2jYo#",
+   "description": "منظره",
+   "created_at": "2026-05-11"
+  },
+  {
+   "name": "3178910240402192732.jpg",
+   "url": "2024/04/02/3178910240402192732.jpg",
+   "preview": "UoEC|MXAR+x].AbckCt8x_kDofkD%ga~a#of",
+   "description": "نمای ویلا",
+   "created_at": "2024-04-02"
+  },
+  {
+   "name": "31789102605110856578232949.jpg",
+   "url": "2026/05/11/31789102605110856578232949.jpg",
+   "preview": "UVF~Z*?HWF%LInIUnijZE2NGM}Rk~o%3NHof",
+   "description": "حیاط",
+   "created_at": "2026-05-11"
+  },
+  {
+   "name": "3178910250428190118.jpg",
+   "url": "2025/04/28/3178910250428190118.jpg",
+   "preview": "UjE:#Dx[kBx[_Nxuk9xu.9t8jaog?vt8j[oz",
+   "description": "منظره",
+   "created_at": "2025-04-28"
+  },
+  {
+   "name": "3178910240402141523.jpg",
+   "url": "2024/04/02/3178910240402141523.jpg",
+   "preview": "UhE3x7-pnnxv.Aohaio#x_ogf8o#?vxujct8",
+   "description": "منظره",
+   "created_at": "2024-04-02"
+  },
+  {
+   "name": "3178910230917202258.jpg",
+   "url": "2023/09/17/3178910230917202258.jpg",
+   "preview": "UYD0iP%eaxx[_Nxuj?xu?ct7j@t7_Mx[j?t7",
+   "description": "منظره",
+   "created_at": "2023-09-17"
+  },
+  {
+   "name": "3178910240419174835.jpg",
+   "url": "2024/04/19/3178910240419174835.jpg",
+   "preview": "ULEyPA%5D*%E-.aioeoeIVM|xtt7~ns=WBt3",
+   "description": "حیاط",
+   "created_at": "2024-04-19"
+  },
+  {
+   "name": "31789102605110855001518935.jpg",
+   "url": "2026/05/11/31789102605110855001518935.jpg",
+   "preview": "UnCQxdxuV@tQ%%ozWAozyFf,aeog%%ozjYog",
+   "description": "منظره",
+   "created_at": "2026-05-11"
+  }
+ ],
+ "vr_photo": null,
+ "video_url": null,
+ "allocation": "entire_place",
+ "types": [
+  "villa"
+ ],
+ "regions": [
+  "rural"
+ ],
+ "floor_area": 200,
+ "land_area": 700,
+ "floors_count": 0,
+ "bedrooms": 2,
+ "sleep_arrange": [
+  {
+   "space_id": 1,
+   "single": 0,
+   "double": 1,
+   "mattress": 0,
+   "sofa_bed": 0,
+   "etc": ""
+  },
+  {
+   "space_id": 2,
+   "single": 0,
+   "double": 1,
+   "mattress": 0,
+   "sofa_bed": 0,
+   "etc": ""
+  },
+  {
+   "space_id": 0,
+   "single": 0,
+   "double": 0,
+   "mattress": 3,
+   "sofa_bed": 0,
+   "etc": ""
+  }
+ ],
+ "sleep_description": "میهمانان بیشتر از ۷ نفر سرویس خواب همراه داشته باشند.",
+ "guest_number": 6,
+ "max_guest_number": 9,
+ "stays_min": 1,
+ "stays_max": null,
+ "entrance_time_min": 14,
+ "entrance_time_max": 0,
+ "leaving_time": 12,
+ "features": [
+  {
+   "name": "essentials",
+   "description": "مایع ظرفشویی، مایع دستشویی"
+  },
+  {
+   "name": "electricity",
+   "description": null
+  },
+  {
+   "name": "water",
+   "description": "شهری و قابل شرب است."
+  },
+  {
+   "name": "tv",
+   "description": "ال ای دی ۴۳ اینچ"
+  },
+  {
+   "name": "heating",
+   "description": "یک شعله بخاری گازی در پذیرایی، یک شعله بخاری گازی در هر دو اتاق خواب"
+  },
+  {
+   "name": "cooler",
+   "description": "یک دستگاه اسپلیت ۳۰۰۰۰ در پذیرایی"
+  },
+  {
+   "name": "kitchen",
+   "description": "کامل برای ۵ نفر موجود است."
+  },
+  {
+   "name": "stave",
+   "description": null
+  },
+  {
+   "name": "refrigerator",
+   "description": null
+  },
+  {
+   "name": "vacuumcleaner",
+   "description": null
+  },
+  {
+   "name": "furniture",
+   "description": "۶ نفره"
+  },
+  {
+   "name": "table",
+   "description": "۸نفره"
+  },
+  {
+   "name": "parking",
+   "description": "روباز برای ۳ خودرو"
+  },
+  {
+   "name": "toilet",
+   "description": "مشترک با حمام"
+  },
+  {
+   "name": "islamictoilet",
+   "description": null
+  },
+  {
+   "name": "barbecue",
+   "description": "کباب پز داخل حیاط"
+  },
+  {
+   "name": "pool",
+   "description": "[{i:0,h:{t:T,a:T},c:{t:F,a:F},w:3,l:8,dx:1.5,di:0.8,t:a,pb:F,pv:T,in:i}]"
+  },
+  {
+   "name": "bathroom",
+   "description": "مشترک با سرویس فرنگی"
+  },
+  {
+   "name": "firstaidkit",
+   "description": "در جا کفشی"
+  },
+  {
+   "name": "fireextingu",
+   "description": "در راهرو داخل سالن"
+  },
+  {
+   "name": "foosball",
+   "description": null
+  }
+ ],
+ "properties": [
+  {
+   "id": 71,
+   "name": "مهمان نواز"
+  },
+  {
+   "id": 49,
+   "name": "استخر آب گرم"
+  },
+  {
+   "id": 55,
+   "name": "استخر سرپوشیده"
+  }
+ ],
+ "additional_feature": null,
+ "additional_safety": null,
+ "rules": [
+  "party",
+  "pet",
+  "smoke"
+ ],
+ "additional_rule": "ارائه کارت ملی هوشمند یا کارت خودرو الزامیست.\nبه دلیل مسکونی بودن محیط و حفظ آرامش همسایگان ایجاد سر و صدا بعد از ساعت 10 شب ممنوع می باشد.\nدعوت مهمان بدون هماهنگی با میزبان ممنوع می باشد",
+ "cancellation_policy": "middle",
+ "min_price": 6500000,
+ "extra_price": 700000,
+ "is_clean": false,
+ "is_new": false,
+ "is_instant": true,
+ "is_plus": true,
+ "success_books": 50,
+ "discounts": [
+  {
+   "percent": 5,
+   "type": "duration",
+   "min_nights": 6
+  },
+  {
+   "percent": 10,
+   "type": "duration",
+   "min_nights": 10
+  }
+ ],
+ "current_discount": null,
+ "current_discount_percent": 0,
+ "ratings": {
+  "count": 39,
+  "total": 4.9,
+  "accuracy": 5,
+  "communication": 5,
+  "cleanliness": 4.9,
+  "location": 5,
+  "checkin": 5,
+  "value": 4.8,
+  "comments_grouped_by_rating": {
+   "4": 3,
+   "5": 6
+  },
+  "is_recently": true,
+  "is_bad_host": false
+ },
+ "host": {
+  "id": 1613724,
+  "name": "محمد",
+  "avatar": "2023/05/21/2305211010071613724.jpg",
+  "gender": "male",
+  "description": null,
+  "created_at": "2022-11-07",
+  "response_time": 242,
+  "accept_rate": 100,
+  "host_communication_rate": 5
+ },
+ "meta": {
+  "title": "ویلا استخردار در بابلکنار - سیدکلا",
+  "description": "اجاره روزانه ویلا روستایی 2 خوابه در بابلکنار، مازندران برای 9 نفر مهمان با قیمت مناسب و ضمانت تحویل جاجیگا.",
+  "keywords": "اجاره ویلا در سوادکوه,اجاره ویلا در مازندران,روستایی,اجاره ویلا در شمال,اجاره روزانه,رزرو اینترنتی ویلا"
+ }
+}

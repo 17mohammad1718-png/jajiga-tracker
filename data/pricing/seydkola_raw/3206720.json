@@ -1,0 +1,511 @@
+{
+ "id": 3206720,
+ "status": "active",
+ "units_count": 1,
+ "url": "/room/3206720",
+ "short_url": "/r/1g94",
+ "title": "کلبه چوبی جکوزی دار در بابلکنار - سیدکلا",
+ "description": "این کلبه چوبی دو خوابه که یک خواب آن مستر می باشد، با ایوان و چشم انداز کوه و جنگل در فاصله حدود ۱۵ کیلومتری از شیرگاه و حدود ۳۰ کیلومتری شهر بابل در روستای سیدکلا قرار دارد.\nحیاط ویلا با توجه به بافت روستایی منطقه فاقد حصار می باشد، همچنین سرایدار در ابتدای محوطه سکونت دارد. جهت امنیت بیشتر حیاط مجهز به دوربین مداربسته است.\nمهمانان گرامی می توانند با پیمودن حدود ۲۰۰ متر برای تهیه مایحتاج روزانه به سوپرمارکت و نانوایی دسترسی داشته باشند.\nآنتن دهی تلفن همراه برای دو اپراتور ایرانسل و همراه اول در مکالمه خوب و پوشش اینترنت به صورت ۳g است.\nمنطقه سوادکوه با برخورداری از آب و هوای دل انگیز و خنک، طبیعت چشم نواز از کوه و جنگل، آبشارهای طبیعی و خروشان نظیر هفت آبشار، گزو، پلنگ‌دره با حوضچه های سنگی، سد لفور و پوشش های گیاهی متعدد سفری آرامش بخش و فراموش نشدنی را با جاذبه های بی نظیر برایتان به ارمغان خواهد داشت.",
+ "geo": {
+  "lat": 36.3107,
+  "lng": 52.7948
+ },
+ "province": {
+  "id": "p26",
+  "name": "مازندران",
+  "url": "/s/mazandaran"
+ },
+ "city": {
+  "id": 467,
+  "name": "بابلکنار",
+  "url": "/s/babolkenar"
+ },
+ "pictures": [
+  {
+   "name": "3206720240209104102.jpg",
+   "url": "2024/02/09/3206720240209104102.jpg",
+   "preview": "UKDSzC^+xH?G~q?baOxa%N-;xut7^*-p-:xa",
+   "description": "بالکن",
+   "created_at": "2024-02-09"
+  },
+  {
+   "name": "3206720250512150341.jpg",
+   "url": "2025/05/12/3206720250512150341.jpg",
+   "preview": "UTEx|p%MMwwb~qtRMdi^ozR+aeoLvfROtltR",
+   "description": "جکوزی",
+   "created_at": "2025-05-12"
+  },
+  {
+   "name": "3206720250512150848.jpg",
+   "url": "2025/05/12/3206720250512150848.jpg",
+   "preview": "UTDb{3-;R+%L%2xba}of%Ms;RkkC~p%2Rjt7",
+   "description": "نمای کلبه",
+   "created_at": "2025-05-12"
+  },
+  {
+   "name": "3206720250512150415.jpg",
+   "url": "2025/05/12/3206720250512150415.jpg",
+   "preview": "UUEoh~~pyD%M^Q%2bwoziJidV[jG$xoHWAs9",
+   "description": "بالکن",
+   "created_at": "2025-05-12"
+  },
+  {
+   "name": "3206720250512150405.jpg",
+   "url": "2025/05/12/3206720250512150405.jpg",
+   "preview": "URF~BN?ttQ-o~Ts*WUi_VYRPRkV@#ms=a~xa",
+   "description": "پذیرایی",
+   "created_at": "2025-05-12"
+  },
+  {
+   "name": "3206720250512150412.jpg",
+   "url": "2025/05/12/3206720250512150412.jpg",
+   "preview": "UNF5BEtTt8?F}?xYNHjrr=xCbHR-=soLs.xZ",
+   "description": "پذیرایی",
+   "created_at": "2025-05-12"
+  },
+  {
+   "name": "3206720250512150408.jpg",
+   "url": "2025/05/12/3206720250512150408.jpg",
+   "preview": "UNF}.g?FZ}-o}jxCR:s9Q,WBS6nh?Ht7Ris:",
+   "description": "پذیرایی",
+   "created_at": "2025-05-12"
+  },
+  {
+   "name": "3206720250512150349.jpg",
+   "url": "2025/05/12/3206720250512150349.jpg",
+   "preview": "UQGH-k=wIn-o}lw[ogs:VXjbWYV@?Hs;Ipj[",
+   "description": "پذیرایی و آشپزخانه",
+   "created_at": "2025-05-12"
+  },
+  {
+   "name": "3206720240209104056.jpg",
+   "url": "2024/02/09/3206720240209104056.jpg",
+   "preview": "URHB6j%fI;$$^hxtWCWBt3xZj[bG~AbbWVt6",
+   "description": "آشپزخانه",
+   "created_at": "2024-02-09"
+  },
+  {
+   "name": "3206720230919183506.jpg",
+   "url": "2023/09/19/3206720230919183506.jpg",
+   "preview": "UbG[1h~VD*D%^+xu9ZD%?HxuIoIU^*%MWBV@",
+   "description": "اتاق خواب ۱",
+   "created_at": "2023-09-19"
+  },
+  {
+   "name": "3206720250512150351.jpg",
+   "url": "2025/05/12/3206720250512150351.jpg",
+   "preview": "UUI4%~^i~B^j#iMwxCxYIANIIpV@~Wxvozt6",
+   "description": null,
+   "created_at": "2025-05-12"
+  },
+  {
+   "name": "3206720250512150402.jpg",
+   "url": "2025/05/12/3206720250512150402.jpg",
+   "preview": "UKF#de^%57-4}RoJS%%2H?jFxaNG^k%1RiRP",
+   "description": null,
+   "created_at": "2025-05-12"
+  },
+  {
+   "name": "3206720250512150359.jpg",
+   "url": "2025/05/12/3206720250512150359.jpg",
+   "preview": "UbID]c~AX4?E~8%1XAxZR+juj[R,%3xZs+s:",
+   "description": "اتاق خواب 2",
+   "created_at": "2025-05-12"
+  },
+  {
+   "name": "3206720230919183228.jpg",
+   "url": "2023/09/19/3206720230919183228.jpg",
+   "preview": "UYGH;p${^$~A~UxY%1%1-poeoKoe^*s,xYxt",
+   "description": "سرویس خواب",
+   "created_at": "2023-09-19"
+  },
+  {
+   "name": "3206720230919183225.jpg",
+   "url": "2023/09/19/3206720230919183225.jpg",
+   "preview": "UlIOkJ-:j[-;~qxuj[t7%Mofj[oe?bofj[t7",
+   "description": "حمام با سرویس فرنگی",
+   "created_at": "2023-09-19"
+  },
+  {
+   "name": "3206720240214095442.jpg",
+   "url": "2024/02/14/3206720240214095442.jpg",
+   "preview": "UZHeqJ?cWF-:~qozM{j@xuj[RjWB_3x]oft7",
+   "description": null,
+   "created_at": "2024-02-14"
+  },
+  {
+   "name": "3206720250512150339.jpg",
+   "url": "2025/05/12/3206720250512150339.jpg",
+   "preview": "UJD9q:n}IVs:_L%fRPR6E_x[spRQSuawt8t7",
+   "description": null,
+   "created_at": "2025-05-12"
+  },
+  {
+   "name": "3206720250512150418.jpg",
+   "url": "2025/05/12/3206720250512150418.jpg",
+   "preview": "UTDb{3-;R+%L%2xba}of%Ms;RkkC~p%2Rjt7",
+   "description": null,
+   "created_at": "2025-05-12"
+  },
+  {
+   "name": "3206720240209104049.jpg",
+   "url": "2024/02/09/3206720240209104049.jpg",
+   "preview": "UlDm5SxaoLxu?wogj[t8%ht8oft8?bxuoft7",
+   "description": null,
+   "created_at": "2024-02-09"
+  },
+  {
+   "name": "3206720240214095424.jpg",
+   "url": "2024/02/14/3206720240214095424.jpg",
+   "preview": "UuGu?on#M{%L~poeWBof?boLayof_Mj?WBt7",
+   "description": null,
+   "created_at": "2024-02-14"
+  },
+  {
+   "name": "3206720230919183406.jpg",
+   "url": "2023/09/19/3206720230919183406.jpg",
+   "preview": "U67A#e0foy-o~UD*t6xt?aIVWVxt~UE2NH%2",
+   "description": "بالکن دید شب",
+   "created_at": "2023-09-19"
+  },
+  {
+   "name": "3206720250512150854.jpg",
+   "url": "2025/05/12/3206720250512150854.jpg",
+   "preview": "U%He|6_3j]t6~q.8ozofxb%MtRaht6tRt8WV",
+   "description": null,
+   "created_at": "2025-05-12"
+  },
+  {
+   "name": "3206720250512150852.jpg",
+   "url": "2025/05/12/3206720250512150852.jpg",
+   "preview": "U*EWdbozWXxu?wW?WXtR-?WZWWt8?cbcWDt7",
+   "description": null,
+   "created_at": "2025-05-12"
+  },
+  {
+   "name": "3206720250512150345.jpg",
+   "url": "2025/05/12/3206720250512150345.jpg",
+   "preview": "UjGk]]s.D*t7~pt7M{WBx]t7aLM{%ft7V@Rj",
+   "description": null,
+   "created_at": "2025-05-12"
+  },
+  {
+   "name": "3206720250512150343.jpg",
+   "url": "2025/05/12/3206720250512150343.jpg",
+   "preview": "UQF$@S?^McxZ-UbItRx]8wVskqV@-on$RPRP",
+   "description": null,
+   "created_at": "2025-05-12"
+  }
+ ],
+ "vr_photo": null,
+ "video_url": null,
+ "allocation": "shared_place",
+ "types": [
+  "cottage"
+ ],
+ "regions": [
+  "rural"
+ ],
+ "floor_area": 75,
+ "land_area": 1000,
+ "floors_count": 0,
+ "bedrooms": 2,
+ "sleep_arrange": [
+  {
+   "space_id": 1,
+   "single": 0,
+   "double": 1,
+   "mattress": 4,
+   "sofa_bed": 0,
+   "etc": ""
+  },
+  {
+   "space_id": 2,
+   "single": 0,
+   "double": 1,
+   "mattress": 0,
+   "sofa_bed": 0,
+   "etc": ""
+  },
+  {
+   "space_id": 0,
+   "single": 0,
+   "double": 0,
+   "mattress": 0,
+   "sofa_bed": 0,
+   "etc": ""
+  }
+ ],
+ "sleep_description": null,
+ "guest_number": 4,
+ "max_guest_number": 7,
+ "stays_min": 1,
+ "stays_max": null,
+ "entrance_time_min": 15,
+ "entrance_time_max": 0,
+ "leaving_time": 12,
+ "features": [
+  {
+   "name": "essentials",
+   "description": "مایع ظرفشویی، مایع دستشویی"
+  },
+  {
+   "name": "electricity",
+   "description": null
+  },
+  {
+   "name": "water",
+   "description": "آب لوله کشی شهری"
+  },
+  {
+   "name": "tv",
+   "description": "تلویزیون ال ای دی ۴۲ اینچ"
+  },
+  {
+   "name": "heating",
+   "description": "شوفاژ موتورخانه"
+  },
+  {
+   "name": "cooler",
+   "description": "یک دستگاه کولر پنجره ای در پذیرایی"
+  },
+  {
+   "name": "kitchen",
+   "description": "برای ۶ نفر بصورت کامل موجود می باشد."
+  },
+  {
+   "name": "stave",
+   "description": null
+  },
+  {
+   "name": "refrigerator",
+   "description": null
+  },
+  {
+   "name": "vacuumcleaner",
+   "description": null
+  },
+  {
+   "name": "furniture",
+   "description": "مبلمان ۷ نفره"
+  },
+  {
+   "name": "table",
+   "description": "۴ نفره"
+  },
+  {
+   "name": "drawer",
+   "description": null
+  },
+  {
+   "name": "parking",
+   "description": "پارکینگ روباز برای چهار خودرو در حیاط"
+  },
+  {
+   "name": "toilet",
+   "description": "با حمام"
+  },
+  {
+   "name": "islamictoilet",
+   "description": null
+  },
+  {
+   "name": "barbecue",
+   "description": "باربیکیو ذغالی در حیاط"
+  },
+  {
+   "name": "jacuzzi",
+   "description": "4 نفره"
+  },
+  {
+   "name": "janitor",
+   "description": "نگهبان در همسایگی سکونت دارد."
+  },
+  {
+   "name": "bathroom",
+   "description": "با سرویس فرنگی در اتاق خواب"
+  },
+  {
+   "name": "firstaidkit",
+   "description": null
+  },
+  {
+   "name": "fireextingu",
+   "description": null
+  }
+ ],
+ "properties": [],
+ "additional_feature": null,
+ "additional_safety": null,
+ "rules": [
+  "foreign_guest",
+  "party",
+  "pet",
+  "smoke",
+  "unmarried"
+ ],
+ "additional_rule": "به فرد و جمع های مجردی اجاره داده نمی شود.\nدر صورت عدم رعایت نظافت مبلغ ۱۰۰ هزار تومان بعنوان هزینه نظافت دریافت می گردد.\nارائه کارت خودرو یا گواهینامه الزامی می باشد.",
+ "cancellation_policy": "middle",
+ "min_price": 4000000,
+ "extra_price": 550000,
+ "is_clean": false,
+ "is_new": false,
+ "is_instant": false,
+ "is_plus": true,
+ "success_books": 10,
+ "discounts": [
+  {
+   "percent": 5,
+   "type": "duration",
+   "min_nights": 2
+  },
+  {
+   "percent": 20,
+   "type": "duration",
+   "min_nights": 10
+  }
+ ],
+ "current_discount": null,
+ "current_discount_percent": 0,
+ "ratings": {
+  "count": 10,
+  "total": 4.7,
+  "accuracy": 4.7,
+  "communication": 4.3,
+  "cleanliness": 4.7,
+  "location": 5,
+  "checkin": 5,
+  "value": 4.3,
+  "comments_grouped_by_rating": {
+   "3": 1,
+   "4": 2,
+   "5": 3
+  },
+  "is_recently": true,
+  "is_bad_host": false
+ },
+ "host": {
+  "id": 1890654,
+  "name": "عاطفه",
+  "avatar": "2023/09/11/2309111945131890654.jpg",
+  "gender": "female",
+  "description": null,
+  "created_at": "2023-09-20",
+  "response_time": 444,
+  "accept_rate": 94,
+  "host_communication_rate": 4.3
+ },
+ "meta": {
+  "title": "کلبه چوبی جکوزی دار در بابلکنار - سیدکلا",
+  "description": "اجاره روزانه کلبه روستایی 2 خوابه در بابلکنار، مازندران برای 7 نفر مهمان با قیمت مناسب و ضمانت تحویل جاجیگا.",
+  "keywords": "اجاره کلبه در لفور,اجاره کلبه در مازندران,روستایی,اجاره کلبه در شمال,اجاره روزانه,رزرو آنلاین ویلا"
+ },
+ "group_rooms": {
+  "items": [
+   {
+    "id": 3219516,
+    "units_count": 1,
+    "url": "/room/3219516",
+    "short_url": "/r/1q4k",
+    "title": "دوبلکس استخردار",
+    "bedrooms": 3,
+    "floor_area": 400,
+    "guest_number": 6,
+    "max_guest_number": 8,
+    "min_price": 8500000,
+    "invoice": {
+     "extra": {
+      "count": 0,
+      "price": 1500000,
+      "total": 0
+     },
+     "discount": {
+      "type": null,
+      "percent": 0,
+      "amount": 0
+     },
+     "discounts": [],
+     "final": 8500000,
+     "prices": [
+      1
+     ],
+     "is_bill": false
+    },
+    "pictures": {
+     "total": 1,
+     "items": [
+      {
+       "name": "3219516240226175329.jpg",
+       "preview": "UsF$LzxvRjxu~XxuRkt7t9s;ayWWogj]j[ju",
+       "url": "2024/02/26/3219516240226175329.jpg"
+      }
+     ]
+    }
+   }
+  ],
+  "count": 1
+ },
+ "group": {
+  "count": 1,
+  "items": [
+   {
+    "id": 3219516,
+    "units_count": 1,
+    "url": "/room/3219516",
+    "short_url": "/r/1q4k",
+    "title": "دوبلکس استخردار",
+    "city": "بابلکنار",
+    "bedrooms": 3,
+    "floor_area": 400,
+    "guest_number": 6,
+    "max_guest_number": 8,
+    "is_clean": false,
+    "is_new": false,
+    "is_instant": false,
+    "is_plus": true,
+    "min_price": 8500000,
+    "discount": null,
+    "success_books": 20,
+    "rating": {
+     "count": 22,
+     "total": 4.6
+    },
+    "host": {
+     "id": 1890654,
+     "avatar": "2023/09/11/2309111945131890654.jpg"
+    },
+    "invoice": {
+     "extra": {
+      "count": 0,
+      "price": 1500000,
+      "total": 0
+     },
+     "discount": {
+      "type": null,
+      "percent": 0,
+      "amount": 0
+     },
+     "discounts": [],
+     "final": 8500000,
+     "prices": {
+      "8500000": 1
+     },
+     "is_bill": false
+    },
+    "pictures": {
+     "total": 1,
+     "items": [
+      {
+       "name": "3219516240226175329.jpg",
+       "preview": "UsF$LzxvRjxu~XxuRkt7t9s;ayWWogj]j[ju",
+       "url": "2024/02/26/3219516240226175329.jpg"
+      }
+     ]
+    },
+    "properties": [
+     "is_plus"
+    ]
+   }
+  ]
+ }
+}

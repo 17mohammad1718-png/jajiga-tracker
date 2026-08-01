@@ -1,0 +1,423 @@
+{
+ "id": 3201318,
+ "status": "active",
+ "units_count": 1,
+ "url": "/room/3201318",
+ "short_url": "/r/1c32",
+ "title": "کلبه حیاط دار در بابلکنار - سیدکلا",
+ "description": "این سوئیت یکخوابه با بالکن و حیاط و چشم انداز شالیزار در روستای سیدکلا با فاصله حدود ۱۵ کیلومتری از شهر شیرگاه و حدود ۲۰ کیلومتری شهر بابل واقع شده است. \nطراحی سوئیت به صورت پذیرایی، آشپزخانه و اتاق خواب دارای حمام (در ورودی از تراس) می باشد و سرویس ایرانی در حیاط اقامتگاه تعبیه شده است، لطفا توجه بفرمائید در یکی از اتاق ها قفل شده و در اختیار میزبان می باشد.\nمحوطه اطراف اقامتگاه از ۳ طرف با دیوار و ۱ طرف با فنس محصور شده و استفاده میهمانان از درختان میوه ممنوع می باشد.\nمیهمانان گرامی می توانند با حدود ۵ دقیقه رانندگی به سوپرمارکت و نانوایی دسترسی داشته باشند.\nکیفیت پوشش شبکه تلفن همراه برای دو اپراتور همراه اول و ایرانسل در مکالمه عالی و دسترسی به اینترنت به صورت ۴g می باشد.\nتوجه داشته باشید که در این اقامتگاه پخت غذای محلی برای وعده صبحانه، ناهار و شام با هماهنگی قبلی و پرداخت هزینه جداگانه امکان پذیر است.\nلازم به ذکر است حدود ۱۰۰ متر مسیر منتهی به اقامتگاه به صورت جاده خاکی است.\nبا توجه به اینکه کلبه در بافت روستایی و جنگلی قرار دارد، صدای پرندگان و حیوانات اهلی از نزدیکی اقامتگاه به گوش می رسد.",
+ "geo": {
+  "lat": 36.3173,
+  "lng": 52.7808
+ },
+ "province": {
+  "id": "p26",
+  "name": "مازندران",
+  "url": "/s/mazandaran"
+ },
+ "city": {
+  "id": 467,
+  "name": "بابلکنار",
+  "url": "/s/babolkenar"
+ },
+ "pictures": [
+  {
+   "name": "32013182604202358369995093.jpg",
+   "url": "2026/04/20/32013182604202358369995093.jpg",
+   "preview": "U4AKBY0K00.6-^xc9^ND00?J~8RNThR$=?t9",
+   "description": "نما",
+   "created_at": "2026-04-20"
+  },
+  {
+   "name": "32013182604051641233285787.jpg",
+   "url": "2026/04/05/32013182604051641233285787.jpg",
+   "preview": "UTG@*x.7%K-:}=xZs:%1M|s9xZs.-7ococjY",
+   "description": null,
+   "created_at": "2026-04-05"
+  },
+  {
+   "name": "32013182604202315531095039.jpg",
+   "url": "2026/04/20/32013182604202315531095039.jpg",
+   "preview": "UnGcG8M|Vv%M~pMxM_xt?IM_M{s;?cR$ads=",
+   "description": "چشم انداز",
+   "created_at": "2026-04-20"
+  },
+  {
+   "name": "3201318250721105454.jpg",
+   "url": "2025/07/21/3201318250721105454.jpg",
+   "preview": "UbG%=KxwNg%3}?bdNet6XnXTSPa$%ho}XAW?",
+   "description": "صبحانه",
+   "created_at": "2025-07-21"
+  },
+  {
+   "name": "3201318231022134648.jpg",
+   "url": "2023/10/22/3201318231022134648.jpg",
+   "preview": "U]H_f2V?V@%2~WjFaext-:t6oet7%2s:t6t6",
+   "description": "پذیرایی",
+   "created_at": "2023-10-22"
+  },
+  {
+   "name": "3201318231011144143.jpg",
+   "url": "2023/10/11/3201318231011144143.jpg",
+   "preview": "U}I#JjxCad%L~Vs+jFxu?Gxajsof-:%1oKjZ",
+   "description": "پذیرایی",
+   "created_at": "2023-10-11"
+  },
+  {
+   "name": "32013182601071207485615442.jpg",
+   "url": "2026/01/07/32013182601071207485615442.jpg",
+   "preview": "UODSH#4:n6-o.R9G%1%e.7IBo#x@~UM_R;xZ",
+   "description": "پذیرایی",
+   "created_at": "2026-01-07"
+  },
+  {
+   "name": "32013182601071207466889256.jpg",
+   "url": "2026/01/07/32013182601071207466889256.jpg",
+   "preview": "UuLghA^+s,%0~q-:t5oy%ft7ocof~VxajZxY",
+   "description": "پذیرایی",
+   "created_at": "2026-01-07"
+  },
+  {
+   "name": "32013182601071207455720766.jpg",
+   "url": "2026/01/07/32013182601071207455720766.jpg",
+   "preview": "UlLz,0V=%g^+_3WAt6ofRkbIofWA~VjZt7xu",
+   "description": "میز و آینه در پذیرایی",
+   "created_at": "2026-01-07"
+  },
+  {
+   "name": "3201318240715215522.jpg",
+   "url": "2024/07/15/3201318240715215522.jpg",
+   "preview": "UnKwONrWV?^*~VxCoJ%2xts:oKt6?GadWBxa",
+   "description": "آشپزخانه",
+   "created_at": "2024-07-15"
+  },
+  {
+   "name": "3201318240715215518.jpg",
+   "url": "2024/07/15/3201318240715215518.jpg",
+   "preview": "UdIqrw~V-;_2~V?H%LxtIVxaayM|-ot6ays:",
+   "description": "آشپزخانه",
+   "created_at": "2024-07-15"
+  },
+  {
+   "name": "32013182512131817185609205.jpg",
+   "url": "2025/12/13/32013182512131817185609205.jpg",
+   "preview": "UtM6L+~V?Z^j=v%L%0nO%Lxtt6oc~U%2xt%2",
+   "description": "اتاق خواب",
+   "created_at": "2025-12-13"
+  },
+  {
+   "name": "32013182602092118597542923.jpg",
+   "url": "2026/02/09/32013182602092118597542923.jpg",
+   "preview": "UfFOGS~A-n?E?G-o%1xZtjxtxZxZ?F-n%0%0",
+   "description": "اتاق خواب",
+   "created_at": "2026-02-09"
+  },
+  {
+   "name": "3201318230712172455.jpg",
+   "url": "2023/07/12/3201318230712172455.jpg",
+   "preview": "UUGIoy_MtR-;~pbHWV-:-:Rkj[%M_3%Mt7xu",
+   "description": "حمام",
+   "created_at": "2023-07-12"
+  },
+  {
+   "name": "3201318230712172453.jpg",
+   "url": "2023/07/12/3201318230712172453.jpg",
+   "preview": "UZG+zM.8D%x]_Nx]WBt7xuoyofof?vt7Rjoz",
+   "description": "سرویس ایرانی",
+   "created_at": "2023-07-12"
+  },
+  {
+   "name": "32013182604202316014969799.jpg",
+   "url": "2026/04/20/32013182604202316014969799.jpg",
+   "preview": "UwFGK@%fxGx@_M%ft6t7.8%Mofog.9t9n,t7",
+   "description": "چشم انداز ایوان",
+   "created_at": "2026-04-20"
+  },
+  {
+   "name": "3201318250929184630.jpg",
+   "url": "2025/09/29/3201318250929184630.jpg",
+   "preview": "U88;Sg0=m;^#QpwYt0RR9I-iI]R.~nEnN4%K",
+   "description": "چشم انداز ایوان در شب",
+   "created_at": "2025-09-29"
+  },
+  {
+   "name": "3201318240529174726.jpg",
+   "url": "2024/05/29/3201318240529174726.jpg",
+   "preview": "UnGSh;?FsA-._KxtjZxt?tofM|of_Ks.IVox",
+   "description": "میزبان در همسایگی",
+   "created_at": "2024-05-29"
+  },
+  {
+   "name": "32013182604071644153911646.jpg",
+   "url": "2026/04/07/32013182604071644153911646.jpg",
+   "preview": "UfFPZ$%zE1oa%#pIk9R%.9x^baWA_4%gR*oa",
+   "description": null,
+   "created_at": "2026-04-07"
+  },
+  {
+   "name": "3201318250929184923.jpg",
+   "url": "2025/09/29/3201318250929184923.jpg",
+   "preview": "UKCZa=yCRSxp_1x[%KtM-:-.xtWV~o%fnmoc",
+   "description": null,
+   "created_at": "2025-09-29"
+  },
+  {
+   "name": "3201318251031203354.jpg",
+   "url": "2025/10/31/3201318251031203354.jpg",
+   "preview": "UqIgMO},=t}p^hoxW-xEj?N^NbWC-mxDs.xY",
+   "description": "چشم انداز ایوان",
+   "created_at": "2025-10-31"
+  },
+  {
+   "name": "32013182604132109376781588.jpg",
+   "url": "2026/04/13/32013182604132109376781588.jpg",
+   "preview": "UIBWuUs700Xo_Ne,Dio$M-WAtJs=f6aykCof",
+   "description": "ویو پذیرایی",
+   "created_at": "2026-04-13"
+  },
+  {
+   "name": "32013182604132109374138521.jpg",
+   "url": "2026/04/13/32013182604132109374138521.jpg",
+   "preview": "UXFFZ%rEaKx[~VrWnltR?IrpNHkX?InMNHo#",
+   "description": null,
+   "created_at": "2026-04-13"
+  },
+  {
+   "name": "3201318240724091621.jpg",
+   "url": "2024/07/24/3201318240724091621.jpg",
+   "preview": "UCBMSm~Tf}-o?GfObFxat7WBWBWV~U%1R*of",
+   "description": "بازارچه سنتی لفور",
+   "created_at": "2024-07-24"
+  },
+  {
+   "name": "32013182602092122473259260.jpg",
+   "url": "2026/02/09/32013182602092122473259260.jpg",
+   "preview": "UFB37}~B%1-oE1J6I:RkD*NGjZR*~C-VxGt7",
+   "description": "بازارچه سنتی",
+   "created_at": "2026-02-09"
+  },
+  {
+   "name": "32013182601071209059724105.jpg",
+   "url": "2026/01/07/32013182601071209059724105.jpg",
+   "preview": "UqDA_N%Nn,x^t:tQoco$Y7bcoJo$*Jo#njo~",
+   "description": "نمای کلبه و حیاط",
+   "created_at": "2026-01-07"
+  },
+  {
+   "name": "3201318240529174537.jpg",
+   "url": "2024/05/29/3201318240529174537.jpg",
+   "preview": "UTFGv[%zOXNZ%xX5baWUIVoeoeRj?[x[W:M|",
+   "description": "مسیر منتهی به کلبه",
+   "created_at": "2024-05-29"
+  },
+  {
+   "name": "32013182604132109403372159.jpg",
+   "url": "2026/04/13/32013182604132109403372159.jpg",
+   "preview": "UrFQEk-;MwWk?^%gV?Rh%hxvV@R%.7t8RjbY",
+   "description": "ویو تراس اقامتگاه",
+   "created_at": "2026-04-13"
+  },
+  {
+   "name": "3201318250408171344.jpg",
+   "url": "2025/04/08/3201318250408171344.jpg",
+   "preview": "UQFY3|NH$f~Be:NHxtfQM|oeR*Ip^*ofRkoe",
+   "description": "درب ورودی",
+   "created_at": "2025-04-08"
+  }
+ ],
+ "vr_photo": null,
+ "video_url": null,
+ "allocation": "entire_place",
+ "types": [
+  "ecolog",
+  "ruralhome",
+  "suite"
+ ],
+ "regions": [
+  "rural"
+ ],
+ "floor_area": 60,
+ "land_area": 200,
+ "floors_count": 0,
+ "bedrooms": 1,
+ "sleep_arrange": [
+  {
+   "space_id": 1,
+   "single": 0,
+   "double": 1,
+   "mattress": 0,
+   "sofa_bed": 0,
+   "etc": ""
+  },
+  {
+   "space_id": 0,
+   "single": 0,
+   "double": 0,
+   "mattress": 2,
+   "sofa_bed": 0,
+   "etc": ""
+  }
+ ],
+ "sleep_description": "مهمانان بیش از ۴ نفر سرویس خواب به همراه داشته باشند.",
+ "guest_number": 4,
+ "max_guest_number": 6,
+ "stays_min": 1,
+ "stays_max": 10,
+ "entrance_time_min": 14,
+ "entrance_time_max": 24,
+ "leaving_time": 12,
+ "features": [
+  {
+   "name": "essentials",
+   "description": "مایع ظرفشویی، مایع دستشویی"
+  },
+  {
+   "name": "electricity",
+   "description": null
+  },
+  {
+   "name": "water",
+   "description": "آب لوله کشی شهری"
+  },
+  {
+   "name": "tv",
+   "description": "تلویزیون ال ای دی ۳۲ اینچ"
+  },
+  {
+   "name": "heating",
+   "description": "دو شعله بخاری گازی در پذیرایی و اتاق خواب"
+  },
+  {
+   "name": "cooler",
+   "description": "یک دستگاه اسپیلت ۱۸ هزار در پذیرایی"
+  },
+  {
+   "name": "kitchen",
+   "description": "لوازم آشپزخانه برای ۴ نفر کامل موجود است."
+  },
+  {
+   "name": "stave",
+   "description": null
+  },
+  {
+   "name": "refrigerator",
+   "description": null
+  },
+  {
+   "name": "furniture",
+   "description": "مبلمان 4 نفره"
+  },
+  {
+   "name": "table",
+   "description": "۶ نفره در تراس"
+  },
+  {
+   "name": "drawer",
+   "description": "در اتاق"
+  },
+  {
+   "name": "parking",
+   "description": "پارکینگ روباز برای ۱ خودرو در حیاط"
+  },
+  {
+   "name": "islamictoilet",
+   "description": "داخل حیاط"
+  },
+  {
+   "name": "barbecue",
+   "description": "باربیکیو روی تراس"
+  },
+  {
+   "name": "food",
+   "description": "پخت غذای محلی برای وعده صبحانه، ناهار و شام با هماهنگی قبلی و پرداخت هزینه جداگانه امکان پذیر است."
+  },
+  {
+   "name": "janitor",
+   "description": "میزبان در همسایگی سکونت دارد."
+  },
+  {
+   "name": "bathroom",
+   "description": "در اتاق خواب"
+  }
+ ],
+ "properties": [
+  {
+   "id": 52,
+   "name": "خوش منظره"
+  },
+  {
+   "id": 34,
+   "name": "خوش غذا"
+  }
+ ],
+ "additional_feature": "پنکه در اتاق",
+ "additional_safety": null,
+ "rules": [
+  "party",
+  "pet",
+  "smoke"
+ ],
+ "additional_rule": null,
+ "cancellation_policy": "middle",
+ "min_price": 2100000,
+ "extra_price": 500000,
+ "is_clean": false,
+ "is_new": false,
+ "is_instant": true,
+ "is_plus": true,
+ "success_books": 200,
+ "discounts": [
+  {
+   "percent": 10,
+   "type": "duration",
+   "min_nights": 3
+  },
+  {
+   "percent": 10,
+   "type": "duration",
+   "min_nights": 7
+  },
+  {
+   "percent": 10,
+   "type": "tomorrow_discount"
+  }
+ ],
+ "current_discount": {
+  "percent": 10,
+  "type": "tomorrow_discount"
+ },
+ "current_discount_percent": 10,
+ "ratings": {
+  "count": 168,
+  "total": 4.8,
+  "accuracy": 4.8,
+  "communication": 4.7,
+  "cleanliness": 4.8,
+  "location": 4.8,
+  "checkin": 4.8,
+  "value": 4.7,
+  "comments_grouped_by_rating": {
+   "2": 1,
+   "4": 10,
+   "5": 29
+  },
+  "is_recently": true,
+  "is_bad_host": false
+ },
+ "host": {
+  "id": 1807361,
+  "name": "فائزه",
+  "avatar": "2026/06/29/2606290052281807361.jpg",
+  "gender": "female",
+  "description": null,
+  "created_at": "2023-07-16",
+  "response_time": 259,
+  "accept_rate": 100,
+  "host_communication_rate": 4.7
+ },
+ "meta": {
+  "title": "کلبه حیاط دار در بابلکنار - سیدکلا",
+  "description": "اجاره روزانه اقامتگاه بومگردی روستایی 1 خوابه در بابلکنار، مازندران برای 6 نفر مهمان با قیمت مناسب و ضمانت تحویل جاجیگا.",
+  "keywords": "اجاره خانه روستایی در لفور,اجاره خانه روستایی در مازندران,روستایی,اجاره خانه روستایی در شمال,اجاره روزانه,رزرو اینترنتی ویلا"
+ }
+}
