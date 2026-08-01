@@ -1,4 +1,4 @@
-"""Build pricing-dashboard.html from data/pricing/seydkola-pricing.json.
+"""Build pricing-dashboard.html from data/pricing/pricing-dataset.json.
 
 Phase 1 dashboard — DATA VIEW ONLY (no analysis/algorithm yet).
 Reads the merged factor dataset and injects it into a self-contained
@@ -7,11 +7,14 @@ RTL Persian single-file HTML dashboard.
 import json, os, re
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DATA = os.path.join(ROOT, "data", "pricing", "seydkola-pricing.json")
+DATA = os.path.join(ROOT, "data", "pricing", "pricing-dataset.json")
 OUT = os.path.join(ROOT, "pricing-dashboard.html")
 
 with open(DATA, encoding="utf-8") as f:
     data = json.load(f)
+
+# village order for the filter chips + stats
+VILLAGE_ORDER = ["سیدکلا", "گونه کلا", "قرآن تالار", "شیردارکلا"]
 
 FEATURE_ICONS = {
     "pool": "🏊", "swimmingpool": "🏊", "jacuzzi": "🛁", "wifi": "📶",
@@ -52,7 +55,7 @@ HTML = """<!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>کلبه‌های سیدکلا — داده قیمت‌گذاری</title>
+<title>کلبه‌های بابلکنار — داده قیمت‌گذاری</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;800&display=swap" rel="stylesheet">
 <style>
@@ -79,6 +82,11 @@ body { background:var(--bg); color:var(--text); font-family:'Vazirmatn',Tahoma,s
 .stat .v small { font-size:11px; color:var(--muted); font-weight:400; }
 
 .toolbar { display:flex; gap:10px; padding:0 20px 14px; flex-wrap:wrap; align-items:center; }
+.village-filters { display:flex; gap:6px; flex-wrap:wrap; }
+.vf-btn { background:var(--card); border:1px solid var(--border); color:var(--muted); border-radius:999px; padding:5px 14px; font-size:12px; cursor:pointer; font-family:inherit; transition:all .15s; }
+.vf-btn:hover { border-color:var(--accent); color:var(--text); }
+.vf-btn.active { background:var(--accent); border-color:var(--accent); color:#0d1117; font-weight:600; }
+.vf-btn .cnt { font-family:Consolas,monospace; font-size:10.5px; opacity:.75; margin-inline-start:4px; }
 .search-box { flex:1; min-width:220px; background:var(--card); border:1px solid var(--border); color:var(--text); border-radius:10px; padding:9px 14px; font-family:inherit; font-size:13px; }
 .search-box:focus { outline:none; border-color:var(--accent); }
 .hint { color:var(--muted); font-size:11px; }
@@ -101,6 +109,7 @@ td.title { text-align:right; max-width:220px; overflow:hidden; text-overflow:ell
 .own-badge { display:inline-block; background:var(--gold); color:#111; font-size:10px; font-weight:800; border-radius:4px; padding:1px 6px; margin-inline-start:6px; vertical-align:middle; }
 .badge { display:inline-block; background:rgba(139,148,158,.15); border:1px solid rgba(139,148,158,.3); color:var(--muted); border-radius:6px; padding:1px 6px; font-size:10.5px; margin:1px; }
 .badge.scenic { background:rgba(63,185,80,.12); border-color:rgba(63,185,80,.35); color:var(--green); }
+.village-tag { display:inline-block; background:rgba(88,166,255,.1); border:1px solid rgba(88,166,255,.28); color:var(--accent); border-radius:6px; padding:1px 7px; font-size:10.5px; white-space:nowrap; }
 .badge.plus { background:rgba(212,167,44,.12); border-color:rgba(212,167,44,.4); color:var(--gold); }
 .badge.instant { background:rgba(88,166,255,.12); border-color:rgba(88,166,255,.35); color:var(--accent); }
 .occ { font-weight:700; }
@@ -131,18 +140,15 @@ footer { text-align:center; color:var(--muted); font-size:11px; padding:24px 20p
 </head>
 <body>
 <div class="hero">
-  <h1>🏡 کلبه‌های سیدکلا — داده قیمت‌گذاری</h1>
+  <h1>🏡 کلبه‌های بابلکنار — داده قیمت‌گذاری</h1>
   <div class="sub">فاز ۱: جمع‌آوری داده (بدون تحلیل) — پایه الگوریتم قیمت‌گذاری. منبع: api.jajiga.com/api/room</div>
-  <div class="chips">
-    <span class="chip">۳۲ کلبه</span>
-    <span class="chip">منطقه: سیدکلا — بابلکنار</span>
-    <span class="chip">به‌روزرسانی: 2026-08-01</span>
-  </div>
+  <div class="chips" id="heroChips"></div>
 </div>
 
 <div class="stats" id="statsRow"></div>
 
 <div class="toolbar">
+  <div class="village-filters" id="villageFilters"></div>
   <input class="search-box" id="searchBox" placeholder="جستجو در عنوان یا میزبان...">
   <span class="hint">برای مرتب‌سازی روی ستون کلیک کنید (▼ زیاد → ▲ کم → بدون مرتب‌سازی). روی ردیف کلیک کنید تا جزئیات کامل باز شود.</span>
 </div>
@@ -178,6 +184,7 @@ function occClass(o) {
 const SORT_COLS = [
   { key:'rank', label:'#', val:c=>c.min_price||0 },
   { key:'title', label:'عنوان', val:c=>c.title||'' },
+  { key:'village', label:'روستا', val:c=>c.village||'' },
   { key:'host', label:'میزبان', val:c=>c.host_name||'' },
   { key:'price', label:'قیمت', val:c=>c.min_price||0 },
   { key:'area', label:'متراژ', val:c=>c.floor_area||0 },
@@ -194,7 +201,8 @@ const SORT_COLS = [
 ];
 
 let sortKey = null, sortDir = -1;
-let tbody, headRow, statsRow, searchBox;
+let activeVillage = null;   // null = all villages
+let tbody, headRow, statsRow, searchBox, villageFilters, heroChips;
 
 // Gregorian -> Jalali (month names included)
 const JM = ['فروردین','اردیبهشت','خرداد','تیر','مرداد','شهریور','مهر','آبان','آذر','دی','بهمن','اسفند'];
@@ -221,8 +229,10 @@ function defaultOrder() { return [...DATA].sort((a,b)=>(a.min_price||0)-(b.min_p
 
 function getFiltered() {
   const q = (searchBox.value||'').trim().toLowerCase();
-  if (!q) return DATA;
-  return DATA.filter(c =>
+  let arr = DATA;
+  if (activeVillage) arr = arr.filter(c => c.village === activeVillage);
+  if (!q) return arr;
+  return arr.filter(c =>
     (c.title||'').toLowerCase().includes(q) || (c.host_name||'').toLowerCase().includes(q) ||
     (c.properties||[]).join(' ').toLowerCase().includes(q) ||
     (c.features||[]).join(' ').toLowerCase().includes(q));
@@ -261,6 +271,32 @@ function renderStats() {
     {k:'نظرات کل', v:en(reviews)},
   ];
   statsRow.innerHTML = items.map(s=>`<div class="stat"><div class="k">${s.k}</div><div class="v">${s.v}${s.s?`<small> ${s.s}</small>`:''}</div></div>`).join('');
+}
+
+function renderVillageFilters() {
+  const counts = {};
+  DATA.forEach(c => { counts[c.village] = (counts[c.village]||0) + 1; });
+  const order = ['همه', ...Object.keys(counts)];
+  villageFilters.innerHTML = order.map(v => {
+    const key = v === 'همه' ? null : v;
+    const cnt = v === 'همه' ? DATA.length : counts[v];
+    const active = activeVillage === key ? 'active' : '';
+    return `<button class="vf-btn ${active}" data-v="${key||'__all__'}">${v}<span class="cnt">${en(cnt)}</span></button>`;
+  }).join('');
+  villageFilters.querySelectorAll('.vf-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      activeVillage = btn.dataset.v === '__all__' ? null : btn.dataset.v;
+      renderVillageFilters();
+      renderStats();
+      renderTable();
+    });
+  });
+}
+
+function renderHeroChips() {
+  const n = DATA.length;
+  const villages = [...new Set(DATA.map(c=>c.village))];
+  heroChips.innerHTML = `<span class="chip">${en(n)} کلبه</span><span class="chip">منطقه: ${villages.join('، ')} — بابلکنار</span><span class="chip">به‌روزرسانی: 2026-08-01</span>`;
 }
 
 function propsHtml(c) {
@@ -309,6 +345,7 @@ function renderTable() {
     return `<tr class="data-row ${own?'own-row':''}" data-id="${c.id}">
       <td>${rank}</td>
       <td class="title">${titleLink}${own}</td>
+      <td><span class="village-tag">${c.village||'—'}</span></td>
       <td>${hostLink}</td>
       <td><span class="en">${en(c.min_price)}</span></td>
       <td><span class="en">${en(c.floor_area)}</span>م</td>
@@ -323,7 +360,7 @@ function renderTable() {
       <td>${occ}</td>
       <td>${disc}</td>
     </tr>
-    <tr class="detail-row" id="det-${c.id}" style="display:none"><td colspan="15">${detailHtml(c)}</td></tr>`;
+    <tr class="detail-row" id="det-${c.id}" style="display:none"><td colspan="16">${detailHtml(c)}</td></tr>`;
   }).join('');
 }
 
@@ -379,14 +416,12 @@ function init() {
   headRow = document.getElementById('headRow');
   statsRow = document.getElementById('statsRow');
   searchBox = document.getElementById('searchBox');
-  headRow.innerHTML = SORT_COLS.map(c => {
-    const arrow = sortKey === c.key ? (sortDir === 1 ? '▼' : '▲') : '';
-    return `<th data-key="${c.key}">${c.label}<span class="arrow">${arrow}</span></th>`;
-  }).join('');
-  headRow.querySelectorAll('th').forEach(th => {
-    th.addEventListener('click', () => cycleSort(th.dataset.key));
-  });
+  villageFilters = document.getElementById('villageFilters');
+  heroChips = document.getElementById('heroChips');
+  renderHead();
   searchBox.addEventListener('input', renderTable);
+  renderHeroChips();
+  renderVillageFilters();
   renderStats();
   renderTable();
   tbody.addEventListener('click', e => {
@@ -413,11 +448,6 @@ function renderHead() {
     const arrow = sortKey === c.key ? (sortDir === -1 ? '▼' : '▲') : '';
     return `<th data-key="${c.key}">${c.label}<span class="arrow">${arrow}</span></th>`;
   }).join('');
-  headRow.querySelectorAll('th').forEach(th => {
-    th.addEventListener('click', () => cycleSort(th.dataset.key));
-  });
-}
-function bindHead() {
   headRow.querySelectorAll('th').forEach(th => {
     th.addEventListener('click', () => cycleSort(th.dataset.key));
   });

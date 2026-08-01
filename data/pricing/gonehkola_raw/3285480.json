@@ -1,0 +1,334 @@
+{
+ "id": 3285480,
+ "status": "active",
+ "units_count": 1,
+ "url": "/room/3285480",
+ "short_url": "/r/350w",
+ "title": "کلبه جکوزی دار در بابلکنار - گونه کلا",
+ "description": "این کلبه سوئیسی یکخوابه در روستای خوش آب و هوای گونه کلا واقع شده است که با شهر شیرگاه حدود ۱۰ کیلومتر فاصله دارد. کلبه دارای جکوزی ۲ نفره در تراس با چشم انداز جنگلی و حیاطی دنج می باشد.\nطراحی این کلبه به گونه ای است که طبقه پایین دارای پذیرایی، آشپزخانه، حمام با سرویس ایرانی و فرنگی است و در طبقه بالا یک اتاق خواب بدون در و تراس قرار دارد. \nمحوطه اطراف با دیوار محصور می باشد و جهت حفظ امنیت بیشتر، دوربین مداربسته به کوچه اشراف دارد.\nمهمانان گرامی می توانند برای تهیه مایحتاج روزانه خود از سوپرمارکت و نانوایی در فاصله حدود ۵۰۰ متری از کلبه استفاده نمایند. کیفیت پوشش شبکه تلفن همراه برای دو اپراتور ایرانسل و همراه اول در مکالمه خوب و پوشش اینترنت به صورت ۴g است.\nلازم به ذکر است حدود ۱۵۰ متر از مسیر منتهی به کلبه به صورت جاده خاکی می باشد.",
+ "geo": {
+  "lat": 36.3301,
+  "lng": 52.7867
+ },
+ "province": {
+  "id": "p26",
+  "name": "مازندران",
+  "url": "/s/mazandaran"
+ },
+ "city": {
+  "id": 467,
+  "name": "بابلکنار",
+  "url": "/s/babolkenar"
+ },
+ "pictures": [
+  {
+   "name": "32854802512062107173235637.jpg",
+   "url": "2025/12/06/32854802512062107173235637.jpg",
+   "preview": "URGk:ky=Fv?u}=pcY6%Nixx^yEo#?vx^o~tm",
+   "description": "جکوزی در تراس",
+   "created_at": "2025-12-06"
+  },
+  {
+   "name": "32854802512062107053161140.jpg",
+   "url": "2025/12/06/32854802512062107053161140.jpg",
+   "preview": "UrH2WPT}u4.8_4g*yE%MxvpJx^og-no|tQtQ",
+   "description": "تراس",
+   "created_at": "2025-12-06"
+  },
+  {
+   "name": "32854802512062107417966017.jpg",
+   "url": "2025/12/06/32854802512062107417966017.jpg",
+   "preview": "UiFiJcVXM{%h?wM_Ri%NpJRjRPt7-;V?M{kC",
+   "description": "نمای کلبه",
+   "created_at": "2025-12-06"
+  },
+  {
+   "name": "32854802512062107201079606.jpg",
+   "url": "2025/12/06/32854802512062107201079606.jpg",
+   "preview": "UeGatE~Uxt%L^*%MX8%1xubbWCxZ-nsmaes:",
+   "description": "پذیرایی",
+   "created_at": "2025-12-06"
+  },
+  {
+   "name": "32854802512062107262571837.jpg",
+   "url": "2025/12/06/32854802512062107262571837.jpg",
+   "preview": "UKF}M|?Hn,}@~V-o%1%LIpWqxuxu=ZW=kW%1",
+   "description": "پذیرایی",
+   "created_at": "2025-12-06"
+  },
+  {
+   "name": "32854802512062107212838138.jpg",
+   "url": "2025/12/06/32854802512062107212838138.jpg",
+   "preview": "UHF}.a#l?Z~T~UkqIpt6D$b^IpRj=sM|j[n$",
+   "description": "پذیرایی",
+   "created_at": "2025-12-06"
+  },
+  {
+   "name": "32854802512062107194731228.jpg",
+   "url": "2025/12/06/32854802512062107194731228.jpg",
+   "preview": "UWJ7Q{~oOX?G~Vozae-oIoM{aLWqw[smkVR+",
+   "description": "پذیرایی",
+   "created_at": "2025-12-06"
+  },
+  {
+   "name": "32854802512062107146484089.jpg",
+   "url": "2025/12/06/32854802512062107146484089.jpg",
+   "preview": "UfI4b0xGX-%f~Bj[tRxZVst6ozNH-UxZbbS4",
+   "description": "آشپرخانه",
+   "created_at": "2025-12-06"
+  },
+  {
+   "name": "32854802512062106503930737.jpg",
+   "url": "2025/12/06/32854802512062106503930737.jpg",
+   "preview": "UfHS46-9R,-9}Ws.Ncs.s.s.jaj[=cxFn*xF",
+   "description": "اتاق خواب",
+   "created_at": "2025-12-06"
+  },
+  {
+   "name": "32854802512062107227106453.jpg",
+   "url": "2025/12/06/32854802512062107227106453.jpg",
+   "preview": "UjIodr=wsl=Z}qs.WCw]ocbGbHoe=axDs:xZ",
+   "description": "اتاق خواب",
+   "created_at": "2025-12-06"
+  },
+  {
+   "name": "32854802512062107118219200.jpg",
+   "url": "2025/12/06/32854802512062107118219200.jpg",
+   "preview": "UYJOqp[Vs,={}?#SxF%1OrNHS4S#=vS3NdWC",
+   "description": "اتاق خواب",
+   "created_at": "2025-12-06"
+  },
+  {
+   "name": "32854802512062107592857223.jpg",
+   "url": "2025/12/06/32854802512062107592857223.jpg",
+   "preview": "UbG~s^=wOE$i}qxZN_oe$gsmn%j@]*wvnjsm",
+   "description": "اتاق خواب",
+   "created_at": "2025-12-06"
+  },
+  {
+   "name": "32854802512062107231567101.jpg",
+   "url": "2025/12/06/32854802512062107231567101.jpg",
+   "preview": "UZH__J%ME1.7~qt8RktRWYa#t8az?aoft7t7",
+   "description": "حمام با سرویس فرنگی و ایرانی",
+   "created_at": "2025-12-06"
+  },
+  {
+   "name": "32854802512062106472471917.jpg",
+   "url": "2025/12/06/32854802512062106472471917.jpg",
+   "preview": "UdG+dhx[Rk-;~qxuofxuxut7j@t7?bt7WBof",
+   "description": "حمام با سرویس فرنگی و ایرانی",
+   "created_at": "2025-12-06"
+  },
+  {
+   "name": "32854802512062107005365738.jpg",
+   "url": "2025/12/06/32854802512062107005365738.jpg",
+   "preview": "UtHLew-;WCxu_N%gWVt7-=%gs:j[?H%Nt7n~",
+   "description": "جکوزی",
+   "created_at": "2025-12-06"
+  },
+  {
+   "name": "32854802512062106484734099.jpg",
+   "url": "2025/12/06/32854802512062106484734099.jpg",
+   "preview": "USFFvkxZM{-p.8RQM{WXOtM{RiWX_NoIV@xu",
+   "description": "جکوزی",
+   "created_at": "2025-12-06"
+  },
+  {
+   "name": "32854802512062107251365430.jpg",
+   "url": "2025/12/06/32854802512062107251365430.jpg",
+   "preview": "UjG[TCx]Mysk~V%MRjaK$,xuk8V@$ykCofV@",
+   "description": "تراس",
+   "created_at": "2025-12-06"
+  },
+  {
+   "name": "32854802512062107316982724.jpg",
+   "url": "2025/12/06/32854802512062107316982724.jpg",
+   "preview": "UTF5?Jox%M?a~qt7og-;-=RjWD%N~pM_kC%M",
+   "description": null,
+   "created_at": "2025-12-06"
+  },
+  {
+   "name": "32854802512062107381692311.jpg",
+   "url": "2025/12/06/32854802512062107381692311.jpg",
+   "preview": "UbHBk.xBDi%1~WjEIAjF.9aLMxRj~pn%MxoI",
+   "description": null,
+   "created_at": "2025-12-06"
+  },
+  {
+   "name": "32854802512062107536662609.jpg",
+   "url": "2025/12/06/32854802512062107536662609.jpg",
+   "preview": "ULD,AU.Tx_?v?bpcxwx^xwY5o~tS~pyEo~xu",
+   "description": null,
+   "created_at": "2025-12-06"
+  }
+ ],
+ "vr_photo": null,
+ "video_url": null,
+ "allocation": "entire_place",
+ "types": [
+  "cottage",
+  "villa"
+ ],
+ "regions": [
+  "rural"
+ ],
+ "floor_area": 35,
+ "land_area": 250,
+ "floors_count": 0,
+ "bedrooms": 1,
+ "sleep_arrange": [
+  {
+   "space_id": 1,
+   "single": 0,
+   "double": 1,
+   "mattress": 0,
+   "sofa_bed": 0,
+   "etc": ""
+  },
+  {
+   "space_id": 0,
+   "single": 0,
+   "double": 0,
+   "mattress": 2,
+   "sofa_bed": 0,
+   "etc": ""
+  }
+ ],
+ "sleep_description": null,
+ "guest_number": 2,
+ "max_guest_number": 4,
+ "stays_min": 1,
+ "stays_max": null,
+ "entrance_time_min": 14,
+ "entrance_time_max": 0,
+ "leaving_time": 12,
+ "features": [
+  {
+   "name": "essentials",
+   "description": "کاغذ توالت، مایع ظرفشویی، مایع دستشویی"
+  },
+  {
+   "name": "electricity",
+   "description": null
+  },
+  {
+   "name": "water",
+   "description": "اب لوله کشی شهری"
+  },
+  {
+   "name": "heating",
+   "description": "یک شعله بخاری گازی در پذیرایی"
+  },
+  {
+   "name": "cooler",
+   "description": "یک دستگاه اسپلیت 30000 در طبقه بالا"
+  },
+  {
+   "name": "kitchen",
+   "description": "برای 6 نفر به صورت کامل موجود است."
+  },
+  {
+   "name": "stave",
+   "description": null
+  },
+  {
+   "name": "refrigerator",
+   "description": null
+  },
+  {
+   "name": "vacuumcleaner",
+   "description": null
+  },
+  {
+   "name": "furniture",
+   "description": "مبلمان 6 نفره"
+  },
+  {
+   "name": "parking",
+   "description": "پارکینگ روباز برای سه خودرو در حیاط"
+  },
+  {
+   "name": "toilet",
+   "description": "با حمام و سرویس ایرانی"
+  },
+  {
+   "name": "islamictoilet",
+   "description": "با حمام و سرویس فرنگی"
+  },
+  {
+   "name": "jacuzzi",
+   "description": "۲ نفره"
+  },
+  {
+   "name": "bathroom",
+   "description": "با سرویس ایرانی و فرنگی"
+  },
+  {
+   "name": "firstaidkit",
+   "description": "در کابینت"
+  }
+ ],
+ "properties": [
+  {
+   "id": 52,
+   "name": "خوش منظره"
+  }
+ ],
+ "additional_feature": null,
+ "additional_safety": null,
+ "rules": [],
+ "additional_rule": null,
+ "cancellation_policy": "middle",
+ "min_price": 2990000,
+ "extra_price": 500000,
+ "is_clean": false,
+ "is_new": false,
+ "is_instant": false,
+ "is_plus": false,
+ "success_books": 0,
+ "discounts": [
+  {
+   "percent": 10,
+   "type": "duration",
+   "min_nights": 5
+  },
+  {
+   "percent": 10,
+   "type": "duration",
+   "min_nights": 10
+  }
+ ],
+ "current_discount": null,
+ "current_discount_percent": 0,
+ "ratings": {
+  "count": 1,
+  "total": 5,
+  "accuracy": 5,
+  "communication": 5,
+  "cleanliness": 5,
+  "location": 5,
+  "checkin": 5,
+  "value": 5,
+  "comments_grouped_by_rating": {
+   "5": 1
+  },
+  "is_recently": false,
+  "is_bad_host": false
+ },
+ "host": {
+  "id": 1420940,
+  "name": "پویا",
+  "avatar": "2201161244011420940.jpg",
+  "gender": "male",
+  "description": null,
+  "created_at": "2022-01-16",
+  "response_time": 298,
+  "accept_rate": 38,
+  "host_communication_rate": 5
+ },
+ "meta": {
+  "title": "کلبه جکوزی دار در بابلکنار - گونه کلا",
+  "description": "اجاره روزانه کلبه روستایی 1 خوابه در بابلکنار، مازندران برای 4 نفر مهمان با قیمت مناسب و ضمانت تحویل جاجیگا.",
+  "keywords": null
+ }
+}

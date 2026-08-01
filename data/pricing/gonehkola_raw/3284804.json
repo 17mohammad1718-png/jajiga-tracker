@@ -1,0 +1,302 @@
+{
+ "id": 3284804,
+ "status": "active",
+ "units_count": 1,
+ "url": "/room/3284804",
+ "short_url": "/r/34i4",
+ "title": "کلبه سوئیسی با جکوزی در بابلکنار - گونه کلا",
+ "description": "این کلبه سوئیسی یکخوابه در روستای خوش آب و هوای گونه کلا واقع شده که تا جنگل لفور و شیرگاه حدود ۱۰ کیلومتر فاصله دارد. کلبه دارای تراس با چشم انداز شالیزار و حیاطی دنج به همراه جکوزی ۲ نفره می باشد.\nطراحی این کلبه به گونه ای است که طبقه پایین دارای پذیرایی، آشپزخانه، حمام با سرویس فرنگی و ایرانی است و در طبقه بالا یک اتاق خواب بدون در و تراس قرار دارد.\nمحوطه حیاط با دیوار محصور شده است، همچنین به جهت تامین امنیت بیشتر کوچه مجهز به دوربین مداربسته می باشد.\nمهمانان گرامی می توانند برای تهیه مایحتاج روزانه خود از سوپرمارکت و نانوایی در فاصله ۵۰۰ متری کلبه استفاده نمایند. آنتن دهی تلفن همراه برای دو اپراتور ایرانسل و همراه اول در مکالمه خوب و پوشش اینترنت به صورت ۴g می باشد.\nلازم به ذکر است حدود ۵۰ متر از مسیر منتهی به کلبه به صورت جاده خاکی است.",
+ "geo": {
+  "lat": 36.3347,
+  "lng": 52.7849
+ },
+ "province": {
+  "id": "p26",
+  "name": "مازندران",
+  "url": "/s/mazandaran"
+ },
+ "city": {
+  "id": 467,
+  "name": "بابلکنار",
+  "url": "/s/babolkenar"
+ },
+ "pictures": [
+  {
+   "name": "3284804251203223120.jpg",
+   "url": "2025/12/03/3284804251203223120.jpg",
+   "preview": "U=Dczat8tS-=?dt8tRx^-?ogo#tS%Oa}ogt8",
+   "description": "نمای کلبه و وان جکوزی",
+   "created_at": "2025-12-03"
+  },
+  {
+   "name": "3284804251128010128.jpg",
+   "url": "2025/11/28/3284804251128010128.jpg",
+   "preview": "UhHT+|%1IoxYRQaen$n%RPjZxsoK~AxZa}oL",
+   "description": "پذیرایی و آشپزخانه",
+   "created_at": "2025-11-28"
+  },
+  {
+   "name": "3284804251128010124.jpg",
+   "url": "2025/11/28/3284804251128010124.jpg",
+   "preview": "UdHdc]^jVtwv$xM|xDxCV@V[-TxX~A-VsAs,",
+   "description": "پذیرایی",
+   "created_at": "2025-11-28"
+  },
+  {
+   "name": "3284804251128010122.jpg",
+   "url": "2025/11/28/3284804251128010122.jpg",
+   "preview": "UcH0tm=_a{=v]iw^NIsA^4xFS2n%}@$%kBxF",
+   "description": "پذیرایی",
+   "created_at": "2025-11-28"
+  },
+  {
+   "name": "3284804251128010131.jpg",
+   "url": "2025/11/28/3284804251128010131.jpg",
+   "preview": "USF}DS==xt=w=xwc%0xsxGWDoJxY~8xWR-xF",
+   "description": "اتاق خواب",
+   "created_at": "2025-11-28"
+  },
+  {
+   "name": "3284804251203185813.jpg",
+   "url": "2025/12/03/3284804251203185813.jpg",
+   "preview": "UkIVh[tQRj;2}WxER+,;#+wcX8xa=ws.fQxD",
+   "description": null,
+   "created_at": "2025-12-03"
+  },
+  {
+   "name": "3284804251203185949.jpg",
+   "url": "2025/12/03/3284804251203185949.jpg",
+   "preview": "UKE-mv-99vsA}qo0JDt8n~a}W?S5~AxGRjNH",
+   "description": null,
+   "created_at": "2025-12-03"
+  },
+  {
+   "name": "3284804251128010057.jpg",
+   "url": "2025/11/28/3284804251128010057.jpg",
+   "preview": "UdDvZexuIUxuxut7ofoy%Mofoft7~qt7M{t7",
+   "description": "حمام با سرویس ایرانی و فرنگی",
+   "created_at": "2025-11-28"
+  },
+  {
+   "name": "3284804251128010043.jpg",
+   "url": "2025/11/28/3284804251128010043.jpg",
+   "preview": "UB7KuL%2t6xu?bM|Rjj[_3afaxt7~qxas:xu",
+   "description": null,
+   "created_at": "2025-11-28"
+  },
+  {
+   "name": "3284804251203185648.jpg",
+   "url": "2025/12/03/3284804251203185648.jpg",
+   "preview": "UJC$$Ar=M_~As%-o-nxVRP-nxZax~VoIRP%1",
+   "description": null,
+   "created_at": "2025-12-03"
+  },
+  {
+   "name": "3284804251203185547.jpg",
+   "url": "2025/12/03/3284804251203185547.jpg",
+   "preview": "UBBVqV0~-Q-U?G9^-TbbD,9{-TR-}pEkw]s.",
+   "description": null,
+   "created_at": "2025-12-03"
+  },
+  {
+   "name": "3284804251203190058.jpg",
+   "url": "2025/12/03/3284804251203190058.jpg",
+   "preview": "UICF-WoN0L%M0LbE-oRj0Lay=}Rj~VjcE2t7",
+   "description": null,
+   "created_at": "2025-12-03"
+  },
+  {
+   "name": "3284804251203190300.jpg",
+   "url": "2025/12/03/3284804251203190300.jpg",
+   "preview": "U~JR|4xwNHx^_Nt9WEt9bxWZbHbbx]WYWVkC",
+   "description": null,
+   "created_at": "2025-12-03"
+  }
+ ],
+ "vr_photo": null,
+ "video_url": null,
+ "allocation": "entire_place",
+ "types": [
+  "cottage",
+  "swiss_cottage",
+  "wooden_cottage"
+ ],
+ "regions": [
+  "rural"
+ ],
+ "floor_area": 30,
+ "land_area": 100,
+ "floors_count": 0,
+ "bedrooms": 1,
+ "sleep_arrange": [
+  {
+   "space_id": 1,
+   "single": 0,
+   "double": 1,
+   "mattress": 0,
+   "sofa_bed": 0,
+   "etc": ""
+  },
+  {
+   "space_id": 0,
+   "single": 0,
+   "double": 0,
+   "mattress": 2,
+   "sofa_bed": 0,
+   "etc": ""
+  }
+ ],
+ "sleep_description": null,
+ "guest_number": 2,
+ "max_guest_number": 4,
+ "stays_min": 1,
+ "stays_max": null,
+ "entrance_time_min": 14,
+ "entrance_time_max": 0,
+ "leaving_time": 12,
+ "features": [
+  {
+   "name": "essentials",
+   "description": "کاغذ توالت، مایع ظرفشویی، مایع دستشویی"
+  },
+  {
+   "name": "electricity",
+   "description": null
+  },
+  {
+   "name": "water",
+   "description": "اب لوله کشی شهری"
+  },
+  {
+   "name": "tv",
+   "description": "تلویزیون ال ای دی 32 اینچ"
+  },
+  {
+   "name": "heating",
+   "description": "یک شعله بخاری گازی در پذیرایی"
+  },
+  {
+   "name": "cooler",
+   "description": "یک دستگاه اسپلیت 24000 در پذیرایی"
+  },
+  {
+   "name": "kitchen",
+   "description": "برای 6 نفر به صورت کامل موجود است."
+  },
+  {
+   "name": "stave",
+   "description": null
+  },
+  {
+   "name": "refrigerator",
+   "description": null
+  },
+  {
+   "name": "vacuumcleaner",
+   "description": null
+  },
+  {
+   "name": "hairdryer",
+   "description": null
+  },
+  {
+   "name": "furniture",
+   "description": "مبلمان ۶ نفره"
+  },
+  {
+   "name": "table",
+   "description": "۴ نفره"
+  },
+  {
+   "name": "parking",
+   "description": "روباز برای یک خودرو در حیاط"
+  },
+  {
+   "name": "toilet",
+   "description": "با حمام و سرویس ایرانی"
+  },
+  {
+   "name": "islamictoilet",
+   "description": "با حمام و سرویس فرنگی"
+  },
+  {
+   "name": "jacuzzi",
+   "description": "وان جکوزی 2 نفره در حیاط"
+  },
+  {
+   "name": "bathroom",
+   "description": "با سرویس ایرانی و فرنگی"
+  },
+  {
+   "name": "firstaidkit",
+   "description": "در کابینت"
+  }
+ ],
+ "properties": [],
+ "additional_feature": null,
+ "additional_safety": null,
+ "rules": [],
+ "additional_rule": null,
+ "cancellation_policy": "middle",
+ "min_price": 3250000,
+ "extra_price": 500000,
+ "is_clean": false,
+ "is_new": true,
+ "is_instant": false,
+ "is_plus": false,
+ "success_books": 0,
+ "discounts": [
+  {
+   "percent": 10,
+   "type": "duration",
+   "min_nights": 5
+  },
+  {
+   "percent": 10,
+   "type": "duration",
+   "min_nights": 10
+  },
+  {
+   "percent": 10,
+   "type": "first_book"
+  },
+  {
+   "percent": 10,
+   "type": "tomorrow_discount"
+  }
+ ],
+ "current_discount": {
+  "percent": 10,
+  "type": "tomorrow_discount"
+ },
+ "current_discount_percent": 10,
+ "ratings": {
+  "count": 0,
+  "total": 0,
+  "accuracy": 0,
+  "communication": 0,
+  "cleanliness": 0,
+  "location": 0,
+  "checkin": 0,
+  "value": 0,
+  "comments_grouped_by_rating": [],
+  "is_recently": false,
+  "is_bad_host": false
+ },
+ "host": {
+  "id": 1420940,
+  "name": "پویا",
+  "avatar": "2201161244011420940.jpg",
+  "gender": "male",
+  "description": null,
+  "created_at": "2022-01-16",
+  "response_time": 298,
+  "accept_rate": 38,
+  "host_communication_rate": 5
+ },
+ "meta": {
+  "title": "کلبه سوئیسی با جکوزی در بابلکنار - گونه کلا",
+  "description": "اجاره روزانه کلبه روستایی 1 خوابه در بابلکنار، مازندران برای 4 نفر مهمان با قیمت مناسب و ضمانت تحویل جاجیگا.",
+  "keywords": null
+ }
+}

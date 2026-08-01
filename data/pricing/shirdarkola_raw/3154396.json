@@ -1,0 +1,464 @@
+{
+ "id": 3154396,
+ "status": "active",
+ "units_count": 1,
+ "url": "/room/3154396",
+ "short_url": "/r/bvo",
+ "title": "کلبه چوبی جکوزی دار در بابلکنار",
+ "description": "این کلبه چوبی با جکوزی و چشم انداز بینظیر جنگلی در منطقه ی بابلکنار واقع شده است که حدود ۱۲ کیلومتر از مرکز شهر شیرگاه فاصله دارد.\nکلبه به گونه ای سخته شده است که در طبقه اول دارای پذیرایی، آشپزخانه، حمام با سرویس ایرانی می باشد و در طبقه بالا یک فضای خواب و تراس دلباز وجود دارد.\nاطراف مجتمع با دیوار محصور می باشد، همچنین میزبان در ساختمان مجاور سکونت دارد و دروازه ورودی و محوطه به صورت مشترک با میزبان در اختیار مهمانان است. برای حفظ امنیت بیشتر نیز، ورودی مجتمع مجهز به دوربین مداربسته می باشد.\nسفارش هرگونه غذای محلی مانند غاز و اردک و مرغ و مرغابی و غذاهایی نظیر اکبر جوجه، چلو گردن، چلو ماهی قزل آلا، میرزا قاسمی و... برای وعده ناهار و شام با هماهنگی قبلی با میزبان و پرداخت هزینه جداگانه امکان پذیر است.\nجهت تهیه مایحتاج روزانه، نانوایی و سوپرمارکت با فاصله حدود ۳۰۰ متر در دسترس هستند و کیفیت پوشش شبکه تلفن همراه برای دو اپراتور ایرانسل و همراه اول در مکالمه عالی و دسترسی به اینترنت به صورت ۴g است.",
+ "geo": {
+  "lat": 36.3395,
+  "lng": 52.7733
+ },
+ "province": {
+  "id": "p26",
+  "name": "مازندران",
+  "url": "/s/mazandaran"
+ },
+ "city": {
+  "id": 467,
+  "name": "بابلکنار",
+  "url": "/s/babolkenar"
+ },
+ "pictures": [
+  {
+   "name": "3154396231228173103.jpg",
+   "url": "2023/12/28/3154396231228173103.jpg",
+   "preview": "USE{IP-:D*xt~WxtIUWBofayIoM{s.ofNGRj",
+   "description": "چشم انداز",
+   "created_at": "2023-12-28"
+  },
+  {
+   "name": "3154396240308191355.jpg",
+   "url": "2024/03/08/3154396240308191355.jpg",
+   "preview": "UG85i:%$HqH=.Tx]R5MwMwj@tSRiX9WXoejs",
+   "description": "جکوزی",
+   "created_at": "2024-03-08"
+  },
+  {
+   "name": "3154396250313085249.jpg",
+   "url": "2025/03/13/3154396250313085249.jpg",
+   "preview": "U$Cj-Qs-RhkWpMWBj=o#b}WXn~ogyGozadj[",
+   "description": "نمای کلبه",
+   "created_at": "2025-03-13"
+  },
+  {
+   "name": "3154396250227072945.jpg",
+   "url": "2025/02/27/3154396250227072945.jpg",
+   "preview": "UbEMOD_3ROnM.8x]R%RhyEtSWBRP_4%gV@V?",
+   "description": "محوطه",
+   "created_at": "2025-02-27"
+  },
+  {
+   "name": "3154396250313085238.jpg",
+   "url": "2025/03/13/3154396250313085238.jpg",
+   "preview": "UbG*=trEDj-:~piwIUxv%5M_IUtR?HM{IUxu",
+   "description": "چشم انداز",
+   "created_at": "2025-03-13"
+  },
+  {
+   "name": "3154396250222235626.jpg",
+   "url": "2025/02/22/3154396250222235626.jpg",
+   "preview": "UNG8o@^+IV-q~Bt7bw-;VYWBtRt5=_t5WBV?",
+   "description": "پذیرایی و آشپزخانه",
+   "created_at": "2025-02-22"
+  },
+  {
+   "name": "3154396240518225513.jpg",
+   "url": "2024/05/18/3154396240518225513.jpg",
+   "preview": "UuHn+@?bxv?H~WxuRks:-ps:RjWB-:xut7t7",
+   "description": "آشپزخانه",
+   "created_at": "2024-05-18"
+  },
+  {
+   "name": "3154396250222235628.jpg",
+   "url": "2025/02/22/3154396250222235628.jpg",
+   "preview": "UVC=^^wHIVt7~Br=IVoz-nWBM|oe-nWYM|n$",
+   "description": "فضای خواب طبقه بالا",
+   "created_at": "2025-02-22"
+  },
+  {
+   "name": "3154396240518225425.jpg",
+   "url": "2024/05/18/3154396240518225425.jpg",
+   "preview": "UTC~3V={oL$%}=$%oexZ-Ts.a|s.-UxZR*Rk",
+   "description": "فضای خواب طبقه بالا",
+   "created_at": "2024-05-18"
+  },
+  {
+   "name": "3154396240518225508.jpg",
+   "url": "2024/05/18/3154396240518225508.jpg",
+   "preview": "UUEVZx%LWV-p~Vt7WBt7?axtayof_2xuofs:",
+   "description": "سرویس حمام و دستشویی",
+   "created_at": "2024-05-18"
+  },
+  {
+   "name": "3154396240518225340.jpg",
+   "url": "2024/05/18/3154396240518225340.jpg",
+   "preview": "ULD]PGo}4.s-DjIU%Mt64oIo%Mxu~WtQIUxa",
+   "description": "جکوزی",
+   "created_at": "2024-05-18"
+  },
+  {
+   "name": "3154396240819193700.jpg",
+   "url": "2024/08/19/3154396240819193700.jpg",
+   "preview": "UMD9#N_NS~b]%ft7IURjD%WAMyM{-;x]ozba",
+   "description": null,
+   "created_at": "2024-08-19"
+  },
+  {
+   "name": "3154396240518225337.jpg",
+   "url": "2024/05/18/3154396240518225337.jpg",
+   "preview": "UfH1;ua1D*-.~VRjIVxu%MM|Ioxu?GM{IVxu",
+   "description": "تراس رو به ابد",
+   "created_at": "2024-05-18"
+  },
+  {
+   "name": "3154396240726231408.jpg",
+   "url": "2024/07/26/3154396240726231408.jpg",
+   "preview": "U27wc_]#0NBYW@RkW=t800OF^jwH^kxCNxNI",
+   "description": "تم تولد دونفره",
+   "created_at": "2024-07-26"
+  },
+  {
+   "name": "3154396240517223419.jpg",
+   "url": "2024/05/17/3154396240517223419.jpg",
+   "preview": "UgD]*exuM{ay-;oeV@WC?bf6ayof~qoeWBoy",
+   "description": "ورودی کلبه ها",
+   "created_at": "2024-05-17"
+  },
+  {
+   "name": "3154396250227072943.jpg",
+   "url": "2025/02/27/3154396250227072943.jpg",
+   "preview": "UlD0P{kDRjxu_4bJR*tR.9kCWCt8.9ogWBt8",
+   "description": null,
+   "created_at": "2025-02-27"
+  },
+  {
+   "name": "3154396250517130156.jpg",
+   "url": "2025/05/17/3154396250517130156.jpg",
+   "preview": "UJ9Qpv~q%Madf5f5fRj[9FD%NGozozogj[ay",
+   "description": null,
+   "created_at": "2025-05-17"
+  },
+  {
+   "name": "3154396250719095438.jpg",
+   "url": "2025/07/19/3154396250719095438.jpg",
+   "preview": "UlECqIxvWXoy_4xva}kC?Jt8j[oM_3t8oet7",
+   "description": null,
+   "created_at": "2025-07-19"
+  },
+  {
+   "name": "3154396251108230118.jpg",
+   "url": "2025/11/08/3154396251108230118.jpg",
+   "preview": "UnIpS3-TEg%0yCShn$t6o~S5o0of}@s:Nbof",
+   "description": null,
+   "created_at": "2025-11-08"
+  },
+  {
+   "name": "3154396251108230115.jpg",
+   "url": "2025/11/08/3154396251108230115.jpg",
+   "preview": "U$Hdvjt7R-xt~AkDS4t7^iW?Wrs:^hkDW=t6",
+   "description": null,
+   "created_at": "2025-11-08"
+  },
+  {
+   "name": "3154396250313085241.jpg",
+   "url": "2025/03/13/3154396250313085241.jpg",
+   "preview": "UKBgVHX,jDxsIBIVtQtQE7xWR-a#?]x@V@j?",
+   "description": null,
+   "created_at": "2025-03-13"
+  }
+ ],
+ "vr_photo": null,
+ "video_url": null,
+ "allocation": "shared_place",
+ "types": [
+  "cottage",
+  "wooden_cottage"
+ ],
+ "regions": [
+  "forest",
+  "rural"
+ ],
+ "floor_area": 70,
+ "land_area": 1000,
+ "floors_count": 0,
+ "bedrooms": 0,
+ "sleep_arrange": [
+  {
+   "space_id": 0,
+   "single": 0,
+   "double": 2,
+   "mattress": 0,
+   "sofa_bed": 0,
+   "etc": ""
+  }
+ ],
+ "sleep_description": null,
+ "guest_number": 4,
+ "max_guest_number": 5,
+ "stays_min": 1,
+ "stays_max": null,
+ "entrance_time_min": 14,
+ "entrance_time_max": 12,
+ "leaving_time": 12,
+ "features": [
+  {
+   "name": "essentials",
+   "description": "مایع ظرفشویی، دستشویی، کاغذ توالت و پک بهداشتی شامل روبالشی، رو تختی و شامپو"
+  },
+  {
+   "name": "electricity",
+   "description": null
+  },
+  {
+   "name": "water",
+   "description": null
+  },
+  {
+   "name": "tv",
+   "description": "ال سی دی 32 اینچ"
+  },
+  {
+   "name": "heating",
+   "description": "یک شعله بخاری گازی در پذیرایی"
+  },
+  {
+   "name": "cooler",
+   "description": "اسپیلت 18000 در پذیرایی"
+  },
+  {
+   "name": "kitchen",
+   "description": "برای 4 نفر به صورت کامل موجود است."
+  },
+  {
+   "name": "stave",
+   "description": null
+  },
+  {
+   "name": "refrigerator",
+   "description": null
+  },
+  {
+   "name": "vacuumcleaner",
+   "description": null
+  },
+  {
+   "name": "furniture",
+   "description": "۲ نفره"
+  },
+  {
+   "name": "table",
+   "description": "۴ نفره"
+  },
+  {
+   "name": "parking",
+   "description": "روباز برای یک خودرو در محوطه"
+  },
+  {
+   "name": "islamictoilet",
+   "description": "با حمام"
+  },
+  {
+   "name": "barbecue",
+   "description": "باربیکیو زغالی در حیاط"
+  },
+  {
+   "name": "jacuzzi",
+   "description": "4 نفره"
+  },
+  {
+   "name": "food",
+   "description": "سفارش هرگونه غذای محلی برای وعده ناهار و شام با هماهنگی قبلی با میزبان و پرداخت هزینه جداگانه امکان پذیر است."
+  },
+  {
+   "name": "janitor",
+   "description": "میزبان در مجتمع سکونت دارد."
+  },
+  {
+   "name": "bathroom",
+   "description": "با سرویس ایرانی"
+  },
+  {
+   "name": "fireextingu",
+   "description": "در مجتمع"
+  }
+ ],
+ "properties": [
+  {
+   "id": 52,
+   "name": "خوش منظره"
+  },
+  {
+   "id": 70,
+   "name": "حیاط دار"
+  }
+ ],
+ "additional_feature": "پک بهداشتی برای مهمانان محترم",
+ "additional_safety": null,
+ "rules": [
+  "party",
+  "pet",
+  "smoke"
+ ],
+ "additional_rule": "کشیدن قلیان فقط در فضای حیاط مجاز می باشد.\nپخش صدای موزیک با صدای نامتعارف ممنوع است.\nاز آوردن مهمان در مدت اقامت خود به داخل مجموعه بپرهیزید چون پذیرای مهمان شما نیستیم.\nلطفا نظافت را رعایت کنید.\nدر نگهداری ویلا دقت کنید تا مستوجب خسارت نگردید.\nاز پذیریش افراد بومی معذوریم.\nلطفا قوانین مارا مطالعه و بعدا رزرو فرمایید.",
+ "cancellation_policy": "middle",
+ "min_price": 4950000,
+ "extra_price": 600000,
+ "is_clean": false,
+ "is_new": false,
+ "is_instant": false,
+ "is_plus": true,
+ "success_books": 20,
+ "discounts": [
+  {
+   "percent": 10,
+   "type": "duration",
+   "min_nights": 7
+  }
+ ],
+ "current_discount": null,
+ "current_discount_percent": 0,
+ "ratings": {
+  "count": 29,
+  "total": 4.7,
+  "accuracy": 4.8,
+  "communication": 4.8,
+  "cleanliness": 4.5,
+  "location": 4.6,
+  "checkin": 5,
+  "value": 4.4,
+  "comments_grouped_by_rating": {
+   "3": 1,
+   "4": 12,
+   "5": 16
+  },
+  "is_recently": false,
+  "is_bad_host": false
+ },
+ "host": {
+  "id": 1186188,
+  "name": "علیرضا",
+  "avatar": "2026/04/22/2604220834381186188.jpg",
+  "gender": "male",
+  "description": "عاشق مهمان نوازی و خوش مشرب",
+  "created_at": "2019-10-06",
+  "response_time": 144,
+  "accept_rate": 100,
+  "host_communication_rate": 5
+ },
+ "meta": {
+  "title": "کلبه چوبی جکوزی دار در بابلکنار",
+  "description": "اجاره روزانه کلبه جنگلی در بابلکنار، مازندران برای 5 نفر مهمان با قیمت مناسب و ضمانت تحویل جاجیگا.",
+  "keywords": "اجاره کلبه در سوادکوه,اجاره کلبه در مازندران,روستایی,اجاره کلبه در شمال,اجاره روزانه,اجاره اینترنتی ویلا"
+ },
+ "group_rooms": {
+  "items": [
+   {
+    "id": 3176224,
+    "units_count": 1,
+    "url": "/room/3176224",
+    "short_url": "/r/sq0",
+    "title": "کلبه دو خوابه",
+    "bedrooms": 2,
+    "floor_area": 90,
+    "guest_number": 4,
+    "max_guest_number": 5,
+    "min_price": 6820000,
+    "invoice": {
+     "extra": {
+      "count": 0,
+      "price": 700000,
+      "total": 0
+     },
+     "discount": {
+      "type": null,
+      "percent": 0,
+      "amount": 0
+     },
+     "discounts": [],
+     "final": 6820000,
+     "prices": [
+      1
+     ],
+     "is_bill": false
+    },
+    "pictures": {
+     "total": 1,
+     "items": [
+      {
+       "name": "3176224250128111945.jpg",
+       "preview": "UUCsjY-pQ-%0_4xuMwsl-=t7ROn#-pxtjEn#",
+       "url": "2025/01/28/3176224250128111945.jpg"
+      }
+     ]
+    }
+   }
+  ],
+  "count": 1
+ },
+ "group": {
+  "count": 1,
+  "items": [
+   {
+    "id": 3176224,
+    "units_count": 1,
+    "url": "/room/3176224",
+    "short_url": "/r/sq0",
+    "title": "کلبه دو خوابه",
+    "city": "بابلکنار",
+    "bedrooms": 2,
+    "floor_area": 90,
+    "guest_number": 4,
+    "max_guest_number": 5,
+    "is_clean": false,
+    "is_new": false,
+    "is_instant": true,
+    "is_plus": true,
+    "min_price": 6820000,
+    "discount": null,
+    "success_books": 50,
+    "rating": {
+     "count": 36,
+     "total": 5
+    },
+    "host": {
+     "id": 1186188,
+     "avatar": "2026/04/22/2604220834381186188.jpg"
+    },
+    "invoice": {
+     "extra": {
+      "count": 0,
+      "price": 700000,
+      "total": 0
+     },
+     "discount": {
+      "type": null,
+      "percent": 0,
+      "amount": 0
+     },
+     "discounts": [],
+     "final": 6820000,
+     "prices": {
+      "6820000": 1
+     },
+     "is_bill": false
+    },
+    "pictures": {
+     "total": 1,
+     "items": [
+      {
+       "name": "3176224250128111945.jpg",
+       "preview": "UUCsjY-pQ-%0_4xuMwsl-=t7ROn#-pxtjEn#",
+       "url": "2025/01/28/3176224250128111945.jpg"
+      }
+     ]
+    },
+    "properties": [
+     "is_instant",
+     "is_plus"
+    ]
+   }
+  ]
+ }
+}

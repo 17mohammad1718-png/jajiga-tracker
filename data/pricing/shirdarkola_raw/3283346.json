@@ -1,0 +1,434 @@
+{
+ "id": 3283346,
+ "status": "active",
+ "units_count": 1,
+ "url": "/room/3283346",
+ "short_url": "/r/33dm",
+ "title": "خانه مبله در بابلکنار - شیردارکلا - ط ۲",
+ "description": "این خانه مبله دو خوابه در روستای شیردارکلا واقع شده که با شیرگاه حدود ۱۵ کیلومتر و با بابل حدود ۲۵ کیلومتر فاصله دارد. این خانه ویلایی رو به منظره ای سرسبز با دسترسی حدود ۶ پله در طبقه دوم یک ساختمان سه طبقه و سه واحدی بنا شده است.\nطراحی خانه به گونه ای است که دارای پذیرایی، آشپزخانه اتاق خواب، سرویس ایرانی می باشد و حمام در اتاق خواب قرار دارد.\nمحوطه حیاط از دو طرف با دیوار و دو طرف دیگر با فنس محصور شده و به جهت حفظ امنیت، نگهبان در ورودی حیاط مستقر است.\nدر نظر داشته باشید که در طبقه بالای ساختمان یک واحد دیگر به شکل کلبه سوئیسی قرار گرفته که محوطه حیاط و دروازه ورودی به صورت مشترک استفاده می گردد.\nمهمانان گرامی برای تهیه مایحتاج روزانه خود می توانند از سوپرمارکت و نانوایی در فاصله حدود یک کیلومتری اقامتگاه استفاده نمایند.\nکیفیت آنتن دهی برای اپراتورهای ایرانسل و همراه اول در مکالمه خوب و پوشش شبکه اینترنت نیز به صورت ۴g می باشد.\nگفتنی است اقامتگاه در شیب جاده قرار گرفته و حدود ۱۰۰ متر مسیر منتهی به واحد بصورت بتن ریزی شده است.\nاز جاذبه های این منطقه می توان به دریاچه لفور و جنگل آن، آبشار گزو، غار زنگیان، دریاچه سنبل رود، روستای آلاشت و ... اشاره کرد.",
+ "geo": {
+  "lat": 36.3454,
+  "lng": 52.7596
+ },
+ "province": {
+  "id": "p26",
+  "name": "مازندران",
+  "url": "/s/mazandaran"
+ },
+ "city": {
+  "id": 467,
+  "name": "بابلکنار",
+  "url": "/s/babolkenar"
+ },
+ "pictures": [
+  {
+   "name": "3283346251116215839.jpg",
+   "url": "2025/11/16/3283346251116215839.jpg",
+   "preview": "UrEWBzxva#x].At8azo#%it7ofoz?vt7oft7",
+   "description": "چشم انداز بالن",
+   "created_at": "2025-11-16"
+  },
+  {
+   "name": "3283346251109101148.jpg",
+   "url": "2025/11/09/3283346251109101148.jpg",
+   "preview": "UsKAyX?GV@-p~pxto0xuoyt6jsof-nxtkCjF",
+   "description": "پذیرایی",
+   "created_at": "2025-11-09"
+  },
+  {
+   "name": "3283346251109101150.jpg",
+   "url": "2025/11/09/3283346251109101150.jpg",
+   "preview": "UTF#~-?GRj%L~pt6Rjxtt6V[M|oe-os:WCj[",
+   "description": "پذیرایی",
+   "created_at": "2025-11-09"
+  },
+  {
+   "name": "3283346251109101154.jpg",
+   "url": "2025/11/09/3283346251109101154.jpg",
+   "preview": "UiHxpMxZNH%g~pNGRjtQ%Lj[WBae?GxaWBof",
+   "description": "پذیرایی",
+   "created_at": "2025-11-09"
+  },
+  {
+   "name": "3283346251109101431.jpg",
+   "url": "2025/11/09/3283346251109101431.jpg",
+   "preview": "UdJ*kx_3x]_3~oxtWBs.t5f5RjRj_3xuWExu",
+   "description": "آشپزخانه",
+   "created_at": "2025-11-09"
+  },
+  {
+   "name": "3283346251109101156.jpg",
+   "url": "2025/11/09/3283346251109101156.jpg",
+   "preview": "U*Kn9,%LoL-;_NxuoL%2xvxuj[of-pt6oft7",
+   "description": "اتاق خواب 1",
+   "created_at": "2025-11-09"
+  },
+  {
+   "name": "3283346251118141829.jpg",
+   "url": "2025/11/18/3283346251118141829.jpg",
+   "preview": "UgF~dH%LIUxt~pxuRjt6axoLt7kCs+axt7t7",
+   "description": null,
+   "created_at": "2025-11-18"
+  },
+  {
+   "name": "3283346251109101200.jpg",
+   "url": "2025/11/09/3283346251109101200.jpg",
+   "preview": "UcKUK1^%xD?b~qxaaet7SOR+WBbI_3t6jsxt",
+   "description": "سرویس ایرانی",
+   "created_at": "2025-11-09"
+  },
+  {
+   "name": "3283346251109101203.jpg",
+   "url": "2025/11/09/3283346251109101203.jpg",
+   "preview": "UeGu,h-pM|%M~q%MRjt7xut7ofof-;ofogxt",
+   "description": "حمام",
+   "created_at": "2025-11-09"
+  },
+  {
+   "name": "3283346251118141834.jpg",
+   "url": "2025/11/18/3283346251118141834.jpg",
+   "preview": "UWGIr+S7RQ$y_N%NV@Mxo$%MRjIU-;a$WBoc",
+   "description": null,
+   "created_at": "2025-11-18"
+  },
+  {
+   "name": "3283346251109101207.jpg",
+   "url": "2025/11/09/3283346251109101207.jpg",
+   "preview": "UXE3Cx-=IoXT%ho#t8p0T3W@kDp0%%tSRltS",
+   "description": "نمای کل ساختمان",
+   "created_at": "2025-11-09"
+  },
+  {
+   "name": "3283346251116212655.jpg",
+   "url": "2025/11/16/3283346251116212655.jpg",
+   "preview": "UhFY.F?bWBt6?c%gWCWB?b%MRkWB~q%MRjoL",
+   "description": "محوطه حیاط",
+   "created_at": "2025-11-16"
+  },
+  {
+   "name": "3283346251116212656.jpg",
+   "url": "2025/11/16/3283346251116212656.jpg",
+   "preview": "UlFPEC-pjsxt%gofj@of%gWXj[t7~qxtjtt7",
+   "description": "محوطه حیاط",
+   "created_at": "2025-11-16"
+  },
+  {
+   "name": "3283346251109101205.jpg",
+   "url": "2025/11/09/3283346251109101205.jpg",
+   "preview": "U~F6@A%gjYt7%%tSaxW?x_tRoeWY%Nt7offl",
+   "description": "محوطه حیاط",
+   "created_at": "2025-11-09"
+  },
+  {
+   "name": "3283346251109101158.jpg",
+   "url": "2025/11/09/3283346251109101158.jpg",
+   "preview": "U~GS[f%goctR?^%Moet8.9x[oekD%gtQodkC",
+   "description": "محوطه حیاط",
+   "created_at": "2025-11-09"
+  },
+  {
+   "name": "3283346251109101217.jpg",
+   "url": "2025/11/09/3283346251109101217.jpg",
+   "preview": "ULCs.wbqxZ.5a%od%JtPjbayoLt6_Jbaagxs",
+   "description": "محوطه حیاط",
+   "created_at": "2025-11-09"
+  }
+ ],
+ "vr_photo": null,
+ "video_url": null,
+ "allocation": "shared_place",
+ "types": [
+  "apartment",
+  "villa"
+ ],
+ "regions": [
+  "forest",
+  "rural"
+ ],
+ "floor_area": 55,
+ "land_area": 200,
+ "floors_count": 0,
+ "bedrooms": 1,
+ "sleep_arrange": [
+  {
+   "space_id": 1,
+   "single": 0,
+   "double": 1,
+   "mattress": 0,
+   "sofa_bed": 0,
+   "etc": ""
+  },
+  {
+   "space_id": 0,
+   "single": 0,
+   "double": 0,
+   "mattress": 2,
+   "sofa_bed": 0,
+   "etc": ""
+  }
+ ],
+ "sleep_description": null,
+ "guest_number": 2,
+ "max_guest_number": 4,
+ "stays_min": 1,
+ "stays_max": null,
+ "entrance_time_min": 14,
+ "entrance_time_max": 12,
+ "leaving_time": 12,
+ "features": [
+  {
+   "name": "essentials",
+   "description": "مایع ظرفشویی، مایع دستشویی، دستمال کاغذی"
+  },
+  {
+   "name": "electricity",
+   "description": null
+  },
+  {
+   "name": "water",
+   "description": "آب لوله کشی شهری"
+  },
+  {
+   "name": "tv",
+   "description": "تلویزیون ال ای دی 42 اینچ"
+  },
+  {
+   "name": "heating",
+   "description": "یک شعله بخاری گازی در پذیرایی"
+  },
+  {
+   "name": "cooler",
+   "description": "یک دستگاه اسپلیت 24000 در پذیرایی"
+  },
+  {
+   "name": "kitchen",
+   "description": "برای 6 نفر به صورت کامل موجود است."
+  },
+  {
+   "name": "stave",
+   "description": null
+  },
+  {
+   "name": "refrigerator",
+   "description": null
+  },
+  {
+   "name": "vacuumcleaner",
+   "description": "در صورت نیاز در اختیار مهمان قرار میگیرد."
+  },
+  {
+   "name": "furniture",
+   "description": "مبلمان 6 نفره"
+  },
+  {
+   "name": "parking",
+   "description": "برای 4 خودرو به صورت روباز و درحیاط موجود است."
+  },
+  {
+   "name": "islamictoilet",
+   "description": null
+  },
+  {
+   "name": "barbecue",
+   "description": "منقل فلزی گازی"
+  },
+  {
+   "name": "janitor",
+   "description": "نگهبان در ورودی حیاط مستقر می باشد."
+  },
+  {
+   "name": "bathroom",
+   "description": "در اتاق خواب"
+  }
+ ],
+ "properties": [
+  {
+   "id": 52,
+   "name": "خوش منظره"
+  }
+ ],
+ "additional_feature": null,
+ "additional_safety": null,
+ "rules": [
+  "foreign_guest",
+  "pet"
+ ],
+ "additional_rule": null,
+ "cancellation_policy": "hard",
+ "min_price": 1500000,
+ "extra_price": 250000,
+ "is_clean": false,
+ "is_new": false,
+ "is_instant": false,
+ "is_plus": false,
+ "success_books": 5,
+ "discounts": [
+  {
+   "percent": 10,
+   "type": "duration",
+   "min_nights": 6
+  },
+  {
+   "percent": 20,
+   "type": "duration",
+   "min_nights": 15
+  }
+ ],
+ "current_discount": null,
+ "current_discount_percent": 0,
+ "ratings": {
+  "count": 4,
+  "total": 4.5,
+  "accuracy": 5,
+  "communication": 4.3,
+  "cleanliness": 4,
+  "location": 5,
+  "checkin": 4.5,
+  "value": 4.3,
+  "comments_grouped_by_rating": {
+   "3": 1,
+   "5": 3
+  },
+  "is_recently": false,
+  "is_bad_host": false
+ },
+ "host": {
+  "id": 2638639,
+  "name": "احسان",
+  "avatar": "2025/08/19/2508190107212638639.jpg",
+  "gender": "male",
+  "description": null,
+  "created_at": "2025-10-27",
+  "response_time": 189,
+  "accept_rate": 97,
+  "host_communication_rate": 4.5
+ },
+ "meta": {
+  "title": "خانه مبله در بابلکنار - شیردارکلا - ط ۲",
+  "description": "اجاره روزانه آپارتمان مبله جنگلی 1 خوابه در بابلکنار، مازندران برای 4 نفر مهمان با قیمت مناسب و ضمانت تحویل جاجیگا.",
+  "keywords": null
+ },
+ "group_rooms": {
+  "items": [
+   {
+    "id": 3280978,
+    "units_count": 1,
+    "url": "/room/3280978",
+    "short_url": "/r/31ju",
+    "title": "کلبه سوئیسی طبقه سوم",
+    "bedrooms": 2,
+    "floor_area": 85,
+    "guest_number": 4,
+    "max_guest_number": 8,
+    "min_price": 4000000,
+    "invoice": {
+     "extra": {
+      "count": 0,
+      "price": 500000,
+      "total": 0
+     },
+     "discount": {
+      "type": "period",
+      "percent": 10,
+      "amount": 400000
+     },
+     "discounts": [
+      {
+       "type": "period",
+       "percent": 10,
+       "amount": 400000
+      }
+     ],
+     "final": 3600000,
+     "prices": [
+      1
+     ],
+     "is_bill": false
+    },
+    "pictures": {
+     "total": 1,
+     "items": [
+      {
+       "name": "3280978251007140253.jpg",
+       "preview": "UlG+UC.TpJ?H~p.9%hx]-p%NtSj]%LxakCt7",
+       "url": "2025/10/07/3280978251007140253.jpg"
+      }
+     ]
+    }
+   }
+  ],
+  "count": 1
+ },
+ "group": {
+  "count": 1,
+  "items": [
+   {
+    "id": 3280978,
+    "units_count": 1,
+    "url": "/room/3280978",
+    "short_url": "/r/31ju",
+    "title": "کلبه سوئیسی طبقه سوم",
+    "city": "بابلکنار",
+    "bedrooms": 2,
+    "floor_area": 85,
+    "guest_number": 4,
+    "max_guest_number": 8,
+    "is_clean": false,
+    "is_new": false,
+    "is_instant": false,
+    "is_plus": true,
+    "min_price": 4000000,
+    "discount": {
+     "percent": 10,
+     "type": "period"
+    },
+    "success_books": 100,
+    "rating": {
+     "count": 44,
+     "total": 4.6
+    },
+    "host": {
+     "id": 2638639,
+     "avatar": "2025/08/19/2508190107212638639.jpg"
+    },
+    "invoice": {
+     "extra": {
+      "count": 0,
+      "price": 500000,
+      "total": 0
+     },
+     "discount": {
+      "type": "period",
+      "percent": 10,
+      "amount": 400000
+     },
+     "discounts": [
+      {
+       "type": "period",
+       "percent": 10,
+       "amount": 400000
+      }
+     ],
+     "final": 3600000,
+     "prices": {
+      "4000000": 1
+     },
+     "is_bill": false
+    },
+    "pictures": {
+     "total": 1,
+     "items": [
+      {
+       "name": "3280978251007140253.jpg",
+       "preview": "UlG+UC.TpJ?H~p.9%hx]-p%NtSj]%LxakCt7",
+       "url": "2025/10/07/3280978251007140253.jpg"
+      }
+     ]
+    },
+    "properties": [
+     "is_plus"
+    ]
+   }
+  ]
+ }
+}

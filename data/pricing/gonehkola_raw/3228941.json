@@ -1,0 +1,278 @@
+{
+ "id": 3228941,
+ "status": "active",
+ "units_count": 1,
+ "url": "/room/3228941",
+ "short_url": "/r/1xed",
+ "title": "اجاره کلبه چوبی در بابلکنار - گونه کلا",
+ "description": "**اجاره کلبه چوبی در بابلکنار - گونه کلا**\nاین کلبه چوبی یکخوابه با حیاط دنج و چشم انداز کوه و جنگل در روستای گونه کلا با فاصله حدود ۱۵ کیلومتری از بابلکنار در محیطی امن با چشم انداز زیبا واقع شده است.\nاطراف حیاط از سه طرف با دیوار و یک طرف با فنس محصور می باشد، همچنین میزبان در فاصله نزدیکی از اقامتگاه سکونت دارد.\nمهمانان گرامی برای تهیه مایحتاج روزانه، به سوپرمارکت و نانوایی با فاصله حدود ۵۰۰ متری کلبه دسترسی خواهند داشت.\nکیفیت پوشش شبکه تلفن همراه برای اپراتور ایرانسل و همراه اول در مکالمه خوب و دسترسی به اینترنت به صورت ۴g می باشد.\nلازم به ذکر است حدود ۵۰۰ متر مسیر منتهی به کلبه به صورت خاکی و دارای شیب نسبتا تند می باشد.\nآبگرم ازرود و هفت آبشار، جاده گنج افروز، منطقه گردشگری لفور، پارک جنگلی تلار و بزچفت و ... تنها بخشی از جاذبه های گردشگری اطراف این منطقه است.",
+ "geo": {
+  "lat": 36.3328,
+  "lng": 52.79
+ },
+ "province": {
+  "id": "p26",
+  "name": "مازندران",
+  "url": "/s/mazandaran"
+ },
+ "city": {
+  "id": 467,
+  "name": "بابلکنار",
+  "url": "/s/babolkenar"
+ },
+ "pictures": [
+  {
+   "name": "3228941240407194642.jpg",
+   "url": "2024/04/07/3228941240407194642.jpg",
+   "preview": "U}IOU-%2oz-;_4s;t7%N?boMofxu-;s;WVkC",
+   "description": "نمای کلبه",
+   "created_at": "2024-04-07"
+  },
+  {
+   "name": "3228941240407194824.jpg",
+   "url": "2024/04/07/3228941240407194824.jpg",
+   "preview": "UPF}ZS^%IArq~B%2M{M{ofj[NGM|?FxZV[jF",
+   "description": null,
+   "created_at": "2024-04-07"
+  },
+  {
+   "name": "3228941240407194735.jpg",
+   "url": "2024/04/07/3228941240407194735.jpg",
+   "preview": "U~H{4*xuRjt8_NxuWAt7-rt7a{ogxvj[axof",
+   "description": "چشم انداز تراس",
+   "created_at": "2024-04-07"
+  },
+  {
+   "name": "3228941240407194819.jpg",
+   "url": "2024/04/07/3228941240407194819.jpg",
+   "preview": "UUE{2#-pWB%L~Vt6ayt6xtj[ofof-:t7t6t6",
+   "description": "پذیرایی",
+   "created_at": "2024-04-07"
+  },
+  {
+   "name": "3228941240407194756.jpg",
+   "url": "2024/04/07/3228941240407194756.jpg",
+   "preview": "UPEx^Y%2R*%L~Vs:Rjxat6R*WBt7?GWBj[t7",
+   "description": "پذیرایی",
+   "created_at": "2024-04-07"
+  },
+  {
+   "name": "3228941240407194814.jpg",
+   "url": "2024/04/07/3228941240407194814.jpg",
+   "preview": "UTE2zoxvbI%2~Wxuj]t7%Mt7oft7?Gofoft7",
+   "description": "پذیرایی",
+   "created_at": "2024-04-07"
+  },
+  {
+   "name": "3228941240407194809.jpg",
+   "url": "2024/04/07/3228941240407194809.jpg",
+   "preview": "UQFE_q%3M|-o~Vt7Rk%2ofayWCt7?Ga#WCxa",
+   "description": "آشپزخانه",
+   "created_at": "2024-04-07"
+  },
+  {
+   "name": "3228941240407194743.jpg",
+   "url": "2024/04/07/3228941240407194743.jpg",
+   "preview": "UTHnQo-;T1-;~At6kDxtxVt6ofoe~V%2bct7",
+   "description": "آشپزخانه",
+   "created_at": "2024-04-07"
+  },
+  {
+   "name": "3228941240407194751.jpg",
+   "url": "2024/04/07/3228941240407194751.jpg",
+   "preview": "UaF5gO=_W9xa~VxsWAxa%Modaet7-:s-axof",
+   "description": "اتاق خواب",
+   "created_at": "2024-04-07"
+  },
+  {
+   "name": "3228941240407194801.jpg",
+   "url": "2024/04/07/3228941240407194801.jpg",
+   "preview": "UaEof3%2Vs%1~Wxbo0xt-pt7oft6-:s;jZs:",
+   "description": "اتاق خواب",
+   "created_at": "2024-04-07"
+  },
+  {
+   "name": "3228941240407194747.jpg",
+   "url": "2024/04/07/3228941240407194747.jpg",
+   "preview": "UVFrCY=_xC-:~V%1ad%2%2s:WBxa?HoIjZxu",
+   "description": "حمام با سرویس فرنگی و ایرانی",
+   "created_at": "2024-04-07"
+  }
+ ],
+ "vr_photo": null,
+ "video_url": null,
+ "allocation": "entire_place",
+ "types": [
+  "cottage",
+  "wooden_cottage"
+ ],
+ "regions": [
+  "forest",
+  "rural"
+ ],
+ "floor_area": 70,
+ "land_area": 1000,
+ "floors_count": 0,
+ "bedrooms": 1,
+ "sleep_arrange": [
+  {
+   "space_id": 1,
+   "single": 0,
+   "double": 0,
+   "mattress": 2,
+   "sofa_bed": 0,
+   "etc": ""
+  },
+  {
+   "space_id": 0,
+   "single": 0,
+   "double": 1,
+   "mattress": 6,
+   "sofa_bed": 0,
+   "etc": ""
+  }
+ ],
+ "sleep_description": "مهمانان بیش ۳ نفر سرویس خواب به همراه داشته باشند.",
+ "guest_number": 4,
+ "max_guest_number": 4,
+ "stays_min": 1,
+ "stays_max": null,
+ "entrance_time_min": 14,
+ "entrance_time_max": 0,
+ "leaving_time": 12,
+ "features": [
+  {
+   "name": "essentials",
+   "description": "مایع ظرفشویی، مایع دستشویی"
+  },
+  {
+   "name": "electricity",
+   "description": null
+  },
+  {
+   "name": "water",
+   "description": "آب لوله کشی شهری"
+  },
+  {
+   "name": "tv",
+   "description": "تلویزیون ال ای دی 32 اینچ"
+  },
+  {
+   "name": "heating",
+   "description": "یک شعله بخاری گازی در پذیرایی"
+  },
+  {
+   "name": "cooler",
+   "description": "یک دستگاه کولر اسپلیت 18000 در پذیرایی"
+  },
+  {
+   "name": "kitchen",
+   "description": "لوازم آشپزخانه به تعداد 6 نفر موجود است."
+  },
+  {
+   "name": "stave",
+   "description": null
+  },
+  {
+   "name": "refrigerator",
+   "description": null
+  },
+  {
+   "name": "vacuumcleaner",
+   "description": null
+  },
+  {
+   "name": "furniture",
+   "description": "مبلمان 5 نفره"
+  },
+  {
+   "name": "table",
+   "description": "۴ نفره"
+  },
+  {
+   "name": "parking",
+   "description": "پارکینگ روباز برای دو خودرو در حیاط"
+  },
+  {
+   "name": "toilet",
+   "description": "با حمام و سرویس ایرانی"
+  },
+  {
+   "name": "islamictoilet",
+   "description": "با حمام و سرویس فرنگی"
+  },
+  {
+   "name": "barbecue",
+   "description": "منقل فلزی در حیاط"
+  },
+  {
+   "name": "janitor",
+   "description": "میزبان در فاصله نزدیکی از اقامتگاه سکونت دارد."
+  },
+  {
+   "name": "bathroom",
+   "description": "با سرویس ایرانی و فرنگی"
+  },
+  {
+   "name": "fireextingu",
+   "description": null
+  }
+ ],
+ "properties": [
+  {
+   "id": 71,
+   "name": "مهمان نواز"
+  }
+ ],
+ "additional_feature": null,
+ "additional_safety": null,
+ "rules": [
+  "foreign_guest",
+  "party",
+  "pet"
+ ],
+ "additional_rule": null,
+ "cancellation_policy": "hard",
+ "min_price": 1500000,
+ "extra_price": 150000,
+ "is_clean": false,
+ "is_new": false,
+ "is_instant": false,
+ "is_plus": true,
+ "success_books": 20,
+ "discounts": [],
+ "current_discount": null,
+ "current_discount_percent": 0,
+ "ratings": {
+  "count": 20,
+  "total": 4.8,
+  "accuracy": 4.9,
+  "communication": 4.8,
+  "cleanliness": 4.7,
+  "location": 4.8,
+  "checkin": 5,
+  "value": 4.7,
+  "comments_grouped_by_rating": {
+   "4": 5,
+   "5": 6
+  },
+  "is_recently": true,
+  "is_bad_host": false
+ },
+ "host": {
+  "id": 2085901,
+  "name": "عبدالله",
+  "avatar": "2024/04/07/2404071957472085901.jpg",
+  "gender": "male",
+  "description": null,
+  "created_at": "2024-05-19",
+  "response_time": 279,
+  "accept_rate": 95,
+  "host_communication_rate": 4.8
+ },
+ "meta": {
+  "title": "اجاره کلبه چوبی در بابلکنار - گونه کلا",
+  "description": "اجاره روزانه کلبه جنگلی 1 خوابه در بابلکنار، مازندران برای 4 نفر مهمان با قیمت مناسب و ضمانت تحویل جاجیگا.",
+  "keywords": null
+ }
+}

@@ -1,0 +1,370 @@
+{
+ "id": 3293613,
+ "status": "active",
+ "units_count": 1,
+ "url": "/room/3293613",
+ "short_url": "/r/3bat",
+ "title": "کلبه سوئیسی استخردار در بابلکنار - شیردارکلا",
+ "description": "این کلبه سوئیسی یکخوابه با چشم انداز کوه و شهر در روستای شیردارکلا از توابع بابلکنار واقع شده است که با شهر شیرگاه حدود ۱۳ کیلومتر فاصله دارد.\nاز جمله امکانات تفریحی و رفاهی ویلا می توان استخر سرپوشیده، آتشدان در حیاط پشتی و میز و صندلی در تراس را نام برد.\nساختمان کلبه بر روی شیب جاده بنا شده است بطوریکه از سمت خیابان در همکف قرار گرفته و برای دسترسی به حیاط پشتی که بصورت پلکانی می باشد لازم است تا حدود ۱۰ پله را به سمت پایین طی نمایید.\nطراحی کلبه به گونه ای است که استخر در طبقه زیر همکف واقع شده، در طبقه همکف دارای پذیرایی، آشپزخانه، یک اتاق خواب، تراس و سرویس ایرانی با فرنگی و حمام می باشد و در طبقه بالا یک فضای خواب و تراس قرار دارد، در نظر داشته باشید که دسترسی به استخر به وسیله پله های داخلی و از پذیرایی ممکن است.\nمحوطه حیاط از سه طرف با دیوار و از یکطرف به وسیله فنس و پوشش گیاهی محصور شده و میزبان نیز در فاصله نزدیکی سکونت دارد.\nهمچنین به جهت تامین امنیت بیشتر دروازه ورودی و محوطه حیاط مجهز به دوربین مداربسته می باشد.\nمهمانان گرامی برای تهیه مایحتاج روزانه خود می توانند از سوپرمارکت و نانوایی در فاصله حدود یک کیلومتری از کلبه استفاده نمایند.\nکیفیت پوشش شبکه تلفن همراه برای دو اپراتور ایرانسل و همراه اول در مکالمه خوب و دسترسی به اینترنت به صورت ۴g است.\nگفتنی است حدود ۳۰ متر از مسیر منتهی به کلبه بصورت جاده خاکی می باشد.",
+ "geo": {
+  "lat": 36.3358,
+  "lng": 52.7758
+ },
+ "province": {
+  "id": "p26",
+  "name": "مازندران",
+  "url": "/s/mazandaran"
+ },
+ "city": {
+  "id": 467,
+  "name": "بابلکنار",
+  "url": "/s/babolkenar"
+ },
+ "pictures": [
+  {
+   "name": "32936132603172031431167223.jpg",
+   "url": "2026/03/17/32936132603172031431167223.jpg",
+   "preview": "U_HCN5xujs%M_4bIRjt7-=j[WBog%Mt6oeof",
+   "description": "روف گاردن با ویو ابدی",
+   "created_at": "2026-03-17"
+  },
+  {
+   "name": "32936132603172032087321283.jpg",
+   "url": "2026/03/17/32936132603172032087321283.jpg",
+   "preview": "U~He^Bt7WBxu_4tRaxt8.8ozfPoz-;ofj[oz",
+   "description": "اتشکده",
+   "created_at": "2026-03-17"
+  },
+  {
+   "name": "32936132603171931507569043.jpg",
+   "url": "2026/03/17/32936132603171931507569043.jpg",
+   "preview": "UzE:Pa%g%N%M_4x]xvxu%ht7ofof-;t7fPj[",
+   "description": "نمای کلبه",
+   "created_at": "2026-03-17"
+  },
+  {
+   "name": "32936132603172030157440074.jpg",
+   "url": "2026/03/17/32936132603172030157440074.jpg",
+   "preview": "UID0DetR4T-:=_i_M|t7flbFt6o2_No#VsxZ",
+   "description": "استخر",
+   "created_at": "2026-03-17"
+  },
+  {
+   "name": "32936132603172025536191270.jpg",
+   "url": "2026/03/17/32936132603172025536191270.jpg",
+   "preview": "UKD+rOZgE1.S~CMdNHo~vzV@NaWB^jt7NGt7",
+   "description": "پذیرایی",
+   "created_at": "2026-03-17"
+  },
+  {
+   "name": "32936132603172025319008038.jpg",
+   "url": "2026/03/17/32936132603172025319008038.jpg",
+   "preview": "U8C~*X_100z.^+NIox%L4pIp%gx]~V%LVrsl",
+   "description": "پذیرایی",
+   "created_at": "2026-03-17"
+  },
+  {
+   "name": "32936132603172004212406762.jpg",
+   "url": "2026/03/17/32936132603172004212406762.jpg",
+   "preview": "ULDb.y=_$#-or=xu%0$%WXkDt7xt~Ws.WYt7",
+   "description": "پذیرایی",
+   "created_at": "2026-03-17"
+  },
+  {
+   "name": "32936132603172027526333110.jpg",
+   "url": "2026/03/17/32936132603172027526333110.jpg",
+   "preview": "UIDu_2yEcF^*~V%LkWo#V]VsM{IV?GNHRjsl",
+   "description": "اشپزخانه",
+   "created_at": "2026-03-17"
+  },
+  {
+   "name": "32936132603172028097867030.jpg",
+   "url": "2026/03/17/32936132603172028097867030.jpg",
+   "preview": "UMCZ67_3xtrq~V%gt6nhIUM{ofkDVsRis:t7",
+   "description": "اشپزخانه",
+   "created_at": "2026-03-17"
+  },
+  {
+   "name": "32936132603172026331119837.jpg",
+   "url": "2026/03/17/32936132603172026331119837.jpg",
+   "preview": "UaFF54_NyE?H~V%htm-p%3tStSt8?H%Mxuxa",
+   "description": "اتاق خواب 1",
+   "created_at": "2026-03-17"
+  },
+  {
+   "name": "32936132603172027093537884.jpg",
+   "url": "2026/03/17/32936132603172027093537884.jpg",
+   "preview": "UPD+F}wcE2xu}pnON_f*v#nhS}W;={xFNHbb",
+   "description": "فضای خواب طبقه بالا",
+   "created_at": "2026-03-17"
+  },
+  {
+   "name": "32936132603172029092101986.jpg",
+   "url": "2026/03/17/32936132603172029092101986.jpg",
+   "preview": "USG8=k~Vs9?G~WxaoL-p-;RkNGt7~pxaV@t6",
+   "description": "سرویس بهداشتی و حمام",
+   "created_at": "2026-03-17"
+  },
+  {
+   "name": "32936132603172031085251817.jpg",
+   "url": "2026/03/17/32936132603172031085251817.jpg",
+   "preview": "UOEyVpIURi%L?bRjs:ofxuofWBRj~pa{Rjoe",
+   "description": "سرویس بهداشتی و حمام استخر",
+   "created_at": "2026-03-17"
+  },
+  {
+   "name": "32936132603172029472314556.jpg",
+   "url": "2026/03/17/32936132603172029472314556.jpg",
+   "preview": "UXC?_#S%nh-.-noJNfkD%KoLV@of_NW?ngxt",
+   "description": "استخر",
+   "created_at": "2026-03-17"
+  },
+  {
+   "name": "32936132603172030421907363.jpg",
+   "url": "2026/03/17/32936132603172030421907363.jpg",
+   "preview": "UcCQPz?E${%N%HfmR-ocxtogjsoc?w%KxVt8",
+   "description": "استخر",
+   "created_at": "2026-03-17"
+  },
+  {
+   "name": "32936132603172032499965528.jpg",
+   "url": "2026/03/17/32936132603172032499965528.jpg",
+   "preview": "U:GcAVjEMwtR?waeV?ozyEaeaJofyEjFV?f5",
+   "description": "حیاط",
+   "created_at": "2026-03-17"
+  },
+  {
+   "name": "32936132603191153057796857.jpg",
+   "url": "2026/03/19/32936132603191153057796857.jpg",
+   "preview": "U9FY=G~U00?F?Y%fo{X400NZ?bR*_LacVtxa",
+   "description": "حیاط پلکانی",
+   "created_at": "2026-03-17"
+  },
+  {
+   "name": "32936132603191700392243165.jpg",
+   "url": "2026/03/19/32936132603191700392243165.jpg",
+   "preview": "U~Hf0Qxvayxu_NtRWVt8-=ogayog%foff7of",
+   "description": "چشم انداز",
+   "created_at": "2026-03-19"
+  },
+  {
+   "name": "32936132603191659538121735.jpg",
+   "url": "2026/03/19/32936132603191659538121735.jpg",
+   "preview": "U,HLrI%NMxx]%gt7V@t7?bxuaxt8~q%Maexu",
+   "description": "پارکینگ",
+   "created_at": "2026-03-19"
+  }
+ ],
+ "vr_photo": null,
+ "video_url": null,
+ "allocation": "entire_place",
+ "types": [
+  "cottage",
+  "swiss_cottage",
+  "wooden_cottage"
+ ],
+ "regions": [
+  "rural"
+ ],
+ "floor_area": 100,
+ "land_area": 300,
+ "floors_count": 0,
+ "bedrooms": 2,
+ "sleep_arrange": [
+  {
+   "space_id": 1,
+   "single": 0,
+   "double": 1,
+   "mattress": 0,
+   "sofa_bed": 0,
+   "etc": ""
+  },
+  {
+   "space_id": 2,
+   "single": 0,
+   "double": 1,
+   "mattress": 0,
+   "sofa_bed": 0,
+   "etc": ""
+  },
+  {
+   "space_id": 0,
+   "single": 0,
+   "double": 0,
+   "mattress": 4,
+   "sofa_bed": 1,
+   "etc": ""
+  }
+ ],
+ "sleep_description": null,
+ "guest_number": 4,
+ "max_guest_number": 6,
+ "stays_min": 1,
+ "stays_max": null,
+ "entrance_time_min": 14,
+ "entrance_time_max": 21,
+ "leaving_time": 12,
+ "features": [
+  {
+   "name": "essentials",
+   "description": "پک بهداشتی رایگان شامل(شامپو سر و بدن، مسواک و خمیر دندان، کاور بالش و دمپایی هتلی) کاغذ توالت، مایع ظرفشویی، مایع دستشویی"
+  },
+  {
+   "name": "electricity",
+   "description": null
+  },
+  {
+   "name": "water",
+   "description": null
+  },
+  {
+   "name": "tv",
+   "description": "ال ای دی 43 اینچ"
+  },
+  {
+   "name": "heating",
+   "description": "پکیج - رادیاتور"
+  },
+  {
+   "name": "cooler",
+   "description": "یک دستگاه کولر اسپیلت 18000 در پذیرایی و یک دستگاه اسپیلت 12000 در یک اتاق خواب"
+  },
+  {
+   "name": "kitchen",
+   "description": "برای 12 نفر به صورت کامل موجود است."
+  },
+  {
+   "name": "stave",
+   "description": null
+  },
+  {
+   "name": "refrigerator",
+   "description": null
+  },
+  {
+   "name": "vacuumcleaner",
+   "description": null
+  },
+  {
+   "name": "hairdryer",
+   "description": null
+  },
+  {
+   "name": "furniture",
+   "description": "6 نفره"
+  },
+  {
+   "name": "table",
+   "description": "4 نفره"
+  },
+  {
+   "name": "drawer",
+   "description": null
+  },
+  {
+   "name": "parking",
+   "description": "برای دو خودرو بصورت روباز"
+  },
+  {
+   "name": "toilet",
+   "description": "با سرویس ایرانی و حمام"
+  },
+  {
+   "name": "islamictoilet",
+   "description": "با حمام و سرویس ایرانی"
+  },
+  {
+   "name": "barbecue",
+   "description": "منقل بتنی در حیاط"
+  },
+  {
+   "name": "pool",
+   "description": "[{i:0,h:{t:T,a:T},c:{t:F,a:F},w:3,l:6,dx:1.6,di:1.3,t:a,pb:F,pv:T,in:i,m:میز و صندلی، سرویس فرنگی با حمام در محوطه استخر قرار دارد.}]"
+  },
+  {
+   "name": "bathroom",
+   "description": "با سرویس فرنگی و ایرانی"
+  },
+  {
+   "name": "firstaidkit",
+   "description": "در آشپزخانه"
+  },
+  {
+   "name": "fireextingu",
+   "description": "در آشپزخانه"
+  },
+  {
+   "name": "firealarm",
+   "description": null
+  }
+ ],
+ "properties": [
+  {
+   "id": 52,
+   "name": "خوش منظره"
+  },
+  {
+   "id": 71,
+   "name": "مهمان نواز"
+  },
+  {
+   "id": 49,
+   "name": "استخر آب گرم"
+  },
+  {
+   "id": 55,
+   "name": "استخر سرپوشیده"
+  }
+ ],
+ "additional_feature": "به ازای هر نفر، پک بهداشتی رایگان اهدا می گردد.",
+ "additional_safety": null,
+ "rules": [
+  "party",
+  "pet",
+  "smoke"
+ ],
+ "additional_rule": "به فرد و جمع مجرد آقایان اجاره داده نمی شود.\nاستعمال سیگار داخل کلبه مجاز است.\nاستعمال قلیان داخل کلبه کاملا ممنوع است.",
+ "cancellation_policy": "hard",
+ "min_price": 9000000,
+ "extra_price": 800000,
+ "is_clean": false,
+ "is_new": false,
+ "is_instant": false,
+ "is_plus": true,
+ "success_books": 5,
+ "discounts": [],
+ "current_discount": null,
+ "current_discount_percent": 0,
+ "ratings": {
+  "count": 8,
+  "total": 4.9,
+  "accuracy": 4.9,
+  "communication": 5,
+  "cleanliness": 5,
+  "location": 4.8,
+  "checkin": 5,
+  "value": 4.8,
+  "comments_grouped_by_rating": {
+   "4": 3,
+   "5": 5
+  },
+  "is_recently": true,
+  "is_bad_host": false
+ },
+ "host": {
+  "id": 2992426,
+  "name": "روزبه",
+  "avatar": "2026/03/17/2603171959062992426.jpg",
+  "gender": "male",
+  "description": null,
+  "created_at": "2026-03-19",
+  "response_time": 328,
+  "accept_rate": 79,
+  "host_communication_rate": 5
+ },
+ "meta": {
+  "title": "کلبه سوئیسی استخردار در بابلکنار - شیردارکلا",
+  "description": "اجاره روزانه کلبه روستایی 2 خوابه در بابلکنار، مازندران برای 6 نفر مهمان با قیمت مناسب و ضمانت تحویل جاجیگا.",
+  "keywords": null
+ }
+}

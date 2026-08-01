@@ -1,0 +1,346 @@
+{
+ "id": 3199786,
+ "status": "active",
+ "units_count": 1,
+ "url": "/room/3199786",
+ "short_url": "/r/1awi",
+ "title": "کلبه در بابلکنار - گونه کلا",
+ "description": "این کلبه یکخوابه بالکن دار با حیاط در روستای گونه کلا با فاصله حدود ۱۰ کیلومتری از منطقه شیرگاه واقع شده است.\nکلبه با پیمودن حدود ۲۰ پله قابل دسترسی می باشد و در طبقه پایین دارای سالن پذیرایی، آشپزخانه، بالکن و سرویس بهداشتی (حمام با توالت ایرانی) است، همچنین کلبه در طبقه بالا با یک نیمه طبقه به عنوان اتاق خواب و یک بالکن آماده استفاده میهمانان است.\nحیاط کلبه با دیوار محصور و به صورت مشترک با سه منزل (منازل میزبان) دیگر و نگهبان در اختیار میهمانان می باشد.\nدسترسی به نانوایی و سوپرمارکت با حدود ۳ دقیقه رانندگی از اقامتگاه میسر می باشد.\nکیفیت پوشش شبکه تلفن همراه برای دو اپراتور ایرانسل و همراه اول در مکالمه عالی و دسترسی به اینترنت به صورت ۴g است. \nدریاچه لفور، پلنک دره، جنگل اندارگلی، رودخانه کسیلیان، چشمه علی شیرگاه، آبشار ترز و... تنها بخشی از جاذبه های گردشگری اطراف این اقامتگاه می باشد.",
+ "geo": {
+  "lat": 36.3315,
+  "lng": 52.7862
+ },
+ "province": {
+  "id": "p26",
+  "name": "مازندران",
+  "url": "/s/mazandaran"
+ },
+ "city": {
+  "id": 467,
+  "name": "بابلکنار",
+  "url": "/s/babolkenar"
+ },
+ "pictures": [
+  {
+   "name": "3199786230622113607.jpg",
+   "url": "2023/06/22/3199786230622113607.jpg",
+   "preview": "UWD]n;?uIot6_MyCNHof?uyCRjbG~p%fNGj@",
+   "description": "بالکن و چشم انداز",
+   "created_at": "2023-06-22"
+  },
+  {
+   "name": "3199786251017152605.jpg",
+   "url": "2025/10/17/3199786251017152605.jpg",
+   "preview": "UQDm8WRj4nxu4TWB%May4nxu-;M|~qofIUkC",
+   "description": "جکوزی",
+   "created_at": "2025-10-17"
+  },
+  {
+   "name": "3199786251017153006.jpg",
+   "url": "2025/10/17/3199786251017153006.jpg",
+   "preview": "UXEVQoNIx]^k~WRk-;-p-;r??H%M_3i{%M-p",
+   "description": "نمای کلبه",
+   "created_at": "2025-10-17"
+  },
+  {
+   "name": "3199786230622113512.jpg",
+   "url": "2023/06/22/3199786230622113512.jpg",
+   "preview": "UNI4FY=tMx~BwbV[WBxa4:R+bING~BxZV@n$",
+   "description": "بالکن و طبقه بالا",
+   "created_at": "2023-06-22"
+  },
+  {
+   "name": "3199786230622113733.jpg",
+   "url": "2023/06/22/3199786230622113733.jpg",
+   "preview": "UPE_K[-VNZ%2venij[jEROWBt7s.~Ct7WVxa",
+   "description": "نمای داخلی",
+   "created_at": "2023-06-22"
+  },
+  {
+   "name": "3199786230622141100.jpg",
+   "url": "2023/06/22/3199786230622141100.jpg",
+   "preview": "UCEBv*^+4:~B~6awNGs+ITM{t7R%}[%2t6s:",
+   "description": "نمای داخلی",
+   "created_at": "2023-06-22"
+  },
+  {
+   "name": "3199786230622141116.jpg",
+   "url": "2023/06/22/3199786230622141116.jpg",
+   "preview": "UJH^t.~XtS~B^iRkRk%1E1M|oes:~Bt8t7%1",
+   "description": "نمای داخلی",
+   "created_at": "2023-06-22"
+  },
+  {
+   "name": "3199786230622141104.jpg",
+   "url": "2023/06/22/3199786230622141104.jpg",
+   "preview": "UNE2d[~Wxu-o}@?Gt7so$g$*%2s:^*%Lxtt7",
+   "description": "آشپزخانه",
+   "created_at": "2023-06-22"
+  },
+  {
+   "name": "3199786251017153644.jpg",
+   "url": "2025/10/17/3199786251017153644.jpg",
+   "preview": "UZH^-A-69G?G^iMyM{-:xWi_xZxu~B$%WAt6",
+   "description": "طبقه بالا اتاق خواب",
+   "created_at": "2025-10-17"
+  },
+  {
+   "name": "3199786251017152542.jpg",
+   "url": "2025/10/17/3199786251017152542.jpg",
+   "preview": "UTH1h|-o57s;=XM{9aoer=V[R+oe~V%1bHn+",
+   "description": "طبقه بالا اتاق خواب",
+   "created_at": "2025-10-17"
+  },
+  {
+   "name": "3199786251017153031.jpg",
+   "url": "2025/10/17/3199786251017153031.jpg",
+   "preview": "UfG[TE~oRiVY~U%LIpR6i~WER+M|%2xtoeRj",
+   "description": null,
+   "created_at": "2025-10-17"
+  },
+  {
+   "name": "3199786230622113548.jpg",
+   "url": "2023/06/22/3199786230622113548.jpg",
+   "preview": "UQDvi+%Mfk-;~qxuj[xuxuoft7xu-;oft7xu",
+   "description": "حمام و سرویس ایرانی",
+   "created_at": "2023-06-22"
+  },
+  {
+   "name": "3199786230622113637.jpg",
+   "url": "2023/06/22/3199786230622113637.jpg",
+   "preview": "UnE3eTxtj[xt_Mt7ayof?ut7fRkC?ut7j[of",
+   "description": "",
+   "created_at": "2023-06-22"
+  },
+  {
+   "name": "3199786230622141023.jpg",
+   "url": "2023/06/22/3199786230622141023.jpg",
+   "preview": "UCAdAT~oHtQ.?ZxtMyIURkazWVM|?Z%LjFaL",
+   "description": null,
+   "created_at": "2023-06-22"
+  },
+  {
+   "name": "3199786251017153122.jpg",
+   "url": "2025/10/17/3199786251017153122.jpg",
+   "preview": "UeG*l[R68|-o~TV[D+o|sloeNHkV%2aeWAxa",
+   "description": null,
+   "created_at": "2025-10-17"
+  },
+  {
+   "name": "3199786251017152526.jpg",
+   "url": "2025/10/17/3199786251017152526.jpg",
+   "preview": "URI4|i9G0L_M^*9FE2?bIAIUbIxu~VWCNHoy",
+   "description": null,
+   "created_at": "2025-10-17"
+  },
+  {
+   "name": "3199786251017152634.jpg",
+   "url": "2025/10/17/3199786251017152634.jpg",
+   "preview": "URF=XJ9Z0L~q^*E1E2-:I9M{tRt6={RkNHt7",
+   "description": null,
+   "created_at": "2025-10-17"
+  },
+  {
+   "name": "3199786251017153047.jpg",
+   "url": "2025/10/17/3199786251017153047.jpg",
+   "preview": "UvHLYdxatR_2~qRjoz-;_3WAof-;~ps,of-;",
+   "description": null,
+   "created_at": "2025-10-17"
+  },
+  {
+   "name": "3199786251017152920.jpg",
+   "url": "2025/10/17/3199786251017152920.jpg",
+   "preview": "UMD]eey8xZ?Z_Mxts:xtx_Rljct7_3WUofxu",
+   "description": null,
+   "created_at": "2025-10-17"
+  }
+ ],
+ "vr_photo": null,
+ "video_url": null,
+ "allocation": "shared_place",
+ "types": [
+  "cottage",
+  "wooden_cottage"
+ ],
+ "regions": [
+  "forest",
+  "rural"
+ ],
+ "floor_area": 60,
+ "land_area": 500,
+ "floors_count": 0,
+ "bedrooms": 1,
+ "sleep_arrange": [
+  {
+   "space_id": 1,
+   "single": 1,
+   "double": 0,
+   "mattress": 5,
+   "sofa_bed": 0,
+   "etc": ""
+  },
+  {
+   "space_id": 0,
+   "single": 0,
+   "double": 0,
+   "mattress": 0,
+   "sofa_bed": 0,
+   "etc": ""
+  }
+ ],
+ "sleep_description": null,
+ "guest_number": 4,
+ "max_guest_number": 6,
+ "stays_min": 1,
+ "stays_max": null,
+ "entrance_time_min": 14,
+ "entrance_time_max": 0,
+ "leaving_time": 12,
+ "features": [
+  {
+   "name": "essentials",
+   "description": "کاغذ توالت، دستمال کاغذی، مایع ظرفشویی، مایع دستشویی"
+  },
+  {
+   "name": "electricity",
+   "description": null
+  },
+  {
+   "name": "water",
+   "description": "شهری و قابل آشامیدن است."
+  },
+  {
+   "name": "heating",
+   "description": "یک شعله بخاری گازی در سالن پذیرایی"
+  },
+  {
+   "name": "cooler",
+   "description": "سالن پذیرایی یک اسپلیت ۳۰۰۰۰ دارد."
+  },
+  {
+   "name": "kitchen",
+   "description": "برای ۶ نفر به صورت کامل موجود است."
+  },
+  {
+   "name": "stave",
+   "description": null
+  },
+  {
+   "name": "refrigerator",
+   "description": null
+  },
+  {
+   "name": "vacuumcleaner",
+   "description": null
+  },
+  {
+   "name": "furniture",
+   "description": "۶ نفره"
+  },
+  {
+   "name": "table",
+   "description": "۶ نفره"
+  },
+  {
+   "name": "parking",
+   "description": "برای ۲ خودرو به صورت روباز و در حیاط"
+  },
+  {
+   "name": "islamictoilet",
+   "description": "با حمام"
+  },
+  {
+   "name": "barbecue",
+   "description": "منقل فلزی ساده موجود است."
+  },
+  {
+   "name": "jacuzzi",
+   "description": "دو نفره"
+  },
+  {
+   "name": "janitor",
+   "description": "در محوطه اقامتگاه حضور دارد، میزبان هم در حیاط اقامتگاه ساکن است."
+  },
+  {
+   "name": "bathroom",
+   "description": "با سرویس ایرانی"
+  },
+  {
+   "name": "firstaidkit",
+   "description": null
+  },
+  {
+   "name": "fireextingu",
+   "description": null
+  },
+  {
+   "name": "safetycard",
+   "description": null
+  }
+ ],
+ "properties": [],
+ "additional_feature": null,
+ "additional_safety": null,
+ "rules": [
+  "foreign_guest",
+  "party",
+  "pet",
+  "smoke"
+ ],
+ "additional_rule": null,
+ "cancellation_policy": "middle",
+ "min_price": 3000000,
+ "extra_price": 200000,
+ "is_clean": false,
+ "is_new": false,
+ "is_instant": false,
+ "is_plus": false,
+ "success_books": 10,
+ "discounts": [
+  {
+   "percent": 5,
+   "type": "duration",
+   "min_nights": 3
+  },
+  {
+   "percent": 10,
+   "type": "duration",
+   "min_nights": 10
+  }
+ ],
+ "current_discount": null,
+ "current_discount_percent": 0,
+ "ratings": {
+  "count": 9,
+  "total": 4.5,
+  "accuracy": 4.4,
+  "communication": 4.8,
+  "cleanliness": 4,
+  "location": 4.6,
+  "checkin": 4.9,
+  "value": 4.2,
+  "comments_grouped_by_rating": {
+   "3": 2,
+   "4": 3,
+   "5": 4
+  },
+  "is_recently": false,
+  "is_bad_host": false
+ },
+ "host": {
+  "id": 1790341,
+  "name": "ابراهیم",
+  "avatar": "2023/07/06/2307061030491790341.jpg",
+  "gender": "male",
+  "description": null,
+  "created_at": "2023-07-08",
+  "response_time": 105,
+  "accept_rate": 100,
+  "host_communication_rate": 4
+ },
+ "meta": {
+  "title": "کلبه در بابلکنار - گونه کلا",
+  "description": "اجاره روزانه کلبه جنگلی 1 خوابه در بابلکنار، مازندران برای 6 نفر مهمان با قیمت مناسب و ضمانت تحویل جاجیگا.",
+  "keywords": "اجاره کلبه در شیرگاه,اجاره کلبه در مازندران,جنگلی,روستایی,اجاره کلبه در شمال,اجاره روزانه,اجاره آنلاین ویلا"
+ }
+}

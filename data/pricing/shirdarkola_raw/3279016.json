@@ -1,0 +1,501 @@
+{
+ "id": 3279016,
+ "status": "active",
+ "units_count": 1,
+ "url": "/room/3279016",
+ "short_url": "/r/301c",
+ "title": "ویلا وان جکوزی در بابلکنار - شیردارکلا",
+ "description": "این ویلا دوبلکس دو خوابه که یک خواب آن مستر است به همراه تراسی با چشم اندازی زیبا و وان جکوزی در روستای شیردارکلا واقع شده است که از شیرگاه حدود ۱۲ کیلومتر فاصله دارد.\nویلا در طبقه همکف دارای پذیرایی، آشپزخانه، حمام با سرویس فرنگی و تراس و در طبقه دوم دارای نشمین، دو اتاق خواب (یک خواب مستر)، سرویس ایرانی و تراس می باشد.\nمحوطه اطراف حیاط از چهار طرف با دیوار محصور شده و جهت امنیت بیشتر دروازه ورودی و حیاط مجهز به دوربین مداربسته است.\nمهمانان گرامی برای تهیه مایحتاج روزانه خود می توانند از سوپرمارکت و نانوایی در فاصله حدود ۵۰۰ متری از ویلا استفاده نمایند.\nکیفیت پوشش شبکه تلفن همراه برای دو اپراتور ایرانسل و همراه اول در مکالمه خوب و دسترسی به اینترنت به صورت ۴g است.\nلازم به ذکر است که حدود ۲۰۰ متر مسیر منتهی به اقامتگاه دارای شیب تند می باشد.\nسد لفور، پارک جنگلی بزچفت، هفت آبشار تیرکن، آبشار ترز، سد سنبل رود و آبشار گزو بخشی از جاذبه های توریستی این منطقه است.",
+ "geo": {
+  "lat": 36.3432,
+  "lng": 52.7684
+ },
+ "province": {
+  "id": "p26",
+  "name": "مازندران",
+  "url": "/s/mazandaran"
+ },
+ "city": {
+  "id": 467,
+  "name": "بابلکنار",
+  "url": "/s/babolkenar"
+ },
+ "pictures": [
+  {
+   "name": "3279016251004165510.jpg",
+   "url": "2025/10/04/3279016251004165510.jpg",
+   "preview": "U@H_[LxvRktR_4t7ofxu?ct7axog?vtRWBof",
+   "description": "تراس طبقه دوم",
+   "created_at": "2025-10-04"
+  },
+  {
+   "name": "3279016251022151106.jpg",
+   "url": "2025/10/22/3279016251022151106.jpg",
+   "preview": "UyE:D2t8IAt7_Nt8IUj].8ogM_f6%MofM{ax",
+   "description": null,
+   "created_at": "2025-10-22"
+  },
+  {
+   "name": "3279016250914125732.jpg",
+   "url": "2025/09/14/3279016250914125732.jpg",
+   "preview": "U_G9gf%NoetR.AflV@t7%hofadof%gt7oJof",
+   "description": "چشم انداز تراس",
+   "created_at": "2025-09-14"
+  },
+  {
+   "name": "3279016250914125625.jpg",
+   "url": "2025/09/14/3279016250914125625.jpg",
+   "preview": "UqF6U.tmbxxuyGx]tSbcpKo#tSog.9kXkXt7",
+   "description": "نمای ویلا",
+   "created_at": "2025-09-14"
+  },
+  {
+   "name": "3279016250914125558.jpg",
+   "url": "2025/09/14/3279016250914125558.jpg",
+   "preview": "U~GJBbx]axxv.TkDWBozx^j]axkCxvofj[of",
+   "description": "چشم انداز حیاط",
+   "created_at": "2025-09-14"
+  },
+  {
+   "name": "3279016250920150220.jpg",
+   "url": "2025/09/20/3279016250920150220.jpg",
+   "preview": "UVG8}{IrIU%M?cRkD%fl-=ofIUxu~qkCR+%M",
+   "description": null,
+   "created_at": "2025-09-20"
+  },
+  {
+   "name": "3279016250914125631.jpg",
+   "url": "2025/09/14/3279016250914125631.jpg",
+   "preview": "UeF~dVadt7-;~qRjRjxuocogRPWBt6xuayWB",
+   "description": "اسپیلت",
+   "created_at": "2025-09-14"
+  },
+  {
+   "name": "3279016250914125721.jpg",
+   "url": "2025/09/14/3279016250914125721.jpg",
+   "preview": "UpJHz9t7NI-;~qxuxu%M-;%Lxuof?bofWCof",
+   "description": "تلویزیون",
+   "created_at": "2025-09-14"
+  },
+  {
+   "name": "3279016251004165452.jpg",
+   "url": "2025/10/04/3279016251004165452.jpg",
+   "preview": "UeH2Zc_3%M-:_N-;oft7%Nozoeax_2ofoyt7",
+   "description": "سالن طبقه اول",
+   "created_at": "2025-10-04"
+  },
+  {
+   "name": "3279016251022151122.jpg",
+   "url": "2025/10/22/3279016251022151122.jpg",
+   "preview": "UbHB*t-;9G%M~q-:f6t7IUt7-:oeV?Rja|oc",
+   "description": null,
+   "created_at": "2025-10-22"
+  },
+  {
+   "name": "3279016250914125636.jpg",
+   "url": "2025/09/14/3279016250914125636.jpg",
+   "preview": "UXFPa2?v4mV@?wxuMwt7xvRjMxkC-;j?IUWV",
+   "description": "ویو طبقه اول",
+   "created_at": "2025-09-14"
+  },
+  {
+   "name": "3279016250914125715.jpg",
+   "url": "2025/09/14/3279016250914125715.jpg",
+   "preview": "UWCsp#_N.8?c?b%NtRx]t7RjM|ay%1WAWBoI",
+   "description": "آشپزخانه",
+   "created_at": "2025-09-14"
+  },
+  {
+   "name": "3279016250914125608.jpg",
+   "url": "2025/09/14/3279016250914125608.jpg",
+   "preview": "USE:0i%LM{%M~pxuWBxu?G-:fRRj~p-:WBWB",
+   "description": "آشپزخانه",
+   "created_at": "2025-09-14"
+  },
+  {
+   "name": "3279016250920150202.jpg",
+   "url": "2025/09/20/3279016250920150202.jpg",
+   "preview": "UMC?r^fmxV%L%gRPRjWBxtRjWVWC~qt7t6t6",
+   "description": "آشپزخانه",
+   "created_at": "2025-09-20"
+  },
+  {
+   "name": "3279016250914125759.jpg",
+   "url": "2025/09/14/3279016250914125759.jpg",
+   "preview": "UgGlCj~qf,bI?b%2WBayxuofaxt7?b%Layt7",
+   "description": "سالن طبقه دوم",
+   "created_at": "2025-09-14"
+  },
+  {
+   "name": "3279016251004165530.jpg",
+   "url": "2025/10/04/3279016251004165530.jpg",
+   "preview": "UdGlFs_2M{%M%Ot8xuxu%NofoIof~pxuIUae",
+   "description": "آشپزخانه",
+   "created_at": "2025-10-04"
+  },
+  {
+   "name": "3279016250914125824.jpg",
+   "url": "2025/09/14/3279016250914125824.jpg",
+   "preview": "UcF~XAxutR?b~qxu%M%M-;t7oft7?as:RPoe",
+   "description": "اتاق خواب 1 مستر",
+   "created_at": "2025-09-14"
+  },
+  {
+   "name": "3279016251022151127.jpg",
+   "url": "2025/10/22/3279016251022151127.jpg",
+   "preview": "UXGIfb~q?b_3_3o}bwx]%Mx]tRxu_2-;%g%M",
+   "description": null,
+   "created_at": "2025-10-22"
+  },
+  {
+   "name": "3279016250914125811.jpg",
+   "url": "2025/09/14/3279016250914125811.jpg",
+   "preview": "UnG+aeM_IU%M~qayRjxus,xvofj?n#t7ozay",
+   "description": "اتاق خواب 2",
+   "created_at": "2025-09-14"
+  },
+  {
+   "name": "3279016251022151112.jpg",
+   "url": "2025/10/22/3279016251022151112.jpg",
+   "preview": "U;FifMRjRixu_4RjRjtR-=V[Rjt7%MWAWAof",
+   "description": null,
+   "created_at": "2025-10-22"
+  },
+  {
+   "name": "3279016250914125615.jpg",
+   "url": "2025/09/14/3279016250914125615.jpg",
+   "preview": "UdH2i+?bMyxa~q-pe:xu%MWBfkt7?vayWCoz",
+   "description": null,
+   "created_at": "2025-09-14"
+  },
+  {
+   "name": "3279016250914125655.jpg",
+   "url": "2025/09/14/3279016250914125655.jpg",
+   "preview": "UQEfNM_M~p%M~p%M%Mxut8ofkCt7?axuxus:",
+   "description": null,
+   "created_at": "2025-09-14"
+  },
+  {
+   "name": "3279016250914125805.jpg",
+   "url": "2025/09/14/3279016250914125805.jpg",
+   "preview": "UXHC4Z~q-;-;_3%MxuxujZf6ofj[?bxut6t7",
+   "description": null,
+   "created_at": "2025-09-14"
+  },
+  {
+   "name": "3279016250914125738.jpg",
+   "url": "2025/09/14/3279016250914125738.jpg",
+   "preview": "UeHLk_o#%N~q_2kDxu%Mt7t7oft7?aj[j[xu",
+   "description": "مستر",
+   "created_at": "2025-09-14"
+  },
+  {
+   "name": "3279016250914125707.jpg",
+   "url": "2025/09/14/3279016250914125707.jpg",
+   "preview": "UfJa[#elRj?c~qxajZt7o2ofofWB?bV@WVtR",
+   "description": null,
+   "created_at": "2025-09-14"
+  },
+  {
+   "name": "3279016250914125701.jpg",
+   "url": "2025/09/14/3279016250914125701.jpg",
+   "preview": "UwE:SttTbxxu%%x^tSf,tno#tRog-=f-kDt7",
+   "description": null,
+   "created_at": "2025-09-14"
+  },
+  {
+   "name": "3279016250920151507.jpg",
+   "url": "2025/09/20/3279016250920151507.jpg",
+   "preview": "U{Gv0Axuayxu_NtRayt8-;t7ayt7xuofa|of",
+   "description": null,
+   "created_at": "2025-09-20"
+  },
+  {
+   "name": "3279016250920150206.jpg",
+   "url": "2025/09/20/3279016250920150206.jpg",
+   "preview": "UPCGMX01oy?a~o9Hk9%LxuRjk9bIx^ROf+kC",
+   "description": "نمای بیرونی در شب",
+   "created_at": "2025-09-20"
+  },
+  {
+   "name": "3279016250920150148.jpg",
+   "url": "2025/09/20/3279016250920150148.jpg",
+   "preview": "U+GI+X%gkCtR_4%gt7og-;xvofj[%Mt7fkfk",
+   "description": "نمای بیرونی در روز",
+   "created_at": "2025-09-20"
+  },
+  {
+   "name": "3279016250920150134.jpg",
+   "url": "2025/09/20/3279016250920150134.jpg",
+   "preview": "UHB:mM00W-~V~U4;ax?G%2RkNGxu%gRiM|xu",
+   "description": null,
+   "created_at": "2025-09-20"
+  },
+  {
+   "name": "3279016250920150101.jpg",
+   "url": "2025/09/20/3279016250920150101.jpg",
+   "preview": "U^Gv6U%NWVxu_4%Nayt7-;xuaxof%Mogayj[",
+   "description": null,
+   "created_at": "2025-09-20"
+  },
+  {
+   "name": "3279016250920150059.jpg",
+   "url": "2025/09/20/3279016250920150059.jpg",
+   "preview": "U~GJ28x]juxv?wtRaft8%gozayogxuogayof",
+   "description": null,
+   "created_at": "2025-09-20"
+  },
+  {
+   "name": "3279016250920144124.jpg",
+   "url": "2025/09/20/3279016250920144124.jpg",
+   "preview": "UVD0P]%Mae%M~qt7V@t7t6jroLoejDoet7of",
+   "description": null,
+   "created_at": "2025-09-20"
+  },
+  {
+   "name": "3279016250914125838.jpg",
+   "url": "2025/09/14/3279016250914125838.jpg",
+   "preview": "U*E{|gt7WAxv?wV?RPt8%hWARiozx]aeaeoz",
+   "description": "تراس طبقه دوم",
+   "created_at": "2025-09-14"
+  },
+  {
+   "name": "3279016250914125619.jpg",
+   "url": "2025/09/14/3279016250914125619.jpg",
+   "preview": "UgEpKF-=kE%N?w%hx^tR%Ox^o#f+-=t8WXof",
+   "description": "تراس",
+   "created_at": "2025-09-14"
+  }
+ ],
+ "vr_photo": null,
+ "video_url": null,
+ "allocation": "entire_place",
+ "types": [
+  "villa"
+ ],
+ "regions": [
+  "rural"
+ ],
+ "floor_area": 200,
+ "land_area": 200,
+ "floors_count": 0,
+ "bedrooms": 2,
+ "sleep_arrange": [
+  {
+   "space_id": 1,
+   "single": 0,
+   "double": 1,
+   "mattress": 0,
+   "sofa_bed": 0,
+   "etc": ""
+  },
+  {
+   "space_id": 2,
+   "single": 0,
+   "double": 1,
+   "mattress": 0,
+   "sofa_bed": 0,
+   "etc": ""
+  },
+  {
+   "space_id": 0,
+   "single": 0,
+   "double": 0,
+   "mattress": 2,
+   "sofa_bed": 2,
+   "etc": ""
+  }
+ ],
+ "sleep_description": "مهمانان بیشتر از ۶ نفر امکانات خواب همراه داشته باشند.",
+ "guest_number": 4,
+ "max_guest_number": 8,
+ "stays_min": 1,
+ "stays_max": null,
+ "entrance_time_min": 14,
+ "entrance_time_max": 0,
+ "leaving_time": 12,
+ "features": [
+  {
+   "name": "essentials",
+   "description": "کاغذ توالت، مایع ظرفشویی، مایع دستشویی و دستمال کاغذی"
+  },
+  {
+   "name": "electricity",
+   "description": null
+  },
+  {
+   "name": "water",
+   "description": "آب لوله کشی شهری"
+  },
+  {
+   "name": "tv",
+   "description": "تلویزیون ال ای دی ۶۵  اینچ و تلویزیون ال ای دی ۵۵ اینچ در طبقه دوم"
+  },
+  {
+   "name": "heating",
+   "description": "پکیج - شوفاژ"
+  },
+  {
+   "name": "cooler",
+   "description": "یک دستگاه اسپیلت ۳۰۰۰۰ در پذیرایی"
+  },
+  {
+   "name": "kitchen",
+   "description": "برای 12 نفر به صورت کامل موجود است."
+  },
+  {
+   "name": "stave",
+   "description": null
+  },
+  {
+   "name": "microwave",
+   "description": null
+  },
+  {
+   "name": "refrigerator",
+   "description": "ساید"
+  },
+  {
+   "name": "vacuumcleaner",
+   "description": null
+  },
+  {
+   "name": "washer",
+   "description": null
+  },
+  {
+   "name": "hairdryer",
+   "description": null
+  },
+  {
+   "name": "furniture",
+   "description": "مبلمان 8 نفره و مبلمان 3 نفره در طبقه دوم"
+  },
+  {
+   "name": "table",
+   "description": "۴ نفره در تراس  طبقه همکف و ۶ نفره در تراس طبقه بالا"
+  },
+  {
+   "name": "drawer",
+   "description": "کمد دیواری"
+  },
+  {
+   "name": "parking",
+   "description": "پارکینگ مسقف برای دو خودرو و پارکینگ روباز برای 3 خودرو در حیاط"
+  },
+  {
+   "name": "toilet",
+   "description": "در سرویس همکف، با حمام در اتاق خواب مستر"
+  },
+  {
+   "name": "islamictoilet",
+   "description": "در طبقه دوم"
+  },
+  {
+   "name": "barbecue",
+   "description": "باربیکیو ذغالی در تراس طبقه دوم"
+  },
+  {
+   "name": "jacuzzi",
+   "description": "دونفره در تراس طبقه دوم"
+  },
+  {
+   "name": "bathroom",
+   "description": "با سرویس فرنگی، با سرویس فرنگی در اتاق خواب مستر"
+  },
+  {
+   "name": "firstaidkit",
+   "description": "طبقه همکف کنار جاکفشی"
+  },
+  {
+   "name": "fireextingu",
+   "description": "طبقه همکف کنار جاکفشی"
+  },
+  {
+   "name": "foosball",
+   "description": null
+  }
+ ],
+ "properties": [
+  {
+   "id": 52,
+   "name": "خوش منظره"
+  },
+  {
+   "id": 39,
+   "name": "جذاب"
+  },
+  {
+   "id": 71,
+   "name": "مهمان نواز"
+  }
+ ],
+ "additional_feature": "اسپیکر، چای ساز و قهوه ساز موجود است.",
+ "additional_safety": null,
+ "rules": [
+  "pet",
+  "smoke"
+ ],
+ "additional_rule": null,
+ "cancellation_policy": "middle",
+ "min_price": 7000000,
+ "extra_price": 2000000,
+ "is_clean": false,
+ "is_new": false,
+ "is_instant": false,
+ "is_plus": true,
+ "success_books": 5,
+ "discounts": [
+  {
+   "percent": 10,
+   "type": "duration",
+   "min_nights": 3
+  },
+  {
+   "percent": 20,
+   "type": "duration",
+   "min_nights": 7
+  },
+  {
+   "percent": 10,
+   "type": "tomorrow_discount"
+  }
+ ],
+ "current_discount": {
+  "percent": 10,
+  "type": "tomorrow_discount"
+ },
+ "current_discount_percent": 10,
+ "ratings": {
+  "count": 6,
+  "total": 4.9,
+  "accuracy": 5,
+  "communication": 5,
+  "cleanliness": 4.5,
+  "location": 5,
+  "checkin": 5,
+  "value": 4.8,
+  "comments_grouped_by_rating": {
+   "4": 1,
+   "5": 5
+  },
+  "is_recently": true,
+  "is_bad_host": false
+ },
+ "host": {
+  "id": 2764255,
+  "name": "رضا",
+  "avatar": "2026/06/23/2606231454022764255.jpg",
+  "gender": "male",
+  "description": "اینجارو خونه خودتون بدونین",
+  "created_at": "2025-09-17",
+  "response_time": 345,
+  "accept_rate": 83,
+  "host_communication_rate": 5
+ },
+ "meta": {
+  "title": "ویلا وان جکوزی در بابلکنار - شیردارکلا",
+  "description": "اجاره روزانه ویلا روستایی 2 خوابه در بابلکنار، مازندران برای 8 نفر مهمان با قیمت مناسب و ضمانت تحویل جاجیگا.",
+  "keywords": null
+ }
+}

@@ -1,0 +1,353 @@
+{
+ "id": 3212511,
+ "status": "active",
+ "units_count": 1,
+ "url": "/room/3212511",
+ "short_url": "/r/1kpz",
+ "title": "کلبه چوبی دوبلکس در بابلکنار - قرآن تالار",
+ "description": "این کلبه چوبی یکخوابه با طراحی دوبلکس و بالکن دنج در منطقه لفور در روستای قرآن تالار واقع شده و تا شیرگاه حدود ۱۵ کیلومتر فاصله دارد.\nطراحی اقامتگاه به گونه ای است که طبقه پایین دارای پذیرایی، آشپزخانه و حمام با سرویس ایرانی می باشد و در طبقه بالا با دسترسی حدود ۱۰ پله یک اتاق خواب و بالکن دنج قرار دارد.\nاطراف محوطه اقامتگاه از چهار طرف با دیوار محصور است و میزبان نیز در همین محدوده سکونت دارد.\nمهمانان گرامی می توانند برای تهیه مایحتاج روزانه خود از سوپرمارکت و نانوایی در فاصله حدود ۵۰۰ متری اقامتگاه استفاده نمایند.\nکیفیت پوشش شبکه تلفن همراه برای دو اپراتور همراه اول و ایرانسل در مکالمه خوب و دسترسی به اینترنت به صورت ۳g می باشد.\nلازم به ذکر است حدود ۵۰ متر مسیر منتهی به اقامتگاه خاکی با شیب ملایم است.",
+ "geo": {
+  "lat": 36.305,
+  "lng": 52.7788
+ },
+ "province": {
+  "id": "p26",
+  "name": "مازندران",
+  "url": "/s/mazandaran"
+ },
+ "city": {
+  "id": 467,
+  "name": "بابلکنار",
+  "url": "/s/babolkenar"
+ },
+ "pictures": [
+  {
+   "name": "3212511240316120343.jpg",
+   "url": "2024/03/16/3212511240316120343.jpg",
+   "preview": "U^Iq_#-qkr%h_4tRtR%M.9WXf6t7?cofWXoz",
+   "description": "کلبه دوقلوها",
+   "created_at": "2023-12-25"
+  },
+  {
+   "name": "3212511240609062914.jpg",
+   "url": "2024/06/09/3212511240609062914.jpg",
+   "preview": "UpD0x%%}kqtQ_M.8o}kC.R.7ozWV.8%gg2WU",
+   "description": "چشم انداز بالکن",
+   "created_at": "2024-06-09"
+  },
+  {
+   "name": "3212511251006125447.jpg",
+   "url": "2025/10/06/3212511251006125447.jpg",
+   "preview": "U~G+?h%Lf5xu_Nt7WUt7-=a~WBog%goMjZof",
+   "description": "چشم انداز بالکن",
+   "created_at": "2025-10-06"
+  },
+  {
+   "name": "3212511240614082016.jpg",
+   "url": "2024/06/14/3212511240614082016.jpg",
+   "preview": "UVEMp-?@P8k:?uyB%y%fkVxu%f%M%f.6tjo{",
+   "description": "نمای بالکن",
+   "created_at": "2024-06-14"
+  },
+  {
+   "name": "3212511240614081842.jpg",
+   "url": "2024/06/14/3212511240614081842.jpg",
+   "preview": "UOFhkY^%4;My~BxuIpM|IWa#t6R*IUWAt7t6",
+   "description": "چشم انداز بالکن",
+   "created_at": "2024-06-14"
+  },
+  {
+   "name": "3212511240614081800.jpg",
+   "url": "2024/06/14/3212511240614081800.jpg",
+   "preview": "UlH_xZ-nMx%K~pt5adxtx]R*WBof%Lf5Rkof",
+   "description": null,
+   "created_at": "2024-06-14"
+  },
+  {
+   "name": "3212511240614081714.jpg",
+   "url": "2024/06/14/3212511240614081714.jpg",
+   "preview": "UjHLIq?Gxt?F~n%Lt7%Lt7t6t6t6obaxs:s.",
+   "description": "بالکن",
+   "created_at": "2024-06-14"
+  },
+  {
+   "name": "3212511240614081923.jpg",
+   "url": "2024/06/14/3212511240614081923.jpg",
+   "preview": "UlG*sJs,M{%2~U%1Rkj?xrxaWBRjxZoKayWB",
+   "description": "پذیرایی",
+   "created_at": "2024-06-14"
+  },
+  {
+   "name": "32125112606251029062711157.jpg",
+   "url": "2026/06/25/32125112606251029062711157.jpg",
+   "preview": "UlH1;}OaI[-p~UR-NGt5-pfQRjs,?bozV@s:",
+   "description": "پذیرایی",
+   "created_at": "2026-06-25"
+  },
+  {
+   "name": "3212511241028132404.jpg",
+   "url": "2024/10/28/3212511241028132404.jpg",
+   "preview": "UJCj9FU]%h%h~VR5tRt6xURkRjax%NaJbHt7",
+   "description": "آشپزخانه",
+   "created_at": "2024-10-28"
+  },
+  {
+   "name": "3212511241028132444.jpg",
+   "url": "2024/10/28/3212511241028132444.jpg",
+   "preview": "UREfNH.Rpv%z~An}oyxtR4RPs-slxux[tRoz",
+   "description": "آشپزخانه",
+   "created_at": "2024-10-28"
+  },
+  {
+   "name": "3212511240614082241.jpg",
+   "url": "2024/06/14/3212511240614082241.jpg",
+   "preview": "UrHU%ejEM|t6~os-M|ayxtofRkWB%LWBWBj[",
+   "description": "میز غذاخوری",
+   "created_at": "2024-06-14"
+  },
+  {
+   "name": "3212511240614081619.jpg",
+   "url": "2024/06/14/3212511240614081619.jpg",
+   "preview": "UTF=83=^V?xC~Rads.%1j;WB%1%1?E%0xYt3",
+   "description": "خواب",
+   "created_at": "2024-06-14"
+  },
+  {
+   "name": "3212511231128205952.jpg",
+   "url": "2023/11/28/3212511231128205952.jpg",
+   "preview": "UeGuwI%Na}-;~qogRkxu-;ofWBt7?bt7j[t7",
+   "description": "حمام",
+   "created_at": "2023-11-28"
+  },
+  {
+   "name": "3212511240609063230.jpg",
+   "url": "2024/06/09/3212511240609063230.jpg",
+   "preview": "U~Hf3RxuWBxu~qxuWBtR_Nt7ayt7_3t7fQt7",
+   "description": "ویو نمای کلبه",
+   "created_at": "2024-06-09"
+  },
+  {
+   "name": "3212511240609063257.jpg",
+   "url": "2024/06/09/3212511240609063257.jpg",
+   "preview": "U@G9BPxufQxu~qxuj[xu_3xuj[t7_3xuoet7",
+   "description": "ویو کلبه",
+   "created_at": "2024-06-09"
+  },
+  {
+   "name": "3212511231128215047.jpg",
+   "url": "2023/11/28/3212511231128215047.jpg",
+   "preview": "UmG*f.=@Rkbb%hRjRjf+%hWURjkC~V$#Rjfl",
+   "description": "نمای بیرون کلبه",
+   "created_at": "2023-11-28"
+  },
+  {
+   "name": "3212511251006125419.jpg",
+   "url": "2025/10/06/3212511251006125419.jpg",
+   "preview": "UgIDW|~AEkOE$%xaxaoz9{NLxZxa-ot7R+j@",
+   "description": "نمای حیاط",
+   "created_at": "2025-10-06"
+  },
+  {
+   "name": "3212511251006125351.jpg",
+   "url": "2025/10/06/3212511251006125351.jpg",
+   "preview": "UuHeRG#jZ$%1~prqZ~xZ.8V?V?of-=skV?oM",
+   "description": "چشم انداز بالکن",
+   "created_at": "2025-10-06"
+  },
+  {
+   "name": "3212511240614082359.jpg",
+   "url": "2024/06/14/3212511240614082359.jpg",
+   "preview": "UoE3^%?]u4l9.7%g%gx]oI%Mx[t7%f%fx[oz",
+   "description": "بالکن با ویو عالی",
+   "created_at": "2024-06-14"
+  },
+  {
+   "name": "3212511251006125455.jpg",
+   "url": "2025/10/06/3212511251006125455.jpg",
+   "preview": "U;Glho%gXUxv?wozkCt7%NRjRjayx]fiWBof",
+   "description": "نمای بیرون کلبه",
+   "created_at": "2025-10-06"
+  },
+  {
+   "name": "32125112606251032258841276.jpg",
+   "url": "2026/06/25/32125112606251032258841276.jpg",
+   "preview": "UUEVNf~WXST0^,-qohbd-rxcnnjc_3%NWXR+",
+   "description": null,
+   "created_at": "2026-06-25"
+  }
+ ],
+ "vr_photo": null,
+ "video_url": null,
+ "allocation": "shared_place",
+ "types": [
+  "cottage",
+  "wooden_cottage"
+ ],
+ "regions": [
+  "rural"
+ ],
+ "floor_area": 40,
+ "land_area": 200,
+ "floors_count": 0,
+ "bedrooms": 1,
+ "sleep_arrange": [
+  {
+   "space_id": 1,
+   "single": 0,
+   "double": 1,
+   "mattress": 2,
+   "sofa_bed": 0,
+   "etc": ""
+  },
+  {
+   "space_id": 0,
+   "single": 0,
+   "double": 0,
+   "mattress": 0,
+   "sofa_bed": 0,
+   "etc": ""
+  }
+ ],
+ "sleep_description": "میهمانان بیشتر از ۴ نفر سرویس خواب همراه داشته باشند.",
+ "guest_number": 2,
+ "max_guest_number": 6,
+ "stays_min": 1,
+ "stays_max": null,
+ "entrance_time_min": 14,
+ "entrance_time_max": 0,
+ "leaving_time": 12,
+ "features": [
+  {
+   "name": "essentials",
+   "description": "مایع ظرفشویی، مایع دستشویی"
+  },
+  {
+   "name": "electricity",
+   "description": null
+  },
+  {
+   "name": "water",
+   "description": "آب  لوله کشی شهری"
+  },
+  {
+   "name": "tv",
+   "description": "تلویزیون معمولی"
+  },
+  {
+   "name": "heating",
+   "description": "یک شعله بخاری گازی در پذیرایی طبقه پایین"
+  },
+  {
+   "name": "cooler",
+   "description": "یک دستگاه کولر اسپیلت 18000 در پذیرایی"
+  },
+  {
+   "name": "kitchen",
+   "description": "برای ۴ نفر بصورت کامل موجود می باشد."
+  },
+  {
+   "name": "stave",
+   "description": null
+  },
+  {
+   "name": "refrigerator",
+   "description": null
+  },
+  {
+   "name": "vacuumcleaner",
+   "description": null
+  },
+  {
+   "name": "furniture",
+   "description": "مبلمان ۶ نفره"
+  },
+  {
+   "name": "parking",
+   "description": "روباز برای ۲ خودرو در حیاط"
+  },
+  {
+   "name": "islamictoilet",
+   "description": "با حمام"
+  },
+  {
+   "name": "barbecue",
+   "description": "منقل فلزی در حیاط"
+  },
+  {
+   "name": "janitor",
+   "description": "میزبان در محوطه حیاط همین اقامتگاه سکونت دارد."
+  },
+  {
+   "name": "bathroom",
+   "description": "با سرویس ایرانی"
+  }
+ ],
+ "properties": [
+  {
+   "id": 71,
+   "name": "مهمان نواز"
+  }
+ ],
+ "additional_feature": null,
+ "additional_safety": null,
+ "rules": [
+  "foreign_guest",
+  "pet"
+ ],
+ "additional_rule": null,
+ "cancellation_policy": "middle",
+ "min_price": 1600000,
+ "extra_price": 300000,
+ "is_clean": false,
+ "is_new": false,
+ "is_instant": true,
+ "is_plus": true,
+ "success_books": 50,
+ "discounts": [
+  {
+   "percent": 10,
+   "type": "duration",
+   "min_nights": 3
+  },
+  {
+   "percent": 10,
+   "type": "duration",
+   "min_nights": 10
+  }
+ ],
+ "current_discount": null,
+ "current_discount_percent": 0,
+ "ratings": {
+  "count": 34,
+  "total": 4.8,
+  "accuracy": 4.9,
+  "communication": 4.9,
+  "cleanliness": 4.8,
+  "location": 4.7,
+  "checkin": 4.9,
+  "value": 4.9,
+  "comments_grouped_by_rating": {
+   "3": 1,
+   "4": 5,
+   "5": 16
+  },
+  "is_recently": true,
+  "is_bad_host": false
+ },
+ "host": {
+  "id": 1961256,
+  "name": "مهدی",
+  "avatar": "2023/11/29/2311291358451961256.jpg",
+  "gender": "male",
+  "description": null,
+  "created_at": "2023-12-02",
+  "response_time": 147,
+  "accept_rate": 100,
+  "host_communication_rate": 4.9
+ },
+ "meta": {
+  "title": "کلبه چوبی دوبلکس در بابلکنار - قرآن تالار",
+  "description": "اجاره روزانه کلبه روستایی 1 خوابه در بابلکنار، مازندران برای 6 نفر مهمان با قیمت مناسب و ضمانت تحویل جاجیگا.",
+  "keywords": "اجاره کلبه در بابل,اجاره کلبه در مازندران,روستایی,اجاره کلبه در شمال,اجاره روزانه,سایت اجاره ویلا"
+ }
+}

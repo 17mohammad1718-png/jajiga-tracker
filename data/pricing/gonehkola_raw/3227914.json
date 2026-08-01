@@ -1,0 +1,310 @@
+{
+ "id": 3227914,
+ "status": "active",
+ "units_count": 1,
+ "url": "/room/3227914",
+ "short_url": "/r/1wlu",
+ "title": "اجاره سوئیت جنگلی در بابلکنار - گونه کلا",
+ "description": "**اجاره سوئیت جنگلی در بابلکنار - گونه کلا**\nاین سوئیت جنگلی یکخوابه در مجاورت رودخانه و در محیطی دنج با چشم انداز زیبای جنگل های هیرکانی در روستای سرسبز و خوش آب و هوای گونه کلا واقع شده است که حدود ۱۰ کیلومتر با شیرگاه فاصله دارد.\nطراحی سوئیت به گونه ای است که دارای پذیرایی، آشپزخانه، اتاق خواب، حمام و سرویس ایرانی با فرنگی می باشد.\nحیاط سوئیت با توجه به بافت روستایی منطقه از دو طرف با دیوار و از یک طرف با فنس محصور شده است، در نظر داشته باشید طرف دیگر اقامتگاه که در مجاورت رودخانه قرار دارد باز می باشد، همچنین میزبان در همسایگی سکونت دارد.\nبه منظور تهیه مایحتاج روزانه، دسترسی به سوپرمارکت و نانوایی با پیمودن مسافتی در حدود ۸۰۰ متر ممکن است.\nکیفیت آنتن دهی اپراتورهای ایرانسل و همراه اول در مکالمه خوب و پوشش شبکه اینترنت نیز به صورت ۴g می باشد.\nلازم به ذکر است مسیر در ۳۵۰ متر منتهی به اقامتگاه به صورت جاده خاکی و قابل تردد با خودرو می باشد.\nآبشار تیرکن، آبشار درازکش، منطقه لفور و ییلاقات منطقه مثل شیخ موسی، فیلبند و آلاشت از جاذبه‌های گردشگری نزدیک به این اقامتگاه می‌باشد.",
+ "geo": {
+  "lat": 36.3341,
+  "lng": 52.7914
+ },
+ "province": {
+  "id": "p26",
+  "name": "مازندران",
+  "url": "/s/mazandaran"
+ },
+ "city": {
+  "id": 467,
+  "name": "بابلکنار",
+  "url": "/s/babolkenar"
+ },
+ "pictures": [
+  {
+   "name": "3227914240402133853.jpg",
+   "url": "2024/04/02/3227914240402133853.jpg",
+   "preview": "UYGkXk~C%M^*~V%2of%2NGNGRjWBV@jZt7oK",
+   "description": "پذیرایی",
+   "created_at": "2024-04-02"
+  },
+  {
+   "name": "3227914240402134108.jpg",
+   "url": "2024/04/02/3227914240402134108.jpg",
+   "preview": "UTD,44?GWB%K?@-:t7tQ.7%Loft7~o%LWBt7",
+   "description": "بالکن مشرف به جنگل",
+   "created_at": "2024-04-02"
+  },
+  {
+   "name": "3227914240402133844.jpg",
+   "url": "2024/04/02/3227914240402133844.jpg",
+   "preview": "UKFP7]_L55-;?a%Lx[%MMxj@%L%M^+tQS1%M",
+   "description": null,
+   "created_at": "2024-04-02"
+  },
+  {
+   "name": "3227914240402133833.jpg",
+   "url": "2024/04/02/3227914240402133833.jpg",
+   "preview": "UOFPQa?sXzyB.kbrtQ%fXkkVWUt7~p%LNYbt",
+   "description": "بالکن رو به جنگل و رودخانه",
+   "created_at": "2024-04-02"
+  },
+  {
+   "name": "3227914240402133731.jpg",
+   "url": "2024/04/02/3227914240402133731.jpg",
+   "preview": "UMEMUQD%01?b~pIUIB-:%MRjRQt7_MWAM{t7",
+   "description": "ورودی سوئیت",
+   "created_at": "2024-04-02"
+  },
+  {
+   "name": "3227914240402134117.jpg",
+   "url": "2024/04/02/3227914240402134117.jpg",
+   "preview": "UTGktNr?xa%2~WRjM{oexaRjM{j[^+aeWBs:",
+   "description": "آشپزخانه",
+   "created_at": "2024-04-02"
+  },
+  {
+   "name": "3227914240402134130.jpg",
+   "url": "2024/04/02/3227914240402134130.jpg",
+   "preview": "UVD+rP^+NGM{~W-;R*E1?a-;ofD%~W?HofIU",
+   "description": "اتاق خواب",
+   "created_at": "2024-04-02"
+  },
+  {
+   "name": "3227914240402134052.jpg",
+   "url": "2024/04/02/3227914240402134052.jpg",
+   "preview": "UkH.Zyt5IUxu~qoeWBt7-;j[WBof_3ofRiof",
+   "description": "سرویس ایرانی و فرنگی",
+   "created_at": "2024-04-02"
+  },
+  {
+   "name": "3227914240629223414.jpg",
+   "url": "2024/06/29/3227914240629223414.jpg",
+   "preview": "UXFiPv-;xu?b~qxut7%M%Mt7oft7_2xut7xu",
+   "description": "حمام",
+   "created_at": "2024-06-29"
+  },
+  {
+   "name": "3227914240629223421.jpg",
+   "url": "2024/06/29/3227914240629223421.jpg",
+   "preview": "UbF=ddvzQ-sA~WnhMxoL%MWBM{of?He-RPoL",
+   "description": "ورودی حمام",
+   "created_at": "2024-06-29"
+  },
+  {
+   "name": "3227914240402134151.jpg",
+   "url": "2024/04/02/3227914240402134151.jpg",
+   "preview": "UXGv00_3Rjxu%covj[oeotxtxut6~q-;t7t7",
+   "description": "رودخانه کنار کلبه",
+   "created_at": "2024-04-02"
+  },
+  {
+   "name": "3227914240402134208.jpg",
+   "url": "2024/04/02/3227914240402134208.jpg",
+   "preview": "UNB:$r%fRk%L_L%LRjfjx[oyWBWB-.oyoeoe",
+   "description": "ضلع جنوبی بالکن",
+   "created_at": "2024-04-02"
+  },
+  {
+   "name": "3227914240402134955.jpg",
+   "url": "2024/04/02/3227914240402134955.jpg",
+   "preview": "UnG[vD~ot6%1_2-:j?j?xtxtofj[-:%Lxaxa",
+   "description": "بالکن رو به جنگل و رودخانه",
+   "created_at": "2024-04-02"
+  },
+  {
+   "name": "3227914240402135403.jpg",
+   "url": "2024/04/02/3227914240402135403.jpg",
+   "preview": "UQCss*_MtR%f~q.7t7t7%f%Moyof?b%Mj]xu",
+   "description": "رودخانه کنار کلبه",
+   "created_at": "2024-04-02"
+  },
+  {
+   "name": "3227914240402135420.jpg",
+   "url": "2024/04/02/3227914240402135420.jpg",
+   "preview": "UND]q$_0oy%L~ox@t6tPtQt6oyWV?Yx@oyj?",
+   "description": "نمایی دیگر از چشم انداز بالکن",
+   "created_at": "2024-04-02"
+  }
+ ],
+ "vr_photo": null,
+ "video_url": null,
+ "allocation": "shared_place",
+ "types": [
+  "ruralhome",
+  "suite",
+  "villa"
+ ],
+ "regions": [
+  "forest",
+  "rural"
+ ],
+ "floor_area": 40,
+ "land_area": 200,
+ "floors_count": 0,
+ "bedrooms": 1,
+ "sleep_arrange": [
+  {
+   "space_id": 1,
+   "single": 0,
+   "double": 1,
+   "mattress": 4,
+   "sofa_bed": 0,
+   "etc": ""
+  },
+  {
+   "space_id": 0,
+   "single": 0,
+   "double": 0,
+   "mattress": 0,
+   "sofa_bed": 0,
+   "etc": ""
+  }
+ ],
+ "sleep_description": null,
+ "guest_number": 4,
+ "max_guest_number": 6,
+ "stays_min": 1,
+ "stays_max": null,
+ "entrance_time_min": 14,
+ "entrance_time_max": 22,
+ "leaving_time": 12,
+ "features": [
+  {
+   "name": "essentials",
+   "description": "کاغذ توالت، مایع ظرفشویی، مایع دستشویی و دستمال کاغذی"
+  },
+  {
+   "name": "electricity",
+   "description": null
+  },
+  {
+   "name": "water",
+   "description": "آب لوله کشی شهری و چاه"
+  },
+  {
+   "name": "tv",
+   "description": "تلویزیون ال ای دی 32 اینچ"
+  },
+  {
+   "name": "heating",
+   "description": "یک شعله بخاری گازی در پذیرایی و یک دستگاه بخاری برقی در اتاق خواب"
+  },
+  {
+   "name": "cooler",
+   "description": "یک دستگاه اسپیلت 24000 در پذیرایی"
+  },
+  {
+   "name": "kitchen",
+   "description": "موجود برای 6 نفر"
+  },
+  {
+   "name": "stave",
+   "description": null
+  },
+  {
+   "name": "refrigerator",
+   "description": null
+  },
+  {
+   "name": "vacuumcleaner",
+   "description": "در صورت نیاز در اختیار مهمان قرار می گیرد."
+  },
+  {
+   "name": "parking",
+   "description": "روباز برای 2 خودرو در محوطه حیاط"
+  },
+  {
+   "name": "toilet",
+   "description": "با سرویس ایرانی"
+  },
+  {
+   "name": "islamictoilet",
+   "description": "با سرویس فرنگی"
+  },
+  {
+   "name": "janitor",
+   "description": "میزبان در همسایگی سکونت دارد."
+  },
+  {
+   "name": "bathroom",
+   "description": null
+  }
+ ],
+ "properties": [
+  {
+   "id": 52,
+   "name": "خوش منظره"
+  },
+  {
+   "id": 53,
+   "name": "لب آب"
+  },
+  {
+   "id": 71,
+   "name": "مهمان نواز"
+  }
+ ],
+ "additional_feature": null,
+ "additional_safety": null,
+ "rules": [
+  "pet",
+  "smoke",
+  "unmarried"
+ ],
+ "additional_rule": "به فرد و جمع مجرد اجاره داده نمی شود.",
+ "cancellation_policy": "middle",
+ "min_price": 1600000,
+ "extra_price": 200000,
+ "is_clean": false,
+ "is_new": false,
+ "is_instant": false,
+ "is_plus": true,
+ "success_books": 10,
+ "discounts": [
+  {
+   "percent": 10,
+   "type": "duration",
+   "min_nights": 3
+  },
+  {
+   "percent": 20,
+   "type": "duration",
+   "min_nights": 10
+  }
+ ],
+ "current_discount": null,
+ "current_discount_percent": 0,
+ "ratings": {
+  "count": 9,
+  "total": 4.8,
+  "accuracy": 5,
+  "communication": 4.9,
+  "cleanliness": 4.9,
+  "location": 5,
+  "checkin": 4.9,
+  "value": 4.4,
+  "comments_grouped_by_rating": {
+   "4": 2,
+   "5": 5
+  },
+  "is_recently": true,
+  "is_bad_host": false
+ },
+ "host": {
+  "id": 2079214,
+  "name": "مختار",
+  "avatar": "2024/04/02/2404021438272079214.jpg",
+  "gender": "male",
+  "description": null,
+  "created_at": "2024-05-21",
+  "response_time": 283,
+  "accept_rate": 91,
+  "host_communication_rate": 4.8
+ },
+ "meta": {
+  "title": "اجاره سوئیت جنگلی در بابلکنار - گونه کلا",
+  "description": "اجاره روزانه خانه روستایی جنگلی 1 خوابه در بابلکنار، مازندران برای 6 نفر مهمان با قیمت مناسب و ضمانت تحویل جاجیگا.",
+  "keywords": null
+ }
+}

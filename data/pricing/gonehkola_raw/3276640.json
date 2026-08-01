@@ -1,0 +1,332 @@
+{
+ "id": 3276640,
+ "status": "active",
+ "units_count": 1,
+ "url": "/room/3276640",
+ "short_url": "/r/2y7c",
+ "title": "اجاره خانه ویلایی در بابلکنار - گونه کلا",
+ "description": "**اجاره خانه ویلایی در بابلکنار - گونه کلا**\nاین خانه ویلایی دو خوابه به همراه ایوان و حیاط دنج در منطقه ی زیبا و آرام روستای گونه کلا و با فاصله حدود ۱۳ کیلومتری از شهر شیرگاه واقع شده است.\nطراحی این خانه ویلایی شامل پذیرایی، آشپزخانه، دو اتاق خواب، حمام و سرویس ایرانی با سرویس فرنگی می باشد.\nمحوطه اطراف خانه از چهار طرف با دیوار محصور شده است، همچنین جهت حفظ امنیت بیشتر دروازه ورودی و محوطه مجهز به دوربین مدار بسته می باشد.\nمهمانان گرامی می توانند برای تهیه مایحتاج روزانه خود از سوپرمارکت در فاصله حدود ۵۰ متری و نانوایی در فاصله حدود ۱۵۰ متری این خانه استفاده نمایند.\nلازم به ذکر است حدود ۱۰۰ متر مسیر منتهی به این خانه به صورت خاکی می باشد و با انواع خودرو قابل تردد است.\nاز جاذبه های این منطقه توریستی می توان به رودخانه گرو، دریاچه و جنگل لفور، دریاچه سد سنبل رود، آبشار زال، آبشار ترز، منطقه پلنگ دره، هفت آبشار تیرکن، آبشار انجلی کا، پارک جنگلی جوارم و ... اشاره کرد.",
+ "geo": {
+  "lat": 36.3238,
+  "lng": 52.7827
+ },
+ "province": {
+  "id": "p26",
+  "name": "مازندران",
+  "url": "/s/mazandaran"
+ },
+ "city": {
+  "id": 467,
+  "name": "بابلکنار",
+  "url": "/s/babolkenar"
+ },
+ "pictures": [
+  {
+   "name": "3276640250825123541.jpg",
+   "url": "2025/08/25/3276640250825123541.jpg",
+   "preview": "UVFFmX^,W=-;_3xut7%M-=bFWCxv~qxuRkxu",
+   "description": "نمای خانه ویلایی",
+   "created_at": "2025-08-22"
+  },
+  {
+   "name": "3276640250826184537.jpg",
+   "url": "2025/08/26/3276640250826184537.jpg",
+   "preview": "UNFrhY-pD%%L~q%MjrWA.7t7M{R%~WjZIUoe",
+   "description": "پذیرایی",
+   "created_at": "2025-08-26"
+  },
+  {
+   "name": "3276640250822213101.jpg",
+   "url": "2025/08/22/3276640250822213101.jpg",
+   "preview": "UeHeXr?axt?a~pxut7xuRhoLj]WB-nt7bIf6",
+   "description": "پذیرایی",
+   "created_at": "2025-08-22"
+  },
+  {
+   "name": "3276640250822213111.jpg",
+   "url": "2025/08/22/3276640250822213111.jpg",
+   "preview": "UPG[=.-oI9-q~qocaJofD*RjWAoz-;ofV@tR",
+   "description": "آشپزخانه",
+   "created_at": "2025-08-22"
+  },
+  {
+   "name": "3276640250826184533.jpg",
+   "url": "2025/08/26/3276640250826184533.jpg",
+   "preview": "UXH.1k$~IA-;~qxYadxut9M|Rit6_3RjM{t7",
+   "description": "آشپزخانه",
+   "created_at": "2025-08-26"
+  },
+  {
+   "name": "3276640250822213139.jpg",
+   "url": "2025/08/22/3276640250822213139.jpg",
+   "preview": "UPF5{jxcRjt7_N%Nadf5NLxuf5jF-=j]WBxa",
+   "description": "آشپزخانه",
+   "created_at": "2025-08-22"
+  },
+  {
+   "name": "3276640250826184610.jpg",
+   "url": "2025/08/26/3276640250826184610.jpg",
+   "preview": "U.J7%U?aR-xu~p%MWCxZ.7tRWBof?Hxta{oz",
+   "description": "اتاق خواب",
+   "created_at": "2025-08-26"
+  },
+  {
+   "name": "3276640250826184556.jpg",
+   "url": "2025/08/26/3276640250826184556.jpg",
+   "preview": "U~KA{Axuad%L~qxtjYxu-;oeWBt7%MoeWBof",
+   "description": "اتاق خواب",
+   "created_at": "2025-08-26"
+  },
+  {
+   "name": "3276640250904102922.jpg",
+   "url": "2025/09/04/3276640250904102922.jpg",
+   "preview": "U$J*O|tPM|xv~pxaa~t8tQs:ogof%Lj@WCkC",
+   "description": null,
+   "created_at": "2025-09-04"
+  },
+  {
+   "name": "3276640250822213127.jpg",
+   "url": "2025/08/22/3276640250822213127.jpg",
+   "preview": "USG[ZmtRR4jF~pxuRjRi%MxuRkRP~Vt7RjRj",
+   "description": "ورودی اتاق خواب دوم",
+   "created_at": "2025-08-22"
+  },
+  {
+   "name": "3276640250822213131.jpg",
+   "url": "2025/08/22/3276640250822213131.jpg",
+   "preview": "UGCP*A_M-;~qe.R*oKRjM{WVofRj~p%Mxa%M",
+   "description": "سرویس ایرانی با سرویس فرنگی",
+   "created_at": "2025-08-22"
+  },
+  {
+   "name": "3276640250822213152.jpg",
+   "url": "2025/08/22/3276640250822213152.jpg",
+   "preview": "UDATi;M}xb_3?w%MjYxu-;xuaxof~pWBof%M",
+   "description": "حمام",
+   "created_at": "2025-08-22"
+  },
+  {
+   "name": "3276640250822213148.jpg",
+   "url": "2025/08/22/3276640250822213148.jpg",
+   "preview": "UTFPE4ad9G%L?ZRjV]t7x]ofobkB~qoJRixt",
+   "description": "ایوان",
+   "created_at": "2025-08-22"
+  },
+  {
+   "name": "3276640250822213115.jpg",
+   "url": "2025/08/22/3276640250822213115.jpg",
+   "preview": "UhHng1?Hozs:%1WBRkjst5jEaet6~V%1oexa",
+   "description": "ورودی",
+   "created_at": "2025-08-22"
+  },
+  {
+   "name": "3276640250822213053.jpg",
+   "url": "2025/08/22/3276640250822213053.jpg",
+   "preview": "UUDT63.6t1x=_MWBM{Wn?uk9M{ae~qxtWAoI",
+   "description": "دروازه ورودی",
+   "created_at": "2025-08-22"
+  },
+  {
+   "name": "3276640250822213059.jpg",
+   "url": "2025/08/22/3276640250822213059.jpg",
+   "preview": "UYEW8ds~D$o#_NRhV?x].9M_W9xu_4RiRit8",
+   "description": "مسیر دسترسی",
+   "created_at": "2025-08-22"
+  },
+  {
+   "name": "3276640250822213129.jpg",
+   "url": "2025/08/22/3276640250822213129.jpg",
+   "preview": "UfF$R;-ong-:?cayRjog.8R*Ioa~~qt6M{t7",
+   "description": "حیاط ویلا",
+   "created_at": "2025-08-22"
+  }
+ ],
+ "vr_photo": null,
+ "video_url": null,
+ "allocation": "entire_place",
+ "types": [
+  "villa"
+ ],
+ "regions": [
+  "rural"
+ ],
+ "floor_area": 130,
+ "land_area": 700,
+ "floors_count": 0,
+ "bedrooms": 2,
+ "sleep_arrange": [
+  {
+   "space_id": 1,
+   "single": 0,
+   "double": 1,
+   "mattress": 0,
+   "sofa_bed": 0,
+   "etc": ""
+  },
+  {
+   "space_id": 2,
+   "single": 0,
+   "double": 0,
+   "mattress": 0,
+   "sofa_bed": 0,
+   "etc": ""
+  },
+  {
+   "space_id": 0,
+   "single": 0,
+   "double": 0,
+   "mattress": 5,
+   "sofa_bed": 0,
+   "etc": ""
+  }
+ ],
+ "sleep_description": "مهمانان بیشتر از ۷ نفر سرویس خواب به همراه داشته باشند.",
+ "guest_number": 5,
+ "max_guest_number": 8,
+ "stays_min": 1,
+ "stays_max": null,
+ "entrance_time_min": 14,
+ "entrance_time_max": 24,
+ "leaving_time": 12,
+ "features": [
+  {
+   "name": "essentials",
+   "description": "کاغذ توالت، مایع ظرفشویی، مایع دستشویی"
+  },
+  {
+   "name": "electricity",
+   "description": null
+  },
+  {
+   "name": "water",
+   "description": "آب لوله کشی شهری"
+  },
+  {
+   "name": "tv",
+   "description": "تلویزیون ال سی دی 40 اینچ"
+  },
+  {
+   "name": "heating",
+   "description": "یک شعله بخاری گازی در پذیرایی و یک شعله بخاری گازی در هر اتاق خواب"
+  },
+  {
+   "name": "cooler",
+   "description": "یک دستگاه اسپیلت 30000 در پذیرایی"
+  },
+  {
+   "name": "kitchen",
+   "description": "به تعداد 10 نفر به صورت کامل فراهم است."
+  },
+  {
+   "name": "stave",
+   "description": null
+  },
+  {
+   "name": "refrigerator",
+   "description": null
+  },
+  {
+   "name": "vacuumcleaner",
+   "description": null
+  },
+  {
+   "name": "washer",
+   "description": null
+  },
+  {
+   "name": "furniture",
+   "description": "مبلمان 9 نفره"
+  },
+  {
+   "name": "table",
+   "description": "6 نفره"
+  },
+  {
+   "name": "drawer",
+   "description": null
+  },
+  {
+   "name": "parking",
+   "description": "پارکینگ برای 4 خودرو به صورت روباز در حیاط"
+  },
+  {
+   "name": "toilet",
+   "description": "با سرویس ایرانی"
+  },
+  {
+   "name": "islamictoilet",
+   "description": "با سرویس فرنگی"
+  },
+  {
+   "name": "barbecue",
+   "description": "منقل زغالی در محوطه"
+  },
+  {
+   "name": "bathroom",
+   "description": null
+  }
+ ],
+ "properties": [
+  {
+   "id": 71,
+   "name": "مهمان نواز"
+  }
+ ],
+ "additional_feature": null,
+ "additional_safety": null,
+ "rules": [
+  "pet",
+  "smoke"
+ ],
+ "additional_rule": null,
+ "cancellation_policy": "middle",
+ "min_price": 2200000,
+ "extra_price": 5000,
+ "is_clean": false,
+ "is_new": false,
+ "is_instant": false,
+ "is_plus": true,
+ "success_books": 10,
+ "discounts": [
+  {
+   "percent": 10,
+   "type": "duration",
+   "min_nights": 20
+  }
+ ],
+ "current_discount": null,
+ "current_discount_percent": 0,
+ "ratings": {
+  "count": 10,
+  "total": 4.7,
+  "accuracy": 4.7,
+  "communication": 4.9,
+  "cleanliness": 4.3,
+  "location": 4.6,
+  "checkin": 5,
+  "value": 4.5,
+  "comments_grouped_by_rating": {
+   "3": 2,
+   "4": 1,
+   "5": 7
+  },
+  "is_recently": true,
+  "is_bad_host": false
+ },
+ "host": {
+  "id": 2650841,
+  "name": "مهربان",
+  "avatar": "2025/12/05/2512051109232650841.jpg",
+  "gender": "male",
+  "description": null,
+  "created_at": "2025-08-25",
+  "response_time": 241,
+  "accept_rate": 67,
+  "host_communication_rate": 4.9
+ },
+ "meta": {
+  "title": "اجاره خانه ویلایی در بابلکنار - گونه کلا",
+  "description": "اجاره روزانه ویلا روستایی 2 خوابه در بابلکنار، مازندران برای 8 نفر مهمان با قیمت مناسب و ضمانت تحویل جاجیگا.",
+  "keywords": null
+ }
+}

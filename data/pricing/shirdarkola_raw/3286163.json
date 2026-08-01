@@ -1,0 +1,410 @@
+{
+ "id": 3286163,
+ "status": "active",
+ "units_count": 1,
+ "url": "/room/3286163",
+ "short_url": "/r/35jv",
+ "title": "خانه ویلایی با جکوزی در بابلکنار - شیردارکلا",
+ "description": "این خانه یکخوابه در روستای خوش آب و هوای شیردارکلا واقع شده است که با شهر شیرگاه حدود ۱۰ کیلومتر فاصله دارد.\nطراحی این خانه به گونه ای است که دارای پذیرایی به همراه جکوزی با حمام، آشپزخانه، یک اتاق خواب و حمام با سرویس ایرانی می باشد و تراس مجهز به میز و صندلی این خانه دارای چشم انداز جنگلی است.\nاطراف حیاط با دیوار محصور شده و میزبان نیز در همسایگی سکونت دارد، حیاط این واحد از طریق یک در به واحد کناری راه داشته که درب آن قفل و در اختیار میزبان است.\nمهمانان گرامی می توانند برای تهیه مایحتاج روزانه خود از سوپرمارکت و نانوایی در فاصله حدود یک کیلومتری استفاده نمایند.\nکیفیت پوشش شبکه تلفن همراه برای دو اپراتور ایرانسل و همراه اول در مکالمه خوب و پوشش اینترنت به صورت ۴g است.\nلازم به ذکر است حدود ۵۰ متر از مسیر منتهی به خانه به صورت جاده خاکی است.",
+ "geo": {
+  "lat": 36.3362,
+  "lng": 52.7736
+ },
+ "province": {
+  "id": "p26",
+  "name": "مازندران",
+  "url": "/s/mazandaran"
+ },
+ "city": {
+  "id": 467,
+  "name": "بابلکنار",
+  "url": "/s/babolkenar"
+ },
+ "pictures": [
+  {
+   "name": "32861632512171636348129034.jpg",
+   "url": "2025/12/17/32861632512171636348129034.jpg",
+   "preview": "UtB#P4oYnMxtyGMeVrogXpRPV?W=pIotoakC",
+   "description": "چشم انداز تراس",
+   "created_at": "2025-12-17"
+  },
+  {
+   "name": "32861632603221348335987036.jpg",
+   "url": "2026/03/22/32861632603221348335987036.jpg",
+   "preview": "UlD^c2~p-;%g.7-;%NtR%3xvxcs=.8%Nxuxu",
+   "description": "جکوزی",
+   "created_at": "2026-03-22"
+  },
+  {
+   "name": "32861632512171709016568644.jpg",
+   "url": "2025/12/17/32861632512171709016568644.jpg",
+   "preview": "UxEfc+xvWBxu_4tSWBxu?ctRWBt7?btRWBoz",
+   "description": "نمای خانه",
+   "created_at": "2025-12-17"
+  },
+  {
+   "name": "32861632603221348437826366.jpg",
+   "url": "2026/03/22/32861632603221348437826366.jpg",
+   "preview": "UOF#gT=sVts:~5${xZSPo{xrxZI=~UxFRkWV",
+   "description": "پذیرایی",
+   "created_at": "2026-03-22"
+  },
+  {
+   "name": "32861632603221348441351471.jpg",
+   "url": "2026/03/22/32861632603221348441351471.jpg",
+   "preview": "UdHU%o~Ut1?G-O%0-:t6xZ%1xuog~p-:j=xt",
+   "description": "پذیرایی",
+   "created_at": "2026-03-22"
+  },
+  {
+   "name": "32861632512171709345591332.jpg",
+   "url": "2025/12/17/32861632512171709345591332.jpg",
+   "preview": "U=LM,|tmXT%0-:ozt7kC%M%2xtf+~Ux]o#xZ",
+   "description": "آشپزخانه",
+   "created_at": "2025-12-17"
+  },
+  {
+   "name": "32861632603221348418246092.jpg",
+   "url": "2026/03/22/32861632603221348418246092.jpg",
+   "preview": "U;J%:o-nX8%0~U$|W?t7%MxYbIbc%MofjZoe",
+   "description": "اتاق خواب",
+   "created_at": "2026-03-22"
+  },
+  {
+   "name": "32861632512171634326545247.jpg",
+   "url": "2025/12/17/32861632512171634326545247.jpg",
+   "preview": "UdD^NAp1ac%N?wtSWVxvWEogWCWCT2WDf5WC",
+   "description": "حمام با سرویس ایرانی",
+   "created_at": "2025-12-17"
+  },
+  {
+   "name": "32861632603221347052153921.jpg",
+   "url": "2026/03/22/32861632603221347052153921.jpg",
+   "preview": "UyFGUR_Mxv%N?a%Mxu%3xaxbxuxa%gx]t8t7",
+   "description": "جکوزی",
+   "created_at": "2026-03-22"
+  },
+  {
+   "name": "32861632603221351321691941.jpg",
+   "url": "2026/03/22/32861632603221351321691941.jpg",
+   "preview": "UXEMac~q$lWD_2?bxvNH%N-qtSR+?v-;t7ja",
+   "description": "جکوزی",
+   "created_at": "2026-03-22"
+  },
+  {
+   "name": "32861632512251338096940765.jpg",
+   "url": "2025/12/25/32861632512251338096940765.jpg",
+   "preview": "UuEC^8tQM_a#_4oeM{a}?ct6RiWV.8t7RkWB",
+   "description": "تراس",
+   "created_at": "2025-12-25"
+  },
+  {
+   "name": "32861632605052313298714632.jpg",
+   "url": "2026/05/05/32861632605052313298714632.jpg",
+   "preview": "UdE{OHT2wjo~~Bs?t9o}%3xbo#t8%fo#s;t7",
+   "description": "تراس",
+   "created_at": "2026-05-05"
+  },
+  {
+   "name": "32861632603221349537885742.jpg",
+   "url": "2026/03/22/32861632603221349537885742.jpg",
+   "preview": "UoCtLXx[jXxu.TtRe.t7%io#V@og.At8WAoz",
+   "description": "باربیکیو",
+   "created_at": "2026-03-22"
+  },
+  {
+   "name": "32861632603221349504077461.jpg",
+   "url": "2026/03/22/32861632603221349504077461.jpg",
+   "preview": "UVE30TjEIAxv^+M{jXtR?cRiRixu~qaxIUxu",
+   "description": "حیاط و نمای خانه",
+   "created_at": "2026-03-22"
+  },
+  {
+   "name": "32861632603221348479655527.jpg",
+   "url": "2026/03/22/32861632603221348479655527.jpg",
+   "preview": "UOEV=;rDw}~px=-p=|%1IT%3xbe-_2V@Rjxu",
+   "description": "حیاط",
+   "created_at": "2026-03-22"
+  },
+  {
+   "name": "32861632603221347496577534.jpg",
+   "url": "2026/03/22/32861632603221347496577534.jpg",
+   "preview": "UB8EI]_L_L_LNEXLtKtdNGtMovkR?a-;x]xu",
+   "description": "تراس",
+   "created_at": "2026-03-22"
+  },
+  {
+   "name": "32861632605052312477206660.jpg",
+   "url": "2026/05/05/32861632605052312477206660.jpg",
+   "preview": "UUDcgU?b%4%MouM|RRt8xut8flxb~p-;%3x[",
+   "description": null,
+   "created_at": "2026-05-05"
+  }
+ ],
+ "vr_photo": null,
+ "video_url": null,
+ "allocation": "entire_place",
+ "types": [
+  "villa"
+ ],
+ "regions": [
+  "rural"
+ ],
+ "floor_area": 40,
+ "land_area": 500,
+ "floors_count": 0,
+ "bedrooms": 1,
+ "sleep_arrange": [
+  {
+   "space_id": 1,
+   "single": 0,
+   "double": 1,
+   "mattress": 0,
+   "sofa_bed": 0,
+   "etc": ""
+  },
+  {
+   "space_id": 0,
+   "single": 0,
+   "double": 0,
+   "mattress": 2,
+   "sofa_bed": 0,
+   "etc": ""
+  }
+ ],
+ "sleep_description": null,
+ "guest_number": 2,
+ "max_guest_number": 4,
+ "stays_min": 1,
+ "stays_max": null,
+ "entrance_time_min": 14,
+ "entrance_time_max": 0,
+ "leaving_time": 12,
+ "features": [
+  {
+   "name": "essentials",
+   "description": "مایع ظرفشویی، مایع دستشویی"
+  },
+  {
+   "name": "electricity",
+   "description": null
+  },
+  {
+   "name": "water",
+   "description": "آب لوله کشی شهری"
+  },
+  {
+   "name": "tv",
+   "description": "تلویزیون ال سی دی 32 اینچ"
+  },
+  {
+   "name": "heating",
+   "description": "یک شعله بخاری گازی در پذیرایی"
+  },
+  {
+   "name": "cooler",
+   "description": "یک دستگاه اسپلیت 16000 در پذیرایی"
+  },
+  {
+   "name": "kitchen",
+   "description": "برای ۴ نفر به صورت کامل موجود است."
+  },
+  {
+   "name": "stave",
+   "description": null
+  },
+  {
+   "name": "refrigerator",
+   "description": null
+  },
+  {
+   "name": "vacuumcleaner",
+   "description": null
+  },
+  {
+   "name": "furniture",
+   "description": "مبلمان 4 نفره"
+  },
+  {
+   "name": "parking",
+   "description": "پارکینگ روباز برای دو خودرو در حیاط"
+  },
+  {
+   "name": "islamictoilet",
+   "description": "یک عدد"
+  },
+  {
+   "name": "barbecue",
+   "description": "کباب پز گازی در بالکن"
+  },
+  {
+   "name": "jacuzzi",
+   "description": "جکوزی ۴ نفره"
+  },
+  {
+   "name": "janitor",
+   "description": "میزبان در همسایگی سکونت دارد."
+  },
+  {
+   "name": "bathroom",
+   "description": "دو عدد"
+  }
+ ],
+ "properties": [],
+ "additional_feature": null,
+ "additional_safety": null,
+ "rules": [
+  "pet",
+  "smoke"
+ ],
+ "additional_rule": null,
+ "cancellation_policy": "middle",
+ "min_price": 3000000,
+ "extra_price": 200000,
+ "is_clean": false,
+ "is_new": false,
+ "is_instant": false,
+ "is_plus": false,
+ "success_books": 5,
+ "discounts": [],
+ "current_discount": null,
+ "current_discount_percent": 0,
+ "ratings": {
+  "count": 5,
+  "total": 4.6,
+  "accuracy": 4.8,
+  "communication": 5,
+  "cleanliness": 3.8,
+  "location": 5,
+  "checkin": 5,
+  "value": 4.2,
+  "comments_grouped_by_rating": {
+   "4": 3,
+   "5": 2
+  },
+  "is_recently": true,
+  "is_bad_host": false
+ },
+ "host": {
+  "id": 2087081,
+  "name": "پریسا",
+  "avatar": "2024/04/08/2404081618482087081.jpg",
+  "gender": "female",
+  "description": "تابع قوانین هستم",
+  "created_at": "2025-12-21",
+  "response_time": 234,
+  "accept_rate": 86,
+  "host_communication_rate": 4.9
+ },
+ "meta": {
+  "title": "خانه ویلایی با جکوزی در بابلکنار - شیردارکلا",
+  "description": "اجاره روزانه ویلا روستایی 1 خوابه در بابلکنار، مازندران برای 4 نفر مهمان با قیمت مناسب و ضمانت تحویل جاجیگا.",
+  "keywords": null
+ },
+ "group_rooms": {
+  "items": [
+   {
+    "id": 3300314,
+    "units_count": 1,
+    "url": "/room/3300314",
+    "short_url": "/r/3ggy",
+    "title": "خانه دوبلکلس استخردار",
+    "bedrooms": 2,
+    "floor_area": 60,
+    "guest_number": 4,
+    "max_guest_number": 6,
+    "min_price": 3500000,
+    "invoice": {
+     "extra": {
+      "count": 0,
+      "price": 200000,
+      "total": 0
+     },
+     "discount": {
+      "type": null,
+      "percent": 0,
+      "amount": 0
+     },
+     "discounts": [],
+     "final": 3500000,
+     "prices": [
+      1
+     ],
+     "is_bill": false
+    },
+    "pictures": {
+     "total": 1,
+     "items": [
+      {
+       "name": "33003142605061211504844009.jpg",
+       "preview": "U}IF6:%Mogxa_4tRoft7.8ozaeoz.8oLV@t7",
+       "url": "2026/05/06/33003142605061211504844009.jpg"
+      }
+     ]
+    }
+   }
+  ],
+  "count": 1
+ },
+ "group": {
+  "count": 1,
+  "items": [
+   {
+    "id": 3300314,
+    "units_count": 1,
+    "url": "/room/3300314",
+    "short_url": "/r/3ggy",
+    "title": "خانه دوبلکلس استخردار",
+    "city": "بابلکنار",
+    "bedrooms": 2,
+    "floor_area": 60,
+    "guest_number": 4,
+    "max_guest_number": 6,
+    "is_clean": false,
+    "is_new": false,
+    "is_instant": false,
+    "is_plus": false,
+    "min_price": 3500000,
+    "discount": null,
+    "success_books": 10,
+    "rating": {
+     "count": 6,
+     "total": 4.4
+    },
+    "host": {
+     "id": 2087081,
+     "avatar": "2024/04/08/2404081618482087081.jpg"
+    },
+    "invoice": {
+     "extra": {
+      "count": 0,
+      "price": 200000,
+      "total": 0
+     },
+     "discount": {
+      "type": null,
+      "percent": 0,
+      "amount": 0
+     },
+     "discounts": [],
+     "final": 3500000,
+     "prices": {
+      "3500000": 1
+     },
+     "is_bill": false
+    },
+    "pictures": {
+     "total": 1,
+     "items": [
+      {
+       "name": "33003142605061211504844009.jpg",
+       "preview": "U}IF6:%Mogxa_4tRoft7.8ozaeoz.8oLV@t7",
+       "url": "2026/05/06/33003142605061211504844009.jpg"
+      }
+     ]
+    },
+    "properties": []
+   }
+  ]
+ }
+}

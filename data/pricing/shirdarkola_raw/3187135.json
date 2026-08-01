@@ -1,0 +1,360 @@
+{
+ "id": 3187135,
+ "status": "active",
+ "units_count": 1,
+ "url": "/room/3187135",
+ "short_url": "/r/1153",
+ "title": "ویلا در بابلکنار - شیردارکلا",
+ "description": "این ویلا دو خوابه که یک خواب آن مستر است با دسترسی ۵ پله دارای ایوان دنج با تخت سنتی و حیاطی دلباز در روستای خوش آب و هوای شیردارکلا و با فاصله حدود ۱۷ کیلومتری بابلکنار و حدود ۲۷ کیلومتری بابل واقع شده است.\nمحوطه اطراف اقامتگاه از دو طرف با دیوار و از دو طرف دیگر با فنس محصور شده و جهت تامین امنیت بیستر مهمانان گرامی ایوان و حیاط مجهز به دوربین مداربسته است. توجه داشته باشید دوربین مداربسته موجود در داخل خانه غیرفعال می باشد.\nبرای تهیه مایحتاج روزانه دسترسی به سوپرمارکت و نانوایی با طی مسافت حدود ۵۰۰ متری از اقامتگاه امکان پذیر است.\nکیفیت شبکه تلفن همراه در مکالمه خوب و پوشش اینترنت برای شبکه ایرانسل و همراه اول ۴g می باشد.\nلازم به ذکر است ۲۰ متر انتهایی مسیر دسترسی به اقامتگاه دارای شیب ملایم و حدود ۲۰۰ متر از مسیر منتهی به واحد نیز به صورت جاده خاکی است.هفت آبشار تیرکن، آبشار گزو،سد سنبل رو و سد البرز، جنگل‌ و‌ آبشار پلنگ دره و ... از مکان های دیدنی نزدیک به این اقامتگاه می باشد.",
+ "geo": {
+  "lat": 36.3389,
+  "lng": 52.7731
+ },
+ "province": {
+  "id": "p26",
+  "name": "مازندران",
+  "url": "/s/mazandaran"
+ },
+ "city": {
+  "id": 467,
+  "name": "بابلکنار",
+  "url": "/s/babolkenar"
+ },
+ "pictures": [
+  {
+   "name": "3187135230903231336.jpg",
+   "url": "2023/09/03/3187135230903231336.jpg",
+   "preview": "U*G8}^xuoM%2_4xuofxu?ct7j[t8_3t7ayt7",
+   "description": "نمای ویلا",
+   "created_at": "2023-09-03"
+  },
+  {
+   "name": "3187135230830112647.jpg",
+   "url": "2023/08/30/3187135230830112647.jpg",
+   "preview": "UZE{X;^+.8?b?wx]-;%Nx_Rlt8t8_3j[ogt7",
+   "description": "نمای ویلا",
+   "created_at": "2023-08-30"
+  },
+  {
+   "name": "3187135230830112722.jpg",
+   "url": "2023/08/30/3187135230830112722.jpg",
+   "preview": "UED,3+^%ID%G~o%LWCoeV}xut6WD?X%1t7oe",
+   "description": "چشم انداز ایوان",
+   "created_at": "2023-08-30"
+  },
+  {
+   "name": "3187135230830112709.jpg",
+   "url": "2023/08/30/3187135230830112709.jpg",
+   "preview": "UiFFTb%KNG%1~nxtWBt6-.xtoeWB-.xtayay",
+   "description": "ایوان",
+   "created_at": "2023-08-30"
+  },
+  {
+   "name": "3187135230830112703.jpg",
+   "url": "2023/08/30/3187135230830112703.jpg",
+   "preview": "UxIX%1%MWBxa~pt7WBs:%MWBRjj[xuayRkof",
+   "description": "پذیرایی",
+   "created_at": "2023-08-30"
+  },
+  {
+   "name": "3187135230830112706.jpg",
+   "url": "2023/08/30/3187135230830112706.jpg",
+   "preview": "UiGk][^+M{s:~p-:WBjt%Lxuofj[%2ofayoL",
+   "description": "پذیرایی",
+   "created_at": "2023-08-30"
+  },
+  {
+   "name": "3187135230830112701.jpg",
+   "url": "2023/08/30/3187135230830112701.jpg",
+   "preview": "UjHLSR?axu_3~pxuof-:xuWBRjj[-;t6WBof",
+   "description": "پذیرایی و آشپزخانه",
+   "created_at": "2023-08-30"
+  },
+  {
+   "name": "3187135230830113106.jpg",
+   "url": "2023/08/30/3187135230830113106.jpg",
+   "preview": "UPG*.$00IV~V^*M|IV%2adofR*WB~VIUofxt",
+   "description": "اتاق خواب 1",
+   "created_at": "2023-08-30"
+  },
+  {
+   "name": "3187135230830113111.jpg",
+   "url": "2023/08/30/3187135230830113111.jpg",
+   "preview": "UYH2D+xss:?a~W%MjZxtD%WBayM{ofIUWBoe",
+   "description": "اتاق خواب 1",
+   "created_at": "2023-08-30"
+  },
+  {
+   "name": "31871352607301647496166456.jpg",
+   "url": "2026/07/30/31871352607301647496166456.jpg",
+   "preview": "UyI#DY_3xu?a_N-;t7%M%gozRjof?GxaV@of",
+   "description": "اتاق خواب 2",
+   "created_at": "2026-07-30"
+  },
+  {
+   "name": "3187135230903231002.jpg",
+   "url": "2023/09/03/3187135230903231002.jpg",
+   "preview": "UuIq}u-:R%%M~pt6Rjt7ofWBWBazxtofj[of",
+   "description": "حمام با سرویس فرنگی",
+   "created_at": "2023-09-03"
+  },
+  {
+   "name": "3187135230903231014.jpg",
+   "url": "2023/09/03/3187135230903231014.jpg",
+   "preview": "UhH2N2xvf8%2~p%Mt7ay%Mt7t7j[?HWBoft7",
+   "description": "سرویس ایرانی",
+   "created_at": "2023-09-03"
+  },
+  {
+   "name": "3187135230315185211.jpg",
+   "url": "3187135230315185211.jpg",
+   "preview": "UYF$FZogM{-;~qM|M{-p-;RjM{xu^+xuRjof",
+   "description": "ایوان",
+   "created_at": "2023-03-15"
+  },
+  {
+   "name": "3187135230830112656.jpg",
+   "url": "2023/08/30/3187135230830112656.jpg",
+   "preview": "UWF~BP~p.7-:?a-:x[xuRjt7ofof%1oeWBWU",
+   "description": "چشم انداز ایوان",
+   "created_at": "2023-08-30"
+  },
+  {
+   "name": "3187135230315180357.jpg",
+   "url": "3187135230315180357.jpg",
+   "preview": "UVDvN3ofIot6~pWVM{oLayj[WBWCIUfQofay",
+   "description": "نمای اقامتگاه",
+   "created_at": "2023-03-15"
+  },
+  {
+   "name": "3187135230315180346.jpg",
+   "url": "3187135230315180346.jpg",
+   "preview": "UB8;Sz?bIUax~p%MM{aeRjt6ayay9FM{xtj[",
+   "description": null,
+   "created_at": "2023-03-15"
+  },
+  {
+   "name": "3187135230830112651.jpg",
+   "url": "2023/08/30/3187135230830112651.jpg",
+   "preview": "U#F5?L%LoLxa~p%2j[xa^+t7j@xa?HjZayt7",
+   "description": null,
+   "created_at": "2023-08-30"
+  },
+  {
+   "name": "3187135230315180349.jpg",
+   "url": "3187135230315180349.jpg",
+   "preview": "UC8z=FtOIUxu01WExtRjIVWCofWC~pocM{t7",
+   "description": null,
+   "created_at": "2023-03-15"
+  },
+  {
+   "name": "3187135230830112653.jpg",
+   "url": "2023/08/30/3187135230830112653.jpg",
+   "preview": "UfC%HTxuNGtQ~pt7Rjt6^+t7Rjs:_2t7Rkt6",
+   "description": null,
+   "created_at": "2023-08-30"
+  }
+ ],
+ "vr_photo": null,
+ "video_url": null,
+ "allocation": "entire_place",
+ "types": [
+  "villa"
+ ],
+ "regions": [
+  "rural"
+ ],
+ "floor_area": 130,
+ "land_area": 1000,
+ "floors_count": 0,
+ "bedrooms": 2,
+ "sleep_arrange": [
+  {
+   "space_id": 1,
+   "single": 0,
+   "double": 1,
+   "mattress": 0,
+   "sofa_bed": 0,
+   "etc": ""
+  },
+  {
+   "space_id": 2,
+   "single": 0,
+   "double": 0,
+   "mattress": 0,
+   "sofa_bed": 0,
+   "etc": ""
+  },
+  {
+   "space_id": 0,
+   "single": 0,
+   "double": 0,
+   "mattress": 6,
+   "sofa_bed": 0,
+   "etc": ""
+  }
+ ],
+ "sleep_description": "مهمانان بیش از ۸ نفر با خود سرویس خواب به همراه داشته باشند.",
+ "guest_number": 5,
+ "max_guest_number": 8,
+ "stays_min": 1,
+ "stays_max": null,
+ "entrance_time_min": 14,
+ "entrance_time_max": 21,
+ "leaving_time": 12,
+ "features": [
+  {
+   "name": "essentials",
+   "description": "مایع ظرفشویی، مایع دستشویی، دستمال کاغذی، کاغذ توالت"
+  },
+  {
+   "name": "electricity",
+   "description": null
+  },
+  {
+   "name": "water",
+   "description": "آب لوله کشی شهری"
+  },
+  {
+   "name": "tv",
+   "description": "تلویزیون ال سی دی ۴۳ اینچ"
+  },
+  {
+   "name": "heating",
+   "description": "یک شعله بخاری گازی در پذیرایی و یک شعله بخاری گازی در یک اتاق خواب و یک شعله بخاری برقی در اتاق خواب دیگر"
+  },
+  {
+   "name": "cooler",
+   "description": "یک دستگاه کولر اسپلیت ۲۴۰۰۰ در پذیرایی و یک دستگاه کولر اسپیلت ۱۶۰۰۰ در یک اتاق خواب"
+  },
+  {
+   "name": "kitchen",
+   "description": "برای ۶ نفر بصورت کامل موجود می باشد."
+  },
+  {
+   "name": "stave",
+   "description": null
+  },
+  {
+   "name": "refrigerator",
+   "description": null
+  },
+  {
+   "name": "vacuumcleaner",
+   "description": null
+  },
+  {
+   "name": "washer",
+   "description": null
+  },
+  {
+   "name": "iron",
+   "description": null
+  },
+  {
+   "name": "furniture",
+   "description": "مبلمان ۹ نفره"
+  },
+  {
+   "name": "table",
+   "description": null
+  },
+  {
+   "name": "drawer",
+   "description": null
+  },
+  {
+   "name": "parking",
+   "description": "پارکینگ روباز برای سه خودرو در محوطه"
+  },
+  {
+   "name": "toilet",
+   "description": "با حمام در اتاق خواب مستر"
+  },
+  {
+   "name": "islamictoilet",
+   "description": "در پذیرایی"
+  },
+  {
+   "name": "barbecue",
+   "description": "منقل فلزی در حیاط"
+  },
+  {
+   "name": "bathroom",
+   "description": "با سرویس فرنگی در اتاق خواب مستر"
+  }
+ ],
+ "properties": [
+  {
+   "id": 52,
+   "name": "خوش منظره"
+  },
+  {
+   "id": 71,
+   "name": "مهمان نواز"
+  }
+ ],
+ "additional_feature": null,
+ "additional_safety": null,
+ "rules": [
+  "party",
+  "pet",
+  "smoke"
+ ],
+ "additional_rule": null,
+ "cancellation_policy": "middle",
+ "min_price": 2000000,
+ "extra_price": 300000,
+ "is_clean": false,
+ "is_new": false,
+ "is_instant": false,
+ "is_plus": true,
+ "success_books": 20,
+ "discounts": [
+  {
+   "percent": 20,
+   "type": "duration",
+   "min_nights": 4
+  },
+  {
+   "percent": 30,
+   "type": "duration",
+   "min_nights": 7
+  }
+ ],
+ "current_discount": null,
+ "current_discount_percent": 0,
+ "ratings": {
+  "count": 18,
+  "total": 4.7,
+  "accuracy": 4.5,
+  "communication": 4.9,
+  "cleanliness": 4.2,
+  "location": 4.7,
+  "checkin": 5,
+  "value": 4.5,
+  "comments_grouped_by_rating": {
+   "3": 1,
+   "4": 5,
+   "5": 5
+  },
+  "is_recently": true,
+  "is_bad_host": false
+ },
+ "host": {
+  "id": 1688970,
+  "name": "پیمان",
+  "avatar": "2023/04/20/2304201346571688970.jpg",
+  "gender": "male",
+  "description": null,
+  "created_at": "2023-09-03",
+  "response_time": 454,
+  "accept_rate": 95,
+  "host_communication_rate": 4.9
+ },
+ "meta": {
+  "title": "ویلا در بابلکنار - شیردارکلا",
+  "description": "اجاره روزانه ویلا روستایی 2 خوابه در بابلکنار، مازندران برای 8 نفر مهمان با قیمت مناسب و ضمانت تحویل جاجیگا.",
+  "keywords": "اجاره ویلا در بابل,اجاره ویلا در مازندران,روستایی,اجاره ویلا در شمال,اجاره روزانه,سایت اجاره ویلا"
+ }
+}

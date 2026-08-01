@@ -1,0 +1,343 @@
+{
+ "id": 3283885,
+ "status": "active",
+ "units_count": 1,
+ "url": "/room/3283885",
+ "short_url": "/r/33sl",
+ "title": "کلبه سوئیسی جکوزی دار در بابلکنار - قران تالار",
+ "description": "این کلبه سوئیسی یکخوابه به همراه جکوزی و تراسی با چشم انداز در مجاورت کلبه ای دیگر در روستای قران تالار واقع شده است که با شهر شیرگاه حدود ۱۵ کیلومتر فاصله دارد.\nکلبه در طبقه پایین دارای پذیرایی، آشپزخانه، جکوزی و حمام با فرنگی و در طبقه بالا دارای یک اتاق خواب (بدون در) و تراس است.\nمحوطه اطراف حیاط از سه طرف با دیوار محصور شده اما به سمت دروازه ورودی باز است و میزبان در محوطه سکونت دارد.\nمهمانان گرامی برای تهیه مایحتاج روزانه خود می توانند از سوپرمارکت و نانوایی در فاصله حدود ۱۰۰ متری از کلبه استفاده نمایند.\nکیفیت پوشش شبکه تلفن همراه برای دو اپراتور ایرانسل و همراه اول در مکالمه خوب و دسترسی به اینترنت نیز به صورت ۴g است.\nلازم به ذکر است که حدود ۲۰ متر مسیر منتهی به اقامتگاه به صورت خاکی می باشد.\nجاده گنج افروز، منطقه گردشگری لفور، پارک جنگلی تلار و بزچفت بخشی از جاذبه های گردشگری این منطقه زیبا می باشد.",
+ "geo": {
+  "lat": 36.3054,
+  "lng": 52.7807
+ },
+ "province": {
+  "id": "p26",
+  "name": "مازندران",
+  "url": "/s/mazandaran"
+ },
+ "city": {
+  "id": 467,
+  "name": "بابلکنار",
+  "url": "/s/babolkenar"
+ },
+ "pictures": [
+  {
+   "name": "3283885251115211859.jpg",
+   "url": "2025/11/15/3283885251115211859.jpg",
+   "preview": "UnF?FFMKIAx]~qMdIBx].9ROM_t8?cRPRPo#",
+   "description": "تراس",
+   "created_at": "2025-11-15"
+  },
+  {
+   "name": "3283885251115214135.jpg",
+   "url": "2025/11/15/3283885251115214135.jpg",
+   "preview": "UKEoJV~BU^,B~VxuIAMxMyRkW;Nav$r?%L%M",
+   "description": "تراس",
+   "created_at": "2025-11-15"
+  },
+  {
+   "name": "3283885251115211539.jpg",
+   "url": "2025/11/15/3283885251115211539.jpg",
+   "preview": "UWCi?padRixu%hIURjtR-?InM{t8~qRiM{t8",
+   "description": "نمای کلبه",
+   "created_at": "2025-11-15"
+  },
+  {
+   "name": "3283885251115214143.jpg",
+   "url": "2025/11/15/3283885251115214143.jpg",
+   "preview": "UPD9n=enITxu~pogRPt5$~ozWBsl%2WBR%oK",
+   "description": "پذیرایی",
+   "created_at": "2025-11-15"
+  },
+  {
+   "name": "3283885251115214415.jpg",
+   "url": "2025/11/15/3283885251115214415.jpg",
+   "preview": "UjEfH3rrMwxt~pnPMxxZ?ae.M{t6?HjFM{of",
+   "description": "پذیرایی",
+   "created_at": "2025-11-15"
+  },
+  {
+   "name": "3283885251115214416.jpg",
+   "url": "2025/11/15/3283885251115214416.jpg",
+   "preview": "UmD]VgIUM_%L~WMxM{%2?aV?V@xa-;nOn%og",
+   "description": "پذیرایی",
+   "created_at": "2025-11-15"
+  },
+  {
+   "name": "3283885251115214138.jpg",
+   "url": "2025/11/15/3283885251115214138.jpg",
+   "preview": "ULDJFn%2Vr-o~pniRjs.i]M{bcWCv~M{tQt7",
+   "description": "پذیرایی",
+   "created_at": "2025-11-15"
+  },
+  {
+   "name": "3283885251115214850.jpg",
+   "url": "2025/11/15/3283885251115214850.jpg",
+   "preview": "UbECg_.8kWsp_NyDt7s;%ztRt7xa?axuozt6",
+   "description": "پذیرایی",
+   "created_at": "2025-11-15"
+  },
+  {
+   "name": "3283885251115214847.jpg",
+   "url": "2025/11/15/3283885251115214847.jpg",
+   "preview": "UNCsU4tSRjt6~qkXaxs:-obHR+of?GbbR*of",
+   "description": "جکوزی",
+   "created_at": "2025-11-15"
+  },
+  {
+   "name": "3283885251115214845.jpg",
+   "url": "2025/11/15/3283885251115214845.jpg",
+   "preview": "UlGbCs-=tl%N~Axuf,s.$xs-WCaK%2t8kWoz",
+   "description": "پذیرایی",
+   "created_at": "2025-11-15"
+  },
+  {
+   "name": "3283885251115214852.jpg",
+   "url": "2025/11/15/3283885251115214852.jpg",
+   "preview": "UlIXy{.8%M?b~W%2%2%MxtsSxas,-;s:xtt7",
+   "description": "آشپزخانه",
+   "created_at": "2025-11-15"
+  },
+  {
+   "name": "3283885251115215036.jpg",
+   "url": "2025/11/15/3283885251115215036.jpg",
+   "preview": "UQC~#b?vaKVX~q?bt6RO.7%gt7aK?ax]t7oL",
+   "description": "اتاق خواب",
+   "created_at": "2025-11-15"
+  },
+  {
+   "name": "3283885251115214141.jpg",
+   "url": "2025/11/15/3283885251115214141.jpg",
+   "preview": "UJCZ34^kDOR4~p%MR5ivozkBoJo2$*sAk8oz",
+   "description": "اتاق خواب",
+   "created_at": "2025-11-15"
+  },
+  {
+   "name": "3283885251115215034.jpg",
+   "url": "2025/11/15/3283885251115215034.jpg",
+   "preview": "UbEV4,%MIUs8~BxDM_s-%LslaKog%3ofjZof",
+   "description": "اتاق خواب",
+   "created_at": "2025-11-15"
+  },
+  {
+   "name": "3283885251115215032.jpg",
+   "url": "2025/11/15/3283885251115215032.jpg",
+   "preview": "UMDlKB-=RO#%~q.8sSVX.7%gt7Vs_2tSX8s9",
+   "description": "اتاق خواب",
+   "created_at": "2025-11-15"
+  },
+  {
+   "name": "3283885251115215038.jpg",
+   "url": "2025/11/15/3283885251115215038.jpg",
+   "preview": "UIEo.1?GD$?b~qt7IUxuWUogj]of_2xtt6xt",
+   "description": "حمام با سرویس فرنگی",
+   "created_at": "2025-11-15"
+  },
+  {
+   "name": "3283885251115213812.jpg",
+   "url": "2025/11/15/3283885251115213812.jpg",
+   "preview": "U?EpNZxtV?s:%joJaJjuo%jYada#xvs,jFj[",
+   "description": "تراس",
+   "created_at": "2025-11-15"
+  },
+  {
+   "name": "3283885251115213442.jpg",
+   "url": "2025/11/15/3283885251115213442.jpg",
+   "preview": "UpG8[txZMcsl~qs.Mwn$.9j@ITWB?coJMway",
+   "description": "تراس",
+   "created_at": "2025-11-15"
+  },
+  {
+   "name": "3283885251115213540.jpg",
+   "url": "2025/11/15/3283885251115213540.jpg",
+   "preview": "U=Fr;jxun$xu?dt7aeo#%iofWBog%iofaxt7",
+   "description": "تراس",
+   "created_at": "2025-11-15"
+  },
+  {
+   "name": "3283885251115213813.jpg",
+   "url": "2025/11/15/3283885251115213813.jpg",
+   "preview": "UpCZ|dxuMxoc_Nt8M_oe?wt7M_j[?vt7M_j[",
+   "description": "تراس",
+   "created_at": "2025-11-15"
+  },
+  {
+   "name": "3283885251115211644.jpg",
+   "url": "2025/11/15/3283885251115211644.jpg",
+   "preview": "UeA0|No$V;skyGXUnfn#b|XTn}aetnkEjXbJ",
+   "description": "نمای کلبه",
+   "created_at": "2025-11-15"
+  },
+  {
+   "name": "3283885251115211643.jpg",
+   "url": "2025/11/15/3283885251115211643.jpg",
+   "preview": "UmBphc%MoftTyGtSk9o$pLo#oeo$x{tRs:t8",
+   "description": "نمای کلبه",
+   "created_at": "2025-11-15"
+  }
+ ],
+ "vr_photo": null,
+ "video_url": null,
+ "allocation": "entire_place",
+ "types": [
+  "cottage",
+  "swiss_cottage",
+  "wooden_cottage"
+ ],
+ "regions": [
+  "forest",
+  "rural"
+ ],
+ "floor_area": 70,
+ "land_area": 100,
+ "floors_count": 0,
+ "bedrooms": 1,
+ "sleep_arrange": [
+  {
+   "space_id": 1,
+   "single": 0,
+   "double": 1,
+   "mattress": 4,
+   "sofa_bed": 0,
+   "etc": ""
+  },
+  {
+   "space_id": 0,
+   "single": 0,
+   "double": 0,
+   "mattress": 0,
+   "sofa_bed": 0,
+   "etc": ""
+  }
+ ],
+ "sleep_description": null,
+ "guest_number": 4,
+ "max_guest_number": 6,
+ "stays_min": 1,
+ "stays_max": null,
+ "entrance_time_min": 14,
+ "entrance_time_max": 0,
+ "leaving_time": 12,
+ "features": [
+  {
+   "name": "essentials",
+   "description": "کاغذ توالت، مایع ظرفشویی، مایع دستشویی، دستمال کاغذی"
+  },
+  {
+   "name": "electricity",
+   "description": null
+  },
+  {
+   "name": "water",
+   "description": "آب لوله کشی شهری"
+  },
+  {
+   "name": "heating",
+   "description": "یک شعله بخاری گازی در پذیرایی"
+  },
+  {
+   "name": "cooler",
+   "description": "یک دستگاه اسپیلت 18000 در اتاق خواب"
+  },
+  {
+   "name": "kitchen",
+   "description": "برای 5 نفر به صورت کامل موجود است."
+  },
+  {
+   "name": "stave",
+   "description": null
+  },
+  {
+   "name": "refrigerator",
+   "description": null
+  },
+  {
+   "name": "furniture",
+   "description": "مبلمان 5 نفره"
+  },
+  {
+   "name": "table",
+   "description": "4 نفره"
+  },
+  {
+   "name": "parking",
+   "description": "پارکینگ روباز برای یک خودرو در حیاط"
+  },
+  {
+   "name": "toilet",
+   "description": "با حمام"
+  },
+  {
+   "name": "barbecue",
+   "description": "منقل فلزی در حیاط"
+  },
+  {
+   "name": "jacuzzi",
+   "description": "4 نفره"
+  },
+  {
+   "name": "janitor",
+   "description": "میزبان در محوطه سکونت دارد."
+  },
+  {
+   "name": "bathroom",
+   "description": "با سرویس فرنگی"
+  },
+  {
+   "name": "firstaidkit",
+   "description": null
+  }
+ ],
+ "properties": [],
+ "additional_feature": null,
+ "additional_safety": null,
+ "rules": [],
+ "additional_rule": null,
+ "cancellation_policy": "hard",
+ "min_price": 2000000,
+ "extra_price": 500000,
+ "is_clean": false,
+ "is_new": false,
+ "is_instant": false,
+ "is_plus": false,
+ "success_books": 20,
+ "discounts": [],
+ "current_discount": {
+  "percent": 10,
+  "type": "period"
+ },
+ "current_discount_percent": 10,
+ "ratings": {
+  "count": 14,
+  "total": 4.5,
+  "accuracy": 4.9,
+  "communication": 4.4,
+  "cleanliness": 4.1,
+  "location": 4.8,
+  "checkin": 4.6,
+  "value": 4.4,
+  "comments_grouped_by_rating": {
+   "3": 3,
+   "4": 5,
+   "5": 6
+  },
+  "is_recently": true,
+  "is_bad_host": false
+ },
+ "host": {
+  "id": 2867614,
+  "name": "معصومه",
+  "avatar": "2025/11/16/2511161223112867614.jpg",
+  "gender": "female",
+  "description": null,
+  "created_at": "2025-12-03",
+  "response_time": 360,
+  "accept_rate": 67,
+  "host_communication_rate": 4.6
+ },
+ "meta": {
+  "title": "کلبه سوئیسی جکوزی دار در بابلکنار - قران تالار",
+  "description": "اجاره روزانه کلبه جنگلی 1 خوابه در بابلکنار، مازندران برای 6 نفر مهمان با قیمت مناسب و ضمانت تحویل جاجیگا.",
+  "keywords": null
+ }
+}

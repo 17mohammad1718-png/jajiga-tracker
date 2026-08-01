@@ -1,0 +1,584 @@
+{
+ "id": 3304015,
+ "status": "active",
+ "units_count": 1,
+ "url": "/room/3304015",
+ "short_url": "/r/3jbr",
+ "title": "کلبه سوئیسی با استخر و جکوزی در بابلکنار",
+ "description": "این کلبه سوئیسی دو خوابه که یک خواب آن مستر است در مجموعه ای ۱۰۰۰ متری و در مجاورت چند کلبه دیگر در روستای خوش آب و هوای شیردارکلا واقع شده است که حدود ۱۲ کیلومتر با شیرگاه و حدود ۲۵ کیلومتر با لفور فاصله دارد.\nاز امکانات مشترک مجموعه می توان به آلاچیق، فضای سبز و میز و صندلی باغی اشاره کرد.\nطراحی کلبه به گونه ایست که با دسترسی حدود سه پله در طبقه پایین شامل استخر و جکوزی سرپوشیده با سرویس فرنگی با حمام می‌شود و در طبقه بالا پذیرایی، آشپزخانه، یک اتاق خواب، تراس و سرویس فرنگی با حمام واقع شده و در طبقه آخر نیز با دسترسی حدود ۸ پله بالکن و یک اتاق خواب مستر فاقد درب قرار دارد، در نظر داشته باشید کلبه فاقد سرویس ایرانی می باشد.\nاطراف حیاط با دیوار محصور شده و میزبان در همین محوطه سکونت دارد، همچنین به جهت تامین امنیت بیشتر محوطه و دروازه ورودی مجهز به دوربین مداربسته می‌باشد و فضای سبز مجموعه به صورت مشترک با کلبه های دیگر و میزبان مورد استفاده قرار می‌گیرد. ضمنا در همسایگی ساختمانی در حال ساخت‌ و ساز می‌باشد. \nبه منظور تهیه مایحتاج روزانه، دسترسی به سوپرمارکت و نانوایی با پیمودن مسافتی در حدود یک کیلومتر ممکن است.\nپوشش شبکه تلفن همراه برای دو اپراتور ایرانسل و همراه اول در مکالمه خوب و دسترسی به اینترنت به‌صورت ۴g می‌باشد.",
+ "geo": {
+  "lat": 36.3403,
+  "lng": 52.7704
+ },
+ "province": {
+  "id": "p26",
+  "name": "مازندران",
+  "url": "/s/mazandaran"
+ },
+ "city": {
+  "id": 467,
+  "name": "بابلکنار",
+  "url": "/s/babolkenar"
+ },
+ "pictures": [
+  {
+   "name": "33040152606010143177132780.jpg",
+   "url": "2026/06/01/33040152606010143177132780.jpg",
+   "preview": "UUEfNH?vIWRP~q-=WCM{xcxvozWBoHt6t8f,",
+   "description": "محوطه",
+   "created_at": "2026-06-01"
+  },
+  {
+   "name": "33040152606010143261866879.jpg",
+   "url": "2026/06/01/33040152606010143261866879.jpg",
+   "preview": "U6A9sH^j0hoy=}ES5p%1D+M}S~WF}=-9OENI",
+   "description": "نمای کلبه",
+   "created_at": "2026-06-01"
+  },
+  {
+   "name": "33040152606010143154020819.jpg",
+   "url": "2026/06/01/33040152606010143154020819.jpg",
+   "preview": "U%E:MQxuM|oz.Togaet8%ibcWBoz.9kDRjbI",
+   "description": "محوطه",
+   "created_at": "2026-06-01"
+  },
+  {
+   "name": "33040152606010143198275202.jpg",
+   "url": "2026/06/01/33040152606010143198275202.jpg",
+   "preview": "ULDlTV~Wx^-p]~$%WBniR4nNs-jF-:$%xGt6",
+   "description": "استخر",
+   "created_at": "2026-06-01"
+  },
+  {
+   "name": "33040152606010143208878304.jpg",
+   "url": "2026/06/01/33040152606010143208878304.jpg",
+   "preview": "UMF#O8-pI:-Uz:WBOFjFInNGWCof~WozV?t6",
+   "description": "پذیرایی",
+   "created_at": "2026-06-01"
+  },
+  {
+   "name": "33040152606010143307794361.jpg",
+   "url": "2026/06/01/33040152606010143307794361.jpg",
+   "preview": "UgH^x4=?$w~B=rw]sl$xRiogofV@?HtQs.xa",
+   "description": "پذیرایی",
+   "created_at": "2026-06-01"
+  },
+  {
+   "name": "33040152607031232304584584.jpg",
+   "url": "2026/07/03/33040152607031232304584584.jpg",
+   "preview": "UJDuSW}pvg=w~AsSM{s:NeNIR*bb$gs:ozs-",
+   "description": "آشپزخانه",
+   "created_at": "2026-07-03"
+  },
+  {
+   "name": "33040152606010143328577715.jpg",
+   "url": "2026/06/01/33040152606010143328577715.jpg",
+   "preview": "UPFq?x.9pJ^+=}pJb_xb%2bwSiof~Bo#S%%2",
+   "description": "آشپزخانه",
+   "created_at": "2026-06-01"
+  },
+  {
+   "name": "33040152606010143232072277.jpg",
+   "url": "2026/06/01/33040152606010143232072277.jpg",
+   "preview": "ULD+i5~CZ~%L~WspMxn$r?afWVoe,o$*xuxu",
+   "description": "آشپزخانه",
+   "created_at": "2026-06-01"
+  },
+  {
+   "name": "33040152606051554061624405.jpg",
+   "url": "2026/06/05/33040152606051554061624405.jpg",
+   "preview": "UWF#?pjGxt-o~ARjs.%1rVV@oJsl^ixtn~s+",
+   "description": null,
+   "created_at": "2026-06-05"
+  },
+  {
+   "name": "33040152606051554019739835.jpg",
+   "url": "2026/06/05/33040152606051554019739835.jpg",
+   "preview": "UGCsHrNevy?bv|M{ofWDsloLW=R*~WozjYxt",
+   "description": null,
+   "created_at": "2026-06-05"
+  },
+  {
+   "name": "33040152606010143291245626.jpg",
+   "url": "2026/06/01/33040152606010143291245626.jpg",
+   "preview": "UTG8Arv#NH-:~BrrNGxungMxkDof=|a0kCj]",
+   "description": "اتاق خواب",
+   "created_at": "2026-06-01"
+  },
+  {
+   "name": "33040152606010143176445132.jpg",
+   "url": "2026/06/01/33040152606010143176445132.jpg",
+   "preview": "UVG81PM_9t-;~ARjI;xav}S5W=sS=dbvS2sm",
+   "description": "اتاق خواب",
+   "created_at": "2026-06-01"
+  },
+  {
+   "name": "33040152606010143167621593.jpg",
+   "url": "2026/06/01/33040152606010143167621593.jpg",
+   "preview": "UIE.Ov}@00IA~Xt7D$RP9uN_buM{xas:ayRk",
+   "description": "اتاق خواب",
+   "created_at": "2026-06-01"
+  },
+  {
+   "name": "33040152606051554099627379.jpg",
+   "url": "2026/06/05/33040152606051554099627379.jpg",
+   "preview": "UPEorh-6wH_N~WVDrW-=-rVrngxb_4xaoJtS",
+   "description": "اتاق خواب",
+   "created_at": "2026-06-05"
+  },
+  {
+   "name": "33040152606051554056978491.jpg",
+   "url": "2026/06/05/33040152606051554056978491.jpg",
+   "preview": "UVFO$HpxNbwI^kk?bwem%OtmbcWA_4tmR*jr",
+   "description": "اتاق خواب",
+   "created_at": "2026-06-05"
+  },
+  {
+   "name": "33040152606051553594818044.jpg",
+   "url": "2026/06/05/33040152606051553594818044.jpg",
+   "preview": "UVEyDH_3V@s:U]Vrofaeiunhf+oL_4%gWBoM",
+   "description": "اتاق خواب",
+   "created_at": "2026-06-05"
+  },
+  {
+   "name": "33040152606051554048727828.jpg",
+   "url": "2026/06/05/33040152606051554048727828.jpg",
+   "preview": "ULEVg5?HrD_3^*Q,m*-;t7R4n3tR~XxujYxv",
+   "description": "اتاق خواب",
+   "created_at": "2026-06-05"
+  },
+  {
+   "name": "33040152606010143161469198.jpg",
+   "url": "2026/06/01/33040152606010143161469198.jpg",
+   "preview": "UTGl3MV?9E-o_4V?Rjt7tSV@oLoz~qV@M{t7",
+   "description": "سرویس",
+   "created_at": "2026-06-01"
+  },
+  {
+   "name": "33040152606010143131495383.jpg",
+   "url": "2026/06/01/33040152606010143131495383.jpg",
+   "preview": "UXG[vS?dx^?b~qf,WCxuxuRiM{oe_2xukCt7",
+   "description": "سرویس",
+   "created_at": "2026-06-01"
+  },
+  {
+   "name": "33040152606010143255908142.jpg",
+   "url": "2026/06/01/33040152606010143255908142.jpg",
+   "preview": "UNEob|tRIBs;}qxbRPi_VDRjo#n$?GRjbbxa",
+   "description": "استخر",
+   "created_at": "2026-06-01"
+  },
+  {
+   "name": "33040152606010143217320036.jpg",
+   "url": "2026/06/01/33040152606010143217320036.jpg",
+   "preview": "UeGRVJ^*ogt8}r%1bcoMvyV?R*V[-ns,aeax",
+   "description": "استخر",
+   "created_at": "2026-06-01"
+  },
+  {
+   "name": "33040152607031232269654665.jpg",
+   "url": "2026/07/03/33040152607031232269654665.jpg",
+   "preview": "UZGHuI}@nlxb={$#n~oKI^NHadoJ%hkDe.s;",
+   "description": null,
+   "created_at": "2026-07-03"
+  },
+  {
+   "name": "33040152606010143213748660.jpg",
+   "url": "2026/06/01/33040152606010143213748660.jpg",
+   "preview": "U^GSint8M{tR?wkDRjt7%hbJWBt7%gkDWCog",
+   "description": "ویو",
+   "created_at": "2026-06-01"
+  },
+  {
+   "name": "33040152606010143279687212.jpg",
+   "url": "2026/06/01/33040152606010143279687212.jpg",
+   "preview": "UeDv.h%LWAx[_Nt7aytR%$WYj]oz.TkDj?tR",
+   "description": "ویو",
+   "created_at": "2026-06-01"
+  },
+  {
+   "name": "33040152606010143278121876.jpg",
+   "url": "2026/06/01/33040152606010143278121876.jpg",
+   "preview": "USC6#|?u%M-;~X-=%M-;-=%N%M%M?bx]xu%M",
+   "description": "نمای کلبه",
+   "created_at": "2026-06-01"
+  },
+  {
+   "name": "33040152606010143129539768.jpg",
+   "url": "2026/06/01/33040152606010143129539768.jpg",
+   "preview": "U~H2sGaxWB%N_NafWBx]-=ofayt7%Nt7fkkC",
+   "description": "نمای کلبه",
+   "created_at": "2026-06-01"
+  },
+  {
+   "name": "33040152606051554103421119.jpg",
+   "url": "2026/06/05/33040152606051554103421119.jpg",
+   "preview": "UUIF6]?vxu?v_4t8t7xvM{WBjZj[_4tRf6t7",
+   "description": null,
+   "created_at": "2026-06-05"
+  },
+  {
+   "name": "33040152606051554086633488.jpg",
+   "url": "2026/06/05/33040152606051554086633488.jpg",
+   "preview": "UeHV9%s,WA.8~qe-V@%M%MV@WAtR?bayj@xu",
+   "description": null,
+   "created_at": "2026-06-05"
+  },
+  {
+   "name": "33040152606051551476115982.jpg",
+   "url": "2026/06/05/33040152606051551476115982.jpg",
+   "preview": "URHLe*?a.8_3^+RixuxuodV@oeax~qxut7t7",
+   "description": "سرویس بهداشتی ایرانی مشترک در محوطه",
+   "created_at": "2026-06-05"
+  },
+  {
+   "name": "33040152606051551452086319.jpg",
+   "url": "2026/06/05/33040152606051551452086319.jpg",
+   "preview": "UXIE@ONe00xW~qbIM{ofofoeofof_3WVM_oe",
+   "description": "سرویس بهداشتی ایرانی مشترک در محوطه",
+   "created_at": "2026-06-05"
+  },
+  {
+   "name": "33040152606051551557471316.jpg",
+   "url": "2026/06/05/33040152606051551557471316.jpg",
+   "preview": "UWEfQB-:S#x[^$xtRoWE-+t6M}NG~nxaR-bb",
+   "description": null,
+   "created_at": "2026-06-05"
+  },
+  {
+   "name": "33040152606051551512521604.jpg",
+   "url": "2026/06/05/33040152606051551512521604.jpg",
+   "preview": "USE:3V%JD+t8~9$~IpRkwY%0R.NG^~xoRnkD",
+   "description": "الاچیق",
+   "created_at": "2026-06-05"
+  },
+  {
+   "name": "33040152606051551508089755.jpg",
+   "url": "2026/06/05/33040152606051551508089755.jpg",
+   "preview": "UvH{M~bWNI%f?ttPR-kC.7k9V_oM~qWARnt8",
+   "description": "الاچیق",
+   "created_at": "2026-06-05"
+  },
+  {
+   "name": "33040152606051551535597249.jpg",
+   "url": "2026/06/05/33040152606051551535597249.jpg",
+   "preview": "UpGcGS%gWV%f%zf+ogtQ%gogoNtR_NxuWFxu",
+   "description": null,
+   "created_at": "2026-06-05"
+  },
+  {
+   "name": "33040152606051551483394259.jpg",
+   "url": "2026/06/05/33040152606051551483394259.jpg",
+   "preview": "UWDS{=?wS*xv~p-=XUtS-:xwT1kE?axvS*oh",
+   "description": "الاچیق",
+   "created_at": "2026-06-05"
+  }
+ ],
+ "vr_photo": null,
+ "video_url": null,
+ "allocation": "shared_place",
+ "types": [
+  "cottage",
+  "swiss_cottage",
+  "wooden_cottage"
+ ],
+ "regions": [
+  "forest",
+  "rural"
+ ],
+ "floor_area": 180,
+ "land_area": 1000,
+ "floors_count": 0,
+ "bedrooms": 2,
+ "sleep_arrange": [
+  {
+   "space_id": 1,
+   "single": 0,
+   "double": 1,
+   "mattress": 0,
+   "sofa_bed": 0,
+   "etc": ""
+  },
+  {
+   "space_id": 2,
+   "single": 0,
+   "double": 1,
+   "mattress": 0,
+   "sofa_bed": 0,
+   "etc": ""
+  },
+  {
+   "space_id": 0,
+   "single": 0,
+   "double": 0,
+   "mattress": 3,
+   "sofa_bed": 0,
+   "etc": ""
+  }
+ ],
+ "sleep_description": null,
+ "guest_number": 4,
+ "max_guest_number": 6,
+ "stays_min": 1,
+ "stays_max": null,
+ "entrance_time_min": 14,
+ "entrance_time_max": 0,
+ "leaving_time": 12,
+ "features": [
+  {
+   "name": "essentials",
+   "description": "روبالشتی و روتختی، ملحفه، کاغذ توالت، مایع ظرفشویی، مایع دستشویی"
+  },
+  {
+   "name": "electricity",
+   "description": null
+  },
+  {
+   "name": "water",
+   "description": "شهری دارای منبع ذخیره 5000 لیتری"
+  },
+  {
+   "name": "tv",
+   "description": "ال سی دی 40 اینچ"
+  },
+  {
+   "name": "heating",
+   "description": "پکیج"
+  },
+  {
+   "name": "cooler",
+   "description": "یک دستگاه اسپلیت 30000 در پذیرایی و یک دستگاه اسپلیت 12000 در هر اتاق خواب"
+  },
+  {
+   "name": "kitchen",
+   "description": "برای 6 نفر به صورت کامل موجود است."
+  },
+  {
+   "name": "stave",
+   "description": null
+  },
+  {
+   "name": "refrigerator",
+   "description": "دارای فریزر"
+  },
+  {
+   "name": "vacuumcleaner",
+   "description": null
+  },
+  {
+   "name": "furniture",
+   "description": "7 نفره"
+  },
+  {
+   "name": "toilet",
+   "description": "دو عدد"
+  },
+  {
+   "name": "barbecue",
+   "description": "باربیکیو ذغالی در حیاط بصورت مشترک"
+  },
+  {
+   "name": "pool",
+   "description": "[{i:0,h:{t:T,a:T},c:{t:F,a:F},w:3,l:7,dx:2,di:1.2,t:a,pb:F,pv:T,in:i,m:استخر مجهز به پرده بوده و دارای سرویس فرنگی با حمام می باشد.}]"
+  },
+  {
+   "name": "jacuzzi",
+   "description": "4 نفره"
+  },
+  {
+   "name": "janitor",
+   "description": "میزبان در محوطه حیاط سکونت دارد."
+  },
+  {
+   "name": "bathroom",
+   "description": "دو عدد"
+  }
+ ],
+ "properties": [
+  {
+   "id": 39,
+   "name": "جذاب"
+  },
+  {
+   "id": 49,
+   "name": "استخر آب گرم"
+  },
+  {
+   "id": 55,
+   "name": "استخر سرپوشیده"
+  }
+ ],
+ "additional_feature": null,
+ "additional_safety": null,
+ "rules": [
+  "pet",
+  "smoke"
+ ],
+ "additional_rule": null,
+ "cancellation_policy": "middle",
+ "min_price": 7000000,
+ "extra_price": 800000,
+ "is_clean": false,
+ "is_new": false,
+ "is_instant": false,
+ "is_plus": false,
+ "success_books": 5,
+ "discounts": [
+  {
+   "percent": 10,
+   "type": "duration",
+   "min_nights": 2
+  },
+  {
+   "percent": 10,
+   "type": "duration",
+   "min_nights": 10
+  },
+  {
+   "percent": 10,
+   "type": "today_discount"
+  }
+ ],
+ "current_discount": {
+  "percent": 10,
+  "type": "today_discount"
+ },
+ "current_discount_percent": 10,
+ "ratings": {
+  "count": 3,
+  "total": 4.3,
+  "accuracy": 4.3,
+  "communication": 4.7,
+  "cleanliness": 4,
+  "location": 4,
+  "checkin": 4.7,
+  "value": 4,
+  "comments_grouped_by_rating": {
+   "4": 3
+  },
+  "is_recently": false,
+  "is_bad_host": false
+ },
+ "host": {
+  "id": 3128429,
+  "name": "لیلا",
+  "avatar": "2026/06/01/2606010210563128429.jpg",
+  "gender": "female",
+  "description": null,
+  "created_at": "2026-06-02",
+  "response_time": 553,
+  "accept_rate": 75,
+  "host_communication_rate": 4.7
+ },
+ "meta": {
+  "title": "کلبه سوئیسی با استخر و جکوزی در بابلکنار",
+  "description": "اجاره روزانه کلبه جنگلی 2 خوابه در بابلکنار، مازندران برای 6 نفر مهمان با قیمت مناسب و ضمانت تحویل جاجیگا.",
+  "keywords": null
+ },
+ "group_rooms": {
+  "items": [
+   {
+    "id": 3305898,
+    "units_count": 1,
+    "url": "/room/3305898",
+    "short_url": "/r/3ks2",
+    "title": "کلبه سوئیسی ۷۵ متری",
+    "bedrooms": 1,
+    "floor_area": 75,
+    "guest_number": 4,
+    "max_guest_number": 4,
+    "min_price": 3000000,
+    "invoice": {
+     "extra": {
+      "count": 0,
+      "price": 5000000,
+      "total": 0
+     },
+     "discount": {
+      "type": null,
+      "percent": 0,
+      "amount": 0
+     },
+     "discounts": [],
+     "final": 3000000,
+     "prices": [
+      1
+     ],
+     "is_bill": false
+    },
+    "pictures": {
+     "total": 1,
+     "items": [
+      {
+       "name": "33058982606210029592411575.jpg",
+       "preview": "UpFiuj?uMwnz_N%fIURj%itSM_My%hx]V?RO",
+       "url": "2026/06/21/33058982606210029592411575.jpg"
+      }
+     ]
+    }
+   }
+  ],
+  "count": 1
+ },
+ "group": {
+  "count": 1,
+  "items": [
+   {
+    "id": 3305898,
+    "units_count": 1,
+    "url": "/room/3305898",
+    "short_url": "/r/3ks2",
+    "title": "کلبه سوئیسی ۷۵ متری",
+    "city": "بابلکنار",
+    "bedrooms": 1,
+    "floor_area": 75,
+    "guest_number": 4,
+    "max_guest_number": 4,
+    "is_clean": false,
+    "is_new": false,
+    "is_instant": false,
+    "is_plus": false,
+    "min_price": 3000000,
+    "discount": null,
+    "success_books": 0,
+    "rating": {
+     "count": 0,
+     "total": 0
+    },
+    "host": {
+     "id": 3128429,
+     "avatar": "2026/06/01/2606010210563128429.jpg"
+    },
+    "invoice": {
+     "extra": {
+      "count": 0,
+      "price": 5000000,
+      "total": 0
+     },
+     "discount": {
+      "type": null,
+      "percent": 0,
+      "amount": 0
+     },
+     "discounts": [],
+     "final": 3000000,
+     "prices": {
+      "3000000": 1
+     },
+     "is_bill": false
+    },
+    "pictures": {
+     "total": 1,
+     "items": [
+      {
+       "name": "33058982606210029592411575.jpg",
+       "preview": "UpFiuj?uMwnz_N%fIURj%itSM_My%hx]V?RO",
+       "url": "2026/06/21/33058982606210029592411575.jpg"
+      }
+     ]
+    },
+    "properties": []
+   }
+  ]
+ }
+}

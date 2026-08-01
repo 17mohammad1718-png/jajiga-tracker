@@ -1,0 +1,458 @@
+{
+ "id": 3223870,
+ "status": "inactive",
+ "units_count": 1,
+ "url": "/room/3223870",
+ "short_url": "/r/1thi",
+ "title": "اجاره کلبه چوبی استخردار در بابلکنار - گونه کلا",
+ "description": "**اجاره کلبه چوبی استخردار در بابلکنار - گونه کلا**\nاین کلبه چوبی یکخوابه دارای استخر آبگرم، بالکن و حیاطی دلباز در روستای خوش آب و هوای گونه کلا واقع شده که تا جنگل لفور و شیرگاه حدود ۱۰ کیلومتر فاصله دارد\nطراحی کلبه به صورت دو طبقه است و طبقه پایین دارای استخر سرپوشیده آبگرم و حمام با سرویس ایرانی و طبقه بالا با پله های دسترسی از بیرون (۱۶ پله) دارای پذیرایی، آشپزخانه، یک اتاق خواب (دارای حمام)، سرویس فرنگی و بالکن با چشم انداز زیبا می باشد.\nمحوطه اطراف اقامتگاه با دیوار محصور شده و میزبان نیز در همسایگی سکونت دارد، همچنین به جهت تامین امنیت بیشتر ورودی و حیاط مجهز به دوربین مداربسته است.\nمهمانان گرامی می توانند برای تهیه مایحتاج روزانه خود از سوپرمارکت و نانوایی در فاصله حدود ۵۰۰ متری از اقامتگاه استفاده نمایند.\nکیفیت پوشش شبکه تلفن همراه برای دو اپراتور همراه اول و ایرانسل در مکالمه خوب و دسترسی به اینترنت به صورت ۴g می باشد.\nاز جاذبه های این منطقه توریستی می توان به رودخانه گرو، دریاچه و جنگل لفور، دریاچه سد سنبل رود، آبشار زال، آبشار ترز، منطقه پلنگ دره، هفت آبشار تیرکن، آبشار انجلی کا، پارک جنگلی جوارم و ... اشاره کرد.",
+ "geo": {
+  "lat": 36.3349,
+  "lng": 52.7846
+ },
+ "province": {
+  "id": "p26",
+  "name": "مازندران",
+  "url": "/s/mazandaran"
+ },
+ "city": {
+  "id": 467,
+  "name": "بابلکنار",
+  "url": "/s/babolkenar"
+ },
+ "pictures": [
+  {
+   "name": "3223870240513214818.jpg",
+   "url": "2024/05/13/3223870240513214818.jpg",
+   "preview": "UICY?T-AIVa_~n%1M|R*S1xtjZRks8oKofay",
+   "description": "بالکن",
+   "created_at": "2024-05-13"
+  },
+  {
+   "name": "3223870240513214753.jpg",
+   "url": "2024/05/13/3223870240513214753.jpg",
+   "preview": "U97n?#-:#A-qyDxuVsV@Rjx]ayMx_Nxunjaz",
+   "description": "استخر سرپوشیده",
+   "created_at": "2024-05-13"
+  },
+  {
+   "name": "3223870240513214524.jpg",
+   "url": "2024/05/13/3223870240513214524.jpg",
+   "preview": "UEAT1U~Vxu%1^k-oofs:IBM{WBayV@V@oeoe",
+   "description": "پذیرایی",
+   "created_at": "2024-05-13"
+  },
+  {
+   "name": "3223870240402152354.jpg",
+   "url": "2024/04/02/3223870240402152354.jpg",
+   "preview": "UdF$FS?Hxu-:~q%Mt7xu?b%Mj[a#_3%Mj[oL",
+   "description": null,
+   "created_at": "2024-04-02"
+  },
+  {
+   "name": "3223870240402152303.jpg",
+   "url": "2024/04/02/3223870240402152303.jpg",
+   "preview": "ULFhhVyEO@-p_2%MSiozXSf+R+WW~BbvkWof",
+   "description": null,
+   "created_at": "2024-04-02"
+  },
+  {
+   "name": "3223870240513214812.jpg",
+   "url": "2024/05/13/3223870240513214812.jpg",
+   "preview": "UDDH~T~B%1r==Hsnjss.9GIVoL%1^PxZxZjs",
+   "description": null,
+   "created_at": "2024-05-13"
+  },
+  {
+   "name": "3223870240513214827.jpg",
+   "url": "2024/05/13/3223870240513214827.jpg",
+   "preview": "UCC$J%wM02-Uv~n%s:s.0Lt6?GWB~AsoIos.",
+   "description": null,
+   "created_at": "2024-05-13"
+  },
+  {
+   "name": "3223870240320030030.jpg",
+   "url": "2024/03/20/3223870240320030030.jpg",
+   "preview": "UIFX*7M|0N^i~9R*E2s.Rkj[Rkoe^$juM}xa",
+   "description": "آشپزخانه",
+   "created_at": "2024-03-20"
+  },
+  {
+   "name": "3223870240513214836.jpg",
+   "url": "2024/05/13/3223870240513214836.jpg",
+   "preview": "UJDRZy-TOYt6}o$%R+s.n4oLays.=xoJf+s:",
+   "description": null,
+   "created_at": "2024-05-13"
+  },
+  {
+   "name": "3223870240513214802.jpg",
+   "url": "2024/05/13/3223870240513214802.jpg",
+   "preview": "UIE_gR$fE1-o~AniofxaM{oes:ay-UxaayWB",
+   "description": null,
+   "created_at": "2024-05-13"
+  },
+  {
+   "name": "3223870240320030028.jpg",
+   "url": "2024/03/20/3223870240320030028.jpg",
+   "preview": "UE9jZJ9b9Z-p?aIoIUxu?aM|IUxt~WM|IUxu",
+   "description": "بالکن",
+   "created_at": "2024-03-20"
+  },
+  {
+   "name": "3223870240320030024.jpg",
+   "url": "2024/03/20/3223870240320030024.jpg",
+   "preview": "UEAAQ{~T$%of^%?Z%1RjMx%Mt6RP%Kt5jsj[",
+   "description": "محوطه حیاط",
+   "created_at": "2024-03-20"
+  },
+  {
+   "name": "3223870240402152308.jpg",
+   "url": "2024/04/02/3223870240402152308.jpg",
+   "preview": "UDCO?t=w-o={~B%1xaxat7oet6a{={n$t6WB",
+   "description": null,
+   "created_at": "2024-04-02"
+  },
+  {
+   "name": "3223870240320030015.jpg",
+   "url": "2024/03/20/3223870240320030015.jpg",
+   "preview": "UVFY.8?bxu-;~pxuRkxt-:j[WBt7_2xtt7xu",
+   "description": "سرویس فرنگی",
+   "created_at": "2024-03-20"
+  },
+  {
+   "name": "3223870240402152315.jpg",
+   "url": "2024/04/02/3223870240402152315.jpg",
+   "preview": "UKEMB,_1ITt7_3jrM{xut7Rjt7t7~pxtaxt7",
+   "description": null,
+   "created_at": "2024-04-02"
+  },
+  {
+   "name": "32238702604301216216615450.jpg",
+   "url": "2026/04/30/32238702604301216216615450.jpg",
+   "preview": "UMDJOt%Dou%L~l%dXRjX.5x?NGRj.QxrRPS2",
+   "description": null,
+   "created_at": "2026-04-30"
+  },
+  {
+   "name": "32238702604301216394629245.jpg",
+   "url": "2026/04/30/32238702604301216394629245.jpg",
+   "preview": "UKEMEx.7I=~oP4oe$*kp9YRjxaRi~UozNG%0",
+   "description": null,
+   "created_at": "2026-04-30"
+  },
+  {
+   "name": "3223870240513214746.jpg",
+   "url": "2024/05/13/3223870240513214746.jpg",
+   "preview": "UnIDje^%xt-U}=%1t6$%rqjFxZxZ=_xat6xZ",
+   "description": null,
+   "created_at": "2024-05-13"
+  },
+  {
+   "name": "3223870240513214807.jpg",
+   "url": "2024/05/13/3223870240513214807.jpg",
+   "preview": "UKFOZ2^kE2sl~UxaRjj=4:RjoeWCaJaet7s:",
+   "description": null,
+   "created_at": "2024-05-13"
+  },
+  {
+   "name": "3223870240513214758.jpg",
+   "url": "2024/05/13/3223870240513214758.jpg",
+   "preview": "UXF5Wd?rb[-n~9-nkCs.-nxtofj[^ixtoexZ",
+   "description": null,
+   "created_at": "2024-05-13"
+  },
+  {
+   "name": "3223870240402152323.jpg",
+   "url": "2024/04/02/3223870240402152323.jpg",
+   "preview": "UKDbsU^*9t%1~V%2M{ofxuofRkay?HxaNGoL",
+   "description": null,
+   "created_at": "2024-04-02"
+  },
+  {
+   "name": "3223870240402152332.jpg",
+   "url": "2024/04/02/3223870240402152332.jpg",
+   "preview": "UwGIitxuRPt7~qxaM{j]-;ofM{WV%Mj[WBof",
+   "description": null,
+   "created_at": "2024-04-02"
+  },
+  {
+   "name": "3223870240402152339.jpg",
+   "url": "2024/04/02/3223870240402152339.jpg",
+   "preview": "UJELsZ$gD%~V?HM{Io-pNHM|WBt7^*s.WBxt",
+   "description": null,
+   "created_at": "2024-04-02"
+  },
+  {
+   "name": "3223870240402152347.jpg",
+   "url": "2024/04/02/3223870240402152347.jpg",
+   "preview": "UuF$kZ.8tRxu_N%gt7t7%hxufkj]-;tRWVj[",
+   "description": null,
+   "created_at": "2024-04-02"
+  },
+  {
+   "name": "3223870240513214511.jpg",
+   "url": "2024/05/13/3223870240513214511.jpg",
+   "preview": "UgH__Q?bM{-;~qxuRjxu%Mt7ayof?bt7WBt7",
+   "description": null,
+   "created_at": "2024-05-13"
+  },
+  {
+   "name": "3223870240513214831.jpg",
+   "url": "2024/05/13/3223870240513214831.jpg",
+   "preview": "URD9bZ-;nh-V~WxuV@xa%Mj[Rjoe-:t6aes:",
+   "description": null,
+   "created_at": "2024-05-13"
+  },
+  {
+   "name": "3223870240320030013.jpg",
+   "url": "2024/03/20/3223870240320030013.jpg",
+   "preview": "UWFr#5-prs-pxuxujZWBWBt7oft7~qs:i{%2",
+   "description": "استخر",
+   "created_at": "2024-03-20"
+  },
+  {
+   "name": "3223870240513214601.jpg",
+   "url": "2024/05/13/3223870240513214601.jpg",
+   "preview": "UFATyO.8-q~X-;t7t7%MIAMxNFWUbbNGRQV@",
+   "description": null,
+   "created_at": "2024-05-13"
+  },
+  {
+   "name": "3223870240513214741.jpg",
+   "url": "2024/05/13/3223870240513214741.jpg",
+   "preview": "UUFiPv-;t7%M~qxuRjof%MayRjay_2t7ayof",
+   "description": null,
+   "created_at": "2024-05-13"
+  },
+  {
+   "name": "3223870240513214822.jpg",
+   "url": "2024/05/13/3223870240513214822.jpg",
+   "preview": "UODStCsAD%-;~WofIot7%2ofRjax?boLRjt7",
+   "description": null,
+   "created_at": "2024-05-13"
+  },
+  {
+   "name": "3223870240402193949.jpg",
+   "url": "2024/04/02/3223870240402193949.jpg",
+   "preview": "UhG+t0?vM{-;~q%MM{t7tRofayj[-;t7j[t7",
+   "description": null,
+   "created_at": "2024-04-02"
+  },
+  {
+   "name": "3223870240320030009.jpg",
+   "url": "2024/03/20/3223870240320030009.jpg",
+   "preview": "UUGS16?boz-;-;ofWBofWCofofWB~p-;ofxu",
+   "description": "استخر",
+   "created_at": "2024-03-20"
+  },
+  {
+   "name": "3223870240320030011.jpg",
+   "url": "2024/03/20/3223870240320030011.jpg",
+   "preview": "UB84D5-p^+^+?IRjxuxu-=Rk%3xu~Wxt?H-;",
+   "description": "نمای کلبه",
+   "created_at": "2024-03-20"
+  },
+  {
+   "name": "32238702605061813363048905.jpg",
+   "url": "2026/05/06/32238702605061813363048905.jpg",
+   "preview": "UB7T@4Rn9^xu~BRlEMt7^MS4ENoJ]~WBI@n$",
+   "description": null,
+   "created_at": "2026-05-06"
+  }
+ ],
+ "vr_photo": null,
+ "video_url": null,
+ "allocation": "entire_place",
+ "types": [
+  "cottage",
+  "wooden_cottage"
+ ],
+ "regions": [
+  "forest",
+  "rural"
+ ],
+ "floor_area": 50,
+ "land_area": 200,
+ "floors_count": 0,
+ "bedrooms": 1,
+ "sleep_arrange": [
+  {
+   "space_id": 1,
+   "single": 0,
+   "double": 1,
+   "mattress": 2,
+   "sofa_bed": 0,
+   "etc": "مبلمان تخت خواب شو 2 نفره"
+  },
+  {
+   "space_id": 0,
+   "single": 0,
+   "double": 0,
+   "mattress": 0,
+   "sofa_bed": 0,
+   "etc": "مبل تخت شو دو نفره"
+  }
+ ],
+ "sleep_description": null,
+ "guest_number": 4,
+ "max_guest_number": 6,
+ "stays_min": 1,
+ "stays_max": null,
+ "entrance_time_min": 14,
+ "entrance_time_max": 0,
+ "leaving_time": 12,
+ "features": [
+  {
+   "name": "essentials",
+   "description": "مایع ظرفشویی، مایع دستشویی، دستمال کاغذی، دستمال توالت"
+  },
+  {
+   "name": "electricity",
+   "description": null
+  },
+  {
+   "name": "water",
+   "description": "آب لوله کشی از شهری"
+  },
+  {
+   "name": "tv",
+   "description": "تلویزیون ال سی دی 32 اینج"
+  },
+  {
+   "name": "heating",
+   "description": "پکیج - شوفاژ"
+  },
+  {
+   "name": "cooler",
+   "description": "یک دستگاه کولر اسپیلت 18000 در پذیرایی و یک دستگاه کولر اسپیلت 12000 در اتاق خواب"
+  },
+  {
+   "name": "kitchen",
+   "description": "برای 4 نفر به طور کامل موجود است."
+  },
+  {
+   "name": "stave",
+   "description": null
+  },
+  {
+   "name": "refrigerator",
+   "description": null
+  },
+  {
+   "name": "vacuumcleaner",
+   "description": null
+  },
+  {
+   "name": "hairdryer",
+   "description": null
+  },
+  {
+   "name": "furniture",
+   "description": "مبلمان 7 نفره"
+  },
+  {
+   "name": "table",
+   "description": "4  نفره"
+  },
+  {
+   "name": "parking",
+   "description": "پارکینگ روباز برای دو خودرو"
+  },
+  {
+   "name": "toilet",
+   "description": null
+  },
+  {
+   "name": "islamictoilet",
+   "description": "با حمام در محوطه استخر"
+  },
+  {
+   "name": "barbecue",
+   "description": "باربیکیو ذغالی در حیاط"
+  },
+  {
+   "name": "pool",
+   "description": "[{i:0,h:{t:T,a:T},c:{t:F,a:F},w:3.5,l:6,di:1.60,t:a,pb:F,pv:T,in:i,m:دوش و سرویس ایرانی در محوطه استخر قرار دارد.}]"
+  },
+  {
+   "name": "janitor",
+   "description": "میزبان در نزدیکی سکونت دارد."
+  },
+  {
+   "name": "bathroom",
+   "description": "در اتاق خواب، با سرویس ایرانی در محوطه استخر"
+  }
+ ],
+ "properties": [
+  {
+   "id": 49,
+   "name": "استخر آب گرم"
+  },
+  {
+   "id": 55,
+   "name": "استخر سرپوشیده"
+  }
+ ],
+ "additional_feature": null,
+ "additional_safety": null,
+ "rules": [
+  "pet",
+  "smoke"
+ ],
+ "additional_rule": null,
+ "cancellation_policy": "hard",
+ "min_price": 5000000,
+ "extra_price": 500000,
+ "is_clean": false,
+ "is_new": false,
+ "is_instant": false,
+ "is_plus": false,
+ "success_books": 20,
+ "discounts": [
+  {
+   "percent": 5,
+   "type": "duration",
+   "min_nights": 3
+  },
+  {
+   "percent": 10,
+   "type": "duration",
+   "min_nights": 10
+  }
+ ],
+ "current_discount": null,
+ "current_discount_percent": 0,
+ "ratings": {
+  "count": 20,
+  "total": 4.9,
+  "accuracy": 5,
+  "communication": 5,
+  "cleanliness": 4.7,
+  "location": 4.8,
+  "checkin": 5,
+  "value": 4.7,
+  "comments_grouped_by_rating": {
+   "4": 2,
+   "5": 4
+  },
+  "is_recently": true,
+  "is_bad_host": false
+ },
+ "host": {
+  "id": 1620901,
+  "name": "سید میثم",
+  "avatar": "2026/05/01/2605010509211620901.jpg",
+  "gender": "male",
+  "description": null,
+  "created_at": "2022-11-27",
+  "response_time": 445,
+  "accept_rate": 0,
+  "host_communication_rate": null
+ },
+ "activate_at": null,
+ "meta": {
+  "title": "اجاره کلبه چوبی استخردار در بابلکنار - گونه کلا",
+  "description": "اجاره روزانه کلبه جنگلی 1 خوابه در بابلکنار، مازندران برای 6 نفر مهمان با قیمت مناسب و ضمانت تحویل جاجیگا.",
+  "keywords": null
+ }
+}

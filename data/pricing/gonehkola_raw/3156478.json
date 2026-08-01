@@ -1,0 +1,304 @@
+{
+ "id": 3156478,
+ "status": "active",
+ "units_count": 3,
+ "url": "/room/3156478",
+ "short_url": "/r/dhi",
+ "title": "رزرو سوئیت جنگلی در بابلکنار - گونه کلا",
+ "description": "**رزرو سوئیت جنگلی در بابلکنار**\nاین سوئیت یکخوابه در یک اقامتگاه در روستای گونه کلا و در ۱۰ کیلومتری شهر شیرگاه واقع شده است.\nاین اقامتگاه شامل سه سوئیت یکخوابه می باشد که در یک محوطه بزرگ در کنار هم قرار گرفته اند.\nفاصله این اقامتگاه تا جنگل لفور و هفت آبشار حدود ۲۵ کیلومتر ، تا دریاچه شورمست حدود ۴۵ کیلومتر و تا روستای زیبای آلاشت نیز حدود ۶۵ کیلومتر می باشد.\nهمچنین با پنج دقیقه رانندگی می توانید به سوپرمارکت و نانوایی دسترسی پیدا نمایید.\nمحوطه اقامتگاه به صورت مشترک با واحد های دیگر استفاده می شود ، همچنین لوازم آشپزخانه برای چهار نفر مهیا است و برای نفرات بیشتر باید به همراه داشته باشید.\nلازم به ذکر است حدود ۸۰۰ متر مسیر منتهی به ویلا خاکی می باشد.",
+ "geo": {
+  "lat": 36.3357,
+  "lng": 52.7787
+ },
+ "province": {
+  "id": "p26",
+  "name": "مازندران",
+  "url": "/s/mazandaran"
+ },
+ "city": {
+  "id": 467,
+  "name": "بابلکنار",
+  "url": "/s/babolkenar"
+ },
+ "pictures": [
+  {
+   "name": "3156478210403214842.jpg",
+   "url": "3156478210403214842.jpg",
+   "preview": "U~HpFltPRixv?^kVWAo#yYozj?kW%htSozoz",
+   "description": "نمای سوییتها",
+   "created_at": "2021-04-03"
+  },
+  {
+   "name": "3156478210426163603.jpg",
+   "url": "3156478210426163603.jpg",
+   "preview": "UYD]F}-pxa-p~qtQoyxu?vtRt7xu_2%2t7xu",
+   "description": null,
+   "created_at": "2021-04-26"
+  },
+  {
+   "name": "3156478210426163605.jpg",
+   "url": "3156478210426163605.jpg",
+   "preview": "U{I}q,-;t8x]~qxvozx]-;ogofxu%Nt7ofoz",
+   "description": null,
+   "created_at": "2021-04-26"
+  },
+  {
+   "name": "3156478210426163614.jpg",
+   "url": "3156478210426163614.jpg",
+   "preview": "U+Heg{j[WB%2~qt7WBxa.8t7jZof%foyoLof",
+   "description": null,
+   "created_at": "2021-04-26"
+  },
+  {
+   "name": "3156478210403214921.jpg",
+   "url": "3156478210403214921.jpg",
+   "preview": "UMEore%gR%_2~p-;M{xtxut7RjR%^+WUofxu",
+   "description": "میز نهار خوری",
+   "created_at": "2021-04-03"
+  },
+  {
+   "name": "3156478210426163626.jpg",
+   "url": "3156478210426163626.jpg",
+   "preview": "UIDl$j?IIU^+awM_RjxukUt7t7of~q%MWBxu",
+   "description": null,
+   "created_at": "2021-04-26"
+  },
+  {
+   "name": "3156478210426163612.jpg",
+   "url": "3156478210426163612.jpg",
+   "preview": "UpHxpP%M%M-;~qt7xu%Mxvf8t7oz%Mofofof",
+   "description": null,
+   "created_at": "2021-04-26"
+  },
+  {
+   "name": "3156478210426163608.jpg",
+   "url": "3156478210426163608.jpg",
+   "preview": "UVG8[wxGxu%2~q%Mofj[ozkWRjWB-;RjWCj[",
+   "description": null,
+   "created_at": "2021-04-26"
+  },
+  {
+   "name": "3156478220710111940.jpg",
+   "url": "3156478220710111940.jpg",
+   "preview": "UMDSgy-pIU?H~Wxts.%M-;t7oet7~WxtRjt7",
+   "description": "اتاق خواب",
+   "created_at": "2022-07-10"
+  },
+  {
+   "name": "3156478210403214928.jpg",
+   "url": "3156478210403214928.jpg",
+   "preview": "UED07G%301Rh~ps;RQj=j[WBt7j[~Wf9M{WA",
+   "description": "سرویس حمام و دستشویی",
+   "created_at": "2021-04-03"
+  },
+  {
+   "name": "3156478210403214849.jpg",
+   "url": "3156478210403214849.jpg",
+   "preview": "U{HVC:xvRjxu_4t8WBt8-=ofoft7%Nj]kCof",
+   "description": "بخشی از ویوی حیاط جلو",
+   "created_at": "2021-04-03"
+  },
+  {
+   "name": "3156478210403214854.jpg",
+   "url": "3156478210403214854.jpg",
+   "preview": "U~DTJDj]V?t7.AogWBozx^ogj[ofxvogj]of",
+   "description": "بخشی از ویوی حیاط جلو",
+   "created_at": "2021-04-03"
+  },
+  {
+   "name": "3156478210403214913.jpg",
+   "url": "3156478210403214913.jpg",
+   "preview": "UhH2yG~p_2_3?u%Mxuxuf$j[WBWB.7xut7tQ",
+   "description": "رودخانه جنگل پشتی",
+   "created_at": "2021-04-03"
+  },
+  {
+   "name": "3156478210403214917.jpg",
+   "url": "3156478210403214917.jpg",
+   "preview": "ULA]N.-WNZ$+~Es=NZxao%S5W:kCNzbcoLWr",
+   "description": "غروب در اقامتگاه آرامش",
+   "created_at": "2021-04-03"
+  },
+  {
+   "name": "3156478210426163617.jpg",
+   "url": "3156478210426163617.jpg",
+   "preview": "UWBW-v-=t8t7_N-;t7of_3-;xuof_3-;xuof",
+   "description": "منظره پشت اقامتگاه",
+   "created_at": "2021-04-26"
+  },
+  {
+   "name": "3156478210426163619.jpg",
+   "url": "3156478210426163619.jpg",
+   "preview": "UtC7ZyoyRjt7.Aj]WAoz-@ogadog.Aozawog",
+   "description": "حیاط پشتی اقامتگاه",
+   "created_at": "2021-04-26"
+  },
+  {
+   "name": "3156478210426163624.jpg",
+   "url": "3156478210426163624.jpg",
+   "preview": "U=HeqJkEWE%M~qfmWExu-;a~ayj[xua}a#of",
+   "description": null,
+   "created_at": "2021-04-26"
+  }
+ ],
+ "vr_photo": null,
+ "video_url": null,
+ "allocation": "shared_place",
+ "types": [
+  "suite"
+ ],
+ "regions": [
+  "forest",
+  "rural"
+ ],
+ "floor_area": 60,
+ "land_area": 6000,
+ "floors_count": 0,
+ "bedrooms": 1,
+ "sleep_arrange": [
+  {
+   "space_id": 1,
+   "single": 0,
+   "double": 1,
+   "mattress": 2,
+   "sofa_bed": 0,
+   "etc": "پتو و بالش"
+  },
+  {
+   "space_id": 0,
+   "single": 0,
+   "double": 0,
+   "mattress": 0,
+   "sofa_bed": 0,
+   "etc": ""
+  }
+ ],
+ "sleep_description": null,
+ "guest_number": 4,
+ "max_guest_number": 6,
+ "stays_min": 1,
+ "stays_max": null,
+ "entrance_time_min": 14,
+ "entrance_time_max": 22,
+ "leaving_time": 12,
+ "features": [
+  {
+   "name": "essentials",
+   "description": "مایع دستشویی ,کاغذ توالت"
+  },
+  {
+   "name": "electricity",
+   "description": null
+  },
+  {
+   "name": "water",
+   "description": "آب شهری"
+  },
+  {
+   "name": "heating",
+   "description": "یک شعله بخاری گازی در پذیرایی"
+  },
+  {
+   "name": "kitchen",
+   "description": "برای چهار نفر"
+  },
+  {
+   "name": "stave",
+   "description": null
+  },
+  {
+   "name": "refrigerator",
+   "description": null
+  },
+  {
+   "name": "furniture",
+   "description": null
+  },
+  {
+   "name": "table",
+   "description": null
+  },
+  {
+   "name": "parking",
+   "description": "پارکینگ روباز داخل محوطه"
+  },
+  {
+   "name": "islamictoilet",
+   "description": null
+  },
+  {
+   "name": "janitor",
+   "description": "اقامتگاه سرایدار دارد."
+  },
+  {
+   "name": "bathroom",
+   "description": null
+  }
+ ],
+ "properties": [
+  {
+   "id": 52,
+   "name": "خوش منظره"
+  }
+ ],
+ "additional_feature": null,
+ "additional_safety": null,
+ "rules": [
+  "party",
+  "pet",
+  "smoke",
+  "unmarried"
+ ],
+ "additional_rule": "ارائه مدرک محرمیت و مدرک شناسایی معتبر الزامی می باشد.",
+ "cancellation_policy": "middle",
+ "min_price": 2000000,
+ "extra_price": 500000,
+ "is_clean": false,
+ "is_new": false,
+ "is_instant": false,
+ "is_plus": false,
+ "success_books": 0,
+ "discounts": [
+  {
+   "percent": 10,
+   "type": "duration",
+   "min_nights": 3
+  },
+  {
+   "percent": 20,
+   "type": "duration",
+   "min_nights": 15
+  }
+ ],
+ "current_discount": null,
+ "current_discount_percent": 0,
+ "ratings": {
+  "count": 0,
+  "total": 0,
+  "accuracy": 0,
+  "communication": 0,
+  "cleanliness": 0,
+  "location": 0,
+  "checkin": 0,
+  "value": 0,
+  "comments_grouped_by_rating": [],
+  "is_recently": false,
+  "is_bad_host": false
+ },
+ "host": {
+  "id": 1298833,
+  "name": "بهادر",
+  "avatar": "2104032215071298833.jpg",
+  "gender": "male",
+  "description": "بهادر هستم ، لیسانس مهندسی صنایع و ارشد مدیریت\nعاشق طبیعت و جنگل",
+  "created_at": "2021-04-26",
+  "response_time": 562,
+  "accept_rate": 8,
+  "host_communication_rate": null
+ },
+ "meta": {
+  "title": "رزرو سوئیت جنگلی در بابلکنار - گونه کلا",
+  "description": "اجاره روزانه سوئیت جنگلی 1 خوابه در بابلکنار، مازندران برای 6 نفر مهمان با قیمت مناسب و ضمانت تحویل جاجیگا.",
+  "keywords": "اجاره سوئیت در بابل,اجاره سوئیت در مازندران,جنگلی,روستایی,اجاره سوئیت در شمال,اجاره روزانه,رزرو آنلاین ویلا"
+ }
+}

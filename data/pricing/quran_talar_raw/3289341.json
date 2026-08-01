@@ -1,0 +1,692 @@
+{
+ "id": 3289341,
+ "status": "active",
+ "units_count": 1,
+ "url": "/room/3289341",
+ "short_url": "/r/3805",
+ "title": "کلبه سوئیسی رو به جنگل در بابلکنار - قرآن تالار",
+ "description": "این کلبه سوئیسی دو خوابه در روستای قرآن تالار از توابع بابلکنار واقع شده است که با شیرگاه حدود ۱۴ کیلومتر فاصله دارد.\nاز جمله امکانات تفریحی و رفاهی این ویلا می توان جکوزی، آلاچیق با صندلی و میز آتشدان و باربیکیو را نام برد.\nطراحی کلبه به گونه ای است که در طبقه همکف دارای پذیرایی، آشپزخانه، سرویس ایرانی و سرویس فرنگی با حمام می باشد و در طبقه بالا دو اتاق خواب قرار دارد.\nمحوطه حیاط از چهار طرف با دیوار محصور شده و میزبان نیز در فاصله نزدیکی سکونت دارد.\nمهمانان گرامی برای تهیه مایحتاج روزانه خود می توانند از سوپرمارکت و نانوایی در فاصله حدود ۳۰۰ متری از کلبه استفاده نمایند، همچنین امکان سفارش غذا در وعده های ناهار و شام با هماهنگی قبلی با میزبان و پرداخت هزینه جداگانه ممکن است.\nکیفیت پوشش شبکه تلفن همراه برای دو اپراتور ایرانسل و همراه اول در مکالمه خوب و دسترسی به اینترنت به صورت ۴g است.",
+ "geo": {
+  "lat": 36.3071,
+  "lng": 52.778
+ },
+ "province": {
+  "id": "p26",
+  "name": "مازندران",
+  "url": "/s/mazandaran"
+ },
+ "city": {
+  "id": 467,
+  "name": "بابلکنار",
+  "url": "/s/babolkenar"
+ },
+ "pictures": [
+  {
+   "name": "32893412602151517269783084.jpg",
+   "url": "2026/02/15/32893412602151517269783084.jpg",
+   "preview": "UuGl9Zt7j]%L_3xut7xu?vt7oft8~qt7jutR",
+   "description": "نمای کلبه",
+   "created_at": "2026-02-15"
+  },
+  {
+   "name": "32893412602181948332160997.jpg",
+   "url": "2026/02/18/32893412602181948332160997.jpg",
+   "preview": "UJDSt7-;Ip%Mt8aeRjozNfoft6oz_NtRs:xu",
+   "description": "جکوزی و میز و صندلی آتشدان",
+   "created_at": "2026-02-18"
+  },
+  {
+   "name": "32893412602112305417365683.jpg",
+   "url": "2026/02/11/32893412602112305417365683.jpg",
+   "preview": "UqHBo0s9RQxa~pRjNGt7-=RjRjof?HV@WAof",
+   "description": "پنجره سالن طبقه بالا رو به جنگل",
+   "created_at": "2026-02-11"
+  },
+  {
+   "name": "32893412602151517533494520.jpg",
+   "url": "2026/02/15/32893412602151517533494520.jpg",
+   "preview": "UaGb6Xt7Ips.o0WBRjWBRPxtoLae~UxaWXoe",
+   "description": "پذیرایی",
+   "created_at": "2026-02-15"
+  },
+  {
+   "name": "32893412602112254242348102.jpg",
+   "url": "2026/02/11/32893412602112254242348102.jpg",
+   "preview": "UPG8yJ#jIV_NxvR4a#t8E7Mwozog~qaJWE%M",
+   "description": "پذیرایی",
+   "created_at": "2026-02-11"
+  },
+  {
+   "name": "32893412602151518238689376.jpg",
+   "url": "2026/02/15/32893412602151518238689376.jpg",
+   "preview": "UZH1rNX9I:-o$~oyt7xtRjoet7xa~Vj[R*xt",
+   "description": "پذیرایی",
+   "created_at": "2026-02-15"
+  },
+  {
+   "name": "32893412602151517599625826.jpg",
+   "url": "2026/02/15/32893412602151517599625826.jpg",
+   "preview": "UaHBPK={%0^*-Qs+xZoJ%0xZWXWC~V%2WVxt",
+   "description": "پذیرایی",
+   "created_at": "2026-02-15"
+  },
+  {
+   "name": "32893412602151518081756360.jpg",
+   "url": "2026/02/15/32893412602151518081756360.jpg",
+   "preview": "UZHd+:%0D*={-Ts:xtxYVssmxt%1~Us+M{%L",
+   "description": "پذیرایی",
+   "created_at": "2026-02-15"
+  },
+  {
+   "name": "32893412602112306423051418.jpg",
+   "url": "2026/02/11/32893412602112306423051418.jpg",
+   "preview": "UUGuH]iGDj-;?bxBRPkDx]jXRQoz~WROM{xu",
+   "description": "آشپزخانه",
+   "created_at": "2026-02-11"
+  },
+  {
+   "name": "32893412602112306007307226.jpg",
+   "url": "2026/02/11/32893412602112306007307226.jpg",
+   "preview": "UTF=p#-:x]-:.9%1%Mt7x^oexuof~Vs:kDt7",
+   "description": "طبقه بالا",
+   "created_at": "2026-02-11"
+  },
+  {
+   "name": "32893412602112305518263492.jpg",
+   "url": "2026/02/11/32893412602112305518263492.jpg",
+   "preview": "UnH--]~Us.-:~q%ga#xu%Oxvofog-p%Mxaof",
+   "description": "پنجره سالن طبقه بالا",
+   "created_at": "2026-02-11"
+  },
+  {
+   "name": "32893412602112306363989136.jpg",
+   "url": "2026/02/11/32893412602112306363989136.jpg",
+   "preview": "UXFP1*VWIB%M_NnMRjogx^adj@WC?ZV@WBof",
+   "description": "راه پله",
+   "created_at": "2026-02-11"
+  },
+  {
+   "name": "32893412602112305094184784.jpg",
+   "url": "2026/02/11/32893412602112305094184784.jpg",
+   "preview": "UaFOS]?GIUVr~V-oi^rqxtt6xYxW={xZadn$",
+   "description": "اتاق خواب 1",
+   "created_at": "2026-02-11"
+  },
+  {
+   "name": "32893412602112305296110485.jpg",
+   "url": "2026/02/11/32893412602112305296110485.jpg",
+   "preview": "UQGIJztm9a-o?ba}IARjV[jYM{V[~VtRNHxZ",
+   "description": "اتاق خواب 2",
+   "created_at": "2026-02-11"
+  },
+  {
+   "name": "32893412602112306112239597.jpg",
+   "url": "2026/02/11/32893412602112306112239597.jpg",
+   "preview": "URF={t-;D%s:~q%MRPoe-;xuodWB~qxuWBae",
+   "description": "سرویس فرنگی با حمام",
+   "created_at": "2026-02-11"
+  },
+  {
+   "name": "32893412602112306167667607.jpg",
+   "url": "2026/02/11/32893412602112306167667607.jpg",
+   "preview": "URGk];?H4n%1~Vs:WB%MsmjYt7t7^*xtRjoK",
+   "description": "سرویس ایرانی",
+   "created_at": "2026-02-11"
+  },
+  {
+   "name": "32893412602181949306602994.jpg",
+   "url": "2026/02/18/32893412602181949306602994.jpg",
+   "preview": "UNF5jR~Uofxu-U%2jZWB9aayt6WCtlNHt6t7",
+   "description": "جکوزی 4 نفره",
+   "created_at": "2026-02-18"
+  },
+  {
+   "name": "32893412602181949021465039.jpg",
+   "url": "2026/02/18/32893412602181949021465039.jpg",
+   "preview": "UFD+xWxZ4.tR-Uj?E1WCNKR*IUay_NIoIU%2",
+   "description": "نمای محوطه در شب",
+   "created_at": "2026-02-18"
+  },
+  {
+   "name": "32893412602181948526393744.jpg",
+   "url": "2026/02/18/32893412602181948526393744.jpg",
+   "preview": "UGD]PF~Vi{-n$*?H%Ms:9a%Mt8Rj_MxuRkWB",
+   "description": "نمای کلبه در شب",
+   "created_at": "2026-02-18"
+  },
+  {
+   "name": "32893412602181949195248702.jpg",
+   "url": "2026/02/18/32893412602181949195248702.jpg",
+   "preview": "UNF$65~Urr-oa0skxZRk01E2kWNHx]NIR+t7",
+   "description": "دروازه ورودی",
+   "created_at": "2026-02-18"
+  },
+  {
+   "name": "32893412602151518124548311.jpg",
+   "url": "2026/02/15/32893412602151518124548311.jpg",
+   "preview": "UeF=jk-pS$%g~qxuN_x]?vtRkCxv?vxu$*xu",
+   "description": "نمای کلبه",
+   "created_at": "2026-02-15"
+  },
+  {
+   "name": "32893412602181948401153599.jpg",
+   "url": "2026/02/18/32893412602181948401153599.jpg",
+   "preview": "UHDvDy~pW?tSM{xuT0Si9vkXX9W?_Mx]%1%L",
+   "description": "نمای ویلا در نور شب",
+   "created_at": "2026-02-18"
+  }
+ ],
+ "vr_photo": null,
+ "video_url": null,
+ "allocation": "entire_place",
+ "types": [
+  "cottage",
+  "swiss_cottage",
+  "villa",
+  "wooden_cottage"
+ ],
+ "regions": [
+  "forest",
+  "rural"
+ ],
+ "floor_area": 90,
+ "land_area": 200,
+ "floors_count": 0,
+ "bedrooms": 2,
+ "sleep_arrange": [
+  {
+   "space_id": 1,
+   "single": 0,
+   "double": 1,
+   "mattress": 0,
+   "sofa_bed": 0,
+   "etc": ""
+  },
+  {
+   "space_id": 2,
+   "single": 0,
+   "double": 1,
+   "mattress": 0,
+   "sofa_bed": 0,
+   "etc": ""
+  },
+  {
+   "space_id": 0,
+   "single": 0,
+   "double": 0,
+   "mattress": 0,
+   "sofa_bed": 0,
+   "etc": ""
+  }
+ ],
+ "sleep_description": "مهمانان بیشتر از ۴ نفر سرویس خواب همراه داشته باشند.",
+ "guest_number": 4,
+ "max_guest_number": 6,
+ "stays_min": 1,
+ "stays_max": null,
+ "entrance_time_min": 16,
+ "entrance_time_max": 0,
+ "leaving_time": 13,
+ "features": [
+  {
+   "name": "essentials",
+   "description": "کاغذ توالت، مایع ظرفشویی، مایع دستشویی، دستمال کاغذی"
+  },
+  {
+   "name": "electricity",
+   "description": null
+  },
+  {
+   "name": "water",
+   "description": null
+  },
+  {
+   "name": "tv",
+   "description": "ال ای دی 32 اینچ"
+  },
+  {
+   "name": "heating",
+   "description": "پکیج - رادیاتور"
+  },
+  {
+   "name": "cooler",
+   "description": "یک دستگاه کولر اسپیلت 24000 در پذیرایی و یک دستگاه اسپیلت 12000 در هر اتاق خواب"
+  },
+  {
+   "name": "kitchen",
+   "description": "برای 6 نفر کامل موجود است."
+  },
+  {
+   "name": "stave",
+   "description": null
+  },
+  {
+   "name": "refrigerator",
+   "description": "۵ فوت"
+  },
+  {
+   "name": "vacuumcleaner",
+   "description": null
+  },
+  {
+   "name": "furniture",
+   "description": "۶ نفره"
+  },
+  {
+   "name": "table",
+   "description": "دو عدد 4 نفره"
+  },
+  {
+   "name": "parking",
+   "description": "برای 2 خودرو بصورت روباز"
+  },
+  {
+   "name": "toilet",
+   "description": "با حمام"
+  },
+  {
+   "name": "islamictoilet",
+   "description": null
+  },
+  {
+   "name": "barbecue",
+   "description": "باربیکیو گازی و ذغالی در آلاچیق"
+  },
+  {
+   "name": "jacuzzi",
+   "description": "4 نفره"
+  },
+  {
+   "name": "food",
+   "description": "سرو غذا در وعده های ناهار و شام با هماهنگی قبلی با میزبان و پرداخت هزینه جداگانه ممکن است."
+  },
+  {
+   "name": "janitor",
+   "description": "میزبان در نزدیکی سکونت دارد."
+  },
+  {
+   "name": "bathroom",
+   "description": "با سرویس فرنگی"
+  },
+  {
+   "name": "fireextingu",
+   "description": null
+  }
+ ],
+ "properties": [
+  {
+   "id": 39,
+   "name": "جذاب"
+  },
+  {
+   "id": 71,
+   "name": "مهمان نواز"
+  }
+ ],
+ "additional_feature": null,
+ "additional_safety": null,
+ "rules": [
+  "pet"
+ ],
+ "additional_rule": null,
+ "cancellation_policy": "hard",
+ "min_price": 2800000,
+ "extra_price": 600000,
+ "is_clean": false,
+ "is_new": false,
+ "is_instant": false,
+ "is_plus": true,
+ "success_books": 50,
+ "discounts": [
+  {
+   "percent": 10,
+   "type": "duration",
+   "min_nights": 3
+  },
+  {
+   "percent": 20,
+   "type": "duration",
+   "min_nights": 10
+  }
+ ],
+ "current_discount": null,
+ "current_discount_percent": 0,
+ "ratings": {
+  "count": 35,
+  "total": 4.8,
+  "accuracy": 4.9,
+  "communication": 4.9,
+  "cleanliness": 4.7,
+  "location": 4.7,
+  "checkin": 4.9,
+  "value": 4.9,
+  "comments_grouped_by_rating": {
+   "3": 2,
+   "4": 9,
+   "5": 24
+  },
+  "is_recently": true,
+  "is_bad_host": false
+ },
+ "host": {
+  "id": 1762286,
+  "name": "محسن",
+  "avatar": "2024/02/26/2402260009241762286.jpg",
+  "gender": "male",
+  "description": "خوب",
+  "created_at": "2023-11-23",
+  "response_time": 157,
+  "accept_rate": 89,
+  "host_communication_rate": 4.8
+ },
+ "meta": {
+  "title": "کلبه سوئیسی رو به جنگل در بابلکنار - قرآن تالار",
+  "description": "اجاره روزانه کلبه جنگلی 2 خوابه در بابلکنار، مازندران برای 6 نفر مهمان با قیمت مناسب و ضمانت تحویل جاجیگا.",
+  "keywords": null
+ },
+ "group_rooms": {
+  "items": [
+   {
+    "id": 3212136,
+    "units_count": 1,
+    "url": "/room/3212136",
+    "short_url": "/r/1kfk",
+    "title": "کلبه سوئیسی جکوزی دار ۷۰ متری",
+    "bedrooms": 2,
+    "floor_area": 70,
+    "guest_number": 6,
+    "max_guest_number": 6,
+    "min_price": 3200000,
+    "invoice": {
+     "extra": {
+      "count": 0,
+      "price": 800000,
+      "total": 0
+     },
+     "discount": {
+      "type": null,
+      "percent": 0,
+      "amount": 0
+     },
+     "discounts": [],
+     "final": 3200000,
+     "prices": [
+      1
+     ],
+     "is_bill": false
+    },
+    "pictures": {
+     "total": 1,
+     "items": [
+      {
+       "name": "3212136250103093113.jpg",
+       "preview": "UOE.eKbw0exa?wRlIUbH.8R*n%og~WR+R+xu",
+       "url": "2025/01/03/3212136250103093113.jpg"
+      }
+     ]
+    }
+   },
+   {
+    "id": 3289641,
+    "units_count": 1,
+    "url": "/room/3289641",
+    "short_url": "/r/388h",
+    "title": "کلبه سوئیسی جکوزی دار ۷۵ متری",
+    "bedrooms": 2,
+    "floor_area": 75,
+    "guest_number": 6,
+    "max_guest_number": 6,
+    "min_price": 2200000,
+    "invoice": {
+     "extra": {
+      "count": 0,
+      "price": 200000,
+      "total": 0
+     },
+     "discount": {
+      "type": null,
+      "percent": 0,
+      "amount": 0
+     },
+     "discounts": [],
+     "final": 2200000,
+     "prices": [
+      1
+     ],
+     "is_bill": false
+    },
+    "pictures": {
+     "total": 1,
+     "items": [
+      {
+       "name": "32896412602130003195407502.jpg",
+       "preview": "USF~Q-~qtl?aD%R-W=t64n9FD%Rj?aoIRjWV",
+       "url": "2026/02/13/32896412602130003195407502.jpg"
+      }
+     ]
+    }
+   },
+   {
+    "id": 3293846,
+    "units_count": 1,
+    "url": "/room/3293846",
+    "short_url": "/r/3bha",
+    "title": "کلبه سوئیسی سه خوابه",
+    "bedrooms": 3,
+    "floor_area": 130,
+    "guest_number": 4,
+    "max_guest_number": 6,
+    "min_price": 3200000,
+    "invoice": {
+     "extra": {
+      "count": 0,
+      "price": 400000,
+      "total": 0
+     },
+     "discount": {
+      "type": null,
+      "percent": 0,
+      "amount": 0
+     },
+     "discounts": [],
+     "final": 3200000,
+     "prices": [
+      1
+     ],
+     "is_bill": false
+    },
+    "pictures": {
+     "total": 1,
+     "items": [
+      {
+       "name": "32938462603182127327682295.jpg",
+       "preview": "UJEySb.759?c}jo|58VYMcMwD*Mx.Sa_NHtS",
+       "url": "2026/03/18/32938462603182127327682295.jpg"
+      }
+     ]
+    }
+   }
+  ],
+  "count": 3
+ },
+ "group": {
+  "count": 3,
+  "items": [
+   {
+    "id": 3212136,
+    "units_count": 1,
+    "url": "/room/3212136",
+    "short_url": "/r/1kfk",
+    "title": "کلبه سوئیسی جکوزی دار ۷۰ متری",
+    "city": "بابلکنار",
+    "bedrooms": 2,
+    "floor_area": 70,
+    "guest_number": 6,
+    "max_guest_number": 6,
+    "is_clean": false,
+    "is_new": false,
+    "is_instant": false,
+    "is_plus": true,
+    "min_price": 3200000,
+    "discount": null,
+    "success_books": 300,
+    "rating": {
+     "count": 171,
+     "total": 4.7
+    },
+    "host": {
+     "id": 1762286,
+     "avatar": "2024/02/26/2402260009241762286.jpg"
+    },
+    "invoice": {
+     "extra": {
+      "count": 0,
+      "price": 800000,
+      "total": 0
+     },
+     "discount": {
+      "type": null,
+      "percent": 0,
+      "amount": 0
+     },
+     "discounts": [],
+     "final": 3200000,
+     "prices": {
+      "3200000": 1
+     },
+     "is_bill": false
+    },
+    "pictures": {
+     "total": 1,
+     "items": [
+      {
+       "name": "3212136250103093113.jpg",
+       "preview": "UOE.eKbw0exa?wRlIUbH.8R*n%og~WR+R+xu",
+       "url": "2025/01/03/3212136250103093113.jpg"
+      }
+     ]
+    },
+    "properties": [
+     "is_plus"
+    ]
+   },
+   {
+    "id": 3289641,
+    "units_count": 1,
+    "url": "/room/3289641",
+    "short_url": "/r/388h",
+    "title": "کلبه سوئیسی جکوزی دار ۷۵ متری",
+    "city": "بابلکنار",
+    "bedrooms": 2,
+    "floor_area": 75,
+    "guest_number": 6,
+    "max_guest_number": 6,
+    "is_clean": false,
+    "is_new": false,
+    "is_instant": false,
+    "is_plus": true,
+    "min_price": 2200000,
+    "discount": null,
+    "success_books": 50,
+    "rating": {
+     "count": 18,
+     "total": 4.6
+    },
+    "host": {
+     "id": 1762286,
+     "avatar": "2024/02/26/2402260009241762286.jpg"
+    },
+    "invoice": {
+     "extra": {
+      "count": 0,
+      "price": 200000,
+      "total": 0
+     },
+     "discount": {
+      "type": null,
+      "percent": 0,
+      "amount": 0
+     },
+     "discounts": [],
+     "final": 2200000,
+     "prices": {
+      "2200000": 1
+     },
+     "is_bill": false
+    },
+    "pictures": {
+     "total": 1,
+     "items": [
+      {
+       "name": "32896412602130003195407502.jpg",
+       "preview": "USF~Q-~qtl?aD%R-W=t64n9FD%Rj?aoIRjWV",
+       "url": "2026/02/13/32896412602130003195407502.jpg"
+      }
+     ]
+    },
+    "properties": [
+     "is_plus"
+    ]
+   },
+   {
+    "id": 3293846,
+    "units_count": 1,
+    "url": "/room/3293846",
+    "short_url": "/r/3bha",
+    "title": "کلبه سوئیسی سه خوابه",
+    "city": "بابلکنار",
+    "bedrooms": 3,
+    "floor_area": 130,
+    "guest_number": 4,
+    "max_guest_number": 6,
+    "is_clean": false,
+    "is_new": false,
+    "is_instant": true,
+    "is_plus": true,
+    "min_price": 3200000,
+    "discount": null,
+    "success_books": 20,
+    "rating": {
+     "count": 18,
+     "total": 4.6
+    },
+    "host": {
+     "id": 1762286,
+     "avatar": "2024/02/26/2402260009241762286.jpg"
+    },
+    "invoice": {
+     "extra": {
+      "count": 0,
+      "price": 400000,
+      "total": 0
+     },
+     "discount": {
+      "type": null,
+      "percent": 0,
+      "amount": 0
+     },
+     "discounts": [],
+     "final": 3200000,
+     "prices": {
+      "3200000": 1
+     },
+     "is_bill": false
+    },
+    "pictures": {
+     "total": 1,
+     "items": [
+      {
+       "name": "32938462603182127327682295.jpg",
+       "preview": "UJEySb.759?c}jo|58VYMcMwD*Mx.Sa_NHtS",
+       "url": "2026/03/18/32938462603182127327682295.jpg"
+      }
+     ]
+    },
+    "properties": [
+     "is_instant",
+     "is_plus"
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,425 @@
+{
+ "id": 3178917,
+ "status": "active",
+ "units_count": 1,
+ "url": "/room/3178917",
+ "short_url": "/r/ust",
+ "title": "کلبه سوئیسی استخردار در سوادکوه - شیردارکلا",
+ "description": "این کلبه سوئیسی دوبلکس سه خوابه با استخر روباز آبگرم، زمین والیبال، آلاچیق و حیاطی دلباز و درختکاری شده و چشم انداز زیبای کوهستان و شالیزار در محیطی امن و آرام در روستای شیردارکلا از توابع بابلکنار و فاصله حدود ۱۵ کیلومتری شیرگاه واقع شده است.\nطراحی اقامتگاه به صورت دوبلکس است و طبقه پایین دارای پذیرایی، آشپزخانه، دو اتاق خواب، حمام مشترک با سرویس ایرانی و فرنگی و یک اتاق خواب بدون در (بهارخواب) با ۹ پله دسترسی در طبقه بالا قرار دارد.\nاطراف حیاط کلبه با دیوار محصور است و میهمانان گرامی با طی مسافت حدود ۳۰۰ متری به سوپر مارکت و نانوایی دسترسی خواهند داشت.  \nکیفیت پوشش شبکه تلفن همراه برای دو اپراتور همراه اول و ایرانسل در مکالمه عالی و دسترسی به اینترنت به صورت ۴g می باشد.\nجنگل جمشید آباد، آبشار ولیلا، هفت آبشار تیرکن، دریاچه شورمست و پارک جنگلی جوارم از جاذبه های دیدنی و گردشگری قابل دسترسی از این اقامتگاه می باشد.\nمیهمانان گرامی با همراه سالمند، کودک و هموطنان دارای معلولیت‌‌ توجه فرمایید، این کلبه در بخش ورودی و همچنین برای دسترسی به اتاق های طبقه بالا دارای تعدادی پله است.",
+ "geo": {
+  "lat": 36.3337,
+  "lng": 52.774
+ },
+ "province": {
+  "id": "p26",
+  "name": "مازندران",
+  "url": "/s/mazandaran"
+ },
+ "city": {
+  "id": 467,
+  "name": "بابلکنار",
+  "url": "/s/babolkenar"
+ },
+ "pictures": [
+  {
+   "name": "3178917250504003910.jpg",
+   "url": "2025/05/04/3178917250504003910.jpg",
+   "preview": "UmEDCs%gM{t6_3s:M_of?vofM_of?^o#M{t7",
+   "description": "نمای کلبه و استخر",
+   "created_at": "2025-05-04"
+  },
+  {
+   "name": "3178917230818170011.jpg",
+   "url": "2023/08/18/3178917230818170011.jpg",
+   "preview": "UB6[gLtOM{xt_MWURjt7?aRQM{t7?uNFMyt7",
+   "description": "زمین‌بازی",
+   "created_at": "2023-08-18"
+  },
+  {
+   "name": "3178917250504004013.jpg",
+   "url": "2025/05/04/3178917250504004013.jpg",
+   "preview": "UpE:JD%gRPt7?v%NRjof-=xvkDt7_Nx]ayt7",
+   "description": "نمای استخر از بالا",
+   "created_at": "2025-05-04"
+  },
+  {
+   "name": "3178917250504003936.jpg",
+   "url": "2025/05/04/3178917250504003936.jpg",
+   "preview": "UbFOrm%eRjxD%fS#IpM{-ooyNHV@~BxaR*t3",
+   "description": "آلاچیق",
+   "created_at": "2025-05-04"
+  },
+  {
+   "name": "3178917250504004148.jpg",
+   "url": "2025/05/04/3178917250504004148.jpg",
+   "preview": "UTFEAX;{RQ-U~T,:nPt5%Jw^rvWV^hwwaLs:",
+   "description": "پذیرایی طبقه پایین",
+   "created_at": "2025-05-04"
+  },
+  {
+   "name": "3178917221102204649.jpg",
+   "url": "3178917221102204649.jpg",
+   "preview": "UZFEQHwI-p-V?Hs9%2of?HjY%2t7~CV@%2%2",
+   "description": "پذیرایی",
+   "created_at": "2022-11-02"
+  },
+  {
+   "name": "3178917221102205055.jpg",
+   "url": "3178917221102205055.jpg",
+   "preview": "URGR*T?GI9%0}@$*WBniQ-n%t7jZ~V%1V@xZ",
+   "description": "چشم انداز زیبای کوه و شالیزارهای سرسبز",
+   "created_at": "2022-11-02"
+  },
+  {
+   "name": "3178917221102204850.jpg",
+   "url": "3178917221102204850.jpg",
+   "preview": "UOGHSbx@ko^k~9k8S1obx.%LkBR%^k-:t6s:",
+   "description": "پذیرایی و آشپزخانه",
+   "created_at": "2022-11-02"
+  },
+  {
+   "name": "3178917221102204730.jpg",
+   "url": "3178917221102204730.jpg",
+   "preview": "UHH,@gyqIp#R?vXmn%oJ0$WEjFNa}@xtIoM{",
+   "description": "آشپزخانه و پله های دسترسی به طبقه بالا",
+   "created_at": "2022-11-02"
+  },
+  {
+   "name": "3178917250504003749.jpg",
+   "url": "2025/05/04/3178917250504003749.jpg",
+   "preview": "UVF|}A={9uad}=$gNHbbjDRPRko#-Us.NHRl",
+   "description": "اتاق خواب پایین 1",
+   "created_at": "2025-05-04"
+  },
+  {
+   "name": "3178917250504003815.jpg",
+   "url": "2025/05/04/3178917250504003815.jpg",
+   "preview": "UZG%;{=^EK--};%JXR%0el%K%foI=_%0odt5",
+   "description": "اتاق خواب پایین 2",
+   "created_at": "2025-05-04"
+  },
+  {
+   "name": "3178917250504003625.jpg",
+   "url": "2025/05/04/3178917250504003625.jpg",
+   "preview": "UTD[UqxtMxr?}=W;NHs.,.R+T0t6=_WVR*s:",
+   "description": "اتاق خواب بالا 3",
+   "created_at": "2025-05-04"
+  },
+  {
+   "name": "3178917221106120147.jpg",
+   "url": "3178917221106120147.jpg",
+   "preview": "UdF?Iexu%M_3~qxu%M%gxutQt7t7.8t7t7xu",
+   "description": "حمام مشترک با سرویس ایرانی و فرنگی",
+   "created_at": "2022-11-06"
+  },
+  {
+   "name": "3178917221106120238.jpg",
+   "url": "3178917221106120238.jpg",
+   "preview": "UUFYojxsIU-:~pxuRjs:%Mxts:WB_2t6WAt7",
+   "description": "سرویس فرنگی مشترک با ایرانی و حمام",
+   "created_at": "2022-11-06"
+  },
+  {
+   "name": "3178917221106120527.jpg",
+   "url": "3178917221106120527.jpg",
+   "preview": "UYF=,L%MWB?a%Ljtxuxu%Lofj[t6~pxuWBxu",
+   "description": "سرویس ایرانی مشترک با حمام و فرنگی",
+   "created_at": "2022-11-06"
+  },
+  {
+   "name": "3178917250504003657.jpg",
+   "url": "2025/05/04/3178917250504003657.jpg",
+   "preview": "UaEpDyo|tOxs_MbuaxobXmx]RPWA%g-;RPRj",
+   "description": null,
+   "created_at": "2025-05-04"
+  },
+  {
+   "name": "3178917230818165952.jpg",
+   "url": "2023/08/18/3178917230818165952.jpg",
+   "preview": "UBAmPL~Wt7~W%LofRjofD%M{IU9Z-:ofM{M|",
+   "description": null,
+   "created_at": "2023-08-18"
+  },
+  {
+   "name": "3178917230818170001.jpg",
+   "url": "2023/08/18/3178917230818170001.jpg",
+   "preview": "UF9tJl~p%M%LoeM{IUM{t7ofRjRj_2?axuxt",
+   "description": null,
+   "created_at": "2023-08-18"
+  },
+  {
+   "name": "3178917230818170008.jpg",
+   "url": "2023/08/18/3178917230818170008.jpg",
+   "preview": "UVBNTVxYMwW.x]Mxoft7%NMxWBoz_NnhM_bH",
+   "description": null,
+   "created_at": "2023-08-18"
+  },
+  {
+   "name": "3178917250504004230.jpg",
+   "url": "2025/05/04/3178917250504004230.jpg",
+   "preview": "UuGb-URjIAoI_Nn$ROjY?vaeRPj?_NRjM_oc",
+   "description": null,
+   "created_at": "2025-05-04"
+  },
+  {
+   "name": "3178917250504003722.jpg",
+   "url": "2025/05/04/3178917250504003722.jpg",
+   "preview": "USGu~h_MNb%d?Yxaofk9ITMwacR$^}ouRit5",
+   "description": "تصویر هوایی اقامتگاه",
+   "created_at": "2025-05-04"
+  },
+  {
+   "name": "3178917221102205843.jpg",
+   "url": "3178917221102205843.jpg",
+   "preview": "UQAcvBs?D}X5_4ofInf+y8oyWEkC%Ot8WTW.",
+   "description": "استخر روباز آبگرم به همراه نما کلی اقامتگاه",
+   "created_at": "2022-11-02"
+  },
+  {
+   "name": "3178917230818165957.jpg",
+   "url": "2023/08/18/3178917230818165957.jpg",
+   "preview": "UI7_NTxwkDx^t:kEt8tSp1WEj]og%Nj]Rjfl",
+   "description": null,
+   "created_at": "2023-08-18"
+  },
+  {
+   "name": "3178917250504003844.jpg",
+   "url": "2025/05/04/3178917250504003844.jpg",
+   "preview": "UREMzR*0Iq-;^*jDR4%LrqROoI%M.ST0kD-;",
+   "description": "استخر",
+   "created_at": "2025-05-04"
+  },
+  {
+   "name": "3178917230818165840.jpg",
+   "url": "2023/08/18/3178917230818165840.jpg",
+   "preview": "UbECm|-:IVkB~p%LM{kB?bxtM{of^*t6Ioof",
+   "description": "نورپردازی در شب",
+   "created_at": "2023-08-18"
+  }
+ ],
+ "vr_photo": null,
+ "video_url": null,
+ "allocation": "entire_place",
+ "types": [
+  "cottage",
+  "swiss_cottage",
+  "wooden_cottage"
+ ],
+ "regions": [
+  "forest",
+  "rural"
+ ],
+ "floor_area": 120,
+ "land_area": 800,
+ "floors_count": 0,
+ "bedrooms": 3,
+ "sleep_arrange": [
+  {
+   "space_id": 1,
+   "single": 0,
+   "double": 1,
+   "mattress": 0,
+   "sofa_bed": 0,
+   "etc": ""
+  },
+  {
+   "space_id": 2,
+   "single": 0,
+   "double": 1,
+   "mattress": 0,
+   "sofa_bed": 0,
+   "etc": ""
+  },
+  {
+   "space_id": 3,
+   "single": 0,
+   "double": 1,
+   "mattress": 0,
+   "sofa_bed": 0,
+   "etc": ""
+  },
+  {
+   "space_id": 0,
+   "single": 0,
+   "double": 0,
+   "mattress": 0,
+   "sofa_bed": 0,
+   "etc": ""
+  }
+ ],
+ "sleep_description": null,
+ "guest_number": 6,
+ "max_guest_number": 6,
+ "stays_min": 1,
+ "stays_max": null,
+ "entrance_time_min": 14,
+ "entrance_time_max": 22,
+ "leaving_time": 12,
+ "features": [
+  {
+   "name": "essentials",
+   "description": "کاغذ توالت‌، مایع ظرفشویی‌، مایع دستشویی‌"
+  },
+  {
+   "name": "electricity",
+   "description": null
+  },
+  {
+   "name": "water",
+   "description": "لوله کشی آب شهری و قابل شرب است."
+  },
+  {
+   "name": "heating",
+   "description": "گرمایش از کف"
+  },
+  {
+   "name": "cooler",
+   "description": "یک دستگاه اسپیلت ۲۴۰۰۰ در اتاق طبقه بالا و یک دستگاه اسپلیت ۱۲۰۰۰ در دو اتاق طبقه پایین"
+  },
+  {
+   "name": "kitchen",
+   "description": "برای ۶ نفر بصورت کامل موجود می باشد."
+  },
+  {
+   "name": "stave",
+   "description": null
+  },
+  {
+   "name": "refrigerator",
+   "description": null
+  },
+  {
+   "name": "vacuumcleaner",
+   "description": null
+  },
+  {
+   "name": "furniture",
+   "description": "۷ نفره"
+  },
+  {
+   "name": "table",
+   "description": "۸ نفره"
+  },
+  {
+   "name": "drawer",
+   "description": "یک‌ کمد در اتاق خواب"
+  },
+  {
+   "name": "parking",
+   "description": "روباز برای ۳ خودرو در محوطه"
+  },
+  {
+   "name": "toilet",
+   "description": "بصورت مشترک با حمام و سرویس ایرانی در محوطه"
+  },
+  {
+   "name": "islamictoilet",
+   "description": "یک سرویس داخل ساختمان و یک سرویس در محوطه قرار دارد."
+  },
+  {
+   "name": "barbecue",
+   "description": "باربیکیو"
+  },
+  {
+   "name": "pool",
+   "description": "[{i:0,h:{t:T,a:T},c:{t:F,a:F},w:4,l:8,dx:1.55,di:0.9,t:a,pb:F,pv:T,in:o}]"
+  },
+  {
+   "name": "bathroom",
+   "description": "بصورت مشترک با سرویس ایرانی و فرنگی در کلبه و یک حمام مشترک با ایرانی در محوطه"
+  },
+  {
+   "name": "fireextingu",
+   "description": "یک کپسول آتش نشانی موجود در دو اتاق خواب طبقه همکف"
+  }
+ ],
+ "properties": [
+  {
+   "id": 39,
+   "name": "جذاب"
+  },
+  {
+   "id": 11,
+   "name": "اقامتگاه خاص"
+  },
+  {
+   "id": 70,
+   "name": "حیاط دار"
+  },
+  {
+   "id": 71,
+   "name": "مهمان نواز"
+  },
+  {
+   "id": 49,
+   "name": "استخر آب گرم"
+  },
+  {
+   "id": 56,
+   "name": "استخر روباز"
+  }
+ ],
+ "additional_feature": "زمین بازی ۱۰۰ متری والیبال و بندمینتون",
+ "additional_safety": null,
+ "rules": [
+  "party",
+  "pet",
+  "smoke"
+ ],
+ "additional_rule": "برگزاری مهمانی کوچک و پخش موزیک فقط در داخل کلبه امکان‌پذیر می باشد و ایجاد آلودگی صوتی بعد از ساعت 10 شب در فضای باز ممنوع است.\r\nورود میهمان بیش از تعداد ثبت شده در سند رزرو ممنوع می باشد.\r\nافزودن رنگ‌ یا هر نوع مواد دیگر به استخر ممنوع است.\r\nرعایت شئونات مطابق با قوانین کشور الزامی‌ می باشد.\r\nدر صورت عدم رعایت هرکدام از قوانین، میزبان در هر زمانی نسبت به‌تخلیه اقدام می نماید‌، همچنین در صورت وارد آوردن خسارت به اموال، میزبان خسارت وارده را محاسبه و دریافت می کند.",
+ "cancellation_policy": "hard",
+ "min_price": 7800000,
+ "extra_price": 250000,
+ "is_clean": false,
+ "is_new": false,
+ "is_instant": true,
+ "is_plus": true,
+ "success_books": 200,
+ "discounts": [
+  {
+   "percent": 5,
+   "type": "duration",
+   "min_nights": 5
+  },
+  {
+   "percent": 10,
+   "type": "duration",
+   "min_nights": 10
+  }
+ ],
+ "current_discount": null,
+ "current_discount_percent": 0,
+ "ratings": {
+  "count": 164,
+  "total": 4.9,
+  "accuracy": 4.9,
+  "communication": 5,
+  "cleanliness": 4.8,
+  "location": 4.8,
+  "checkin": 5,
+  "value": 4.8,
+  "comments_grouped_by_rating": {
+   "3": 1,
+   "4": 14,
+   "5": 31
+  },
+  "is_recently": true,
+  "is_bad_host": false
+ },
+ "host": {
+  "id": 1613816,
+  "name": "محمد مهدی",
+  "avatar": "2211052004541613816.jpg",
+  "gender": "male",
+  "description": null,
+  "created_at": "2022-11-06",
+  "response_time": 123,
+  "accept_rate": 88,
+  "host_communication_rate": 5
+ },
+ "meta": {
+  "title": "کلبه سوئیسی استخردار در سوادکوه - شیردارکلا",
+  "description": "اجاره روزانه کلبه جنگلی 3 خوابه در بابلکنار، مازندران برای 6 نفر مهمان با قیمت مناسب و ضمانت تحویل جاجیگا.",
+  "keywords": "اجاره کلبه در سوادکوه,اجاره کلبه در مازندران,جنگلی,روستایی,استخردار,اجاره کلبه در شمال,اجاره روزانه,اجاره آنلاین ویلا"
+ }
+}

@@ -1,0 +1,483 @@
+{
+ "id": 3264676,
+ "status": "active",
+ "units_count": 1,
+ "url": "/room/3264676",
+ "short_url": "/r/2oz0",
+ "title": "کلبه سوئیسی استخردار بابلکنار - شیردارکلا",
+ "description": "این کلبه سوئیسی سه خوابه که یک اتاق خواب آن مستر است با استخر آبگرم سرپوشیده و تراسی دلباز رو به منظره ای دلنشین در روستای شیردارکلا واقع شده که تا جنگل حدود 2 کیلومتر و تا لفور حدود 5 کیلومتر فاصله دارد.\nاین کلبه دوبلکس در طبقه همکف دارای پذیرایی، آشپزخانه ، اتاق خواب، استخر، حمام با سرویس ایرانی می باشد و در طبقه دوم نیز شامل دو اتاق خواب (یکی مستر) و تراسی دلباز است.\nحیاط اقامتگاه با دیوار محصور شده و میزبان در همسایگی سکونت دارد.\nبرای تهیه مایحتاج خود می توانید از سوپرمارکت و نانوایی در فاصله حدود 300 متری اقامتگاه استفاده نمایید.\nکیفیت شبکه تلفن همراه برای دو اپراتور ایرانسل و همراه اول در مکالمه خوب و دسترسی به اینترنت به صورت 4g است.\nگفتنی است حدود 100 متر مسیر منتهی به اقامتگاه به صورت جاده خاکی می باشد.\nمنطقه لفور با برخورداری از آب و هوای دل انگیز و خنک، طبیعت چشم نواز از کوه و جنگل، آبشارهای طبیعی و خروشان نظیر هفت آبشار، گزو، پلنگ‌دره با حوضچه های سنگی، سد لفور و پوشش های گیاهی متعدد سفری آرامش بخش و فراموش نشدنی را با جاذبه های بی نظیر برایتان به ارمغان خواهد داشت.",
+ "geo": {
+  "lat": 36.3402,
+  "lng": 52.7759
+ },
+ "province": {
+  "id": "p26",
+  "name": "مازندران",
+  "url": "/s/mazandaran"
+ },
+ "city": {
+  "id": 467,
+  "name": "بابلکنار",
+  "url": "/s/babolkenar"
+ },
+ "pictures": [
+  {
+   "name": "3264676250415115201.jpg",
+   "url": "2025/04/15/3264676250415115201.jpg",
+   "preview": "U~GJT.t8Riof_Nozaet7.9ozjYt7%ht7WBj]",
+   "description": "نما کلبه سوئیسی",
+   "created_at": "2025-04-15"
+  },
+  {
+   "name": "3264676250527172621.jpg",
+   "url": "2025/05/27/3264676250527172621.jpg",
+   "preview": "USC%mi.8Z~-;~pxujZ%MxAj@ozoyo~bbf5a|",
+   "description": "استخر سرپوشیده",
+   "created_at": "2025-05-27"
+  },
+  {
+   "name": "3264676250527171654.jpg",
+   "url": "2025/05/27/3264676250527171654.jpg",
+   "preview": "U,D,$V%gR%tS.Ax^aho#%htSazo#%ht8WVo#",
+   "description": "ویو روف گاردن ( کوه دماوند)",
+   "created_at": "2025-05-27"
+  },
+  {
+   "name": "32646762601172143242002648.jpg",
+   "url": "2026/01/17/32646762601172143242002648.jpg",
+   "preview": "USD[:~D%57?v~UMxEMtlxZM{Rka#-URkR+s:",
+   "description": "میز غذا خوری و پذیرایی",
+   "created_at": "2026-01-17"
+  },
+  {
+   "name": "32646762601172144358951301.jpg",
+   "url": "2026/01/17/32646762601172144358951301.jpg",
+   "preview": "UYF#jfE1M|-p-OkDR*axxCofIqRk~AIoIqt7",
+   "description": "پذیرایی و میز فوتبال دستی",
+   "created_at": "2026-01-17"
+  },
+  {
+   "name": "32646762601172143401425645.jpg",
+   "url": "2026/01/17/32646762601172143401425645.jpg",
+   "preview": "UTF;[#~BivrW~BXSIUR6xZNdNKWC-QxZt7xZ",
+   "description": "پذیرایی",
+   "created_at": "2026-01-17"
+  },
+  {
+   "name": "32646762601172143333261457.jpg",
+   "url": "2026/01/17/32646762601172143333261457.jpg",
+   "preview": "UYG@D3=v-T-T]h$$-6-7#+jZs.xF}@oJkCoe",
+   "description": "پذیرایی",
+   "created_at": "2026-01-17"
+  },
+  {
+   "name": "32646762604050235486528903.jpg",
+   "url": "2026/04/05/32646762604050235486528903.jpg",
+   "preview": "UZGG,]s;EfxC}?ozjFxCxZoew^w]=_oKn+xF",
+   "description": null,
+   "created_at": "2026-04-05"
+  },
+  {
+   "name": "3264676250601205135.jpg",
+   "url": "2025/06/01/3264676250601205135.jpg",
+   "preview": "UcGt[@?GNe%0~9kCNJ$~NFIpR.xZt6azWrt6",
+   "description": "پذیرایی",
+   "created_at": "2025-06-01"
+  },
+  {
+   "name": "32646762604050232407053591.jpg",
+   "url": "2026/04/05/32646762604050232407053591.jpg",
+   "preview": "UfG@Y@xvtk-pawNbaMs,nNR+aenh}@ofg2xZ",
+   "description": null,
+   "created_at": "2026-04-05"
+  },
+  {
+   "name": "32646762601172144185806111.jpg",
+   "url": "2026/01/17/32646762601172144185806111.jpg",
+   "preview": "UYHxW*%hU[+?_4tSVrsRMxjFbxoz-6ofbIw]",
+   "description": "پذیرایی",
+   "created_at": "2026-01-17"
+  },
+  {
+   "name": "3264676250527172615.jpg",
+   "url": "2025/05/27/3264676250527172615.jpg",
+   "preview": "UsH_3.-:rB,A~VtRZ~wt%LX8adn~xZj[s9ni",
+   "description": "پذیرایی",
+   "created_at": "2025-05-27"
+  },
+  {
+   "name": "3264676250527175055.jpg",
+   "url": "2025/05/27/3264676250527175055.jpg",
+   "preview": "UXG@xX^$$d=t-O$yxWxCn3r=$*oM~9%0xDs.",
+   "description": "آشپزخانه",
+   "created_at": "2025-05-27"
+  },
+  {
+   "name": "32646762601172144085506029.jpg",
+   "url": "2026/01/17/32646762601172144085506029.jpg",
+   "preview": "URFN*Q}==^=v}mwb-6$y,.jYs:of^ixZofs:",
+   "description": "میز غذا خوری و آشپزخانه",
+   "created_at": "2026-01-17"
+  },
+  {
+   "name": "3264676250601205138.jpg",
+   "url": "2025/06/01/3264676250601205138.jpg",
+   "preview": "UYGHn_?G-:^*-p%2%2%2%1xZRkoe~As-NHoe",
+   "description": "پرده ورودی",
+   "created_at": "2025-06-01"
+  },
+  {
+   "name": "32646762601172144261459621.jpg",
+   "url": "2026/01/17/32646762601172144261459621.jpg",
+   "preview": "UvJZht-TD*i{~9s,M{jG%1oKWBay-ns.WCay",
+   "description": "اتاق خواب",
+   "created_at": "2026-01-17"
+  },
+  {
+   "name": "32646762601172143177764513.jpg",
+   "url": "2026/01/17/32646762601172143177764513.jpg",
+   "preview": "UTH^hD={I@%1};WDt7%0IUM|WBjE$NxWM|Rk",
+   "description": "اتاق خواب اول طبقه بالا مستر",
+   "created_at": "2026-01-17"
+  },
+  {
+   "name": "32646762601172142571575396.jpg",
+   "url": "2026/01/17/32646762601172142571575396.jpg",
+   "preview": "UjH_G7rVRj-;~UwHj]ogxaV?R-W?%1RkNHof",
+   "description": "اتاق خواب",
+   "created_at": "2026-01-17"
+  },
+  {
+   "name": "32646762601172143504404214.jpg",
+   "url": "2026/01/17/32646762601172143504404214.jpg",
+   "preview": "UbI|,S^i8_xB~9slVrxZ%Kj?oJt6^%xtR*oJ",
+   "description": "اتاق خواب دوم طبقه بالا",
+   "created_at": "2026-01-17"
+  },
+  {
+   "name": "32646762601172147516556769.jpg",
+   "url": "2026/01/17/32646762601172147516556769.jpg",
+   "preview": "USH.ZvIU-=.8_NWVxutQE2WXxtae-=M|%Mt7",
+   "description": "حمام با سرویس فرنگی طبقه پایین",
+   "created_at": "2026-01-17"
+  },
+  {
+   "name": "3264676250415115308.jpg",
+   "url": "2025/04/15/3264676250415115308.jpg",
+   "preview": "UeF$Lo?GaK%2~q%2oJt6-;ofaxjs?at7RkoL",
+   "description": "حمام با سرویس فرنگی طبقه بالا",
+   "created_at": "2025-04-15"
+  },
+  {
+   "name": "32646762601172145209065795.jpg",
+   "url": "2026/01/17/32646762601172145209065795.jpg",
+   "preview": "UECG[N.TMd?aIVj]bIRk00IUofIV.TkDadxa",
+   "description": "استخر سرپوشیده",
+   "created_at": "2026-01-17"
+  },
+  {
+   "name": "3264676250527172609.jpg",
+   "url": "2025/05/27/3264676250527172609.jpg",
+   "preview": "ULAno#.S9GNI_MxuIARjW?aye,adKQX9%1s:",
+   "description": "استخر سرپوشیده",
+   "created_at": "2025-05-27"
+  },
+  {
+   "name": "32646762601172144581535141.jpg",
+   "url": "2026/01/17/32646762601172144581535141.jpg",
+   "preview": "UbEWW_%fo#-:^lxbo#xv#us=ozt8_LtQt7xu",
+   "description": "تراس با سایه بان و میز و صندلی باغی",
+   "created_at": "2026-01-17"
+  },
+  {
+   "name": "32646762601172143595531087.jpg",
+   "url": "2026/01/17/32646762601172143595531087.jpg",
+   "preview": "U@FG8|tRj]%N?wt8j]tS%ht7fkog%gt7j]oz",
+   "description": "روف گاردن",
+   "created_at": "2026-01-17"
+  },
+  {
+   "name": "3264676250712215227.jpg",
+   "url": "2025/07/12/3264676250712215227.jpg",
+   "preview": "UxED6it7xt-;?wogaxt8.9ofRjkD?wofWBt8",
+   "description": "باربیکیو",
+   "created_at": "2025-07-12"
+  },
+  {
+   "name": "3264676250415115219.jpg",
+   "url": "2025/04/15/3264676250415115219.jpg",
+   "preview": "UTHLey_3%2~W~qt7%M?bxvNGkCxu_3ofWCxu",
+   "description": "حمام با سرویس ایرانی طبقه پایین",
+   "created_at": "2025-04-15"
+  },
+  {
+   "name": "3264676250527172618.jpg",
+   "url": "2025/05/27/3264676250527172618.jpg",
+   "preview": "UEBqSR.TQ,?aMyj]W=NH00IUofIV*0f,jExa",
+   "description": "استخر سرپوشیده، پنجره پرده دارد",
+   "created_at": "2025-05-27"
+  },
+  {
+   "name": "3264676250415115232.jpg",
+   "url": "2025/04/15/3264676250415115232.jpg",
+   "preview": "UPE:Vj.8r=_2~V%LWVxtD*WBNHRjOuR-nibb",
+   "description": "استخر سرپوشیده",
+   "created_at": "2025-04-15"
+  },
+  {
+   "name": "3264676250527172822.jpg",
+   "url": "2025/05/27/3264676250527172822.jpg",
+   "preview": "U{Fj80tSj[xv.Ao#oft8W@WFofkCo~R,fkkD",
+   "description": "ویو ویلا",
+   "created_at": "2025-05-27"
+  },
+  {
+   "name": "32646762604050234473977848.jpg",
+   "url": "2026/04/05/32646762604050234473977848.jpg",
+   "preview": "UgCsm-tSNGWZ.AkXaybeOcWYsop0X;oMjFgP",
+   "description": null,
+   "created_at": "2026-04-05"
+  },
+  {
+   "name": "3264676250415115221.jpg",
+   "url": "2025/04/15/3264676250415115221.jpg",
+   "preview": "UOC?$PxuIntSlCR+acoz4:WBn$WB%0t6WVaz",
+   "description": "منظره تراس دلباز در غروب",
+   "created_at": "2025-04-15"
+  },
+  {
+   "name": "3264676250415115245.jpg",
+   "url": "2025/04/15/3264676250415115245.jpg",
+   "preview": "U86@s8xD~7^%~An$=?-n-oaexVxt?Gf5$}%1",
+   "description": "منظره شهر از کلبه",
+   "created_at": "2025-04-15"
+  }
+ ],
+ "vr_photo": null,
+ "video_url": null,
+ "allocation": "entire_place",
+ "types": [
+  "cottage",
+  "swiss_cottage",
+  "wooden_cottage"
+ ],
+ "regions": [
+  "rural"
+ ],
+ "floor_area": 160,
+ "land_area": 400,
+ "floors_count": 0,
+ "bedrooms": 3,
+ "sleep_arrange": [
+  {
+   "space_id": 1,
+   "single": 0,
+   "double": 1,
+   "mattress": 0,
+   "sofa_bed": 0,
+   "etc": ""
+  },
+  {
+   "space_id": 2,
+   "single": 0,
+   "double": 1,
+   "mattress": 0,
+   "sofa_bed": 0,
+   "etc": ""
+  },
+  {
+   "space_id": 3,
+   "single": 0,
+   "double": 1,
+   "mattress": 0,
+   "sofa_bed": 0,
+   "etc": ""
+  },
+  {
+   "space_id": 0,
+   "single": 0,
+   "double": 0,
+   "mattress": 4,
+   "sofa_bed": 0,
+   "etc": ""
+  }
+ ],
+ "sleep_description": null,
+ "guest_number": 6,
+ "max_guest_number": 8,
+ "stays_min": 1,
+ "stays_max": null,
+ "entrance_time_min": 14,
+ "entrance_time_max": 0,
+ "leaving_time": 12,
+ "features": [
+  {
+   "name": "essentials",
+   "description": "مایع ظرفشویی، مایع دستشویی، دستمال کاغذی، دستمال کاغذی"
+  },
+  {
+   "name": "electricity",
+   "description": null
+  },
+  {
+   "name": "water",
+   "description": "آب لوله کشی شهری"
+  },
+  {
+   "name": "tv",
+   "description": "تلویزیون ال ای دی 42 اینچ"
+  },
+  {
+   "name": "heating",
+   "description": "پکیج - رادیاتور"
+  },
+  {
+   "name": "cooler",
+   "description": "یک دستگاه اسپلیت 24000 در پذیرایی و یک دستگاه اسپلیت 10000 در هر اتاق خواب"
+  },
+  {
+   "name": "kitchen",
+   "description": "برای 6 نفر  کامل موجود می باشد."
+  },
+  {
+   "name": "stave",
+   "description": null
+  },
+  {
+   "name": "refrigerator",
+   "description": null
+  },
+  {
+   "name": "vacuumcleaner",
+   "description": null
+  },
+  {
+   "name": "furniture",
+   "description": "مبلمان 8 نفره"
+  },
+  {
+   "name": "table",
+   "description": "6 نفره"
+  },
+  {
+   "name": "drawer",
+   "description": null
+  },
+  {
+   "name": "parking",
+   "description": "پارکینگ روباز برای سه خودرو در محوطه"
+  },
+  {
+   "name": "toilet",
+   "description": "دو عدد"
+  },
+  {
+   "name": "islamictoilet",
+   "description": "یک عدد"
+  },
+  {
+   "name": "barbecue",
+   "description": "باربیکیو"
+  },
+  {
+   "name": "pool",
+   "description": "[{i:0,h:{t:T,a:T},c:{t:F,a:F},w:3,l:6,dx:1.6,di:1,t:a,pb:F,pv:T,in:i,m:دارای دوش و سرویس فرنگی}]"
+  },
+  {
+   "name": "janitor",
+   "description": "میزبان در همسایگی سکونت دارد."
+  },
+  {
+   "name": "bathroom",
+   "description": "سه عدد"
+  },
+  {
+   "name": "fireextingu",
+   "description": "در آشپزخانه"
+  },
+  {
+   "name": "foosball",
+   "description": null
+  }
+ ],
+ "properties": [
+  {
+   "id": 52,
+   "name": "خوش منظره"
+  },
+  {
+   "id": 39,
+   "name": "جذاب"
+  },
+  {
+   "id": 71,
+   "name": "مهمان نواز"
+  },
+  {
+   "id": 49,
+   "name": "استخر آب گرم"
+  },
+  {
+   "id": 55,
+   "name": "استخر سرپوشیده"
+  }
+ ],
+ "additional_feature": "دارای پک بهداشتی هتلی ۳ تیکه شامل ۱ عدد روتختی و ۲ عدد رو بالشتی",
+ "additional_safety": null,
+ "rules": [
+  "pet",
+  "smoke",
+  "unmarried"
+ ],
+ "additional_rule": "به فرد و جمع های مجردی اجاره داده نمی شود.",
+ "cancellation_policy": "middle",
+ "min_price": 8000000,
+ "extra_price": 1000000,
+ "is_clean": false,
+ "is_new": false,
+ "is_instant": false,
+ "is_plus": true,
+ "success_books": 50,
+ "discounts": [
+  {
+   "percent": 10,
+   "type": "duration",
+   "min_nights": 10
+  }
+ ],
+ "current_discount": null,
+ "current_discount_percent": 0,
+ "ratings": {
+  "count": 27,
+  "total": 4.9,
+  "accuracy": 4.9,
+  "communication": 5,
+  "cleanliness": 5,
+  "location": 4.8,
+  "checkin": 4.9,
+  "value": 4.7,
+  "comments_grouped_by_rating": {
+   "3": 1,
+   "4": 5,
+   "5": 17
+  },
+  "is_recently": true,
+  "is_bad_host": false
+ },
+ "host": {
+  "id": 2486539,
+  "name": "رحمت",
+  "avatar": "2025/04/16/2504161611222486539.jpg",
+  "gender": "male",
+  "description": "رحمت هستم\nمیزبان حضور گرم شما عزیزان هستم",
+  "created_at": "2025-04-21",
+  "response_time": 213,
+  "accept_rate": 94,
+  "host_communication_rate": 5
+ },
+ "meta": {
+  "title": "کلبه سوئیسی استخردار بابلکنار - شیردارکلا",
+  "description": "اجاره روزانه کلبه روستایی 3 خوابه در بابلکنار، مازندران برای 8 نفر مهمان با قیمت مناسب و ضمانت تحویل جاجیگا.",
+  "keywords": null
+ }
+}

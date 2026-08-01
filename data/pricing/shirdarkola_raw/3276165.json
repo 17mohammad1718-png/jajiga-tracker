@@ -1,0 +1,679 @@
+{
+ "id": 3276165,
+ "status": "active",
+ "units_count": 1,
+ "url": "/room/3276165",
+ "short_url": "/r/2xu5",
+ "title": "اجاره خانه مبله در بابلکنار - شیردارکلا - ط ۲",
+ "description": "**اجاره خانه مبله در بابلکنار - شیردارکلا - ط ۲**\nاین واحد مبله دو خوابه با دسترسی حدود ۱۰ پله در طبقه دوم یک ساختمان چهار طبقه سه واحدی دارای بالکن دلباز و حیاطی پلکانی (حدود ۵ پله) در روستای خوش آب و هوای شیردارکلا واقع شده است که با شهر شیرگاه حدود ۱۲ کیلومتر فاصله دارد.\nمحوطه اطراف حیاط از سه طرف با فنس و طرف دیگر با دیوار محصور شده و واحد نگهبانی ۲۴ ساعته در مجموعه مستقر است، همچنین ورودی و حیاط با مهمانان واحد های دیگر به صورت مشترک استفاده می گردد.\nمهمانان گرامی می توانند برای تهیه مایحتاج روزانه خود از سوپرمارکت و نانوایی در فاصله حدود یک کیلومتری از واحد استفاده نمایند.\nکیفیت پوشش شبکه تلفن همراه برای دو اپراتور ایرانسل و همراه اول در مکالمه خوب و پوشش اینترنت به صورت ۴g است.\nلازم به ذکر است حدود ۵۰ متر از مسیر منتهی به کلبه به صورت جاده خاکی است.\nسد سنبل رود، سد لفور، آبشار اسکلیم، هفت آبشار تیرکن از جاذبه های طبیعی و گردشگری نزدیک به این اقامتگاه می باشد.\n**تنها حمام این واحد در یکی از اتاق خواب ها قرار دارد.**",
+ "geo": {
+  "lat": 36.3377,
+  "lng": 52.7741
+ },
+ "province": {
+  "id": "p26",
+  "name": "مازندران",
+  "url": "/s/mazandaran"
+ },
+ "city": {
+  "id": 467,
+  "name": "بابلکنار",
+  "url": "/s/babolkenar"
+ },
+ "pictures": [
+  {
+   "name": "3276165250905160244.jpg",
+   "url": "2025/09/05/3276165250905160244.jpg",
+   "preview": "UpHBue^+xv%g~q%NtS%N%NtRxvxv%N%Mxuog",
+   "description": "نمای ساختمان",
+   "created_at": "2025-09-05"
+  },
+  {
+   "name": "3276165250905160253.jpg",
+   "url": "2025/09/05/3276165250905160253.jpg",
+   "preview": "UcFPQg?HRjx[~q%LoftR-=t6j]t8?aocRkxt",
+   "description": "بالکن",
+   "created_at": "2025-09-05"
+  },
+  {
+   "name": "3276165250905160256.jpg",
+   "url": "2025/09/05/3276165250905160256.jpg",
+   "preview": "UVF=:WRNMy-p~WRONFxu?IVsR%tR~pRORkxu",
+   "description": "بالکن",
+   "created_at": "2025-09-05"
+  },
+  {
+   "name": "3276165250818194448.jpg",
+   "url": "2025/08/18/3276165250818194448.jpg",
+   "preview": "UhI#Z4-pxZ-:~pxujYt6s:ofaxe:?GoKs.xa",
+   "description": "پذیرایی",
+   "created_at": "2025-08-18"
+  },
+  {
+   "name": "3276165250905160351.jpg",
+   "url": "2025/09/05/3276165250905160351.jpg",
+   "preview": "UXHLJ2-oR%?H~Vf5M{t6ocM|afWC?axat7t7",
+   "description": "پذیرایی",
+   "created_at": "2025-09-05"
+  },
+  {
+   "name": "3276165250818195150.jpg",
+   "url": "2025/08/18/3276165250818195150.jpg",
+   "preview": "UhIhNmx]t7?H~pt8bIxuxtt7bHWV?Ht7oyt7",
+   "description": "پذیرایی",
+   "created_at": "2025-08-18"
+  },
+  {
+   "name": "3276165250905160248.jpg",
+   "url": "2025/09/05/3276165250905160248.jpg",
+   "preview": "UZHU,.%MIU%2~VofM{axt6RjWBjt?aofoLt7",
+   "description": "پذیرایی",
+   "created_at": "2025-09-05"
+  },
+  {
+   "name": "3276165250818195117.jpg",
+   "url": "2025/08/18/3276165250818195117.jpg",
+   "preview": "UjIX:FxaNG%f~pxuozt7$*j?s:t6-oWBRjt6",
+   "description": "پذیرایی",
+   "created_at": "2025-08-18"
+  },
+  {
+   "name": "3276165250818195313.jpg",
+   "url": "2025/08/18/3276165250818195313.jpg",
+   "preview": "U#J832kDt6-:~pt8j[xu%Mt7j[kC-:ofofof",
+   "description": "پذیرایی",
+   "created_at": "2025-08-18"
+  },
+  {
+   "name": "3276165250818195157.jpg",
+   "url": "2025/08/18/3276165250818195157.jpg",
+   "preview": "USELsfM|jY%L~Vt6Rjs:-ot7RjWB?Gayj[t7",
+   "description": "پذیرایی",
+   "created_at": "2025-08-18"
+  },
+  {
+   "name": "3276165250818195205.jpg",
+   "url": "2025/08/18/3276165250818195205.jpg",
+   "preview": "UXH.1l?aD%xa~pV@IUt7%MxZ%L%L_3?G%Mxu",
+   "description": "پذیرایی",
+   "created_at": "2025-08-18"
+  },
+  {
+   "name": "3276165250818195102.jpg",
+   "url": "2025/08/18/3276165250818195102.jpg",
+   "preview": "UiKnF{-V-:?a_2s:xu%Lxtj]NGRj~pt7NGWV",
+   "description": "آشپزخانه",
+   "created_at": "2025-08-18"
+  },
+  {
+   "name": "3276165250818195303.jpg",
+   "url": "2025/08/18/3276165250818195303.jpg",
+   "preview": "UZI;|x%zS~%f~WxuR+ofxGsWnls;~Vs:oJxa",
+   "description": "آشپزخانه",
+   "created_at": "2025-08-18"
+  },
+  {
+   "name": "3276165250818195235.jpg",
+   "url": "2025/08/18/3276165250818195235.jpg",
+   "preview": "ULB:dB9GIUt6~Wj]D*WB-qxuIVR*?bM|WBt7",
+   "description": "پذیرایی",
+   "created_at": "2025-08-18"
+  },
+  {
+   "name": "3276165250818195241.jpg",
+   "url": "2025/08/18/3276165250818195241.jpg",
+   "preview": "UHC6PzRQ01-;-o%2NGE2WXxtf5Io~VRjE1%2",
+   "description": "آشپزخانه",
+   "created_at": "2025-08-18"
+  },
+  {
+   "name": "3276165250819095906.jpg",
+   "url": "2025/08/19/3276165250819095906.jpg",
+   "preview": "UjIOe2xbt6.7~pt8tR%Lxsj]j[oc-;azjrof",
+   "description": "اتاق خواب 1",
+   "created_at": "2025-08-19"
+  },
+  {
+   "name": "3276165250819095922.jpg",
+   "url": "2025/08/19/3276165250819095922.jpg",
+   "preview": "UiHenARiRi^+~pWCM{%Ls.kCWCae-;ayoft6",
+   "description": "اتاق خواب 1",
+   "created_at": "2025-08-19"
+  },
+  {
+   "name": "3276165250819095914.jpg",
+   "url": "2025/08/19/3276165250819095914.jpg",
+   "preview": "UiIX{i-;M{-;~oadM{t6ocRPV@oK-;t7f6t7",
+   "description": "اتاق خواب 1",
+   "created_at": "2025-08-19"
+  },
+  {
+   "name": "3276165250818195053.jpg",
+   "url": "2025/08/18/3276165250818195053.jpg",
+   "preview": "UhGRhw-:?G?G~V%Lxt%2s:ofj[azxaayayj[",
+   "description": "اتاق خواب 1",
+   "created_at": "2025-08-18"
+  },
+  {
+   "name": "3276165250819095929.jpg",
+   "url": "2025/08/19/3276165250819095929.jpg",
+   "preview": "UfGu?xtRtQ%3~pjZWUaxxaoIWDWA%2ofj]t7",
+   "description": "اتاق خواب 2",
+   "created_at": "2025-08-19"
+  },
+  {
+   "name": "3276165250905160334.jpg",
+   "url": "2025/09/05/3276165250905160334.jpg",
+   "preview": "UfGu?xtRtQ%3~pjZWUaxxaoIWDWA%2ofj]t7",
+   "description": null,
+   "created_at": "2025-09-05"
+  },
+  {
+   "name": "3276165250819095937.jpg",
+   "url": "2025/08/19/3276165250819095937.jpg",
+   "preview": "UUGu%Xxrx@~p~ptQox%LM{ohjdV@-;ahj]t7",
+   "description": "اتاق خواب 2",
+   "created_at": "2025-08-19"
+  },
+  {
+   "name": "3276165250818195039.jpg",
+   "url": "2025/08/18/3276165250818195039.jpg",
+   "preview": "UoIEhM_3~q_2?Hxaxuxajaaef6WB?Hxu%Mxt",
+   "description": "حمام",
+   "created_at": "2025-08-18"
+  },
+  {
+   "name": "3276165250905160343.jpg",
+   "url": "2025/09/05/3276165250905160343.jpg",
+   "preview": "USFht[D*9v?a~WRjS5tRt8oKxZS5?HRkofoz",
+   "description": null,
+   "created_at": "2025-09-05"
+  },
+  {
+   "name": "3276165250905160246.jpg",
+   "url": "2025/09/05/3276165250905160246.jpg",
+   "preview": "UbKnMDD%IU_2_2M|ayxubFayjtfR~pRjRjxu",
+   "description": null,
+   "created_at": "2025-09-05"
+  },
+  {
+   "name": "3276165250818195026.jpg",
+   "url": "2025/08/18/3276165250818195026.jpg",
+   "preview": "UOHeUh4o00-p~WM|Ioj[bFj@f7az~WM|IUt7",
+   "description": "سرویس",
+   "created_at": "2025-08-18"
+  },
+  {
+   "name": "3276165250905160319.jpg",
+   "url": "2025/09/05/3276165250905160319.jpg",
+   "preview": "U~KKsE~q_2-p-;%Mxut7j[bGbHj[-p%2xut7",
+   "description": null,
+   "created_at": "2025-09-05"
+  },
+  {
+   "name": "3276165250905160250.jpg",
+   "url": "2025/09/05/3276165250905160250.jpg",
+   "preview": "UYG+aS?ct9-:~XyDR*V@%Nx^SeRj_N-=t8t6",
+   "description": null,
+   "created_at": "2025-09-05"
+  },
+  {
+   "name": "3276165250905160359.jpg",
+   "url": "2025/09/05/3276165250905160359.jpg",
+   "preview": "ULFF{M#uJ4l6=fSv-r%NVGORsqxb_MxIM^Rh",
+   "description": null,
+   "created_at": "2025-09-05"
+  },
+  {
+   "name": "3276165250818195018.jpg",
+   "url": "2025/08/18/3276165250818195018.jpg",
+   "preview": "UVJHmy-pNH?a^*jFRkt7M{V@ayj]~ps.WVxt",
+   "description": null,
+   "created_at": "2025-08-18"
+  },
+  {
+   "name": "3276165250818195032.jpg",
+   "url": "2025/08/18/3276165250818195032.jpg",
+   "preview": "UTEL:1E19Z-;~WWBE1xaofofofRj-;Rjoet7",
+   "description": null,
+   "created_at": "2025-08-18"
+  },
+  {
+   "name": "3276165250818195124.jpg",
+   "url": "2025/08/18/3276165250818195124.jpg",
+   "preview": "UMGu5c564:s:~WIoIpRjIpRjs;WC^*NGWDof",
+   "description": null,
+   "created_at": "2025-08-18"
+  },
+  {
+   "name": "3276165250818195211.jpg",
+   "url": "2025/08/18/3276165250818195211.jpg",
+   "preview": "U}EgH]IUWXyD.TM|a#tStma$jZkXtma$aef,",
+   "description": "نمای ساختمان",
+   "created_at": "2025-08-18"
+  },
+  {
+   "name": "3276165250818195218.jpg",
+   "url": "2025/08/18/3276165250818195218.jpg",
+   "preview": "UiGST4SgM_of_NozNGWB%Mt7bIbH?cozWVog",
+   "description": null,
+   "created_at": "2025-08-18"
+  },
+  {
+   "name": "3276165250818195225.jpg",
+   "url": "2025/08/18/3276165250818195225.jpg",
+   "preview": "U76@vJsm0LNe~UoJ4;R-aejtR+j@D*R+-oxZ",
+   "description": "نمای ساختمان در شب",
+   "created_at": "2025-08-18"
+  },
+  {
+   "name": "3276165250818195251.jpg",
+   "url": "2025/08/18/3276165250818195251.jpg",
+   "preview": "U59Q24~V02IU~BI;0fr=0M57V?xFxu%2s,NG",
+   "description": "نمای ساختمان در شب",
+   "created_at": "2025-08-18"
+  },
+  {
+   "name": "3276165250818195321.jpg",
+   "url": "2025/08/18/3276165250818195321.jpg",
+   "preview": "U97wf_~VEN57^*-:X8Ipbwo#xaoexuxuxaay",
+   "description": "نمای ساختمان در شب",
+   "created_at": "2025-08-18"
+  },
+  {
+   "name": "3276165250818195328.jpg",
+   "url": "2025/08/18/3276165250818195328.jpg",
+   "preview": "U87-1f~AIToI={%1NGE24:R+%MRkE2M|%1-o",
+   "description": null,
+   "created_at": "2025-08-18"
+  },
+  {
+   "name": "3276165250818195338.jpg",
+   "url": "2025/08/18/3276165250818195338.jpg",
+   "preview": "UA8N5;^*I[R.~AxtE3I;xZIp9uIpxtbHRkoe",
+   "description": null,
+   "created_at": "2025-08-18"
+  },
+  {
+   "name": "3276165250905160259.jpg",
+   "url": "2025/09/05/3276165250905160259.jpg",
+   "preview": "U~FF{lxuocxu_4xus.xu.9xaoet7%gs:oeof",
+   "description": null,
+   "created_at": "2025-09-05"
+  }
+ ],
+ "vr_photo": null,
+ "video_url": null,
+ "allocation": "shared_place",
+ "types": [
+  "apartment",
+  "suite"
+ ],
+ "regions": [
+  "rural"
+ ],
+ "floor_area": 120,
+ "land_area": 300,
+ "floors_count": 0,
+ "bedrooms": 2,
+ "sleep_arrange": [
+  {
+   "space_id": 1,
+   "single": 0,
+   "double": 1,
+   "mattress": 0,
+   "sofa_bed": 0,
+   "etc": ""
+  },
+  {
+   "space_id": 2,
+   "single": 0,
+   "double": 0,
+   "mattress": 4,
+   "sofa_bed": 0,
+   "etc": ""
+  },
+  {
+   "space_id": 0,
+   "single": 0,
+   "double": 0,
+   "mattress": 0,
+   "sofa_bed": 0,
+   "etc": ""
+  }
+ ],
+ "sleep_description": null,
+ "guest_number": 4,
+ "max_guest_number": 6,
+ "stays_min": 1,
+ "stays_max": null,
+ "entrance_time_min": 14,
+ "entrance_time_max": 22,
+ "leaving_time": 12,
+ "features": [
+  {
+   "name": "essentials",
+   "description": "مایع ظرفشویی، مایع دستشویی"
+  },
+  {
+   "name": "electricity",
+   "description": null
+  },
+  {
+   "name": "water",
+   "description": "آب لوله کشی شهری"
+  },
+  {
+   "name": "tv",
+   "description": "تلویزیون ال ای دی 43 اینچ"
+  },
+  {
+   "name": "heating",
+   "description": "پکیج - شوفاژ"
+  },
+  {
+   "name": "cooler",
+   "description": "یک دستگاه اسپلیت 30000 در پذیرایی"
+  },
+  {
+   "name": "kitchen",
+   "description": "برای 6 نفر به صورت کامل موجود است."
+  },
+  {
+   "name": "stave",
+   "description": null
+  },
+  {
+   "name": "refrigerator",
+   "description": null
+  },
+  {
+   "name": "furniture",
+   "description": "مبلمان 7 نفره"
+  },
+  {
+   "name": "drawer",
+   "description": null
+  },
+  {
+   "name": "parking",
+   "description": "پارکینگ مسقف برای یک خودرو"
+  },
+  {
+   "name": "islamictoilet",
+   "description": null
+  },
+  {
+   "name": "janitor",
+   "description": "واحد نگهبانی 24 ساعته در مجموعه مستقر است."
+  },
+  {
+   "name": "bathroom",
+   "description": "در اتاق خواب"
+  }
+ ],
+ "properties": [
+  {
+   "id": 52,
+   "name": "خوش منظره"
+  },
+  {
+   "id": 71,
+   "name": "مهمان نواز"
+  }
+ ],
+ "additional_feature": null,
+ "additional_safety": null,
+ "rules": [
+  "pet",
+  "smoke"
+ ],
+ "additional_rule": null,
+ "cancellation_policy": "hard",
+ "min_price": 3000000,
+ "extra_price": 500000,
+ "is_clean": false,
+ "is_new": false,
+ "is_instant": false,
+ "is_plus": true,
+ "success_books": 10,
+ "discounts": [],
+ "current_discount": null,
+ "current_discount_percent": 0,
+ "ratings": {
+  "count": 8,
+  "total": 5,
+  "accuracy": 4.9,
+  "communication": 5,
+  "cleanliness": 5,
+  "location": 4.9,
+  "checkin": 5,
+  "value": 5,
+  "comments_grouped_by_rating": {
+   "4": 1,
+   "5": 7
+  },
+  "is_recently": true,
+  "is_bad_host": false
+ },
+ "host": {
+  "id": 2670973,
+  "name": "مرتضی",
+  "avatar": "2025/08/17/2508172322512670973.jpg",
+  "gender": "male",
+  "description": null,
+  "created_at": "2025-08-19",
+  "response_time": 541,
+  "accept_rate": 96,
+  "host_communication_rate": 5
+ },
+ "meta": {
+  "title": "اجاره خانه مبله در بابلکنار - شیردارکلا - ط ۲",
+  "description": "اجاره روزانه آپارتمان مبله روستایی 2 خوابه در بابلکنار، مازندران برای 6 نفر مهمان با قیمت مناسب و ضمانت تحویل جاجیگا.",
+  "keywords": null
+ },
+ "group_rooms": {
+  "items": [
+   {
+    "id": 3276228,
+    "units_count": 1,
+    "url": "/room/3276228",
+    "short_url": "/r/2xvw",
+    "title": "واحد یکخوابه - ط ۴",
+    "bedrooms": 1,
+    "floor_area": 90,
+    "guest_number": 4,
+    "max_guest_number": 4,
+    "min_price": 2800000,
+    "invoice": {
+     "extra": {
+      "count": 0,
+      "price": 500000,
+      "total": 0
+     },
+     "discount": {
+      "type": null,
+      "percent": 0,
+      "amount": 0
+     },
+     "discounts": [],
+     "final": 2800000,
+     "prices": [
+      1
+     ],
+     "is_bill": false
+    },
+    "pictures": {
+     "total": 1,
+     "items": [
+      {
+       "name": "3276228250905160716.jpg",
+       "preview": "U~F$@YxvWBt8_NxuWUt8?dt8jst7.9t7j[t7",
+       "url": "2025/09/05/3276228250905160716.jpg"
+      }
+     ]
+    }
+   },
+   {
+    "id": 3276226,
+    "units_count": 1,
+    "url": "/room/3276226",
+    "short_url": "/r/2xvu",
+    "title": "واحد یکخوابه - طبقه ۳",
+    "bedrooms": 1,
+    "floor_area": 120,
+    "guest_number": 4,
+    "max_guest_number": 6,
+    "min_price": 2800000,
+    "invoice": {
+     "extra": {
+      "count": 0,
+      "price": 800000,
+      "total": 0
+     },
+     "discount": {
+      "type": null,
+      "percent": 0,
+      "amount": 0
+     },
+     "discounts": [],
+     "final": 2800000,
+     "prices": [
+      1
+     ],
+     "is_bill": false
+    },
+    "pictures": {
+     "total": 1,
+     "items": [
+      {
+       "name": "3276226250819101238.jpg",
+       "preview": "UsDvyXMwMwxv?wMwM_tSx^M_RjtRt7Rif8t8",
+       "url": "2025/08/19/3276226250819101238.jpg"
+      }
+     ]
+    }
+   }
+  ],
+  "count": 2
+ },
+ "group": {
+  "count": 2,
+  "items": [
+   {
+    "id": 3276228,
+    "units_count": 1,
+    "url": "/room/3276228",
+    "short_url": "/r/2xvw",
+    "title": "واحد یکخوابه - ط ۴",
+    "city": "بابلکنار",
+    "bedrooms": 1,
+    "floor_area": 90,
+    "guest_number": 4,
+    "max_guest_number": 4,
+    "is_clean": false,
+    "is_new": false,
+    "is_instant": false,
+    "is_plus": true,
+    "min_price": 2800000,
+    "discount": null,
+    "success_books": 10,
+    "rating": {
+     "count": 10,
+     "total": 5
+    },
+    "host": {
+     "id": 2670973,
+     "avatar": "2025/08/17/2508172322512670973.jpg"
+    },
+    "invoice": {
+     "extra": {
+      "count": 0,
+      "price": 500000,
+      "total": 0
+     },
+     "discount": {
+      "type": null,
+      "percent": 0,
+      "amount": 0
+     },
+     "discounts": [],
+     "final": 2800000,
+     "prices": {
+      "2800000": 1
+     },
+     "is_bill": false
+    },
+    "pictures": {
+     "total": 1,
+     "items": [
+      {
+       "name": "3276228250905160716.jpg",
+       "preview": "U~F$@YxvWBt8_NxuWUt8?dt8jst7.9t7j[t7",
+       "url": "2025/09/05/3276228250905160716.jpg"
+      }
+     ]
+    },
+    "properties": [
+     "is_plus"
+    ]
+   },
+   {
+    "id": 3276226,
+    "units_count": 1,
+    "url": "/room/3276226",
+    "short_url": "/r/2xvu",
+    "title": "واحد یکخوابه - طبقه ۳",
+    "city": "بابلکنار",
+    "bedrooms": 1,
+    "floor_area": 120,
+    "guest_number": 4,
+    "max_guest_number": 6,
+    "is_clean": false,
+    "is_new": false,
+    "is_instant": false,
+    "is_plus": false,
+    "min_price": 2800000,
+    "discount": null,
+    "success_books": 0,
+    "rating": {
+     "count": 4,
+     "total": 5
+    },
+    "host": {
+     "id": 2670973,
+     "avatar": "2025/08/17/2508172322512670973.jpg"
+    },
+    "invoice": {
+     "extra": {
+      "count": 0,
+      "price": 800000,
+      "total": 0
+     },
+     "discount": {
+      "type": null,
+      "percent": 0,
+      "amount": 0
+     },
+     "discounts": [],
+     "final": 2800000,
+     "prices": {
+      "2800000": 1
+     },
+     "is_bill": false
+    },
+    "pictures": {
+     "total": 1,
+     "items": [
+      {
+       "name": "3276226250819101238.jpg",
+       "preview": "UsDvyXMwMwxv?wMwM_tSx^M_RjtRt7Rif8t8",
+       "url": "2025/08/19/3276226250819101238.jpg"
+      }
+     ]
+    },
+    "properties": []
+   }
+  ]
+ }
+}
