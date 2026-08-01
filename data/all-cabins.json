@@ -1742,10 +1742,10 @@
         "pool": 1,
         "jacuzzi": 0,
         "own": false,
-        "occupancy_30": 73,
-        "occupancy_30_unavailable": 22,
+        "occupancy_30": 0,
+        "occupancy_30_unavailable": 0,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-01T10:57:35.108703+00:00"
+        "last_occupancy_attempt": "2026-08-01T11:35:36.540980+00:00"
       }
     ],
     "شیردارکلا": [
@@ -3566,7 +3566,7 @@
         "occupancy_30": 0,
         "occupancy_30_unavailable": 0,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-01T11:19:43.795932+00:00"
+        "last_occupancy_attempt": "2026-08-01T11:35:36.540980+00:00"
       },
       {
         "id": 3264107,

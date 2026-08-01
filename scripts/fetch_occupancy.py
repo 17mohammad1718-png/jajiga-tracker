@@ -9,6 +9,11 @@ fetch_occupancy.py — محاسبه درصد اشغال ۳۰ روز آینده �
     بعد is_unavailable → پر
     وگرنه → خالی
 
+قانون غیرفعال (2026-08-01, user):
+    اقامتگاه غیرفعال (active=false) همیشه اشغال 0 میگیرد —
+    درصد اشغال فقط برای اقامتگاههای فعال معنا دارد (رزروهای
+    قدیمی یک اقامتگاه بسته، سیگنال تقاضا نیست).
+
 Usage:
     python scripts/fetch_occupancy.py               # همه کلبهها
     python scripts/fetch_occupancy.py --rooms 1,2   # فقط چند کلبه
@@ -109,6 +114,23 @@ def main():
     failed = []
     for i, (vname, cabin) in enumerate(all_cabins, 1):
         rid = cabin["id"]
+
+        # INACTIVE RULE: occupancy only matters for active listings.
+        # An inactive cabin's calendar may still carry old bookings
+        # (host closed but reservations remain) — that is NOT a demand
+        # signal, so it always gets 0%.
+        if not cabin.get("active", True):
+            cabin["occupancy_30"] = 0
+            cabin["occupancy_30_unavailable"] = 0
+            cabin["occupancy_30_total"] = 30
+            cabin["last_occupancy_attempt"] = datetime.now(timezone.utc).isoformat()
+            ok += 1
+            if rooms_filter or i % 5 == 0:
+                print(f"  [{i}/{len(all_cabins)}] {rid} | INACTIVE → 0%", flush=True)
+            if i < len(all_cabins):
+                time.sleep(random.uniform(DELAY_MIN, DELAY_MAX))
+            continue
+
         try:
             nights = fetch_nights(rid)
             pct, unavailable, total = calc_occupancy(nights)
