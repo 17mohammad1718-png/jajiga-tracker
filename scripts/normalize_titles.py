@@ -24,6 +24,8 @@ VILLAGE_SUFFIXES = [
     "قرآن تالار", "قران تالار", "قرآن تلار", "قران تلار",
     "سیدکلا", "سید کلا",
     "گونه کلا", "گونهکلا",
+    "کاردرکلا", "کاردر کلا", "کاردگرکلا", "کاردگر کلا", "کادرکلا", "کاردکلا",
+    "امیرکلا", "امیر کلا",
 ]
 
 # Infixes to strip (order: longest first)
@@ -35,6 +37,10 @@ STRIP_INFIXES = [
     "در گونه کلا",         # compound
     "در شیردارکلا",        # compound
     "در قرآن تالار",       # compound
+    "در کاردرکلا",         # compound
+    "در کادرکلا",          # compound
+    "در کاردکلا",          # compound (typo)
+    "در امیرکلا",          # compound
 ]
 
 # Additional cleanup: orphan "در" left after village removal

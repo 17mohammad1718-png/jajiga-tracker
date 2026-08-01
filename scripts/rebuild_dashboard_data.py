@@ -70,6 +70,17 @@ def cabins_to_js_array(cabins):
     return "const ALL_CABINS = [\n" + ",\n".join(lines) + "\n];"
 
 
+def rebuild_village_order(html, villages):
+    """Replace the VILLAGE_ORDER const in the HTML with actual village names from JSON."""
+    villages_json = json.dumps(list(villages.keys()), ensure_ascii=False)
+    pattern = r'const VILLAGE_ORDER = \[.*?\];'
+    replacement = f'const VILLAGE_ORDER = {villages_json};'
+    new_html, count = re.subn(pattern, replacement, html)
+    if count == 0:
+        print("WARNING: Could not find VILLAGE_ORDER block", file=sys.stderr)
+    return new_html
+
+
 def rebuild_html(html, js_array):
     """Replace the ALL_CABINS block in the HTML file."""
     # Match the ALL_CABINS declaration block
@@ -111,6 +122,7 @@ def main():
         html = f.read()
 
     new_html = rebuild_html(html, js_array)
+    new_html = rebuild_village_order(new_html, data["villages"])
 
     with open(HTML_PATH, "w", encoding="utf-8") as f:
         f.write(new_html)
