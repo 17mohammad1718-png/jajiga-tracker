@@ -79,6 +79,10 @@ tbody tr.data-row:hover { background:#1c232e; }
 tbody tr.data-row.own-row { background:rgba(212,167,44,.07); }
 tbody tr.data-row.own-row:hover { background:rgba(212,167,44,.13); }
 td.title { text-align:right; max-width:220px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.title-link { color:var(--accent); text-decoration:none; }
+.title-link:hover { text-decoration:underline; }
+.host-link { color:#e8934a; text-decoration:none; }
+.host-link:hover { text-decoration:underline; }
 .own-badge { display:inline-block; background:var(--gold); color:#111; font-size:10px; font-weight:800; border-radius:4px; padding:1px 6px; margin-inline-start:6px; vertical-align:middle; }
 .badge { display:inline-block; background:rgba(139,148,158,.15); border:1px solid rgba(139,148,158,.3); color:var(--muted); border-radius:6px; padding:1px 6px; font-size:10.5px; margin:1px; }
 .badge.scenic { background:rgba(63,185,80,.12); border-color:rgba(63,185,80,.35); color:var(--green); }
@@ -246,6 +250,10 @@ function ratingHtml(c) {
   return `<span class="${cls}">★ ${r.toFixed(1)}</span>`;
 }
 
+function esc(s) {
+  return String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
 function renderTable() {
   const rows = getSorted();
   const colors = ['#d4a72c','#c0c0c0','#cd7f32'];
@@ -255,10 +263,12 @@ function renderTable() {
       `<span class="occ ${occClass(c.occupancy_30)}"><span class="en">${en(c.occupancy_30)}%</span></span>`;
     const disc = (c.current_discount_percent||0) > 0 ? `<span class="disc en">${c.current_discount_percent}%</span>` : '—';
     const rank = i < 3 ? `<span style="display:inline-flex;width:24px;height:24px;border-radius:50%;background:${colors[i]};color:#111;align-items:center;justify-content:center;font-weight:800" class="en">${i+1}</span>` : `<span class="en">${i+1}</span>`;
+    const titleLink = `<a class="title-link" href="${c.url}" target="_blank" rel="noopener" title="${esc(c.title)}">${esc(c.title)}</a>`;
+    const hostLink = c.host_id ? `<a class="host-link" href="https://www.jajiga.com/user/${c.host_id}" target="_blank" rel="noopener" title="پروفایل ${esc(c.host_name)} در جاجیگا">${esc(c.host_name)}</a>` : (c.host_name||'—');
     return `<tr class="data-row ${own?'own-row':''}" data-id="${c.id}">
       <td>${rank}</td>
-      <td class="title" title="${c.title||''}">${c.title||''}${own}</td>
-      <td>${c.host_name||'—'}</td>
+      <td class="title">${titleLink}${own}</td>
+      <td>${hostLink}</td>
       <td><span class="en">${en(c.min_price)}</span></td>
       <td><span class="en">${en(c.floor_area)}</span>م</td>
       <td><span class="en">${en(c.land_area)}</span>م</td>
@@ -305,7 +315,7 @@ function detailHtml(c) {
       <div class="host-line"><span class="lbl">حداقل/حداکثر اقامت:</span> <span class="en">${c.stays_min||'—'} / ${c.stays_max||'∞'}</span> شب</div>
     </div>
     <div class="detail-block"><h4>میزبان</h4>
-      <div class="host-line"><span class="lbl">نام:</span> ${c.host_name||'—'} (${c.host_gender==='male'?'آقا':'خانم'||''})</div>
+      <div class="host-line"><span class="lbl">نام:</span> ${c.host_id ? `<a class="host-link" href="https://www.jajiga.com/user/${c.host_id}" target="_blank" rel="noopener" title="پروفایل ${esc(c.host_name)} در جاجیگا">${esc(c.host_name)}</a>` : (c.host_name||'—')} (${c.host_gender==='male'?'آقا':'خانم'||''})</div>
       <div class="host-line"><span class="lbl">عضویت:</span> ${hostSince}</div>
       <div class="host-line"><span class="lbl">نرخ پذیرش:</span> <span class="en">${c.host_accept_rate??'—'}%</span></div>
       <div class="host-line"><span class="lbl">زمان پاسخ:</span> ${rt}</div>
