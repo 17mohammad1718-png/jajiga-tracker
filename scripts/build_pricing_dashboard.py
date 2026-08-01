@@ -24,6 +24,21 @@ FEATURE_ICONS = {
     "vacuumcleaner": "🧹", "food": "🍲", "drawer": "🗄️", "fridge": "🧊",
 }
 
+# Persian names for feature keys that have no description in the API
+FEATURE_FA = {
+    "essentials": "ملزومات اولیه", "electricity": "برق", "water": "آب لوله‌کشی",
+    "heating": "گرمایش", "cooler": "سرمایش", "stave": "اجاق گاز",
+    "refrigerator": "یخچال", "refrigeratorfreezer": "یخچال فریزر",
+    "parking": "پارکینگ", "islamictoilet": "سرویس ایرانی", "bathroom": "حمام",
+    "barbecue": "باربیکیو", "kitchen": "آشپزخانه", "tv": "تلویزیون",
+    "furniture": "مبلمان", "janitor": "نگهبان", "jacuzzi": "جکوزی",
+    "pool": "استخر", "swimmingpool": "استخر", "fireextingu": "کپسول آتش‌نشانی",
+    "table": "میز", "drawer": "کشو", "firstaidkit": "جعبه کمک‌های اولیه",
+    "safetycard": "برگه ایمنی", "vacuumcleaner": "جاروبرقی", "toilet": "سرویس بهداشتی",
+    "wifi": "وای‌فای", "washer": "ماشین لباسشویی", "food": "سرو غذا",
+    "hairdryer": "سشوار", "firealarm": "آژیر آتش", "fridge": "یخچال",
+}
+
 PROPERTY_EMOJI = {
     "خوش منظره": "🏔️", "مهمان نواز": "🤝", "جذاب": "✨", "اقامتگاه خاص": "💎",
     "خوش غذا": "🍽️", "حیاط دار": "🌳", "لب آب": "💦", "استخر آب گرم": "♨️",
@@ -98,8 +113,10 @@ tbody tr.detail-row > td { padding:0; background:var(--card); }
 .detail-block { background:var(--card2); border:1px solid var(--border); border-radius:10px; padding:12px; min-width:0; overflow:hidden; }
 .detail-block h4 { font-size:12px; color:var(--muted); margin-bottom:8px; font-weight:600; }
 .detail-block h4::after { content:''; display:block; width:34px; height:2px; background:var(--accent); margin-top:4px; border-radius:2px; }
-.feat-chip { display:inline-flex; align-items:center; gap:4px; background:rgba(139,148,158,.1); border:1px solid var(--border); border-radius:8px; padding:3px 8px; font-size:11px; margin:2px; }
-.feat-chip .fdesc { color:var(--muted); font-size:10.5px; }
+.feat-line { font-size:12px; padding:2px 0; border-bottom:1px dashed #20262f; overflow-wrap:anywhere; }
+.feat-line:last-child { border-bottom:none; }
+.feat-line .fname { font-weight:600; }
+.feat-line .fdesc { color:var(--muted); font-weight:400; }
 .subrating { display:flex; justify-content:space-between; font-size:12px; padding:3px 0; border-bottom:1px dashed #20262f; }
 .subrating:last-child { border-bottom:none; }
 .subrating .lbl { color:var(--muted); }
@@ -144,7 +161,7 @@ footer { text-align:center; color:var(--muted); font-size:11px; padding:24px 20p
 <script type="application/json" id="pricingData">__DATA__</script>
 <script>
 const DATA = JSON.parse(document.getElementById('pricingData').textContent);
-const ICONS = __ICONS__;
+const FEATURE_FA = __FEATURE_FA__;
 const PROP_EMOJI = __PROP_EMOJI__;
 const CANCEL = __CANCEL__;
 
@@ -171,7 +188,7 @@ const SORT_COLS = [
   { key:'props', label:'برچسب‌ها', val:c=>(c.properties||[]).length },
   { key:'rating', label:'امتیاز', val:c=>c.rating||0 },
   { key:'reviews', label:'نظرات', val:c=>c.reviews||0 },
-  { key:'books', label:'رزرو', val:c=>c.success_books||0 },
+  { key:'books', label:'تعداد رزرو', val:c=>c.success_books||0 },
   { key:'occ', label:'اشغال', val:c=>c.occupancy_30||0 },
   { key:'disc', label:'تخفیف', val:c=>c.current_discount_percent||0 },
 ];
@@ -258,10 +275,13 @@ function propsHtml(c) {
   return out.join(' ');
 }
 
+function featName(c, x) {
+  return (c.feature_desc && c.feature_desc[x]) || FEATURE_FA[x] || x;
+}
 function featIcons(c) {
   const f = c.features || [];
-  const icons = f.filter(x=>ICONS[x]).map(x=>`<span title="${(c.feature_desc&&c.feature_desc[x])||x}">${ICONS[x]}</span>`).join(' ');
-  return `<span class="en" title="${f.length} امکانات">${f.length}</span> ${icons}`;
+  const names = f.map(x => featName(c, x)).join('، ');
+  return `<span class="en" title="${esc(names)}">${f.length}</span>`;
 }
 
 function ratingHtml(c) {
@@ -309,8 +329,8 @@ function renderTable() {
 
 function detailHtml(c) {
   const feats = (c.features||[]).map(f => {
-    const desc = (c.feature_desc && c.feature_desc[f]) || f;
-    return `<span class="feat-chip">${ICONS[f]||''} ${f}<span class="fdesc">— ${desc}</span></span>`;
+    const name = featName(c, f);
+    return `<div class="feat-line"><span class="fname">${esc(name)}</span></div>`;
   }).join('');
   const subR = [
     ['دقت توصیف', c.rating_accuracy], ['ارتباط', c.rating_communication], ['پاکیزگی', c.rating_cleanliness],
@@ -343,6 +363,7 @@ function detailHtml(c) {
       <div class="host-line"><span class="lbl">امتیاز ارتباط:</span> <span class="en">${c.host_communication_rate??'—'}</span></div>
     </div>
     <div class="detail-block"><h4>سایر</h4>
+      <div class="host-line"><span class="lbl">رزرو موفق:</span> <span class="en">${en(c.success_books)}</span></div>
       <div class="host-line"><span class="lbl">عکس‌ها:</span> <span class="en">${en(c.pictures_count)}</span></div>
       <div class="host-line"><span class="lbl">VR:</span> ${c.vr_photo?'✅':'—'}</div>
       <div class="host-line"><span class="lbl">ویدیو:</span> ${c.video_url?'✅':'—'}</div>
@@ -408,7 +429,7 @@ init();
 """
 
 html = HTML.replace("__DATA__", json.dumps(data, ensure_ascii=False))
-html = html.replace("__ICONS__", json.dumps(FEATURE_ICONS, ensure_ascii=False))
+html = html.replace("__FEATURE_FA__", json.dumps(FEATURE_FA, ensure_ascii=False))
 html = html.replace("__PROP_EMOJI__", json.dumps(PROPERTY_EMOJI, ensure_ascii=False))
 html = html.replace("__CANCEL__", json.dumps(CANCEL_LABEL, ensure_ascii=False))
 
