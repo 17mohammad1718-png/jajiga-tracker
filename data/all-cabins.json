@@ -3,7 +3,7 @@
     "last_updated": "2026-08-01",
     "source": "jajiga.com",
     "region": "بابلکنار",
-    "total_cabins": 105,
+    "total_cabins": 108,
     "price_range": "1,300,000 - 9,000,000 تومان/شب",
     "occupancy_updated": "2026-08-01"
   },
@@ -736,6 +736,30 @@
         "occupancy_30_unavailable": 0,
         "occupancy_30_total": 30,
         "last_occupancy_attempt": "2026-08-01T10:51:06.786268+00:00"
+      },
+      {
+        "id": 3190552,
+        "title": "اجاره کلبه چوبی",
+        "price": 2500000,
+        "rooms": 1,
+        "floor": 60,
+        "guests": 4,
+        "rating": 4.9,
+        "reviews": 35,
+        "url": "https://www.jajiga.com/room/3190552",
+        "active": true,
+        "host": "صدیقه",
+        "price_source": "api_min_price",
+        "last_scrape_status": "ok",
+        "last_scrape_attempt": "2026-08-01T10:56:58.710484+00:00",
+        "success_books": 50,
+        "pool": 0,
+        "jacuzzi": 0,
+        "own": false,
+        "occupancy_30": 50,
+        "occupancy_30_unavailable": 15,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-08-01T10:57:29.877154+00:00"
       }
     ],
     "قرآن تالار": [
@@ -1698,6 +1722,30 @@
         "occupancy_30_unavailable": 0,
         "occupancy_30_total": 30,
         "last_occupancy_attempt": "2026-08-01T10:51:40.512676+00:00"
+      },
+      {
+        "id": 3223870,
+        "title": "اجاره کلبه چوبی استخردار",
+        "price": 5000000,
+        "rooms": 1,
+        "floor": 50,
+        "guests": 4,
+        "rating": 4.9,
+        "reviews": 20,
+        "url": "https://www.jajiga.com/room/3223870",
+        "active": false,
+        "host": "سید میثم",
+        "price_source": "api_min_price",
+        "last_scrape_status": "ok",
+        "last_scrape_attempt": "2026-08-01T10:57:07.217377+00:00",
+        "success_books": 20,
+        "pool": 1,
+        "jacuzzi": 0,
+        "own": false,
+        "occupancy_30": 73,
+        "occupancy_30_unavailable": 22,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-08-01T10:57:35.108703+00:00"
       }
     ],
     "شیردارکلا": [
@@ -2485,6 +2533,30 @@
         "occupancy_30_unavailable": 0,
         "occupancy_30_total": 30,
         "last_occupancy_attempt": "2026-08-01T10:52:29.663835+00:00"
+      },
+      {
+        "id": 3157383,
+        "title": "ویلا با جکوزی",
+        "price": 10000000,
+        "rooms": 3,
+        "floor": 260,
+        "guests": 6,
+        "rating": 4.2,
+        "reviews": 24,
+        "url": "https://www.jajiga.com/room/3157383",
+        "active": true,
+        "host": "کاوه",
+        "price_source": "api_min_price",
+        "last_scrape_status": "ok",
+        "last_scrape_attempt": "2026-08-01T10:57:03.136904+00:00",
+        "success_books": 20,
+        "pool": 0,
+        "jacuzzi": 1,
+        "own": false,
+        "occupancy_30": 0,
+        "occupancy_30_unavailable": 0,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-08-01T10:57:39.552514+00:00"
       }
     ]
   }
