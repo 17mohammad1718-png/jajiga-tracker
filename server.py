@@ -6,6 +6,13 @@ Then open: http://localhost:8080
 
 import http.server, json, os, sys
 
+# Windows console uses cp1252 by default; emoji in print() would crash it.
+try:
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+except AttributeError:
+    pass  # Python < 3.7 or non-text stream
+
 PORT = 8080
 DIR = os.path.dirname(os.path.abspath(__file__))
 
