@@ -297,12 +297,19 @@ def compute_stats(reviews):
                             "date": r["created_at"][:10], "tags": tags})
     prio = ["بامزه", "انتقادی", "احساسی", "مفصل"]
     fun = []
+    seen_texts = set()
     for tag in prio:
+        picked = 0
         for it in fun_raw:
-            if tag in it["tags"] and it not in fun:
+            if len(fun) >= 8:
+                break
+            if (tag in it["tags"] and it not in fun
+                    and it["text"] not in seen_texts):
                 it["tag"] = tag
                 fun.append(it)
-            if len(fun) >= 8:
+                seen_texts.add(it["text"])
+                picked += 1
+            if picked >= 2:
                 break
         if len(fun) >= 8:
             break
