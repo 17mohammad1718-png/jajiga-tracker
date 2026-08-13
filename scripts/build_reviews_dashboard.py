@@ -160,6 +160,44 @@ STOPWORDS = {"و", "که", "از", "با", "به", "این", "آن", "بود", "
              "روز", "بار", "بارها", "رفتم", "رفتیم", "خودش", "خانه", "اقامتگاه",
              "ویلا", "کلبه", "جا", "جای", "بودن", "داره", "هست", "هستم"}
 
+# Unique-style themes: every theme = a distinctive trait + words that prove it
+THEMES = [
+    {"key": "gen", "title": "ژنراتور برق — قطعی برق ممنوع",
+     "desc": "در بی‌برقی‌های سراسری، اقامتگاه برق دارد",
+     "words": ["ژنراتور", "موتور برق", "برق نداره", "قطعی برق", "قطع برق",
+               "بی‌برقی", "برق می‌رفت", "برق رفته"]},
+    {"key": "pool", "title": "استخر آب گرم روباز",
+     "desc": "استخر تمیز با آب گرم، حتی در سرمای زمستان",
+     "words": ["استخر", "آب داغ", "آب گرم"]},
+    {"key": "view", "title": "ویوی سه‌گانه: دریا + جنگل + کوه",
+     "desc": "چشم‌انداز بی‌نظیر از بالکن و استخر",
+     "words": ["ویو", "ویوی", "منظره", "چشم‌انداز", "چشم انداز", "دریا", "جنگل"]},
+    {"key": "garden", "title": "باغ مرکبات — پرتقال و نارنج",
+     "desc": "مهمان‌ها از میوه‌های باغ استفاده می‌کنند",
+     "words": ["پرتقال", "نارنج", "مرکبات", "باغ"]},
+    {"key": "cats", "title": "گربه‌های دمِ در",
+     "desc": "گربه‌های باغ که منتظر مهمان‌ها هستند",
+     "words": ["گربه", "گربه‌ها", "گربه ها"]},
+    {"key": "host", "title": "میزبانی حرفه‌ای و پیگیر",
+     "desc": "پاسخ‌گویی سریع، حتی نیمه‌شب",
+     "words": ["میزبان", "مهری", "یاسر", "مالک", "صاحب"]},
+    {"key": "hotel", "title": "جزئیات هتلی",
+     "desc": "ملافه‌های سفید هتلی + پک بهداشتی",
+     "words": ["ملافه", "پک بهداشتی", "هتلی", "اسکاج"]},
+    {"key": "loyal", "title": "مشتریان وفادار",
+     "desc": "مهمان‌هایی که بارها برمی‌گردند",
+     "words": ["باز هم", "بار دوم", "بار سوم", "بار چهارم", "دوبار", "دو بار",
+               "پاتوق", "دوباره رزرو", "بازم میام", "باز میام", "دوباره این"]},
+    {"key": "road", "title": "دسترسی: ۵۰۰ متر جاده خاکی",
+     "desc": "تنها نکتهٔ خاکی مسیر",
+     "words": ["جاده", "خاکی", "مسیر", "آسفالت"]},
+]
+
+FUN_MARKERS = ["نمره 20", "نمره ۲۰", "هزار ویلا", "پاتوق", "گربه", "موریانه",
+               "کلاس آموزشی", "20 میدم", "۲۰ میدم", "شاهکار", "بهترین ویلای",
+               "می‌خند", "😂", "خنده", "پشیمون", "پشیمان", "امتیاز کامل دادم",
+               "زیبا گزارش", "جون میده"]
+
 
 def compute_stats(reviews):
     today = date.today()
@@ -213,6 +251,63 @@ def compute_stats(reviews):
     total = len(reviews)
     five = dist.get(5, 0)
     replied = sum(1 for r in reviews if r.get("host_reply"))
+
+    # ---- unique-style themes (distinctive traits + proof quotes) ----
+    themes = []
+    for t in THEMES:
+        hit = [r for r in reviews if any(w in (r.get("content") or "") for w in t["words"])]
+
+        def _score(r):
+            c = (r.get("content") or "").strip()
+            L = len(c)
+            if not (40 <= L <= 260):
+                return 0
+            return (10 if (r.get("rating") or 0) == 5 else 4) - abs(L - 150) / 45
+
+        samples = sorted(hit, key=_score, reverse=True)[:3]
+        themes.append({
+            "key": t["key"], "title": t["title"], "desc": t["desc"],
+            "word": t["words"][0], "count": len(hit),
+            "samples": [{
+                "text": (s.get("content") or "").strip()[:260],
+                "rating": s.get("rating"),
+                "name": (s.get("user") or {}).get("name"),
+                "date": s["created_at"][:10],
+            } for s in samples],
+        })
+
+    # ---- fun / notable comments (auto-detected, category spread) ----
+    fun_raw = []
+    for r in reviews:
+        c = (r.get("content") or "").strip()
+        if not c:
+            continue
+        tags = []
+        if (r.get("rating") or 0) <= 3:
+            tags.append("انتقادی")
+        if any(ch in c for ch in "😂😍🙏❤️👌🤣🌿✨😅"):
+            tags.append("احساسی")
+        if len(c) >= 220:
+            tags.append("مفصل")
+        if any(m in c for m in FUN_MARKERS):
+            tags.append("بامزه")
+        if tags:
+            fun_raw.append({"text": c, "rating": r.get("rating"),
+                            "name": (r.get("user") or {}).get("name"),
+                            "date": r["created_at"][:10], "tags": tags})
+    prio = ["بامزه", "انتقادی", "احساسی", "مفصل"]
+    fun = []
+    for tag in prio:
+        for it in fun_raw:
+            if tag in it["tags"] and it not in fun:
+                it["tag"] = tag
+                fun.append(it)
+            if len(fun) >= 8:
+                break
+        if len(fun) >= 8:
+            break
+    fun = [{"text": f["text"][:280], "rating": f["rating"], "name": f["name"],
+            "date": f["date"], "tag": f["tag"]} for f in fun[:8]]
     return {
         "total": total,
         "avg_all": avg(scored),
@@ -229,6 +324,8 @@ def compute_stats(reviews):
         "monthly": monthly,
         "years": {str(k): v for k, v in sorted(years.items(), reverse=True)},
         "keywords": keywords,
+        "themes": themes,
+        "fun": fun,
         "fetched_at_iso": date.today().isoformat(),
     }
 
@@ -324,6 +421,34 @@ h2{font-size:15px; font-weight:700; margin-bottom:10px; color:#fff}
 .kw-fill{height:100%; background:linear-gradient(90deg,#0e7490,#2dd4bf); border-radius:8px}
 .kw-c{width:44px; text-align:left; font-size:12.5px; color:var(--teal)}
 
+/* theme cards (unique style) */
+.theme-grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(330px,1fr)); gap:10px}
+.theme-card{background:var(--panel2); border:1px solid var(--border); border-radius:10px;
+            padding:12px 14px; display:flex; flex-direction:column; gap:7px}
+.th-head{display:flex; align-items:center; gap:8px; flex-wrap:wrap}
+.th-title{font-size:13.5px; font-weight:700; color:#fff}
+.th-count{font-size:11px; color:var(--teal); background:#0d1f1c; border:1px solid #1f4a42;
+          border-radius:999px; padding:0 8px; white-space:nowrap}
+.th-desc{font-size:11.5px; color:var(--muted)}
+.th-quote{font-size:12px; color:var(--text); line-height:1.8; border-right:3px solid var(--teal-d);
+          padding:6px 10px; background:#11161d; border-radius:6px; min-height:52px}
+.th-quote .q-meta{font-size:10.5px; color:var(--muted); margin-top:2px}
+.th-btn{margin-top:2px; background:transparent; border:1px solid var(--border); color:var(--blue);
+        border-radius:8px; padding:4px 10px; font-size:12px; cursor:pointer; font-family:inherit}
+.th-btn:hover{border-color:var(--blue)}
+
+/* fun comments */
+.fun-grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:10px}
+.fun-card{background:var(--panel2); border:1px solid var(--border); border-radius:10px;
+          padding:12px 14px; display:flex; flex-direction:column; gap:8px}
+.fun-tag{font-size:11px; border-radius:999px; padding:1px 10px; align-self:flex-start}
+.fun-tag.bamaze{background:#2d3a1f; color:#a3e635; border:1px solid #3f4f2d}
+.fun-tag.entegadi{background:#3a1f1f; color:#f85149; border:1px solid #4f2d2d}
+.fun-tag.ehsasi{background:#2d2a1f; color:#e3b341; border:1px solid #4f442d}
+.fun-tag.mofassal{background:#1f2d3a; color:#58a6ff; border:1px solid #2d4a6f}
+.fun-text{font-size:13px; color:var(--text); line-height:1.9; font-style:italic}
+.fun-meta{font-size:11.5px; color:var(--muted)}
+
 /* filters */
 .filters{display:flex; flex-wrap:wrap; align-items:center; gap:10px; margin-bottom:12px}
 .fgroup{display:flex; align-items:center; gap:6px}
@@ -339,7 +464,7 @@ h2{font-size:15px; font-weight:700; margin-bottom:10px; color:#fff}
 .result-count{font-size:12px; color:var(--muted); margin:0 4px 10px}
 
 /* table */
-.table-wrap{overflow-x:auto; overflow-y:auto; max-height:62vh; border:1px solid var(--border); border-radius:10px;
+.table-wrap{overflow-x:auto; overflow-y:auto; max-height:85vh; border:1px solid var(--border); border-radius:10px;
             scrollbar-width:thin; scrollbar-color:#475569 #0b1526}
 table{width:100%; border-collapse:collapse; font-size:13px; min-width:900px}
 thead th{position:sticky; top:0; z-index:5; background:#0f1a2b; color:#c9d1d9;
@@ -405,7 +530,17 @@ footer{margin-top:18px; color:var(--muted); font-size:11.5px; text-align:center;
     <div id="keywords"></div>
   </div>
 
-  <div class="panel">
+  <div class="panel" id="stylePanel">
+    <h2>سبک منحصر به فرد اقامتگاه <span class="sub">(با پیام مهمان‌ها)</span></h2>
+    <div class="theme-grid" id="themeGrid"></div>
+  </div>
+
+  <div class="panel" id="funPanel">
+    <h2>کامنت‌های جالب و نکته‌ها</h2>
+    <div class="fun-grid" id="funGrid"></div>
+  </div>
+
+  <div class="panel" id="reviewsPanel">
     <h2>همه نظرات</h2>
     <div class="filters">
       <div class="fgroup"><span class="fl">امتیاز:</span><div id="ratingFilters"></div></div>
@@ -522,6 +657,47 @@ function esc(s){ return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,
     '<div class="kw"><div class="kw-w">'+esc(k.word)+'</div>'+
     '<div class="kw-track"><div class="kw-fill" style="width:'+Math.round(k.count/max*100)+'%"></div></div>'+
     '<div class="kw-c">'+en(k.count)+'</div></div>').join('');
+})();
+
+/* ---------- unique style themes ---------- */
+(function(){
+  const themes = S.themes||[];
+  const ICONS = {gen:'🔌', pool:'🏊', view:'🏔️', garden:'🍊', cats:'🐈',
+                 host:'🤝', hotel:'🛏️', loyal:'💛', road:'🛣️'};
+  if(!themes.length){ document.getElementById('stylePanel').style.display='none'; return; }
+  document.getElementById('themeGrid').innerHTML = themes.map(t=>{
+    const quotes = (t.samples||[]).map(q=>
+      '<div class="th-quote">'+esc(q.text)+
+      '<div class="q-meta">— '+esc(q.name||'؟')+' · <span class="en">'+q.date+'</span> · '+
+      '<span class="en">'+q.rating+'</span> ★</div></div>').join('');
+    return '<div class="theme-card"><div class="th-head"><span>'+(ICONS[t.key]||'✨')+'</span>'+
+      '<div class="th-title">'+esc(t.title)+'</div>'+
+      '<span class="th-count"><span class="en">'+t.count+'</span> نظر</span></div>'+
+      '<div class="th-desc">'+esc(t.desc)+'</div>'+quotes+
+      '<button class="th-btn" data-word="'+esc(t.word)+'">مشاهده همه در جدول ↓</button></div>';
+  }).join('');
+  document.querySelectorAll('.th-btn').forEach(b=>{
+    b.onclick=()=>{
+      const w = b.dataset.word;
+      state.rating=state.reply=state.year=null; state.col=state.dir=null;
+      state.search = w;
+      document.getElementById('searchInput').value = w;
+      render();
+      document.getElementById('reviewsPanel').scrollIntoView({behavior:'smooth', block:'start'});
+    };
+  });
+})();
+
+/* ---------- fun / notable comments ---------- */
+(function(){
+  const fun = S.fun||[];
+  const TAG_CLS = {'بامزه':'bamaze','انتقادی':'entegadi','احساسی':'ehsasi','مفصل':'mofassal'};
+  if(!fun.length){ document.getElementById('funPanel').style.display='none'; return; }
+  document.getElementById('funGrid').innerHTML = fun.map(f=>
+    '<div class="fun-card"><span class="fun-tag '+(TAG_CLS[f.tag]||'ehsasi')+'">'+esc(f.tag)+'</span>'+
+    '<div class="fun-text">«'+esc(f.text)+'»</div>'+
+    '<div class="fun-meta">'+esc(f.name||'؟')+' · <span class="en">'+f.date+'</span> · '+
+    '<span class="en">'+f.rating+'</span> ★</div></div>').join('');
 })();
 
 /* ---------- table ---------- */
