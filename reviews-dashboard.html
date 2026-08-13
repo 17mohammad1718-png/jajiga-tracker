@@ -162,6 +162,8 @@ td.rev-user{font-weight:600}
 .reply-text{font-size:12.5px; color:#c9d1d9; line-height:1.9; white-space:pre-wrap; overflow-wrap:anywhere}
 .flash-row{animation:flashRow 2.2s ease}
 @keyframes flashRow{0%{background:rgba(45,212,191,.30)}100%{background:transparent}}
+.jump-ring{animation:jumpPulse 2.6s ease}
+@keyframes jumpPulse{0%{box-shadow:0 0 0 8px rgba(45,212,191,.9)}45%{box-shadow:0 0 0 5px rgba(45,212,191,.5)}100%{box-shadow:0 0 0 2px rgba(45,212,191,.25)}}
 .empty td{text-align:center; color:var(--muted); padding:26px}
 
 /* footer */
@@ -363,7 +365,7 @@ function esc(s){ return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,
       document.getElementById('searchInput').value = w;
       flashOnJump = true;
       render();
-      document.getElementById('reviewsPanel').scrollIntoView({behavior:'smooth', block:'start'});
+      scrollPanelIntoView();
     };
   });
 })();
@@ -373,6 +375,29 @@ function resetChipUI(){
   ['ratingFilters','replyFilters','yearFilters'].forEach(id=>{
     document.querySelectorAll('#'+id+' .fbtn').forEach((b,i)=>b.classList.toggle('on', i===0));
   });
+}
+function scrollPanelIntoView(){
+  const panel = document.getElementById('reviewsPanel');
+  if(!panel) return;
+  const rectTop = panel.getBoundingClientRect().top + (window.scrollY||document.documentElement.scrollTop||0);
+  try{ panel.scrollIntoView({behavior:'smooth', block:'start'}); }catch(e){}
+  try{ panel.scrollIntoView(true); }catch(e){}
+  try{ window.scrollTo({top: Math.max(0, rectTop-14), behavior:'smooth'}); }catch(e){}
+  try{ document.documentElement.scrollTop = rectTop-14; }catch(e){}
+  try{ document.body.scrollTop = rectTop-14; }catch(e){}
+  // the Hermes preview pane renders the file in an iframe sized to content:
+  // the real scrollbar lives in the PARENT document, so scroll it too (same-origin file://)
+  try{
+    const p = window.parent;
+    if(p && p.document){
+      const innerTop = panel.getBoundingClientRect().top;
+      try{ p.scrollTo({top: Math.max(0, (p.scrollY||0) + innerTop - 14), behavior:'smooth'}); }catch(e2){}
+    }
+  }catch(e3){}
+  // flashing ring so the panel is unmistakable
+  panel.classList.remove('jump-ring');
+  void panel.offsetWidth;
+  panel.classList.add('jump-ring');
 }
 
 /* ---------- fun / notable comments ---------- */
