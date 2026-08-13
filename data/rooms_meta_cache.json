@@ -1,0 +1,47 @@
+{
+ "3151760": {
+  "title": "کلبه چوبی استخردار در رامسر - وانکوه",
+  "host_id": 1217873,
+  "host_name": "رویا",
+  "host_since": "2020-05-24",
+  "price": 7900000,
+  "floor_area": 100,
+  "bedrooms": 2,
+  "guest_number": 4,
+  "max_guest_number": 7,
+  "books": 600,
+  "props": [
+   "مهمان نواز",
+   "استخر آب گرم",
+   "استخر روباز"
+  ],
+  "site_rating": 5,
+  "site_reviews": 402,
+  "city": "رامسر",
+  "province": "مازندران"
+ },
+ "3149661": {
+  "title": "کلبه چوبی در تالش - سراگاه",
+  "host_id": 1197030,
+  "host_name": "فاطمه",
+  "host_since": "2020-01-28",
+  "price": 3000000,
+  "floor_area": 80,
+  "bedrooms": 2,
+  "guest_number": 4,
+  "max_guest_number": 6,
+  "books": 400,
+  "props": [
+   "اقامتگاه خاص",
+   "جذاب",
+   "خوش غذا",
+   "خوش منظره",
+   "حیاط دار",
+   "مهمان نواز"
+  ],
+  "site_rating": 5,
+  "site_reviews": 327,
+  "city": "تالش",
+  "province": "گیلان"
+ }
+}
