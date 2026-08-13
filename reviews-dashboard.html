@@ -160,6 +160,8 @@ td.rev-user{font-weight:600}
 .reply-box{text-align:right}
 .reply-head{font-size:11px; color:#7ee787; font-weight:700; margin-bottom:4px}
 .reply-text{font-size:12.5px; color:#c9d1d9; line-height:1.9; white-space:pre-wrap; overflow-wrap:anywhere}
+.flash-row{animation:flashRow 2.2s ease}
+@keyframes flashRow{0%{background:rgba(45,212,191,.30)}100%{background:transparent}}
 .empty td{text-align:center; color:var(--muted); padding:26px}
 
 /* footer */
@@ -356,13 +358,22 @@ function esc(s){ return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,
     b.onclick=()=>{
       const w = b.dataset.word;
       state.rating=state.reply=state.year=null; state.col=state.dir=null;
+      resetChipUI();
       state.search = w;
       document.getElementById('searchInput').value = w;
+      flashOnJump = true;
       render();
       document.getElementById('reviewsPanel').scrollIntoView({behavior:'smooth', block:'start'});
     };
   });
 })();
+
+/* ---------- filter UI helpers ---------- */
+function resetChipUI(){
+  ['ratingFilters','replyFilters','yearFilters'].forEach(id=>{
+    document.querySelectorAll('#'+id+' .fbtn').forEach((b,i)=>b.classList.toggle('on', i===0));
+  });
+}
 
 /* ---------- fun / notable comments ---------- */
 (function(){
@@ -378,6 +389,7 @@ function esc(s){ return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,
 
 /* ---------- table ---------- */
 const state = {rating:null, reply:null, year:null, search:'', col:null, dir:null};
+let flashOnJump = false;
 function rowOf(r){ return {idx:0, date:new Date(r.created_at).getTime(),
   dateISO:r.created_at.slice(0,10), j:r._j, user:(r.user&&r.user.name)||'؟',
   rating:r.rating||0, content:r.content||'', reply:r.host_reply?1:0,
@@ -446,7 +458,14 @@ function render(){
   document.getElementById('resultCount').innerHTML =
     'نمایش <span class="en">'+shown.length+'</span> از <span class="en">'+rows.length+'</span> نظر'+
     (rows.length>MAX?' (بیش از 400 با فیلتر محدود کنید)':'')+
-    ' — مجموع نظرات اقامتگاه: <span class="en">'+S.total+'</span>';
+    ' — مجموع نظرات اقامتگاه: <span class="en">'+S.total+'</span>'+
+    (state.search ? ' <button class="fbtn on" id="clearTheme">فیلتر: «'+esc(state.search)+'» ✕</button>' : '');
+  const clearBtn = document.getElementById('clearTheme');
+  if(clearBtn) clearBtn.onclick = ()=>{ state.search=''; document.getElementById('searchInput').value=''; resetChipUI(); render(); };
+  if(flashOnJump){
+    tbody.querySelectorAll('.main-row').forEach((tr,i)=>{ if(i<5) tr.classList.add('flash-row'); });
+    flashOnJump = false;
+  }
   document.querySelectorAll('thead th[data-col]').forEach(th=>{
     const srt = th.querySelector('.srt');
     if(th.dataset.col===state.col) srt.textContent = state.dir==='desc'?' ▼':state.dir==='asc'?' ▲':'';
