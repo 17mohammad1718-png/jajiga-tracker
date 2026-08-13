@@ -491,6 +491,16 @@ td.rev-user{font-weight:600}
 .stars-val{font-size:11.5px; margin-left:6px; color:#fff}
 .reply-yes{color:#7ee787; font-size:12px}
 .reply-no{color:var(--muted); font-size:12px}
+.reply-toggle{display:inline-flex; align-items:center; gap:5px; background:transparent;
+  border:1px solid #2d4a2f; color:#7ee787; border-radius:999px; padding:3px 12px;
+  font-size:12px; cursor:pointer; font-family:inherit; transition:.15s}
+.reply-toggle:hover{border-color:#3fb950; background:#132519}
+.reply-toggle .arr{font-size:10px; transition:transform .15s}
+.reply-toggle.open .arr{transform:rotate(180deg)}
+.reply-detail td{background:#0f1f18; border-bottom:1px solid var(--border); padding:10px 16px}
+.reply-box{text-align:right}
+.reply-head{font-size:11px; color:#7ee787; font-weight:700; margin-bottom:4px}
+.reply-text{font-size:12.5px; color:#c9d1d9; line-height:1.9; white-space:pre-wrap; overflow-wrap:anywhere}
 .empty td{text-align:center; color:var(--muted); padding:26px}
 
 /* footer */
@@ -712,7 +722,8 @@ const state = {rating:null, reply:null, year:null, search:'', col:null, dir:null
 function rowOf(r){ return {idx:0, date:new Date(r.created_at).getTime(),
   dateISO:r.created_at.slice(0,10), j:r._j, user:(r.user&&r.user.name)||'؟',
   rating:r.rating||0, content:r.content||'', reply:r.host_reply?1:0,
-  replyTxt:(r.host_reply&&r.host_reply.content)||''}; }
+  replyTxt:(r.host_reply&&r.host_reply.content)||'',
+  replyDate:((r.host_reply&&r.host_reply.created_at)||'').slice(0,10)}; }
 
 function filtered(){
   let arr = R.map(rowOf);
@@ -747,14 +758,32 @@ function render(){
   const tbody = document.getElementById('tbody');
   const MAX = 400;
   const shown = rows.length>MAX ? rows.slice(0,MAX) : rows;
-  tbody.innerHTML = shown.length ? shown.map((x,i)=>
-    '<tr><td class="en">'+(i+1)+'</td>'+
-    '<td><div class="en" style="color:#fff">'+x.j+'</div><div class="sub en">'+x.dateISO+'</div></td>'+
-    '<td class="rev-user">'+esc(x.user)+'</td>'+
-    '<td>'+starsStr(x.rating)+'</td>'+
-    '<td class="rev-content">'+esc(x.content)+'</td>'+
-    '<td>'+(x.reply?'<span class="reply-yes">✔ پاسخ دارد</span>':'<span class="reply-no">— بدون پاسخ</span>')+'</td></tr>'
-  ).join('') : '<tr class="empty"><td colspan="6">موردی یافت نشد</td></tr>';
+  tbody.innerHTML = shown.length ? shown.map((x,i)=>{
+    const replyCell = x.reply
+      ? '<button class="reply-toggle" data-i="'+i+'">پاسخ میزبان <span class="arr">▾</span></button>'
+      : '<span class="reply-no">— بدون پاسخ</span>';
+    const detailRow = x.reply
+      ? '<tr class="reply-detail" data-i="'+i+'" style="display:none"><td colspan="6">'+
+        '<div class="reply-box"><div class="reply-head">پاسخ میزبان — <span class="en">'+(x.replyDate||'')+'</span></div>'+
+        '<div class="reply-text">'+esc(x.replyTxt)+'</div></div></td></tr>'
+      : '';
+    return '<tr class="main-row" data-i="'+i+'"><td class="en">'+(i+1)+'</td>'+
+      '<td><div class="en" style="color:#fff">'+x.j+'</div><div class="sub en">'+x.dateISO+'</div></td>'+
+      '<td class="rev-user">'+esc(x.user)+'</td>'+
+      '<td>'+starsStr(x.rating)+'</td>'+
+      '<td class="rev-content">'+esc(x.content)+'</td>'+
+      '<td>'+replyCell+'</td></tr>' + detailRow;
+  }).join('') : '<tr class="empty"><td colspan="6">موردی یافت نشد</td></tr>';
+  // expand/collapse host replies
+  tbody.querySelectorAll('.reply-toggle').forEach(btn=>{
+    btn.onclick=()=>{
+      const i = btn.closest('.main-row').dataset.i;
+      const detail = tbody.querySelector('tr.reply-detail[data-i="'+i+'"]');
+      const open = detail.style.display==='table-row';
+      detail.style.display = open?'none':'table-row';
+      btn.classList.toggle('open', !open);
+    };
+  });
   document.getElementById('resultCount').innerHTML =
     'نمایش <span class="en">'+shown.length+'</span> از <span class="en">'+rows.length+'</span> نظر'+
     (rows.length>MAX?' (بیش از 400 با فیلتر محدود کنید)':'')+
