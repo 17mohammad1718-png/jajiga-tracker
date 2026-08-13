@@ -339,7 +339,7 @@ h2{font-size:15px; font-weight:700; margin-bottom:10px; color:#fff}
 .result-count{font-size:12px; color:var(--muted); margin:0 4px 10px}
 
 /* table */
-.table-wrap{overflow-x:auto; border:1px solid var(--border); border-radius:10px;
+.table-wrap{overflow-x:auto; overflow-y:auto; max-height:62vh; border:1px solid var(--border); border-radius:10px;
             scrollbar-width:thin; scrollbar-color:#475569 #0b1526}
 table{width:100%; border-collapse:collapse; font-size:13px; min-width:900px}
 thead th{position:sticky; top:0; z-index:5; background:#0f1a2b; color:#c9d1d9;
