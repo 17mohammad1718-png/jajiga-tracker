@@ -335,7 +335,7 @@ function esc(s){ return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,
     const quotes = (t.samples||[]).map(q=>
       '<div class="th-quote">'+esc(q.text)+
       '<div class="q-meta">— '+esc(q.name||'؟')+' · <span class="en">'+q.date+'</span> · '+
-      '<span class="en">'+q.rating+'</span> ★</div></div>').join('');
+      '<span class="en">'+(q.rating==null?'-':q.rating)+'</span> ★</div></div>').join('');
     return '<div class="theme-card"><div class="th-head"><span>'+(ICONS[t.key]||'✨')+'</span>'+
       '<div class="th-title">'+esc(t.title)+'</div>'+
       '<span class="th-count"><span class="en">'+t.count+'</span> نظر</span></div>'+
@@ -363,7 +363,7 @@ function esc(s){ return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,
     '<div class="fun-card"><span class="fun-tag '+(TAG_CLS[f.tag]||'ehsasi')+'">'+esc(f.tag)+'</span>'+
     '<div class="fun-text">«'+esc(f.text)+'»</div>'+
     '<div class="fun-meta">'+esc(f.name||'؟')+' · <span class="en">'+f.date+'</span> · '+
-    '<span class="en">'+f.rating+'</span> ★</div></div>').join('');
+    '<span class="en">'+(f.rating==null?'-':f.rating)+'</span> ★</div></div>').join('');
 })();
 
 /* ---------- table ---------- */
