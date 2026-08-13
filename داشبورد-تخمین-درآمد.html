@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>درآمد تخمینی کلبه‌های سیدکلا — تا ۳۱ مرداد ۱۴۰۵</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700;800&display=swap" rel="stylesheet">
+<style>
+:root { --bg:#0b1526; --panel:#111d33; --panel2:#0e1930; --border:#1e2c47; --text:#e2e8f0;
+        --muted:#8ea0bf; --accent:#3b82f6; --gold:#f59e0b; --silver:#94a3b8; --bronze:#b45309; }
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:var(--bg); color:var(--text); font-family:Vazirmatn, Tahoma, sans-serif; direction:rtl; }
+.wrap { max-width:1200px; margin:0 auto; padding:24px 16px 60px; }
+.hero { background:linear-gradient(135deg,#0e1c38 0%,#13294d 55%,#0e1c38 100%); border:1px solid var(--border);
+        border-radius:16px; padding:26px 28px; margin-bottom:20px; box-shadow:0 10px 30px rgba(0,0,0,.35); }
+.hero h1 { font-size:22px; font-weight:800; margin-bottom:6px; }
+.hero .sub { color:var(--muted); font-size:13px; }
+.cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:12px; margin-bottom:22px; }
+.card { background:var(--panel); border:1px solid var(--border); border-radius:12px; padding:14px 16px; }
+.card .label { color:var(--muted); font-size:12px; margin-bottom:6px; }
+.card .val { font-size:20px; font-weight:800; }
+.card .val.gold { color:var(--gold); }
+.card .val.green { color:#34d399; }
+.table-wrap { background:var(--panel); border:1px solid var(--border); border-radius:14px; overflow:auto; max-height:75vh;
+        scrollbar-width:thin; scrollbar-color:#475569 #0b1526; scrollbar-gutter:stable; }
+.table-wrap::-webkit-scrollbar { width:10px; height:10px; }
+.table-wrap::-webkit-scrollbar-track { background:#0b1526; border-radius:8px; }
+.table-wrap::-webkit-scrollbar-thumb { background:linear-gradient(180deg,#475569,#334155); border-radius:8px; border:2px solid #0b1526; }
+.table-wrap::-webkit-scrollbar-thumb:hover { background:linear-gradient(180deg,#5b6f8f,#475569); }
+.table-wrap::-webkit-scrollbar-corner { background:#0b1526; }
+table { width:100%; border-collapse:collapse; min-width:820px; }
+thead th { position:sticky; top:0; background:#13233f; color:#cbd5e1; font-size:12px; font-weight:700;
+        padding:11px 10px; text-align:center; border-bottom:1px solid var(--border); cursor:pointer; user-select:none; white-space:nowrap; z-index:2; }
+thead th .arrow { color:var(--accent); font-size:10px; margin-right:3px; }
+tbody td { padding:10px 10px; text-align:center; border-bottom:1px solid #16233c; font-size:13px; }
+tbody tr:hover { background:#15243f; }
+tr.rank-1 { background:rgba(245,158,11,.07); }
+tr.rank-2 { background:rgba(148,163,184,.07); }
+tr.rank-3 { background:rgba(180,83,9,.07); }
+td.title-cell { text-align:right; }
+.title-link { color:var(--accent); text-decoration:none; font-weight:600; }
+.title-link:hover { text-decoration:underline; }
+.host-link { color:#f59e0b; text-decoration:none; font-weight:600; }
+.host-link:hover { text-decoration:underline; }
+.main-row { cursor:pointer; }
+.en { font-family:'Courier New', Consolas, monospace; direction:ltr; unicode-bidi:embed; }
+.medal { font-size:14px; }
+.rank-num { color:var(--muted); font-weight:700; }
+.detail-row td { background:var(--panel2); padding:10px 16px; }
+.nrow { display:flex; gap:10px; align-items:center; padding:4px 0; border-bottom:1px dashed #1a2946; flex-wrap:wrap; }
+.nrow:last-child { border-bottom:none; }
+.nd { min-width:70px; color:var(--muted); font-size:12px; }
+.np { color:#34d399; font-weight:700; }
+.old-price { color:#64748b; text-decoration:line-through; font-size:11px; }
+.disc-badge { background:#7f1d1d; color:#fca5a5; border-radius:6px; padding:1px 8px; font-size:11px; font-weight:700; }
+.flag { background:#1f3a5f; color:#93c5fd; border-radius:6px; padding:1px 8px; font-size:11px; }
+.empty { color:var(--muted); }
+.section-title { font-size:17px; font-weight:800; margin:26px 2px 10px; color:#e2e8f0; }
+.section-title .sub { font-size:12px; color:var(--muted); font-weight:400; }
+@media (max-width:640px){ .cards { grid-template-columns:repeat(2,1fr); } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="hero">
+    <h1>📊 درآمد تخمینی کلبه‌های سیدکلا</h1>
+    <div class="sub">بازه: 22 مرداد تا 31 مرداد ۱۴۰۵ &nbsp;•&nbsp; 33 کلبه &nbsp;•&nbsp; کمیسیون ۱۲٪ &nbsp;•&nbsp; با احتساب تخفیف هر شب &nbsp;•&nbsp; منبع: API تقویم جاجیگا</div>
+  </div>
+  <div class="cards">
+    <div class="card"><div class="label">کلبه‌های دارای رزرو</div><div class="val en">32 / 33</div></div>
+    <div class="card"><div class="label">کل شب‌های پر</div><div class="val en">108</div></div>
+    <div class="card"><div class="label">جمع تخفیف</div><div class="val en" style="color:#f87171">0</div></div>
+    <div class="card"><div class="label">ناخالص (با تخفیف)</div><div class="val en">440,840,000</div></div>
+    <div class="card"><div class="label">کمیسیون ۱۲٪</div><div class="val en" style="color:#f87171">52,900,800</div></div>
+    <div class="card"><div class="label">درآمد خالص</div><div class="val green en">387,939,200</div></div>
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th data-key="rank">رتبه <span class="arrow"></span></th>
+          <th>عنوان</th>
+          <th data-key="host">نام میزبان <span class="arrow"></span></th>
+          <th data-key="booked">شب‌های پر <span class="arrow"></span></th>
+          <th data-key="gross">ناخالص (تومان) <span class="arrow"></span></th>
+          <th data-key="discount">تخفیف (تومان) <span class="arrow"></span></th>
+          <th data-key="commission">کمیسیون (تومان) <span class="arrow"></span></th>
+          <th data-key="net">خالص (تومان) <span class="arrow"></span></th>
+          <th>جزئیات</th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+  </div>
+
+  <h2 class="section-title">🏠 درآمد هر میزبان (جمع همه اقامتگاه‌ها)</h2>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th data-hkey="rank">رتبه <span class="arrow"></span></th>
+          <th data-hkey="host">نام میزبان <span class="arrow"></span></th>
+          <th data-hkey="rooms">تعداد اقامتگاه <span class="arrow"></span></th>
+          <th data-hkey="booked">شب‌های پر <span class="arrow"></span></th>
+          <th data-hkey="gross">ناخالص (تومان) <span class="arrow"></span></th>
+          <th data-hkey="discount">تخفیف (تومان) <span class="arrow"></span></th>
+          <th data-hkey="commission">کمیسیون (تومان) <span class="arrow"></span></th>
+          <th data-hkey="net">خالص (تومان) <span class="arrow"></span></th>
+          <th>جزئیات</th>
+        </tr>
+      </thead>
+      <tbody id="hostTbody"></tbody>
+    </table>
+  </div>
+</div>
+<script>
+const DATA = [{"rank": 1, "medal": "🥇", "id": 3219516, "title": "ویلا دوبلکس استخردار در بابل- سیدکلا", "host_name": "عاطفه", "host_id": 1890654, "booked": 5, "free": 5, "gross": 51000000, "discount": 0, "commission": 6120000, "net": 44880000, "nights_html": "<div class='nrow'><span class='nd'>22 مرداد</span><span class='np en'>14,000,000</span> <span class='flag'>آخر هفته،تعطیل،پیک</span></div><div class='nrow'><span class='nd'>25 مرداد</span><span class='np en'>8,500,000</span></div><div class='nrow'><span class='nd'>28 مرداد</span><span class='np en'>10,000,000</span> <span class='flag'>آخر هفته</span></div><div class='nrow'><span class='nd'>29 مرداد</span><span class='np en'>10,000,000</span> <span class='flag'>آخر هفته</span></div><div class='nrow'><span class='nd'>30 مرداد</span><span class='np en'>8,500,000</span></div>"}, {"rank": 2, "medal": "🥈", "id": 3215808, "title": "کلبه سوئیسی جکوزی دار در بابلکنار - سید کلا", "host_name": "یوسفعلی", "host_id": 1996706, "booked": 5, "free": 5, "gross": 38000000, "discount": 0, "commission": 4560000, "net": 33440000, "nights_html": "<div class='nrow'><span class='nd'>22 مرداد</span><span class='np en'>10,000,000</span> <span class='flag'>آخر هفته،تعطیل،پیک</span></div><div class='nrow'><span class='nd'>23 مرداد</span><span class='np en'>13,000,000</span></div><div class='nrow'><span class='nd'>24 مرداد</span><span class='np en'>5,000,000</span></div><div class='nrow'><span class='nd'>25 مرداد</span><span class='np en'>5,000,000</span></div><div class='nrow'><span class='nd'>26 مرداد</span><span class='np en'>5,000,000</span></div>"}, {"rank": 3, "medal": "🥉", "id": 3178910, "title": "ویلا استخردار در بابلکنار - سیدکلا", "host_name": "محمد", "host_id": 1613724, "booked": 4, "free": 6, "gross": 37000000, "discount": 0, "commission": 4440000, "net": 32560000, "nights_html": "<div class='nrow'><span class='nd'>22 مرداد</span><span class='np en'>12,000,000</span> <span class='flag'>آخر هفته،تعطیل،پیک</span></div><div class='nrow'><span class='nd'>27 مرداد</span><span class='np en'>6,500,000</span></div><div class='nrow'><span class='nd'>28 مرداد</span><span class='np en'>9,000,000</span> <span class='flag'>آخر هفته</span></div><div class='nrow'><span class='nd'>29 مرداد</span><span class='np en'>9,500,000</span> <span class='flag'>آخر هفته</span></div>"}, {"rank": 4, "medal": "", "id": 3186964, "title": "کلبه سوئیسی با جکوزی در بابلکنار - گونه کلا", "host_name": "الناز", "host_id": 1688265, "booked": 6, "free": 4, "gross": 34400000, "discount": 0, "commission": 4128000, "net": 30272000, "nights_html": "<div class='nrow'><span class='nd'>22 مرداد</span><span class='np en'>7,500,000</span> <span class='flag'>آخر هفته،تعطیل،پیک</span></div><div class='nrow'><span class='nd'>23 مرداد</span><span class='np en'>6,500,000</span></div><div class='nrow'><span class='nd'>24 مرداد</span><span class='np en'>4,500,000</span></div><div class='nrow'><span class='nd'>25 مرداد</span><span class='np en'>4,500,000</span></div><div class='nrow'><span class='nd'>28 مرداد</span><span class='np en'>5,700,000</span> <span class='flag'>آخر هفته</span></div><div class='nrow'><span class='nd'>29 مرداد</span><span class='np en'>5,700,000</span> <span class='flag'>آخر هفته</span></div>"}, {"rank": 5, "medal": "", "id": 3206720, "title": "کلبه چوبی جکوزی دار در بابلکنار - سیدکلا", "host_name": "عاطفه", "host_id": 1890654, "booked": 6, "free": 4, "gross": 29000000, "discount": 0, "commission": 3480000, "net": 25520000, "nights_html": "<div class='nrow'><span class='nd'>22 مرداد</span><span class='np en'>6,000,000</span> <span class='flag'>آخر هفته،تعطیل،پیک</span></div><div class='nrow'><span class='nd'>24 مرداد</span><span class='np en'>4,000,000</span></div><div class='nrow'><span class='nd'>25 مرداد</span><span class='np en'>4,000,000</span></div><div class='nrow'><span class='nd'>28 مرداد</span><span class='np en'>5,500,000</span> <span class='flag'>آخر هفته</span></div><div class='nrow'><span class='nd'>29 مرداد</span><span class='np en'>5,500,000</span> <span class='flag'>آخر هفته</span></div><div class='nrow'><span class='nd'>30 مرداد</span><span class='np en'>4,000,000</span></div>"}, {"rank": 6, "medal": "", "id": 3190552, "title": "اجاره کلبه چوبی در سوادکوه - سیدکلا", "host_name": "صدیقه", "host_id": 1706081, "booked": 10, "free": 0, "gross": 27100000, "discount": 0, "commission": 3252000, "net": 23848000, "nights_html": "<div class='nrow'><span class='nd'>22 مرداد</span><span class='np en'>3,200,000</span> <span class='flag'>آخر هفته،تعطیل،پیک</span></div><div class='nrow'><span class='nd'>23 مرداد</span><span class='np en'>2,500,000</span></div><div class='nrow'><span class='nd'>24 مرداد</span><span class='np en'>2,500,000</span></div><div class='nrow'><span class='nd'>25 مرداد</span><span class='np en'>2,500,000</span></div><div class='nrow'><span class='nd'>26 مرداد</span><span class='np en'>2,500,000</span></div><div class='nrow'><span class='nd'>27 مرداد</span><span class='np en'>2,500,000</span></div><div class='nrow'><span class='nd'>28 مرداد</span><span class='np en'>3,200,000</span> <span class='flag'>آخر هفته</span></div><div class='nrow'><span class='nd'>29 مرداد</span><span class='np en'>3,200,000</span> <span class='flag'>آخر هفته</span></div><div class='nrow'><span class='nd'>30 مرداد</span><span class='np en'>2,500,000</span></div><div class='nrow'><span class='nd'>31 مرداد</span><span class='np en'>2,500,000</span></div>"}, {"rank": 7, "medal": "", "id": 3240445, "title": "کلبه سوئیسی با وان جکوزی در بابلکنار - سیدکلا", "host_name": "امیر", "host_id": 1725165, "booked": 10, "free": 0, "gross": 26240000, "discount": 0, "commission": 3148800, "net": 23091200, "nights_html": "<div class='nrow'><span class='nd'>22 مرداد</span><span class='np en'>6,000,000</span> <span class='flag'>آخر هفته،تعطیل،پیک</span></div><div class='nrow'><span class='nd'>23 مرداد</span><span class='np en'>1,980,000</span></div><div class='nrow'><span class='nd'>24 مرداد</span><span class='np en'>1,980,000</span></div><div class='nrow'><span class='nd'>25 مرداد</span><span class='np en'>1,980,000</span></div><div class='nrow'><span class='nd'>26 مرداد</span><span class='np en'>1,980,000</span></div><div class='nrow'><span class='nd'>27 مرداد</span><span class='np en'>1,980,000</span></div><div class='nrow'><span class='nd'>28 مرداد</span><span class='np en'>2,480,000</span> <span class='flag'>آخر هفته</span></div><div class='nrow'><span class='nd'>29 مرداد</span><span class='np en'>3,900,000</span> <span class='flag'>آخر هفته</span></div><div class='nrow'><span class='nd'>30 مرداد</span><span class='np en'>1,980,000</span></div><div class='nrow'><span class='nd'>31 مرداد</span><span class='np en'>1,980,000</span></div>"}, {"rank": 8, "medal": "", "id": 3179336, "title": "کلبه سوئیسی با وان جکوزی در بابلکنار- سیدکلا", "host_name": "حسن", "host_id": 1618422, "booked": 9, "free": 1, "gross": 21700000, "discount": 0, "commission": 2604000, "net": 19096000, "nights_html": "<div class='nrow'><span class='nd'>22 مرداد</span><span class='np en'>4,000,000</span> <span class='flag'>آخر هفته،تعطیل،پیک</span></div><div class='nrow'><span class='nd'>24 مرداد</span><span class='np en'>1,900,000</span></div><div class='nrow'><span class='nd'>25 مرداد</span><span class='np en'>1,900,000</span></div><div class='nrow'><span class='nd'>26 مرداد</span><span class='np en'>1,900,000</span></div><div class='nrow'><span class='nd'>27 مرداد</span><span class='np en'>1,900,000</span></div><div class='nrow'><span class='nd'>28 مرداد</span><span class='np en'>2,300,000</span> <span class='flag'>آخر هفته</span></div><div class='nrow'><span class='nd'>29 مرداد</span><span class='np en'>4,000,000</span> <span class='flag'>آخر هفته</span></div><div class='nrow'><span class='nd'>30 مرداد</span><span class='np en'>1,900,000</span></div><div class='nrow'><span class='nd'>31 مرداد</span><span class='np en'>1,900,000</span></div>"}, {"rank": 9, "medal": "", "id": 3181918, "title": "کلبه سوئیسی جکوزی دار نزدیک لفور - سیدکلا", "host_name": "عیسی", "host_id": 1643170, "booked": 9, "free": 1, "gross": 19700000, "discount": 0, "commission": 2364000, "net": 17336000, "nights_html": "<div class='nrow'><span class='nd'>22 مرداد</span><span class='np en'>4,000,000</span> <span class='flag'>آخر هفته،تعطیل،پیک</span></div><div class='nrow'><span class='nd'>23 مرداد</span><span class='np en'>2,000,000</span></div><div class='nrow'><span class='nd'>24 مرداد</span><span class='np en'>1,900,000</span></div><div class='nrow'><span class='nd'>25 مرداد</span><span class='np en'>1,900,000</span></div><div class='nrow'><span class='nd'>26 مرداد</span><span class='np en'>1,900,000</span></div><div class='nrow'><span class='nd'>27 مرداد</span><span class='np en'>1,900,000</span></div><div class='nrow'><span class='nd'>28 مرداد</span><span class='np en'>2,300,000</span> <span class='flag'>آخر هفته</span></div><div class='nrow'><span class='nd'>30 مرداد</span><span class='np en'>1,900,000</span></div><div class='nrow'><span class='nd'>31 مرداد</span><span class='np en'>1,900,000</span></div>"}, {"rank": 10, "medal": "", "id": 3253520, "title": "اجاره کلبه سوئیسی در بابلکنار - سیدکلا", "host_name": "کاظم", "host_id": 1341919, "booked": 4, "free": 6, "gross": 18000000, "discount": 0, "commission": 2160000, "net": 15840000, "nights_html": "<div class='nrow'><span class='nd'>22 مرداد</span><span class='np en'>6,000,000</span> <span class='flag'>آخر هفته،تعطیل،پیک</span></div><div class='nrow'><span class='nd'>23 مرداد</span><span class='np en'>4,000,000</span></div><div class='nrow'><span class='nd'>24 مرداد</span><span class='np en'>4,000,000</span></div><div class='nrow'><span class='nd'>25 مرداد</span><span class='np en'>4,000,000</span></div>"}, {"rank": 11, "medal": "", "id": 3299045, "title": "ویلا با جکوزی در بابلکنار - سیدکلا", "host_name": "حبیب", "host_id": 2176828, "booked": 4, "free": 6, "gross": 13500000, "discount": 0, "commission": 1620000, "net": 11880000, "nights_html": "<div class='nrow'><span class='nd'>22 مرداد</span><span class='np en'>6,000,000</span> <span class='flag'>آخر هفته،تعطیل،پیک</span></div><div class='nrow'><span class='nd'>23 مرداد</span><span class='np en'>2,500,000</span></div><div class='nrow'><span class='nd'>24 مرداد</span><span class='np en'>2,500,000</span></div><div class='nrow'><span class='nd'>25 مرداد</span><span class='np en'>2,500,000</span></div>"}, {"rank": 12, "medal": "", "id": 3227770, "title": "خانه روستایی در بابلکنار - سیدکلا", "host_name": "محمد", "host_id": 2078258, "booked": 6, "free": 4, "gross": 13400000, "discount": 0, "commission": 1608000, "net": 11792000, "nights_html": "<div class='nrow'><span class='nd'>22 مرداد</span><span class='np en'>3,000,000</span> <span class='flag'>آخر هفته،تعطیل،پیک</span></div><div class='nrow'><span class='nd'>23 مرداد</span><span class='np en'>1,800,000</span></div><div class='nrow'><span class='nd'>26 مرداد</span><span class='np en'>1,800,000</span></div><div class='nrow'><span class='nd'>27 مرداد</span><span class='np en'>1,800,000</span></div><div class='nrow'><span class='nd'>28 مرداد</span><span class='np en'>2,500,000</span> <span class='flag'>آخر هفته</span></div><div class='nrow'><span class='nd'>29 مرداد</span><span class='np en'>2,500,000</span> <span class='flag'>آخر هفته</span></div>"}, {"rank": 13, "medal": "", "id": 3225446, "title": "کلبه سوئیسی با جکوزی در بابلکنار - سیدکلا", "host_name": "لیلا", "host_id": 1707066, "booked": 3, "free": 7, "gross": 10280000, "discount": 0, "commission": 1233600, "net": 9046400, "nights_html": "<div class='nrow'><span class='nd'>22 مرداد</span><span class='np en'>4,880,000</span> <span class='flag'>آخر هفته،تعطیل،پیک</span></div><div class='nrow'><span class='nd'>23 مرداد</span><span class='np en'>2,700,000</span></div><div class='nrow'><span class='nd'>24 مرداد</span><span class='np en'>2,700,000</span></div>"}, {"rank": 14, "medal": "", "id": 3206573, "title": "کلبه چوبی دوبلکس نزدیک لفور - سیدکلا", "host_name": "ابوالفضل", "host_id": 1449641, "booked": 3, "free": 7, "gross": 9000000, "discount": 0, "commission": 1080000, "net": 7920000, "nights_html": "<div class='nrow'><span class='nd'>22 مرداد</span><span class='np en'>5,000,000</span> <span class='flag'>آخر هفته،تعطیل،پیک</span></div><div class='nrow'><span class='nd'>28 مرداد</span><span class='np en'>2,000,000</span></div><div class='nrow'><span class='nd'>29 مرداد</span><span class='np en'>2,000,000</span> <span class='flag'>آخر هفته</span></div>"}, {"rank": 15, "medal": "", "id": 3237859, "title": "کلبه سوئیسی در بابلکنار - سیدکلا", "host_name": "حبیب", "host_id": 2176828, "booked": 2, "free": 8, "gross": 7000000, "discount": 0, "commission": 840000, "net": 6160000, "nights_html": "<div class='nrow'><span class='nd'>22 مرداد</span><span class='np en'>4,000,000</span> <span class='flag'>آخر هفته،تعطیل،پیک</span></div><div class='nrow'><span class='nd'>29 مرداد</span><span class='np en'>3,000,000</span> <span class='flag'>آخر هفته</span></div>"}, {"rank": 16, "medal": "", "id": 3190700, "title": "اجاره کلبه چوبی در بابلکنار - سیدکلا", "host_name": "لیلا", "host_id": 1707066, "booked": 2, "free": 8, "gross": 6670000, "discount": 0, "commission": 800400, "net": 5869600, "nights_html": "<div class='nrow'><span class='nd'>22 مرداد</span><span class='np en'>4,180,000</span> <span class='flag'>آخر هفته،تعطیل،پیک</span></div><div class='nrow'><span class='nd'>23 مرداد</span><span class='np en'>2,490,000</span></div>"}, {"rank": 17, "medal": "", "id": 3232816, "title": "خانه روستایی در بابلکنار - سیدکلا", "host_name": "محمدرضا", "host_id": 2121106, "booked": 3, "free": 7, "gross": 6500000, "discount": 0, "commission": 780000, "net": 5720000, "nights_html": "<div class='nrow'><span class='nd'>22 مرداد</span><span class='np en'>2,500,000</span> <span class='flag'>آخر هفته،تعطیل،پیک</span></div><div class='nrow'><span class='nd'>30 مرداد</span><span class='np en'>2,000,000</span></div><div class='nrow'><span class='nd'>31 مرداد</span><span class='np en'>2,000,000</span></div>"}, {"rank": 18, "medal": "", "id": 3193646, "title": "اجاره ویلا در بابلکنار - سیدکلا", "host_name": "امیرحسین", "host_id": 1672882, "booked": 1, "free": 9, "gross": 6500000, "discount": 0, "commission": 780000, "net": 5720000, "nights_html": "<div class='nrow'><span class='nd'>22 مرداد</span><span class='np en'>6,500,000</span> <span class='flag'>آخر هفته،تعطیل،پیک</span></div>"}, {"rank": 19, "medal": "", "id": 3294040, "title": "ویلا با چشم انداز زیبا در بابلکنار - سیدکلا", "host_name": "محمدرضا", "host_id": 2996075, "booked": 1, "free": 9, "gross": 6000000, "discount": 0, "commission": 720000, "net": 5280000, "nights_html": "<div class='nrow'><span class='nd'>22 مرداد</span><span class='np en'>6,000,000</span> <span class='flag'>آخر هفته،تعطیل،پیک</span></div>"}, {"rank": 20, "medal": "", "id": 3302232, "title": "ویلا دوبلکس در بابلکنار - سیدکلا", "host_name": "بهنام", "host_id": 3089046, "booked": 1, "free": 9, "gross": 6000000, "discount": 0, "commission": 720000, "net": 5280000, "nights_html": "<div class='nrow'><span class='nd'>22 مرداد</span><span class='np en'>6,000,000</span> <span class='flag'>آخر هفته،تعطیل،پیک</span></div>"}, {"rank": 21, "medal": "", "id": 3198301, "title": "اجاره کلبه سوئدی نزدیک لفور - سیدکلا", "host_name": "محمدرضا", "host_id": 1618958, "booked": 1, "free": 9, "gross": 5000000, "discount": 0, "commission": 600000, "net": 4400000, "nights_html": "<div class='nrow'><span class='nd'>22 مرداد</span><span class='np en'>5,000,000</span> <span class='flag'>آخر هفته،تعطیل،پیک</span></div>"}, {"rank": 22, "medal": "", "id": 3195220, "title": "اجاره کلبه سنتی نزدیک لفور - سیدکلا", "host_name": "محمدرضا", "host_id": 1618958, "booked": 1, "free": 9, "gross": 5000000, "discount": 0, "commission": 600000, "net": 4400000, "nights_html": "<div class='nrow'><span class='nd'>22 مرداد</span><span class='np en'>5,000,000</span> <span class='flag'>آخر هفته،تعطیل،پیک</span></div>"}, {"rank": 23, "medal": "", "id": 3293951, "title": "کلبه سوئیسی در بابلکنار - سیدکلا", "host_name": "سیدمهدی", "host_id": 2995344, "booked": 1, "free": 9, "gross": 5000000, "discount": 0, "commission": 600000, "net": 4400000, "nights_html": "<div class='nrow'><span class='nd'>22 مرداد</span><span class='np en'>5,000,000</span> <span class='flag'>آخر هفته،تعطیل،پیک</span></div>"}, {"rank": 24, "medal": "", "id": 3230216, "title": "ویلا دوبلکس با جکوزی در بابلکنار - سیدکلا", "host_name": "حسین", "host_id": 2096023, "booked": 1, "free": 9, "gross": 5000000, "discount": 0, "commission": 600000, "net": 4400000, "nights_html": "<div class='nrow'><span class='nd'>22 مرداد</span><span class='np en'>5,000,000</span> <span class='flag'>آخر هفته،تعطیل،پیک</span></div>"}, {"rank": 25, "medal": "", "id": 3201318, "title": "کلبه حیاط دار در بابلکنار - سیدکلا", "host_name": "فائزه", "host_id": 1807361, "booked": 2, "free": 8, "gross": 4950000, "discount": 0, "commission": 594000, "net": 4356000, "nights_html": "<div class='nrow'><span class='nd'>22 مرداد</span><span class='np en'>2,500,000</span> <span class='flag'>آخر هفته،تعطیل،پیک</span></div><div class='nrow'><span class='nd'>29 مرداد</span><span class='np en'>2,450,000</span> <span class='flag'>آخر هفته</span></div>"}, {"rank": 26, "medal": "", "id": 3198234, "title": "اجاره کلبه سوئدی نزدیک لفور - سیدکلا - ۲", "host_name": "محمدرضا", "host_id": 1618958, "booked": 1, "free": 9, "gross": 4500000, "discount": 0, "commission": 540000, "net": 3960000, "nights_html": "<div class='nrow'><span class='nd'>22 مرداد</span><span class='np en'>4,500,000</span> <span class='flag'>آخر هفته،تعطیل،پیک</span></div>"}, {"rank": 27, "medal": "", "id": 3195933, "title": "کلبه سوئیسی نزدیک لفور - سیدکلا", "host_name": "محمدرضا", "host_id": 1618958, "booked": 1, "free": 9, "gross": 4500000, "discount": 0, "commission": 540000, "net": 3960000, "nights_html": "<div class='nrow'><span class='nd'>22 مرداد</span><span class='np en'>4,500,000</span> <span class='flag'>آخر هفته،تعطیل،پیک</span></div>"}, {"rank": 28, "medal": "", "id": 3179404, "title": "اجاره کلبه چوبی نزدیک لفور - سیدکلا", "host_name": "محمدرضا", "host_id": 1618958, "booked": 1, "free": 9, "gross": 4500000, "discount": 0, "commission": 540000, "net": 3960000, "nights_html": "<div class='nrow'><span class='nd'>22 مرداد</span><span class='np en'>4,500,000</span> <span class='flag'>آخر هفته،تعطیل،پیک</span></div>"}, {"rank": 29, "medal": "", "id": 3149747, "title": "کلبه دوبلکس در سیدکلا بابلکنار", "host_name": "میراحسان", "host_id": 1197838, "booked": 1, "free": 9, "gross": 4000000, "discount": 0, "commission": 480000, "net": 3520000, "nights_html": "<div class='nrow'><span class='nd'>22 مرداد</span><span class='np en'>4,000,000</span> <span class='flag'>آخر هفته،تعطیل،پیک</span></div>"}, {"rank": 30, "medal": "", "id": 3262853, "title": "خانه مبله در بابلکنار - سیدکلا - طبقه دوم", "host_name": "فائزه", "host_id": 1807361, "booked": 2, "free": 8, "gross": 4000000, "discount": 0, "commission": 480000, "net": 3520000, "nights_html": "<div class='nrow'><span class='nd'>22 مرداد</span><span class='np en'>2,000,000</span> <span class='flag'>آخر هفته،تعطیل،پیک</span></div><div class='nrow'><span class='nd'>23 مرداد</span><span class='np en'>2,000,000</span></div>"}, {"rank": 31, "medal": "", "id": 3297585, "title": "کلبه سوئیسی در بابلکنار - سیدکلا", "host_name": "محدثه", "host_id": 3024941, "booked": 1, "free": 9, "gross": 3900000, "discount": 0, "commission": 468000, "net": 3432000, "nights_html": "<div class='nrow'><span class='nd'>22 مرداد</span><span class='np en'>3,900,000</span> <span class='flag'>آخر هفته،تعطیل،پیک</span></div>"}, {"rank": 32, "medal": "", "id": 3149749, "title": "سوئیت در سیدکلا بابلکنار - همکف", "host_name": "میراحسان", "host_id": 1197838, "booked": 1, "free": 9, "gross": 3500000, "discount": 0, "commission": 420000, "net": 3080000, "nights_html": "<div class='nrow'><span class='nd'>22 مرداد</span><span class='np en'>3,500,000</span> <span class='flag'>آخر هفته،تعطیل،پیک</span></div>"}, {"rank": 33, "medal": "", "id": 3184142, "title": "اجاره خانه چوبی استخردار در سیدکلا بابلکنار", "host_name": "کاظم", "host_id": 1341919, "booked": 0, "free": 10, "gross": 0, "discount": 0, "commission": 0, "net": 0, "nights_html": ""}];
+const HOSTS = [{"host_name": "عاطفه", "host_id": 1890654, "rooms_count": 2, "booked": 11, "gross": 80000000, "discount": 0, "commission": 9600000, "net": 70400000, "rooms_html": "<div class='nrow'><a class='title-link' href='https://www.jajiga.com/room/3219516' target='_blank' rel='noopener'>ویلا دوبلکس استخردار در بابل- سیدکلا</a> <span class='en' style='color:var(--muted);font-size:12px'>(3219516)</span> <span class='en' style='color:var(--muted);font-size:12px'>5 شب</span> <span class='np en'>51,000,000</span> <span class='en' style='color:#34d399;font-weight:700'>44,880,000</span></div><div class='nrow'><a class='title-link' href='https://www.jajiga.com/room/3206720' target='_blank' rel='noopener'>کلبه چوبی جکوزی دار در بابلکنار - سیدکلا</a> <span class='en' style='color:var(--muted);font-size:12px'>(3206720)</span> <span class='en' style='color:var(--muted);font-size:12px'>6 شب</span> <span class='np en'>29,000,000</span> <span class='en' style='color:#34d399;font-weight:700'>25,520,000</span></div>", "rank": 1, "medal": "🥇"}, {"host_name": "یوسفعلی", "host_id": 1996706, "rooms_count": 1, "booked": 5, "gross": 38000000, "discount": 0, "commission": 4560000, "net": 33440000, "rooms_html": "<div class='nrow'><a class='title-link' href='https://www.jajiga.com/room/3215808' target='_blank' rel='noopener'>کلبه سوئیسی جکوزی دار در بابلکنار - سید کلا</a> <span class='en' style='color:var(--muted);font-size:12px'>(3215808)</span> <span class='en' style='color:var(--muted);font-size:12px'>5 شب</span> <span class='np en'>38,000,000</span> <span class='en' style='color:#34d399;font-weight:700'>33,440,000</span></div>", "rank": 2, "medal": "🥈"}, {"host_name": "محمد", "host_id": 1613724, "rooms_count": 1, "booked": 4, "gross": 37000000, "discount": 0, "commission": 4440000, "net": 32560000, "rooms_html": "<div class='nrow'><a class='title-link' href='https://www.jajiga.com/room/3178910' target='_blank' rel='noopener'>ویلا استخردار در بابلکنار - سیدکلا</a> <span class='en' style='color:var(--muted);font-size:12px'>(3178910)</span> <span class='en' style='color:var(--muted);font-size:12px'>4 شب</span> <span class='np en'>37,000,000</span> <span class='en' style='color:#34d399;font-weight:700'>32,560,000</span></div>", "rank": 3, "medal": "🥉"}, {"host_name": "الناز", "host_id": 1688265, "rooms_count": 1, "booked": 6, "gross": 34400000, "discount": 0, "commission": 4128000, "net": 30272000, "rooms_html": "<div class='nrow'><a class='title-link' href='https://www.jajiga.com/room/3186964' target='_blank' rel='noopener'>کلبه سوئیسی با جکوزی در بابلکنار - گونه کلا</a> <span class='en' style='color:var(--muted);font-size:12px'>(3186964)</span> <span class='en' style='color:var(--muted);font-size:12px'>6 شب</span> <span class='np en'>34,400,000</span> <span class='en' style='color:#34d399;font-weight:700'>30,272,000</span></div>", "rank": 4, "medal": ""}, {"host_name": "صدیقه", "host_id": 1706081, "rooms_count": 1, "booked": 10, "gross": 27100000, "discount": 0, "commission": 3252000, "net": 23848000, "rooms_html": "<div class='nrow'><a class='title-link' href='https://www.jajiga.com/room/3190552' target='_blank' rel='noopener'>اجاره کلبه چوبی در سوادکوه - سیدکلا</a> <span class='en' style='color:var(--muted);font-size:12px'>(3190552)</span> <span class='en' style='color:var(--muted);font-size:12px'>10 شب</span> <span class='np en'>27,100,000</span> <span class='en' style='color:#34d399;font-weight:700'>23,848,000</span></div>", "rank": 5, "medal": ""}, {"host_name": "امیر", "host_id": 1725165, "rooms_count": 1, "booked": 10, "gross": 26240000, "discount": 0, "commission": 3148800, "net": 23091200, "rooms_html": "<div class='nrow'><a class='title-link' href='https://www.jajiga.com/room/3240445' target='_blank' rel='noopener'>کلبه سوئیسی با وان جکوزی در بابلکنار - سیدکلا</a> <span class='en' style='color:var(--muted);font-size:12px'>(3240445)</span> <span class='en' style='color:var(--muted);font-size:12px'>10 شب</span> <span class='np en'>26,240,000</span> <span class='en' style='color:#34d399;font-weight:700'>23,091,200</span></div>", "rank": 6, "medal": ""}, {"host_name": "محمدرضا", "host_id": 1618958, "rooms_count": 5, "booked": 5, "gross": 23500000, "discount": 0, "commission": 2820000, "net": 20680000, "rooms_html": "<div class='nrow'><a class='title-link' href='https://www.jajiga.com/room/3198301' target='_blank' rel='noopener'>اجاره کلبه سوئدی نزدیک لفور - سیدکلا</a> <span class='en' style='color:var(--muted);font-size:12px'>(3198301)</span> <span class='en' style='color:var(--muted);font-size:12px'>1 شب</span> <span class='np en'>5,000,000</span> <span class='en' style='color:#34d399;font-weight:700'>4,400,000</span></div><div class='nrow'><a class='title-link' href='https://www.jajiga.com/room/3195220' target='_blank' rel='noopener'>اجاره کلبه سنتی نزدیک لفور - سیدکلا</a> <span class='en' style='color:var(--muted);font-size:12px'>(3195220)</span> <span class='en' style='color:var(--muted);font-size:12px'>1 شب</span> <span class='np en'>5,000,000</span> <span class='en' style='color:#34d399;font-weight:700'>4,400,000</span></div><div class='nrow'><a class='title-link' href='https://www.jajiga.com/room/3198234' target='_blank' rel='noopener'>اجاره کلبه سوئدی نزدیک لفور - سیدکلا - ۲</a> <span class='en' style='color:var(--muted);font-size:12px'>(3198234)</span> <span class='en' style='color:var(--muted);font-size:12px'>1 شب</span> <span class='np en'>4,500,000</span> <span class='en' style='color:#34d399;font-weight:700'>3,960,000</span></div><div class='nrow'><a class='title-link' href='https://www.jajiga.com/room/3195933' target='_blank' rel='noopener'>کلبه سوئیسی نزدیک لفور - سیدکلا</a> <span class='en' style='color:var(--muted);font-size:12px'>(3195933)</span> <span class='en' style='color:var(--muted);font-size:12px'>1 شب</span> <span class='np en'>4,500,000</span> <span class='en' style='color:#34d399;font-weight:700'>3,960,000</span></div><div class='nrow'><a class='title-link' href='https://www.jajiga.com/room/3179404' target='_blank' rel='noopener'>اجاره کلبه چوبی نزدیک لفور - سیدکلا</a> <span class='en' style='color:var(--muted);font-size:12px'>(3179404)</span> <span class='en' style='color:var(--muted);font-size:12px'>1 شب</span> <span class='np en'>4,500,000</span> <span class='en' style='color:#34d399;font-weight:700'>3,960,000</span></div>", "rank": 7, "medal": ""}, {"host_name": "حسن", "host_id": 1618422, "rooms_count": 1, "booked": 9, "gross": 21700000, "discount": 0, "commission": 2604000, "net": 19096000, "rooms_html": "<div class='nrow'><a class='title-link' href='https://www.jajiga.com/room/3179336' target='_blank' rel='noopener'>کلبه سوئیسی با وان جکوزی در بابلکنار- سیدکلا</a> <span class='en' style='color:var(--muted);font-size:12px'>(3179336)</span> <span class='en' style='color:var(--muted);font-size:12px'>9 شب</span> <span class='np en'>21,700,000</span> <span class='en' style='color:#34d399;font-weight:700'>19,096,000</span></div>", "rank": 8, "medal": ""}, {"host_name": "حبیب", "host_id": 2176828, "rooms_count": 2, "booked": 6, "gross": 20500000, "discount": 0, "commission": 2460000, "net": 18040000, "rooms_html": "<div class='nrow'><a class='title-link' href='https://www.jajiga.com/room/3299045' target='_blank' rel='noopener'>ویلا با جکوزی در بابلکنار - سیدکلا</a> <span class='en' style='color:var(--muted);font-size:12px'>(3299045)</span> <span class='en' style='color:var(--muted);font-size:12px'>4 شب</span> <span class='np en'>13,500,000</span> <span class='en' style='color:#34d399;font-weight:700'>11,880,000</span></div><div class='nrow'><a class='title-link' href='https://www.jajiga.com/room/3237859' target='_blank' rel='noopener'>کلبه سوئیسی در بابلکنار - سیدکلا</a> <span class='en' style='color:var(--muted);font-size:12px'>(3237859)</span> <span class='en' style='color:var(--muted);font-size:12px'>2 شب</span> <span class='np en'>7,000,000</span> <span class='en' style='color:#34d399;font-weight:700'>6,160,000</span></div>", "rank": 9, "medal": ""}, {"host_name": "عیسی", "host_id": 1643170, "rooms_count": 1, "booked": 9, "gross": 19700000, "discount": 0, "commission": 2364000, "net": 17336000, "rooms_html": "<div class='nrow'><a class='title-link' href='https://www.jajiga.com/room/3181918' target='_blank' rel='noopener'>کلبه سوئیسی جکوزی دار نزدیک لفور - سیدکلا</a> <span class='en' style='color:var(--muted);font-size:12px'>(3181918)</span> <span class='en' style='color:var(--muted);font-size:12px'>9 شب</span> <span class='np en'>19,700,000</span> <span class='en' style='color:#34d399;font-weight:700'>17,336,000</span></div>", "rank": 10, "medal": ""}, {"host_name": "کاظم", "host_id": 1341919, "rooms_count": 2, "booked": 4, "gross": 18000000, "discount": 0, "commission": 2160000, "net": 15840000, "rooms_html": "<div class='nrow'><a class='title-link' href='https://www.jajiga.com/room/3253520' target='_blank' rel='noopener'>اجاره کلبه سوئیسی در بابلکنار - سیدکلا</a> <span class='en' style='color:var(--muted);font-size:12px'>(3253520)</span> <span class='en' style='color:var(--muted);font-size:12px'>4 شب</span> <span class='np en'>18,000,000</span> <span class='en' style='color:#34d399;font-weight:700'>15,840,000</span></div><div class='nrow'><a class='title-link' href='https://www.jajiga.com/room/3184142' target='_blank' rel='noopener'>اجاره خانه چوبی استخردار در سیدکلا بابلکنار</a> <span class='en' style='color:var(--muted);font-size:12px'>(3184142)</span> <span class='en' style='color:var(--muted);font-size:12px'>0 شب</span> <span class='np en'>0</span> <span class='en' style='color:#34d399;font-weight:700'>0</span></div>", "rank": 11, "medal": ""}, {"host_name": "لیلا", "host_id": 1707066, "rooms_count": 2, "booked": 5, "gross": 16950000, "discount": 0, "commission": 2034000, "net": 14916000, "rooms_html": "<div class='nrow'><a class='title-link' href='https://www.jajiga.com/room/3225446' target='_blank' rel='noopener'>کلبه سوئیسی با جکوزی در بابلکنار - سیدکلا</a> <span class='en' style='color:var(--muted);font-size:12px'>(3225446)</span> <span class='en' style='color:var(--muted);font-size:12px'>3 شب</span> <span class='np en'>10,280,000</span> <span class='en' style='color:#34d399;font-weight:700'>9,046,400</span></div><div class='nrow'><a class='title-link' href='https://www.jajiga.com/room/3190700' target='_blank' rel='noopener'>اجاره کلبه چوبی در بابلکنار - سیدکلا</a> <span class='en' style='color:var(--muted);font-size:12px'>(3190700)</span> <span class='en' style='color:var(--muted);font-size:12px'>2 شب</span> <span class='np en'>6,670,000</span> <span class='en' style='color:#34d399;font-weight:700'>5,869,600</span></div>", "rank": 12, "medal": ""}, {"host_name": "محمد", "host_id": 2078258, "rooms_count": 1, "booked": 6, "gross": 13400000, "discount": 0, "commission": 1608000, "net": 11792000, "rooms_html": "<div class='nrow'><a class='title-link' href='https://www.jajiga.com/room/3227770' target='_blank' rel='noopener'>خانه روستایی در بابلکنار - سیدکلا</a> <span class='en' style='color:var(--muted);font-size:12px'>(3227770)</span> <span class='en' style='color:var(--muted);font-size:12px'>6 شب</span> <span class='np en'>13,400,000</span> <span class='en' style='color:#34d399;font-weight:700'>11,792,000</span></div>", "rank": 13, "medal": ""}, {"host_name": "ابوالفضل", "host_id": 1449641, "rooms_count": 1, "booked": 3, "gross": 9000000, "discount": 0, "commission": 1080000, "net": 7920000, "rooms_html": "<div class='nrow'><a class='title-link' href='https://www.jajiga.com/room/3206573' target='_blank' rel='noopener'>کلبه چوبی دوبلکس نزدیک لفور - سیدکلا</a> <span class='en' style='color:var(--muted);font-size:12px'>(3206573)</span> <span class='en' style='color:var(--muted);font-size:12px'>3 شب</span> <span class='np en'>9,000,000</span> <span class='en' style='color:#34d399;font-weight:700'>7,920,000</span></div>", "rank": 14, "medal": ""}, {"host_name": "فائزه", "host_id": 1807361, "rooms_count": 2, "booked": 4, "gross": 8950000, "discount": 0, "commission": 1074000, "net": 7876000, "rooms_html": "<div class='nrow'><a class='title-link' href='https://www.jajiga.com/room/3201318' target='_blank' rel='noopener'>کلبه حیاط دار در بابلکنار - سیدکلا</a> <span class='en' style='color:var(--muted);font-size:12px'>(3201318)</span> <span class='en' style='color:var(--muted);font-size:12px'>2 شب</span> <span class='np en'>4,950,000</span> <span class='en' style='color:#34d399;font-weight:700'>4,356,000</span></div><div class='nrow'><a class='title-link' href='https://www.jajiga.com/room/3262853' target='_blank' rel='noopener'>خانه مبله در بابلکنار - سیدکلا - طبقه دوم</a> <span class='en' style='color:var(--muted);font-size:12px'>(3262853)</span> <span class='en' style='color:var(--muted);font-size:12px'>2 شب</span> <span class='np en'>4,000,000</span> <span class='en' style='color:#34d399;font-weight:700'>3,520,000</span></div>", "rank": 15, "medal": ""}, {"host_name": "میراحسان", "host_id": 1197838, "rooms_count": 2, "booked": 2, "gross": 7500000, "discount": 0, "commission": 900000, "net": 6600000, "rooms_html": "<div class='nrow'><a class='title-link' href='https://www.jajiga.com/room/3149747' target='_blank' rel='noopener'>کلبه دوبلکس در سیدکلا بابلکنار</a> <span class='en' style='color:var(--muted);font-size:12px'>(3149747)</span> <span class='en' style='color:var(--muted);font-size:12px'>1 شب</span> <span class='np en'>4,000,000</span> <span class='en' style='color:#34d399;font-weight:700'>3,520,000</span></div><div class='nrow'><a class='title-link' href='https://www.jajiga.com/room/3149749' target='_blank' rel='noopener'>سوئیت در سیدکلا بابلکنار - همکف</a> <span class='en' style='color:var(--muted);font-size:12px'>(3149749)</span> <span class='en' style='color:var(--muted);font-size:12px'>1 شب</span> <span class='np en'>3,500,000</span> <span class='en' style='color:#34d399;font-weight:700'>3,080,000</span></div>", "rank": 16, "medal": ""}, {"host_name": "محمدرضا", "host_id": 2121106, "rooms_count": 1, "booked": 3, "gross": 6500000, "discount": 0, "commission": 780000, "net": 5720000, "rooms_html": "<div class='nrow'><a class='title-link' href='https://www.jajiga.com/room/3232816' target='_blank' rel='noopener'>خانه روستایی در بابلکنار - سیدکلا</a> <span class='en' style='color:var(--muted);font-size:12px'>(3232816)</span> <span class='en' style='color:var(--muted);font-size:12px'>3 شب</span> <span class='np en'>6,500,000</span> <span class='en' style='color:#34d399;font-weight:700'>5,720,000</span></div>", "rank": 17, "medal": ""}, {"host_name": "امیرحسین", "host_id": 1672882, "rooms_count": 1, "booked": 1, "gross": 6500000, "discount": 0, "commission": 780000, "net": 5720000, "rooms_html": "<div class='nrow'><a class='title-link' href='https://www.jajiga.com/room/3193646' target='_blank' rel='noopener'>اجاره ویلا در بابلکنار - سیدکلا</a> <span class='en' style='color:var(--muted);font-size:12px'>(3193646)</span> <span class='en' style='color:var(--muted);font-size:12px'>1 شب</span> <span class='np en'>6,500,000</span> <span class='en' style='color:#34d399;font-weight:700'>5,720,000</span></div>", "rank": 18, "medal": ""}, {"host_name": "محمدرضا", "host_id": 2996075, "rooms_count": 1, "booked": 1, "gross": 6000000, "discount": 0, "commission": 720000, "net": 5280000, "rooms_html": "<div class='nrow'><a class='title-link' href='https://www.jajiga.com/room/3294040' target='_blank' rel='noopener'>ویلا با چشم انداز زیبا در بابلکنار - سیدکلا</a> <span class='en' style='color:var(--muted);font-size:12px'>(3294040)</span> <span class='en' style='color:var(--muted);font-size:12px'>1 شب</span> <span class='np en'>6,000,000</span> <span class='en' style='color:#34d399;font-weight:700'>5,280,000</span></div>", "rank": 19, "medal": ""}, {"host_name": "بهنام", "host_id": 3089046, "rooms_count": 1, "booked": 1, "gross": 6000000, "discount": 0, "commission": 720000, "net": 5280000, "rooms_html": "<div class='nrow'><a class='title-link' href='https://www.jajiga.com/room/3302232' target='_blank' rel='noopener'>ویلا دوبلکس در بابلکنار - سیدکلا</a> <span class='en' style='color:var(--muted);font-size:12px'>(3302232)</span> <span class='en' style='color:var(--muted);font-size:12px'>1 شب</span> <span class='np en'>6,000,000</span> <span class='en' style='color:#34d399;font-weight:700'>5,280,000</span></div>", "rank": 20, "medal": ""}, {"host_name": "سیدمهدی", "host_id": 2995344, "rooms_count": 1, "booked": 1, "gross": 5000000, "discount": 0, "commission": 600000, "net": 4400000, "rooms_html": "<div class='nrow'><a class='title-link' href='https://www.jajiga.com/room/3293951' target='_blank' rel='noopener'>کلبه سوئیسی در بابلکنار - سیدکلا</a> <span class='en' style='color:var(--muted);font-size:12px'>(3293951)</span> <span class='en' style='color:var(--muted);font-size:12px'>1 شب</span> <span class='np en'>5,000,000</span> <span class='en' style='color:#34d399;font-weight:700'>4,400,000</span></div>", "rank": 21, "medal": ""}, {"host_name": "حسین", "host_id": 2096023, "rooms_count": 1, "booked": 1, "gross": 5000000, "discount": 0, "commission": 600000, "net": 4400000, "rooms_html": "<div class='nrow'><a class='title-link' href='https://www.jajiga.com/room/3230216' target='_blank' rel='noopener'>ویلا دوبلکس با جکوزی در بابلکنار - سیدکلا</a> <span class='en' style='color:var(--muted);font-size:12px'>(3230216)</span> <span class='en' style='color:var(--muted);font-size:12px'>1 شب</span> <span class='np en'>5,000,000</span> <span class='en' style='color:#34d399;font-weight:700'>4,400,000</span></div>", "rank": 22, "medal": ""}, {"host_name": "محدثه", "host_id": 3024941, "rooms_count": 1, "booked": 1, "gross": 3900000, "discount": 0, "commission": 468000, "net": 3432000, "rooms_html": "<div class='nrow'><a class='title-link' href='https://www.jajiga.com/room/3297585' target='_blank' rel='noopener'>کلبه سوئیسی در بابلکنار - سیدکلا</a> <span class='en' style='color:var(--muted);font-size:12px'>(3297585)</span> <span class='en' style='color:var(--muted);font-size:12px'>1 شب</span> <span class='np en'>3,900,000</span> <span class='en' style='color:#34d399;font-weight:700'>3,432,000</span></div>", "rank": 23, "medal": ""}];
+
+let sortKey = null, sortDir = -1;
+const tbody = document.getElementById('tbody');
+function fmt(n){ return n.toLocaleString('en-US'); }
+function render(){
+  let arr = DATA.slice();
+  if (sortKey){
+    arr.sort((a,b)=>{
+      const av = sortValue(a), bv = sortValue(b);
+      if (av === bv) return (b.net - a.net);
+      if (typeof av === 'string') return sortDir * av.localeCompare(bv, 'fa');
+      return sortDir * (av - bv);
+    });
+  }
+  tbody.innerHTML = arr.map((r,i)=>{
+    const rank = i+1;
+    let medal = rank===1?'🥇':rank===2?'🥈':rank===3?'🥉':'';
+    const hostCell = r.host_id
+      ? `<a class="host-link" href="https://www.jajiga.com/user/${r.host_id}" target="_blank" rel="noopener">${r.host_name}</a>`
+      : `<span style="color:var(--muted)">${r.host_name}</span>`;
+    return `<tr class="main-row rank-${rank}" data-i="${i}">
+      <td><span class="medal">${medal}</span> <span class="rank-num en">${rank}</span></td>
+      <td class="title-cell"><a class="title-link" href="https://www.jajiga.com/room/${r.id}" target="_blank" rel="noopener">${r.title}</a> <span class="en" style="color:var(--muted);font-size:11px">(${r.id})</span></td>
+      <td>${hostCell}</td>
+      <td><span class="en">${r.booked}</span></td>
+      <td><span class="en">${fmt(r.gross)}</span></td>
+      <td>${r.discount ? '<span class="en" style="color:#f87171">'+fmt(r.discount)+'</span>' : '<span class="en" style="color:var(--muted)">0</span>'}</td>
+      <td><span class="en">${fmt(r.commission)}</span></td>
+      <td><span class="en" style="color:#34d399;font-weight:800">${fmt(r.net)}</span></td>
+      <td><span class="chev" id="chev-${i}">▾</span></td>
+    </tr>
+    <tr class="detail-row" id="det-${i}" style="display:none">
+      <td colspan="9"><b>شب‌های پر شده:</b> ${r.nights_html || '<span class="empty">رزروی ندارد</span>'}</td>
+    </tr>`;
+  }).join('');
+  document.querySelectorAll('.main-row').forEach(tr=>{
+    tr.onclick = (e)=>{
+      // don't toggle when clicking a link (open in new tab)
+      if (e.target.closest('a')) return;
+      const i = tr.dataset.i;
+      const det = document.getElementById('det-'+i);
+      const chev = document.getElementById('chev-'+i);
+      const show = det.style.display==='none';
+      det.style.display = show?'':'none';
+      chev.textContent = show?'▴':'▾';
+    };
+  });
+}
+function sortValue(r){
+  switch(sortKey){
+    case 'rank': return r.net;
+    case 'booked': return r.booked;
+    case 'gross': return r.gross;
+    case 'discount': return r.discount;
+    case 'commission': return r.commission;
+    case 'net': return r.net;
+    case 'host': return r.host_name;
+    default: return 0;
+  }
+}
+document.querySelectorAll('th[data-key]').forEach(th=>{
+  th.onclick = ()=>{
+    const k = th.dataset.key;
+    if (sortKey !== k){ sortKey = k; sortDir = -1; }
+    else if (sortDir === -1){ sortDir = 1; }
+    else { sortKey = null; sortDir = -1; }
+    document.querySelectorAll('th .arrow').forEach(a=>a.textContent='');
+    if (sortKey){ const a = th.querySelector('.arrow'); a.textContent = sortDir===-1?'▼':'▲'; }
+    render();
+  };
+});
+
+// ---- host aggregation table ----
+let hostSortKey = null, hostSortDir = -1;
+const hostTbody = document.getElementById('hostTbody');
+function renderHosts(){
+  let arr = HOSTS.slice();
+  if (hostSortKey){
+    arr.sort((a,b)=>{
+      const av = hostSortValue(a), bv = hostSortValue(b);
+      if (av === bv) return (b.net - a.net);
+      if (typeof av === 'string') return hostSortDir * av.localeCompare(bv, 'fa');
+      return hostSortDir * (av - bv);
+    });
+  }
+  hostTbody.innerHTML = arr.map((h,i)=>{
+    const rank = i+1;
+    let medal = rank===1?'🥇':rank===2?'🥈':rank===3?'🥉':'';
+    const hostCell = h.host_id
+      ? `<a class="host-link" href="https://www.jajiga.com/user/${h.host_id}" target="_blank" rel="noopener">${h.host_name}</a>`
+      : `<span style="color:var(--muted)">${h.host_name}</span>`;
+    return `<tr class="host-row rank-${rank}" data-i="${i}">
+      <td><span class="medal">${medal}</span> <span class="rank-num en">${rank}</span></td>
+      <td>${hostCell}</td>
+      <td><span class="en">${h.rooms_count}</span></td>
+      <td><span class="en">${h.booked}</span></td>
+      <td><span class="en">${fmt(h.gross)}</span></td>
+      <td>${h.discount ? '<span class="en" style="color:#f87171">'+fmt(h.discount)+'</span>' : '<span class="en" style="color:var(--muted)">0</span>'}</td>
+      <td><span class="en">${fmt(h.commission)}</span></td>
+      <td><span class="en" style="color:#34d399;font-weight:800">${fmt(h.net)}</span></td>
+      <td><span class="chev" id="hchev-${i}">▾</span></td>
+    </tr>
+    <tr class="detail-row" id="hdet-${i}" style="display:none">
+      <td colspan="9"><b>اقامتگاه‌های این میزبان (ناخالص / خالص):</b> ${h.rooms_html || '<span class="empty">—</span>'}</td>
+    </tr>`;
+  }).join('');
+  document.querySelectorAll('.host-row').forEach(tr=>{
+    tr.onclick = (e)=>{
+      if (e.target.closest('a')) return;
+      const i = tr.dataset.i;
+      const det = document.getElementById('hdet-'+i);
+      const chev = document.getElementById('hchev-'+i);
+      const show = det.style.display==='none';
+      det.style.display = show?'':'none';
+      chev.textContent = show?'▴':'▾';
+    };
+  });
+}
+function hostSortValue(h){
+  switch(hostSortKey){
+    case 'rank': return h.net;
+    case 'rooms': return h.rooms_count;
+    case 'booked': return h.booked;
+    case 'gross': return h.gross;
+    case 'discount': return h.discount;
+    case 'commission': return h.commission;
+    case 'net': return h.net;
+    case 'host': return h.host_name;
+    default: return 0;
+  }
+}
+document.querySelectorAll('th[data-hkey]').forEach(th=>{
+  th.onclick = ()=>{
+    const k = th.dataset.hkey;
+    if (hostSortKey !== k){ hostSortKey = k; hostSortDir = -1; }
+    else if (hostSortDir === -1){ hostSortDir = 1; }
+    else { hostSortKey = null; hostSortDir = -1; }
+    document.querySelectorAll('th .arrow').forEach(a=>a.textContent='');
+    if (hostSortKey){ const a = th.querySelector('.arrow'); a.textContent = hostSortDir===-1?'▼':'▲'; }
+    renderHosts();
+  };
+});
+render();
+renderHosts();
+
+</script>
+</body>
+</html>

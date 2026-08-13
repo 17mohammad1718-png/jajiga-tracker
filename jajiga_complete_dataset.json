@@ -3,7 +3,7 @@
     "project": "jajiga-tracker",
     "region": "Babolkenar (Mazandaran), Babol — Swiss chalets / cottages",
     "version": "1.0",
-    "generated_at": "2026-08-03T07:28:26+00:00",
+    "generated_at": "2026-08-03T07:53:55+00:00",
     "purpose": "Complete lossless aggregation of every data file in the jajiga-tracker project, structured for efficient AI reading.",
     "structure_guide": {
       "hosts_db": "dict {meta, hosts[346]} — full host profiles with embedded rooms (from /api/user/{id})",

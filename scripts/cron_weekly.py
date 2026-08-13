@@ -61,21 +61,37 @@ def main():
 
 
 def main_with_occupancy():
-    """Run update + occupancy fetch + dashboard rebuild."""
+    """Run update + occupancy fetch + dashboard rebuild.
+
+    Self-sufficient: if the full update fails (transient API timeout), retry
+    once with --skip-discover (refresh known cabins only). The dashboard is
+    always rebuilt; the run exits 0 as long as the rebuild succeeds so a
+    transient network stall doesn't surface as a cron error every week.
+    """
     print("Jajiga weekly update starting...", flush=True)
 
     update = run("weekly_update.py", "--quiet")
     print(update.stdout, end="")
     if update.returncode != 0:
-        print("ERROR: weekly_update.py failed:")
-        print(update.stderr[-3000:] if update.stderr else "(no stderr)")
-        sys.exit(1)
+        print("WARNING: full update failed; retrying with --skip-discover "
+              "(refresh known cabins only):")
+        print(update.stderr[-1500:] if update.stderr else "(no stderr)")
+        update = run("weekly_update.py", "--quiet", "--skip-discover")
+        print(update.stdout, end="")
+        if update.returncode != 0:
+            print("ERROR: fallback update also failed; continuing with "
+                  "existing data:")
+            print(update.stderr[-1500:] if update.stderr else "(no stderr)")
+        else:
+            print("Fallback refresh (--skip-discover) succeeded.")
 
     summary_line = ""
     for line in update.stdout.splitlines():
         if line.startswith("REPORT:"):
             summary_line = line
             break
+    if not summary_line:
+        summary_line = "REPORT: update failed — dashboard rebuilt with existing data"
 
     # Fetch occupancy (calendar API) for all cabins
     occ = run("fetch_occupancy.py")

@@ -43,7 +43,7 @@ PER_PAGE = 18
 QUIET = "--quiet" in sys.argv
 
 
-def fetch_json(url, retries=3):
+def fetch_json(url, retries=5):
     last_err = None
     for attempt in range(retries + 1):
         try:

@@ -98,13 +98,25 @@ def fetch_room(rid):
 
 
 def search_page(url_path_with_page):
-    """One catalog search page. `page=N` must be inside the url param."""
+    """One catalog search page. `page=N` must be inside the url param.
+
+    Retries with exponential backoff — the API can stall mid-read
+    (TimeoutError) even when reachable; one slow page must not kill the run.
+    """
     api_url = (
         f"{API}/api/search?per_page={PER_PAGE}&page=1"
         f"&url={urllib.parse.quote(f'{BASE}{url_path_with_page}', safe='')}"
         f"&with[]=rooms"
     )
-    return http_json(api_url)
+    last_err = None
+    for attempt in range(MAX_RETRIES + 1):
+        try:
+            return http_json(api_url)
+        except Exception as e:  # noqa: BLE001
+            last_err = e
+            if attempt < MAX_RETRIES:
+                time.sleep((2 ** attempt) * 5)  # 5, 10, 20s backoff
+    raise last_err
 
 
 # ---------------------------------------------------------------------------

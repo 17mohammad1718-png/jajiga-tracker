@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تحلیل قیمت و اشغال — کلبه‌های بابلکنار</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<style>
+:root{
+  --bg:#0B1020;           /* deep forest night */
+  --bg2:#0D1428;          /* slightly lighter for wells */
+  --card:#111A2E;         /* card surface */
+  --card2:#16223A;        /* elevated card */
+  --border:#1E2C48;       /* hairline borders */
+  --border-soft:rgba(30,44,72,0.5);
+  --text:#E6EDF7;         /* primary text */
+  --mist:#8FA3BF;         /* muted text — morning mist */
+  --amber:#E8B44F;        /* cabin lantern — THE accent */
+  --amber-soft:rgba(232,180,79,0.14);
+  --leaf:#4CAF7D;         /* positive data — leaf green */
+  --leaf-soft:rgba(76,175,125,0.14);
+  --pine:#2E7D5B;         /* deep pine green for lines */
+  --ember:#F07167;        /* negative / warning — ember red */
+  --ember-soft:rgba(240,113,103,0.14);
+  --violet:#9B8AFB;       /* neutral secondary */
+  --radius:10px;
+  --radius-sm:6px;
+  --shadow:0 1px 0 rgba(255,255,255,0.03) inset, 0 8px 24px rgba(0,0,0,0.35);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  background:
+    radial-gradient(1200px 600px at 85% -10%, rgba(46,125,91,0.10), transparent 60%),
+    radial-gradient(900px 500px at 0% 110%, rgba(232,180,79,0.06), transparent 55%),
+    var(--bg);
+  color:var(--text);
+  font-family:'Vazirmatn',system-ui,Tahoma,sans-serif;
+  line-height:1.8;
+  direction:rtl;
+  min-height:100vh;
+}
+.container{max-width:1360px;margin:0 auto;padding:0 20px 40px;}
+.num{
+  font-family:'Vazirmatn',system-ui,monospace;
+  font-variant-numeric:tabular-nums lining-nums;
+  letter-spacing:0;
+}
+
+/* ========== LAYOUT SHELL ========== */
+.layout{display:grid;grid-template-columns:210px minmax(0,1fr);gap:24px;align-items:start;}
+@media(max-width:1000px){.layout{grid-template-columns:1fr;}}
+
+/* Sidebar nav */
+.sidenav{
+  position:sticky;top:16px;
+  display:flex;flex-direction:column;gap:2px;
+  padding:14px;
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+}
+@media(max-width:1000px){.sidenav{position:static;flex-direction:row;flex-wrap:wrap;overflow-x:auto;}}
+.sidenav-title{
+  font-size:11px;color:var(--mist);font-weight:600;
+  letter-spacing:0.08em;
+  padding:4px 10px 10px;
+  border-bottom:1px solid var(--border-soft);
+  margin-bottom:8px;
+}
+@media(max-width:1000px){.sidenav-title{display:none;}}
+.sidenav a{
+  display:flex;align-items:center;gap:10px;
+  padding:9px 12px;
+  border-radius:var(--radius-sm);
+  color:var(--mist);
+  text-decoration:none;
+  font-size:13px;font-weight:500;
+  transition:background 0.15s,color 0.15s;
+  border-right:2px solid transparent;
+}
+.sidenav a:hover{background:var(--card2);color:var(--text);}
+.sidenav a.active{background:var(--amber-soft);color:var(--amber);border-right-color:var(--amber);}
+.sidenav a .idx{font-family:'Vazirmatn',monospace;font-size:11px;color:var(--amber);opacity:0.7;}
+.sidenav a.active .idx{opacity:1;}
+
+/* ========== HEADER ========== */
+header{
+  text-align:center;
+  padding:48px 20px 34px;
+  margin-bottom:8px;
+  position:relative;
+}
+header::after{
+  content:'';
+  display:block;
+  width:64px;height:3px;
+  background:linear-gradient(90deg,var(--amber),var(--pine));
+  border-radius:2px;
+  margin:18px auto 0;
+}
+header .eyebrow{
+  font-size:12px;font-weight:600;color:var(--amber);
+  letter-spacing:0.14em;
+  text-transform:uppercase;
+  margin-bottom:12px;
+}
+header h1{
+  font-size:clamp(24px,4vw,36px);
+  font-weight:800;
+  color:var(--text);
+  line-height:1.5;
+}
+header h1 .amber{color:var(--amber);}
+header p{color:var(--mist);margin-top:12px;font-size:14px;}
+
+/* ========== KPI CARDS ========== */
+.grid{display:grid;gap:14px;}
+.grid-4{grid-template-columns:repeat(4,1fr);}
+.grid-2{grid-template-columns:1fr 1fr;}
+@media(max-width:1000px){.grid-4{grid-template-columns:repeat(2,1fr);}.grid-2{grid-template-columns:1fr;}}
+@media(max-width:600px){.grid-4{grid-template-columns:1fr;}}
+.card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  padding:18px 20px;
+  box-shadow:var(--shadow);
+  position:relative;
+  overflow:hidden;
+}
+.card::before{
+  content:'';
+  position:absolute;top:0;right:0;left:0;height:2px;
+  background:linear-gradient(90deg,var(--amber),transparent 60%);
+  opacity:0.5;
+}
+.card h3{font-size:12px;color:var(--mist);font-weight:600;margin-bottom:8px;letter-spacing:0.02em;}
+.card .big{font-size:30px;font-weight:800;color:var(--amber);line-height:1.3;}
+.card .sub{font-size:12px;color:var(--mist);margin-top:2px;}
+
+/* ========== SECTION HEADERS ========== */
+h2.section{
+  font-size:clamp(16px,2.4vw,20px);
+  font-weight:700;
+  margin:38px 0 16px;
+  display:flex;align-items:center;gap:12px;
+  color:var(--text);
+}
+h2.section .sec-idx{
+  font-family:'Vazirmatn',monospace;
+  font-size:13px;font-weight:600;
+  color:var(--amber);
+  background:var(--amber-soft);
+  border:1px solid rgba(232,180,79,0.3);
+  padding:2px 9px;
+  border-radius:var(--radius-sm);
+}
+h2.section .sec-line{flex:1;height:1px;background:linear-gradient(90deg,var(--border),transparent);}
+
+/* ========== GLASS / PANELS ========== */
+.glass{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  padding:22px;
+  margin-bottom:20px;
+}
+.glass h3{font-size:13px;color:var(--mist);font-weight:600;margin-bottom:12px;}
+
+/* ========== CORRELATION TABLE ========== */
+.corr-table{width:100%;border-collapse:collapse;font-size:13px;}
+.corr-table th,.corr-table td{padding:8px 9px;text-align:center;border-bottom:1px solid var(--border-soft);}
+.corr-table th{color:var(--mist);font-weight:600;font-size:12px;}
+.corr-table td:first-child,.corr-table th:first-child{text-align:right;font-weight:600;color:var(--text);}
+.corr-cell{
+  border-radius:var(--radius-sm);
+  font-family:'Vazirmatn',monospace;
+  font-weight:600;
+  font-size:12px;
+  padding:3px 8px;
+  display:inline-block;
+  min-width:50px;
+  transition:transform 0.12s,box-shadow 0.12s;
+}
+.corr-cell:hover{transform:translateY(-1px);box-shadow:0 2px 8px rgba(0,0,0,0.3);}
+.pos-strong{background:rgba(76,175,125,0.22);color:#6FCF97;}
+.pos-mid{background:rgba(76,175,125,0.12);color:#9BD9B5;}
+.neg-strong{background:rgba(240,113,103,0.22);color:#F79A92;}
+.neg-mid{background:rgba(240,113,103,0.11);color:#F5B7B1;}
+.neutral{background:rgba(143,163,191,0.12);color:#A8B8CF;}
+
+/* ========== BADGES ========== */
+.badge{display:inline-block;padding:3px 12px;border-radius:20px;font-size:12px;font-weight:600;}
+.badge-green{background:var(--leaf-soft);color:#6FCF97;}
+.badge-gold{background:var(--amber-soft);color:var(--amber);}
+.badge-blue{background:rgba(155,138,251,0.14);color:#B3A6FC;}
+.badge-red{background:var(--ember-soft);color:#F79A92;}
+
+/* ========== INSIGHT ========== */
+.insight{
+  background:linear-gradient(135deg,var(--amber-soft),rgba(46,125,91,0.08));
+  border:1px solid rgba(232,180,79,0.22);
+  border-radius:var(--radius);
+  padding:16px 20px;
+  margin:16px 0;
+  font-size:14px;
+}
+.insight strong{color:var(--amber);}
+
+/* ========== DATA TABLE ========== */
+table.data-table{width:100%;border-collapse:collapse;font-size:13px;margin-top:12px;}
+.data-table th{
+  color:var(--mist);text-align:right;padding:9px 8px;
+  border-bottom:1px solid var(--border);
+  font-weight:600;font-size:12px;white-space:nowrap;
+}
+.data-table td{padding:8px;border-bottom:1px solid var(--border-soft);}
+.data-table tbody tr{transition:background 0.12s;}
+.data-table tbody tr:hover{background:rgba(232,180,79,0.05);}
+.own-row{background:var(--amber-soft);font-weight:600;}
+.own-row:hover{background:rgba(232,180,79,0.2) !important;}
+.rank-1{background:var(--leaf-soft);}
+
+/* ========== OWN LISTING MARKER ========== */
+.own-marker{
+  display:inline-flex;align-items:center;gap:6px;
+  background:var(--amber-soft);
+  border:1px solid rgba(232,180,79,0.4);
+  color:var(--amber);
+  padding:2px 10px;
+  border-radius:20px;
+  font-size:11px;font-weight:600;
+}
+.own-marker .dot{
+  width:7px;height:7px;border-radius:50%;
+  background:var(--amber);
+  box-shadow:0 0 0 0 rgba(232,180,79,0.6);
+  animation:pulse 2.2s infinite;
+}
+@keyframes pulse{
+  0%{box-shadow:0 0 0 0 rgba(232,180,79,0.55);}
+  70%{box-shadow:0 0 0 7px rgba(232,180,79,0);}
+  100%{box-shadow:0 0 0 0 rgba(232,180,79,0);}
+}
+
+/* ========== TWO COL ========== */
+.two-col{display:grid;grid-template-columns:1.15fr 1fr;gap:20px;}
+@media(max-width:900px){.two-col{grid-template-columns:1fr;}}
+
+/* ========== CHART BOX ========== */
+.chart-box{position:relative;height:340px;}
+.chart-box.tall{height:400px;}
+.legend-note{font-size:12px;color:var(--mist);margin-top:8px;}
+
+/* ========== REC CARDS ========== */
+.rec-card{
+  border-right:3px solid var(--leaf);
+  border-radius:var(--radius);
+  background:var(--card2);
+  border:1px solid var(--border);
+  padding:18px 20px;
+  margin-bottom:14px;
+}
+.rec-card.warn{border-right-color:var(--amber);}
+.rec-card h4{font-size:15px;font-weight:700;color:var(--text);margin-bottom:8px;display:flex;align-items:center;gap:8px;}
+.rec-card h4::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--leaf);}
+.rec-card.warn h4::before{background:var(--amber);}
+.rec-card ul{padding-right:20px;color:#C6D2E4;font-size:13px;}
+.rec-card li{margin-bottom:5px;}
+.rec-card strong{color:var(--amber);}
+
+/* ========== TABLE LINKS ========== */
+.tlink{color:var(--text);text-decoration:none;border-bottom:1px dashed var(--border);transition:color 0.15s,border-color 0.15s;}
+.tlink:hover{color:var(--amber);border-bottom-color:var(--amber);}
+
+/* ========== FOOTER ========== */
+footer{
+  text-align:center;color:var(--mist);font-size:12px;
+  margin-top:44px;padding:24px 20px;
+  border-top:1px solid var(--border);
+}
+footer .foot-note{color:var(--amber);font-weight:600;}
+
+/* ========== MOTION ========== */
+@keyframes fadeUp{
+  from{opacity:0;transform:translateY(14px);}
+  to{opacity:1;transform:translateY(0);}
+}
+.reveal{animation:fadeUp 0.5s ease both;}
+.visible{animation:fadeUp 0.5s ease both;}
+.reveal-1{animation-delay:0.05s;}
+.reveal-2{animation-delay:0.12s;}
+.reveal-3{animation-delay:0.2s;}
+.reveal-4{animation-delay:0.28s;}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto;}
+  .reveal,.reveal-1,.reveal-2,.reveal-3,.reveal-4{animation:none;}
+  .own-marker .dot{animation:none;}
+}
+
+/* scrollbar */
+::-webkit-scrollbar{width:10px;height:10px;}
+::-webkit-scrollbar-track{background:var(--bg);}
+::-webkit-scrollbar-thumb{background:var(--border);border-radius:5px;}
+::-webkit-scrollbar-thumb:hover{background:#2A3B5F;}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+  <div class="eyebrow">بابلکنار · 4 روستا · جاجیگا</div>
+  <h1>تحلیل عمیق قیمت و اشغال<br><span class="amber">کلبه‌های بابلکنار</span></h1>
+  <p>دیتای غنی pricing — 32 اقامتگاه • امکانات، برچسب‌ها، زیرامتیازها • به‌روزرسانی 2026-08-01</p>
+</header>
+
+<div class="layout">
+<nav class="sidenav">
+  <div class="sidenav-title">بخش‌های تحلیل</div>
+  <a href="#sec1" class="active"><span class="idx">01</span> همبستگی‌ها</a>
+  <a href="#sec2"><span class="idx">02</span> زیرامتیازها</a>
+  <a href="#sec3"><span class="idx">03</span> پراکندگی‌ها</a>
+  <a href="#sec4"><span class="idx">04</span> امکانات و برچسب‌ها</a>
+  <a href="#sec45"><span class="idx">05</span> مقایسه روستاها</a>
+  <a href="#sec5"><span class="idx">06</span> لوکیشن شما</a>
+  <a href="#sec6"><span class="idx">07</span> پرفروش‌ها</a>
+  <a href="#sec7"><span class="idx">08</span> مدل قیمت</a>
+  <a href="#sec8"><span class="idx">09</span> محاسبهگر</a>
+</nav>
+
+<div class="main-col">
+<div class="grid grid-4">
+<div class="card reveal reveal-1"><h3>اقامتگاه‌های تحلیل‌شده</h3><div class="big num" id="kpiN">—</div><div class="sub">4 روستا — دیتاست کامل pricing</div></div>
+<div class="card reveal reveal-2"><h3>میانگین قیمت</h3><div class="big num" id="kpiAvg">—</div><div class="sub">تومان/شب</div></div>
+<div class="card reveal reveal-3"><h3>میانگین اشغال 30 روزه</h3><div class="big num" id="kpiOcc">—</div><div class="sub">٪</div></div>
+<div class="card reveal reveal-4"><h3>میانگین امکانات (features)</h3><div class="big num" id="kpiFeat">—</div><div class="sub">از 32 نوع</div></div>
+</div>
+
+<h2 class="section reveal" id="sec1"><span class="sec-idx">01</span> ماتریس همبستگی <span class="sec-line"></span></h2>
+<div class="glass">
+<p style="color:var(--muted);font-size:13px;margin-bottom:10px">همبستگی پیرسون بین قیمت، اشغال و فاکتورهای کلیدی (108 اقامتگاه — 4 روستای بابلکنار).</p>
+<div style="overflow-x:auto"><table class="corr-table" id="corrTable"></table></div>
+</div>
+
+<h2 class="section reveal" id="sec2"><span class="sec-idx">02</span> زیرامتیازها — کدام جنبه کیفیت اثر دارد؟ <span class="sec-line"></span></h2>
+<div class="glass">
+<div style="overflow-x:auto"><table class="corr-table" id="subscoreTable"></table></div>
+</div>
+
+<h2 class="section reveal" id="sec3"><span class="sec-idx">03</span> نمودارهای پراکندگی <span class="sec-line"></span></h2>
+<div class="grid grid-2">
+<div class="glass"><h3>قیمت بر اساس متراژ (رنگ: جکوزی)</h3><div class="chart-box"><canvas id="scatterPriceFloor"></canvas></div><div class="legend-note">اندازه نقطه = تعداد نظرات</div></div>
+<div class="glass"><h3>درصد اشغال بر اساس قیمت</h3><div class="chart-box"><canvas id="scatterOccPrice"></canvas></div><div class="legend-note">اندازه نقطه = تعداد نظرات</div></div>
+<div class="glass"><h3>درصد اشغال بر اساس متراژ</h3><div class="chart-box"><canvas id="scatterOccFloor"></canvas></div><div class="legend-note">اندازه نقطه = تعداد نظرات</div></div>
+<div class="glass"><h3>قیمت بر اساس تعداد امکانات</h3><div class="chart-box"><canvas id="scatterPriceFeat"></canvas></div><div class="legend-note">اندازه نقطه = تعداد نظرات</div></div>
+</div>
+
+<h2 class="section reveal" id="sec4"><span class="sec-idx">04</span> امکانات و برچسب‌ها <span class="sec-line"></span></h2>
+<div class="grid grid-2">
+<div class="glass"><h3>امکانات (features) — اثر بر قیمت</h3><div class="chart-box"><canvas id="barFeaturePrice"></canvas></div></div>
+<div class="glass"><h3>امکانات (features) — اثر بر اشغال</h3><div class="chart-box"><canvas id="barFeatureOcc"></canvas></div></div>
+<div class="glass"><h3>برچسب‌ها (properties) — اثر بر قیمت و اشغال</h3><div class="chart-box"><canvas id="barProp"></canvas></div></div>
+<div class="glass"><h3>نشان‌های پلتفرم (is_plus / instant / recently)</h3><div class="chart-box"><canvas id="barFlags"></canvas></div></div>
+</div>
+
+
+<h2 class="section reveal" id="sec45"><span class="sec-idx">05</span> مقایسه روستاها <span class="sec-line"></span></h2>
+<div class="glass">
+  <div class="grid grid-2">
+    <div class="glass"><h3>قیمت و اشغال به تفکیک روستا</h3><div class="chart-box"><canvas id="barVillageCompare"></canvas></div></div>
+    <div class="glass"><h3>توزیع قیمت هر روستا (میانه + بازه)</h3><div class="chart-box"><canvas id="barVillageRange"></canvas></div></div>
+  </div>
+  <div style="overflow-x:auto;margin-top:16px"><table class="data-table" id="villageTable"></table></div>
+</div>
+
+<h2 class="section reveal" id="sec5"><span class="sec-idx">06</span> لوکیشن شما <span class="sec-line"></span></h2>
+<div class="glass" id="ownCompare"></div>
+
+<h2 class="section reveal" id="sec6"><span class="sec-idx">07</span> پرفروش‌ترین‌ها <span class="sec-line"></span></h2>
+<div class="glass">
+<table class="data-table" id="topTable"></table>
+</div>
+
+<h2 class="section reveal" id="sec7"><span class="sec-idx">08</span> مدل قیمت‌گذاری و جمع‌بندی <span class="sec-line"></span></h2>
+<div class="glass two-col">
+<div>
+<h3 style="color:var(--muted);font-size:14px;margin-bottom:8px">رگرسیون OLS: قیمت ← متراژ + اتاق + استخر</h3>
+<div style="font-size:22px;font-weight:800;color:var(--accent);margin:10px 0" id="formulaText">—</div>
+<div style="font-size:13px;color:var(--muted)" id="formulaR2"></div>
+<div style="margin-top:14px;font-size:13px;color:#c9d1d9">فرمول بر اساس 108 اقامتگاه بابلکنار (دیتای کامل pricing، 4 روستا). این مدل قیمت میانگین را برای ترکیب مشخصی از ویژگی‌ها تخمین می‌زند.</div>
+<div class="insight" id="formulaInsight"></div>
+</div>
+<div>
+<h3 style="color:var(--muted);font-size:14px;margin-bottom:8px">نمودار تخمین مدل vs قیمت واقعی</h3>
+<div class="chart-box" style="height:280px"><canvas id="scatterModel"></canvas></div>
+<div class="legend-note">نقطه زرد = لوکیشن شما</div>
+</div>
+</div>
+
+<div class="glass" id="recommendations"></div>
+
+</div><!-- /main-col -->
+</div><!-- /layout -->
+
+<h2 class="section reveal" id="sec8"><span class="sec-idx">09</span> محاسبهگر هوشمند قیمتگذاری <span class="sec-line"></span></h2>
+<div class="glass">
+  <div class="insight" style="margin-bottom:20px">
+    <strong>مدل پیشرفته (R²=0.79)</strong> — ضرایب استخراج‌شده از 108 اقامتگاه بابلکنار.
+    مشخصات کلبه خود را وارد کنید تا قیمت پیشنهادی بازار و تجزیه عاملی را ببینید.
+  </div>
+
+  <div class="two-col">
+    <!-- INPUT FORM -->
+    <div>
+      <h3 style="color:var(--amber);margin-bottom:16px;font-size:15px">مشخصات کلبه</h3>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+        <div>
+          <label style="font-size:12px;color:var(--mist);display:block;margin-bottom:4px">روستا</label>
+          <select id="calcVillage" style="width:100%;padding:10px;background:var(--bg);color:var(--text);border:1px solid var(--border);border-radius:var(--radius-sm);font-family:Vazirmatn;font-size:14px">
+            <option value="سیدکلا">سیدکلا</option>
+            <option value="شیردارکلا">شیردارکلا</option>
+            <option value="گونه کلا">گونه کلا</option>
+            <option value="قرآن تالار">قرآن تالار</option>
+          </select>
+        </div>
+        <div>
+          <label style="font-size:12px;color:var(--mist);display:block;margin-bottom:4px">متراژ (متر مربع)</label>
+          <input id="calcFloor" type="number" value="100" min="20" max="500" style="width:100%;padding:10px;background:var(--bg);color:var(--text);border:1px solid var(--border);border-radius:var(--radius-sm);font-family:Vazirmatn;font-size:14px">
+        </div>
+        <div>
+          <label style="font-size:12px;color:var(--mist);display:block;margin-bottom:4px">اتاق خواب</label>
+          <input id="calcRooms" type="number" value="1" min="0" max="5" style="width:100%;padding:10px;background:var(--bg);color:var(--text);border:1px solid var(--border);border-radius:var(--radius-sm);font-family:Vazirmatn;font-size:14px">
+        </div>
+        <div>
+          <label style="font-size:12px;color:var(--mist);display:block;margin-bottom:4px">تعداد امکانات</label>
+          <input id="calcFeatures" type="number" value="18" min="10" max="30" style="width:100%;padding:10px;background:var(--bg);color:var(--text);border:1px solid var(--border);border-radius:var(--radius-sm);font-family:Vazirmatn;font-size:14px">
+        </div>
+        <div>
+          <label style="font-size:12px;color:var(--mist);display:block;margin-bottom:4px">تعداد عکس</label>
+          <input id="calcPics" type="number" value="24" min="5" max="50" style="width:100%;padding:10px;background:var(--bg);color:var(--text);border:1px solid var(--border);border-radius:var(--radius-sm);font-family:Vazirmatn;font-size:14px">
+        </div>
+        <div style="display:flex;align-items:end;gap:12px">
+          <label style="display:flex;align-items:center;gap:6px;font-size:13px;color:var(--text);cursor:pointer">
+            <input id="calcPool" type="checkbox" style="width:18px;height:18px;accent-color:#4CAF7D"> استخر
+          </label>
+          <label style="display:flex;align-items:center;gap:6px;font-size:13px;color:var(--text);cursor:pointer">
+            <input id="calcJz" type="checkbox" style="width:18px;height:18px;accent-color:#E8B44F"> جکوزی
+          </label>
+        </div>
+      </div>
+      <button id="calcBtn" style="width:100%;padding:12px;margin-top:16px;background:linear-gradient(135deg,#E8B44F,#F5C463);color:#0B1020;border:none;border-radius:var(--radius-sm);font-family:Vazirmatn;font-size:15px;font-weight:700;cursor:pointer;transition:transform 0.1s">محاسبه قیمت پیشنهادی</button>
+    </div>
+
+    <!-- OUTPUT -->
+    <div id="calcResult" style="display:none">
+      <h3 style="color:var(--amber);margin-bottom:16px;font-size:15px">نتیجه مدل</h3>
+      <div id="calcPriceCard" style="background:var(--card2);border:1px solid var(--border);border-radius:var(--radius);padding:20px;margin-bottom:14px;text-align:center">
+        <div style="font-size:12px;color:var(--mist);margin-bottom:4px">قیمت پیشنهادی مدل</div>
+        <div id="calcPredPrice" style="font-size:32px;font-weight:800;color:var(--amber)">—</div>
+        <div id="calcPredRange" style="font-size:12px;color:var(--mist);margin-top:4px"></div>
+      </div>
+      <div id="calcCompCard" style="background:var(--card2);border:1px solid var(--border);border-radius:var(--radius);padding:16px;margin-bottom:14px"></div>
+      <div id="calcBreakdown" style="background:var(--card2);border:1px solid var(--border);border-radius:var(--radius);padding:16px"></div>
+    </div>
+  </div>
+</div>
+
+<footer>منبع: <span class="foot-note">data/pricing/pricing-dataset.json</span> — 108 اقامتگاه · 4 روستا • شاخص اشغال: 30 روز اخیر • ردیاب جاجیگا</footer>
+</div>
+<script>
+const CABINS = /*__DATASET__*/[{"id":3198234,"t":"اجاره کلبه سوئدی نزدیک لفور - سیدکلا - ۲","p":1680000,"f":80,"land":4000,"b":1,"g":2,"mx":4,"rt":4.2,"rv":13,"sb":10,"o":0,"pl":0,"jz":0,"own":false,"fc":19,"pic":28,"plus":false,"inst":false,"recent":false,"feats":["barbecue","bathroom","cooler","electricity","essentials","fireextingu","firstaidkit","furniture","heating","islamictoilet","janitor","kitchen","parking","refrigerator","stave","table","toilet","tv","water"],"props":["جذاب","اقامتگاه خاص"],"rl":4.5,"rc":4.1,"rvl":3.8,"rck":4.5,"rco":4.1,"ra":4.5,"hr":54,"hrt":401,"hc":4.4,"hc_date":"2023-05-20","disc":0,"status":"active","v":"سیدکلا","url":"https://www.jajiga.com/room/3198234"},{"id":3227770,"t":"خانه روستایی در بابلکنار - سیدکلا","p":1800000,"f":120,"land":300,"b":1,"g":4,"mx":6,"rt":4.9,"rv":17,"sb":20,"o":37,"pl":0,"jz":0,"own":false,"fc":18,"pic":31,"plus":true,"inst":true,"recent":true,"feats":["barbecue","bathroom","cooler","electricity","essentials","furniture","heating","islamictoilet","janitor","kitchen","parking","refrigerator","stave","table","toilet","tv","vacuumcleaner","water"],"props":["حیاط دار","مهمان نواز"],"rl":4.9,"rc":5,"rvl":4.8,"rck":5,"rco":5,"ra":5,"hr":100,"hrt":70,"hc":5,"hc_date":"2024-05-04","disc":10,"status":"active","v":"سیدکلا","url":"https://www.jajiga.com/room/3227770"},{"id":3262853,"t":"خانه مبله در بابلکنار - سیدکلا - طبقه دوم","p":1800000,"f":90,"land":700,"b":2,"g":4,"mx":10,"rt":4.7,"rv":32,"sb":50,"o":0,"pl":0,"jz":0,"own":false,"fc":16,"pic":20,"plus":true,"inst":false,"recent":true,"feats":["barbecue","bathroom","cooler","electricity","essentials","food","furniture","heating","islamictoilet","kitchen","parking","refrigerator","stave","table","tv","water"],"props":[],"rl":4.3,"rc":4.7,"rvl":4.7,"rck":4.9,"rco":4.7,"ra":4.7,"hr":100,"hrt":259,"hc":4.7,"hc_date":"2023-07-16","disc":30,"status":"active","v":"سیدکلا","url":"https://www.jajiga.com/room/3262853"},{"id":3179336,"t":"کلبه سوئیسی با وان جکوزی در بابلکنار- سیدکلا","p":1900000,"f":68,"land":200,"b":1,"g":4,"mx":5,"rt":4.8,"rv":175,"sb":300,"o":50,"pl":0,"jz":1,"own":false,"fc":19,"pic":33,"plus":true,"inst":true,"recent":true,"feats":["barbecue","bathroom","cooler","electricity","essentials","fireextingu","foosball","furniture","heating","islamictoilet","jacuzzi","kitchen","parking","refrigerator","stave","toilet","tv","vacuumcleaner","water"],"props":["جذاب","مهمان نواز"],"rl":4.7,"rc":4.5,"rvl":4.9,"rck":5,"rco":4.9,"ra":4.9,"hr":96,"hrt":47,"hc":4.9,"hc_date":"2022-12-05","disc":0,"status":"active","v":"سیدکلا","url":"https://www.jajiga.com/room/3179336"},{"id":3181918,"t":"کلبه سوئیسی جکوزی دار نزدیک لفور - سیدکلا","p":1900000,"f":78,"land":240,"b":1,"g":4,"mx":7,"rt":4.5,"rv":281,"sb":500,"o":67,"pl":0,"jz":1,"own":false,"fc":20,"pic":31,"plus":true,"inst":true,"recent":true,"feats":["barbecue","bathroom","cooler","electricity","essentials","fireextingu","furniture","heating","islamictoilet","jacuzzi","janitor","kitchen","parking","refrigerator","stave","table","toilet","tv","vacuumcleaner","water"],"props":["خوش منظره","جذاب"],"rl":4.8,"rc":3.9,"rvl":4.4,"rck":4.9,"rco":4.6,"ra":4.5,"hr":92,"hrt":155,"hc":4.6,"hc_date":"2023-01-19","disc":0,"status":"active","v":"سیدکلا","url":"https://www.jajiga.com/room/3181918"},{"id":3240445,"t":"کلبه سوئیسی با وان جکوزی در بابلکنار - سیدکلا","p":1980000,"f":100,"land":300,"b":1,"g":3,"mx":5,"rt":4.7,"rv":32,"sb":50,"o":53,"pl":0,"jz":1,"own":false,"fc":22,"pic":31,"plus":true,"inst":true,"recent":true,"feats":["barbecue","bathroom","cooler","electricity","essentials","fireextingu","firstaidkit","foosball","furniture","heating","islamictoilet","jacuzzi","janitor","kitchen","parking","refrigerator","safetycard","stave","toilet","tv","vacuumcleaner","water"],"props":["حیاط دار","مهمان نواز"],"rl":4.7,"rc":4.6,"rvl":4.7,"rck":4.9,"rco":4.8,"ra":4.9,"hr":96,"hrt":55,"hc":4.8,"hc_date":"2024-08-26","disc":0,"status":"active","v":"سیدکلا","url":"https://www.jajiga.com/room/3240445"},{"id":3206573,"t":"کلبه چوبی دوبلکس نزدیک لفور - سیدکلا","p":2000000,"f":60,"land":1500,"b":2,"g":3,"mx":6,"rt":4.7,"rv":118,"sb":200,"o":10,"pl":0,"jz":0,"own":false,"fc":18,"pic":37,"plus":true,"inst":false,"recent":true,"feats":["barbecue","bathroom","cooler","electricity","essentials","fireextingu","furniture","heating","islamictoilet","janitor","kitchen","parking","refrigerator","stave","toilet","tv","vacuumcleaner","water"],"props":["خوش منظره","جذاب","مهمان نواز"],"rl":4.8,"rc":4.3,"rvl":4.6,"rck":4.9,"rco":4.9,"ra":4.8,"hr":95,"hrt":221,"hc":4.9,"hc_date":"2022-06-12","disc":10,"status":"active","v":"سیدکلا","url":"https://www.jajiga.com/room/3206573"},{"id":3237859,"t":"کلبه سوئیسی در بابلکنار - سیدکلا","p":2000000,"f":80,"land":300,"b":2,"g":4,"mx":8,"rt":3.9,"rv":12,"sb":10,"o":23,"pl":0,"jz":0,"own":false,"fc":18,"pic":34,"plus":false,"inst":false,"recent":true,"feats":["bathroom","cooler","drawer","electricity","essentials","furniture","heating","islamictoilet","janitor","kitchen","parking","refrigerator","stave","table","toilet","tv","vacuumcleaner","water"],"props":["لب آب","جذاب"],"rl":3.8,"rc":2.8,"rvl":3.2,"rck":5,"rco":4.4,"ra":4.4,"hr":74,"hrt":214,"hc":4.4,"hc_date":"2024-07-14","disc":0,"status":"active","v":"سیدکلا","url":"https://www.jajiga.com/room/3237859"},{"id":3149749,"t":"سوئیت در سیدکلا بابلکنار - همکف","p":2000000,"f":40,"land":6000,"b":0,"g":4,"mx":4,"rt":4.6,"rv":20,"sb":20,"o":0,"pl":0,"jz":0,"own":false,"fc":18,"pic":24,"plus":true,"inst":true,"recent":true,"feats":["barbecue","bathroom","cooler","electricity","essentials","fireextingu","firstaidkit","food","heating","islamictoilet","janitor","kitchen","parking","refrigerator","table","toilet","tv","water"],"props":["خوش غذا","جذاب","خوش منظره"],"rl":4.6,"rc":4.3,"rvl":4.5,"rck":5,"rco":4.6,"ra":4.9,"hr":98,"hrt":94,"hc":4.5,"hc_date":"2019-12-09","disc":0,"status":"active","v":"سیدکلا","url":"https://www.jajiga.com/room/3149749"},{"id":3230216,"t":"ویلا دوبلکس با جکوزی در بابلکنار - سیدکلا","p":2000000,"f":45,"land":200,"b":2,"g":4,"mx":8,"rt":3.3,"rv":2,"sb":0,"o":0,"pl":0,"jz":1,"own":false,"fc":18,"pic":30,"plus":false,"inst":false,"recent":false,"feats":["barbecue","bathroom","cooler","electricity","essentials","furniture","heating","islamictoilet","jacuzzi","janitor","kitchen","parking","refrigerator","stave","table","tv","vacuumcleaner","water"],"props":[],"rl":2,"rc":2,"rvl":2.5,"rck":5,"rco":4,"ra":4,"hr":15,"hrt":122,"hc":4,"hc_date":"2024-05-04","disc":0,"status":"active","v":"سیدکلا","url":"https://www.jajiga.com/room/3230216"},{"id":3232816,"t":"خانه روستایی در بابلکنار - سیدکلا","p":2000000,"f":120,"land":300,"b":2,"g":4,"mx":10,"rt":4.8,"rv":30,"sb":50,"o":13,"pl":0,"jz":0,"own":false,"fc":17,"pic":34,"plus":true,"inst":true,"recent":true,"feats":["barbecue","bathroom","cooler","electricity","essentials","food","furniture","heating","islamictoilet","kitchen","parking","refrigerator","stave","table","tv","vacuumcleaner","water"],"props":["مهمان نواز"],"rl":4.7,"rc":4.5,"rvl":4.6,"rck":5,"rco":5,"ra":4.9,"hr":95,"hrt":276,"hc":5,"hc_date":"2024-08-29","disc":60,"status":"active","v":"سیدکلا","url":"https://www.jajiga.com/room/3232816"},{"id":3201318,"t":"کلبه حیاط دار در بابلکنار - سیدکلا","p":2100000,"f":60,"land":200,"b":1,"g":4,"mx":6,"rt":4.8,"rv":168,"sb":200,"o":20,"pl":0,"jz":0,"own":false,"fc":18,"pic":29,"plus":true,"inst":true,"recent":true,"feats":["barbecue","bathroom","cooler","drawer","electricity","essentials","food","furniture","heating","islamictoilet","janitor","kitchen","parking","refrigerator","stave","table","tv","water"],"props":["خوش منظره","خوش غذا"],"rl":4.8,"rc":4.8,"rvl":4.7,"rck":4.8,"rco":4.7,"ra":4.8,"hr":100,"hrt":259,"hc":4.7,"hc_date":"2023-07-16","disc":10,"status":"active","v":"سیدکلا","url":"https://www.jajiga.com/room/3201318"},{"id":3195933,"t":"کلبه سوئیسی نزدیک لفور - سیدکلا","p":2200000,"f":65,"land":4000,"b":1,"g":2,"mx":4,"rt":4.5,"rv":28,"sb":50,"o":0,"pl":0,"jz":0,"own":false,"fc":19,"pic":22,"plus":false,"inst":false,"recent":true,"feats":["barbecue","bathroom","cooler","electricity","essentials","fireextingu","firstaidkit","furniture","heating","islamictoilet","janitor","kitchen","parking","refrigerator","stave","table","toilet","tv","water"],"props":["جذاب","خوش منظره"],"rl":4.6,"rc":4.2,"rvl":4,"rck":5,"rco":5,"ra":4.2,"hr":54,"hrt":401,"hc":4.4,"hc_date":"2023-05-20","disc":0,"status":"active","v":"سیدکلا","url":"https://www.jajiga.com/room/3195933"},{"id":3179404,"t":"اجاره کلبه چوبی نزدیک لفور - سیدکلا","p":2200000,"f":65,"land":4000,"b":1,"g":2,"mx":4,"rt":4.7,"rv":5,"sb":5,"o":0,"pl":0,"jz":0,"own":false,"fc":19,"pic":23,"plus":false,"inst":false,"recent":false,"feats":["barbecue","bathroom","cooler","electricity","essentials","fireextingu","firstaidkit","furniture","heating","islamictoilet","janitor","kitchen","parking","refrigerator","stave","table","toilet","tv","water"],"props":[],"rl":4.6,"rc":4.4,"rvl":4.2,"rck":5,"rco":5,"ra":4.8,"hr":54,"hrt":401,"hc":4.4,"hc_date":"2023-05-20","disc":0,"status":"active","v":"سیدکلا","url":"https://www.jajiga.com/room/3179404"},{"id":3195220,"t":"اجاره کلبه سنتی نزدیک لفور - سیدکلا","p":2200000,"f":95,"land":4000,"b":2,"g":4,"mx":6,"rt":2.8,"rv":1,"sb":0,"o":0,"pl":0,"jz":0,"own":false,"fc":16,"pic":22,"plus":false,"inst":false,"recent":false,"feats":["barbecue","bathroom","electricity","essentials","furniture","heating","islamictoilet","janitor","kitchen","parking","refrigerator","stave","table","toilet","tv","water"],"props":["جذاب"],"rl":5,"rc":2,"rvl":1,"rck":3,"rco":3,"ra":3,"hr":54,"hrt":401,"hc":4.4,"hc_date":"2023-05-20","disc":20,"status":"active","v":"سیدکلا","url":"https://www.jajiga.com/room/3195220"},{"id":3198301,"t":"اجاره کلبه سوئدی نزدیک لفور - سیدکلا","p":2200000,"f":80,"land":4000,"b":1,"g":2,"mx":4,"rt":4.7,"rv":3,"sb":5,"o":0,"pl":0,"jz":0,"own":false,"fc":19,"pic":27,"plus":false,"inst":false,"recent":false,"feats":["barbecue","bathroom","cooler","electricity","essentials","fireextingu","firstaidkit","furniture","heating","islamictoilet","janitor","kitchen","parking","refrigerator","stave","table","toilet","tv","water"],"props":["جذاب","اقامتگاه خاص"],"rl":5,"rc":4.3,"rvl":4.3,"rck":4.7,"rco":5,"ra":5,"hr":54,"hrt":401,"hc":4.4,"hc_date":"2023-05-20","disc":0,"status":"active","v":"سیدکلا","url":"https://www.jajiga.com/room/3198301"},{"id":3190700,"t":"اجاره کلبه چوبی در بابلکنار - سیدکلا","p":2490000,"f":100,"land":1500,"b":2,"g":4,"mx":6,"rt":4.9,"rv":38,"sb":50,"o":10,"pl":0,"jz":0,"own":false,"fc":21,"pic":20,"plus":true,"inst":true,"recent":true,"feats":["barbecue","bathroom","cooler","drawer","electricity","essentials","fireextingu","firstaidkit","furniture","heating","islamictoilet","janitor","kitchen","parking","refrigerator","stave","table","toilet","tv","vacuumcleaner","water"],"props":["خوش منظره","جذاب","مهمان نواز"],"rl":4.8,"rc":4.9,"rvl":4.9,"rck":5,"rco":4.9,"ra":4.9,"hr":100,"hrt":29,"hc":4.9,"hc_date":"2023-10-03","disc":25,"status":"active","v":"سیدکلا","url":"https://www.jajiga.com/room/3190700"},{"id":3293951,"t":"کلبه سوئیسی در بابلکنار - سیدکلا","p":2500000,"f":40,"land":100,"b":1,"g":4,"mx":6,"rt":4.9,"rv":19,"sb":20,"o":0,"pl":0,"jz":0,"own":false,"fc":19,"pic":19,"plus":true,"inst":true,"recent":true,"feats":["barbecue","bathroom","cooler","electricity","essentials","fireextingu","furniture","heating","islamictoilet","janitor","kitchen","parking","refrigerator","stave","table","toilet","tv","vacuumcleaner","water"],"props":["مهمان نواز"],"rl":4.8,"rc":5,"rvl":4.9,"rck":5,"rco":4.9,"ra":5,"hr":90,"hrt":187,"hc":4.9,"hc_date":"2026-03-22","disc":0,"status":"active","v":"سیدکلا","url":"https://www.jajiga.com/room/3293951"},{"id":3149747,"t":"کلبه دوبلکس در سیدکلا بابلکنار","p":2500000,"f":56,"land":6000,"b":1,"g":5,"mx":5,"rt":4.5,"rv":28,"sb":50,"o":0,"pl":0,"jz":0,"own":false,"fc":18,"pic":24,"plus":false,"inst":true,"recent":true,"feats":["barbecue","bathroom","cooler","electricity","essentials","fireextingu","firstaidkit","food","heating","islamictoilet","janitor","kitchen","parking","refrigerator","table","toilet","tv","water"],"props":["خوش غذا","خوش منظره"],"rl":4.6,"rc":4.6,"rvl":4,"rck":4.9,"rco":4.4,"ra":4.5,"hr":98,"hrt":94,"hc":4.5,"hc_date":"2019-12-09","disc":0,"status":"active","v":"سیدکلا","url":"https://www.jajiga.com/room/3149747"},{"id":3299045,"t":"ویلا با جکوزی در بابلکنار - سیدکلا","p":2500000,"f":100,"land":300,"b":2,"g":4,"mx":10,"rt":0,"rv":0,"sb":0,"o":13,"pl":0,"jz":1,"own":false,"fc":20,"pic":15,"plus":false,"inst":false,"recent":false,"feats":["barbecue","bathroom","drawer","electricity","essentials","food","furniture","heating","islamictoilet","jacuzzi","janitor","kitchen","parking","refrigerator","stave","table","toilet","tv","vacuumcleaner","water"],"props":[],"rl":0,"rc":0,"rvl":0,"rck":0,"rco":0,"ra":0,"hr":74,"hrt":214,"hc":4.4,"hc_date":"2024-07-14","disc":10,"status":"active","v":"سیدکلا","url":"https://www.jajiga.com/room/3299045"},{"id":3190552,"t":"اجاره کلبه چوبی در سوادکوه - سیدکلا","p":2500000,"f":60,"land":800,"b":1,"g":4,"mx":6,"rt":4.9,"rv":35,"sb":50,"o":50,"pl":0,"jz":0,"own":false,"fc":22,"pic":24,"plus":true,"inst":false,"recent":true,"feats":["barbecue","bathroom","cooler","drawer","electricity","essentials","firstaidkit","furniture","hairdryer","heating","iron","islamictoilet","janitor","kitchen","microwave","parking","refrigerator","stave","table","toilet","tv","water"],"props":["جذاب","مهمان نواز"],"rl":4.7,"rc":5,"rvl":5,"rck":5,"rco":5,"ra":5,"hr":75,"hrt":60,"hc":5,"hc_date":"2023-07-22","disc":0,"status":"active","v":"سیدکلا","url":"https://www.jajiga.com/room/3190552"},{"id":3225446,"t":"کلبه سوئیسی با جکوزی در بابلکنار - سیدکلا","p":2700000,"f":80,"land":700,"b":1,"g":2,"mx":4,"rt":4.9,"rv":40,"sb":50,"o":37,"pl":0,"jz":1,"own":false,"fc":20,"pic":14,"plus":true,"inst":true,"recent":true,"feats":["bathroom","cooler","electricity","essentials","fireextingu","firstaidkit","furniture","heating","islamictoilet","jacuzzi","janitor","kitchen","parking","refrigerator","stave","table","toilet","tv","vacuumcleaner","water"],"props":["مهمان نواز"],"rl":4.8,"rc":4.9,"rvl":4.7,"rck":5,"rco":4.9,"ra":4.9,"hr":100,"hrt":29,"hc":4.9,"hc_date":"2023-10-03","disc":0,"status":"active","v":"سیدکلا","url":"https://www.jajiga.com/room/3225446"},{"id":3297585,"t":"کلبه سوئیسی در بابلکنار - سیدکلا","p":2750000,"f":100,"land":200,"b":1,"g":4,"mx":6,"rt":5,"rv":4,"sb":5,"o":0,"pl":0,"jz":0,"own":true,"fc":15,"pic":24,"plus":false,"inst":true,"recent":false,"feats":["barbecue","bathroom","cooler","electricity","essentials","furniture","heating","islamictoilet","kitchen","parking","refrigerator","stave","toilet","vacuumcleaner","water"],"props":[],"rl":5,"rc":5,"rvl":4.8,"rck":5,"rco":5,"ra":5,"hr":86,"hrt":581,"hc":5,"hc_date":"2026-04-08","disc":10,"status":"active","v":"سیدکلا","url":"https://www.jajiga.com/room/3297585"},{"id":3294040,"t":"ویلا با چشم انداز زیبا در بابلکنار - سیدکلا","p":3000000,"f":100,"land":200,"b":1,"g":3,"mx":15,"rt":4.9,"rv":13,"sb":10,"o":0,"pl":0,"jz":0,"own":false,"fc":22,"pic":27,"plus":true,"inst":true,"recent":true,"feats":["barbecue","bathroom","cooler","drawer","electricity","essentials","firealarm","fireextingu","firstaidkit","furniture","hairdryer","heating","islamictoilet","janitor","kitchen","parking","refrigerator","safetycard","stave","tv","vacuumcleaner","water"],"props":["خوش منظره","مهمان نواز","حیاط دار"],"rl":5,"rc":4.8,"rvl":4.9,"rck":5,"rco":5,"ra":4.9,"hr":95,"hrt":16,"hc":5,"hc_date":"2026-03-23","disc":40,"status":"active","v":"سیدکلا","url":"https://www.jajiga.com/room/3294040"},{"id":3302232,"t":"ویلا دوبلکس در بابلکنار - سیدکلا","p":3000000,"f":150,"land":300,"b":1,"g":7,"mx":7,"rt":4.9,"rv":3,"sb":0,"o":0,"pl":0,"jz":0,"own":false,"fc":20,"pic":40,"plus":false,"inst":false,"recent":false,"feats":["barbecue","bathroom","cooler","drawer","electricity","essentials","firstaidkit","furniture","heating","iron","islamictoilet","janitor","kitchen","parking","refrigerator","stave","table","tv","vacuumcleaner","water"],"props":[],"rl":4.3,"rc":5,"rvl":5,"rck":5,"rco":5,"ra":5,"hr":71,"hrt":474,"hc":5,"hc_date":"2026-05-19","disc":0,"status":"active","v":"سیدکلا","url":"https://www.jajiga.com/room/3302232"},{"id":3206720,"t":"کلبه چوبی جکوزی دار در بابلکنار - سیدکلا","p":4000000,"f":75,"land":1000,"b":2,"g":4,"mx":7,"rt":4.7,"rv":10,"sb":10,"o":33,"pl":0,"jz":1,"own":false,"fc":22,"pic":25,"plus":true,"inst":false,"recent":true,"feats":["barbecue","bathroom","cooler","drawer","electricity","essentials","fireextingu","firstaidkit","furniture","heating","islamictoilet","jacuzzi","janitor","kitchen","parking","refrigerator","stave","table","toilet","tv","vacuumcleaner","water"],"props":[],"rl":5,"rc":4.7,"rvl":4.3,"rck":5,"rco":4.3,"ra":4.7,"hr":94,"hrt":444,"hc":4.3,"hc_date":"2023-09-20","disc":0,"status":"active","v":"سیدکلا","url":"https://www.jajiga.com/room/3206720"},{"id":3253520,"t":"اجاره کلبه سوئیسی در بابلکنار - سیدکلا","p":4000000,"f":80,"land":200,"b":2,"g":4,"mx":8,"rt":5,"rv":1,"sb":0,"o":7,"pl":0,"jz":1,"own":false,"fc":21,"pic":20,"plus":false,"inst":false,"recent":false,"feats":["barbecue","bathroom","cooler","electricity","essentials","fireextingu","firstaidkit","foosball","furniture","heating","islamictoilet","jacuzzi","kitchen","parking","refrigerator","stave","table","toilet","tv","vacuumcleaner","water"],"props":[],"rl":5,"rc":5,"rvl":5,"rck":5,"rco":5,"ra":5,"hr":70,"hrt":142,"hc":4.9,"hc_date":"2023-02-25","disc":0,"status":"active","v":"سیدکلا","url":"https://www.jajiga.com/room/3253520"},{"id":3184142,"t":"اجاره خانه چوبی استخردار در سیدکلا بابلکنار","p":4000000,"f":60,"land":100,"b":1,"g":4,"mx":6,"rt":4.7,"rv":20,"sb":20,"o":13,"pl":1,"jz":0,"own":false,"fc":17,"pic":16,"plus":true,"inst":false,"recent":true,"feats":["bathroom","cooler","electricity","essentials","fireextingu","firstaidkit","heating","islamictoilet","kitchen","parking","pool","refrigerator","safetycard","stave","tv","vacuumcleaner","water"],"props":["مهمان نواز","استخر آب گرم","استخر سرپوشیده"],"rl":4.8,"rc":4.6,"rvl":4.6,"rck":4.4,"rco":4.8,"ra":5,"hr":70,"hrt":142,"hc":4.9,"hc_date":"2023-02-25","disc":0,"status":"active","v":"سیدکلا","url":"https://www.jajiga.com/room/3184142"},{"id":3193646,"t":"اجاره ویلا در بابلکنار - سیدکلا","p":4000000,"f":84,"land":150,"b":1,"g":3,"mx":6,"rt":5,"rv":8,"sb":10,"o":0,"pl":0,"jz":1,"own":false,"fc":23,"pic":27,"plus":false,"inst":false,"recent":false,"feats":["barbecue","bathroom","cooler","drawer","electricity","essentials","fireextingu","firstaidkit","furniture","hairdryer","heating","islamictoilet","jacuzzi","janitor","kitchen","parking","refrigerator","stave","table","toilet","tv","vacuumcleaner","water"],"props":[],"rl":5,"rc":5,"rvl":5,"rck":5,"rco":5,"ra":5,"hr":13,"hrt":547,"hc":5,"hc_date":"2023-06-20","disc":0,"status":"active","v":"سیدکلا","url":"https://www.jajiga.com/room/3193646"},{"id":3215808,"t":"کلبه سوئیسی جکوزی دار در بابلکنار - سید کلا","p":5000000,"f":130,"land":300,"b":2,"g":4,"mx":6,"rt":4.6,"rv":22,"sb":20,"o":17,"pl":0,"jz":1,"own":false,"fc":22,"pic":24,"plus":true,"inst":true,"recent":true,"feats":["barbecue","bathroom","cooler","drawer","electricity","essentials","fireextingu","firstaidkit","foosball","furniture","heating","islamictoilet","jacuzzi","kitchen","parking","refrigerator","safetycard","stave","toilet","tv","vacuumcleaner","water"],"props":[],"rl":4.8,"rc":4.8,"rvl":4.3,"rck":4.7,"rco":4.2,"ra":4.5,"hr":69,"hrt":240,"hc":4.2,"hc_date":"2024-01-27","disc":0,"status":"active","v":"سیدکلا","url":"https://www.jajiga.com/room/3215808"},{"id":3178910,"t":"ویلا استخردار در بابلکنار - سیدکلا","p":6500000,"f":200,"land":700,"b":2,"g":6,"mx":9,"rt":4.9,"rv":39,"sb":50,"o":20,"pl":1,"jz":0,"own":false,"fc":21,"pic":36,"plus":true,"inst":true,"recent":true,"feats":["barbecue","bathroom","cooler","electricity","essentials","fireextingu","firstaidkit","foosball","furniture","heating","islamictoilet","kitchen","parking","pool","refrigerator","stave","table","toilet","tv","vacuumcleaner","water"],"props":["مهمان نواز","استخر آب گرم","استخر سرپوشیده"],"rl":5,"rc":4.9,"rvl":4.8,"rck":5,"rco":5,"ra":5,"hr":100,"hrt":242,"hc":5,"hc_date":"2022-11-07","disc":0,"status":"active","v":"سیدکلا","url":"https://www.jajiga.com/room/3178910"},{"id":3219516,"t":"ویلا دوبلکس استخردار در بابل- سیدکلا","p":8500000,"f":400,"land":5000,"b":3,"g":6,"mx":8,"rt":4.6,"rv":22,"sb":20,"o":57,"pl":1,"jz":1,"own":false,"fc":25,"pic":33,"plus":true,"inst":false,"recent":true,"feats":["barbecue","bathroom","billiard","cooler","drawer","electricity","essentials","fireextingu","firstaidkit","furniture","heating","islamictoilet","jacuzzi","janitor","kitchen","microwave","parking","pool","refrigerator","stave","table","toilet","tv","vacuumcleaner","water"],"props":["خوش منظره","استخر آب گرم","استخر سرپوشیده"],"rl":4.5,"rc":4.8,"rvl":4.8,"rck":5,"rco":4.3,"ra":4.3,"hr":94,"hrt":444,"hc":4.3,"hc_date":"2023-09-20","disc":0,"status":"active","v":"سیدکلا","url":"https://www.jajiga.com/room/3219516"},{"id":3207306,"t":"اجاره کلبه سوئیسی در بابلکنار - شیردارکلا","p":1300000,"f":70,"land":100,"b":1,"g":4,"mx":6,"rt":4.6,"rv":24,"sb":20,"o":0,"pl":0,"jz":0,"own":false,"fc":14,"pic":12,"plus":true,"inst":false,"recent":true,"feats":["barbecue","bathroom","cooler","electricity","essentials","heating","islamictoilet","janitor","kitchen","parking","refrigerator","stave","tv","water"],"props":["مهمان نواز"],"rl":4.7,"rc":4.2,"rvl":4.5,"rck":4.9,"rco":4.9,"ra":4.7,"hr":80,"hrt":183,"hc":4.9,"hc_date":"2024-05-27","disc":0,"status":"active","v":"شیردارکلا","url":"https://www.jajiga.com/room/3207306"},{"id":3283346,"t":"خانه مبله در بابلکنار - شیردارکلا - ط ۲","p":1500000,"f":55,"land":200,"b":1,"g":2,"mx":4,"rt":4.5,"rv":4,"sb":5,"o":0,"pl":0,"jz":0,"own":false,"fc":16,"pic":16,"plus":false,"inst":false,"recent":false,"feats":["barbecue","bathroom","cooler","electricity","essentials","furniture","heating","islamictoilet","janitor","kitchen","parking","refrigerator","stave","tv","vacuumcleaner","water"],"props":["خوش منظره"],"rl":5,"rc":4,"rvl":4.3,"rck":4.5,"rco":4.3,"ra":5,"hr":97,"hrt":189,"hc":4.5,"hc_date":"2025-10-27","disc":0,"status":"active","v":"شیردارکلا","url":"https://www.jajiga.com/room/3283346"},{"id":3268545,"t":"اجاره خانه روستایی در بابلکنار - شیردارکلا","p":1600000,"f":80,"land":400,"b":1,"g":4,"mx":6,"rt":3.8,"rv":4,"sb":5,"o":0,"pl":0,"jz":0,"own":false,"fc":17,"pic":15,"plus":false,"inst":false,"recent":false,"feats":["barbecue","bathroom","cooler","electricity","essentials","firstaidkit","furniture","heating","islamictoilet","kitchen","parking","refrigerator","stave","toilet","tv","vacuumcleaner","water"],"props":[],"rl":4.3,"rc":2.8,"rvl":3,"rck":4,"rco":4.5,"ra":4.3,"hr":73,"hrt":54,"hc":4.3,"hc_date":"2025-06-08","disc":0,"status":"active","v":"شیردارکلا","url":"https://www.jajiga.com/room/3268545"},{"id":3248416,"t":"اجاره کلبه سوئیسی در بابلکنار - شیردارکلا","p":1850000,"f":70,"land":250,"b":1,"g":2,"mx":5,"rt":4.3,"rv":6,"sb":10,"o":0,"pl":0,"jz":0,"own":false,"fc":18,"pic":17,"plus":false,"inst":false,"recent":true,"feats":["barbecue","bathroom","cooler","electricity","essentials","fireextingu","firstaidkit","furniture","heating","islamictoilet","janitor","kitchen","parking","refrigerator","stave","tv","vacuumcleaner","water"],"props":[],"rl":4.6,"rc":3.8,"rvl":3.8,"rck":4.8,"rco":4.6,"ra":4.2,"hr":37,"hrt":206,"hc":4.6,"hc_date":"2025-04-13","disc":0,"status":"active","v":"شیردارکلا","url":"https://www.jajiga.com/room/3248416"},{"id":3258434,"t":"اجاره کلبه سوئیسی در بابلکنار - شیردارکلا","p":2000000,"f":60,"land":200,"b":1,"g":4,"mx":6,"rt":4.7,"rv":35,"sb":50,"o":7,"pl":0,"jz":0,"own":false,"fc":19,"pic":22,"plus":true,"inst":false,"recent":true,"feats":["barbecue","bathroom","cooler","electricity","essentials","firstaidkit","furniture","heating","islamictoilet","janitor","kitchen","parking","refrigerator","stave","table","toilet","tv","vacuumcleaner","water"],"props":["مهمان نواز"],"rl":4.5,"rc":4.6,"rvl":4.7,"rck":4.8,"rco":4.8,"ra":4.8,"hr":95,"hrt":106,"hc":4.9,"hc_date":"2025-05-15","disc":0,"status":"active","v":"شیردارکلا","url":"https://www.jajiga.com/room/3258434"},{"id":3190268,"t":"کلبه چوبی در بابلکنار - شیردارکلا - ط بالا","p":2000000,"f":55,"land":500,"b":1,"g":3,"mx":6,"rt":4.8,"rv":24,"sb":20,"o":0,"pl":0,"jz":0,"own":false,"fc":18,"pic":19,"plus":false,"inst":false,"recent":true,"feats":["barbecue","bathroom","cooler","drawer","electricity","essentials","fireextingu","furniture","heating","islamictoilet","kitchen","parking","refrigerator","stave","table","tv","vacuumcleaner","water"],"props":[],"rl":4.6,"rc":4.8,"rvl":4.6,"rck":5,"rco":5,"ra":5,"hr":43,"hrt":116,"hc":5,"hc_date":"2020-06-15","disc":0,"status":"active","v":"شیردارکلا","url":"https://www.jajiga.com/room/3190268"},{"id":3187135,"t":"ویلا در بابلکنار - شیردارکلا","p":2000000,"f":130,"land":1000,"b":2,"g":5,"mx":8,"rt":4.7,"rv":18,"sb":20,"o":7,"pl":0,"jz":0,"own":false,"fc":20,"pic":19,"plus":true,"inst":false,"recent":true,"feats":["barbecue","bathroom","cooler","drawer","electricity","essentials","furniture","heating","iron","islamictoilet","kitchen","parking","refrigerator","stave","table","toilet","tv","vacuumcleaner","washer","water"],"props":["خوش منظره","مهمان نواز"],"rl":4.7,"rc":4.2,"rvl":4.5,"rck":5,"rco":4.9,"ra":4.5,"hr":95,"hrt":454,"hc":4.9,"hc_date":"2023-09-03","disc":0,"status":"active","v":"شیردارکلا","url":"https://www.jajiga.com/room/3187135"},{"id":3258654,"t":"کلبه چوبی در بابلکنار - شیردارکلا","p":2300000,"f":100,"land":250,"b":1,"g":5,"mx":8,"rt":4.8,"rv":5,"sb":5,"o":0,"pl":0,"jz":0,"own":false,"fc":19,"pic":23,"plus":false,"inst":false,"recent":true,"feats":["barbecue","bathroom","cooler","electricity","essentials","fireextingu","firstaidkit","furniture","heating","islamictoilet","janitor","kitchen","parking","refrigerator","stave","table","tv","vacuumcleaner","water"],"props":["خوش منظره"],"rl":4.8,"rc":4.8,"rvl":4.6,"rck":5,"rco":5,"ra":4.8,"hr":33,"hrt":359,"hc":5,"hc_date":"2025-11-15","disc":0,"status":"active","v":"شیردارکلا","url":"https://www.jajiga.com/room/3258654"},{"id":3267118,"t":"کلبه سوئیسی جکوزی دار در بابلکنار - شیردارکلا","p":2500000,"f":80,"land":200,"b":2,"g":4,"mx":6,"rt":4.5,"rv":19,"sb":20,"o":27,"pl":0,"jz":1,"own":false,"fc":17,"pic":13,"plus":true,"inst":false,"recent":true,"feats":["barbecue","bathroom","cooler","electricity","essentials","furniture","heating","islamictoilet","jacuzzi","janitor","kitchen","parking","refrigerator","stave","tv","vacuumcleaner","water"],"props":["مهمان نواز"],"rl":4.4,"rc":4.4,"rvl":4.6,"rck":4.6,"rco":4.8,"ra":4.4,"hr":85,"hrt":237,"hc":4.8,"hc_date":"2025-05-24","disc":0,"status":"active","v":"شیردارکلا","url":"https://www.jajiga.com/room/3267118"},{"id":3276226,"t":"اجاره خانه تراس دار در بابلکنار - شیردارکلا - ط ۳","p":2800000,"f":120,"land":300,"b":1,"g":4,"mx":6,"rt":5,"rv":4,"sb":0,"o":23,"pl":0,"jz":0,"own":false,"fc":16,"pic":29,"plus":false,"inst":false,"recent":false,"feats":["barbecue","bathroom","cooler","drawer","electricity","essentials","furniture","heating","islamictoilet","kitchen","parking","refrigerator","stave","table","tv","water"],"props":["خوش منظره"],"rl":5,"rc":5,"rvl":5,"rck":5,"rco":5,"ra":5,"hr":96,"hrt":541,"hc":5,"hc_date":"2025-08-19","disc":0,"status":"active","v":"شیردارکلا","url":"https://www.jajiga.com/room/3276226"},{"id":3276228,"t":"خانه با تراس دلباز در بابلکنار - شیردارکلا - ط ۴","p":2800000,"f":90,"land":300,"b":1,"g":4,"mx":4,"rt":5,"rv":10,"sb":10,"o":13,"pl":0,"jz":0,"own":false,"fc":17,"pic":26,"plus":true,"inst":false,"recent":true,"feats":["barbecue","bathroom","cooler","drawer","electricity","essentials","furniture","heating","islamictoilet","janitor","kitchen","parking","refrigerator","stave","table","tv","water"],"props":["خوش منظره","مهمان نواز"],"rl":5,"rc":5,"rvl":5,"rck":5,"rco":5,"ra":5,"hr":96,"hrt":541,"hc":5,"hc_date":"2025-08-19","disc":0,"status":"active","v":"شیردارکلا","url":"https://www.jajiga.com/room/3276228"},{"id":3279598,"t":"کلبه سوئیسی در بابلکنار - شیردارکلا","p":2950000,"f":110,"land":400,"b":1,"g":4,"mx":6,"rt":4.7,"rv":15,"sb":20,"o":7,"pl":0,"jz":0,"own":false,"fc":19,"pic":15,"plus":true,"inst":false,"recent":true,"feats":["bathroom","cooler","electricity","essentials","fireextingu","firstaidkit","furniture","heating","islamictoilet","janitor","kitchen","parking","refrigerator","stave","table","toilet","tv","vacuumcleaner","water"],"props":[],"rl":4.5,"rc":4.7,"rvl":4.5,"rck":4.9,"rco":4.7,"ra":4.7,"hr":81,"hrt":148,"hc":4.7,"hc_date":"2025-09-22","disc":0,"status":"active","v":"شیردارکلا","url":"https://www.jajiga.com/room/3279598"},{"id":3199443,"t":"اجاره کلبه چوبی در بابلکنار - شیردارکلا","p":2980000,"f":75,"land":150,"b":1,"g":4,"mx":6,"rt":5,"rv":1,"sb":0,"o":30,"pl":0,"jz":1,"own":false,"fc":22,"pic":15,"plus":false,"inst":false,"recent":false,"feats":["barbecue","bathroom","cooler","drawer","electricity","essentials","fireextingu","foosball","furniture","heating","islamictoilet","jacuzzi","janitor","kitchen","parking","refrigerator","stave","table","toilet","tv","vacuumcleaner","water"],"props":["جذاب"],"rl":5,"rc":5,"rvl":5,"rck":5,"rco":5,"ra":5,"hr":75,"hrt":967,"hc":5,"hc_date":"2023-06-20","disc":0,"status":"active","v":"شیردارکلا","url":"https://www.jajiga.com/room/3199443"},{"id":3209080,"t":"کلبه سوئیسی استخردار در بابلکنار - شیردارکلا","p":3000000,"f":70,"land":200,"b":1,"g":4,"mx":4,"rt":4.3,"rv":9,"sb":10,"o":7,"pl":1,"jz":0,"own":false,"fc":16,"pic":13,"plus":false,"inst":false,"recent":true,"feats":["barbecue","bathroom","cooler","electricity","essentials","furniture","heating","islamictoilet","janitor","kitchen","parking","pool","refrigerator","stave","vacuumcleaner","water"],"props":["جذاب","استخر آب گرم","استخر روباز"],"rl":4,"rc":3.7,"rvl":3.8,"rck":4.8,"rco":5,"ra":4.5,"hr":57,"hrt":327,"hc":5,"hc_date":"2023-10-16","disc":0,"status":"active","v":"شیردارکلا","url":"https://www.jajiga.com/room/3209080"},{"id":3305898,"t":"کلبه سوئیسی در بابلکنار - شیردارکلا","p":3000000,"f":75,"land":1000,"b":1,"g":4,"mx":4,"rt":0,"rv":0,"sb":0,"o":0,"pl":0,"jz":0,"own":false,"fc":16,"pic":22,"plus":false,"inst":false,"recent":false,"feats":["barbecue","bathroom","cooler","electricity","essentials","firstaidkit","furniture","heating","islamictoilet","janitor","kitchen","refrigerator","stave","toilet","tv","water"],"props":[],"rl":0,"rc":0,"rvl":0,"rck":0,"rco":0,"ra":0,"hr":75,"hrt":553,"hc":4.7,"hc_date":"2026-06-02","disc":0,"status":"active","v":"شیردارکلا","url":"https://www.jajiga.com/room/3305898"},{"id":3276165,"t":"اجاره خانه مبله در بابلکنار - شیردارکلا - ط ۲","p":3000000,"f":120,"land":300,"b":2,"g":4,"mx":6,"rt":5,"rv":8,"sb":10,"o":3,"pl":0,"jz":0,"own":false,"fc":15,"pic":40,"plus":true,"inst":false,"recent":true,"feats":["bathroom","cooler","drawer","electricity","essentials","furniture","heating","islamictoilet","janitor","kitchen","parking","refrigerator","stave","tv","water"],"props":["خوش منظره","مهمان نواز"],"rl":4.9,"rc":5,"rvl":5,"rck":5,"rco":5,"ra":4.9,"hr":96,"hrt":541,"hc":5,"hc_date":"2025-08-19","disc":0,"status":"active","v":"شیردارکلا","url":"https://www.jajiga.com/room/3276165"},{"id":3286163,"t":"خانه ویلایی با جکوزی در بابلکنار - شیردارکلا","p":3000000,"f":40,"land":500,"b":1,"g":2,"mx":4,"rt":4.6,"rv":5,"sb":5,"o":0,"pl":0,"jz":1,"own":false,"fc":17,"pic":17,"plus":false,"inst":false,"recent":true,"feats":["barbecue","bathroom","cooler","electricity","essentials","furniture","heating","islamictoilet","jacuzzi","janitor","kitchen","parking","refrigerator","stave","tv","vacuumcleaner","water"],"props":[],"rl":5,"rc":3.8,"rvl":4.2,"rck":5,"rco":5,"ra":4.8,"hr":86,"hrt":234,"hc":4.9,"hc_date":"2025-12-21","disc":0,"status":"active","v":"شیردارکلا","url":"https://www.jajiga.com/room/3286163"},{"id":3307484,"t":"خانه ویلایی در بابلکنار - شیردارکلا","p":3000000,"f":90,"land":170,"b":1,"g":4,"mx":5,"rt":0,"rv":0,"sb":0,"o":0,"pl":0,"jz":0,"own":false,"fc":18,"pic":11,"plus":false,"inst":false,"recent":false,"feats":["barbecue","bathroom","cooler","drawer","electricity","essentials","firstaidkit","furniture","heating","islamictoilet","janitor","kitchen","parking","refrigerator","stave","tv","vacuumcleaner","water"],"props":[],"rl":0,"rc":0,"rvl":0,"rck":0,"rco":0,"ra":0,"hr":75,"hrt":553,"hc":4.7,"hc_date":"2026-06-02","disc":10,"status":"active","v":"شیردارکلا","url":"https://www.jajiga.com/room/3307484"},{"id":3298750,"t":"کلبه سوئیسی جکوزی دار در بابلکنار - شیردارکلا","p":3151000,"f":70,"land":200,"b":1,"g":4,"mx":6,"rt":4.9,"rv":2,"sb":5,"o":0,"pl":0,"jz":1,"own":false,"fc":19,"pic":18,"plus":false,"inst":false,"recent":false,"feats":["barbecue","bathroom","cooler","drawer","electricity","essentials","fireextingu","firstaidkit","furniture","heating","islamictoilet","jacuzzi","kitchen","parking","refrigerator","stave","tv","vacuumcleaner","water"],"props":[],"rl":5,"rc":5,"rvl":5,"rck":5,"rco":5,"ra":4.5,"hr":100,"hrt":121,"hc":5,"hc_date":"2026-04-15","disc":0,"status":"active","v":"شیردارکلا","url":"https://www.jajiga.com/room/3298750"},{"id":3300314,"t":"خانه دوبلکس استخردار در بابلکنار - شیردارکلا","p":3500000,"f":60,"land":1000,"b":2,"g":4,"mx":6,"rt":4.4,"rv":6,"sb":10,"o":23,"pl":1,"jz":0,"own":false,"fc":18,"pic":19,"plus":false,"inst":false,"recent":true,"feats":["barbecue","bathroom","cooler","electricity","essentials","furniture","heating","islamictoilet","janitor","kitchen","parking","pool","refrigerator","stave","toilet","tv","vacuumcleaner","water"],"props":["استخر سرپوشیده"],"rl":4.7,"rc":3.7,"rvl":4.2,"rck":5,"rco":4.7,"ra":4.5,"hr":86,"hrt":234,"hc":4.9,"hc_date":"2025-12-21","disc":0,"status":"active","v":"شیردارکلا","url":"https://www.jajiga.com/room/3300314"},{"id":3264357,"t":"کلبه چوبی جکوزی دار در بابلکنار - شیردارکلا","p":3600000,"f":142,"land":1500,"b":1,"g":4,"mx":6,"rt":4.8,"rv":26,"sb":20,"o":23,"pl":0,"jz":1,"own":false,"fc":20,"pic":28,"plus":true,"inst":false,"recent":true,"feats":["barbecue","bathroom","cooler","electricity","essentials","fireextingu","firstaidkit","furniture","heating","islamictoilet","jacuzzi","kitchen","parking","refrigerator","stave","table","toilet","tv","vacuumcleaner","water"],"props":["مهمان نواز"],"rl":4.8,"rc":4.5,"rvl":4.7,"rck":4.9,"rco":4.9,"ra":4.8,"hr":94,"hrt":117,"hc":4.9,"hc_date":"2025-04-30","disc":10,"status":"active","v":"شیردارکلا","url":"https://www.jajiga.com/room/3264357"},{"id":3280978,"t":"کلبه با وان جکوزی در بابلکنار - شیردارکلا - ط۳","p":4000000,"f":85,"land":600,"b":2,"g":4,"mx":8,"rt":4.6,"rv":44,"sb":100,"o":0,"pl":0,"jz":1,"own":false,"fc":19,"pic":16,"plus":true,"inst":false,"recent":true,"feats":["barbecue","bathroom","cooler","electricity","essentials","fireextingu","furniture","heating","islamictoilet","jacuzzi","janitor","kitchen","parking","refrigerator","stave","table","tv","vacuumcleaner","water"],"props":["خوش منظره","جذاب"],"rl":4.8,"rc":4.2,"rvl":4.4,"rck":4.9,"rco":4.6,"ra":4.7,"hr":97,"hrt":187,"hc":4.5,"hc_date":"2025-10-27","disc":10,"status":"active","v":"شیردارکلا","url":"https://www.jajiga.com/room/3280978"},{"id":3283844,"t":"کلبه سوئیسی با جکوزی در بابلکنار - شیردارکلا","p":4200000,"f":153,"land":310,"b":2,"g":4,"mx":8,"rt":3.9,"rv":4,"sb":0,"o":7,"pl":0,"jz":1,"own":false,"fc":21,"pic":23,"plus":false,"inst":false,"recent":false,"feats":["barbecue","bathroom","cooler","drawer","electricity","essentials","fireextingu","firstaidkit","furniture","heating","islamictoilet","jacuzzi","kitchen","parking","refrigerator","stave","table","toilet","tv","vacuumcleaner","water"],"props":[],"rl":4.5,"rc":3.3,"rvl":3.3,"rck":4.8,"rco":4.5,"ra":3.3,"hr":60,"hrt":43,"hc":4.5,"hc_date":"2025-11-26","disc":0,"status":"active","v":"شیردارکلا","url":"https://www.jajiga.com/room/3283844"},{"id":3222812,"t":"کلبه چوبی استخردار در بابلکنار - شیردارکلا","p":4900000,"f":105,"land":260,"b":2,"g":6,"mx":8,"rt":4.9,"rv":25,"sb":20,"o":30,"pl":1,"jz":0,"own":false,"fc":19,"pic":25,"plus":false,"inst":false,"recent":true,"feats":["barbecue","bathroom","cooler","drawer","electricity","essentials","furniture","heating","islamictoilet","kitchen","parking","pool","refrigerator","stave","table","toilet","tv","vacuumcleaner","water"],"props":["استخر آب گرم","استخر روباز"],"rl":5,"rc":4.8,"rvl":4.8,"rck":5,"rco":5,"ra":5,"hr":63,"hrt":222,"hc":5,"hc_date":"2024-04-06","disc":0,"status":"active","v":"شیردارکلا","url":"https://www.jajiga.com/room/3222812"},{"id":3154396,"t":"کلبه چوبی جکوزی دار در بابلکنار","p":4950000,"f":70,"land":1000,"b":0,"g":4,"mx":5,"rt":4.7,"rv":29,"sb":20,"o":0,"pl":0,"jz":1,"own":false,"fc":20,"pic":21,"plus":true,"inst":false,"recent":false,"feats":["barbecue","bathroom","cooler","electricity","essentials","fireextingu","food","furniture","heating","islamictoilet","jacuzzi","janitor","kitchen","parking","refrigerator","stave","table","tv","vacuumcleaner","water"],"props":["خوش منظره","حیاط دار"],"rl":4.6,"rc":4.5,"rvl":4.4,"rck":5,"rco":4.8,"ra":4.8,"hr":100,"hrt":144,"hc":5,"hc_date":"2019-10-06","disc":0,"status":"active","v":"شیردارکلا","url":"https://www.jajiga.com/room/3154396"},{"id":3234782,"t":"اجاره کلبه سوئیسی در بابلکنار - شیردارکلا","p":5500000,"f":65,"land":100,"b":1,"g":2,"mx":4,"rt":4.3,"rv":25,"sb":50,"o":0,"pl":0,"jz":1,"own":false,"fc":18,"pic":28,"plus":false,"inst":false,"recent":true,"feats":["barbecue","bathroom","cooler","electricity","essentials","furniture","heating","islamictoilet","jacuzzi","kitchen","parking","refrigerator","stave","table","toilet","tv","vacuumcleaner","water"],"props":[],"rl":4.8,"rc":3.8,"rvl":4.2,"rck":4.6,"rco":4.8,"ra":3.6,"hr":86,"hrt":138,"hc":4.9,"hc_date":"2021-06-07","disc":0,"status":"active","v":"شیردارکلا","url":"https://www.jajiga.com/room/3234782"},{"id":3224492,"t":"کلبه سوئیسی استخردار در بابلکنار - شیردارکلا","p":6200000,"f":100,"land":560,"b":2,"g":4,"mx":6,"rt":4.7,"rv":4,"sb":5,"o":13,"pl":1,"jz":0,"own":false,"fc":17,"pic":39,"plus":false,"inst":false,"recent":false,"feats":["bathroom","cooler","electricity","essentials","fireextingu","furniture","hairdryer","heating","islamictoilet","janitor","kitchen","parking","pool","refrigerator","toilet","vacuumcleaner","water"],"props":["خوش منظره","استخر آب گرم","استخر سرپوشیده"],"rl":4.8,"rc":4.8,"rvl":4,"rck":5,"rco":5,"ra":4.8,"hr":45,"hrt":44,"hc":5,"hc_date":"2024-04-23","disc":10,"status":"active","v":"شیردارکلا","url":"https://www.jajiga.com/room/3224492"},{"id":3176224,"t":"کلبه سوئیسی استخردار در بابلکنار","p":6820000,"f":90,"land":2000,"b":2,"g":4,"mx":5,"rt":5,"rv":36,"sb":50,"o":10,"pl":1,"jz":0,"own":false,"fc":20,"pic":23,"plus":true,"inst":true,"recent":true,"feats":["barbecue","bathroom","cooler","electricity","essentials","fireextingu","food","furniture","heating","islamictoilet","janitor","kitchen","parking","pool","refrigerator","stave","table","tv","vacuumcleaner","water"],"props":["خوش منظره","مهمان نواز","استخر سرپوشیده","استخر آب گرم"],"rl":5,"rc":5,"rvl":5,"rck":5,"rco":5,"ra":5,"hr":100,"hrt":144,"hc":5,"hc_date":"2019-10-06","disc":0,"status":"active","v":"شیردارکلا","url":"https://www.jajiga.com/room/3176224"},{"id":3304015,"t":"کلبه سوئیسی با استخر و جکوزی در بابلکنار","p":7000000,"f":180,"land":1000,"b":2,"g":4,"mx":6,"rt":4.3,"rv":3,"sb":5,"o":13,"pl":1,"jz":1,"own":false,"fc":17,"pic":36,"plus":false,"inst":false,"recent":false,"feats":["barbecue","bathroom","cooler","electricity","essentials","furniture","heating","jacuzzi","janitor","kitchen","pool","refrigerator","stave","toilet","tv","vacuumcleaner","water"],"props":["جذاب","استخر آب گرم","استخر سرپوشیده"],"rl":4,"rc":4,"rvl":4,"rck":4.7,"rco":4.7,"ra":4.3,"hr":75,"hrt":553,"hc":4.7,"hc_date":"2026-06-02","disc":10,"status":"active","v":"شیردارکلا","url":"https://www.jajiga.com/room/3304015"},{"id":3279016,"t":"ویلا وان جکوزی در بابلکنار - شیردارکلا","p":7000000,"f":200,"land":200,"b":2,"g":4,"mx":8,"rt":4.9,"rv":6,"sb":5,"o":13,"pl":0,"jz":1,"own":false,"fc":25,"pic":35,"plus":true,"inst":false,"recent":true,"feats":["barbecue","bathroom","cooler","drawer","electricity","essentials","fireextingu","firstaidkit","foosball","furniture","hairdryer","heating","islamictoilet","jacuzzi","kitchen","microwave","parking","refrigerator","stave","table","toilet","tv","vacuumcleaner","washer","water"],"props":["خوش منظره","جذاب","مهمان نواز"],"rl":5,"rc":4.5,"rvl":4.8,"rck":5,"rco":5,"ra":5,"hr":83,"hrt":345,"hc":5,"hc_date":"2025-09-17","disc":10,"status":"active","v":"شیردارکلا","url":"https://www.jajiga.com/room/3279016"},{"id":3178917,"t":"کلبه سوئیسی استخردار در سوادکوه - شیردارکلا","p":7800000,"f":120,"land":800,"b":3,"g":6,"mx":6,"rt":4.9,"rv":164,"sb":200,"o":70,"pl":1,"jz":0,"own":false,"fc":19,"pic":25,"plus":true,"inst":true,"recent":true,"feats":["barbecue","bathroom","cooler","drawer","electricity","essentials","fireextingu","furniture","heating","islamictoilet","kitchen","parking","pool","refrigerator","stave","table","toilet","vacuumcleaner","water"],"props":["جذاب","اقامتگاه خاص","حیاط دار","مهمان نواز","استخر آب گرم","استخر روباز"],"rl":4.8,"rc":4.8,"rvl":4.8,"rck":5,"rco":5,"ra":4.9,"hr":88,"hrt":123,"hc":5,"hc_date":"2022-11-06","disc":0,"status":"active","v":"شیردارکلا","url":"https://www.jajiga.com/room/3178917"},{"id":3264676,"t":"کلبه سوئیسی استخردار بابلکنار - شیردارکلا","p":8000000,"f":160,"land":400,"b":3,"g":6,"mx":8,"rt":4.9,"rv":27,"sb":50,"o":43,"pl":1,"jz":0,"own":false,"fc":22,"pic":33,"plus":true,"inst":false,"recent":true,"feats":["barbecue","bathroom","cooler","drawer","electricity","essentials","fireextingu","foosball","furniture","heating","islamictoilet","janitor","kitchen","parking","pool","refrigerator","stave","table","toilet","tv","vacuumcleaner","water"],"props":["خوش منظره","جذاب","مهمان نواز","استخر آب گرم","استخر سرپوشیده"],"rl":4.8,"rc":5,"rvl":4.7,"rck":4.9,"rco":5,"ra":4.9,"hr":94,"hrt":213,"hc":5,"hc_date":"2025-04-21","disc":0,"status":"active","v":"شیردارکلا","url":"https://www.jajiga.com/room/3264676"},{"id":3293613,"t":"کلبه سوئیسی استخردار در بابلکنار - شیردارکلا","p":9000000,"f":100,"land":300,"b":2,"g":4,"mx":6,"rt":4.9,"rv":8,"sb":5,"o":7,"pl":1,"jz":0,"own":false,"fc":23,"pic":19,"plus":true,"inst":false,"recent":true,"feats":["barbecue","bathroom","cooler","drawer","electricity","essentials","firealarm","fireextingu","firstaidkit","furniture","hairdryer","heating","islamictoilet","kitchen","parking","pool","refrigerator","stave","table","toilet","tv","vacuumcleaner","water"],"props":["خوش منظره","مهمان نواز","استخر آب گرم","استخر سرپوشیده"],"rl":4.8,"rc":5,"rvl":4.8,"rck":5,"rco":5,"ra":4.9,"hr":79,"hrt":328,"hc":5,"hc_date":"2026-03-19","disc":0,"status":"active","v":"شیردارکلا","url":"https://www.jajiga.com/room/3293613"},{"id":3157383,"t":"ویلا با جکوزی در سوادکوه - شیردارکلا","p":10000000,"f":260,"land":550,"b":3,"g":6,"mx":10,"rt":4.2,"rv":24,"sb":20,"o":0,"pl":0,"jz":1,"own":false,"fc":22,"pic":46,"plus":false,"inst":false,"recent":true,"feats":["barbecue","bathroom","billiard","cooler","drawer","electricity","essentials","foosball","furniture","heating","islamictoilet","jacuzzi","kitchen","parking","refrigerator","stave","table","toilet","tv","vacuumcleaner","washer","water"],"props":["لوکس","خوش منظره"],"rl":4.8,"rc":3.4,"rvl":3.2,"rck":4.8,"rco":5,"ra":4,"hr":86,"hrt":138,"hc":4.9,"hc_date":"2021-06-07","disc":0,"status":"active","v":"شیردارکلا","url":"https://www.jajiga.com/room/3157383"},{"id":3285158,"t":"کلبه سوئیسی در بابلکنار - قران تالار","p":1400000,"f":70,"land":100,"b":1,"g":5,"mx":7,"rt":4.7,"rv":11,"sb":10,"o":0,"pl":0,"jz":0,"own":false,"fc":17,"pic":18,"plus":false,"inst":false,"recent":true,"feats":["barbecue","bathroom","cooler","electricity","essentials","firstaidkit","furniture","heating","islamictoilet","janitor","kitchen","parking","refrigerator","stave","table","toilet","water"],"props":["خوش منظره"],"rl":4.7,"rc":4,"rvl":4.7,"rck":4.9,"rco":4.8,"ra":4.9,"hr":67,"hrt":360,"hc":4.6,"hc_date":"2025-12-03","disc":20,"status":"active","v":"قرآن تالار","url":"https://www.jajiga.com/room/3285158"},{"id":3212511,"t":"کلبه چوبی دوبلکس در بابلکنار - قرآن تالار","p":1600000,"f":40,"land":200,"b":1,"g":2,"mx":6,"rt":4.8,"rv":34,"sb":50,"o":13,"pl":0,"jz":0,"own":false,"fc":16,"pic":22,"plus":true,"inst":true,"recent":true,"feats":["barbecue","bathroom","cooler","electricity","essentials","furniture","heating","islamictoilet","janitor","kitchen","parking","refrigerator","stave","tv","vacuumcleaner","water"],"props":["مهمان نواز"],"rl":4.7,"rc":4.8,"rvl":4.9,"rck":4.9,"rco":4.9,"ra":4.9,"hr":100,"hrt":147,"hc":4.9,"hc_date":"2023-12-02","disc":0,"status":"active","v":"قرآن تالار","url":"https://www.jajiga.com/room/3212511"},{"id":3283885,"t":"کلبه سوئیسی جکوزی دار در بابلکنار - قران تالار","p":2000000,"f":70,"land":100,"b":1,"g":4,"mx":6,"rt":4.5,"rv":14,"sb":20,"o":7,"pl":0,"jz":1,"own":false,"fc":17,"pic":22,"plus":false,"inst":false,"recent":true,"feats":["barbecue","bathroom","cooler","electricity","essentials","firstaidkit","furniture","heating","jacuzzi","janitor","kitchen","parking","refrigerator","stave","table","toilet","water"],"props":[],"rl":4.8,"rc":4.1,"rvl":4.4,"rck":4.6,"rco":4.4,"ra":4.9,"hr":67,"hrt":360,"hc":4.6,"hc_date":"2025-12-03","disc":10,"status":"active","v":"قرآن تالار","url":"https://www.jajiga.com/room/3283885"},{"id":3289641,"t":"کلبه سوئیسی با جکوزی در بابلکنار - قرآن تالار","p":2200000,"f":75,"land":150,"b":2,"g":6,"mx":6,"rt":4.6,"rv":18,"sb":50,"o":17,"pl":0,"jz":1,"own":false,"fc":21,"pic":13,"plus":true,"inst":false,"recent":true,"feats":["barbecue","bathroom","cooler","electricity","essentials","fireextingu","food","furniture","heating","islamictoilet","jacuzzi","janitor","kitchen","parking","refrigerator","stave","table","toilet","tv","vacuumcleaner","water"],"props":[],"rl":4.3,"rc":4.4,"rvl":4.6,"rck":4.8,"rco":4.7,"ra":4.9,"hr":89,"hrt":159,"hc":4.8,"hc_date":"2023-11-23","disc":0,"status":"active","v":"قرآن تالار","url":"https://www.jajiga.com/room/3289641"},{"id":3291421,"t":"کلبه با وان‌ جکوزی در بابلکنار - قرآن‌ تالار","p":2650000,"f":75,"land":130,"b":1,"g":3,"mx":5,"rt":4.9,"rv":58,"sb":50,"o":43,"pl":0,"jz":1,"own":false,"fc":20,"pic":18,"plus":true,"inst":true,"recent":true,"feats":["barbecue","bathroom","cooler","electricity","essentials","furniture","hairdryer","heating","islamictoilet","jacuzzi","janitor","kitchen","parking","refrigerator","stave","table","toilet","tv","vacuumcleaner","water"],"props":["جذاب","مهمان نواز"],"rl":4.9,"rc":4.9,"rvl":4.9,"rck":4.9,"rco":4.9,"ra":4.9,"hr":98,"hrt":98,"hc":4.9,"hc_date":"2026-03-07","disc":0,"status":"active","v":"قرآن تالار","url":"https://www.jajiga.com/room/3291421"},{"id":3245010,"t":"کلبه سوئیسی با جکوزی در بابلکنار - قرآن تالار","p":2700000,"f":30,"land":200,"b":1,"g":3,"mx":3,"rt":4.6,"rv":7,"sb":5,"o":7,"pl":0,"jz":1,"own":false,"fc":17,"pic":13,"plus":true,"inst":false,"recent":true,"feats":["barbecue","bathroom","cooler","electricity","essentials","furniture","heating","islamictoilet","jacuzzi","janitor","kitchen","parking","refrigerator","stave","tv","vacuumcleaner","water"],"props":["خوش منظره","مهمان نواز"],"rl":4.8,"rc":3.8,"rvl":4.4,"rck":5,"rco":4.8,"ra":4.8,"hr":82,"hrt":402,"hc":4.8,"hc_date":"2024-10-28","disc":0,"status":"active","v":"قرآن تالار","url":"https://www.jajiga.com/room/3245010"},{"id":3289341,"t":"کلبه سوئیسی رو به جنگل در بابلکنار - قرآن تالار","p":2800000,"f":90,"land":200,"b":2,"g":4,"mx":6,"rt":4.8,"rv":35,"sb":50,"o":33,"pl":0,"jz":1,"own":false,"fc":21,"pic":22,"plus":true,"inst":false,"recent":true,"feats":["barbecue","bathroom","cooler","electricity","essentials","fireextingu","food","furniture","heating","islamictoilet","jacuzzi","janitor","kitchen","parking","refrigerator","stave","table","toilet","tv","vacuumcleaner","water"],"props":["جذاب","مهمان نواز"],"rl":4.7,"rc":4.7,"rvl":4.9,"rck":4.9,"rco":4.9,"ra":4.9,"hr":89,"hrt":157,"hc":4.8,"hc_date":"2023-11-23","disc":0,"status":"active","v":"قرآن تالار","url":"https://www.jajiga.com/room/3289341"},{"id":3281922,"t":"کلبه چوبی در در بابلکنار - قرآن تالار","p":3000000,"f":110,"land":508,"b":1,"g":2,"mx":4,"rt":0,"rv":0,"sb":0,"o":0,"pl":0,"jz":0,"own":false,"fc":18,"pic":26,"plus":false,"inst":false,"recent":false,"feats":["barbecue","bathroom","cooler","electricity","essentials","fireextingu","furniture","heating","islamictoilet","janitor","kitchen","parking","refrigerator","stave","toilet","tv","vacuumcleaner","water"],"props":[],"rl":0,"rc":0,"rvl":0,"rck":0,"rco":0,"ra":0,"hr":33,"hrt":152,"hc":null,"hc_date":"2026-06-28","disc":10,"status":"active","v":"قرآن تالار","url":"https://www.jajiga.com/room/3281922"},{"id":3293846,"t":"کلبه بالکن دار با جکوزی در بابلکنار - قرآن تالار","p":3200000,"f":130,"land":200,"b":3,"g":4,"mx":6,"rt":4.6,"rv":18,"sb":20,"o":23,"pl":0,"jz":1,"own":false,"fc":21,"pic":16,"plus":true,"inst":true,"recent":true,"feats":["barbecue","bathroom","cooler","electricity","essentials","fireextingu","food","furniture","heating","islamictoilet","jacuzzi","janitor","kitchen","parking","refrigerator","stave","table","toilet","tv","vacuumcleaner","water"],"props":[],"rl":4.4,"rc":4.4,"rvl":4.7,"rck":4.8,"rco":4.7,"ra":4.7,"hr":89,"hrt":158,"hc":4.8,"hc_date":"2023-11-23","disc":0,"status":"active","v":"قرآن تالار","url":"https://www.jajiga.com/room/3293846"},{"id":3212136,"t":"کلبه سوئیسی جکوزی دار در بابلکنار - قرآن تالار","p":3200000,"f":70,"land":200,"b":2,"g":6,"mx":6,"rt":4.7,"rv":171,"sb":300,"o":13,"pl":0,"jz":1,"own":false,"fc":19,"pic":17,"plus":true,"inst":false,"recent":true,"feats":["barbecue","bathroom","cooler","electricity","essentials","fireextingu","furniture","heating","islamictoilet","jacuzzi","janitor","kitchen","parking","refrigerator","stave","table","tv","vacuumcleaner","water"],"props":["مهمان نواز"],"rl":4.6,"rc":4.3,"rvl":4.7,"rck":4.9,"rco":4.8,"ra":4.8,"hr":89,"hrt":159,"hc":4.8,"hc_date":"2023-11-23","disc":0,"status":"active","v":"قرآن تالار","url":"https://www.jajiga.com/room/3212136"},{"id":3209086,"t":"اجاره کلبه سوئدی در نزدیکی لفور - قرآن تلار","p":3500000,"f":75,"land":600,"b":2,"g":4,"mx":6,"rt":4.9,"rv":47,"sb":50,"o":13,"pl":0,"jz":0,"own":false,"fc":16,"pic":17,"plus":true,"inst":false,"recent":true,"feats":["barbecue","bathroom","cooler","electricity","essentials","furniture","heating","islamictoilet","janitor","kitchen","refrigerator","stave","table","tv","vacuumcleaner","water"],"props":["جذاب","اقامتگاه خاص","خوش منظره","مهمان نواز"],"rl":5,"rc":4.5,"rvl":4.8,"rck":5,"rco":5,"ra":4.9,"hr":97,"hrt":116,"hc":5,"hc_date":"2023-10-15","disc":0,"status":"active","v":"قرآن تالار","url":"https://www.jajiga.com/room/3209086"},{"id":3228941,"t":"اجاره کلبه چوبی در بابلکنار - گونه کلا","p":1500000,"f":70,"land":1000,"b":1,"g":4,"mx":4,"rt":4.8,"rv":20,"sb":20,"o":0,"pl":0,"jz":0,"own":false,"fc":19,"pic":11,"plus":true,"inst":false,"recent":true,"feats":["barbecue","bathroom","cooler","electricity","essentials","fireextingu","furniture","heating","islamictoilet","janitor","kitchen","parking","refrigerator","stave","table","toilet","tv","vacuumcleaner","water"],"props":["مهمان نواز"],"rl":4.8,"rc":4.7,"rvl":4.7,"rck":5,"rco":4.8,"ra":4.9,"hr":95,"hrt":279,"hc":4.8,"hc_date":"2024-05-19","disc":0,"status":"active","v":"گونه کلا","url":"https://www.jajiga.com/room/3228941"},{"id":3298479,"t":"کلبه سوئیسی در بابلکنار - گونه کلا","p":1500000,"f":75,"land":250,"b":2,"g":4,"mx":6,"rt":4.8,"rv":3,"sb":0,"o":10,"pl":0,"jz":0,"own":false,"fc":16,"pic":11,"plus":false,"inst":false,"recent":false,"feats":["barbecue","bathroom","cooler","electricity","essentials","furniture","heating","islamictoilet","janitor","kitchen","parking","refrigerator","stave","table","toilet","water"],"props":[],"rl":5,"rc":5,"rvl":4.7,"rck":5,"rco":4.7,"ra":4.7,"hr":89,"hrt":260,"hc":4.7,"hc_date":"2026-04-12","disc":0,"status":"active","v":"گونه کلا","url":"https://www.jajiga.com/room/3298479"},{"id":3227914,"t":"اجاره سوئیت جنگلی در بابلکنار - گونه کلا","p":1600000,"f":40,"land":200,"b":1,"g":4,"mx":6,"rt":4.8,"rv":9,"sb":10,"o":23,"pl":0,"jz":0,"own":false,"fc":15,"pic":15,"plus":true,"inst":false,"recent":true,"feats":["bathroom","cooler","electricity","essentials","heating","islamictoilet","janitor","kitchen","parking","refrigerator","stave","toilet","tv","vacuumcleaner","water"],"props":["خوش منظره","لب آب","مهمان نواز"],"rl":5,"rc":4.9,"rvl":4.4,"rck":4.9,"rco":4.9,"ra":5,"hr":91,"hrt":283,"hc":4.8,"hc_date":"2024-05-21","disc":0,"status":"active","v":"گونه کلا","url":"https://www.jajiga.com/room/3227914"},{"id":3235299,"t":"اجاره کلبه سوئیسی در بابلکنار - گونه کلا","p":1800000,"f":70,"land":85,"b":1,"g":4,"mx":6,"rt":4.8,"rv":35,"sb":50,"o":27,"pl":0,"jz":0,"own":false,"fc":18,"pic":22,"plus":true,"inst":false,"recent":true,"feats":["barbecue","bathroom","cooler","electricity","essentials","furniture","heating","islamictoilet","janitor","kitchen","parking","refrigerator","stave","table","toilet","tv","vacuumcleaner","water"],"props":[],"rl":4.8,"rc":4.5,"rvl":4.7,"rck":5,"rco":4.7,"ra":4.9,"hr":91,"hrt":283,"hc":4.8,"hc_date":"2024-05-21","disc":0,"status":"active","v":"گونه کلا","url":"https://www.jajiga.com/room/3235299"},{"id":3228452,"t":"خانه مبله در بابلکنار - گونه کلا - طبقه ۲","p":1950000,"f":95,"land":150,"b":1,"g":4,"mx":6,"rt":4.7,"rv":13,"sb":10,"o":0,"pl":0,"jz":0,"own":false,"fc":18,"pic":18,"plus":true,"inst":true,"recent":true,"feats":["bathroom","cooler","drawer","electricity","essentials","furniture","heating","islamictoilet","kitchen","parking","refrigerator","stave","table","toilet","tv","vacuumcleaner","washer","water"],"props":[],"rl":4.7,"rc":4.7,"rvl":4.5,"rck":4.8,"rco":4.7,"ra":4.7,"hr":94,"hrt":123,"hc":4.7,"hc_date":"2023-09-09","disc":0,"status":"active","v":"گونه کلا","url":"https://www.jajiga.com/room/3228452"},{"id":3308372,"t":"خانه ویلایی در بابلکنار - گونه کلا","p":2000000,"f":120,"land":200,"b":2,"g":6,"mx":10,"rt":0,"rv":0,"sb":0,"o":3,"pl":0,"jz":0,"own":false,"fc":16,"pic":23,"plus":false,"inst":false,"recent":false,"feats":["bathroom","cooler","electricity","essentials","furniture","heating","islamictoilet","kitchen","parking","refrigerator","stave","table","toilet","tv","vacuumcleaner","water"],"props":[],"rl":0,"rc":0,"rvl":0,"rck":0,"rco":0,"ra":0,"hr":50,"hrt":345,"hc":null,"hc_date":"2026-07-18","disc":0,"status":"active","v":"گونه کلا","url":"https://www.jajiga.com/room/3308372"},{"id":3156478,"t":"رزرو سوئیت جنگلی در بابلکنار - گونه کلا","p":2000000,"f":60,"land":6000,"b":1,"g":4,"mx":6,"rt":0,"rv":0,"sb":0,"o":3,"pl":0,"jz":0,"own":false,"fc":13,"pic":17,"plus":false,"inst":false,"recent":false,"feats":["bathroom","electricity","essentials","furniture","heating","islamictoilet","janitor","kitchen","parking","refrigerator","stave","table","water"],"props":["خوش منظره"],"rl":0,"rc":0,"rvl":0,"rck":0,"rco":0,"ra":0,"hr":8,"hrt":562,"hc":null,"hc_date":"2021-04-26","disc":0,"status":"active","v":"گونه کلا","url":"https://www.jajiga.com/room/3156478"},{"id":3244715,"t":"اجاره ویلا دوبلکس در بابلکنار - گونه کلا","p":2000000,"f":170,"land":300,"b":2,"g":4,"mx":8,"rt":4.5,"rv":20,"sb":20,"o":0,"pl":0,"jz":0,"own":false,"fc":24,"pic":13,"plus":true,"inst":false,"recent":true,"feats":["barbecue","bathroom","cooler","drawer","electricity","essentials","firstaidkit","furniture","hairdryer","heating","iron","islamictoilet","janitor","kitchen","microwave","parking","phone","refrigerator","stave","table","tv","vacuumcleaner","washer","water"],"props":[],"rl":4.5,"rc":4.9,"rvl":4.1,"rck":4.8,"rco":4.4,"ra":4.6,"hr":78,"hrt":294,"hc":4.4,"hc_date":"2023-06-21","disc":0,"status":"active","v":"گونه کلا","url":"https://www.jajiga.com/room/3244715"},{"id":3276640,"t":"اجاره خانه ویلایی در بابلکنار - گونه کلا","p":2200000,"f":130,"land":700,"b":2,"g":5,"mx":8,"rt":4.7,"rv":10,"sb":10,"o":0,"pl":0,"jz":0,"own":false,"fc":19,"pic":17,"plus":true,"inst":false,"recent":true,"feats":["barbecue","bathroom","cooler","drawer","electricity","essentials","furniture","heating","islamictoilet","kitchen","parking","refrigerator","stave","table","toilet","tv","vacuumcleaner","washer","water"],"props":["مهمان نواز"],"rl":4.6,"rc":4.3,"rvl":4.5,"rck":5,"rco":4.9,"ra":4.7,"hr":67,"hrt":241,"hc":4.9,"hc_date":"2025-08-25","disc":0,"status":"active","v":"گونه کلا","url":"https://www.jajiga.com/room/3276640"},{"id":3273563,"t":"کلبه سوئیسی جکوزی دار در بابلکنار - گونه کلا","p":2350000,"f":90,"land":850,"b":1,"g":4,"mx":5,"rt":3.6,"rv":4,"sb":5,"o":0,"pl":0,"jz":1,"own":false,"fc":18,"pic":25,"plus":false,"inst":false,"recent":false,"feats":["barbecue","bathroom","cooler","electricity","essentials","food","furniture","heating","islamictoilet","jacuzzi","janitor","kitchen","refrigerator","stave","toilet","tv","vacuumcleaner","water"],"props":["حیاط دار"],"rl":4.5,"rc":2.8,"rvl":2.8,"rck":4,"rco":4,"ra":3.8,"hr":80,"hrt":510,"hc":4,"hc_date":"2026-05-11","disc":10,"status":"active","v":"گونه کلا","url":"https://www.jajiga.com/room/3273563"},{"id":3212575,"t":"ویلا چوبی در بابلکنار - گونه کلا","p":2500000,"f":75,"land":300,"b":2,"g":4,"mx":4,"rt":5,"rv":24,"sb":20,"o":0,"pl":0,"jz":0,"own":false,"fc":15,"pic":20,"plus":true,"inst":false,"recent":false,"feats":["barbecue","bathroom","cooler","electricity","essentials","furniture","heating","janitor","kitchen","parking","refrigerator","stave","toilet","vacuumcleaner","water"],"props":["خوش منظره","مهمان نواز"],"rl":4.9,"rc":5,"rvl":5,"rck":5,"rco":5,"ra":4.9,"hr":47,"hrt":431,"hc":5,"hc_date":"2023-12-04","disc":0,"status":"active","v":"گونه کلا","url":"https://www.jajiga.com/room/3212575"},{"id":3281370,"t":"کلبه سوئیسی در بابلکنار - گونه کلا - واحد ۴","p":2550000,"f":50,"land":800,"b":1,"g":4,"mx":6,"rt":5,"rv":4,"sb":5,"o":0,"pl":0,"jz":0,"own":false,"fc":19,"pic":16,"plus":false,"inst":false,"recent":false,"feats":["bathroom","cooler","drawer","electricity","essentials","fireextingu","firstaidkit","furniture","heating","islamictoilet","kitchen","parking","refrigerator","stave","table","toilet","tv","vacuumcleaner","water"],"props":[],"rl":4.8,"rc":5,"rvl":5,"rck":5,"rco":5,"ra":5,"hr":38,"hrt":298,"hc":5,"hc_date":"2022-01-16","disc":20,"status":"active","v":"گونه کلا","url":"https://www.jajiga.com/room/3281370"},{"id":3236158,"t":"کلبه سوئیسی با جکوزی در بابلکنار - گونه کلا","p":2590000,"f":50,"land":250,"b":1,"g":4,"mx":6,"rt":4.9,"rv":11,"sb":10,"o":0,"pl":0,"jz":1,"own":false,"fc":17,"pic":31,"plus":false,"inst":false,"recent":true,"feats":["bathroom","cooler","drawer","electricity","essentials","furniture","heating","islamictoilet","jacuzzi","kitchen","parking","refrigerator","stave","table","toilet","tv","water"],"props":[],"rl":5,"rc":4.8,"rvl":4.8,"rck":5,"rco":5,"ra":5,"hr":52,"hrt":371,"hc":4.9,"hc_date":"2023-06-20","disc":0,"status":"active","v":"گونه کلا","url":"https://www.jajiga.com/room/3236158"},{"id":3263831,"t":"اجاره کلبه سوئیسی در بابلکنار - گونه کلا","p":2590000,"f":50,"land":250,"b":1,"g":4,"mx":6,"rt":4.8,"rv":2,"sb":0,"o":0,"pl":0,"jz":0,"own":false,"fc":19,"pic":15,"plus":false,"inst":false,"recent":false,"feats":["barbecue","bathroom","cooler","electricity","essentials","fireextingu","firstaidkit","furniture","heating","islamictoilet","kitchen","parking","refrigerator","stave","table","toilet","tv","vacuumcleaner","water"],"props":[],"rl":5,"rc":4.5,"rvl":5,"rck":5,"rco":5,"ra":4.5,"hr":38,"hrt":298,"hc":5,"hc_date":"2022-01-16","disc":0,"status":"active","v":"گونه کلا","url":"https://www.jajiga.com/room/3263831"},{"id":3263833,"t":"کلبه سوئیسی جکوزی دار در بابلکنار - گونه کلا","p":2890000,"f":50,"land":400,"b":1,"g":2,"mx":4,"rt":5,"rv":1,"sb":0,"o":0,"pl":0,"jz":1,"own":false,"fc":20,"pic":18,"plus":false,"inst":false,"recent":false,"feats":["barbecue","bathroom","cooler","electricity","essentials","fireextingu","firstaidkit","furniture","heating","islamictoilet","jacuzzi","kitchen","parking","refrigerator","stave","table","toilet","tv","vacuumcleaner","water"],"props":[],"rl":5,"rc":5,"rvl":5,"rck":5,"rco":5,"ra":5,"hr":38,"hrt":298,"hc":5,"hc_date":"2022-01-16","disc":0,"status":"active","v":"گونه کلا","url":"https://www.jajiga.com/room/3263833"},{"id":3161999,"t":"رزرو کلبه چوبی دوبلکس در بابلکنار - گونه کلا","p":2950000,"f":80,"land":1000,"b":1,"g":6,"mx":6,"rt":4.5,"rv":5,"sb":5,"o":23,"pl":0,"jz":1,"own":false,"fc":21,"pic":20,"plus":false,"inst":false,"recent":false,"feats":["barbecue","bathroom","drawer","electricity","essentials","fireextingu","firstaidkit","foosball","furniture","heating","islamictoilet","jacuzzi","kitchen","parking","refrigerator","stave","table","toilet","tv","vacuumcleaner","water"],"props":[],"rl":4.2,"rc":4.4,"rvl":4.2,"rck":4.8,"rco":5,"ra":4.4,"hr":38,"hrt":298,"hc":5,"hc_date":"2022-01-16","disc":0,"status":"active","v":"گونه کلا","url":"https://www.jajiga.com/room/3161999"},{"id":3285480,"t":"کلبه جکوزی دار در بابلکنار - گونه کلا","p":2990000,"f":35,"land":250,"b":1,"g":2,"mx":4,"rt":5,"rv":1,"sb":0,"o":0,"pl":0,"jz":1,"own":false,"fc":16,"pic":20,"plus":false,"inst":false,"recent":false,"feats":["bathroom","cooler","electricity","essentials","firstaidkit","furniture","heating","islamictoilet","jacuzzi","kitchen","parking","refrigerator","stave","toilet","vacuumcleaner","water"],"props":["خوش منظره"],"rl":5,"rc":5,"rvl":5,"rck":5,"rco":5,"ra":5,"hr":38,"hrt":298,"hc":5,"hc_date":"2022-01-16","disc":0,"status":"active","v":"گونه کلا","url":"https://www.jajiga.com/room/3285480"},{"id":3198940,"t":"اجاره کلبه چوبی جکوزی دار در بابلکنار - گونه کلا","p":2995000,"f":40,"land":250,"b":1,"g":6,"mx":6,"rt":4.7,"rv":20,"sb":20,"o":23,"pl":0,"jz":1,"own":false,"fc":21,"pic":25,"plus":false,"inst":false,"recent":true,"feats":["barbecue","bathroom","cooler","drawer","electricity","essentials","firstaidkit","foosball","furniture","heating","islamictoilet","jacuzzi","kitchen","parking","refrigerator","stave","table","toilet","tv","washer","water"],"props":["جذاب","خوش منظره"],"rl":4.4,"rc":4.8,"rvl":4.2,"rck":5,"rco":4.8,"ra":4.8,"hr":52,"hrt":371,"hc":4.9,"hc_date":"2023-06-20","disc":0,"status":"active","v":"گونه کلا","url":"https://www.jajiga.com/room/3198940"},{"id":3224334,"t":"اجاره کلبه سوئیسی در بابلکنار - گونه کلا","p":3000000,"f":80,"land":200,"b":1,"g":4,"mx":8,"rt":5,"rv":1,"sb":0,"o":27,"pl":0,"jz":0,"own":false,"fc":18,"pic":18,"plus":false,"inst":false,"recent":false,"feats":["barbecue","bathroom","cooler","electricity","essentials","furniture","heating","iron","islamictoilet","kitchen","parking","refrigerator","stave","table","toilet","tv","vacuumcleaner","water"],"props":[],"rl":5,"rc":5,"rvl":5,"rck":5,"rco":5,"ra":5,"hr":30,"hrt":152,"hc":5,"hc_date":"2023-07-22","disc":0,"status":"active","v":"گونه کلا","url":"https://www.jajiga.com/room/3224334"},{"id":3199786,"t":"کلبه در بابلکنار - گونه کلا","p":3000000,"f":60,"land":500,"b":1,"g":4,"mx":6,"rt":4.5,"rv":9,"sb":10,"o":17,"pl":0,"jz":1,"own":false,"fc":20,"pic":19,"plus":false,"inst":false,"recent":false,"feats":["barbecue","bathroom","cooler","electricity","essentials","fireextingu","firstaidkit","furniture","heating","islamictoilet","jacuzzi","janitor","kitchen","parking","refrigerator","safetycard","stave","table","vacuumcleaner","water"],"props":[],"rl":4.6,"rc":4,"rvl":4.2,"rck":4.9,"rco":4.8,"ra":4.4,"hr":100,"hrt":105,"hc":4,"hc_date":"2023-07-08","disc":0,"status":"active","v":"گونه کلا","url":"https://www.jajiga.com/room/3199786"},{"id":3307485,"t":"خانه ویلایی در بابلکنار - گونه کلا","p":3000000,"f":100,"land":140,"b":2,"g":4,"mx":6,"rt":0,"rv":0,"sb":0,"o":0,"pl":0,"jz":0,"own":false,"fc":16,"pic":25,"plus":false,"inst":false,"recent":false,"feats":["barbecue","bathroom","cooler","drawer","electricity","essentials","furniture","heating","islamictoilet","kitchen","refrigerator","stave","table","toilet","tv","water"],"props":[],"rl":0,"rc":0,"rvl":0,"rck":0,"rco":0,"ra":0,"hr":0,"hrt":0,"hc":null,"hc_date":"2026-07-18","disc":0,"status":"active","v":"گونه کلا","url":"https://www.jajiga.com/room/3307485"},{"id":3284804,"t":"کلبه سوئیسی با جکوزی در بابلکنار - گونه کلا","p":3250000,"f":30,"land":100,"b":1,"g":2,"mx":4,"rt":0,"rv":0,"sb":0,"o":3,"pl":0,"jz":1,"own":false,"fc":19,"pic":13,"plus":false,"inst":false,"recent":false,"feats":["bathroom","cooler","electricity","essentials","firstaidkit","furniture","hairdryer","heating","islamictoilet","jacuzzi","kitchen","parking","refrigerator","stave","table","toilet","tv","vacuumcleaner","water"],"props":[],"rl":0,"rc":0,"rvl":0,"rck":0,"rco":0,"ra":0,"hr":38,"hrt":298,"hc":5,"hc_date":"2022-01-16","disc":10,"status":"active","v":"گونه کلا","url":"https://www.jajiga.com/room/3284804"},{"id":3259364,"t":"کلبه سوئیسی در بابلکنار - گونه کلا","p":3500000,"f":70,"land":200,"b":2,"g":2,"mx":6,"rt":4.5,"rv":5,"sb":5,"o":13,"pl":0,"jz":0,"own":false,"fc":18,"pic":19,"plus":false,"inst":true,"recent":false,"feats":["barbecue","bathroom","cooler","electricity","essentials","furniture","heating","islamictoilet","janitor","kitchen","parking","refrigerator","stave","table","toilet","tv","vacuumcleaner","water"],"props":["خوش منظره"],"rl":4.2,"rc":4.4,"rvl":4.4,"rck":4.6,"rco":5,"ra":4.6,"hr":100,"hrt":222,"hc":5,"hc_date":"2025-05-08","disc":0,"status":"active","v":"گونه کلا","url":"https://www.jajiga.com/room/3259364"},{"id":3297115,"t":"خانه ویلایی در بابلکنار - گونه کلا","p":3500000,"f":140,"land":700,"b":1,"g":4,"mx":6,"rt":5,"rv":3,"sb":0,"o":0,"pl":0,"jz":0,"own":false,"fc":18,"pic":23,"plus":false,"inst":false,"recent":false,"feats":["barbecue","bathroom","drawer","electricity","essentials","firstaidkit","furniture","heating","islamictoilet","janitor","kitchen","parking","refrigerator","stave","table","toilet","tv","water"],"props":[],"rl":5,"rc":5,"rvl":5,"rck":5,"rco":5,"ra":5,"hr":57,"hrt":395,"hc":5,"hc_date":"2026-04-05","disc":0,"status":"active","v":"گونه کلا","url":"https://www.jajiga.com/room/3297115"},{"id":3186964,"t":"کلبه سوئیسی با جکوزی در بابلکنار - گونه کلا","p":3700000,"f":150,"land":1000,"b":1,"g":2,"mx":4,"rt":5,"rv":113,"sb":100,"o":43,"pl":0,"jz":1,"own":false,"fc":21,"pic":29,"plus":true,"inst":true,"recent":true,"feats":["barbecue","bathroom","cooler","drawer","electricity","essentials","furniture","hairdryer","heating","islamictoilet","jacuzzi","janitor","kitchen","parking","refrigerator","stave","table","toilet","tv","vacuumcleaner","water"],"props":["جذاب","خوش منظره","مهمان نواز"],"rl":5,"rc":5,"rvl":4.8,"rck":5,"rco":5,"ra":5,"hr":94,"hrt":55,"hc":5,"hc_date":"2023-04-09","disc":0,"status":"active","v":"گونه کلا","url":"https://www.jajiga.com/room/3186964"},{"id":3252868,"t":"کلبه چوبی جکوزی دار در بابلکنار - گونه کلا","p":3990000,"f":40,"land":200,"b":0,"g":2,"mx":4,"rt":4.7,"rv":9,"sb":10,"o":0,"pl":0,"jz":1,"own":false,"fc":19,"pic":14,"plus":true,"inst":false,"recent":true,"feats":["barbecue","bathroom","cooler","electricity","essentials","firstaidkit","furniture","heating","islamictoilet","jacuzzi","kitchen","parking","refrigerator","stave","table","toilet","tv","vacuumcleaner","water"],"props":["حیاط دار","مهمان نواز"],"rl":4.8,"rc":4.8,"rvl":4.1,"rck":4.9,"rco":4.8,"ra":4.9,"hr":82,"hrt":307,"hc":4.8,"hc_date":"2025-02-23","disc":0,"status":"active","v":"گونه کلا","url":"https://www.jajiga.com/room/3252868"},{"id":3223870,"t":"اجاره کلبه چوبی استخردار در بابلکنار - گونه کلا","p":5000000,"f":50,"land":200,"b":1,"g":4,"mx":6,"rt":4.9,"rv":20,"sb":20,"o":0,"pl":1,"jz":0,"own":false,"fc":20,"pic":34,"plus":false,"inst":false,"recent":true,"feats":["barbecue","bathroom","cooler","electricity","essentials","furniture","hairdryer","heating","islamictoilet","janitor","kitchen","parking","pool","refrigerator","stave","table","toilet","tv","vacuumcleaner","water"],"props":["استخر آب گرم","استخر سرپوشیده"],"rl":4.8,"rc":4.7,"rvl":4.7,"rck":5,"rco":5,"ra":5,"hr":0,"hrt":445,"hc":null,"hc_date":"2022-11-27","disc":0,"status":"inactive","v":"گونه کلا","url":"https://www.jajiga.com/room/3223870"},{"id":3240990,"t":"کلبه سوئیسی استخردار در بابلکنار - گونه کلا","p":5900000,"f":80,"land":200,"b":1,"g":5,"mx":6,"rt":4.3,"rv":11,"sb":20,"o":13,"pl":1,"jz":0,"own":false,"fc":18,"pic":28,"plus":false,"inst":true,"recent":true,"feats":["barbecue","bathroom","cooler","drawer","electricity","essentials","furniture","heating","islamictoilet","kitchen","parking","pool","refrigerator","stave","table","tv","vacuumcleaner","water"],"props":["استخر آب گرم","استخر روباز"],"rl":4.2,"rc":3.7,"rvl":3.5,"rck":4.8,"rco":5,"ra":4.3,"hr":74,"hrt":199,"hc":5,"hc_date":"2024-08-19","disc":0,"status":"active","v":"گونه کلا","url":"https://www.jajiga.com/room/3240990"},{"id":3228478,"t":"کلبه سوئیسی استخردار در بابلکنار - گونه کلا","p":7000000,"f":200,"land":1000,"b":2,"g":4,"mx":6,"rt":4.8,"rv":31,"sb":20,"o":40,"pl":1,"jz":0,"own":false,"fc":22,"pic":42,"plus":true,"inst":true,"recent":true,"feats":["barbecue","bathroom","cooler","drawer","electricity","essentials","fireextingu","firstaidkit","foosball","furniture","heating","islamictoilet","kitchen","parking","pool","refrigerator","stave","table","toilet","tv","vacuumcleaner","water"],"props":["خوش منظره","مهمان نواز","استخر آب گرم","استخر سرپوشیده"],"rl":4.8,"rc":5,"rvl":4.9,"rck":4.9,"rco":4.8,"ra":4.9,"hr":98,"hrt":72,"hc":4.8,"hc_date":"2024-04-21","disc":0,"status":"active","v":"گونه کلا","url":"https://www.jajiga.com/room/3228478"},{"id":3240255,"t":"کلبه سوئیسی استخردار در بابلکنار - گونه کلا","p":8100000,"f":180,"land":400,"b":3,"g":6,"mx":10,"rt":4.7,"rv":54,"sb":50,"o":13,"pl":1,"jz":0,"own":false,"fc":24,"pic":38,"plus":true,"inst":false,"recent":true,"feats":["barbecue","bathroom","cooler","drawer","electricity","essentials","fireextingu","firstaidkit","foosball","furniture","heating","islamictoilet","janitor","kitchen","parking","pool","refrigerator","stave","table","toilet","tv","vacuumcleaner","washer","water"],"props":["مهمان نواز","استخر آب گرم","استخر سرپوشیده"],"rl":4.5,"rc":4.7,"rvl":4.4,"rck":4.8,"rco":4.8,"ra":4.9,"hr":94,"hrt":365,"hc":4.8,"hc_date":"2022-07-26","disc":0,"status":"active","v":"گونه کلا","url":"https://www.jajiga.com/room/3240255"},{"id":3292527,"t":"کلبه جنگلی استخردار در گونه کلا - ۳ خوابه","p":8500000,"f":256,"land":349,"b":3,"g":6,"mx":8,"rt":5,"rv":15,"sb":20,"o":47,"pl":1,"jz":0,"own":false,"fc":20,"pic":30,"plus":true,"inst":true,"recent":true,"feats":["bathroom","cooler","electricity","essentials","foosball","furniture","hairdryer","heating","islamictoilet","janitor","kitchen","parking","pool","refrigerator","stave","table","toilet","tv","vacuumcleaner","water"],"props":["مهمان نواز","استخر آب گرم","استخر سرپوشیده"],"rl":5,"rc":5,"rvl":4.8,"rck":5,"rco":5,"ra":5,"hr":100,"hrt":118,"hc":5,"hc_date":"2026-03-14","disc":0,"status":"active","v":"گونه کلا","url":"https://www.jajiga.com/room/3292527"}];
+
+/* ===== HELPERS ===== */
+const fmt = n => n==null ? '—' : Math.round(n).toLocaleString('en-US');
+const fmtT = n => n==null ? '—' : Math.round(n).toLocaleString('en-US') + ' تومان';
+const fmtPct = n => n==null ? '—' : Math.round(n) + '٪';
+const mean = a => a.length ? a.reduce((x,y)=>x+y,0)/a.length : 0;
+const median = a => { if(!a.length) return 0; const s=[...a].sort((x,y)=>x-y); return s[Math.floor(s.length/2)]; };
+function corr(xs, ys){
+  const n=xs.length; if(n<3) return 0;
+  const mx=mean(xs), my=mean(ys);
+  let cov=0,vx=0,vy=0;
+  for(let i=0;i<n;i++){ cov+=(xs[i]-mx)*(ys[i]-my); vx+=(xs[i]-mx)**2; vy+=(ys[i]-my)**2; }
+  return vx&&vy ? cov/Math.sqrt(vx*vy) : 0;
+}
+const fmtCorr = r => r.toFixed(2);
+const hasFeat = (c,f) => c.feats.includes(f);
+
+/* ===== KPI ===== */
+(function(){
+  const n = CABINS.length;
+  document.getElementById('kpiN').textContent = fmt(n);
+  document.getElementById('kpiAvg').textContent = fmtT(mean(CABINS.map(c=>c.p)));
+  document.getElementById('kpiOcc').textContent = fmtPct(mean(CABINS.map(c=>c.o)));
+  document.getElementById('kpiFeat').textContent = fmt(mean(CABINS.map(c=>c.fc)));
+})();
+
+/* ===== CORR MATRIX ===== */
+(function(){
+  const vars = [
+    ['p','قیمت'],['f','متراژ'],['land','زمین'],['b','اتاق'],['g','ظرفیت'],
+    ['rt','امتیاز'],['rv','نظر'],['sb','رزرو موفق'],['o','اشغال'],
+    ['fc','تعداد امکانات'],['pic','تعداد عکس'],['rl','امتیاز موقعیت'],
+    ['rc','امتیاز نظافت'],['rvl','امتیاز ارزش'],['rck','امتیاز چک‌این'],['hrt','زمان پاسخ میزبان']
+  ];
+  const names = vars.map(v=>v[1]);
+  const M = vars.map((v1,i) => vars.map((v2,j) => {
+    const pairs = CABINS.filter(c => c[v1[0]]!=null && c[v2[0]]!=null);
+    if(pairs.length < 5) return null;
+    return corr(pairs.map(c=>c[v1[0]]), pairs.map(c=>c[v2[0]]));
+  }));
+  function cellClass(r){
+    if(r==null) return 'neutral';
+    const a=Math.abs(r);
+    if(a<0.2) return 'neutral';
+    if(a<0.45) return r>0?'pos-mid':'neg-mid';
+    return r>0?'pos-strong':'neg-strong';
+  }
+  const colorScale = r => {
+    if(r==null) return 'rgba(148,163,184,0.08)';
+    const a=Math.min(Math.abs(r),1);
+    return r>0?`rgba(63,185,80,${0.08+a*0.35})`:r<0?`rgba(248,81,73,${0.08+a*0.35})`:'rgba(148,163,184,0.12)';
+  };
+  let html = '<tr><th>متغیر</th>' + names.map(nm=>`<th>${nm}</th>`).join('') + '</tr>';
+  for(let i=0;i<vars.length;i++){
+    html += `<tr><td>${names[i]}</td>`;
+    for(let j=0;j<vars.length;j++){
+      const r = M[i][j];
+      const label = i===j ? '1.00' : (r==null ? '—' : fmtCorr(r));
+      html += `<td style="background:${i===j?'transparent':colorScale(r)}"><span class="corr-cell ${cellClass(r)}">${label}</span></td>`;
+    }
+    html += '</tr>';
+  }
+  document.getElementById('corrTable').innerHTML = html;
+})();
+
+/* ===== SUBSCORE TABLE ===== */
+(function(){
+  const subs = [
+    ['rl','امتیاز موقعیت'],['rc','امتیاز نظافت'],['rvl','امتیاز ارزش خرید'],
+    ['rck','امتیاز چک‌این'],['rco','امتیاز ارتباط'],['ra','امتیاز دقت مشخصات']
+  ];
+  let html = '<tr><th>زیرامتیاز</th><th>همبستگی با قیمت</th><th>همبستگی با اشغال</th><th>میانگین (از 5)</th></tr>';
+  for(const [k,nm] of subs){
+    const rows = CABINS.filter(c => c[k]!=null && c[k]>0);
+    const rPrice = corr(rows.map(c=>c[k]), rows.map(c=>c.p));
+    const rOcc = corr(rows.map(c=>c[k]), rows.map(c=>c.o));
+    const cls1 = Math.abs(rPrice)>=0.2 ? (rPrice>0?'pos-mid':'neg-mid') : 'neutral';
+    const cls2 = Math.abs(rOcc)>=0.2 ? (rOcc>0?'pos-mid':'neg-mid') : 'neutral';
+    html += `<tr><td>${nm}</td><td><span class="corr-cell ${cls1}">${fmtCorr(rPrice)}</span></td><td><span class="corr-cell ${cls2}">${fmtCorr(rOcc)}</span></td><td class="num">${mean(rows.map(c=>c[k])).toFixed(2)}</td></tr>`;
+  }
+  document.getElementById('subscoreTable').innerHTML = html;
+})();
+
+/* ===== SCATTER ===== */
+function scatter(id, xs, ys, size, colorIdx, labels, xTitle, yTitle, rVal){
+  const colors = ['#9B8AFB','#4CAF7D','#E8B44F','#F07167','#7FB3E0','#2E7D5B'];
+  const n = xs.length;
+  const data = Array.from({length:n}, (_,i)=>({
+    x:xs[i], y:ys[i],
+    r: Math.max(3, Math.min(14, Math.sqrt(size[i]||1)*1.6)),
+    backgroundColor: typeof colorIdx==='function' ? colorIdx(i) : colors[colorIdx],
+    label: labels ? labels[i] : undefined
+  }));
+  new Chart(document.getElementById(id), {
+    type:'scatter',
+    data:{ datasets:[{ data }] },
+    options:{
+      responsive:true, maintainAspectRatio:false,
+      plugins:{
+        legend:{ display:false },
+        tooltip:{ callbacks:{ label: ctx => {
+          const d=ctx.raw;
+          let s = d.label ? d.label + ' ' : '';
+          s += xTitle + ': ' + fmt(d.x) + ' | ' + yTitle + ': ' + (id.includes('Occ') ? d.y+'%' : fmt(d.y));
+          return s;
+        }}},
+        title:{ display:!!rVal, text:rVal, color:'#8FA3BF', font:{size:12} }
+      },
+      scales:{
+        x:{ title:{display:true,text:xTitle,color:'#8FA3BF'}, grid:{color:'rgba(30,44,72,0.5)'}, ticks:{color:'#8FA3BF'} },
+        y:{ title:{display:true,text:yTitle,color:'#8FA3BF'}, grid:{color:'rgba(30,44,72,0.5)'}, ticks:{color:'#8FA3BF'} }
+      }
+    }
+  });
+}
+(function(){
+  const size = CABINS.map(c=>Math.sqrt(c.rv+1));
+  scatter('scatterPriceFloor', CABINS.map(c=>c.f), CABINS.map(c=>c.p), size,
+    i => CABINS[i].jz===1 ? '#E8B44F' : CABINS[i].pl===1 ? '#4CAF7D' : '#9B8AFB',
+    CABINS.map(c=>c.t), 'متراژ (متر مربع)', 'قیمت (تومان)',
+    'r=' + fmtCorr(corr(CABINS.map(c=>c.f), CABINS.map(c=>c.p))));
+  scatter('scatterOccPrice', CABINS.map(c=>c.p), CABINS.map(c=>c.o), size, 2,
+    CABINS.map(c=>c.t), 'قیمت (تومان)', 'اشغال 30 روزه (٪)',
+    'r=' + fmtCorr(corr(CABINS.map(c=>c.p), CABINS.map(c=>c.o))));
+  scatter('scatterOccFloor', CABINS.map(c=>c.f), CABINS.map(c=>c.o), size, 5,
+    CABINS.map(c=>c.t), 'متراژ (متر مربع)', 'اشغال 30 روزه (٪)',
+    'r=' + fmtCorr(corr(CABINS.map(c=>c.f), CABINS.map(c=>c.o))));
+  scatter('scatterPriceFeat', CABINS.map(c=>c.fc), CABINS.map(c=>c.p), size, 0,
+    CABINS.map(c=>c.t), 'تعداد امکانات', 'قیمت (تومان)',
+    'r=' + fmtCorr(corr(CABINS.map(c=>c.fc), CABINS.map(c=>c.p))));
+})();
+
+/* ===== FEATURE BARS ===== */
+const chartOpts = (xTitle) => ({
+  responsive:true, maintainAspectRatio:false,
+  plugins:{ legend:{ labels:{ color:'#8FA3BF' } } },
+  scales:{
+    x:{ ticks:{ color:'#8FA3BF' }, grid:{ display:false } },
+    y:{ ticks:{ color:'#8FA3BF' }, grid:{ color:'rgba(48,54,61,0.5)' }, title:{ display:!!xTitle, text:xTitle, color:'#8FA3BF' } }
+  }
+});
+(function(){
+  const keyFeats = ['pool','jacuzzi','food','foosball','vacuumcleaner','hairdryer','microwave','billiard','drawer','safetycard','firealarm'];
+  const labels = {pool:'استخر', jacuzzi:'جکوزی', food:'سرو غذا', foosball:'فوتبال دستی',
+    vacuumcleaner:'جاروبرقی', hairdryer:'سشوار', microwave:'مایکروویو', billiard:'بیلیارد',
+    drawer:'کمد', safetycard:'کارت ایمنی', firealarm:'آژیر آتش'};
+  const feats = keyFeats.filter(f => CABINS.some(c=>hasFeat(c,f)));
+  const withF = feats.map(f => {
+    const g1 = CABINS.filter(c=>hasFeat(c,f));
+    const g0 = CABINS.filter(c=>!hasFeat(c,f));
+    return { f, n:g1.length, p1:mean(g1.map(c=>c.p)), p0:mean(g0.map(c=>c.p)),
+             o1:mean(g1.map(c=>c.o)), o0:mean(g0.map(c=>c.o)) };
+  });
+  new Chart(document.getElementById('barFeaturePrice'), {
+    type:'bar',
+    data:{ labels: withF.map(x=>`${labels[x.f]} (${x.n})`), datasets:[
+      { label:'با امکانات', data: withF.map(x=>x.p1), backgroundColor:'#4CAF7D' },
+      { label:'بدون امکانات', data: withF.map(x=>x.p0), backgroundColor:'rgba(88,166,255,0.5)' }
+    ]},
+    options: chartOpts('تومان')
+  });
+  new Chart(document.getElementById('barFeatureOcc'), {
+    type:'bar',
+    data:{ labels: withF.map(x=>`${labels[x.f]} (${x.n})`), datasets:[
+      { label:'با امکانات', data: withF.map(x=>x.o1), backgroundColor:'#E8B44F' },
+      { label:'بدون امکانات', data: withF.map(x=>x.o0), backgroundColor:'rgba(88,166,255,0.5)' }
+    ]},
+    options: chartOpts('٪ اشغال')
+  });
+  const props = [...new Set(CABINS.flatMap(c=>c.props))];
+  const pRows = props.map(pn => {
+    const g1 = CABINS.filter(c=>c.props.includes(pn));
+    const g0 = CABINS.filter(c=>!c.props.includes(pn));
+    return { pn, n:g1.length, p1:mean(g1.map(c=>c.p)), p0:mean(g0.map(c=>c.p)),
+             o1:mean(g1.map(c=>c.o)), o0:mean(g0.map(c=>c.o)) };
+  });
+  new Chart(document.getElementById('barProp'), {
+    type:'bar',
+    data:{ labels: pRows.map(x=>`${x.pn} (${x.n})`), datasets:[
+      { label:'قیمت با', data: pRows.map(x=>x.p1), backgroundColor:'#4CAF7D' },
+      { label:'قیمت بدون', data: pRows.map(x=>x.p0), backgroundColor:'rgba(88,166,255,0.5)' },
+      { label:'اشغال با', data: pRows.map(x=>x.o1), backgroundColor:'#E8B44F', yAxisID:'y1' }
+    ]},
+    options: { ...chartOpts(), scales:{
+      x:{ ticks:{ color:'#8FA3BF' } },
+      y:{ ticks:{ color:'#8FA3BF' }, grid:{ color:'rgba(48,54,61,0.5)' } },
+      y1:{ position:'right', grid:{ display:false }, ticks:{ color:'#E8B44F' }, min:0, max:100 }
+    }}
+  });
+  const flags = [
+    ['plus','اقامتگاه ممتاز (is_plus)'],['inst','رزرو فوری'],['recent','اخیراً فعال']
+  ];
+  const fRows = flags.map(([k,nm]) => {
+    const g1 = CABINS.filter(c=>c[k]);
+    const g0 = CABINS.filter(c=>!c[k]);
+    return { nm, n:g1.length, p1:mean(g1.map(c=>c.p)), p0:mean(g0.map(c=>c.p)),
+             o1:mean(g1.map(c=>c.o)), o0:mean(g0.map(c=>c.o)) };
+  });
+  new Chart(document.getElementById('barFlags'), {
+    type:'bar',
+    data:{ labels: fRows.map(x=>`${x.nm} (${x.n})`), datasets:[
+      { label:'قیمت با', data: fRows.map(x=>x.p1), backgroundColor:'#9B8AFB' },
+      { label:'قیمت بدون', data: fRows.map(x=>x.p0), backgroundColor:'rgba(88,166,255,0.5)' },
+      { label:'اشغال با', data: fRows.map(x=>x.o1), backgroundColor:'#E8B44F', yAxisID:'y1' }
+    ]},
+    options: { ...chartOpts(), scales:{
+      x:{ ticks:{ color:'#8FA3BF' } },
+      y:{ ticks:{ color:'#8FA3BF' }, grid:{ color:'rgba(48,54,61,0.5)' } },
+      y1:{ position:'right', grid:{ display:false }, ticks:{ color:'#E8B44F' }, min:0, max:100 }
+    }}
+  });
+})();
+
+/* ===== OLS MODEL ===== */
+function ols(dep, indeps, rows){
+  const n=rows.length, k=indeps.length;
+  const X = rows.map(r=>[1, ...indeps.map(i=>r[i])]);
+  const y = rows.map(r=>r[dep]);
+  const Xt = Array.from({length:k+1}, (_,i)=>X.map(row=>row[i]));
+  const XtX = Array.from({length:k+1}, (_,i)=>Array.from({length:k+1}, (_,j)=>Xt[i].reduce((s,v,idx)=>s+v*Xt[j][idx],0)));
+  const Xty = Array.from({length:k+1}, (_,i)=>Xt[i].reduce((s,v,idx)=>s+v*y[idx],0));
+  const A = XtX.map(r=>[...r]), b = [...Xty];
+  for(let col=0; col<=k; col++){
+    let piv=col;
+    for(let r=col+1; r<=k; r++) if(Math.abs(A[r][col])>Math.abs(A[piv][col])) piv=r;
+    [A[col],A[piv]]=[A[piv],A[col]]; [b[col],b[piv]]=[b[piv],b[col]];
+    for(let r=col+1; r<=k; r++){
+      const f=A[r][col]/A[col][col];
+      for(let c=col; c<=k; c++) A[r][c]-=f*A[col][c];
+      b[r]-=f*b[col];
+    }
+  }
+  const coef = new Array(k+1).fill(0);
+  for(let col=k; col>=0; col--){
+    coef[col] = (b[col] - coef.slice(col+1).reduce((s,c,i)=>s+A[col][col+1+i]*c,0)) / A[col][col];
+  }
+  const yhat = rows.map(r=>coef[0] + indeps.reduce((s,i,idx)=>s+coef[1+idx]*r[i],0));
+  const ssRes = y.reduce((s,v,i)=>s+(v-yhat[i])**2,0);
+  const my = mean(y);
+  const ssTot = y.reduce((s,v)=>s+(v-my)**2,0);
+  return { coef, r2: 1-ssRes/ssTot, yhat };
+}
+
+(function(){
+  const model = ols('p', ['f','b','pl'], CABINS.map(c=>({p:c.p, f:c.f, b:c.b, pl:c.pl||0})));
+  const [b0,bF,bB,bP] = model.coef;
+  const b0f = b0>=0 ? fmtT(b0) : '−'+fmtT(Math.abs(b0));
+  document.getElementById('formulaText').textContent =
+    `قیمت ≈ ${b0f} + ${fmtT(bF)} × متراژ + ${fmtT(bB)} × اتاق + ${fmtT(bP)} × استخر`;
+  const r2pct = (model.r2*100).toLocaleString('en-US',{maximumFractionDigits:1});
+  document.getElementById('formulaR2').textContent =
+    `ضریب تعیین (R²) = ${r2pct}٪ — این مدل ${r2pct}٪ از تغییرات قیمت بابلکنار را توضیح می‌دهد (n=108)`;
+  document.getElementById('formulaInsight').innerHTML =
+    `<strong>تفسیر:</strong> در کل بابلکنار هر متر مربع ≈ ${fmtT(bF)}، هر اتاق ≈ ${fmtT(bB)}، و استخر ≈ ${fmtT(bP)} به قیمت اضافه می‌کند. متراژ قوی‌ترین عامل ساختاری است.`;
+  const preds = model.yhat;
+  scatter('scatterModel', preds, CABINS.map(c=>c.p), CABINS.map(c=>Math.sqrt(c.rv+1)),
+    i => CABINS[i].own ? '#E8B44F' : '#9B8AFB', CABINS.map(c=>c.t),
+    'قیمت تخمینی مدل (تومان)', 'قیمت واقعی (تومان)', 'نقطه زرد = لوکیشن شما');
+  const own = CABINS.find(c=>c.own);
+  if(own){
+    const pred = b0 + bF*own.f + bB*own.b + bP*(own.pl||0);
+    const diff = pred - own.p;
+    const diffPct = diff/own.p*100;
+    document.getElementById('formulaInsight').innerHTML +=
+      `<br><br><strong>لوکیشن شما:</strong> قیمت مدل ≈ ${fmtT(pred)} در مقابل ${fmtT(own.p)} فعلی (${diff>=0?'+':'−'}${fmtPct(Math.abs(diffPct))}).`;
+  }
+})();
+
+/* ===== OWN COMPARE ===== */
+(function(){
+  const own = CABINS.find(c=>c.own);
+  if(!own){ document.getElementById('ownCompare').innerHTML = '<span style="color:var(--muted)">لوکیشن شما در این دیتاست نیست.</span>'; return; }
+  const row = (label, val, cls) => `<div style="display:flex;justify-content:space-between;padding:7px 0;border-bottom:1px solid rgba(48,54,61,0.4)"><span style="color:var(--muted)">${label}</span><span class="${cls||''}">${val}</span></div>`;
+  const sameSize = CABINS.filter(c=>!c.own && Math.abs(c.f - own.f) <= 20);
+  const withJac = CABINS.filter(c=>c.jz===1 && !c.own);
+  const bestOcc = [...CABINS].filter(c=>!c.own).sort((a,b)=>b.o-a.o).slice(0,3);
+  let html = '';
+  html += row('قیمت شما', fmtT(own.p));
+  html += row('متراژ شما', fmt(own.f) + ' متر');
+  html += row('تعداد امکانات شما', fmt(own.fc) + ' (میانگین بازار: ' + fmt(mean(CABINS.map(c=>c.fc))) + ')');
+  html += row('اشغال شما', fmtPct(own.o), own.o >= 20 ? 'badge badge-green' : 'badge badge-red');
+  html += row('قیمت/متر شما', fmt(own.p/own.f) + ' تومان/متر');
+  html += row('میانه قیمت/متر بازار', fmt(median(CABINS.map(c=>c.p/c.f))) + ' تومان/متر');
+  if(sameSize.length) html += row('میانگین قیمت هم‌متراژ (±20م)', fmtT(mean(sameSize.map(c=>c.p))));
+  if(withJac.length) html += row('میانگین قیمت جکوزی‌دارها', fmtT(mean(withJac.map(c=>c.p))));
+  html += `<div style="margin-top:10px;font-size:13px;color:var(--muted)">پرفروش‌های بابلکنار: ${bestOcc.map(c=>`${c.t.slice(0,25)} (${fmtPct(c.o)})`).join('، ')}</div>`;
+  const msgs = [];
+  if(own.fc < mean(CABINS.map(c=>c.fc)) - 2) msgs.push('تعداد امکانات شما کمتر از میانگین بازار است — جکوزی یا امکانات تفریحی می‌تواند قیمت و اشغال را بالا ببرد.');
+  else msgs.push('تعداد امکانات شما در محدوده میانگین بازار است.');
+  const psqm = own.p/own.f;
+  const mpsqm = median(CABINS.map(c=>c.p/c.f));
+  if(psqm < mpsqm * 0.9) msgs.push(`قیمت/متر شما (${fmt(psqm)}) زیر میانه بازار (${fmt(mpsqm)}) است — در این بازه قیمت/متر، احتمالاً جا برای افزایش قیمت وجود دارد.`);
+  else msgs.push(`قیمت/متر شما (${fmt(psqm)}) نزدیک میانه بازار (${fmt(mpsqm)}) است.`);
+  document.getElementById('ownCompare').innerHTML = html + `<div class="insight" style="margin-top:12px"><strong>تحلیل:</strong> ${msgs.join(' ')}</div>`;
+})();
+
+/* ===== TOP TABLE ===== */
+(function(){
+  const sorted = [...CABINS].sort((a,b)=>b.o - a.o || b.sb - a.sb);
+  let html = '<tr><th>#</th><th>عنوان</th><th>قیمت</th><th>متراژ</th><th>اتاق</th><th>امتیاز</th><th>نظر</th><th>رزرو موفق</th><th>اشغال</th><th>جکوزی</th><th>استخر</th></tr>';
+  sorted.forEach((c,i)=>{
+    const cls = c.own ? 'own-row' : i<3 ? 'rank-1' : '';
+    html += `<tr class="${cls}"><td>${i+1}</td><td title="${c.t}"><a class="tlink" href="${c.url||'https://www.jajiga.com/room/'+c.id}" target="_blank" rel="noopener">${c.t.slice(0,55)}${c.t.length>55?'…':''}</a>${c.own?' <span class="own-marker"><span class="dot"></span>شما</span>':''}</td><td class="num">${fmtT(c.p)}</td><td class="num">${fmt(c.f)}م</td><td class="num">${fmt(c.b)}</td><td class="num">${c.rt||'—'}</td><td class="num">${fmt(c.rv)}</td><td class="num">${fmt(c.sb)}</td><td class="num">${fmtPct(c.o)}</td><td>${c.jz?'<span class="badge badge-gold">جکوزی</span>':'—'}</td><td>${c.pl?'<span class="badge badge-green">استخر</span>':'—'}</td></tr>`;
+  });
+  document.getElementById('topTable').innerHTML = html;
+})();
+
+/* ===== RECOMMENDATIONS ===== */
+(function(){
+  const occHigh = CABINS.filter(c=>c.o>=30 && !c.own);
+  const recs = [];
+  const card = (title, items, warn) =>
+    `<div class="glass rec-card ${warn?'warn':''}" style="margin-bottom:14px"><h4>${title}</h4><ul style="padding-right:18px;margin-top:6px">${items.map(i=>`<li>${i}</li>`).join('')}</ul></div>`;
+  recs.push(card('جکوزی — موتور اشغال در بابلکنار', [
+    `جکوزی‌دارها: ${fmtPct(mean(CABINS.filter(c=>c.jz).map(c=>c.o)))} اشغال در مقابل ${fmtPct(mean(CABINS.filter(c=>!c.jz).map(c=>c.o)))} بدون جکوزی.`,
+    `قیمت جکوزی‌دارها: ${fmtT(mean(CABINS.filter(c=>c.jz).map(c=>c.p)))} در مقابل ${fmtT(mean(CABINS.filter(c=>!c.jz).map(c=>c.p)))}.`,
+    'جکوزی ارزان‌ترین ارتقای مؤثر است — در حالی که استخر فقط در ${CABINS.filter(c=>c.pl).length} کلبه از ${CABINS.length} کلبه وجود دارد.'
+  ]));
+  recs.push(card('امکانات بیشتر = قیمت و اشغال بیشتر', [
+    `همبستگی تعداد امکانات با قیمت: r=${fmtCorr(corr(CABINS.map(c=>c.fc), CABINS.map(c=>c.p)))} و با اشغال: r=${fmtCorr(corr(CABINS.map(c=>c.fc), CABINS.map(c=>c.o)))}.`,
+    `کلبه‌های پرفروش (اشغال 30٪+) میانگین ${fmt(mean(occHigh.map(c=>c.fc)))} امکانات دارند در مقابل ${fmt(mean(CABINS.map(c=>c.fc)))} میانگین کل.`,
+    'امکانات پرتکرار پرفروش‌ها: جاروبرقی، فوتبال دستی، سشوار، کمد (drawer)، مایکروویو.'
+  ]));
+  recs.push(card('نشان ممتاز (is_plus) و فعالیت اخیر', [
+    `ممتازها اشغال ${fmtPct(mean(CABINS.filter(c=>c.plus).map(c=>c.o)))} در مقابل ${fmtPct(mean(CABINS.filter(c=>!c.plus).map(c=>c.o)))} غیرممتاز.`,
+    `اخیراً فعال‌ها: ${fmtPct(mean(CABINS.filter(c=>c.recent).map(c=>c.o)))} در مقابل ${fmtPct(mean(CABINS.filter(c=>!c.recent).map(c=>c.o)))}.`,
+    'این شاخص‌ها دستورپذیرند — فعال‌بودن مداوم در پلتفرم به‌تنهایی اشغال را بالا می‌برد.'
+  ]));
+  const own = CABINS.find(c=>c.own);
+  if(own){
+    recs.push(card('لوکیشن شما (کلبه سوئیسی)', [
+      `قیمت: ${fmtT(own.p)} | متراژ: ${fmt(own.f)}م | امکانات: ${fmt(own.fc)} (میانگین ${fmt(mean(CABINS.map(c=>c.fc)))}) | بدون جکوزی/استخر.`,
+      `اشغال فعلی: ${fmtPct(own.o)} — فقط ${fmt(own.rv)} نظر، هنوز شاخص معتبر نیست.`,
+      'اولویت پیشنهادی: جکوزی ← افزایش امکانات ← فعال‌سازی مستمر (is_plus).'
+    ]), true);
+  }
+  document.getElementById('recommendations').innerHTML = recs.join('');
+})();
+
+
+/* ===== VILLAGE COMPARISON ===== */
+(function(){
+  const vList = [...new Set(CABINS.map(c=>c.v))].filter(v=>v!=='نامشخص');
+  const rows = vList.map(v => {
+    const g = CABINS.filter(c=>c.v===v);
+    const prices = g.map(c=>c.p);
+    return {
+      v, n:g.length,
+      avgP: mean(prices), medP: median(prices), minP: Math.min(...prices), maxP: Math.max(...prices),
+      avgO: mean(g.map(c=>c.o)), fc: mean(g.map(c=>c.fc)), fl: mean(g.map(c=>c.f)),
+      jz: g.filter(c=>c.jz).length, pl: g.filter(c=>c.pl).length, plus: g.filter(c=>c.plus).length
+    };
+  });
+  // Chart 1: avg price (bar) + avg occupancy (line on y1)
+  new Chart(document.getElementById('barVillageCompare'), {
+    type:'bar',
+    data:{ labels: rows.map(r=>r.v), datasets:[
+      { label:'میانگین قیمت (تومان)', data: rows.map(r=>r.avgP), backgroundColor:'#4CAF7D', yAxisID:'y' },
+      { label:'میانگین اشغال ٪', data: rows.map(r=>r.avgO), type:'line', borderColor:'#E8B44F', backgroundColor:'#E8B44F', yAxisID:'y1', tension:0.3 }
+    ]},
+    options: { ...chartOpts(), scales:{
+      x:{ ticks:{ color:'#8FA3BF' } },
+      y:{ ticks:{ color:'#8FA3BF' }, grid:{ color:'rgba(30,44,72,0.5)' } },
+      y1:{ position:'right', grid:{ display:false }, ticks:{ color:'#E8B44F' }, min:0, max:40 }
+    }}
+  });
+  // Chart 2: price range (min-med-max as floating bars)
+  new Chart(document.getElementById('barVillageRange'), {
+    type:'bar',
+    data:{ labels: rows.map(r=>r.v), datasets:[
+      { label:'حداقل', data: rows.map(r=>r.minP), backgroundColor:'rgba(155,138,251,0.35)' },
+      { label:'میانه', data: rows.map(r=>r.medP), backgroundColor:'#9B8AFB' },
+      { label:'حداکثر', data: rows.map(r=>r.maxP), backgroundColor:'#E8B44F' }
+    ]},
+    options: chartOpts('تومان')
+  });
+  // Table
+  let th = '<tr><th>روستا</th><th>تعداد</th><th>میانگین قیمت</th><th>میانه</th><th>بازه قیمت</th><th>میانگین اشغال</th><th>متراژ میانگین</th><th>امکانات میانگین</th><th>جکوزی</th><th>استخر</th><th>ممتاز</th></tr>';
+  let body = rows.map(r => `<tr><td><strong>${r.v}</strong></td><td class="num">${r.n}</td>
+    <td class="num">${fmtT(r.avgP)}</td><td class="num">${fmtT(r.medP)}</td>
+    <td class="num">${fmtT(r.minP)} – ${fmtT(r.maxP)}</td>
+    <td class="num">${fmtPct(r.avgO)}</td><td class="num">${fmt(r.fl)}م</td><td class="num">${r.fc.toFixed(1)}</td>
+    <td class="num">${r.jz}</td><td class="num">${r.pl}</td><td class="num">${r.plus}</td></tr>`).join('');
+  document.getElementById('villageTable').innerHTML = th + body;
+})();
+
+
+/* ===== SMART PRICING CALCULATOR ===== */
+(function(){
+  // Real OLS coefficients from 108 cabins (R²=0.789, σ=907K)
+  const B = {
+    intercept: -2954013,
+    floor:     6069,       // per m²
+    rooms:     326403,     // per bedroom
+    pool:      2573068,    // boolean
+    jz:        663432,     // boolean
+    features:  160637,     // per feature
+    pics:      45295,      // per picture
+    vShir:     1000304,    // شیردارکلا premium
+    vGone:     672963,     // گونه کلا premium
+    vQuran:    330355,     // قرآن تالار premium
+  };
+  const SIGMA = 906887; // prediction interval
+
+  function predict(vals) {
+    const p = B.intercept + B.floor*vals.floor + B.rooms*vals.rooms
+      + (vals.pool ? B.pool : 0) + (vals.jz ? B.jz : 0)
+      + B.features*vals.features + B.pics*vals.pics;
+    // village dummies
+    if(vals.village === 'شیردارکلا') return p + B.vShir;
+    if(vals.village === 'گونه کلا') return p + B.vGone;
+    if(vals.village === 'قرآن تالار') return p + B.vQuran;
+    return p; // سیدکلا is baseline
+  }
+
+  function factorBreakdown(vals) {
+    return [
+      { label: 'متراژ (' + fmt(vals.floor) + 'م)', value: B.floor*vals.floor },
+      { label: 'اتاق خواب (' + fmt(vals.rooms) + ')', value: B.rooms*vals.rooms },
+      { label: vals.pool ? 'استخر ✓' : 'بدون استخر', value: vals.pool ? B.pool : 0 },
+      { label: vals.jz ? 'جکوزی ✓' : 'بدون جکوزی', value: vals.jz ? B.jz : 0 },
+      { label: 'امکانات (' + fmt(vals.features) + ')', value: B.features*vals.features },
+      { label: 'عکس (' + fmt(vals.pics) + ')', value: B.pics*vals.pics },
+      { label: vals.village === 'سیدکلا' ? 'سیدکلا (خط مبنا)' : vals.village, value: vals.village==='شیردارکلا'?B.vShir:vals.village==='گونه کلا'?B.vGone:vals.village==='قرآن تالار'?B.vQuran:0 },
+    ].filter(x => true);
+  }
+
+  function renderResults(vals) {
+    const pred = predict(vals);
+    const own = CABINS.find(c=>c.own);
+    const peers = CABINS.filter(c=>c.v===vals.village && !c.own);
+    const peerAvg = peers.length ? mean(peers.map(c=>c.p)) : 0;
+    const peerMedian = peers.length ? median(peers.map(c=>c.p)) : 0;
+
+    document.getElementById('calcResult').style.display = 'block';
+    document.getElementById('calcPredPrice').textContent = fmt(Math.round(pred)) + ' تومان';
+    document.getElementById('calcPredRange').textContent = 'فاصله اطمینان: ' + fmt(Math.round(pred-SIGMA)) + ' – ' + fmt(Math.round(pred+SIGMA));
+
+    // Comparison card
+    let compHtml = '';
+    if(own) {
+      const diff = own.p - pred;
+      const pct = ((own.p - pred)/pred*100).toFixed(1);
+      const badge = diff > 0 ? 'badge badge-red' : 'badge badge-green';
+      const label = diff > 0 ? 'بالاتر از مدل' : diff < 0 ? 'زیر مدل' : 'دقیقاً روی مدل';
+      compHtml = '<div style="font-size:12px;color:var(--mist);margin-bottom:8px">مقایسه با لوکیشن شما</div>';
+      compHtml += '<div style="display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid var(--border-soft)">';
+      compHtml += '<span>قیمت واقعی شما: <strong>' + fmtT(own.p) + '</strong></span>';
+      compHtml += '<span class="' + badge + '">' + label + '</span></div>';
+      compHtml += '<div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border-soft)">';
+      compHtml += '<span>تفاوت با مدل</span><span class="num">' + (diff>0?'+':'') + fmtT(Math.round(diff)) + ' (' + (diff>0?'+':'') + pct + '%)</span></div>';
+    }
+    if(peers.length) {
+      compHtml += '<div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border-soft)">';
+      compHtml += '<span>میانگین ' + vals.village + '</span><span class="num">' + fmtT(Math.round(peerAvg)) + '</span></div>';
+      compHtml += '<div style="display:flex;justify-content:space-between;padding:8px 0">';
+      compHtml += '<span>میانه ' + vals.village + '</span><span class="num">' + fmtT(Math.round(peerMedian)) + '</span></div>';
+    }
+    document.getElementById('calcCompCard').innerHTML = compHtml;
+
+    // Factor breakdown
+    const factors = factorBreakdown(vals);
+    const maxAbs = Math.max(...factors.map(f=>Math.abs(f.value)), 1);
+    let bkHtml = '<div style="font-size:12px;color:var(--mist);margin-bottom:10px">تجزیه عاملی قیمت</div>';
+    factors.forEach(f => {
+      const pctBar = (Math.abs(f.value)/maxAbs*100);
+      const color = f.value >= 0 ? '#4CAF7D' : '#F07167';
+      const sign = f.value >= 0 ? '+' : '';
+      bkHtml += '<div style="display:flex;align-items:center;gap:10px;padding:5px 0;border-bottom:1px solid var(--border-soft);font-size:13px">';
+      bkHtml += '<span style="width:160px;color:var(--mist);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">' + f.label + '</span>';
+      bkHtml += '<div style="flex:1;height:16px;background:var(--bg);border-radius:3px;overflow:hidden;min-width:60px">';
+      bkHtml += '<div style="width:' + pctBar + '%;height:100%;background:' + color + ';border-radius:3px;transition:width 0.4s"></div></div>';
+      bkHtml += '<span class="num" style="width:120px;text-align:left;color:' + color + '">' + sign + fmtT(Math.round(f.value)) + '</span>';
+      bkHtml += '</div>';
+    });
+    document.getElementById('calcBreakdown').innerHTML = bkHtml;
+  }
+
+  // Auto-fill with own listing
+  const own = CABINS.find(c=>c.own);
+  if(own) {
+    document.getElementById('calcVillage').value = own.v;
+    document.getElementById('calcFloor').value = own.f;
+    document.getElementById('calcRooms').value = own.b;
+    document.getElementById('calcFeatures').value = own.fc;
+    document.getElementById('calcPics').value = own.pic;
+    document.getElementById('calcPool').checked = !!own.pl;
+    document.getElementById('calcJz').checked = !!own.jz;
+    // Auto-calculate on load
+    setTimeout(() => renderResults({
+      village: own.v, floor: own.f, rooms: own.b,
+      features: own.fc, pics: own.pic, pool: !!own.pl, jz: !!own.jz
+    }), 300);
+  }
+
+  document.getElementById('calcBtn').addEventListener('click', () => {
+    const vals = {
+      village: document.getElementById('calcVillage').value,
+      floor: parseInt(document.getElementById('calcFloor').value) || 100,
+      rooms: parseInt(document.getElementById('calcRooms').value) || 1,
+      features: parseInt(document.getElementById('calcFeatures').value) || 18,
+      pics: parseInt(document.getElementById('calcPics').value) || 24,
+      pool: document.getElementById('calcPool').checked,
+      jz: document.getElementById('calcJz').checked,
+    };
+    renderResults(vals);
+  });
+
+  // Auto-update on any input change
+  ['calcVillage','calcFloor','calcRooms','calcFeatures','calcPics','calcPool','calcJz'].forEach(id => {
+    document.getElementById(id).addEventListener('input', () => {
+      document.getElementById('calcBtn').click();
+    });
+  });
+})();
+
+/* ===== SCROLL SPY + REVEAL ===== */
+(function(){
+  // reveal on load (already in DOM)
+  document.querySelectorAll('.reveal').forEach(el => el.classList.remove('reveal'));
+  // IntersectionObserver for sections entering viewport
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if(e.isIntersecting){ e.target.classList.add('visible'); io.unobserve(e.target); }
+    });
+  }, {threshold: 0.15});
+  document.querySelectorAll('h2.section, .glass, .grid-4').forEach(el => {
+    if(!el.classList.contains('reveal')) io.observe(el);
+  });
+  // scroll spy for sidenav
+  const links = document.querySelectorAll('.sidenav a');
+  const sections = [...document.querySelectorAll('h2.section[id]')];
+  function spy(){
+    let current = sections[0] ? sections[0].id : '';
+    const pos = window.scrollY + 120;
+    for(const s of sections){ if(s.offsetTop <= pos) current = s.id; }
+    links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#'+current));
+  }
+  window.addEventListener('scroll', spy, {passive:true});
+  spy();
+})();
+
+</script>
+</body>
+</html>
