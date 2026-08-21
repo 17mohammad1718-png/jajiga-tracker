@@ -1145,24 +1145,29 @@ table.rev .hrev-detail td { background:#0f1f36; padding:10px 16px; text-align:ri
 
     var priceInput = pop.querySelector('input');
     var sBtns = pop.querySelectorAll('.edit-pop-status button');
-    for (var i = 0; i < sBtns.length; i++) {
-      sBtns[i].onclick = (function (b) {
-        return function () {
-          selStatus = b.getAttribute('data-s');
-          for (var j = 0; j < sBtns.length; j++) sBtns[j].classList.remove('sel');
-          b.classList.add('sel');
-        };
-      })(sBtns[i]);
-    }
-    pop.querySelector('.ep-save').onclick = function () {
+    /* ثبت فوری: هر انتخاب/تغییری همان لحظه در localStorage ذخیره می‌شود */
+    function commitEdit() {
       var p = faToEn(priceInput.value).replace(/[^\d]/g, '');
       var entry = {};
       if (selStatus) entry.s = selStatus;
       if (p !== '') entry.p = parseInt(p, 10);
       if (entry.s || entry.p !== undefined) EDITS[keyOf(rid, d)] = entry;
       else delete EDITS[keyOf(rid, d)];
-      save(); applyAll(); updCount(); refreshRevenue(); closePop();
-    };
+      save(); applyAll(); updCount(); refreshRevenue();
+    }
+    for (var i = 0; i < sBtns.length; i++) {
+      sBtns[i].onclick = (function (b) {
+        return function () {
+          selStatus = b.getAttribute('data-s');
+          for (var j = 0; j < sBtns.length; j++) sBtns[j].classList.remove('sel');
+          b.classList.add('sel');
+          commitEdit(); /* کلیک روی وضعیت = همان لحظه ثبت */
+        };
+      })(sBtns[i]);
+    }
+    priceInput.addEventListener('change', commitEdit); /* قیمت هنگام ترک فیلد/Enter ثبت می‌شود */
+    priceInput.addEventListener('keydown', function (e) { if (e.key === 'Enter') commitEdit(); });
+    pop.querySelector('.ep-save').onclick = function () { commitEdit(); closePop(); };
     pop.querySelector('.ep-default').onclick = function () {
       delete EDITS[keyOf(rid, d)];
       save(); applyAll(); updCount(); refreshRevenue(); closePop();
