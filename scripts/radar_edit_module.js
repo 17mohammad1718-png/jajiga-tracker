@@ -26,7 +26,12 @@
     '#editMgr{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:10px 0 14px;}' +
     '.edit-count{color:#94a3b8;font-size:11.5px;margin-right:auto;}' +
     '#editMgr button{background:#111f35;color:#cbd5e1;border:1px solid #1e3a5f;border-radius:8px;padding:6px 12px;font-family:inherit;font-size:11.5px;cursor:pointer;transition:all .15s;}' +
-    '#editMgr button:hover{border-color:#38bdf8;color:#fff;}';
+    '#editMgr button:hover{border-color:#38bdf8;color:#fff;}' +
+    '.drag-btn.active,.edit-btn.active{background:linear-gradient(135deg,#f59e0b,#b45309)!important;box-shadow:0 4px 14px rgba(245,158,11,.35)!important;}' +
+    '.cal td.c.sel{outline:2px solid #f59e0b;outline-offset:-2px;}' +
+    'body.drag-active{user-select:none;-webkit-user-select:none;}' +
+    '.drag-badge{position:fixed;z-index:80;background:#111f35;border:1px solid #f59e0b;border-radius:10px;padding:7px 12px;font-size:12px;color:#e2e8f0;box-shadow:0 10px 30px rgba(0,0,0,.5);pointer-events:none;white-space:nowrap;}' +
+    '.drag-badge b{color:#fbbf24;font-size:13px;}';
   document.head.appendChild(style);
 
   /* ---------- header button ---------- */
@@ -214,6 +219,101 @@
     if (!confirm('همه ویرایش‌های دستی پاک شوند؟')) return;
     EDITS = {}; save(); applyAll(); updCount(); refreshRevenue(); closePop();
   };
+
+  /* ---------- drag-to-select revenue range (default ON; toggle to disable) ---------- */
+  var DRAG_KEY = 'radar_drag_v1';
+  var dragOn = true;
+  try { dragOn = localStorage.getItem(DRAG_KEY) !== '0'; } catch (e) {}
+  var dragBtn = document.createElement('button');
+  dragBtn.id = 'dragToggleBtn';
+  dragBtn.className = 'export-btn drag-btn';
+  dragBtn.title = 'انتخاب بازه درآمد با کشیدن موس روی جدول — فعال/غیرفعال';
+  if (exp && exp.parentNode) exp.parentNode.appendChild(dragBtn);
+  function updDragLabel() {
+    dragBtn.textContent = dragOn ? '🎯 بازه: روشن' : '🎯 بازه: خاموش';
+    dragBtn.classList.toggle('active', dragOn);
+  }
+  dragBtn.onclick = function () {
+    dragOn = !dragOn;
+    try { localStorage.setItem(DRAG_KEY, dragOn ? '1' : '0'); } catch (e) {}
+    updDragLabel();
+  };
+  updDragLabel();
+
+  var dragging = false, dStart = null, dLast = null, badge = null, lastX = 0, lastY = 0;
+  function cellDate(td) { return td ? td.getAttribute('data-d') : null; }
+  function jlabelOf(td) {
+    if (!td) return '';
+    var t = td.getAttribute('title') || '';
+    return t.split(' · ')[0] || td.getAttribute('data-d') || '';
+  }
+  function setDragHighlight(lo, hi) {
+    var cells = document.querySelectorAll('td.c[data-d]');
+    for (var i = 0; i < cells.length; i++) {
+      var d = cells[i].getAttribute('data-d');
+      cells[i].classList.toggle('sel', !!(lo && hi && d >= lo && d <= hi));
+    }
+  }
+  function updateBadge(lo, hi, sTd, eTd) {
+    if (!badge) {
+      badge = document.createElement('div');
+      badge.className = 'drag-badge';
+      document.body.appendChild(badge);
+    }
+    var cells = document.querySelectorAll('td.c[data-d].sel');
+    var booked = 0, free = 0, sum = 0;
+    for (var i = 0; i < cells.length; i++) {
+      var td = cells[i];
+      if (td.classList.contains('booked')) {
+        booked++;
+        var pr = td.querySelector('.pr');
+        if (pr) sum += parseInt(pr.textContent.replace(/[^0-9]/g, ''), 10) || 0;
+      } else if (td.classList.contains('free')) free++;
+    }
+    badge.innerHTML = 'از ' + jlabelOf(sTd) + ' تا ' + jlabelOf(eTd) +
+      ' · <b>' + booked + '</b> شب پر · <b>' + free + '</b> خالی' +
+      (sum ? ' · جمع‌تقریبی ≈ <b>' + sum.toLocaleString('en-US') + '</b> تومان' : '');
+    badge.style.left = (lastX + 12) + 'px';
+    badge.style.top = (lastY + 14) + 'px';
+  }
+  document.addEventListener('mousedown', function (e) {
+    if (!dragOn || on || e.button !== 0) return;
+    var td = e.target.closest ? e.target.closest('td.c[data-d]') : null;
+    if (!td) return;
+    e.preventDefault();
+    dragging = true;
+    dStart = dLast = cellDate(td);
+    document.body.classList.add('drag-active');
+    setDragHighlight(dStart, dLast);
+    updateBadge(dStart, dLast, td, td);
+  });
+  document.addEventListener('mouseover', function (e) {
+    if (!dragging) return;
+    var td = e.target.closest ? e.target.closest('td.c[data-d]') : null;
+    if (!td) return;
+    var d = cellDate(td);
+    if (d === dLast) return;
+    dLast = d;
+    var lo = dStart < d ? dStart : d, hi = dStart < d ? d : dStart;
+    setDragHighlight(lo, hi);
+    var sTd = document.querySelector('td.c[data-d="' + (dStart < d ? dStart : d) + '"]');
+    updateBadge(lo, hi, sTd, td);
+  });
+  document.addEventListener('mousemove', function (e) { lastX = e.clientX; lastY = e.clientY; });
+  document.addEventListener('mouseup', function () {
+    if (!dragging) return;
+    dragging = false;
+    document.body.classList.remove('drag-active');
+    if (badge) { badge.remove(); badge = null; }
+    if (dStart && dLast) {
+      var lo = dStart < dLast ? dStart : dLast, hi = dStart < dLast ? dLast : dStart;
+      if (window.__revApplyRange) window.__revApplyRange(lo, hi);
+    }
+    dStart = dLast = null;
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') { setDragHighlight(null, null); if (badge) { badge.remove(); badge = null; } }
+  });
 
   /* ---------- init ---------- */
   setMode(false);

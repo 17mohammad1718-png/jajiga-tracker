@@ -1087,6 +1087,7 @@ def build():
   setLabels();
   render();
   window.__revRender = function(){ applyRange(); };
+  window.__revApplyRange = function(f, t){ curFrom = f; curTo = t; applyRange(); };
 })();
 </script>
 """.replace('{REV_ROOMS_JSON}', rev_rooms_json).replace('{REV_ENDS_JSON}', rev_ends_json)
