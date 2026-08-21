@@ -271,8 +271,10 @@
   function setDragHighlight(lo, hi) {
     var cells = document.querySelectorAll('td.c[data-d]');
     for (var i = 0; i < cells.length; i++) {
-      var d = cells[i].getAttribute('data-d');
-      cells[i].classList.toggle('sel', !!(lo && hi && d >= lo && d <= hi));
+      var td = cells[i];
+      var d = td.getAttribute('data-d');
+      /* فقط سلول‌هایی هایلایت می‌شوند که هم در بازه تاریخ باشند هم در ردیف(های) لمس‌شده */
+      cells[i].classList.toggle('sel', !!(lo && hi && d >= lo && d <= hi && inSelection(td)));
     }
   }
   function inSelection(td) {
