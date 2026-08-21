@@ -36,6 +36,7 @@ RADAR_DIR = os.path.join(ROOT, "data", "radar")
 SNAPSHOT_DIR = os.path.join(RADAR_DIR, "snapshots")
 PRICING_FILE = os.path.join(ROOT, "data", "pricing", "pricing-dataset.json")
 SUPPLY_FILE = os.path.join(ROOT, "data", "supply-data.json")
+MANUAL_BLOCKS_FILE = os.path.join(ROOT, "data", "manual-blocks.json")
 
 API = "https://api.jajiga.com"
 HEADERS = {
@@ -52,6 +53,8 @@ CONCURRENCY = 4                      # ۴ اتاق همزمان — زیر حد 
 
 # سازگاری با اسکریپت‌های قدیمی‌تر — منبع واقعی radar_common/کانفیگ است
 RADAR_ROOM_IDS = ROOM_IDS
+
+MANUAL_BLOCKS = {}  # room_id_str -> set of ISO dates (بارگذاری در main)
 
 _print_lock = threading.Lock()
 
@@ -123,10 +126,29 @@ def fetch_nights(room_id):
     raise last_err
 
 
+def load_manual_blocks():
+    """روزهای «بسته میزبان» (غیرمشتری) از data/manual-blocks.json.
+    Returns dict: room_id_str -> set of ISO dates."""
+    try:
+        data = json.load(open(MANUAL_BLOCKS_FILE, encoding="utf-8"))
+    except Exception:
+        return {}
+    out = {}
+    for rid, dates in (data or {}).items():
+        if isinstance(dates, list):
+            out[str(rid)] = set(d for d in dates if isinstance(d, str))
+    return out
+
+
 def fetch_one(rid, meta):
     """فچ یک اتاق → فایل JSON. خروجی (rid, record|None, error|None)."""
     try:
         nights = fetch_nights(rid)
+        blocked = MANUAL_BLOCKS.get(str(rid))
+        if blocked:
+            for n in nights:
+                if n.get("date") in blocked:
+                    n["is_manual_block"] = True
         record = {
             "room_id": rid,
             "meta": meta,
@@ -148,6 +170,8 @@ def fetch_one(rid, meta):
 def main():
     os.makedirs(RADAR_DIR, exist_ok=True)
     os.makedirs(SNAPSHOT_DIR, exist_ok=True)
+    global MANUAL_BLOCKS
+    MANUAL_BLOCKS = load_manual_blocks()
     meta = load_meta()
     today = date.today()
     print(f"Radar rooms: {len(RADAR_ROOM_IDS)} (concurrency {CONCURRENCY}) | fetched at {today}", flush=True)

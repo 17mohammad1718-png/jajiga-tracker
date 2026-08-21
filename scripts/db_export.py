@@ -58,6 +58,7 @@ def main():
             "is_unavailable": bool(r["is_unavailable"]), "is_instant": bool(r["is_instant"]),
             "is_peak": bool(r["is_peak"]), "is_holiday": bool(r["is_holiday"]),
             "is_weekend": bool(r["is_weekend"]),
+            "is_manual_block": bool(r["is_manual_block"]),
         })
 
     snapshots = {"supply": [], "radar": []}

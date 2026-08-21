@@ -291,12 +291,12 @@
  "additional_rule": null,
  "cancellation_policy": "hard",
  "min_price": 2650000,
- "extra_price": 600000,
+ "extra_price": 650000,
  "is_clean": false,
  "is_new": false,
  "is_instant": true,
  "is_plus": true,
- "success_books": 50,
+ "success_books": 100,
  "discounts": [
   {
    "percent": 10,
@@ -312,18 +312,18 @@
  "current_discount": null,
  "current_discount_percent": 0,
  "ratings": {
-  "count": 58,
+  "count": 62,
   "total": 4.9,
   "accuracy": 4.9,
-  "communication": 4.9,
+  "communication": 5,
   "cleanliness": 4.9,
   "location": 4.9,
   "checkin": 4.9,
   "value": 4.9,
   "comments_grouped_by_rating": {
    "3": 1,
-   "4": 11,
-   "5": 46
+   "4": 12,
+   "5": 49
   },
   "is_recently": true,
   "is_bad_host": false
@@ -335,9 +335,9 @@
   "gender": "male",
   "description": "یک وکیل دادگستری که عاشق ارتباط با آدمای جدیده،واسه همین این کلبه رو ساخته.",
   "created_at": "2026-03-07",
-  "response_time": 98,
+  "response_time": 90,
   "accept_rate": 98,
-  "host_communication_rate": 4.9
+  "host_communication_rate": 5
  },
  "meta": {
   "title": "کلبه با وان‌ جکوزی در بابلکنار - قرآن‌ تالار",

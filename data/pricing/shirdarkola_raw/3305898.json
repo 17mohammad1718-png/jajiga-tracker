@@ -293,7 +293,7 @@
  ],
  "additional_rule": null,
  "cancellation_policy": "middle",
- "min_price": 3000000,
+ "min_price": 3400000,
  "extra_price": 5000000,
  "is_clean": false,
  "is_new": false,
@@ -334,8 +334,8 @@
   "gender": "female",
   "description": null,
   "created_at": "2026-06-02",
-  "response_time": 553,
-  "accept_rate": 75,
+  "response_time": 533,
+  "accept_rate": 70,
   "host_communication_rate": 4.7
  },
  "meta": {
@@ -363,18 +363,12 @@
       "total": 0
      },
      "discount": {
-      "type": "today_discount",
-      "percent": 10,
-      "amount": 700000
+      "type": null,
+      "percent": 0,
+      "amount": 0
      },
-     "discounts": [
-      {
-       "type": "today_discount",
-       "percent": 10,
-       "amount": 700000
-      }
-     ],
-     "final": 6300000,
+     "discounts": [],
+     "final": 7000000,
      "prices": [
       1
      ],
@@ -413,10 +407,7 @@
     "is_instant": false,
     "is_plus": false,
     "min_price": 7000000,
-    "discount": {
-     "percent": 10,
-     "type": "today_discount"
-    },
+    "discount": null,
     "success_books": 5,
     "rating": {
      "count": 3,
@@ -433,18 +424,12 @@
       "total": 0
      },
      "discount": {
-      "type": "today_discount",
-      "percent": 10,
-      "amount": 700000
+      "type": null,
+      "percent": 0,
+      "amount": 0
      },
-     "discounts": [
-      {
-       "type": "today_discount",
-       "percent": 10,
-       "amount": 700000
-      }
-     ],
-     "final": 6300000,
+     "discounts": [],
+     "final": 7000000,
      "prices": {
       "7000000": 1
      },

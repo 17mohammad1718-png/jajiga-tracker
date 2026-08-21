@@ -341,8 +341,8 @@
  ],
  "additional_rule": "در هنگام استفاده از استخر لطفا از لباس شنا استفاده نمایید.\nپخش صدای موزیک با صدای نامتعارف ممنوع است. تا ساعت ۱۱ شب\nاز آوردن مهمان در مدت اقامت خود به داخل مجموعه بپرهیزید چون پذیرای مهمان شما نیستیم.\nلطفا نظافت را رعایت کنید.\nدر نگهداری ویلا دقت کنید تا مستوجب خسارت نگردید.\nلطفا قوانین مارا مطالعه و بعدا رزرو فرمایید.\nاز پذیریش افراد بومی معذوریم.",
  "cancellation_policy": "hard",
- "min_price": 6820000,
- "extra_price": 700000,
+ "min_price": 9680000,
+ "extra_price": 900000,
  "is_clean": false,
  "is_new": false,
  "is_instant": true,
@@ -384,7 +384,7 @@
   "gender": "male",
   "description": "عاشق مهمان نوازی و خوش مشرب",
   "created_at": "2019-10-06",
-  "response_time": 144,
+  "response_time": 108,
   "accept_rate": 100,
   "host_communication_rate": 5
  },
@@ -409,7 +409,7 @@
     "invoice": {
      "extra": {
       "count": 0,
-      "price": 600000,
+      "price": 800000,
       "total": 0
      },
      "discount": {
@@ -470,7 +470,7 @@
     "invoice": {
      "extra": {
       "count": 0,
-      "price": 600000,
+      "price": 800000,
       "total": 0
      },
      "discount": {

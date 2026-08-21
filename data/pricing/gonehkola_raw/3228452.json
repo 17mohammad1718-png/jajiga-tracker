@@ -270,7 +270,7 @@
  ],
  "additional_rule": "به فرد و جمع های مجردی آقایان اجاره داده نمی شود.",
  "cancellation_policy": "middle",
- "min_price": 1950000,
+ "min_price": 2550000,
  "extra_price": 500000,
  "is_clean": false,
  "is_new": false,
@@ -309,7 +309,7 @@
   "gender": "female",
   "description": null,
   "created_at": "2023-09-09",
-  "response_time": 123,
+  "response_time": 114,
   "accept_rate": 94,
   "host_communication_rate": 4.7
  },

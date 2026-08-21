@@ -223,7 +223,7 @@
  ],
  "additional_rule": null,
  "cancellation_policy": "middle",
- "min_price": 3000000,
+ "min_price": 2750000,
  "extra_price": 500000,
  "is_clean": false,
  "is_new": true,
@@ -271,8 +271,8 @@
   "gender": "female",
   "description": null,
   "created_at": "2026-06-02",
-  "response_time": 553,
-  "accept_rate": 75,
+  "response_time": 533,
+  "accept_rate": 70,
   "host_communication_rate": 4.7
  },
  "meta": {

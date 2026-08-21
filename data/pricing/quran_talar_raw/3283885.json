@@ -308,18 +308,18 @@
  },
  "current_discount_percent": 10,
  "ratings": {
-  "count": 14,
-  "total": 4.5,
+  "count": 15,
+  "total": 4.6,
   "accuracy": 4.9,
-  "communication": 4.4,
-  "cleanliness": 4.1,
+  "communication": 4.5,
+  "cleanliness": 4.2,
   "location": 4.8,
-  "checkin": 4.6,
-  "value": 4.4,
+  "checkin": 4.7,
+  "value": 4.5,
   "comments_grouped_by_rating": {
    "3": 3,
    "4": 5,
-   "5": 6
+   "5": 7
   },
   "is_recently": true,
   "is_bad_host": false
@@ -331,9 +331,9 @@
   "gender": "female",
   "description": null,
   "created_at": "2025-12-03",
-  "response_time": 360,
+  "response_time": 363,
   "accept_rate": 67,
-  "host_communication_rate": 4.6
+  "host_communication_rate": 4.7
  },
  "meta": {
   "title": "کلبه سوئیسی جکوزی دار در بابلکنار - قران تالار",

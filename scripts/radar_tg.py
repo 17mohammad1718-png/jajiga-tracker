@@ -39,6 +39,7 @@ LRM = "\u200e"  # Left-to-Right Mark
 E_BOOKED = "🔴"
 E_FREE = "🟢"
 E_HALF = "🟠"
+E_BLOCKED = "🔒"
 E_PEAK = "💜"
 E_NODATA = "⚪"
 
@@ -104,7 +105,11 @@ def diff_events(today, today_snap, prev_snap):
             p = prev_d[dstr]
             c_book = bool(c.get("is_unavailable"))
             p_book = bool(p.get("is_unavailable"))
-            if c_book and not p_book:
+            c_block = bool(c.get("is_manual_block"))
+            p_block = bool(p.get("is_manual_block"))
+            if c_block and not p_block:
+                events.append((dstr, rid, "blocked", f"🔒 {label} — {j_dm(dstr)} {wday(dstr)} بسته میزبان (غیرمشتری)"))
+            elif c_book and not p_book:
                 pr = f" با قیمت {price_m(eff_price(c.get('price'), c.get('discount')))} میلیون" if c.get("price") else ""
                 events.append((dstr, rid, "booked", f"🔴 {label} — {j_dm(dstr)} {wday(dstr)} رزرو شد{pr}"))
             elif not c_book and p_book:
@@ -142,7 +147,7 @@ def render_events(events):
     i, n = 0, len(events)
     while i < n:
         e = events[i]
-        if e[2] in ("booked", "freed"):
+        if e[2] in ("booked", "freed", "blocked"):
             lines.append(e[3])
             i += 1
             continue
@@ -168,14 +173,20 @@ def narrative_diff(today, today_snap, prev_snap):
         return "⚪ نسبت به دیروز تغییری ثبت نشد — وضعیت مثل قبل است."
     booked = sum(1 for e in events if e[2] == "booked")
     freed = sum(1 for e in events if e[2] == "freed")
+    blocked = sum(1 for e in events if e[2] == "blocked")
     price = sum(1 for e in events if e[2].startswith("price"))
     head = f"از دیروز {len(events)} تغییر ثبت شده:"
-    if booked and freed and price:
-        head = f"از دیروز {len(events)} تغییر ثبت شده ({booked} رزرو جدید، {freed} کنسلی، {price} تغییر قیمت):"
-    elif booked:
-        head = f"از دیروز {booked} رزرو جدید ثبت شده:"
-    elif freed:
-        head = f"از دیروز {freed} مورد آزاد شدن (کنسلی) ثبت شده:"
+    parts = []
+    if booked:
+        parts.append(f"{booked} رزرو جدید")
+    if freed:
+        parts.append(f"{freed} کنسلی")
+    if blocked:
+        parts.append(f"{blocked} بسته میزبان")
+    if price:
+        parts.append(f"{price} تغییر قیمت")
+    if parts:
+        head = f"از دیروز {len(events)} تغییر ثبت شده ({'، '.join(parts)}):"
     lines = [head]
     lines.extend(render_events(events))
     return "\n".join(lines)
@@ -204,6 +215,8 @@ def week_summary(today, today_snap):
 def day_emoji(n, prev_n):
     if not n:
         return E_NODATA
+    if n.get("is_manual_block"):
+        return E_BLOCKED
     if n.get("is_unavailable"):
         return E_BOOKED
     if n.get("is_peak") or n.get("is_holiday"):
@@ -237,11 +250,13 @@ def grid_report(today, today_snap, days_ahead=7):
             n = cd.get(d.isoformat())
             prev_n = cd.get((d - timedelta(days=1)).isoformat())
             cells.append(day_emoji(n, prev_n))
-        full = sum(1 for c in cells if c == E_BOOKED)
+        full = sum(1 for c in cells if c in (E_BOOKED, E_BLOCKED))
+        own_blocks = sum(1 for c in cells if c == E_BLOCKED)
         pct = round(full * 100 / days_ahead)
         label = SHORT_LABELS.get(rid, str(rid))
         star = " ✨" if room.get("own") else ""
-        lines.append(f"{LRM}{label}{star}   {' '.join(cells)}   {full}/{days_ahead} ({pct}٪)")
+        blk = f" (🔒{own_blocks})" if own_blocks else ""
+        lines.append(f"{LRM}{label}{star}   {' '.join(cells)}   {full}/{days_ahead} ({pct}٪){blk}")
     return "\n".join(lines)
 
 
@@ -316,13 +331,15 @@ def main():
     if events:
         booked = sum(1 for e in events if e[2] == "booked")
         freed = sum(1 for e in events if e[2] == "freed")
+        blocked = sum(1 for e in events if e[2] == "blocked")
         price = sum(1 for e in events if e[2].startswith("price"))
         lines = render_events(events)
         out.append(f"**📝 تغییرات از گزارش قبل ({len(events)} تغییر در {len(lines)} خط):**")
-        if booked or freed or price:
+        if booked or freed or blocked or price:
             parts = []
             if booked: parts.append(f"{booked} رزرو")
             if freed: parts.append(f"{freed} کنسلی")
+            if blocked: parts.append(f"{blocked} بسته میزبان")
             if price: parts.append(f"{price} تغییر قیمت")
             out.append(" · ".join(parts))
         for line in lines:
@@ -337,7 +354,7 @@ def main():
         out.append(rev)
 
     out.append("")
-    out.append(f"{E_FREE} خالی · {E_BOOKED} پر · {E_HALF} نیمه‌پر (روز تحویل) · {E_PEAK} پیک/تعطیل")
+    out.append(f"{E_FREE} خالی · {E_BOOKED} پر · {E_BLOCKED} بسته میزبان · {E_HALF} نیمه‌پر (روز تحویل) · {E_PEAK} پیک/تعطیل")
 
     print("\n".join(out))
 

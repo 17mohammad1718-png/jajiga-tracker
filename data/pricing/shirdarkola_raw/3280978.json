@@ -280,7 +280,7 @@
  ],
  "additional_rule": null,
  "cancellation_policy": "hard",
- "min_price": 4000000,
+ "min_price": 3500000,
  "extra_price": 500000,
  "is_clean": false,
  "is_new": false,
@@ -299,11 +299,8 @@
    "min_nights": 15
   }
  ],
- "current_discount": {
-  "percent": 10,
-  "type": "period"
- },
- "current_discount_percent": 10,
+ "current_discount": null,
+ "current_discount_percent": 0,
  "ratings": {
   "count": 44,
   "total": 4.6,
@@ -329,7 +326,7 @@
   "gender": "male",
   "description": null,
   "created_at": "2025-10-27",
-  "response_time": 187,
+  "response_time": 151,
   "accept_rate": 97,
   "host_communication_rate": 4.5
  },

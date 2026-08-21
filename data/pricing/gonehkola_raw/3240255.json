@@ -464,7 +464,7 @@
  ],
  "additional_rule": "به جمع مجردی آقا بیش از ۶ نفر اجاره داده نمی شود.",
  "cancellation_policy": "hard",
- "min_price": 8100000,
+ "min_price": 9000000,
  "extra_price": 1000000,
  "is_clean": false,
  "is_new": false,
@@ -475,18 +475,18 @@
  "current_discount": null,
  "current_discount_percent": 0,
  "ratings": {
-  "count": 54,
+  "count": 55,
   "total": 4.7,
   "accuracy": 4.9,
   "communication": 4.8,
   "cleanliness": 4.7,
-  "location": 4.5,
+  "location": 4.6,
   "checkin": 4.8,
   "value": 4.4,
   "comments_grouped_by_rating": {
    "3": 1,
-   "4": 12,
-   "5": 11
+   "4": 11,
+   "5": 10
   },
   "is_recently": true,
   "is_bad_host": false
@@ -498,9 +498,9 @@
   "gender": "male",
   "description": "آرام و باگذشت و خوشرو و مهمان دوست",
   "created_at": "2022-07-26",
-  "response_time": 365,
-  "accept_rate": 94,
-  "host_communication_rate": 4.8
+  "response_time": 322,
+  "accept_rate": 93,
+  "host_communication_rate": 4.7
  },
  "meta": {
   "title": "کلبه سوئیسی استخردار در بابلکنار - گونه کلا",

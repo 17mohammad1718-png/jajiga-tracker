@@ -453,13 +453,13 @@
   "accuracy": 4.9,
   "communication": 5,
   "cleanliness": 5,
-  "location": 4.8,
+  "location": 4.9,
   "checkin": 4.9,
   "value": 4.7,
   "comments_grouped_by_rating": {
    "3": 1,
-   "4": 5,
-   "5": 17
+   "4": 4,
+   "5": 15
   },
   "is_recently": true,
   "is_bad_host": false
@@ -471,8 +471,8 @@
   "gender": "male",
   "description": "رحمت هستم\nمیزبان حضور گرم شما عزیزان هستم",
   "created_at": "2025-04-21",
-  "response_time": 213,
-  "accept_rate": 94,
+  "response_time": 273,
+  "accept_rate": 95,
   "host_communication_rate": 5
  },
  "meta": {

@@ -304,7 +304,7 @@
  "additional_rule": "کشیدن قلیان فقط در فضای حیاط مجاز می باشد.\nپخش صدای موزیک با صدای نامتعارف ممنوع است.\nاز آوردن مهمان در مدت اقامت خود به داخل مجموعه بپرهیزید چون پذیرای مهمان شما نیستیم.\nلطفا نظافت را رعایت کنید.\nدر نگهداری ویلا دقت کنید تا مستوجب خسارت نگردید.\nاز پذیریش افراد بومی معذوریم.\nلطفا قوانین مارا مطالعه و بعدا رزرو فرمایید.",
  "cancellation_policy": "middle",
  "min_price": 4950000,
- "extra_price": 600000,
+ "extra_price": 800000,
  "is_clean": false,
  "is_new": false,
  "is_instant": false,
@@ -343,7 +343,7 @@
   "gender": "male",
   "description": "عاشق مهمان نوازی و خوش مشرب",
   "created_at": "2019-10-06",
-  "response_time": 144,
+  "response_time": 108,
   "accept_rate": 100,
   "host_communication_rate": 5
  },
@@ -364,11 +364,11 @@
     "floor_area": 90,
     "guest_number": 4,
     "max_guest_number": 5,
-    "min_price": 6820000,
+    "min_price": 9680000,
     "invoice": {
      "extra": {
       "count": 0,
-      "price": 700000,
+      "price": 900000,
       "total": 0
      },
      "discount": {
@@ -377,7 +377,7 @@
       "amount": 0
      },
      "discounts": [],
-     "final": 6820000,
+     "final": 9680000,
      "prices": [
       1
      ],
@@ -415,7 +415,7 @@
     "is_new": false,
     "is_instant": true,
     "is_plus": true,
-    "min_price": 6820000,
+    "min_price": 9680000,
     "discount": null,
     "success_books": 50,
     "rating": {
@@ -429,7 +429,7 @@
     "invoice": {
      "extra": {
       "count": 0,
-      "price": 700000,
+      "price": 900000,
       "total": 0
      },
      "discount": {
@@ -438,9 +438,9 @@
       "amount": 0
      },
      "discounts": [],
-     "final": 6820000,
+     "final": 9680000,
      "prices": {
-      "6820000": 1
+      "9680000": 1
      },
      "is_bill": false
     },

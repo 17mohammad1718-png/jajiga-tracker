@@ -390,7 +390,7 @@
  ],
  "additional_rule": "ورود با کفش داخل حیاط چمن مصنوعی اکیدا\" ممنوع",
  "cancellation_policy": "hard",
- "min_price": 1900000,
+ "min_price": 2500000,
  "extra_price": 400000,
  "is_clean": false,
  "is_new": false,
@@ -412,7 +412,7 @@
  "current_discount": null,
  "current_discount_percent": 0,
  "ratings": {
-  "count": 175,
+  "count": 178,
   "total": 4.8,
   "accuracy": 4.9,
   "communication": 4.9,
@@ -422,8 +422,8 @@
   "value": 4.9,
   "comments_grouped_by_rating": {
    "3": 2,
-   "4": 21,
-   "5": 29
+   "4": 20,
+   "5": 30
   },
   "is_recently": true,
   "is_bad_host": false
@@ -435,8 +435,8 @@
   "gender": "male",
   "description": "عاشق شغل خودم و میزبانی از مسافران",
   "created_at": "2022-12-05",
-  "response_time": 47,
-  "accept_rate": 96,
+  "response_time": 46,
+  "accept_rate": 97,
   "host_communication_rate": 4.9
  },
  "meta": {

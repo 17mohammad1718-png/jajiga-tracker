@@ -5602,5 +5602,17 @@
   "photo_count": 20,
   "first_review": null,
   "est_date": "2026-07-23"
+ },
+ "3310486": {
+  "id": 3310486,
+  "title": "کلبه سوئیسی در بابلکنار - سیدکلا",
+  "status": "active",
+  "host_id": 1758382,
+  "host_name": "علی اصغر",
+  "host_created_at": "2026-08-15",
+  "first_photo": "2026-08-12",
+  "photo_count": 12,
+  "first_review": null,
+  "est_date": "2026-08-15"
  }
 }

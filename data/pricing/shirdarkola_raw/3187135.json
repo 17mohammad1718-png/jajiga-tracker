@@ -326,17 +326,17 @@
  "current_discount_percent": 0,
  "ratings": {
   "count": 18,
-  "total": 4.7,
+  "total": 4.6,
   "accuracy": 4.5,
   "communication": 4.9,
-  "cleanliness": 4.2,
+  "cleanliness": 4.1,
   "location": 4.7,
   "checkin": 5,
   "value": 4.5,
   "comments_grouped_by_rating": {
    "3": 1,
    "4": 5,
-   "5": 5
+   "5": 4
   },
   "is_recently": true,
   "is_bad_host": false
@@ -348,7 +348,7 @@
   "gender": "male",
   "description": null,
   "created_at": "2023-09-03",
-  "response_time": 454,
+  "response_time": 431,
   "accept_rate": 95,
   "host_communication_rate": 4.9
  },

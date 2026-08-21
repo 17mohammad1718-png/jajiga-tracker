@@ -458,12 +458,16 @@
   },
   {
    "percent": 10,
+   "type": "today_discount"
+  },
+  {
+   "percent": 10,
    "type": "tomorrow_discount"
   }
  ],
  "current_discount": {
   "percent": 10,
-  "type": "tomorrow_discount"
+  "type": "today_discount"
  },
  "current_discount_percent": 10,
  "ratings": {
@@ -489,8 +493,8 @@
   "gender": "male",
   "description": "اینجارو خونه خودتون بدونین",
   "created_at": "2025-09-17",
-  "response_time": 345,
-  "accept_rate": 83,
+  "response_time": 265,
+  "accept_rate": 81,
   "host_communication_rate": 5
  },
  "meta": {

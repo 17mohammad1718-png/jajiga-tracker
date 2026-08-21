@@ -299,7 +299,7 @@
   "gender": "male",
   "description": null,
   "created_at": "2025-10-27",
-  "response_time": 189,
+  "response_time": 151,
   "accept_rate": 97,
   "host_communication_rate": 4.5
  },
@@ -320,7 +320,7 @@
     "floor_area": 85,
     "guest_number": 4,
     "max_guest_number": 8,
-    "min_price": 4000000,
+    "min_price": 3500000,
     "invoice": {
      "extra": {
       "count": 0,
@@ -328,18 +328,12 @@
       "total": 0
      },
      "discount": {
-      "type": "period",
-      "percent": 10,
-      "amount": 400000
+      "type": null,
+      "percent": 0,
+      "amount": 0
      },
-     "discounts": [
-      {
-       "type": "period",
-       "percent": 10,
-       "amount": 400000
-      }
-     ],
-     "final": 3600000,
+     "discounts": [],
+     "final": 3500000,
      "prices": [
       1
      ],
@@ -377,11 +371,8 @@
     "is_new": false,
     "is_instant": false,
     "is_plus": true,
-    "min_price": 4000000,
-    "discount": {
-     "percent": 10,
-     "type": "period"
-    },
+    "min_price": 3500000,
+    "discount": null,
     "success_books": 100,
     "rating": {
      "count": 44,
@@ -398,20 +389,14 @@
       "total": 0
      },
      "discount": {
-      "type": "period",
-      "percent": 10,
-      "amount": 400000
+      "type": null,
+      "percent": 0,
+      "amount": 0
      },
-     "discounts": [
-      {
-       "type": "period",
-       "percent": 10,
-       "amount": 400000
-      }
-     ],
-     "final": 3600000,
+     "discounts": [],
+     "final": 3500000,
      "prices": {
-      "4000000": 1
+      "3500000": 1
      },
      "is_bill": false
     },

@@ -376,7 +376,7 @@
  ],
  "additional_rule": null,
  "cancellation_policy": "hard",
- "min_price": 3700000,
+ "min_price": 4500000,
  "extra_price": 1000000,
  "is_clean": false,
  "is_new": false,
@@ -398,16 +398,16 @@
  "current_discount": null,
  "current_discount_percent": 0,
  "ratings": {
-  "count": 113,
-  "total": 5,
+  "count": 114,
+  "total": 4.9,
   "accuracy": 5,
   "communication": 5,
   "cleanliness": 5,
-  "location": 5,
+  "location": 4.9,
   "checkin": 5,
   "value": 4.8,
   "comments_grouped_by_rating": {
-   "4": 2,
+   "4": 3,
    "5": 10
   },
   "is_recently": true,
@@ -420,8 +420,8 @@
   "gender": "female",
   "description": null,
   "created_at": "2023-04-09",
-  "response_time": 55,
-  "accept_rate": 94,
+  "response_time": 78,
+  "accept_rate": 93,
   "host_communication_rate": 5
  },
  "meta": {

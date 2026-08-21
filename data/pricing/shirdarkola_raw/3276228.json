@@ -333,7 +333,7 @@
  "additional_rule": null,
  "cancellation_policy": "hard",
  "min_price": 2800000,
- "extra_price": 500000,
+ "extra_price": 800000,
  "is_clean": false,
  "is_new": false,
  "is_instant": false,
@@ -343,7 +343,7 @@
  "current_discount": null,
  "current_discount_percent": 0,
  "ratings": {
-  "count": 10,
+  "count": 11,
   "total": 5,
   "accuracy": 5,
   "communication": 5,
@@ -352,7 +352,7 @@
   "checkin": 5,
   "value": 5,
   "comments_grouped_by_rating": {
-   "5": 10
+   "5": 11
   },
   "is_recently": true,
   "is_bad_host": false
@@ -364,8 +364,8 @@
   "gender": "male",
   "description": null,
   "created_at": "2025-08-19",
-  "response_time": 541,
-  "accept_rate": 96,
+  "response_time": 563,
+  "accept_rate": 95,
   "host_communication_rate": 5
  },
  "meta": {
@@ -425,7 +425,7 @@
     "floor_area": 120,
     "guest_number": 4,
     "max_guest_number": 6,
-    "min_price": 2800000,
+    "min_price": 3500000,
     "invoice": {
      "extra": {
       "count": 0,
@@ -438,7 +438,7 @@
       "amount": 0
      },
      "discounts": [],
-     "final": 2800000,
+     "final": 3500000,
      "prices": [
       1
      ],
@@ -534,7 +534,7 @@
     "is_new": false,
     "is_instant": false,
     "is_plus": false,
-    "min_price": 2800000,
+    "min_price": 3500000,
     "discount": null,
     "success_books": 0,
     "rating": {
@@ -557,9 +557,9 @@
       "amount": 0
      },
      "discounts": [],
-     "final": 2800000,
+     "final": 3500000,
      "prices": {
-      "2800000": 1
+      "3500000": 1
      },
      "is_bill": false
     },

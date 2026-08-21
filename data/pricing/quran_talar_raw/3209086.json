@@ -29,11 +29,32 @@
    "created_at": "2025-06-08"
   },
   {
-   "name": "3209086231008130433.jpg",
-   "url": "2023/10/08/3209086231008130433.jpg",
-   "preview": "UA9QQ.-;tR?a~V%MtQxu-;t7oft6^+ofj]xt",
-   "description": "تراس",
-   "created_at": "2023-10-08"
+   "name": "32090862608031103326688079.jpg",
+   "url": "2026/08/03/32090862608031103326688079.jpg",
+   "preview": "UXFioGIAD*?a~qRORkxuxvW9WEfl.6M{afxt",
+   "description": null,
+   "created_at": "2026-08-03"
+  },
+  {
+   "name": "32090862608031103243689571.jpg",
+   "url": "2026/08/03/32090862608031103243689571.jpg",
+   "preview": "URF5gN?Hnh-V^M%1nieT#jRPIVMx~VoeIpj?",
+   "description": "پذیرایی",
+   "created_at": "2026-08-03"
+  },
+  {
+   "name": "32090862608031103273505392.jpg",
+   "url": "2026/08/03/32090862608031103273505392.jpg",
+   "preview": "UXEy9,nOIU%L~9eno#t6v}axo}V[xGWWR*jZ",
+   "description": "پذیرایی",
+   "created_at": "2026-08-03"
+  },
+  {
+   "name": "32090862608031103269490119.jpg",
+   "url": "2026/08/03/32090862608031103269490119.jpg",
+   "preview": "UPDlQN~WkXx]}?%1R:o#^i%2SiXA~V-;b_XT",
+   "description": "پذیرایی",
+   "created_at": "2026-08-03"
   },
   {
    "name": "3209086231013175643.jpg",
@@ -43,39 +64,11 @@
    "created_at": "2023-10-13"
   },
   {
-   "name": "3209086231013175645.jpg",
-   "url": "2023/10/13/3209086231013175645.jpg",
-   "preview": "UeEVsYawt6?a~paxay%M?Hayj[xu?aWBfPxu",
-   "description": "پذیرایی",
-   "created_at": "2023-10-13"
-  },
-  {
-   "name": "3209086231013175637.jpg",
-   "url": "2023/10/13/3209086231013175637.jpg",
-   "preview": "UXHnvb~ooy-:^%%1R*t6s,s.RjR*~V%LWCoe",
-   "description": "پذیرایی",
-   "created_at": "2023-10-13"
-  },
-  {
    "name": "3209086231013175647.jpg",
    "url": "2023/10/13/3209086231013175647.jpg",
    "preview": "UhH.Qc?aRi-;~qt7V@xu?bRjWBxu~qj@axxu",
    "description": "پذیرایی",
    "created_at": "2023-10-13"
-  },
-  {
-   "name": "3209086231008130422.jpg",
-   "url": "2023/10/08/3209086231008130422.jpg",
-   "preview": "UWD9#L?aodxu~q-:xtxu?bxut7xt?bt7WBt7",
-   "description": "پذیرایی",
-   "created_at": "2023-10-08"
-  },
-  {
-   "name": "3209086231008130408.jpg",
-   "url": "2023/10/08/3209086231008130408.jpg",
-   "preview": "UMCsQ|?bIU%M~qxuIUoL%Mj[IoRj?Ht7Rjof",
-   "description": "آشپزخانه",
-   "created_at": "2023-10-08"
   },
   {
    "name": "3209086231008130418.jpg",
@@ -99,18 +92,11 @@
    "created_at": "2023-10-13"
   },
   {
-   "name": "3209086231008130435.jpg",
-   "url": "2023/10/08/3209086231008130435.jpg",
-   "preview": "UEAm|^%LRi.7_Mxut7tQx]Rjj[tQ?uRiRjxu",
-   "description": "تراس",
-   "created_at": "2023-10-08"
-  },
-  {
-   "name": "3209086231008130412.jpg",
-   "url": "2023/10/08/3209086231008130412.jpg",
-   "preview": "U78NqZ-r0zKNNNWZxutRIYWX%2t8~qxbELS2",
+   "name": "32090862608031103298329054.jpg",
+   "url": "2026/08/03/32090862608031103298329054.jpg",
+   "preview": "UsFG5O_L%Lx@%exukCofIVRjoMj[ovt5t6oy",
    "description": null,
-   "created_at": "2023-10-08"
+   "created_at": "2026-08-03"
   },
   {
    "name": "3209086231013175805.jpg",
@@ -139,6 +125,13 @@
    "preview": "UMCs?0_Lj]x@_Jx@RkodRiRiWBjstPt6t7oy",
    "description": null,
    "created_at": "2024-10-10"
+  },
+  {
+   "name": "32090862608031103351121888.jpg",
+   "url": "2026/08/03/32090862608031103351121888.jpg",
+   "preview": "URCaFw.7xv%y?]%Mx]x]tUx]tSt9.8x]t8tS",
+   "description": null,
+   "created_at": "2026-08-03"
   }
  ],
  "vr_photo": null,
@@ -281,7 +274,7 @@
  ],
  "additional_rule": null,
  "cancellation_policy": "middle",
- "min_price": 3500000,
+ "min_price": 4500000,
  "extra_price": 500000,
  "is_clean": false,
  "is_new": false,
@@ -303,18 +296,18 @@
  "current_discount": null,
  "current_discount_percent": 0,
  "ratings": {
-  "count": 47,
-  "total": 4.9,
+  "count": 48,
+  "total": 4.8,
   "accuracy": 4.9,
   "communication": 5,
-  "cleanliness": 4.5,
+  "cleanliness": 4.4,
   "location": 5,
   "checkin": 5,
-  "value": 4.8,
+  "value": 4.7,
   "comments_grouped_by_rating": {
    "3": 1,
-   "4": 6,
-   "5": 13
+   "4": 7,
+   "5": 12
   },
   "is_recently": true,
   "is_bad_host": false
@@ -326,7 +319,7 @@
   "gender": "male",
   "description": null,
   "created_at": "2023-10-15",
-  "response_time": 116,
+  "response_time": 95,
   "accept_rate": 97,
   "host_communication_rate": 5
  },

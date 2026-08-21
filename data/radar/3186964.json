@@ -5,64 +5,11 @@
     "village": "گونه کلا",
     "host_name": "الناز",
     "host_id": 1688265,
-    "min_price": 3700000,
+    "min_price": 4500000,
     "own": false
   },
-  "fetched_at": "2026-08-13T05:45:20.427010+00:00",
+  "fetched_at": "2026-08-20T20:30:28.631007+00:00",
   "nights": [
-    {
-      "date": "2026-08-12",
-      "price": 7500000,
-      "is_instant": true,
-      "is_holiday": true,
-      "is_peak": true,
-      "is_weekend": true,
-      "is_unavailable": true
-    },
-    {
-      "date": "2026-08-13",
-      "price": 7500000,
-      "is_instant": true,
-      "is_holiday": true,
-      "is_peak": true,
-      "is_weekend": true,
-      "is_unavailable": true
-    },
-    {
-      "date": "2026-08-14",
-      "price": 6500000,
-      "is_instant": true,
-      "is_unavailable": true
-    },
-    {
-      "date": "2026-08-15",
-      "price": 4500000,
-      "is_instant": true,
-      "is_unavailable": true
-    },
-    {
-      "date": "2026-08-16",
-      "price": 4500000,
-      "is_instant": true,
-      "is_unavailable": true
-    },
-    {
-      "date": "2026-08-17",
-      "price": 3700000,
-      "is_instant": true
-    },
-    {
-      "date": "2026-08-18",
-      "price": 4500000,
-      "is_instant": true
-    },
-    {
-      "date": "2026-08-19",
-      "price": 5700000,
-      "is_instant": true,
-      "is_weekend": true,
-      "is_unavailable": true
-    },
     {
       "date": "2026-08-20",
       "price": 5700000,
@@ -82,55 +29,59 @@
     },
     {
       "date": "2026-08-23",
-      "price": 4500000,
+      "price": 4700000,
       "is_instant": true
     },
     {
       "date": "2026-08-24",
-      "price": 4500000,
+      "price": 4700000,
       "is_instant": true
     },
     {
       "date": "2026-08-25",
-      "price": 4500000,
+      "price": 4700000,
       "is_instant": true
     },
     {
       "date": "2026-08-26",
-      "price": 7500000,
+      "price": 4700000,
       "is_instant": true,
-      "is_weekend": true
+      "is_weekend": true,
+      "is_unavailable": true
     },
     {
       "date": "2026-08-27",
       "price": 7500000,
       "is_instant": true,
-      "is_weekend": true
+      "is_weekend": true,
+      "is_unavailable": true
     },
     {
       "date": "2026-08-28",
       "price": 7500000,
-      "is_instant": true
+      "is_instant": true,
+      "is_unavailable": true
     },
     {
       "date": "2026-08-29",
       "price": 7500000,
-      "is_instant": true
+      "is_instant": true,
+      "is_unavailable": true
     },
     {
       "date": "2026-08-30",
-      "price": 7500000,
+      "price": 5700000,
       "is_instant": true,
       "is_holiday": true
     },
     {
       "date": "2026-08-31",
-      "price": 4500000,
+      "price": 4700000,
       "is_instant": true
     },
     {
       "date": "2026-09-01",
-      "price": 4500000,
+      "price": 4700000,
       "is_instant": true
     },
     {
@@ -143,31 +94,33 @@
       "date": "2026-09-03",
       "price": 5700000,
       "is_instant": true,
-      "is_weekend": true
+      "is_weekend": true,
+      "is_unavailable": true
     },
     {
       "date": "2026-09-04",
-      "price": 4500000,
+      "price": 4700000,
       "is_instant": true
     },
     {
       "date": "2026-09-05",
       "price": 4500000,
-      "is_instant": true
+      "is_instant": true,
+      "is_unavailable": true
     },
     {
       "date": "2026-09-06",
-      "price": 4500000,
+      "price": 4700000,
       "is_instant": true
     },
     {
       "date": "2026-09-07",
-      "price": 4500000,
+      "price": 4700000,
       "is_instant": true
     },
     {
       "date": "2026-09-08",
-      "price": 4500000,
+      "price": 4700000,
       "is_instant": true
     },
     {
@@ -180,11 +133,12 @@
       "date": "2026-09-10",
       "price": 5700000,
       "is_instant": true,
-      "is_weekend": true
+      "is_weekend": true,
+      "is_unavailable": true
     },
     {
       "date": "2026-09-11",
-      "price": 4500000,
+      "price": 4700000,
       "is_instant": true
     },
     {
@@ -194,17 +148,17 @@
     },
     {
       "date": "2026-09-13",
-      "price": 4500000,
+      "price": 4700000,
       "is_instant": true
     },
     {
       "date": "2026-09-14",
-      "price": 4500000,
+      "price": 4700000,
       "is_instant": true
     },
     {
       "date": "2026-09-15",
-      "price": 4500000,
+      "price": 4700000,
       "is_instant": true
     },
     {
@@ -217,11 +171,12 @@
       "date": "2026-09-17",
       "price": 5700000,
       "is_instant": true,
-      "is_weekend": true
+      "is_weekend": true,
+      "is_unavailable": true
     },
     {
       "date": "2026-09-18",
-      "price": 4500000,
+      "price": 4700000,
       "is_instant": true
     },
     {
@@ -231,17 +186,17 @@
     },
     {
       "date": "2026-09-20",
-      "price": 4500000,
+      "price": 4700000,
       "is_instant": true
     },
     {
       "date": "2026-09-21",
-      "price": 4500000,
+      "price": 4700000,
       "is_instant": true
     },
     {
       "date": "2026-09-22",
-      "price": 4500000,
+      "price": 4700000,
       "is_instant": true
     },
     {

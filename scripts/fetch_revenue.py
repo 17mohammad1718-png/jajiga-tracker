@@ -30,6 +30,7 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(SCRIPT_DIR)
 REVENUE_FILE = os.path.join(ROOT, "data", "revenue", "seydkola-mordad-1405.json")
 PRICING_FILE = os.path.join(ROOT, "data", "pricing", "pricing-dataset.json")
+MANUAL_BLOCKS_FILE = os.path.join(ROOT, "data", "manual-blocks.json")
 
 API = "https://api.jajiga.com"
 HEADERS = {
@@ -44,6 +45,7 @@ DELAY_MIN, DELAY_MAX = 0.4, 1.2
 MAX_ATTEMPTS = 4
 CONCURRENCY = 4
 COMMISSION_RATE = 0.12
+MANUAL_BLOCKS = {}  # room_id_str -> set of ISO dates (بارگذاری در main)
 
 # پنجره مرداد ۱۴۰۵ (۱ مرداد = 2026-07-23، ۳۱ مرداد = 2026-08-22)
 PERIOD_START = date(2026, 7, 23)
@@ -100,6 +102,19 @@ def eff_price(price, discount):
     return price
 
 
+def load_manual_blocks():
+    """روزهای «بسته میزبان» (غیرمشتری) — از درآمد مستثنی می‌شوند."""
+    try:
+        data = json.load(open(MANUAL_BLOCKS_FILE, encoding="utf-8"))
+    except Exception:
+        return {}
+    out = {}
+    for rid, dates in (data or {}).items():
+        if isinstance(dates, list):
+            out[str(rid)] = set(d for d in dates if isinstance(d, str))
+    return out
+
+
 def compute_room(rec):
     """فچ + محاسبه درآمد یک اتاق. Returns updated record (یا None در خطا)."""
     rid = rec["id"]
@@ -110,6 +125,7 @@ def compute_room(rec):
         return None
 
     today = date.today()
+    blocked_dates = MANUAL_BLOCKS.get(str(rid), set())
     booked = []
     for n in nights:
         d = n.get("date")
@@ -124,6 +140,8 @@ def compute_room(rec):
             continue
         if not n.get("is_unavailable"):
             continue
+        if d in blocked_dates:
+            continue  # بسته میزبان (غیرمشتری) — درآمد ندارد
         disc = n.get("discount") or 0
         booked.append({
             "date": d,
@@ -159,6 +177,8 @@ def compute_room(rec):
 
 
 def main():
+    global MANUAL_BLOCKS
+    MANUAL_BLOCKS = load_manual_blocks()
     rooms = load_rooms()
     if not rooms:
         print("No rooms — create data/revenue/seydkola-mordad-1405.json first.")

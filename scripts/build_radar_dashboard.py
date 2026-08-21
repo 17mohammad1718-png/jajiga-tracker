@@ -22,7 +22,7 @@ import base64
 import io
 from datetime import date, timedelta
 
-from radar_common import eff_price
+from radar_common import eff_price, load_config
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 # xlsx-js-style (فورک SheetJS با پشتیبانی استایل در خروجی) — برای تولید فایل اکسل رنگی در مرورگر
@@ -97,6 +97,15 @@ def jalali_year_months(jy):
 
 def build():
     today = date.today()
+
+    # شروع محاسبه درآمد — از کانفیگ رادار؛ اگر نبود امروز
+    cfg = load_config()
+    rev_start_str = cfg.get("revenue_start", today.isoformat())
+    try:
+        REVENUE_START = date.fromisoformat(rev_start_str)
+    except Exception:
+        REVENUE_START = today
+
     jy, jm, _ = g2j(today.year, today.month, today.day)
 
     # دو ماه شمسی: جاری + بعدی — دیروز (۱ روز گذشته برای مرجع) + امروز و آینده؛
@@ -163,7 +172,44 @@ def build():
     ranked = sorted(rooms, key=lambda r: r['occ'][30], reverse=True)
     medals = {ranked[i]['room_id']: ['🥇','🥈','🥉'][i] for i in range(min(3, len(ranked)))}
 
-    # ---------- تخمین درآمد میزبان‌ها (فقط شب‌های پرِ آینده) ----------
+    # ---------- ادغام شب‌های گذشته از snapshotها در by_date ----------
+    # شب‌های سپری‌شده از REVENUE_START تا دیروز از اسنپ‌شات‌های روزانه می‌آیند
+    # تا جدول تخمین درآمد از ۱۷ مرداد به بعد کامل باشد
+    snap_dir = os.path.join(RADAR_DIR, 'snapshots')
+    trust_for_rev = {}  # date -> {room_id_str: night_dict}
+    first_observed = {}
+    for sf in sorted(os.listdir(snap_dir)):
+        if not sf.endswith('.json'):
+            continue
+        try:
+            snap = json.load(open(os.path.join(snap_dir, sf), encoding='utf-8'))
+        except Exception:
+            continue
+        fa = str(snap.get('fetched_at') or '')
+        try:
+            snap_date = date.fromisoformat(fa[:10])
+        except Exception:
+            snap_date = today
+        artifact_yesterday = (snap_date - timedelta(days=1)).isoformat()
+        for rid, rdata in (snap.get('rooms') or {}).items():
+            if str(rid) not in first_observed:
+                first_observed[str(rid)] = snap_date.isoformat()
+            nights = rdata.get('nights') or []
+            for n in nights:
+                nd = n['date']
+                # فقط روزهای قبل از امروز، بعد از REVENUE_START، نه آرتیفکت دیروز
+                if REVENUE_START.isoformat() <= nd < today.isoformat() and nd != artifact_yesterday:
+                    trust_for_rev.setdefault(nd, {})[str(rid)] = n
+
+    # ادغام در by_date هر اتاق
+    for rec in rooms:
+        rid_str = str(rec['room_id'])
+        for dstr in sorted(trust_for_rev):
+            n = trust_for_rev[dstr].get(rid_str)
+            if n and n.get('is_unavailable'):
+                rec['by_date'][dstr] = n
+
+    # ---------- تخمین درآمد میزبان‌ها (شب‌های پر از ۱۷ مرداد به بعد) ----------
     # جمع‌بندی در مرورگر انجام می‌شود تا «تاریخ محاسبه درآمد» قابل تنظیم باشد:
     # داده‌ی خامِ هر اتاق (شب‌های پرِ آینده) داخل HTML می‌رود و با کلیک روی
     # چیپِ «تا تاریخ»، جاوااسکریپت جدول را بدون refetch دوباره حساب می‌کند.
@@ -178,9 +224,11 @@ def build():
         rid = rec['room_id']
         nights = []
         for dstr in sorted(rec['by_date']):
-            if dstr < today.isoformat():
-                continue  # فقط آینده — گذشته در تخمین نمی‌آید
+            if dstr < REVENUE_START.isoformat():
+                continue  # فقط از ۱۷ مرداد به بعد
             n = rec['by_date'][dstr]
+            if n.get('is_manual_block'):
+                continue  # بسته میزبان (غیرمشتری) — درآمد ندارد
             if not n.get('is_unavailable'):
                 continue
             dd = date.fromisoformat(dstr)
@@ -227,8 +275,8 @@ def build():
             cur_m = 1
             cur_y += 1
 
-    # پیش‌فرض = همان پنجره فعلیِ رادار (امروز تا انتهای ماه بعد) تا عددها عوض نشوند
-    default_start = today.isoformat()
+    # پیش‌فرض = ۱۷ مرداد (شروع محاسبه درآمد) تا انتهای پنجره رادار
+    default_start = REVENUE_START.isoformat()
     default_end = days_flat[-1].isoformat() if days_flat else rev_horizon.isoformat()
 
     # داده تقویم شمسی: کل سال جاری (ناوبری کامل ماه‌ها در پاپ‌آپ تقویم)
@@ -245,7 +293,7 @@ def build():
     rev_chips = []
     for y, m, endd in chip_months:
         md = month_days(y, m)
-        first = next((d for d in md if d >= today), None)
+        first = next((d for d in md if d >= REVENUE_START), None)
         if first is None:
             continue
         if (y, m) == (hor_y, hor_m) and rev_horizon < endd:
@@ -261,7 +309,7 @@ def build():
     rev_rooms_json = json.dumps(rev_rooms, ensure_ascii=False)
     rev_ends_json = json.dumps({
         'today': today.isoformat(),
-        'min': today.isoformat(),
+        'min': REVENUE_START.isoformat(),
         'max': rev_horizon.isoformat(),
         'default_start': default_start,
         'default_end': default_end,
@@ -303,6 +351,8 @@ def build():
         n = rec['by_date'].get(d.isoformat())
         if n is None:
             return 'nodata'
+        if n.get('is_manual_block'):
+            return 'blocked'
         if n.get('is_unavailable'):
             return 'booked'
         prev = rec['by_date'].get((d - timedelta(days=1)).isoformat())
@@ -334,7 +384,7 @@ def build():
             parts.append('تعطیل')
         if n.get('is_weekend'):
             parts.append('آخر هفته')
-        parts.append('پر' if n.get('is_unavailable') else 'خالی')
+        parts.append('بسته میزبان' if n.get('is_manual_block') else ('پر' if n.get('is_unavailable') else 'خالی'))
         price = ''
         if eff:
             price = f"<span class='pr{' disc' if n.get('discount') else ''}'>{eff:,}</span>"
@@ -390,6 +440,7 @@ def build():
 <div class='legend'>
   <span class='lg'><i class='sw free'></i>خالی</span>
   <span class='lg'><i class='sw booked'></i>پر</span>
+  <span class='lg'><i class='sw blocked'></i>بسته میزبان</span>
   <span class='lg'><i class='sw half'></i>نیمه‌پر (روز تعویض)</span>
   <span class='lg'><i class='sw peak'></i>پیک</span>
   <span class='lg'><i class='sw weekend'></i>آخر هفته</span>
@@ -460,6 +511,8 @@ def build():
         notracked اگه اتاق از بعدِ آن روز شروع به رصد شده، وگرنه nodata."""
         n = trusted.get(dstr, {}).get(str(rid))
         if n is not None:
+            if n.get('is_manual_block'):
+                return 'blocked', n
             return ('booked' if n.get('is_unavailable') else 'free'), n
         fo = first_observed.get(str(rid))
         if fo and fo > dstr:
@@ -495,6 +548,8 @@ def build():
                      f'از {jalali_str(fo)} رصد می‌شود' if fo else 'بدون داده']
         elif cls == 'half':
             parts = [jalali_str(dstr), 'نیمه‌پر (دیروز پر بود)']
+        elif cls == 'blocked':
+            parts = [jalali_str(dstr), 'بسته میزبان']
         else:
             parts = [jalali_str(dstr), 'پر' if cls == 'booked' else 'خالی']
         eff = eff_price(n.get('price'), n.get('discount')) if n else None
@@ -526,7 +581,7 @@ def build():
 </tr>""")
 
     # آمار خلاصه تب دیتابیس
-    past_stats = {'booked': 0, 'free': 0, 'half': 0, 'nodata': 0, 'notracked': 0}
+    past_stats = {'booked': 0, 'free': 0, 'half': 0, 'blocked': 0, 'nodata': 0, 'notracked': 0}
     for dstr in past_days:
         for rec in rooms:
             cls, _ = past_status_of(rec['room_id'], dstr)
@@ -546,7 +601,7 @@ def build():
         cells = {}
         for dstr in past_days:
             cls, n = past_status_of(rec['room_id'], dstr)
-            st = {'booked': 'پر', 'free': 'خالی', 'half': 'نیمه‌پر',
+            st = {'booked': 'پر', 'free': 'خالی', 'half': 'نیمه‌پر', 'blocked': 'بسته میزبان',
                   'nodata': 'بدون داده', 'notracked': 'از بعد رصد'}.get(cls, cls)
             parts = [st]
             if cls in ('nodata', 'notracked'):
@@ -585,6 +640,7 @@ def build():
 <div class='legend'>
   <span class='lg'><i class='sw free'></i>خالی</span>
   <span class='lg'><i class='sw booked'></i>پر</span>
+  <span class='lg'><i class='sw blocked'></i>بسته میزبان</span>
   <span class='lg'><i class='sw half'></i>نیمه‌پر (دیروزش پر بود)</span>
   <span class='lg'><i class='sw notracked'></i>از بعد رصد</span>
   <span class='lg'><i class='sw nodata'></i>بدون داده</span>
@@ -597,7 +653,7 @@ def build():
         if n is None:
             return {"t": "بدون داده", "s": "nodata"}
         cls = cell_class(rec, d)
-        st = {"past": "گذشته", "booked": "پر", "half": "نیمه‌پر", "peak": "پیک",
+        st = {"past": "گذشته", "booked": "پر", "blocked": "بسته میزبان", "half": "نیمه‌پر", "peak": "پیک",
               "weekend": "آخر هفته", "free": "خالی"}.get(cls, cls)
         parts = [st]
         eff = eff_price(n.get('price'), n.get('discount'))
@@ -644,6 +700,7 @@ def build():
     var STATUS = {
       'past':    {fill:'475569', font:'ffffff'},
       'booked':  {fill:'dc2626', font:'ffffff'},
+      'blocked': {fill:'9a7b4f', font:'ffffff'},
       'half':    {fill:'ea580c', font:'ffffff'},
       'peak':    {fill:'7c3aed', font:'ffffff'},
       'weekend': {fill:'0369a1', font:'ffffff'},
@@ -703,6 +760,7 @@ def build():
     var STATUS = {
       'past':    {fill:'475569', font:'ffffff'},
       'booked':  {fill:'dc2626', font:'ffffff'},
+      'blocked': {fill:'9a7b4f', font:'ffffff'},
       'half':    {fill:'ea580c', font:'ffffff'},
       'peak':    {fill:'7c3aed', font:'ffffff'},
       'weekend': {fill:'0369a1', font:'ffffff'},
@@ -963,6 +1021,11 @@ def build():
     });
   }
   function openPopup(which, field){
+    // کلیک دوباره روی همان فیلد → بستن
+    if (pop && popWhich === which) {
+      closePopup();
+      return;
+    }
     popWhich = which;
     popMon = monthIndexOf(which === 'from' ? curFrom : curTo);
     if (pop) pop.remove();
@@ -1038,6 +1101,7 @@ h1 .radar {{ color:#38bdf8; }}
 .sw {{ width:14px; height:14px; border-radius:4px; display:inline-block; }}
 .free {{ background:#1a4d7a; }}
 .booked {{ background:#6b2b2b; }}
+.blocked {{ background:repeating-linear-gradient(45deg,#5b3a1e 0 6px,#4a2f18 6px 12px); }}
 .half {{ background:#7b5a1e; }}
 .peak {{ background:#4a3b6b; }}
 .weekend {{ background:#155e63; }}
@@ -1075,15 +1139,16 @@ table.cal {{ border-collapse:collapse; width:100%; font-size:11px; --mhrow-h:36p
 .cal td.c.notracked .dn {{ color:#3b5b7a; }}
 .cal td.c.free {{ background:#1a4d7a; }}
 .cal td.c.booked {{ background:#6b2b2b; }}
+.cal td.c.blocked {{ background:repeating-linear-gradient(45deg,#5b3a1e 0 6px,#4a2f18 6px 12px); }}
 .cal td.c.half {{ background:#7b5a1e; }}
 .cal td.c.peak {{ background:#4a3b6b; }}
 .cal td.c.weekend {{ background:#155e63; }}
-.cal td.c.wb {{ border-left:2px solid #4a729c; background-image:linear-gradient(90deg, rgba(74,114,156,.16), rgba(74,114,156,0) 70%); }}
-.cal td.c.mb {{ border-left:3px solid #3f7cc4; }}
-.cal th.dayh.wb {{ border-left:2px solid #4a729c; }}
+.cal td.c.wb {{ border-right:2px solid #4a729c; background-image:linear-gradient(270deg, rgba(74,114,156,.16), rgba(74,114,156,0) 70%); }}
+.cal td.c.mb {{ border-right:3px solid #3f7cc4; }}
+.cal th.dayh.wb {{ border-right:2px solid #4a729c; }}
 .cal th.dayh.today {{ background:#1e3a5f; }}
 .cal th.dayh.today .dnum {{ color:#fbbf24; }}
-.cal th.dayh.mb {{ border-left:3px solid #3f7cc4; }}
+.cal th.dayh.mb {{ border-right:3px solid #3f7cc4; }}
 .cal th.dayh.holiday .dnum {{ color:#f87171; }}
 .cal th.dayh.friday .dnum {{ color:#f87171; }}
 .cal td.c:hover {{ outline:2px solid rgba(255,255,255,.35); cursor:default; }}
@@ -1186,6 +1251,7 @@ table.rev .hrev-detail td {{ background:#0f1f36; padding:10px 16px; text-align:r
 <div class='stats'>
   <div class='stat'><b>{len(past_days)}</b><span>روز ثبت‌شده</span></div>
   <div class='stat'><b>{past_stats['booked']}</b><span>شب پر</span></div>
+  <div class='stat'><b>{past_stats['blocked']}</b><span>بسته میزبان</span></div>
   <div class='stat'><b>{past_stats['free']}</b><span>شب خالی</span></div>
   <div class='stat'><b>{past_stats['half']}</b><span>نیمه‌پر</span></div>
   <div class='stat'><b>{past_stats['nodata']}</b><span>بدون داده</span></div>

@@ -248,7 +248,7 @@
  ],
  "additional_rule": null,
  "cancellation_policy": "middle",
- "min_price": 3990000,
+ "min_price": 3200000,
  "extra_price": 300000,
  "is_clean": false,
  "is_new": false,
@@ -288,8 +288,8 @@
   "gender": "female",
   "description": "احترام و خوشرویی نشانه شخصیت انسانهاست",
   "created_at": "2025-02-23",
-  "response_time": 307,
-  "accept_rate": 82,
+  "response_time": 363,
+  "accept_rate": 84,
   "host_communication_rate": 4.8
  },
  "meta": {

@@ -350,7 +350,7 @@
  "extra_price": 550000,
  "is_clean": false,
  "is_new": false,
- "is_instant": false,
+ "is_instant": true,
  "is_plus": true,
  "success_books": 10,
  "discounts": [
@@ -363,10 +363,17 @@
    "percent": 20,
    "type": "duration",
    "min_nights": 10
+  },
+  {
+   "percent": 30,
+   "type": "tomorrow_discount"
   }
  ],
- "current_discount": null,
- "current_discount_percent": 0,
+ "current_discount": {
+  "percent": 30,
+  "type": "tomorrow_discount"
+ },
+ "current_discount_percent": 30,
  "ratings": {
   "count": 10,
   "total": 4.7,
@@ -391,7 +398,7 @@
   "gender": "female",
   "description": null,
   "created_at": "2023-09-20",
-  "response_time": 444,
+  "response_time": 447,
   "accept_rate": 94,
   "host_communication_rate": 4.3
  },

@@ -36,6 +36,20 @@ def load_opt(rel):
     return json.load(open(p, encoding="utf-8")) if os.path.exists(p) else None
 
 
+def load_manual_blocks():
+    """روزهای «بسته میزبان» (غیرمشتری) از data/manual-blocks.json.
+    Returns dict: room_id_str -> set of ISO dates."""
+    try:
+        data = json.load(open(os.path.join(ROOT, "data", "manual-blocks.json"), encoding="utf-8"))
+    except Exception:
+        return {}
+    out = {}
+    for rid, dates in (data or {}).items():
+        if isinstance(dates, list):
+            out[str(rid)] = set(d for d in dates if isinstance(d, str))
+    return out
+
+
 def main():
     now = datetime.now(timezone.utc).isoformat(timespec="seconds")
 
@@ -78,7 +92,7 @@ def main():
     CREATE TABLE regions (id INTEGER PRIMARY KEY, name TEXT UNIQUE, slug TEXT, count INTEGER, added_2026 INTEGER, tracked INTEGER DEFAULT 0, sort_order INTEGER DEFAULT 0);
     CREATE TABLE hosts (id INTEGER PRIMARY KEY, name TEXT, gender TEXT, verified INTEGER, member_since TEXT, description TEXT, accept_rate REAL, response_time_min INTEGER, communication_rate REAL, active_rooms_count INTEGER, rooms_count INTEGER, total_success_books INTEGER, host_level TEXT, price_range TEXT, avg_price REAL, last_updated TEXT, raw TEXT);
     CREATE TABLE rooms (id INTEGER PRIMARY KEY, title TEXT, village TEXT, host_id INTEGER, host_name TEXT, status TEXT, member_since TEXT, est_date TEXT, j_est TEXT, price INTEGER, success_books INTEGER, rating REAL, reviews INTEGER, tracked INTEGER DEFAULT 0, sources TEXT, raw TEXT, updated_at TEXT);
-    CREATE TABLE nights (id INTEGER PRIMARY KEY AUTOINCREMENT, room_id INTEGER, date TEXT, price INTEGER, discount INTEGER, is_unavailable INTEGER, is_instant INTEGER, is_peak INTEGER, is_holiday INTEGER, is_weekend INTEGER, source TEXT, fetched_at TEXT, UNIQUE(room_id, date, source));
+    CREATE TABLE nights (id INTEGER PRIMARY KEY AUTOINCREMENT, room_id INTEGER, date TEXT, price INTEGER, discount INTEGER, is_unavailable INTEGER, is_instant INTEGER, is_peak INTEGER, is_holiday INTEGER, is_weekend INTEGER, is_manual_block INTEGER DEFAULT 0, source TEXT, fetched_at TEXT, UNIQUE(room_id, date, source));
     CREATE TABLE snapshots (kind TEXT, date TEXT, fetched_at TEXT, data TEXT, UNIQUE(kind, date));
     CREATE TABLE revenue (id INTEGER PRIMARY KEY AUTOINCREMENT, room_id INTEGER, host_id INTEGER, title TEXT, month TEXT, booked INTEGER, free INTEGER, gross INTEGER, gross_discounted INTEGER, discount_total INTEGER, commission INTEGER, net INTEGER, raw TEXT);
     CREATE TABLE state (key TEXT PRIMARY KEY, value TEXT);
@@ -180,29 +194,34 @@ def main():
         )
 
     # ---------------- nights (radar + revenue) ----------------
+    manual_blocks = load_manual_blocks()
     for path in radar_room_paths:
         f = load_opt(os.path.relpath(path, ROOT))
         rid = int(f["room_id"])
+        blocked_dates = manual_blocks.get(str(rid), set())
         for n in f.get("nights", []):
             cur.execute(
                 """INSERT OR IGNORE INTO nights
-                (room_id,date,price,discount,is_unavailable,is_instant,is_peak,is_holiday,is_weekend,source,fetched_at)
-                VALUES (?,?,?,?,?,?,?,?,?,?,?)""",
+                (room_id,date,price,discount,is_unavailable,is_instant,is_peak,is_holiday,is_weekend,is_manual_block,source,fetched_at)
+                VALUES (?,?,?,?,?,?,?,?,?,?,?,?)""",
                 (rid, n.get("date"), n.get("price"), n.get("discount"),
                  1 if n.get("is_unavailable") else 0, 1 if n.get("is_instant") else 0,
                  1 if n.get("is_peak") else 0, 1 if n.get("is_holiday") else 0, 1 if n.get("is_weekend") else 0,
+                 1 if (n.get("date") in blocked_dates or n.get("is_manual_block")) else 0,
                  "radar", f.get("fetched_at")),
             )
     for rec in revenue:
         rid = int(rec["id"])
+        blocked_dates = manual_blocks.get(str(rid), set())
         for n in rec.get("nights", []):
             cur.execute(
                 """INSERT OR IGNORE INTO nights
-                (room_id,date,price,discount,is_unavailable,is_instant,is_peak,is_holiday,is_weekend,source,fetched_at)
-                VALUES (?,?,?,?,?,?,?,?,?,?,?)""",
+                (room_id,date,price,discount,is_unavailable,is_instant,is_peak,is_holiday,is_weekend,is_manual_block,source,fetched_at)
+                VALUES (?,?,?,?,?,?,?,?,?,?,?,?)""",
                 (rid, n.get("date"), n.get("price"), n.get("discount"),
                  1 if n.get("is_unavailable") else 0, 1 if n.get("is_instant") else 0,
                  1 if n.get("is_peak") else 0, 1 if n.get("is_holiday") else 0, 1 if n.get("is_weekend") else 0,
+                 1 if (n.get("date") in blocked_dates or n.get("is_manual_block")) else 0,
                  "revenue", None),
             )
 

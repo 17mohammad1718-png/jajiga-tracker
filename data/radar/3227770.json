@@ -5,65 +5,11 @@
     "village": "سیدکلا",
     "host_name": "محمد",
     "host_id": 2078258,
-    "min_price": 1800000,
+    "min_price": 2500000,
     "own": false
   },
-  "fetched_at": "2026-08-13T05:45:22.323883+00:00",
+  "fetched_at": "2026-08-20T20:31:04.791369+00:00",
   "nights": [
-    {
-      "date": "2026-08-12",
-      "price": 3000000,
-      "is_instant": true,
-      "is_holiday": true,
-      "is_peak": true,
-      "is_weekend": true,
-      "is_unavailable": true
-    },
-    {
-      "date": "2026-08-13",
-      "price": 3000000,
-      "is_instant": true,
-      "is_holiday": true,
-      "is_peak": true,
-      "is_weekend": true,
-      "is_unavailable": true
-    },
-    {
-      "date": "2026-08-14",
-      "price": 1800000,
-      "is_instant": true,
-      "is_unavailable": true
-    },
-    {
-      "date": "2026-08-15",
-      "price": 1800000,
-      "discount": 10,
-      "is_instant": true
-    },
-    {
-      "date": "2026-08-16",
-      "price": 1800000,
-      "is_instant": true
-    },
-    {
-      "date": "2026-08-17",
-      "price": 1800000,
-      "is_instant": true,
-      "is_unavailable": true
-    },
-    {
-      "date": "2026-08-18",
-      "price": 1800000,
-      "is_instant": true,
-      "is_unavailable": true
-    },
-    {
-      "date": "2026-08-19",
-      "price": 2500000,
-      "is_instant": true,
-      "is_weekend": true,
-      "is_unavailable": true
-    },
     {
       "date": "2026-08-20",
       "price": 2500000,
@@ -74,12 +20,14 @@
     {
       "date": "2026-08-21",
       "price": 1800000,
-      "is_instant": true
+      "is_instant": true,
+      "is_unavailable": true
     },
     {
       "date": "2026-08-22",
       "price": 1800000,
-      "is_instant": true
+      "is_instant": true,
+      "is_unavailable": true
     },
     {
       "date": "2026-08-23",
@@ -102,6 +50,7 @@
     {
       "date": "2026-08-26",
       "price": 3000000,
+      "discount": 10,
       "is_instant": true,
       "is_weekend": true
     },
@@ -114,12 +63,14 @@
     {
       "date": "2026-08-28",
       "price": 2500000,
-      "is_instant": true
+      "is_instant": true,
+      "is_unavailable": true
     },
     {
       "date": "2026-08-29",
       "price": 2500000,
-      "is_instant": true
+      "is_instant": true,
+      "is_unavailable": true
     },
     {
       "date": "2026-08-30",
@@ -130,34 +81,40 @@
     {
       "date": "2026-08-31",
       "price": 2500000,
-      "is_instant": true
+      "is_instant": true,
+      "is_unavailable": true
     },
     {
       "date": "2026-09-01",
       "price": 2500000,
-      "is_instant": true
+      "is_instant": true,
+      "is_unavailable": true
     },
     {
       "date": "2026-09-02",
       "price": 3000000,
       "is_instant": true,
-      "is_weekend": true
+      "is_weekend": true,
+      "is_unavailable": true
     },
     {
       "date": "2026-09-03",
       "price": 3000000,
       "is_instant": true,
-      "is_weekend": true
+      "is_weekend": true,
+      "is_unavailable": true
     },
     {
       "date": "2026-09-04",
       "price": 2500000,
-      "is_instant": true
+      "is_instant": true,
+      "is_unavailable": true
     },
     {
       "date": "2026-09-05",
       "price": 2500000,
-      "is_instant": true
+      "is_instant": true,
+      "is_unavailable": true
     },
     {
       "date": "2026-09-06",
@@ -229,7 +186,7 @@
     },
     {
       "date": "2026-09-18",
-      "price": 2500000,
+      "price": 3000000,
       "is_instant": true
     },
     {

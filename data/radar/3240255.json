@@ -5,89 +5,47 @@
     "village": "گونه کلا",
     "host_name": "سید ابراهیم",
     "host_id": 1501067,
-    "min_price": 8100000,
+    "min_price": 9000000,
     "own": false
   },
-  "fetched_at": "2026-08-13T05:45:19.097859+00:00",
+  "fetched_at": "2026-08-20T20:30:14.850732+00:00",
   "nights": [
     {
-      "date": "2026-08-12",
-      "price": 12900000,
-      "is_holiday": true,
-      "is_peak": true,
-      "is_weekend": true,
-      "is_unavailable": true
-    },
-    {
-      "date": "2026-08-13",
-      "price": 12900000,
-      "is_holiday": true,
-      "is_peak": true,
-      "is_weekend": true,
-      "is_unavailable": true
-    },
-    {
-      "date": "2026-08-14",
-      "price": 8500000,
-      "is_unavailable": true
-    },
-    {
-      "date": "2026-08-15",
-      "price": 8500000,
-      "is_unavailable": true
-    },
-    {
-      "date": "2026-08-16",
-      "price": 8500000,
-      "is_unavailable": true
-    },
-    {
-      "date": "2026-08-17",
-      "price": 8500000,
-      "is_unavailable": true
-    },
-    {
-      "date": "2026-08-18",
-      "price": 8500000
-    },
-    {
-      "date": "2026-08-19",
-      "price": 12900000,
-      "is_weekend": true
-    },
-    {
       "date": "2026-08-20",
-      "price": 12900000,
-      "is_weekend": true
+      "price": 13800000,
+      "is_weekend": true,
+      "is_unavailable": true
     },
     {
       "date": "2026-08-21",
-      "price": 8500000
+      "price": 9000000,
+      "discount": 10
     },
     {
       "date": "2026-08-22",
-      "price": 8500000
+      "price": 9000000
     },
     {
       "date": "2026-08-23",
-      "price": 9400000
+      "price": 9900000
     },
     {
       "date": "2026-08-24",
-      "price": 9400000
+      "price": 9900000
     },
     {
       "date": "2026-08-25",
-      "price": 9400000
+      "price": 9900000,
+      "is_unavailable": true
     },
     {
       "date": "2026-08-26",
-      "price": 13800000,
+      "price": 14600000,
       "is_weekend": true
     },
     {
       "date": "2026-08-27",
-      "price": 13800000,
+      "price": 14600000,
       "is_weekend": true
     },
     {
@@ -108,101 +66,103 @@
     },
     {
       "date": "2026-08-31",
-      "price": 9400000
+      "price": 9900000
     },
     {
       "date": "2026-09-01",
-      "price": 9400000
+      "price": 9900000
     },
     {
       "date": "2026-09-02",
-      "price": 13800000,
+      "price": 14600000,
       "is_weekend": true
     },
     {
       "date": "2026-09-03",
-      "price": 13800000,
-      "is_weekend": true
+      "price": 14600000,
+      "is_weekend": true,
+      "is_unavailable": true
     },
     {
       "date": "2026-09-04",
-      "price": 9400000
+      "price": 9900000,
+      "is_unavailable": true
     },
     {
       "date": "2026-09-05",
-      "price": 9400000
+      "price": 9900000
     },
     {
       "date": "2026-09-06",
-      "price": 9400000
+      "price": 9900000
     },
     {
       "date": "2026-09-07",
-      "price": 9400000
+      "price": 9900000
     },
     {
       "date": "2026-09-08",
-      "price": 9400000
+      "price": 9900000
     },
     {
       "date": "2026-09-09",
-      "price": 13800000,
+      "price": 14600000,
       "is_weekend": true
     },
     {
       "date": "2026-09-10",
-      "price": 13800000,
+      "price": 14600000,
       "is_weekend": true
     },
     {
       "date": "2026-09-11",
-      "price": 9400000
+      "price": 9900000
     },
     {
       "date": "2026-09-12",
-      "price": 9400000
+      "price": 9900000
     },
     {
       "date": "2026-09-13",
-      "price": 9400000
+      "price": 9900000
     },
     {
       "date": "2026-09-14",
-      "price": 9400000
+      "price": 9900000
     },
     {
       "date": "2026-09-15",
-      "price": 9400000
+      "price": 9900000
     },
     {
       "date": "2026-09-16",
-      "price": 13800000,
+      "price": 14600000,
       "is_weekend": true
     },
     {
       "date": "2026-09-17",
-      "price": 13800000,
+      "price": 14600000,
       "is_weekend": true
     },
     {
       "date": "2026-09-18",
-      "price": 9400000
+      "price": 9900000
     },
     {
       "date": "2026-09-19",
-      "price": 9400000
+      "price": 9900000
     },
     {
       "date": "2026-09-20",
-      "price": 9400000
+      "price": 9900000
     },
     {
       "date": "2026-09-21",
-      "price": 9400000
+      "price": 9900000
     },
     {
       "date": "2026-09-22",
-      "price": 9400000
+      "price": 9900000
     },
     {
       "date": "2026-09-23",

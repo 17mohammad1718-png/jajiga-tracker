@@ -85,6 +85,13 @@
    "created_at": "2026-03-11"
   },
   {
+   "name": "32925272608141353025769764.jpg",
+   "url": "2026/08/14/32925272608141353025769764.jpg",
+   "preview": "UqKw^Br=D%s:~pRiM{t7t7WBa}kC?bjZRjay",
+   "description": "یخچال",
+   "created_at": "2026-08-14"
+  },
+  {
    "name": "32925272603112159111330009.jpg",
    "url": "2026/03/11/32925272603112159111330009.jpg",
    "preview": "UKHwi5$%bv-:]}WBIVRQ9cWVa#a#~Bs:tQxu",
@@ -230,6 +237,20 @@
    "preview": "ULD]#j?c9F-;R$t7t8t79Exu-;Rj_N%MjGt7",
    "description": "کوچه",
    "created_at": "2026-05-20"
+  },
+  {
+   "name": "32925272608141356351847893.jpg",
+   "url": "2026/08/14/32925272608141356351847893.jpg",
+   "preview": "UzEpcpMxIAx[_4RPMxt7%hWARifkx]axaea_",
+   "description": null,
+   "created_at": "2026-08-14"
+  },
+  {
+   "name": "32925272608141352598121120.jpg",
+   "url": "2026/08/14/32925272608141352598121120.jpg",
+   "preview": "UfJbBExt?G~p~pozofkCs;ofR%Io^+oet6xt",
+   "description": null,
+   "created_at": "2026-08-14"
   }
  ],
  "vr_photo": null,
@@ -325,7 +346,7 @@
   },
   {
    "name": "refrigerator",
-   "description": "شش فوت"
+   "description": "دو عدد"
   },
   {
    "name": "vacuumcleaner",
@@ -354,6 +375,10 @@
   {
    "name": "islamictoilet",
    "description": "با سرویس فرنگی"
+  },
+  {
+   "name": "barbecue",
+   "description": "باربیکیو در حیاط"
   },
   {
    "name": "pool",
@@ -395,8 +420,8 @@
  ],
  "additional_rule": null,
  "cancellation_policy": "hard",
- "min_price": 8500000,
- "extra_price": 1500000,
+ "min_price": 12000000,
+ "extra_price": 2000000,
  "is_clean": false,
  "is_new": false,
  "is_instant": true,
@@ -406,27 +431,23 @@
   {
    "percent": 10,
    "type": "duration",
-   "min_nights": 5
-  },
-  {
-   "percent": 20,
-   "type": "duration",
-   "min_nights": 10
+   "min_nights": 20
   }
  ],
  "current_discount": null,
  "current_discount_percent": 0,
  "ratings": {
-  "count": 15,
-  "total": 5,
-  "accuracy": 5,
-  "communication": 5,
-  "cleanliness": 5,
-  "location": 5,
-  "checkin": 5,
-  "value": 4.8,
+  "count": 17,
+  "total": 4.9,
+  "accuracy": 4.9,
+  "communication": 4.9,
+  "cleanliness": 4.9,
+  "location": 4.9,
+  "checkin": 4.9,
+  "value": 4.6,
   "comments_grouped_by_rating": {
-   "4": 3,
+   "3": 1,
+   "4": 4,
    "5": 12
   },
   "is_recently": true,
@@ -439,9 +460,9 @@
   "gender": "male",
   "description": null,
   "created_at": "2026-03-14",
-  "response_time": 118,
+  "response_time": 142,
   "accept_rate": 100,
-  "host_communication_rate": 5
+  "host_communication_rate": 4.9
  },
  "meta": {
   "title": "کلبه جنگلی استخردار در گونه کلا - ۳ خوابه",

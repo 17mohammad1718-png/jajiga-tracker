@@ -185,7 +185,7 @@
  ],
  "sleep_description": null,
  "guest_number": 4,
- "max_guest_number": 6,
+ "max_guest_number": 4,
  "stays_min": 1,
  "stays_max": null,
  "entrance_time_min": 14,
@@ -285,11 +285,11 @@
  ],
  "additional_rule": null,
  "cancellation_policy": "hard",
- "min_price": 3200000,
+ "min_price": 2900000,
  "extra_price": 400000,
  "is_clean": false,
  "is_new": false,
- "is_instant": true,
+ "is_instant": false,
  "is_plus": true,
  "success_books": 20,
  "discounts": [
@@ -307,16 +307,16 @@
  "current_discount": null,
  "current_discount_percent": 0,
  "ratings": {
-  "count": 18,
+  "count": 19,
   "total": 4.6,
   "accuracy": 4.7,
   "communication": 4.7,
-  "cleanliness": 4.4,
-  "location": 4.4,
+  "cleanliness": 4.3,
+  "location": 4.3,
   "checkin": 4.8,
-  "value": 4.7,
+  "value": 4.5,
   "comments_grouped_by_rating": {
-   "3": 2,
+   "3": 3,
    "4": 8,
    "5": 8
   },
@@ -330,13 +330,13 @@
   "gender": "male",
   "description": "خوب",
   "created_at": "2023-11-23",
-  "response_time": 158,
-  "accept_rate": 89,
+  "response_time": 184,
+  "accept_rate": 87,
   "host_communication_rate": 4.8
  },
  "meta": {
   "title": "کلبه بالکن دار با جکوزی در بابلکنار - قرآن تالار",
-  "description": "اجاره روزانه کلبه روستایی 3 خوابه در بابلکنار، مازندران برای 6 نفر مهمان با قیمت مناسب و ضمانت تحویل جاجیگا.",
+  "description": "اجاره روزانه کلبه روستایی 3 خوابه در بابلکنار، مازندران برای 4 نفر مهمان با قیمت مناسب و ضمانت تحویل جاجیگا.",
   "keywords": null
  },
  "group_rooms": {
@@ -486,7 +486,7 @@
     "discount": null,
     "success_books": 300,
     "rating": {
-     "count": 171,
+     "count": 172,
      "total": 4.7
     },
     "host": {
@@ -544,7 +544,7 @@
     "discount": null,
     "success_books": 50,
     "rating": {
-     "count": 35,
+     "count": 36,
      "total": 4.8
     },
     "host": {
@@ -602,7 +602,7 @@
     "discount": null,
     "success_books": 50,
     "rating": {
-     "count": 18,
+     "count": 21,
      "total": 4.6
     },
     "host": {

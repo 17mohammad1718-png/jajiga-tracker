@@ -368,7 +368,7 @@
  ],
  "additional_rule": "برگزاری مهمانی کوچک و پخش موزیک فقط در داخل کلبه امکان‌پذیر می باشد و ایجاد آلودگی صوتی بعد از ساعت 10 شب در فضای باز ممنوع است.\r\nورود میهمان بیش از تعداد ثبت شده در سند رزرو ممنوع می باشد.\r\nافزودن رنگ‌ یا هر نوع مواد دیگر به استخر ممنوع است.\r\nرعایت شئونات مطابق با قوانین کشور الزامی‌ می باشد.\r\nدر صورت عدم رعایت هرکدام از قوانین، میزبان در هر زمانی نسبت به‌تخلیه اقدام می نماید‌، همچنین در صورت وارد آوردن خسارت به اموال، میزبان خسارت وارده را محاسبه و دریافت می کند.",
  "cancellation_policy": "hard",
- "min_price": 7800000,
+ "min_price": 10000000,
  "extra_price": 250000,
  "is_clean": false,
  "is_new": false,
@@ -387,10 +387,13 @@
    "min_nights": 10
   }
  ],
- "current_discount": null,
- "current_discount_percent": 0,
+ "current_discount": {
+  "percent": 20,
+  "type": "period"
+ },
+ "current_discount_percent": 20,
  "ratings": {
-  "count": 164,
+  "count": 170,
   "total": 4.9,
   "accuracy": 4.9,
   "communication": 5,
@@ -401,7 +404,7 @@
   "comments_grouped_by_rating": {
    "3": 1,
    "4": 14,
-   "5": 31
+   "5": 34
   },
   "is_recently": true,
   "is_bad_host": false
@@ -413,8 +416,8 @@
   "gender": "male",
   "description": null,
   "created_at": "2022-11-06",
-  "response_time": 123,
-  "accept_rate": 88,
+  "response_time": 119,
+  "accept_rate": 86,
   "host_communication_rate": 5
  },
  "meta": {

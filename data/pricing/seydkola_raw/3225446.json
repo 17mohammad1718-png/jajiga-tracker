@@ -257,7 +257,7 @@
  ],
  "additional_rule": null,
  "cancellation_policy": "middle",
- "min_price": 2700000,
+ "min_price": 3700000,
  "extra_price": 750000,
  "is_clean": false,
  "is_new": false,
@@ -268,17 +268,17 @@
  "current_discount": null,
  "current_discount_percent": 0,
  "ratings": {
-  "count": 40,
+  "count": 41,
   "total": 4.9,
   "accuracy": 4.9,
   "communication": 4.9,
   "cleanliness": 4.9,
   "location": 4.8,
   "checkin": 5,
-  "value": 4.7,
+  "value": 4.8,
   "comments_grouped_by_rating": {
    "3": 1,
-   "4": 6,
+   "4": 7,
    "5": 20
   },
   "is_recently": true,
@@ -291,9 +291,9 @@
   "gender": "female",
   "description": "سلام .غلامزاده هستم صاحب کلبه چوبی.امیدوارم تعطیلات و سفر خوب و به یادماندنی رو در کلبه ما تجربه کنید.خوشحال میشم برای اقامتتون کلبه مارو انتخاب کنید",
   "created_at": "2023-10-03",
-  "response_time": 29,
+  "response_time": 24,
   "accept_rate": 100,
-  "host_communication_rate": 4.9
+  "host_communication_rate": 5
  },
  "meta": {
   "title": "کلبه سوئیسی با جکوزی در بابلکنار - سیدکلا",

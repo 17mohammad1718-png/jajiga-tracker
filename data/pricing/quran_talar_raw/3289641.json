@@ -279,18 +279,18 @@
  "current_discount": null,
  "current_discount_percent": 0,
  "ratings": {
-  "count": 18,
+  "count": 21,
   "total": 4.6,
   "accuracy": 4.9,
-  "communication": 4.7,
-  "cleanliness": 4.4,
-  "location": 4.3,
+  "communication": 4.6,
+  "cleanliness": 4.5,
+  "location": 4.4,
   "checkin": 4.8,
   "value": 4.6,
   "comments_grouped_by_rating": {
    "2": 1,
-   "4": 8,
-   "5": 9
+   "4": 10,
+   "5": 10
   },
   "is_recently": true,
   "is_bad_host": false
@@ -302,8 +302,8 @@
   "gender": "male",
   "description": "خوب",
   "created_at": "2023-11-23",
-  "response_time": 159,
-  "accept_rate": 89,
+  "response_time": 187,
+  "accept_rate": 87,
   "host_communication_rate": 4.8
  },
  "meta": {
@@ -402,8 +402,8 @@
     "bedrooms": 3,
     "floor_area": 130,
     "guest_number": 4,
-    "max_guest_number": 6,
-    "min_price": 3200000,
+    "max_guest_number": 4,
+    "min_price": 2900000,
     "invoice": {
      "extra": {
       "count": 0,
@@ -416,7 +416,7 @@
       "amount": 0
      },
      "discounts": [],
-     "final": 3200000,
+     "final": 2900000,
      "prices": [
       1
      ],
@@ -458,7 +458,7 @@
     "discount": null,
     "success_books": 300,
     "rating": {
-     "count": 171,
+     "count": 172,
      "total": 4.7
     },
     "host": {
@@ -516,7 +516,7 @@
     "discount": null,
     "success_books": 50,
     "rating": {
-     "count": 35,
+     "count": 36,
      "total": 4.8
     },
     "host": {
@@ -565,12 +565,12 @@
     "bedrooms": 3,
     "floor_area": 130,
     "guest_number": 4,
-    "max_guest_number": 6,
+    "max_guest_number": 4,
     "is_clean": false,
     "is_new": false,
-    "is_instant": true,
+    "is_instant": false,
     "is_plus": true,
-    "min_price": 3200000,
+    "min_price": 2900000,
     "discount": null,
     "success_books": 20,
     "rating": {
@@ -593,9 +593,9 @@
       "amount": 0
      },
      "discounts": [],
-     "final": 3200000,
+     "final": 2900000,
      "prices": {
-      "3200000": 1
+      "2900000": 1
      },
      "is_bill": false
     },
@@ -610,7 +610,6 @@
      ]
     },
     "properties": [
-     "is_instant",
      "is_plus"
     ]
    }

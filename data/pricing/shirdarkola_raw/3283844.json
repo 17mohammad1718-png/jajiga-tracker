@@ -227,7 +227,7 @@
  "sleep_description": "مهمانان بیشتر از ۶ نفر امکانات خواب همراه داشته باشند.",
  "guest_number": 4,
  "max_guest_number": 8,
- "stays_min": 2,
+ "stays_min": 1,
  "stays_max": null,
  "entrance_time_min": 14,
  "entrance_time_max": 0,

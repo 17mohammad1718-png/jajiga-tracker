@@ -312,18 +312,7 @@
  "is_instant": false,
  "is_plus": false,
  "success_books": 0,
- "discounts": [
-  {
-   "percent": 10,
-   "type": "duration",
-   "min_nights": 2
-  },
-  {
-   "percent": 10,
-   "type": "duration",
-   "min_nights": 7
-  }
- ],
+ "discounts": [],
  "current_discount": null,
  "current_discount_percent": 0,
  "ratings": {

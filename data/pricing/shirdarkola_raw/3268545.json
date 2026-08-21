@@ -245,7 +245,7 @@
  ],
  "additional_rule": "به فرد و جمع های مجردی اجاره داده نمی شود.",
  "cancellation_policy": "middle",
- "min_price": 1600000,
+ "min_price": 2200000,
  "extra_price": 200000,
  "is_clean": false,
  "is_new": false,
@@ -267,21 +267,21 @@
  "current_discount": null,
  "current_discount_percent": 0,
  "ratings": {
-  "count": 4,
-  "total": 3.8,
-  "accuracy": 4.3,
-  "communication": 4.5,
-  "cleanliness": 2.8,
-  "location": 4.3,
-  "checkin": 4,
-  "value": 3,
+  "count": 5,
+  "total": 4,
+  "accuracy": 4.4,
+  "communication": 4.6,
+  "cleanliness": 3.2,
+  "location": 4.4,
+  "checkin": 4.2,
+  "value": 3.4,
   "comments_grouped_by_rating": {
    "2": 1,
    "4": 2,
-   "5": 1
+   "5": 2
   },
   "is_recently": false,
-  "is_bad_host": true
+  "is_bad_host": false
  },
  "host": {
   "id": 2548791,
@@ -290,9 +290,9 @@
   "gender": "male",
   "description": "مهمان نواز و مسئولیت پذیر",
   "created_at": "2025-06-08",
-  "response_time": 54,
-  "accept_rate": 73,
-  "host_communication_rate": 4.3
+  "response_time": 56,
+  "accept_rate": 75,
+  "host_communication_rate": 4.5
  },
  "meta": {
   "title": "اجاره خانه روستایی در بابلکنار - شیردارکلا",

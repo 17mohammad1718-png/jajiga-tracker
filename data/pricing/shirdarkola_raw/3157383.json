@@ -394,7 +394,7 @@
  ],
  "sleep_description": "بالشت 15 عدد و تشک 3 عدد و 8 عدد پتو دو نفره در ویلا موجود است",
  "guest_number": 6,
- "max_guest_number": 10,
+ "max_guest_number": 15,
  "stays_min": 1,
  "stays_max": null,
  "entrance_time_min": 15,
@@ -498,6 +498,10 @@
   {
    "id": 52,
    "name": "خوش منظره"
+  },
+  {
+   "id": 71,
+   "name": "مهمان نواز"
   }
  ],
  "additional_feature": "تخت سنتی، تاب ریلکسی، دو پنکه ایستاده، تردمیل در اقامتگاه موجود است.",
@@ -514,7 +518,7 @@
  "is_clean": false,
  "is_new": false,
  "is_instant": false,
- "is_plus": false,
+ "is_plus": true,
  "success_books": 20,
  "discounts": [
   {
@@ -526,18 +530,18 @@
  "current_discount": null,
  "current_discount_percent": 0,
  "ratings": {
-  "count": 24,
-  "total": 4.2,
-  "accuracy": 4,
+  "count": 25,
+  "total": 4.6,
+  "accuracy": 4.8,
   "communication": 5,
-  "cleanliness": 3.4,
+  "cleanliness": 4.2,
   "location": 4.8,
   "checkin": 4.8,
-  "value": 3.2,
+  "value": 4,
   "comments_grouped_by_rating": {
-   "3": 2,
+   "3": 1,
    "4": 2,
-   "5": 1
+   "5": 2
   },
   "is_recently": true,
   "is_bad_host": false
@@ -549,13 +553,13 @@
   "gender": "male",
   "description": "عاشق سفر و طبیعت گردی هستم",
   "created_at": "2021-06-07",
-  "response_time": 138,
-  "accept_rate": 86,
+  "response_time": 142,
+  "accept_rate": 82,
   "host_communication_rate": 4.9
  },
  "meta": {
   "title": "ویلا با جکوزی در سوادکوه - شیردارکلا",
-  "description": "اجاره روزانه ویلا جنگلی 3 خوابه در بابلکنار، مازندران برای 10 نفر مهمان با قیمت مناسب و ضمانت تحویل جاجیگا.",
+  "description": "اجاره روزانه ویلا جنگلی 3 خوابه در بابلکنار، مازندران برای 15 نفر مهمان با قیمت مناسب و ضمانت تحویل جاجیگا.",
   "keywords": "اجاره آپارتمان مبله در سوادکوه,اجاره آپارتمان مبله در مازندران,جنگلی,روستایی,اجاره آپارتمان مبله در شمال,اجاره روزانه,اجاره آنلاین ویلا"
  },
  "group_rooms": {

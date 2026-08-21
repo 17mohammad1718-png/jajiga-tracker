@@ -174,12 +174,12 @@
   }
  ],
  "sleep_description": null,
- "guest_number": 4,
+ "guest_number": 2,
  "max_guest_number": 6,
  "stays_min": 1,
  "stays_max": null,
  "entrance_time_min": 14,
- "entrance_time_max": 22,
+ "entrance_time_max": 23,
  "leaving_time": 12,
  "features": [
   {
@@ -251,7 +251,7 @@
  ],
  "additional_rule": "ارائه مدرک محرمیت و مدرک شناسایی معتبر الزامی می باشد.",
  "cancellation_policy": "middle",
- "min_price": 2000000,
+ "min_price": 2500000,
  "extra_price": 500000,
  "is_clean": false,
  "is_new": false,
@@ -292,7 +292,7 @@
   "gender": "male",
   "description": "بهادر هستم ، لیسانس مهندسی صنایع و ارشد مدیریت\nعاشق طبیعت و جنگل",
   "created_at": "2021-04-26",
-  "response_time": 562,
+  "response_time": 109,
   "accept_rate": 8,
   "host_communication_rate": null
  },

@@ -433,17 +433,10 @@
    "percent": 10,
    "type": "duration",
    "min_nights": 10
-  },
-  {
-   "percent": 10,
-   "type": "today_discount"
   }
  ],
- "current_discount": {
-  "percent": 10,
-  "type": "today_discount"
- },
- "current_discount_percent": 10,
+ "current_discount": null,
+ "current_discount_percent": 0,
  "ratings": {
   "count": 3,
   "total": 4.3,
@@ -466,8 +459,8 @@
   "gender": "female",
   "description": null,
   "created_at": "2026-06-02",
-  "response_time": 553,
-  "accept_rate": 75,
+  "response_time": 533,
+  "accept_rate": 70,
   "host_communication_rate": 4.7
  },
  "meta": {
@@ -487,7 +480,7 @@
     "floor_area": 75,
     "guest_number": 4,
     "max_guest_number": 4,
-    "min_price": 3000000,
+    "min_price": 3400000,
     "invoice": {
      "extra": {
       "count": 0,
@@ -500,7 +493,7 @@
       "amount": 0
      },
      "discounts": [],
-     "final": 3000000,
+     "final": 3400000,
      "prices": [
       1
      ],
@@ -538,7 +531,7 @@
     "is_new": false,
     "is_instant": false,
     "is_plus": false,
-    "min_price": 3000000,
+    "min_price": 3400000,
     "discount": null,
     "success_books": 0,
     "rating": {
@@ -561,9 +554,9 @@
       "amount": 0
      },
      "discounts": [],
-     "final": 3000000,
+     "final": 3400000,
      "prices": {
-      "3000000": 1
+      "3400000": 1
      },
      "is_bill": false
     },

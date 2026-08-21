@@ -5,7 +5,7 @@
  "url": "/room/3297585",
  "short_url": "/r/3ed5",
  "title": "کلبه سوئیسی در بابلکنار - سیدکلا",
- "description": "این کلبه سوئیسی یکخوابه در روستای سیدکلا واقع شده که تا شهر بابلکنار حدود ۵ کیلومتر فاصله دارد.\nطراحی کلبه به گونه ای است که با دسترسی حدود ۱۰ پله در طبقه همکف دارای پذیرایی، آشپزخانه، ایوان، حمام و سرویس فرنگی با سرویس ایرانی می باشد و در طبقه بالا یک اتاق خواب فاقد درب و بالکن قرار دارد، همچنین تنها ورودی بالکن از یک اتاق خواب تعبیه شده است.\nمحوطه حیاط با دیوار محصور شده، گفتنی است ساختمان فاقد گاز کشی شهری می باشد و سوخت مصرفی از طریق کپسول گاز مایع تامین می شود، همچنین آب لوله کشی اقامتگاه فاقد کیفیت لازم جهت آشامیدن است، لذا توصیه می شود مهمانان گرامی با خود آب معدنی همراه داشته باشند.\nبه منظور تهیه مایحتاج روزانه، دسترسی به سوپرمارکت و نانوایی با پیمودن مسافتی در حدود ۴۰۰ متر ممکن است.",
+ "description": "این کلبه سوئیسی یکخوابه در روستای سیدکلا واقع شده که تا شهر بابلکنار حدود ۵ کیلومتر فاصله دارد.\nطراحی کلبه به گونه ای است که با دسترسی حدود ۱۰ پله در طبقه همکف دارای پذیرایی، آشپزخانه، ایوان، حمام و سرویس فرنگی با سرویس ایرانی می باشد و در طبقه بالا یک اتاق خواب فاقد درب و بالکن قرار دارد، همچنین تنها ورودی بالکن از یک اتاق خواب تعبیه شده است.\nمحوطه حیاط با دیوار محصور شده، گفتنی است ساختمان فاقد گاز کشی شهری می باشد و سوخت مصرفی از طریق کپسول گاز مایع تامین می شود، همچنین آب لوله کشی اقامتگاه فاقد کیفیت لازم جهت آشامیدن است، لذا توصیه می شود مهمانان گرامی با خود آب معدنی همراه داشته باشند.\nبه منظور تهیه مایحتاج روزانه، دسترسی به سوپرمارکت و نانوایی با پیمودن مسافتی در حدود ۴۰۰ متر ممکن است، در ضمن پیک هایپرمارکت و رستوران نیز به صورت رایگان می باشد.\nپوشش شبکه تلفن همراه برای دو اپراتور ایرانسل و همراه اول در مکالمه خوب و دسترسی به اینترنت به صورت ۴g می باشد.",
  "geo": {
   "lat": 36.3066,
   "lng": 52.7858
@@ -22,25 +22,11 @@
  },
  "pictures": [
   {
-   "name": "32975852604091010315695342.jpg",
-   "url": "2026/04/09/32975852604091010315695342.jpg",
+   "name": "32975852608022331494187167.jpg",
+   "url": "2026/08/02/32975852608022331494187167.jpg",
    "preview": "U}B;^exZs.x_yGt6s.tTo$tRofj]x^o#ofkC",
-   "description": null,
-   "created_at": "2026-04-09"
-  },
-  {
-   "name": "32975852605010854555514278.jpg",
-   "url": "2026/05/01/32975852605010854555514278.jpg",
-   "preview": "UxDc{.x^WAxt?wxvWBt8%Pt8WEkE%it9aeog",
-   "description": "بالکن",
-   "created_at": "2026-05-01"
-  },
-  {
-   "name": "32975852606012159356327437.jpg",
-   "url": "2026/06/01/32975852606012159356327437.jpg",
-   "preview": "U~FsPux]WBxu?wxvayt8.9t8ayt7?bt7ayt7",
-   "description": null,
-   "created_at": "2026-06-01"
+   "description": "نمای کلبه",
+   "created_at": "2026-08-02"
   },
   {
    "name": "32975852606012159065283485.jpg",
@@ -50,32 +36,39 @@
    "created_at": "2026-06-01"
   },
   {
-   "name": "32975852606012159153266099.jpg",
-   "url": "2026/06/01/32975852606012159153266099.jpg",
-   "preview": "U^F6a@tRWBxu?wt8axt8%Ot8fPog%Mt7fQof",
+   "name": "32975852606012159272829962.jpg",
+   "url": "2026/06/01/32975852606012159272829962.jpg",
+   "preview": "UyD^AZtRbFx[?wt8a#t8-?ogWXog.8ozayt7",
    "description": null,
    "created_at": "2026-06-01"
   },
   {
-   "name": "32975852604042225392255656.jpg",
-   "url": "2026/04/04/32975852604042225392255656.jpg",
-   "preview": "UtI4|g-:t6%1~9-otRxZ?FxtWVs.?aofV@of",
+   "name": "32975852606012159356327437.jpg",
+   "url": "2026/06/01/32975852606012159356327437.jpg",
+   "preview": "U~FsPux]WBxu?wxvayt8.9t8ayt7?bt7ayt7",
+   "description": "چشم انداز ایوان",
+   "created_at": "2026-06-01"
+  },
+  {
+   "name": "32975852608091618283927480.jpg",
+   "url": "2026/08/09/32975852608091618283927480.jpg",
+   "preview": "U[Gv04.8agxu_4-;jat8?b%Mj?t7?axuaxt6",
+   "description": "چشم انداز بالکن",
+   "created_at": "2026-08-09"
+  },
+  {
+   "name": "32975852608091618001381246.jpg",
+   "url": "2026/08/09/32975852608091618001381246.jpg",
+   "preview": "USHK%#^*4nMw~BozM{V?wbWBxZt6~8%0WDs:",
    "description": "پذیرایی",
-   "created_at": "2026-04-04"
+   "created_at": "2026-08-09"
   },
   {
-   "name": "32975852604221114162649748.jpg",
-   "url": "2026/04/22/32975852604221114162649748.jpg",
-   "preview": "UJB:dC^+Mww[~WxuRPxZxZoftRxu=|xukXoz",
-   "description": null,
-   "created_at": "2026-04-22"
-  },
-  {
-   "name": "32975852606012157364981303.jpg",
-   "url": "2026/06/01/32975852606012157364981303.jpg",
-   "preview": "UUE.kSxuRk%2^ii^j]j?-:jEj?ay~pt6f5t6",
-   "description": null,
-   "created_at": "2026-06-01"
+   "name": "32975852608091618055853155.jpg",
+   "url": "2026/08/09/32975852608091618055853155.jpg",
+   "preview": "UfHnQkxuV?%0==V@xt%1$|jExtxt~Vt7WBxZ",
+   "description": "پذیرایی",
+   "created_at": "2026-08-09"
   },
   {
    "name": "32975852604042225377349532.jpg",
@@ -92,53 +85,39 @@
    "created_at": "2026-04-04"
   },
   {
-   "name": "32975852604042225411791035.jpg",
-   "url": "2026/04/04/32975852604042225411791035.jpg",
-   "preview": "UVE{8{.T.9?c~p%gx^%M?GxtkCt7^*xuo#xu",
+   "name": "32975852608021858537248029.jpg",
+   "url": "2026/08/02/32975852608021858537248029.jpg",
+   "preview": "UcE2tTx]xZ-o~V%2t6xu-;xuogt7-po#ozt7",
    "description": "اتاق خواب",
-   "created_at": "2026-04-04"
+   "created_at": "2026-08-02"
   },
   {
-   "name": "32975852606012157436394747.jpg",
-   "url": "2026/06/01/32975852606012157436394747.jpg",
-   "preview": "UQD+}9%grp-5~pt6n%xt%MoKtRtR?Ht7tRxt",
-   "description": null,
-   "created_at": "2026-06-01"
+   "name": "32975852608091617556643364.jpg",
+   "url": "2026/08/09/32975852608091617556643364.jpg",
+   "preview": "UIC?J*~qaKVW~Vx]NGROxtS2RkjE?Gt6oJs-",
+   "description": "اتاق خواب",
+   "created_at": "2026-08-09"
   },
   {
-   "name": "32975852604042225321853599.jpg",
-   "url": "2026/04/04/32975852604042225321853599.jpg",
-   "preview": "URE.qh$eMc~B~WjEMx-pt7R*Rkt7?as.V@xZ",
-   "description": null,
-   "created_at": "2026-04-04"
+   "name": "32975852608091618231497009.jpg",
+   "url": "2026/08/09/32975852608091618231497009.jpg",
+   "preview": "ULBzIJ.8R-%M~qx]Rkt7-;oyRjWB_3tRRjof",
+   "description": "سرویس ایرانی و فرنگی",
+   "created_at": "2026-08-09"
   },
   {
-   "name": "32975852604042225274213457.jpg",
-   "url": "2026/04/04/32975852604042225274213457.jpg",
-   "preview": "UQDvTO?bRjxu~qxuNGkC-;ofNGfk_3t7Rjt6",
-   "description": "سرویس",
-   "created_at": "2026-04-04"
+   "name": "32975852608091618248977366.jpg",
+   "url": "2026/08/09/32975852608091618248977366.jpg",
+   "preview": "ULB|EH~V-p%M_3?H%Lxtxuxuxat6?axts:t7",
+   "description": "روشویی و حمام",
+   "created_at": "2026-08-09"
   },
   {
-   "name": "32975852604042225331200868.jpg",
-   "url": "2026/04/04/32975852604042225331200868.jpg",
-   "preview": "UGB|B7-:tR-;~qxukCt7%Mt7WCfk_3xtayt7",
+   "name": "32975852608091618265036324.jpg",
+   "url": "2026/08/09/32975852608091618265036324.jpg",
+   "preview": "UIBzFC%Lt7-;~qt7f6xu-;oeWBt7_3ofWBxt",
    "description": "حمام",
-   "created_at": "2026-04-04"
-  },
-  {
-   "name": "32975852604091035325873439.jpg",
-   "url": "2026/04/09/32975852604091035325873439.jpg",
-   "preview": "UOJu4A~pt8~p?ubEWBoe4mIot6Rj~otQxuxu",
-   "description": "حیاط و پارکینگ",
-   "created_at": "2026-04-09"
-  },
-  {
-   "name": "32975852604091035305484793.jpg",
-   "url": "2026/04/09/32975852604091035305484793.jpg",
-   "preview": "USBC}b^j~V^*?bxa?H-p-paexut7-ps-%2xa",
-   "description": "بالکن",
-   "created_at": "2026-04-09"
+   "created_at": "2026-08-09"
   },
   {
    "name": "32975852606012157395933985.jpg",
@@ -148,18 +127,67 @@
    "created_at": "2026-06-01"
   },
   {
-   "name": "32975852604221114223461693.jpg",
-   "url": "2026/04/22/32975852604221114223461693.jpg",
-   "preview": "U^Gv9Qx]ayxu_4xuj?t8?ct7oet7-;t7j[t7",
-   "description": "چشم انداز",
-   "created_at": "2026-04-22"
+   "name": "32975852608091617511968202.jpg",
+   "url": "2026/08/09/32975852608091617511968202.jpg",
+   "preview": "UiHVCzV@9Ft6~qWBMyof?cWAM{ai~qWAIUWB",
+   "description": "بالکن",
+   "created_at": "2026-08-09"
   },
   {
-   "name": "32975852605010854585862486.jpg",
-   "url": "2026/05/01/32975852605010854585862486.jpg",
-   "preview": "U@FPmRxufjxu_4t7aytR?IoMWCt7?Hofayt7",
-   "description": "چشم انداز",
-   "created_at": "2026-05-01"
+   "name": "32975852604091035305484793.jpg",
+   "url": "2026/04/09/32975852604091035305484793.jpg",
+   "preview": "USBC}b^j~V^*?bxa?H-p-paexut7-ps-%2xa",
+   "description": "بالکن",
+   "created_at": "2026-04-09"
+  },
+  {
+   "name": "32975852608021901573275771.jpg",
+   "url": "2026/08/02/32975852608021901573275771.jpg",
+   "preview": "UqD,+HtkbYx[.To#j[o#%PkEahog.9kDWVt7",
+   "description": "چشم انداز ایوان",
+   "created_at": "2026-08-02"
+  },
+  {
+   "name": "32975852608091618192675113.jpg",
+   "url": "2026/08/09/32975852608091618192675113.jpg",
+   "preview": "UcC@NU%ga$x[.To$a#tRx{bdbGog.9o#a{og",
+   "description": "چشم انداز بالکن",
+   "created_at": "2026-08-09"
+  },
+  {
+   "name": "32975852606012159153266099.jpg",
+   "url": "2026/06/01/32975852606012159153266099.jpg",
+   "preview": "U^F6a@tRWBxu?wt8axt8%Ot8fPog%Mt7fQof",
+   "description": "چشم انداز بالکن",
+   "created_at": "2026-06-01"
+  },
+  {
+   "name": "32975852608091618156517957.jpg",
+   "url": "2026/08/09/32975852608091618156517957.jpg",
+   "preview": "UwE:Va%Mjbxu?wxuj@t8%iogjsog-=ogoLt7",
+   "description": "چشم انداز بالکن",
+   "created_at": "2026-08-09"
+  },
+  {
+   "name": "32975852608021901557665145.jpg",
+   "url": "2026/08/02/32975852608021901557665145.jpg",
+   "preview": "UJF=mrWGt6?ab_9bR*ofE1ofWBR*~V%Ls:t7",
+   "description": "نمای حیاط از بالکن",
+   "created_at": "2026-08-02"
+  },
+  {
+   "name": "32975852608141733128342065.jpg",
+   "url": "2026/08/14/32975852608141733128342065.jpg",
+   "preview": "U}IO^Yo#.8?c_4og%N%gx]t6WUoz%NozfPog",
+   "description": null,
+   "created_at": "2026-08-14"
+  },
+  {
+   "name": "32975852608091618316911758.jpg",
+   "url": "2026/08/09/32975852608091618316911758.jpg",
+   "preview": "UmG9BV.8xu-;?dtSj[xu.8tRM{j]_Nx]Rjoz",
+   "description": "دروازه ورودی",
+   "created_at": "2026-08-09"
   },
   {
    "name": "32975852604091012321843872.jpg",
@@ -169,25 +197,18 @@
    "created_at": "2026-04-09"
   },
   {
-   "name": "32975852604042225282665864.jpg",
-   "url": "2026/04/04/32975852604042225282665864.jpg",
-   "preview": "UuHx.{-oj[?b~q%Lof%M%M%MtRs:-;xut7of",
-   "description": "نمای کلبه",
-   "created_at": "2026-04-04"
+   "name": "32975852608021902007468636.jpg",
+   "url": "2026/08/02/32975852608021902007468636.jpg",
+   "preview": "U*G9Nm%Magxu_4xujbxu?ct8a{t7?bt7WUoz",
+   "description": "مسیر دسترسی",
+   "created_at": "2026-08-02"
   },
   {
-   "name": "32975852604111142089404599.jpg",
-   "url": "2026/04/11/32975852604111142089404599.jpg",
-   "preview": "UiGbxF_4tSxu?w%hxvt7%hx^xuof_3-=t8j?",
-   "description": null,
-   "created_at": "2026-04-11"
-  },
-  {
-   "name": "32975852606012159272829962.jpg",
-   "url": "2026/06/01/32975852606012159272829962.jpg",
-   "preview": "UyD^AZtRbFx[?wt8a#t8-?ogWXog.8ozayt7",
-   "description": null,
-   "created_at": "2026-06-01"
+   "name": "32975852605010854585862486.jpg",
+   "url": "2026/05/01/32975852605010854585862486.jpg",
+   "preview": "U@FPmRxufjxu_4t7aytR?IoMWCt7?Hofayt7",
+   "description": "چشم انداز",
+   "created_at": "2026-05-01"
   }
  ],
  "vr_photo": null,
@@ -229,7 +250,7 @@
  "stays_min": 1,
  "stays_max": null,
  "entrance_time_min": 14,
- "entrance_time_max": 17,
+ "entrance_time_max": 16,
  "leaving_time": 12,
  "features": [
   {
@@ -243,6 +264,10 @@
   {
    "name": "water",
    "description": "منبع غیر قابل شرب، دارای منبع ذخیره 2000 لیتری"
+  },
+  {
+   "name": "tv",
+   "description": "ال ای دی 32 اینچ"
   },
   {
    "name": "heating",
@@ -273,6 +298,10 @@
    "description": "7 نفره"
   },
   {
+   "name": "drawer",
+   "description": null
+  },
+  {
    "name": "parking",
    "description": "روباز برای سه خودرو در حیاط"
   },
@@ -293,7 +322,16 @@
    "description": "در پذیریی"
   }
  ],
- "properties": [],
+ "properties": [
+  {
+   "id": 52,
+   "name": "خوش منظره"
+  },
+  {
+   "id": 71,
+   "name": "مهمان نواز"
+  }
+ ],
  "additional_feature": null,
  "additional_safety": null,
  "rules": [
@@ -303,13 +341,13 @@
  ],
  "additional_rule": "به جمع مجرد آقایان اجاره داده نمی شود.",
  "cancellation_policy": "middle",
- "min_price": 2750000,
- "extra_price": 500000,
+ "min_price": 2400000,
+ "extra_price": 750000,
  "is_clean": false,
  "is_new": false,
  "is_instant": true,
- "is_plus": false,
- "success_books": 5,
+ "is_plus": true,
+ "success_books": 10,
  "discounts": [
   {
    "percent": 10,
@@ -323,12 +361,12 @@
   }
  ],
  "current_discount": {
-  "percent": 10,
+  "percent": 20,
   "type": "period"
  },
- "current_discount_percent": 10,
+ "current_discount_percent": 20,
  "ratings": {
-  "count": 4,
+  "count": 9,
   "total": 5,
   "accuracy": 5,
   "communication": 5,
@@ -337,21 +375,21 @@
   "checkin": 5,
   "value": 4.8,
   "comments_grouped_by_rating": {
-   "4": 1,
-   "5": 3
+   "4": 2,
+   "5": 7
   },
-  "is_recently": false,
+  "is_recently": true,
   "is_bad_host": false
  },
  "host": {
   "id": 3024941,
   "name": "محدثه",
-  "avatar": "2026/04/06/2604062146213024941.jpg",
+  "avatar": "2026/08/14/2608141712413024941.jpg",
   "gender": "female",
   "description": "امیدوارم که تجربه ی خوبی رو در کنار ما داشته باشید",
   "created_at": "2026-04-08",
-  "response_time": 581,
-  "accept_rate": 86,
+  "response_time": 307,
+  "accept_rate": 88,
   "host_communication_rate": 5
  },
  "meta": {

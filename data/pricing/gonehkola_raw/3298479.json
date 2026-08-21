@@ -245,17 +245,17 @@
  "current_discount": null,
  "current_discount_percent": 0,
  "ratings": {
-  "count": 3,
-  "total": 4.8,
-  "accuracy": 4.7,
-  "communication": 4.7,
+  "count": 4,
+  "total": 4.9,
+  "accuracy": 4.8,
+  "communication": 4.8,
   "cleanliness": 5,
   "location": 5,
   "checkin": 5,
-  "value": 4.7,
+  "value": 4.8,
   "comments_grouped_by_rating": {
    "4": 1,
-   "5": 2
+   "5": 3
   },
   "is_recently": false,
   "is_bad_host": false
@@ -267,9 +267,9 @@
   "gender": "male",
   "description": "خوش اخلاق خوش برخورد معاشرتی مهمان نواز شوخ طبع",
   "created_at": "2026-04-12",
-  "response_time": 260,
-  "accept_rate": 89,
-  "host_communication_rate": 4.7
+  "response_time": 418,
+  "accept_rate": 80,
+  "host_communication_rate": 4.8
  },
  "meta": {
   "title": "کلبه سوئیسی در بابلکنار - گونه کلا",

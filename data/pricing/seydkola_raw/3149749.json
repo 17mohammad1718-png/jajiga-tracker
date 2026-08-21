@@ -346,14 +346,14 @@
   "total": 4.6,
   "accuracy": 4.9,
   "communication": 4.6,
-  "cleanliness": 4.3,
+  "cleanliness": 4.1,
   "location": 4.6,
   "checkin": 5,
-  "value": 4.5,
+  "value": 4.4,
   "comments_grouped_by_rating": {
    "3": 1,
    "4": 5,
-   "5": 2
+   "5": 1
   },
   "is_recently": true,
   "is_bad_host": false
@@ -365,7 +365,7 @@
   "gender": "male",
   "description": "مالک اقامتگاه کیمه",
   "created_at": "2019-12-09",
-  "response_time": 94,
+  "response_time": 117,
   "accept_rate": 98,
   "host_communication_rate": 4.5
  },
@@ -442,7 +442,7 @@
     "success_books": 50,
     "rating": {
      "count": 28,
-     "total": 4.5
+     "total": 4.4
     },
     "host": {
      "id": 1197838,

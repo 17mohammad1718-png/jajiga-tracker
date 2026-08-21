@@ -71,6 +71,20 @@
    "created_at": "2026-05-10"
   },
   {
+   "name": "32735632608021224514966093.jpg",
+   "url": "2026/08/02/32735632608021224514966093.jpg",
+   "preview": "UfECXk~p.7x[-p%LofWBjFWBRjRj%2t7ozkC",
+   "description": "پذیرایی",
+   "created_at": "2026-08-02"
+  },
+  {
+   "name": "32735632608021224595888374.jpg",
+   "url": "2026/08/02/32735632608021224595888374.jpg",
+   "preview": "USG*NP-;e.?HvfRikDRjH?nhs+Mx~Cxunixa",
+   "description": "پذیرایی",
+   "created_at": "2026-08-02"
+  },
+  {
    "name": "32735632605101729391305406.jpg",
    "url": "2026/05/10/32735632605101729391305406.jpg",
    "preview": "UGC=@..9%N^*m-Eioyi_Dh9FMwR5~As,ni%1",
@@ -85,11 +99,39 @@
    "created_at": "2026-05-10"
   },
   {
+   "name": "32735632608021225071869058.jpg",
+   "url": "2026/08/02/32735632608021225071869058.jpg",
+   "preview": "URExt--Vnj-pZ$JVX9r=Q,RNoIs:~B$Ls9tR",
+   "description": "جوزی",
+   "created_at": "2026-08-02"
+  },
+  {
    "name": "32735632605101726379149874.jpg",
    "url": "2026/05/10/32735632605101726379149874.jpg",
    "preview": "USDb=:~ptmx^xCRjE1D*xDoJWBRj^*-:xvxu",
    "description": "آشپزخانه",
    "created_at": "2026-05-10"
+  },
+  {
+   "name": "32735632608021220332472246.jpg",
+   "url": "2026/08/02/32735632608021220332472246.jpg",
+   "preview": "UcC~SC^%%1$%~B-:t7t6?G%Lf,of?G%2kCoe",
+   "description": "لوازم اشپزخانه",
+   "created_at": "2026-08-02"
+  },
+  {
+   "name": "32735632608021221477668846.jpg",
+   "url": "2026/08/02/32735632608021221477668846.jpg",
+   "preview": "UbFE=WNfOF-:~AD*IVxY={RPNGkB?Gt7X9o#",
+   "description": "لوازم اشپزخانه",
+   "created_at": "2026-08-02"
+  },
+  {
+   "name": "32735632608021219551106895.jpg",
+   "url": "2026/08/02/32735632608021219551106895.jpg",
+   "preview": "UQDb=??vI[w^~V%MNHnN?G%MShem~B-:S$n$",
+   "description": "لوازم اشپزخانه",
+   "created_at": "2026-08-02"
   },
   {
    "name": "32735632605112045469056714.jpg",
@@ -195,6 +237,27 @@
    "preview": "UHEMN=~kIl~Ux@k9%1-n9Zai%MRj_1%KV@WC",
    "description": "حیاط",
    "created_at": "2026-05-10"
+  },
+  {
+   "name": "32735632608021618427933937.jpg",
+   "url": "2026/08/02/32735632608021618427933937.jpg",
+   "preview": "UkFF~W-;IUWSXRf,oMWAt9WZjaoL_NxvRiae",
+   "description": null,
+   "created_at": "2026-08-02"
+  },
+  {
+   "name": "32735632608021618405471321.jpg",
+   "url": "2026/08/02/32735632608021618405471321.jpg",
+   "preview": "UuF~p%xajF%M%Naeaeoz%NWBWBay_4ayV@og",
+   "description": null,
+   "created_at": "2026-08-02"
+  },
+  {
+   "name": "32735632608021618389501592.jpg",
+   "url": "2026/08/02/32735632608021618389501592.jpg",
+   "preview": "UnDmgb%gITRitSW?aejYx^bcWAof_4x]RPax",
+   "description": null,
+   "created_at": "2026-08-02"
   }
  ],
  "vr_photo": null,
@@ -323,7 +386,7 @@
  "rules": [],
  "additional_rule": null,
  "cancellation_policy": "middle",
- "min_price": 2350000,
+ "min_price": 2500000,
  "extra_price": 500000,
  "is_clean": false,
  "is_new": false,
@@ -340,17 +403,10 @@
    "percent": 30,
    "type": "duration",
    "min_nights": 15
-  },
-  {
-   "percent": 10,
-   "type": "tomorrow_discount"
   }
  ],
- "current_discount": {
-  "percent": 10,
-  "type": "today_discount"
- },
- "current_discount_percent": 10,
+ "current_discount": null,
+ "current_discount_percent": 0,
  "ratings": {
   "count": 4,
   "total": 3.6,
@@ -376,8 +432,8 @@
   "gender": "male",
   "description": "هشت سال سابقه مدیریت اقامتگاه دارم تیم نظافت دارم",
   "created_at": "2026-05-11",
-  "response_time": 510,
-  "accept_rate": 80,
+  "response_time": 527,
+  "accept_rate": 73,
   "host_communication_rate": 4
  },
  "meta": {

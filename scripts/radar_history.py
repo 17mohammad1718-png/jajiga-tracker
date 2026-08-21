@@ -153,6 +153,8 @@ def process_snapshot(conn, fn, snap_date):
             if dstr == artifact_day:
                 continue  # آرتیفکت API — نادیده
             status = "booked" if night.get("is_unavailable") else "free"
+            if night.get("is_manual_block"):
+                status = "blocked"
             cur = conn.execute(
                 "SELECT 1 FROM days WHERE room_id=? AND date=?", (rid, dstr))
             is_new = cur.fetchone() is None

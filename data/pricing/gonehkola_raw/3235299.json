@@ -302,7 +302,7 @@
  ],
  "additional_rule": "پذیرش فقط بصورت خانوادگی می باشد.\nهمراه داشتن مدارک محرمیت الزامی است.",
  "cancellation_policy": "middle",
- "min_price": 1800000,
+ "min_price": 1900000,
  "extra_price": 300000,
  "is_clean": false,
  "is_new": false,
@@ -324,18 +324,18 @@
  "current_discount": null,
  "current_discount_percent": 0,
  "ratings": {
-  "count": 35,
-  "total": 4.8,
-  "accuracy": 4.9,
-  "communication": 4.7,
-  "cleanliness": 4.5,
-  "location": 4.8,
+  "count": 38,
+  "total": 4.7,
+  "accuracy": 4.8,
+  "communication": 4.5,
+  "cleanliness": 4.3,
+  "location": 4.9,
   "checkin": 5,
   "value": 4.7,
   "comments_grouped_by_rating": {
    "3": 1,
-   "4": 11,
-   "5": 14
+   "4": 12,
+   "5": 13
   },
   "is_recently": true,
   "is_bad_host": false
@@ -347,9 +347,9 @@
   "gender": "male",
   "description": null,
   "created_at": "2024-05-21",
-  "response_time": 283,
-  "accept_rate": 91,
-  "host_communication_rate": 4.8
+  "response_time": 277,
+  "accept_rate": 93,
+  "host_communication_rate": 4.7
  },
  "meta": {
   "title": "اجاره کلبه سوئیسی در بابلکنار - گونه کلا",

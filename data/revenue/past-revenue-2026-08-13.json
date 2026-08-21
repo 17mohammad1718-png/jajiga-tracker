@@ -1,0 +1,2587 @@
+[
+  {
+    "id": "3293951",
+    "title": "کلبه سوئیسی در بابلکنار - سیدکلا",
+    "host_name": "سیدمهدی",
+    "host_id": 2995344,
+    "village": "سیدکلا",
+    "booked": 4,
+    "free": 0,
+    "gross": 16500000,
+    "gross_discounted": 16500000,
+    "discount_total": 0,
+    "commission": 1980000,
+    "net": 14520000,
+    "nights": [
+      {
+        "date": "2026-08-09",
+        "price": 2500000,
+        "effective_price": 2500000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-11",
+        "price": 4000000,
+        "effective_price": 4000000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-12",
+        "price": 5000000,
+        "effective_price": 5000000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": true,
+        "peak": true
+      },
+      {
+        "date": "2026-08-13",
+        "price": 5000000,
+        "effective_price": 5000000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": true,
+        "peak": true
+      }
+    ]
+  },
+  {
+    "id": "3297585",
+    "title": "کلبه سوئیسی در بابلکنار - سیدکلا",
+    "host_name": "محدثه",
+    "host_id": 3024941,
+    "village": "سیدکلا",
+    "booked": 6,
+    "free": 0,
+    "gross": 18650000,
+    "gross_discounted": 15750000,
+    "discount_total": 2900000,
+    "commission": 1890000,
+    "net": 13860000,
+    "nights": [
+      {
+        "date": "2026-08-07",
+        "price": 2400000,
+        "effective_price": 1920000,
+        "discount": 20,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-08",
+        "price": 2400000,
+        "effective_price": 1920000,
+        "discount": 20,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-10",
+        "price": 2400000,
+        "effective_price": 1920000,
+        "discount": 20,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-11",
+        "price": 3650000,
+        "effective_price": 2190000,
+        "discount": 40,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-12",
+        "price": 3900000,
+        "effective_price": 3900000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": true,
+        "peak": true
+      },
+      {
+        "date": "2026-08-13",
+        "price": 3900000,
+        "effective_price": 3900000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": true,
+        "peak": true
+      }
+    ]
+  },
+  {
+    "id": "3181918",
+    "title": "کلبه سوئیسی جکوزی دار نزدیک لفور - سیدکلا",
+    "host_name": "عیسی",
+    "host_id": 1643170,
+    "village": "سیدکلا",
+    "booked": 15,
+    "free": 0,
+    "gross": 35500000,
+    "gross_discounted": 35500000,
+    "discount_total": 0,
+    "commission": 4260000,
+    "net": 31240000,
+    "nights": [
+      {
+        "date": "2026-08-07",
+        "price": 2000000,
+        "effective_price": 2000000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-08",
+        "price": 1900000,
+        "effective_price": 1900000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-09",
+        "price": 1900000,
+        "effective_price": 1900000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-10",
+        "price": 2000000,
+        "effective_price": 2000000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-11",
+        "price": 4000000,
+        "effective_price": 4000000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-12",
+        "price": 4000000,
+        "effective_price": 4000000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": true,
+        "peak": true
+      },
+      {
+        "date": "2026-08-13",
+        "price": 4000000,
+        "effective_price": 4000000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": true,
+        "peak": true
+      },
+      {
+        "date": "2026-08-14",
+        "price": 2000000,
+        "effective_price": 2000000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-15",
+        "price": 1900000,
+        "effective_price": 1900000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-16",
+        "price": 1900000,
+        "effective_price": 1900000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-17",
+        "price": 1900000,
+        "effective_price": 1900000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-18",
+        "price": 1900000,
+        "effective_price": 1900000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-19",
+        "price": 2300000,
+        "effective_price": 2300000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-21",
+        "price": 1900000,
+        "effective_price": 1900000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-22",
+        "price": 1900000,
+        "effective_price": 1900000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      }
+    ]
+  },
+  {
+    "id": "3179336",
+    "title": "کلبه سوئیسی با وان جکوزی در بابلکنار- سیدکلا",
+    "host_name": "حسن",
+    "host_id": 1618422,
+    "village": "سیدکلا",
+    "booked": 16,
+    "free": 0,
+    "gross": 39500000,
+    "gross_discounted": 39500000,
+    "discount_total": 0,
+    "commission": 4740000,
+    "net": 34760000,
+    "nights": [
+      {
+        "date": "2026-08-07",
+        "price": 2000000,
+        "effective_price": 2000000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-08",
+        "price": 1900000,
+        "effective_price": 1900000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-09",
+        "price": 1900000,
+        "effective_price": 1900000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-10",
+        "price": 2000000,
+        "effective_price": 2000000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-11",
+        "price": 4000000,
+        "effective_price": 4000000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-12",
+        "price": 4000000,
+        "effective_price": 4000000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": true,
+        "peak": true
+      },
+      {
+        "date": "2026-08-13",
+        "price": 4000000,
+        "effective_price": 4000000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": true,
+        "peak": true
+      },
+      {
+        "date": "2026-08-14",
+        "price": 2000000,
+        "effective_price": 2000000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-15",
+        "price": 1900000,
+        "effective_price": 1900000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-16",
+        "price": 1900000,
+        "effective_price": 1900000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-17",
+        "price": 1900000,
+        "effective_price": 1900000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-18",
+        "price": 1900000,
+        "effective_price": 1900000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-19",
+        "price": 2300000,
+        "effective_price": 2300000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-20",
+        "price": 4000000,
+        "effective_price": 4000000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-21",
+        "price": 1900000,
+        "effective_price": 1900000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-22",
+        "price": 1900000,
+        "effective_price": 1900000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      }
+    ]
+  },
+  {
+    "id": "3294040",
+    "title": "ویلا با چشم انداز زیبا در بابلکنار - سیدکلا",
+    "host_name": "محمدرضا",
+    "host_id": 2996075,
+    "village": "سیدکلا",
+    "booked": 7,
+    "free": 0,
+    "gross": 27400000,
+    "gross_discounted": 27400000,
+    "discount_total": 0,
+    "commission": 3288000,
+    "net": 24112000,
+    "nights": [
+      {
+        "date": "2026-08-07",
+        "price": 3000000,
+        "effective_price": 3000000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-08",
+        "price": 1900000,
+        "effective_price": 1900000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-09",
+        "price": 3000000,
+        "effective_price": 3000000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-10",
+        "price": 3000000,
+        "effective_price": 3000000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-11",
+        "price": 4500000,
+        "effective_price": 4500000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-12",
+        "price": 6000000,
+        "effective_price": 6000000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": true,
+        "peak": true
+      },
+      {
+        "date": "2026-08-13",
+        "price": 6000000,
+        "effective_price": 6000000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": true,
+        "peak": true
+      }
+    ]
+  },
+  {
+    "id": "3240255",
+    "title": "کلبه سوئیسی استخردار در بابلکنار - گونه کلا",
+    "host_name": "سید ابراهیم",
+    "host_id": 1501067,
+    "village": "گونه کلا",
+    "booked": 11,
+    "free": 0,
+    "gross": 105500000,
+    "gross_discounted": 105500000,
+    "discount_total": 0,
+    "commission": 12660000,
+    "net": 92840000,
+    "nights": [
+      {
+        "date": "2026-08-07",
+        "price": 8500000,
+        "effective_price": 8500000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-08",
+        "price": 8100000,
+        "effective_price": 8100000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-09",
+        "price": 8100000,
+        "effective_price": 8100000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-10",
+        "price": 8100000,
+        "effective_price": 8100000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-11",
+        "price": 12900000,
+        "effective_price": 12900000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-12",
+        "price": 12900000,
+        "effective_price": 12900000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": true,
+        "peak": true
+      },
+      {
+        "date": "2026-08-13",
+        "price": 12900000,
+        "effective_price": 12900000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": true,
+        "peak": true
+      },
+      {
+        "date": "2026-08-14",
+        "price": 8500000,
+        "effective_price": 8500000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-15",
+        "price": 8500000,
+        "effective_price": 8500000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-16",
+        "price": 8500000,
+        "effective_price": 8500000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-17",
+        "price": 8500000,
+        "effective_price": 8500000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      }
+    ]
+  },
+  {
+    "id": "3240445",
+    "title": "کلبه سوئیسی با وان جکوزی در بابلکنار - سیدکلا",
+    "host_name": "امیر",
+    "host_id": 1725165,
+    "village": "سیدکلا",
+    "booked": 15,
+    "free": 0,
+    "gross": 42180000,
+    "gross_discounted": 42180000,
+    "discount_total": 0,
+    "commission": 5061600,
+    "net": 37118400,
+    "nights": [
+      {
+        "date": "2026-08-08",
+        "price": 1980000,
+        "effective_price": 1980000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-09",
+        "price": 1980000,
+        "effective_price": 1980000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-10",
+        "price": 1980000,
+        "effective_price": 1980000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-11",
+        "price": 4000000,
+        "effective_price": 4000000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-12",
+        "price": 6000000,
+        "effective_price": 6000000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": true,
+        "peak": true
+      },
+      {
+        "date": "2026-08-13",
+        "price": 6000000,
+        "effective_price": 6000000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": true,
+        "peak": true
+      },
+      {
+        "date": "2026-08-14",
+        "price": 1980000,
+        "effective_price": 1980000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-15",
+        "price": 1980000,
+        "effective_price": 1980000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-16",
+        "price": 1980000,
+        "effective_price": 1980000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-17",
+        "price": 1980000,
+        "effective_price": 1980000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-18",
+        "price": 1980000,
+        "effective_price": 1980000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-19",
+        "price": 2480000,
+        "effective_price": 2480000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-20",
+        "price": 3900000,
+        "effective_price": 3900000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-21",
+        "price": 1980000,
+        "effective_price": 1980000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-22",
+        "price": 1980000,
+        "effective_price": 1980000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      }
+    ]
+  },
+  {
+    "id": "3225446",
+    "title": "کلبه سوئیسی با جکوزی در بابلکنار - سیدکلا",
+    "host_name": "لیلا",
+    "host_id": 1707066,
+    "village": "سیدکلا",
+    "booked": 8,
+    "free": 0,
+    "gross": 26960000,
+    "gross_discounted": 26960000,
+    "discount_total": 0,
+    "commission": 3235200,
+    "net": 23724800,
+    "nights": [
+      {
+        "date": "2026-08-08",
+        "price": 2700000,
+        "effective_price": 2700000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-09",
+        "price": 2700000,
+        "effective_price": 2700000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-10",
+        "price": 2700000,
+        "effective_price": 2700000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-11",
+        "price": 3700000,
+        "effective_price": 3700000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-12",
+        "price": 4880000,
+        "effective_price": 4880000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": true,
+        "peak": true
+      },
+      {
+        "date": "2026-08-13",
+        "price": 4880000,
+        "effective_price": 4880000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": true,
+        "peak": true
+      },
+      {
+        "date": "2026-08-14",
+        "price": 2700000,
+        "effective_price": 2700000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-15",
+        "price": 2700000,
+        "effective_price": 2700000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      }
+    ]
+  },
+  {
+    "id": "3215808",
+    "title": "کلبه سوئیسی جکوزی دار در بابلکنار - سید کلا",
+    "host_name": "یوسفعلی",
+    "host_id": 1996706,
+    "village": "سیدکلا",
+    "booked": 10,
+    "free": 0,
+    "gross": 76500000,
+    "gross_discounted": 76500000,
+    "discount_total": 0,
+    "commission": 9180000,
+    "net": 67320000,
+    "nights": [
+      {
+        "date": "2026-08-08",
+        "price": 5000000,
+        "effective_price": 5000000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-09",
+        "price": 5000000,
+        "effective_price": 5000000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-10",
+        "price": 8500000,
+        "effective_price": 8500000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-11",
+        "price": 10000000,
+        "effective_price": 10000000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-12",
+        "price": 10000000,
+        "effective_price": 10000000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": true,
+        "peak": true
+      },
+      {
+        "date": "2026-08-13",
+        "price": 10000000,
+        "effective_price": 10000000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": true,
+        "peak": true
+      },
+      {
+        "date": "2026-08-14",
+        "price": 13000000,
+        "effective_price": 13000000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-15",
+        "price": 5000000,
+        "effective_price": 5000000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-16",
+        "price": 5000000,
+        "effective_price": 5000000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-17",
+        "price": 5000000,
+        "effective_price": 5000000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      }
+    ]
+  },
+  {
+    "id": "3186964",
+    "title": "کلبه سوئیسی با جکوزی در بابلکنار - گونه کلا",
+    "host_name": "الناز",
+    "host_id": 1688265,
+    "village": "گونه کلا",
+    "booked": 11,
+    "free": 0,
+    "gross": 58900000,
+    "gross_discounted": 58900000,
+    "discount_total": 0,
+    "commission": 7068000,
+    "net": 51832000,
+    "nights": [
+      {
+        "date": "2026-08-08",
+        "price": 4500000,
+        "effective_price": 4500000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-09",
+        "price": 4500000,
+        "effective_price": 4500000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-10",
+        "price": 4500000,
+        "effective_price": 4500000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-11",
+        "price": 3500000,
+        "effective_price": 3500000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-12",
+        "price": 7500000,
+        "effective_price": 7500000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": true,
+        "peak": true
+      },
+      {
+        "date": "2026-08-13",
+        "price": 7500000,
+        "effective_price": 7500000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": true,
+        "peak": true
+      },
+      {
+        "date": "2026-08-14",
+        "price": 6500000,
+        "effective_price": 6500000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-15",
+        "price": 4500000,
+        "effective_price": 4500000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-16",
+        "price": 4500000,
+        "effective_price": 4500000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-19",
+        "price": 5700000,
+        "effective_price": 5700000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-20",
+        "price": 5700000,
+        "effective_price": 5700000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": false,
+        "peak": false
+      }
+    ]
+  },
+  {
+    "id": "3169804",
+    "title": "اجاره ویلا استخردار در بابلکنار",
+    "host_name": "سید ابراهیم",
+    "host_id": "1501067",
+    "village": "سایر",
+    "booked": 9,
+    "free": 0,
+    "gross": 53700000,
+    "gross_discounted": 53700000,
+    "discount_total": 0,
+    "commission": 6444000,
+    "net": 47256000,
+    "nights": [
+      {
+        "date": "2026-08-08",
+        "price": 5300000,
+        "effective_price": 5300000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-09",
+        "price": 5300000,
+        "effective_price": 5300000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-10",
+        "price": 5300000,
+        "effective_price": 5300000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-11",
+        "price": 7300000,
+        "effective_price": 7300000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-12",
+        "price": 7300000,
+        "effective_price": 7300000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": true,
+        "peak": true
+      },
+      {
+        "date": "2026-08-13",
+        "price": 7300000,
+        "effective_price": 7300000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": true,
+        "peak": true
+      },
+      {
+        "date": "2026-08-14",
+        "price": 5300000,
+        "effective_price": 5300000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-15",
+        "price": 5300000,
+        "effective_price": 5300000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-16",
+        "price": 5300000,
+        "effective_price": 5300000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      }
+    ]
+  },
+  {
+    "id": "3219516",
+    "title": "ویلا دوبلکس استخردار در بابل- سیدکلا",
+    "host_name": "عاطفه",
+    "host_id": 1890654,
+    "village": "سیدکلا",
+    "booked": 6,
+    "free": 0,
+    "gross": 66500000,
+    "gross_discounted": 66500000,
+    "discount_total": 0,
+    "commission": 7980000,
+    "net": 58520000,
+    "nights": [
+      {
+        "date": "2026-08-11",
+        "price": 10000000,
+        "effective_price": 10000000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-12",
+        "price": 14000000,
+        "effective_price": 14000000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": true,
+        "peak": true
+      },
+      {
+        "date": "2026-08-13",
+        "price": 14000000,
+        "effective_price": 14000000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": true,
+        "peak": true
+      },
+      {
+        "date": "2026-08-19",
+        "price": 10000000,
+        "effective_price": 10000000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-20",
+        "price": 10000000,
+        "effective_price": 10000000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-21",
+        "price": 8500000,
+        "effective_price": 8500000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      }
+    ]
+  },
+  {
+    "id": "3178910",
+    "title": "ویلا استخردار در بابلکنار - سیدکلا",
+    "host_name": "محمد",
+    "host_id": 1613724,
+    "village": "سیدکلا",
+    "booked": 7,
+    "free": 0,
+    "gross": 63400000,
+    "gross_discounted": 63400000,
+    "discount_total": 0,
+    "commission": 7608000,
+    "net": 55792000,
+    "nights": [
+      {
+        "date": "2026-08-10",
+        "price": 6500000,
+        "effective_price": 6500000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-11",
+        "price": 7900000,
+        "effective_price": 7900000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-12",
+        "price": 12000000,
+        "effective_price": 12000000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": true,
+        "peak": true
+      },
+      {
+        "date": "2026-08-13",
+        "price": 12000000,
+        "effective_price": 12000000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": true,
+        "peak": true
+      },
+      {
+        "date": "2026-08-18",
+        "price": 6500000,
+        "effective_price": 6500000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-19",
+        "price": 9000000,
+        "effective_price": 9000000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-20",
+        "price": 9500000,
+        "effective_price": 9500000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": false,
+        "peak": false
+      }
+    ]
+  },
+  {
+    "id": "3190552",
+    "title": "اجاره کلبه چوبی در سوادکوه - سیدکلا",
+    "host_name": "صدیقه",
+    "host_id": 1706081,
+    "village": "سیدکلا",
+    "booked": 13,
+    "free": 0,
+    "gross": 36100000,
+    "gross_discounted": 36100000,
+    "discount_total": 0,
+    "commission": 4332000,
+    "net": 31768000,
+    "nights": [
+      {
+        "date": "2026-08-10",
+        "price": 2300000,
+        "effective_price": 2300000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-11",
+        "price": 3500000,
+        "effective_price": 3500000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-12",
+        "price": 3200000,
+        "effective_price": 3200000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": true,
+        "peak": true
+      },
+      {
+        "date": "2026-08-13",
+        "price": 3200000,
+        "effective_price": 3200000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": true,
+        "peak": true
+      },
+      {
+        "date": "2026-08-14",
+        "price": 2500000,
+        "effective_price": 2500000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-15",
+        "price": 2500000,
+        "effective_price": 2500000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-16",
+        "price": 2500000,
+        "effective_price": 2500000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-17",
+        "price": 2500000,
+        "effective_price": 2500000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-18",
+        "price": 2500000,
+        "effective_price": 2500000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-19",
+        "price": 3200000,
+        "effective_price": 3200000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-20",
+        "price": 3200000,
+        "effective_price": 3200000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-21",
+        "price": 2500000,
+        "effective_price": 2500000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-22",
+        "price": 2500000,
+        "effective_price": 2500000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      }
+    ]
+  },
+  {
+    "id": "3206720",
+    "title": "کلبه چوبی جکوزی دار در بابلکنار - سیدکلا",
+    "host_name": "عاطفه",
+    "host_id": 1890654,
+    "village": "سیدکلا",
+    "booked": 9,
+    "free": 0,
+    "gross": 44500000,
+    "gross_discounted": 44500000,
+    "discount_total": 0,
+    "commission": 5340000,
+    "net": 39160000,
+    "nights": [
+      {
+        "date": "2026-08-10",
+        "price": 4000000,
+        "effective_price": 4000000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-11",
+        "price": 5500000,
+        "effective_price": 5500000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-12",
+        "price": 6000000,
+        "effective_price": 6000000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": true,
+        "peak": true
+      },
+      {
+        "date": "2026-08-13",
+        "price": 6000000,
+        "effective_price": 6000000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": true,
+        "peak": true
+      },
+      {
+        "date": "2026-08-15",
+        "price": 4000000,
+        "effective_price": 4000000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-16",
+        "price": 4000000,
+        "effective_price": 4000000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-19",
+        "price": 5500000,
+        "effective_price": 5500000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-20",
+        "price": 5500000,
+        "effective_price": 5500000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-21",
+        "price": 4000000,
+        "effective_price": 4000000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      }
+    ]
+  },
+  {
+    "id": "3253520",
+    "title": "اجاره کلبه سوئیسی در بابلکنار - سیدکلا",
+    "host_name": "کاظم",
+    "host_id": 1341919,
+    "village": "سیدکلا",
+    "booked": 7,
+    "free": 0,
+    "gross": 33500000,
+    "gross_discounted": 33500000,
+    "discount_total": 0,
+    "commission": 4020000,
+    "net": 29480000,
+    "nights": [
+      {
+        "date": "2026-08-10",
+        "price": 4000000,
+        "effective_price": 4000000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-11",
+        "price": 5500000,
+        "effective_price": 5500000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-12",
+        "price": 6000000,
+        "effective_price": 6000000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": true,
+        "peak": true
+      },
+      {
+        "date": "2026-08-13",
+        "price": 6000000,
+        "effective_price": 6000000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": true,
+        "peak": true
+      },
+      {
+        "date": "2026-08-14",
+        "price": 4000000,
+        "effective_price": 4000000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-15",
+        "price": 4000000,
+        "effective_price": 4000000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-16",
+        "price": 4000000,
+        "effective_price": 4000000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      }
+    ]
+  },
+  {
+    "id": "3299045",
+    "title": "ویلا با جکوزی در بابلکنار - سیدکلا",
+    "host_name": "حبیب",
+    "host_id": 2176828,
+    "village": "سیدکلا",
+    "booked": 6,
+    "free": 0,
+    "gross": 24500000,
+    "gross_discounted": 24500000,
+    "discount_total": 0,
+    "commission": 2940000,
+    "net": 21560000,
+    "nights": [
+      {
+        "date": "2026-08-11",
+        "price": 5000000,
+        "effective_price": 5000000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-12",
+        "price": 6000000,
+        "effective_price": 6000000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": true,
+        "peak": true
+      },
+      {
+        "date": "2026-08-13",
+        "price": 6000000,
+        "effective_price": 6000000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": true,
+        "peak": true
+      },
+      {
+        "date": "2026-08-14",
+        "price": 2500000,
+        "effective_price": 2500000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-15",
+        "price": 2500000,
+        "effective_price": 2500000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-16",
+        "price": 2500000,
+        "effective_price": 2500000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      }
+    ]
+  },
+  {
+    "id": "3227770",
+    "title": "خانه روستایی در بابلکنار - سیدکلا",
+    "host_name": "محمد",
+    "host_id": 2078258,
+    "village": "سیدکلا",
+    "booked": 9,
+    "free": 0,
+    "gross": 20000000,
+    "gross_discounted": 19820000,
+    "discount_total": 180000,
+    "commission": 2378400,
+    "net": 17441600,
+    "nights": [
+      {
+        "date": "2026-08-10",
+        "price": 1800000,
+        "effective_price": 1620000,
+        "discount": 10,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-11",
+        "price": 1800000,
+        "effective_price": 1800000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-12",
+        "price": 3000000,
+        "effective_price": 3000000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": true,
+        "peak": true
+      },
+      {
+        "date": "2026-08-13",
+        "price": 3000000,
+        "effective_price": 3000000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": true,
+        "peak": true
+      },
+      {
+        "date": "2026-08-14",
+        "price": 1800000,
+        "effective_price": 1800000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-17",
+        "price": 1800000,
+        "effective_price": 1800000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-18",
+        "price": 1800000,
+        "effective_price": 1800000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-19",
+        "price": 2500000,
+        "effective_price": 2500000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-20",
+        "price": 2500000,
+        "effective_price": 2500000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": false,
+        "peak": false
+      }
+    ]
+  },
+  {
+    "id": "3184142",
+    "title": "اجاره خانه چوبی استخردار در سیدکلا بابلکنار",
+    "host_name": "کاظم",
+    "host_id": 1341919,
+    "village": "سیدکلا",
+    "booked": 2,
+    "free": 0,
+    "gross": 10000000,
+    "gross_discounted": 10000000,
+    "discount_total": 0,
+    "commission": 1200000,
+    "net": 8800000,
+    "nights": [
+      {
+        "date": "2026-08-10",
+        "price": 4000000,
+        "effective_price": 4000000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-12",
+        "price": 6000000,
+        "effective_price": 6000000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": true,
+        "peak": true
+      }
+    ]
+  },
+  {
+    "id": "3190700",
+    "title": "اجاره کلبه چوبی در بابلکنار - سیدکلا",
+    "host_name": "لیلا",
+    "host_id": 1707066,
+    "village": "سیدکلا",
+    "booked": 5,
+    "free": 0,
+    "gross": 16820000,
+    "gross_discounted": 16820000,
+    "discount_total": 0,
+    "commission": 2018400,
+    "net": 14801600,
+    "nights": [
+      {
+        "date": "2026-08-10",
+        "price": 2490000,
+        "effective_price": 2490000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-11",
+        "price": 3480000,
+        "effective_price": 3480000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-12",
+        "price": 4180000,
+        "effective_price": 4180000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": true,
+        "peak": true
+      },
+      {
+        "date": "2026-08-13",
+        "price": 4180000,
+        "effective_price": 4180000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": true,
+        "peak": true
+      },
+      {
+        "date": "2026-08-14",
+        "price": 2490000,
+        "effective_price": 2490000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      }
+    ]
+  },
+  {
+    "id": "3206573",
+    "title": "کلبه چوبی دوبلکس نزدیک لفور - سیدکلا",
+    "host_name": "ابوالفضل",
+    "host_id": 1449641,
+    "village": "سیدکلا",
+    "booked": 6,
+    "free": 0,
+    "gross": 17990000,
+    "gross_discounted": 17990000,
+    "discount_total": 0,
+    "commission": 2158800,
+    "net": 15831200,
+    "nights": [
+      {
+        "date": "2026-08-10",
+        "price": 2000000,
+        "effective_price": 2000000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-11",
+        "price": 1990000,
+        "effective_price": 1990000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-12",
+        "price": 5000000,
+        "effective_price": 5000000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": true,
+        "peak": true
+      },
+      {
+        "date": "2026-08-13",
+        "price": 5000000,
+        "effective_price": 5000000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": true,
+        "peak": true
+      },
+      {
+        "date": "2026-08-19",
+        "price": 2000000,
+        "effective_price": 2000000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-20",
+        "price": 2000000,
+        "effective_price": 2000000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": false,
+        "peak": false
+      }
+    ]
+  },
+  {
+    "id": "3198301",
+    "title": "اجاره کلبه سوئدی نزدیک لفور - سیدکلا",
+    "host_name": "محمدرضا",
+    "host_id": 1618958,
+    "village": "سیدکلا",
+    "booked": 3,
+    "free": 0,
+    "gross": 13800000,
+    "gross_discounted": 13800000,
+    "discount_total": 0,
+    "commission": 1656000,
+    "net": 12144000,
+    "nights": [
+      {
+        "date": "2026-08-11",
+        "price": 3800000,
+        "effective_price": 3800000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-12",
+        "price": 5000000,
+        "effective_price": 5000000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": true,
+        "peak": true
+      },
+      {
+        "date": "2026-08-13",
+        "price": 5000000,
+        "effective_price": 5000000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": true,
+        "peak": true
+      }
+    ]
+  },
+  {
+    "id": "3195220",
+    "title": "اجاره کلبه سنتی نزدیک لفور - سیدکلا",
+    "host_name": "محمدرضا",
+    "host_id": 1618958,
+    "village": "سیدکلا",
+    "booked": 2,
+    "free": 0,
+    "gross": 10000000,
+    "gross_discounted": 10000000,
+    "discount_total": 0,
+    "commission": 1200000,
+    "net": 8800000,
+    "nights": [
+      {
+        "date": "2026-08-12",
+        "price": 5000000,
+        "effective_price": 5000000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": true,
+        "peak": true
+      },
+      {
+        "date": "2026-08-13",
+        "price": 5000000,
+        "effective_price": 5000000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": true,
+        "peak": true
+      }
+    ]
+  },
+  {
+    "id": "3198234",
+    "title": "اجاره کلبه سوئدی نزدیک لفور - سیدکلا - ۲",
+    "host_name": "محمدرضا",
+    "host_id": 1618958,
+    "village": "سیدکلا",
+    "booked": 2,
+    "free": 0,
+    "gross": 9000000,
+    "gross_discounted": 9000000,
+    "discount_total": 0,
+    "commission": 1080000,
+    "net": 7920000,
+    "nights": [
+      {
+        "date": "2026-08-12",
+        "price": 4500000,
+        "effective_price": 4500000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": true,
+        "peak": true
+      },
+      {
+        "date": "2026-08-13",
+        "price": 4500000,
+        "effective_price": 4500000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": true,
+        "peak": true
+      }
+    ]
+  },
+  {
+    "id": "3195933",
+    "title": "کلبه سوئیسی نزدیک لفور - سیدکلا",
+    "host_name": "محمدرضا",
+    "host_id": 1618958,
+    "village": "سیدکلا",
+    "booked": 2,
+    "free": 0,
+    "gross": 9000000,
+    "gross_discounted": 9000000,
+    "discount_total": 0,
+    "commission": 1080000,
+    "net": 7920000,
+    "nights": [
+      {
+        "date": "2026-08-12",
+        "price": 4500000,
+        "effective_price": 4500000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": true,
+        "peak": true
+      },
+      {
+        "date": "2026-08-13",
+        "price": 4500000,
+        "effective_price": 4500000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": true,
+        "peak": true
+      }
+    ]
+  },
+  {
+    "id": "3179404",
+    "title": "اجاره کلبه چوبی نزدیک لفور - سیدکلا",
+    "host_name": "محمدرضا",
+    "host_id": 1618958,
+    "village": "سیدکلا",
+    "booked": 2,
+    "free": 0,
+    "gross": 9000000,
+    "gross_discounted": 9000000,
+    "discount_total": 0,
+    "commission": 1080000,
+    "net": 7920000,
+    "nights": [
+      {
+        "date": "2026-08-12",
+        "price": 4500000,
+        "effective_price": 4500000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": true,
+        "peak": true
+      },
+      {
+        "date": "2026-08-13",
+        "price": 4500000,
+        "effective_price": 4500000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": true,
+        "peak": true
+      }
+    ]
+  },
+  {
+    "id": "3149747",
+    "title": "کلبه دوبلکس در سیدکلا بابلکنار",
+    "host_name": "میراحسان",
+    "host_id": 1197838,
+    "village": "سیدکلا",
+    "booked": 3,
+    "free": 0,
+    "gross": 12000000,
+    "gross_discounted": 12000000,
+    "discount_total": 0,
+    "commission": 1440000,
+    "net": 10560000,
+    "nights": [
+      {
+        "date": "2026-08-11",
+        "price": 4000000,
+        "effective_price": 4000000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-12",
+        "price": 4000000,
+        "effective_price": 4000000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": true,
+        "peak": true
+      },
+      {
+        "date": "2026-08-13",
+        "price": 4000000,
+        "effective_price": 4000000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": true,
+        "peak": true
+      }
+    ]
+  },
+  {
+    "id": "3201318",
+    "title": "کلبه حیاط دار در بابلکنار - سیدکلا",
+    "host_name": "فائزه",
+    "host_id": 1807361,
+    "village": "سیدکلا",
+    "booked": 4,
+    "free": 0,
+    "gross": 9200000,
+    "gross_discounted": 9200000,
+    "discount_total": 0,
+    "commission": 1104000,
+    "net": 8096000,
+    "nights": [
+      {
+        "date": "2026-08-10",
+        "price": 2100000,
+        "effective_price": 2100000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-11",
+        "price": 2100000,
+        "effective_price": 2100000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-12",
+        "price": 2500000,
+        "effective_price": 2500000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": true,
+        "peak": true
+      },
+      {
+        "date": "2026-08-13",
+        "price": 2500000,
+        "effective_price": 2500000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": true,
+        "peak": true
+      }
+    ]
+  },
+  {
+    "id": "3237859",
+    "title": "کلبه سوئیسی در بابلکنار - سیدکلا",
+    "host_name": "حبیب",
+    "host_id": 2176828,
+    "village": "سیدکلا",
+    "booked": 3,
+    "free": 0,
+    "gross": 11000000,
+    "gross_discounted": 11000000,
+    "discount_total": 0,
+    "commission": 1320000,
+    "net": 9680000,
+    "nights": [
+      {
+        "date": "2026-08-12",
+        "price": 4000000,
+        "effective_price": 4000000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": true,
+        "peak": true
+      },
+      {
+        "date": "2026-08-13",
+        "price": 4000000,
+        "effective_price": 4000000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": true,
+        "peak": true
+      },
+      {
+        "date": "2026-08-20",
+        "price": 3000000,
+        "effective_price": 3000000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": false,
+        "peak": false
+      }
+    ]
+  },
+  {
+    "id": "3149749",
+    "title": "سوئیت در سیدکلا بابلکنار - همکف",
+    "host_name": "میراحسان",
+    "host_id": 1197838,
+    "village": "سیدکلا",
+    "booked": 3,
+    "free": 0,
+    "gross": 10500000,
+    "gross_discounted": 10500000,
+    "discount_total": 0,
+    "commission": 1260000,
+    "net": 9240000,
+    "nights": [
+      {
+        "date": "2026-08-11",
+        "price": 3500000,
+        "effective_price": 3500000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-12",
+        "price": 3500000,
+        "effective_price": 3500000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": true,
+        "peak": true
+      },
+      {
+        "date": "2026-08-13",
+        "price": 3500000,
+        "effective_price": 3500000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": true,
+        "peak": true
+      }
+    ]
+  },
+  {
+    "id": "3232816",
+    "title": "خانه روستایی در بابلکنار - سیدکلا",
+    "host_name": "محمدرضا",
+    "host_id": 2121106,
+    "village": "سیدکلا",
+    "booked": 5,
+    "free": 0,
+    "gross": 11000000,
+    "gross_discounted": 11000000,
+    "discount_total": 0,
+    "commission": 1320000,
+    "net": 9680000,
+    "nights": [
+      {
+        "date": "2026-08-11",
+        "price": 2000000,
+        "effective_price": 2000000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-12",
+        "price": 2500000,
+        "effective_price": 2500000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": true,
+        "peak": true
+      },
+      {
+        "date": "2026-08-13",
+        "price": 2500000,
+        "effective_price": 2500000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": true,
+        "peak": true
+      },
+      {
+        "date": "2026-08-21",
+        "price": 2000000,
+        "effective_price": 2000000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-22",
+        "price": 2000000,
+        "effective_price": 2000000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      }
+    ]
+  },
+  {
+    "id": "3193646",
+    "title": "اجاره ویلا در بابلکنار - سیدکلا",
+    "host_name": "امیرحسین",
+    "host_id": 1672882,
+    "village": "سیدکلا",
+    "booked": 4,
+    "free": 0,
+    "gross": 23500000,
+    "gross_discounted": 23500000,
+    "discount_total": 0,
+    "commission": 2820000,
+    "net": 20680000,
+    "nights": [
+      {
+        "date": "2026-08-10",
+        "price": 4000000,
+        "effective_price": 4000000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-11",
+        "price": 6500000,
+        "effective_price": 6500000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-12",
+        "price": 6500000,
+        "effective_price": 6500000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": true,
+        "peak": true
+      },
+      {
+        "date": "2026-08-13",
+        "price": 6500000,
+        "effective_price": 6500000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": true,
+        "peak": true
+      }
+    ]
+  },
+  {
+    "id": "3262853",
+    "title": "خانه مبله در بابلکنار - سیدکلا - طبقه دوم",
+    "host_name": "فائزه",
+    "host_id": 1807361,
+    "village": "سیدکلا",
+    "booked": 5,
+    "free": 0,
+    "gross": 10000000,
+    "gross_discounted": 10000000,
+    "discount_total": 0,
+    "commission": 1200000,
+    "net": 8800000,
+    "nights": [
+      {
+        "date": "2026-08-10",
+        "price": 2000000,
+        "effective_price": 2000000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-11",
+        "price": 2000000,
+        "effective_price": 2000000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-12",
+        "price": 2000000,
+        "effective_price": 2000000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": true,
+        "peak": true
+      },
+      {
+        "date": "2026-08-13",
+        "price": 2000000,
+        "effective_price": 2000000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": true,
+        "peak": true
+      },
+      {
+        "date": "2026-08-14",
+        "price": 2000000,
+        "effective_price": 2000000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      }
+    ]
+  },
+  {
+    "id": "3302232",
+    "title": "ویلا دوبلکس در بابلکنار - سیدکلا",
+    "host_name": "بهنام",
+    "host_id": 3089046,
+    "village": "سیدکلا",
+    "booked": 3,
+    "free": 0,
+    "gross": 15300000,
+    "gross_discounted": 15300000,
+    "discount_total": 0,
+    "commission": 1836000,
+    "net": 13464000,
+    "nights": [
+      {
+        "date": "2026-08-10",
+        "price": 3000000,
+        "effective_price": 3000000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-12",
+        "price": 6300000,
+        "effective_price": 6300000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": true,
+        "peak": true
+      },
+      {
+        "date": "2026-08-13",
+        "price": 6000000,
+        "effective_price": 6000000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": true,
+        "peak": true
+      }
+    ]
+  },
+  {
+    "id": "3230216",
+    "title": "ویلا دوبلکس با جکوزی در بابلکنار - سیدکلا",
+    "host_name": "حسین",
+    "host_id": 2096023,
+    "village": "سیدکلا",
+    "booked": 2,
+    "free": 0,
+    "gross": 10000000,
+    "gross_discounted": 10000000,
+    "discount_total": 0,
+    "commission": 1200000,
+    "net": 8800000,
+    "nights": [
+      {
+        "date": "2026-08-12",
+        "price": 5000000,
+        "effective_price": 5000000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": true,
+        "peak": true
+      },
+      {
+        "date": "2026-08-13",
+        "price": 5000000,
+        "effective_price": 5000000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": true,
+        "peak": true
+      }
+    ]
+  }
+]

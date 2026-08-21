@@ -438,7 +438,7 @@
  ],
  "additional_rule": null,
  "cancellation_policy": "middle",
- "min_price": 6200000,
+ "min_price": 6480000,
  "extra_price": 500000,
  "is_clean": false,
  "is_new": false,
@@ -484,7 +484,7 @@
   "description": null,
   "created_at": "2024-04-23",
   "response_time": 44,
-  "accept_rate": 45,
+  "accept_rate": 50,
   "host_communication_rate": 5
  },
  "meta": {

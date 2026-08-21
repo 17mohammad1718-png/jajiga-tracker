@@ -5,58 +5,11 @@
     "village": "سیدکلا",
     "host_name": "صدیقه",
     "host_id": 1706081,
-    "min_price": 2500000,
+    "min_price": 2600000,
     "own": false
   },
-  "fetched_at": "2026-08-13T05:45:21.386986+00:00",
+  "fetched_at": "2026-08-20T20:30:49.731600+00:00",
   "nights": [
-    {
-      "date": "2026-08-12",
-      "price": 3200000,
-      "is_holiday": true,
-      "is_peak": true,
-      "is_weekend": true,
-      "is_unavailable": true
-    },
-    {
-      "date": "2026-08-13",
-      "price": 3200000,
-      "is_holiday": true,
-      "is_peak": true,
-      "is_weekend": true,
-      "is_unavailable": true
-    },
-    {
-      "date": "2026-08-14",
-      "price": 2500000,
-      "is_unavailable": true
-    },
-    {
-      "date": "2026-08-15",
-      "price": 2500000,
-      "is_unavailable": true
-    },
-    {
-      "date": "2026-08-16",
-      "price": 2500000,
-      "is_unavailable": true
-    },
-    {
-      "date": "2026-08-17",
-      "price": 2500000,
-      "is_unavailable": true
-    },
-    {
-      "date": "2026-08-18",
-      "price": 2500000,
-      "is_unavailable": true
-    },
-    {
-      "date": "2026-08-19",
-      "price": 3200000,
-      "is_weekend": true,
-      "is_unavailable": true
-    },
     {
       "date": "2026-08-20",
       "price": 3200000,
@@ -75,11 +28,12 @@
     },
     {
       "date": "2026-08-23",
-      "price": 2600000
+      "price": 2600000,
+      "is_unavailable": true
     },
     {
       "date": "2026-08-24",
-      "price": 2600000
+      "price": 3500000
     },
     {
       "date": "2026-08-25",
@@ -88,7 +42,7 @@
     },
     {
       "date": "2026-08-26",
-      "price": 3200000,
+      "price": 4000000,
       "is_weekend": true
     },
     {
@@ -110,20 +64,22 @@
     {
       "date": "2026-08-30",
       "price": 3200000,
-      "is_holiday": true
+      "is_holiday": true,
+      "is_unavailable": true
     },
     {
       "date": "2026-08-31",
-      "price": 3200000
+      "price": 4000000
     },
     {
       "date": "2026-09-01",
-      "price": 3200000
+      "price": 4000000
     },
     {
       "date": "2026-09-02",
       "price": 3200000,
-      "is_weekend": true
+      "is_weekend": true,
+      "is_unavailable": true
     },
     {
       "date": "2026-09-03",
@@ -133,83 +89,93 @@
     },
     {
       "date": "2026-09-04",
-      "price": 2600000
+      "price": 3500000
     },
     {
       "date": "2026-09-05",
-      "price": 2600000
+      "price": 2600000,
+      "is_unavailable": true
     },
     {
       "date": "2026-09-06",
-      "price": 2600000
+      "price": 2600000,
+      "is_unavailable": true
     },
     {
       "date": "2026-09-07",
-      "price": 2600000
+      "price": 2600000,
+      "is_unavailable": true
     },
     {
       "date": "2026-09-08",
-      "price": 2600000
+      "price": 3500000
     },
     {
       "date": "2026-09-09",
       "price": 3200000,
-      "is_weekend": true
+      "is_weekend": true,
+      "is_unavailable": true
     },
     {
       "date": "2026-09-10",
-      "price": 3200000,
+      "price": 4000000,
       "is_weekend": true
     },
     {
       "date": "2026-09-11",
-      "price": 2600000
+      "price": 3500000
     },
     {
       "date": "2026-09-12",
-      "price": 2600000
+      "price": 2600000,
+      "is_unavailable": true
     },
     {
       "date": "2026-09-13",
-      "price": 2600000
+      "price": 2600000,
+      "is_unavailable": true
     },
     {
       "date": "2026-09-14",
-      "price": 2600000
+      "price": 2600000,
+      "is_unavailable": true
     },
     {
       "date": "2026-09-15",
-      "price": 2600000
+      "price": 3500000
     },
     {
       "date": "2026-09-16",
-      "price": 3200000,
+      "price": 4000000,
       "is_weekend": true
     },
     {
       "date": "2026-09-17",
-      "price": 3200000,
+      "price": 4000000,
       "is_weekend": true
     },
     {
       "date": "2026-09-18",
-      "price": 2600000
+      "price": 3500000
     },
     {
       "date": "2026-09-19",
-      "price": 2600000
+      "price": 2600000,
+      "is_unavailable": true
     },
     {
       "date": "2026-09-20",
-      "price": 2600000
+      "price": 2600000,
+      "is_unavailable": true
     },
     {
       "date": "2026-09-21",
-      "price": 2600000
+      "price": 2600000,
+      "is_unavailable": true
     },
     {
       "date": "2026-09-22",
-      "price": 2600000
+      "price": 3500000
     },
     {
       "date": "2026-09-23",
