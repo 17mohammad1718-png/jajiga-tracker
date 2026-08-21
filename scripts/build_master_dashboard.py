@@ -494,6 +494,7 @@ def main():
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>داشبورد جامع جاجیگا — بابلکنار</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🗃️</text></svg>">
 <style>
 :root {{
   --bg:#0f1117; --panel:rgba(22,27,34,.72); --panel-solid:#12161d; --border:#30363d;
