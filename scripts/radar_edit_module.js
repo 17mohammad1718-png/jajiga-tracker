@@ -261,6 +261,7 @@
 
   var dragging = false, dStart = null, dLast = null, badge = null, lastX = 0, lastY = 0;
   var dragRid = null, dragLabel = '', touched = {}; /* touched: rid -> true */
+  var dragStartTd = null; /* سلول آغاز برای محاسبه باند ردیف‌ها */
   var selCache = {}; /* 'r|d' -> bool: کش وضعیت هایلایت برای روون‌تر شدن */
   function cellDate(td) { return td ? td.getAttribute('data-d') : null; }
   function cellRid(td) { return td ? td.getAttribute('data-r') : null; }
@@ -268,6 +269,29 @@
     if (!td) return '';
     var t = td.getAttribute('title') || '';
     return t.split(' · ')[0] || td.getAttribute('data-d') || '';
+  }
+  /* باند ردیف‌های بین ردیف شروع و ردیف فعلی (شامل هر دو) — حالت آزاد
+     با برگشتن به بالا، مجموعه کوچک‌تر می‌شود؛ چیزی تا mouseup قطعی نیست. */
+  function bandRids(startTd, curTd) {
+    if (!startTd || !curTd) return null;
+    var sTr = startTd.parentNode, cTr = curTd.parentNode;
+    if (!sTr || !cTr || !sTr.parentNode || typeof sTr.parentNode.querySelectorAll !== 'function') return null;
+    var rows = sTr.parentNode.querySelectorAll('tr');
+    if (!rows || !rows.length) return null;
+    var si = -1, ci = -1;
+    for (var i = 0; i < rows.length; i++) {
+      if (rows[i] === sTr) si = i;
+      if (rows[i] === cTr) ci = i;
+    }
+    if (si === -1 || ci === -1) return null;
+    var lo = Math.min(si, ci), hi = Math.max(si, ci);
+    var rids = {};
+    for (var j = lo; j <= hi; j++) {
+      var cell = rows[j].querySelector ? rows[j].querySelector('td.c[data-r]') : null;
+      var r = cell ? cell.getAttribute('data-r') : null;
+      if (r) rids[r] = true;
+    }
+    return rids;
   }
   function setDragHighlight(lo, hi) {
     var cells = document.querySelectorAll('td.c[data-d]');
@@ -331,8 +355,17 @@
     if (rid) {
       if (dragMode === 'single') {
         if (!dragRid) { dragRid = rid; changed = true; }
-      } else if (!touched[rid]) {
-        touched[rid] = true; changed = true; /* آزاد: هر ردیف لمس‌شده اضافه می‌شود و ثابت می‌ماند */
+      } else {
+        /* آزاد: باند کامل بین ردیف شروع و ردیف فعلی — زنده؛ با برگشت کوچک‌تر می‌شود */
+        var band = bandRids(dragStartTd, td);
+        if (band) {
+          var same = true, b;
+          for (b in band) { if (!touched[b]) { same = false; break; } }
+          for (b in touched) { if (!band[b]) { same = false; break; } }
+          if (!same) { touched = band; changed = true; }
+        } else if (!touched[rid]) {
+          touched[rid] = true; changed = true; /* fallback (ساختار ناشناخته) */
+        }
       }
     }
     if (d && d !== dLast) { dLast = d; changed = true; }
@@ -345,7 +378,12 @@
   document.addEventListener('mousedown', function (e) {
     if (!dragOn || on || e.button !== 0) return;
     var td = e.target.closest ? e.target.closest('td.c[data-d]') : null;
-    if (!td) return;
+    /* کلیک روی فضای خالی (بدون سلول) → بادج و هایلایت برداشته می‌شود */
+    if (!td) {
+      setDragHighlight(null, null);
+      if (badge) { badge.remove(); badge = null; }
+      return;
+    }
     e.preventDefault();
     dragging = true;
     dStart = dLast = cellDate(td);
@@ -353,6 +391,7 @@
     touched = {};
     selCache = {}; /* شروع درگ جدید = وضعیت قبلی باطل است */
     if (dragRid && dragMode !== 'single') touched[dragRid] = true;
+    dragStartTd = td;
     var rowTd = td.parentNode ? td.parentNode.querySelector('.rname') : null;
     dragLabel = rowTd && rowTd.textContent ? rowTd.textContent.trim().replace(/\s+/g, ' ').slice(0, 60) : '';
     document.body.classList.add('drag-active');
@@ -376,7 +415,7 @@
     if (!dragging) return;
     dragging = false;
     document.body.classList.remove('drag-active');
-    if (badge) { badge.remove(); badge = null; }
+    /* بادج می‌ماند تا کلیک بعدی روی سلول/فضای خالی */
     if (dStart && dLast) {
       var lo = dStart < dLast ? dStart : dLast, hi = dStart < dLast ? dLast : dStart;
       var rids = [];
