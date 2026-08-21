@@ -1273,6 +1273,7 @@ table.rev .hrev-detail td { background:#0f1f36; padding:10px 16px; text-align:ri
 
   var dragging = false, dStart = null, dLast = null, badge = null, lastX = 0, lastY = 0;
   var dragRid = null, dragLabel = '', touched = {}; /* touched: rid -> true */
+  var selCache = {}; /* 'r|d' -> bool: کش وضعیت هایلایت برای روون‌تر شدن */
   function cellDate(td) { return td ? td.getAttribute('data-d') : null; }
   function cellRid(td) { return td ? td.getAttribute('data-r') : null; }
   function jlabelOf(td) {
@@ -1285,8 +1286,13 @@ table.rev .hrev-detail td { background:#0f1f36; padding:10px 16px; text-align:ri
     for (var i = 0; i < cells.length; i++) {
       var td = cells[i];
       var d = td.getAttribute('data-d');
+      var r = td.getAttribute('data-r');
       /* فقط سلول‌هایی هایلایت می‌شوند که هم در بازه تاریخ باشند هم در ردیف(های) لمس‌شده */
-      cells[i].classList.toggle('sel', !!(lo && hi && d >= lo && d <= hi && inSelection(td)));
+      var on = !!(lo && hi && d >= lo && d <= hi && inSelection(td));
+      var key = r + '|' + d;
+      if (selCache[key] === on) continue; /* بدون تغییر = بدون لمس DOM -> روون‌تر */
+      selCache[key] = on;
+      td.classList.toggle('sel', on);
     }
   }
   function inSelection(td) {
@@ -1322,6 +1328,32 @@ table.rev .hrev-detail td { background:#0f1f36; padding:10px 16px; text-align:ri
     badge.style.left = (lastX + 12) + 'px';
     badge.style.top = (lastY + 14) + 'px';
   }
+  /* حرکت موس در حین کشیدن: هم mouseover و هم mousemove به اینجا می‌رسند.
+     سلول زیر موس از event یا elementFromPoint پیدا می‌شود — حتی در حرکت سریع هیچ ردیفی جا نمی‌ماند. */
+  function handleDragMove(e) {
+    if (!dragging) return;
+    var td = e && e.target && e.target.closest ? e.target.closest('td.c[data-d]') : null;
+    if (!td && document.elementFromPoint && e) {
+      var el = document.elementFromPoint(e.clientX, e.clientY);
+      if (el && el.closest) td = el.closest('td.c[data-d]');
+    }
+    if (!td) return;
+    var rid = cellRid(td), d = cellDate(td);
+    var changed = false;
+    if (rid) {
+      if (dragMode === 'single') {
+        if (!dragRid) { dragRid = rid; changed = true; }
+      } else if (!touched[rid]) {
+        touched[rid] = true; changed = true; /* آزاد: هر ردیف لمس‌شده اضافه می‌شود و ثابت می‌ماند */
+      }
+    }
+    if (d && d !== dLast) { dLast = d; changed = true; }
+    if (!changed) return;
+    var lo = dStart < d ? dStart : d, hi = dStart < d ? d : dStart;
+    setDragHighlight(lo, hi);
+    var sTd = document.querySelector('td.c[data-d="' + lo + '"]');
+    updateBadge(lo, hi, sTd, td);
+  }
   document.addEventListener('mousedown', function (e) {
     if (!dragOn || on || e.button !== 0) return;
     var td = e.target.closest ? e.target.closest('td.c[data-d]') : null;
@@ -1331,28 +1363,27 @@ table.rev .hrev-detail td { background:#0f1f36; padding:10px 16px; text-align:ri
     dStart = dLast = cellDate(td);
     dragRid = cellRid(td);
     touched = {};
-    if (dragRid) touched[dragRid] = true;
+    selCache = {}; /* شروع درگ جدید = وضعیت قبلی باطل است */
+    if (dragRid && dragMode !== 'single') touched[dragRid] = true;
     var rowTd = td.parentNode ? td.parentNode.querySelector('.rname') : null;
     dragLabel = rowTd && rowTd.textContent ? rowTd.textContent.trim().replace(/\s+/g, ' ').slice(0, 60) : '';
     document.body.classList.add('drag-active');
     setDragHighlight(dStart, dLast);
     updateBadge(dStart, dLast, td, td);
   });
-  document.addEventListener('mouseover', function (e) {
+  var rafPend = false, lastEv = null;
+  document.addEventListener('mouseover', function (e) { if (dragging) handleDragMove(e); });
+  document.addEventListener('mousemove', function (e) {
     if (!dragging) return;
-    var td = e.target.closest ? e.target.closest('td.c[data-d]') : null;
-    if (!td) return;
-    var rid = cellRid(td);
-    if (rid && dragMode !== 'single') touched[rid] = true; /* آزاد: هر ردیف لمس‌شده اضافه می‌شود */
-    var d = cellDate(td);
-    if (d === dLast) return;
-    dLast = d;
-    var lo = dStart < d ? dStart : d, hi = dStart < d ? d : dStart;
-    setDragHighlight(lo, hi);
-    var sTd = document.querySelector('td.c[data-d="' + (dStart < d ? dStart : d) + '"]');
-    updateBadge(lo, hi, sTd, td);
+    lastX = e.clientX; lastY = e.clientY;
+    lastEv = e;
+    if (rafPend) return;
+    rafPend = true;
+    (window.requestAnimationFrame || function (cb) { setTimeout(cb, 16); })(function () {
+      rafPend = false;
+      handleDragMove(lastEv);
+    });
   });
-  document.addEventListener('mousemove', function (e) { lastX = e.clientX; lastY = e.clientY; });
   document.addEventListener('mouseup', function () {
     if (!dragging) return;
     dragging = false;
