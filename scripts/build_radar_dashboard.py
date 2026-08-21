@@ -108,16 +108,15 @@ def build():
 
     jy, jm, _ = g2j(today.year, today.month, today.day)
 
-    # دو ماه شمسی: جاری + بعدی — دیروز (۱ روز گذشته برای مرجع) + امروز و آینده؛
-    # بقیه روزهای گذشته خودکار حذف می‌شوند
-    months = []  # (jalali_year, jalali_month, [dates])
-    for mm in range(2):
-        y = jy if jm + mm <= 12 else jy + 1
-        m = ((jm - 1 + mm) % 12) + 1
-        remaining = [d for d in month_days(y, m) if d >= today - timedelta(days=1)]
-        if remaining:
-            months.append((y, m, remaining))
-    days_flat = [d for _, _, days in months for d in days]
+    # پنجره ثابت: دیروز (۱ روز گذشته برای مرجع) + امروز + ۴۴ روز آینده = همیشه ۴۵ روز جلوتر
+    days_flat = [today + timedelta(days=off) for off in range(-1, 45)]
+    months = []  # گروه‌بندی شمسی همان پنجره برای سربرگ ماه‌ها
+    for d in days_flat:
+        gy, gm, _ = g2j(d.year, d.month, d.day)
+        if not months or months[-1][0] != gy or months[-1][1] != gm:
+            months.append([gy, gm, [d]])
+        else:
+            months[-1][2].append(d)
 
     # ---------- بارگذاری + محاسبه متریک ----------
     rooms = []
@@ -486,7 +485,7 @@ def build():
     past_months = []
     for dstr in past_days:
         y, m, _ = g2j(*map(int, dstr.split('-')))
-        if not past_months or past_months[-1][:2] != (y, m):
+        if not past_months or past_months[-1][0] != y or past_months[-1][1] != m:
             past_months.append([y, m, [dstr]])
         else:
             past_months[-1][2].append(dstr)
@@ -1096,8 +1095,8 @@ def build():
                + open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'radar_edit_module.js'), encoding='utf-8').read()
                + '\n</script>')
 
-    nm_y = jy if jm < 12 else jy + 1
-    nm_m = jm + 1 if jm < 12 else 1
+    horizon_day = days_flat[-1] if days_flat else today + timedelta(days=44)
+    hor_y, hor_m, hor_d = g2j(horizon_day.year, horizon_day.month, horizon_day.day)
     html = f"""<!DOCTYPE html>
 <html lang='fa' dir='rtl'>
 <head>
@@ -1253,7 +1252,7 @@ table.rev .hrev-detail td {{ background:#0f1f36; padding:10px 16px; text-align:r
   <div class='hrow'>
     <div>
       <h1><span class='radar'>🛰️ رادار رقبا</span> — جاجیگا</h1>
-      <div class='sub'>{JM[jm-1]} {jy} و {JM[nm_m-1]} {nm_y} · {len(rooms)} اتاق · به‌روزرسانی: {today.isoformat()} · {len(past_days)} روز گذشته ثبت‌شده</div>
+      <div class='sub'>{JM[jm-1]} {jy} تا {JM[hor_m-1]} {hor_y} · {len(rooms)} اتاق · به‌روزرسانی: {today.isoformat()} · {len(past_days)} روز گذشته ثبت‌شده</div>
     </div>
     <div class='hd-actions'>
       <button id='exportPastBtn' class='export-btn past-btn' title='خروجی اکسل از جدول دیتابیس (روزهای گذشته)'>📥 اکسل دیتابیس</button>
@@ -1300,7 +1299,7 @@ table.rev .hrev-detail td {{ background:#0f1f36; padding:10px 16px; text-align:r
   <div class='rc-field' id='revToField' title='تا تاریخ — کلیک برای باز کردن تقویم'><span class='rc-val en' id='revToVal'>—</span><span class='rc-chev'>▾</span></div>
   {chips_html}
 </div>
-<div class='rev-title'>💰 تخمین درآمد میزبان‌ها <span class='rsub'>شب‌های پرِ آینده (تا آخر {JM[nm_m-1]}) · کمیسیون ۱۲٪ · مجموع خالص: {tot_rev_net:,} تومان</span></div>
+<div class='rev-title'>💰 تخمین درآمد میزبان‌ها <span class='rsub'>شب‌های پرِ آینده (تا {jalali_str(horizon_day.isoformat())}) · کمیسیون ۱۲٪ · مجموع خالص: {tot_rev_net:,} تومان</span></div>
 <div class='table-wrap'>
 <table class='rev'>
 <thead>
