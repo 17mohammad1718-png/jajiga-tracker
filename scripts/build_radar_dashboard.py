@@ -390,8 +390,8 @@ def build():
             price = f"<span class='pr{' disc' if n.get('discount') else ''}'>{eff:,}</span>"
             if n.get('discount'):
                 price += f"<span class='dsc'>-{n['discount']}٪</span>"
-        return (f"<td class='c {cell_class(rec, d)}{extra}' title=\"{' · '.join(parts)}\">"
-                f"<span class='dn'>{g2j(d.year, d.month, d.day)[2]}</span>{price}</td>")
+        return (f"<td class='c {cell_class(rec, d)}{extra}' data-r='{rec['room_id']}' data-d='{d.isoformat()}' title='{' · '.join(parts)}'>"
+                        f"<span class='dn'>{g2j(d.year, d.month, d.day)[2]}</span>{price}</td>")
 
     # ---------- سربرگ جدول: ردیف ماه‌ها + ردیف روزها ----------
     def th_extras(d):
@@ -556,8 +556,8 @@ def build():
         if eff:
             parts.append(f"قیمت: {eff:,}")
         price = f"<span class='pr{' disc' if n and n.get('discount') else ''}'>{eff:,}</span>" if eff else ''
-        return (f"<td class='c {cls}{extra}' title=\"{' · '.join(parts)}\">"
-                f"<span class='dn'>{jd}</span>{price}</td>")
+        return (f"<td class='c {cls}{extra}' data-r='{rid}' data-d='{dstr}' title='{' · '.join(parts)}'>"
+                        f"<span class='dn'>{jd}</span>{price}</td>")
 
     past_rows = []
     for rec in rooms:
@@ -833,12 +833,24 @@ def build():
     var start = new Date(startStr + 'T00:00:00');
     var end = new Date(endStr + 'T00:00:00');
     var rooms = ROOMS.map(function(r){
+      var nMap = {};
+      for (var i = 0; i < r.nights.length; i++) nMap[r.nights[i].d] = r.nights[i];
       var booked = 0, gross = 0, disc = 0;
-      for (var i = 0; i < r.nights.length; i++){
-        var n = r.nights[i];
-        var nd = new Date(n.d + 'T00:00:00');
-        if (nd < start || nd > end) continue;
-        booked++; gross += n.p; disc += (n.b - n.p);
+      var cur = new Date(start.getTime());
+      while (cur <= end){
+        var ds = cur.toISOString().slice(0, 10);
+        var n = nMap[ds];
+        var e = window.RE ? window.RE.get(r.id, ds) : null;
+        var isBooked, price;
+        if (e){
+          if (e.s === 'free' || e.s === 'blocked'){ isBooked = false; price = 0; }
+          else if (e.s === 'booked'){ isBooked = true; price = (e.p != null) ? e.p : (n ? n.p : 0); }
+          else { isBooked = !!n; price = (e.p != null) ? e.p : (n ? n.p : 0); }
+        } else {
+          isBooked = !!n; price = n ? n.p : 0;
+        }
+        if (isBooked){ booked++; gross += price; if (n) disc += Math.max(0, n.b - price); }
+        cur.setDate(cur.getDate() + 1);
       }
       var commission = Math.round(gross * COMM);
       return { id: r.id, title: r.title, host_name: r.host_name, host_id: r.host_id,
@@ -1075,9 +1087,14 @@ def build():
   curTo = META.default_end || META.max;
   setLabels();
   render();
+  window.__revRender = function(){ applyRange(); };
 })();
 </script>
 """.replace('{REV_ROOMS_JSON}', rev_rooms_json).replace('{REV_ENDS_JSON}', rev_ends_json)
+
+    edit_js = ('<script>\n'
+               + open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'radar_edit_module.js'), encoding='utf-8').read()
+               + '\n</script>')
 
     nm_y = jy if jm < 12 else jy + 1
     nm_m = jm + 1 if jm < 12 else 1
@@ -1324,6 +1341,7 @@ table.rev .hrev-detail td {{ background:#0f1f36; padding:10px 16px; text-align:r
 </script>
 {export_js}
 {past_export_js}
+{edit_js}
 {rev_js}
 </div>
 </body>
