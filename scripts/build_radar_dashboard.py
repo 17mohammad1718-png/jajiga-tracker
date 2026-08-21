@@ -815,8 +815,24 @@ def build():
   var revSortKey = null, revSortDir = -1;
   var tbody = document.getElementById('revHostTbody');
   var curFrom = null, curTo = null;
+  var revMode = 'free'; /* free = آزاد (هر تعداد ردیف لمس‌شده) | single = تکی (فقط یک کلبه) */
+  var revRids = []; /* کلبه‌های انتخاب‌شده */
+  try { var _mm = localStorage.getItem('radar_mode_v1'); if (_mm === 'single') revMode = 'single'; } catch (e) {}
+  var _own = null;
+  for (var _oi = 0; _oi < ROOMS.length; _oi++){ if (ROOMS[_oi].own){ _own = ROOMS[_oi]; break; } }
+  if (_own) revRids = [String(_own.id)]; /* پیش‌فرض: کلبه خودم */
 
   function fmt(n){ return (n||0).toLocaleString('en-US'); }
+
+  function roomNames(rids){
+    var names = [];
+    rids.forEach(function(rid){
+      for (var i = 0; i < ROOMS.length; i++){
+        if (String(ROOMS[i].id) === String(rid)){ names.push(ROOMS[i].title.slice(0, 42)); break; }
+      }
+    });
+    return names;
+  }
 
   // برچسب شمسی یک تاریخ میلادی
   function jlabel(g){
@@ -831,7 +847,14 @@ def build():
   function computeHosts(startStr, endStr){
     var start = new Date(startStr + 'T00:00:00');
     var end = new Date(endStr + 'T00:00:00');
-    var rooms = ROOMS.map(function(r){
+    /* فیلتر به کلبه‌های انتخابی (آزاد/تکی) — اگر خالی بود همه */
+    var pool = ROOMS;
+    if (revRids.length){
+      var set = {};
+      revRids.forEach(function(rid){ set[String(rid)] = true; });
+      pool = ROOMS.filter(function(r){ return set[String(r.id)]; });
+    }
+    var rooms = pool.map(function(r){
       var nMap = {};
       for (var i = 0; i < r.nights.length; i++) nMap[r.nights[i].d] = r.nights[i];
       var booked = 0, gross = 0, disc = 0;
@@ -944,7 +967,15 @@ def build():
       };
     });
     var rs = document.querySelector('.rev-title .rsub');
-    if (rs) rs.textContent = 'شب‌های پرِ آینده (از ' + jlabel(curFrom) + ' تا ' + jlabel(curTo) + ') · کمیسیون ۱۲٪ · مجموع خالص: ' + fmt(cur.tot.net) + ' تومان';
+    if (rs){
+      var modeLabel = revMode === 'single' ? 'تکی' : 'آزاد';
+      var names = roomNames(revRids);
+      var selLabel = '';
+      if (names.length === 1) selLabel = 'کلبه: ' + names[0];
+      else if (names.length > 1) selLabel = names.length + ' کلبه: ' + names.join('، ');
+      rs.textContent = 'شب‌های پرِ آینده (از ' + jlabel(curFrom) + ' تا ' + jlabel(curTo) + ') · حالت ' + modeLabel +
+        (selLabel ? ' · ' + selLabel : '') + ' · کمیسیون ۱۲٪ · مجموع خالص: ' + fmt(cur.tot.net) + ' تومان';
+    }
   }
 
   document.querySelectorAll('th[data-revkey]').forEach(function(th){
@@ -1087,7 +1118,18 @@ def build():
   setLabels();
   render();
   window.__revRender = function(){ applyRange(); };
-  window.__revApplyRange = function(f, t){ curFrom = f; curTo = t; applyRange(); };
+  window.__revSetMode = function(m){
+    if (m === 'single' || m === 'free') revMode = m;
+    try { localStorage.setItem('radar_mode_v1', revMode); } catch (e) {}
+    if (revMode === 'single' && revRids.length > 1) revRids = [revRids[0]]; /* تکی: فقط اولین کلبه */
+    applyRange();
+  };
+  window.__revApplyRange = function(f, t, mode, rids){
+    curFrom = f; curTo = t;
+    if (mode === 'single' || mode === 'free') revMode = mode;
+    if (rids && rids.length){ revRids = rids.slice(); if (revMode === 'single') revRids = revRids.slice(0, 1); }
+    applyRange();
+  };
 })();
 </script>
 """.replace('{REV_ROOMS_JSON}', rev_rooms_json).replace('{REV_ENDS_JSON}', rev_ends_json)

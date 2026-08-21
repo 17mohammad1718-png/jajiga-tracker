@@ -222,26 +222,47 @@
 
   /* ---------- drag-to-select revenue range (default ON; toggle to disable) ---------- */
   var DRAG_KEY = 'radar_drag_v1';
+  var MODE_KEY = 'radar_mode_v1';
   var dragOn = true;
   try { dragOn = localStorage.getItem(DRAG_KEY) !== '0'; } catch (e) {}
+  var dragMode = 'free'; /* 'free' = آزاد (هر تعداد ردیف لمس‌شده) | 'single' = تکی (همان ردیف شروع) */
+  try { var _m = localStorage.getItem(MODE_KEY); if (_m === 'single') dragMode = 'single'; } catch (e) {}
   var dragBtn = document.createElement('button');
   dragBtn.id = 'dragToggleBtn';
   dragBtn.className = 'export-btn drag-btn';
   dragBtn.title = 'انتخاب بازه درآمد با کشیدن موس روی جدول — فعال/غیرفعال';
   if (exp && exp.parentNode) exp.parentNode.appendChild(dragBtn);
+  var modeBtn = document.createElement('button');
+  modeBtn.id = 'dragModeBtn';
+  modeBtn.className = 'export-btn drag-btn active';
+  modeBtn.title = 'حالت محاسبه بازه: آزاد = هر تعداد ردیفی که لمس کنی | تکی = فقط همان ردیف شروع کشیدن';
+  if (exp && exp.parentNode) exp.parentNode.appendChild(modeBtn);
   function updDragLabel() {
     dragBtn.textContent = dragOn ? '🎯 بازه: روشن' : '🎯 بازه: خاموش';
     dragBtn.classList.toggle('active', dragOn);
+  }
+  function updModeLabel() {
+    modeBtn.textContent = dragMode === 'single' ? '🧮 حالت: تکی' : '🧮 حالت: آزاد';
   }
   dragBtn.onclick = function () {
     dragOn = !dragOn;
     try { localStorage.setItem(DRAG_KEY, dragOn ? '1' : '0'); } catch (e) {}
     updDragLabel();
   };
+  modeBtn.onclick = function () {
+    dragMode = dragMode === 'single' ? 'free' : 'single';
+    try { localStorage.setItem(MODE_KEY, dragMode); } catch (e) {}
+    updModeLabel();
+    /* حداکثر یک کلبه در حالت تکی: همان اولین کلبهٔ انتخاب‌شده فعلی */
+    if (window.__revSetMode) window.__revSetMode(dragMode);
+  };
   updDragLabel();
+  updModeLabel();
 
   var dragging = false, dStart = null, dLast = null, badge = null, lastX = 0, lastY = 0;
+  var dragRid = null, dragLabel = '', touched = {}; /* touched: rid -> true */
   function cellDate(td) { return td ? td.getAttribute('data-d') : null; }
+  function cellRid(td) { return td ? td.getAttribute('data-r') : null; }
   function jlabelOf(td) {
     if (!td) return '';
     var t = td.getAttribute('title') || '';
@@ -254,6 +275,11 @@
       cells[i].classList.toggle('sel', !!(lo && hi && d >= lo && d <= hi));
     }
   }
+  function inSelection(td) {
+    if (!dragRid && !Object.keys(touched).length) return true; /* fallback: همه */
+    if (dragMode === 'single') return cellRid(td) === dragRid;
+    return !!touched[cellRid(td)];
+  }
   function updateBadge(lo, hi, sTd, eTd) {
     if (!badge) {
       badge = document.createElement('div');
@@ -264,13 +290,19 @@
     var booked = 0, free = 0, sum = 0;
     for (var i = 0; i < cells.length; i++) {
       var td = cells[i];
+      if (!inSelection(td)) continue;
       if (td.classList.contains('booked')) {
         booked++;
         var pr = td.querySelector('.pr');
         if (pr) sum += parseInt(pr.textContent.replace(/[^0-9]/g, ''), 10) || 0;
       } else if (td.classList.contains('free')) free++;
     }
-    badge.innerHTML = 'از ' + jlabelOf(sTd) + ' تا ' + jlabelOf(eTd) +
+    var cnt = 0;
+    for (var k in touched) { if (touched[k]) cnt++; }
+    var head = (dragMode === 'single')
+      ? 'کلبه: <b>' + (dragLabel || '—') + '</b>'
+      : (cnt > 1 ? '<b>' + cnt + '</b> کلبه' : '<b>1</b> کلبه');
+    badge.innerHTML = head + ' · از ' + jlabelOf(sTd) + ' تا ' + jlabelOf(eTd) +
       ' · <b>' + booked + '</b> شب پر · <b>' + free + '</b> خالی' +
       (sum ? ' · جمع‌تقریبی ≈ <b>' + sum.toLocaleString('en-US') + '</b> تومان' : '');
     badge.style.left = (lastX + 12) + 'px';
@@ -283,6 +315,11 @@
     e.preventDefault();
     dragging = true;
     dStart = dLast = cellDate(td);
+    dragRid = cellRid(td);
+    touched = {};
+    if (dragRid) touched[dragRid] = true;
+    var rowTd = td.parentNode ? td.parentNode.querySelector('.rname') : null;
+    dragLabel = rowTd && rowTd.textContent ? rowTd.textContent.trim().replace(/\s+/g, ' ').slice(0, 60) : '';
     document.body.classList.add('drag-active');
     setDragHighlight(dStart, dLast);
     updateBadge(dStart, dLast, td, td);
@@ -291,6 +328,8 @@
     if (!dragging) return;
     var td = e.target.closest ? e.target.closest('td.c[data-d]') : null;
     if (!td) return;
+    var rid = cellRid(td);
+    if (rid && dragMode !== 'single') touched[rid] = true; /* آزاد: هر ردیف لمس‌شده اضافه می‌شود */
     var d = cellDate(td);
     if (d === dLast) return;
     dLast = d;
@@ -307,7 +346,10 @@
     if (badge) { badge.remove(); badge = null; }
     if (dStart && dLast) {
       var lo = dStart < dLast ? dStart : dLast, hi = dStart < dLast ? dLast : dStart;
-      if (window.__revApplyRange) window.__revApplyRange(lo, hi);
+      var rids = [];
+      for (var k in touched) { if (touched[k]) rids.push(k); }
+      if (dragMode === 'single') rids = dragRid ? [dragRid] : rids;
+      if (window.__revApplyRange) window.__revApplyRange(lo, hi, dragMode, rids);
     }
     dStart = dLast = null;
   });
