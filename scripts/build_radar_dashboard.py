@@ -1105,6 +1105,30 @@ def build():
                + open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'radar_edit_module.js'), encoding='utf-8').read()
                + '\n</script>')
 
+    # ویرایش‌های دستی مرکزی → manual-edits.json کنار html (برای Pages + localhost)
+    # ماژول ویرایش در github.io همان فایل را با fetch می‌خواند؛ کرون هر تیک
+    # push می‌کند پس همه دستگاه‌ها آخرین وضعیت را می‌بینند.
+    edits_src = os.path.join(RADAR_DIR, 'manual-edits.json')
+    edits_out = os.path.join(ROOT, 'manual-edits.json')
+    try:
+        if os.path.exists(edits_src):
+            if os.path.exists(edits_out):
+                with open(edits_out, encoding='utf-8') as _f, open(edits_src, encoding='utf-8') as _s:
+                    import json as _json
+                    _old = _json.load(_f).get('edits', {})
+                    _new = _json.load(_s).get('edits', {})
+                _merged = dict(_old)
+                for _k, _v in _new.items():
+                    if not _k in _merged or (_v.get('t') or 0) >= (_merged[_k].get('t') or 0):
+                        _merged[_k] = _v
+                with open(edits_out, 'w', encoding='utf-8') as _f:
+                    _json.dump({'edits': _merged}, _f, ensure_ascii=False, indent=1)
+            else:
+                import shutil
+                shutil.copyfile(edits_src, edits_out)
+    except Exception as _e:
+        print(f"[warn] manual-edits sync skipped: {_e}", flush=True)
+
     horizon_day = days_flat[-1] if days_flat else today + timedelta(days=44)
     hor_y, hor_m, hor_d = g2j(horizon_day.year, horizon_day.month, horizon_day.day)
     html = f"""<!DOCTYPE html>

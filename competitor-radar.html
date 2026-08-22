@@ -1012,9 +1012,85 @@ table.rev .hrev-detail td { background:#0f1f36; padding:10px 16px; text-align:ri
 <script>
 /* Radar manual edit module — occupancy status + price overrides (baked into competitor-radar.html) */
 (function () {
-  var KEY = 'radar_edits_v1';
+  var KEY = 'radar_edits_v2';
+  var LEGACY_KEY = 'radar_edits_v1';
   var EDITS = {};
-  try { EDITS = JSON.parse(localStorage.getItem(KEY) || '{}'); } catch (e) { EDITS = {}; }
+  try { EDITS = JSON.parse(localStorage.getItem(KEY) || '{}') || {}; } catch (e) { EDITS = {}; }
+  /* مهاجرت از v1: ویرایش‌های قدیمی بدون timestamp حفظ می‌شوند */
+  try {
+    if (!Object.keys(EDITS).length) {
+      var legacy = JSON.parse(localStorage.getItem(LEGACY_KEY) || '{}') || {};
+      Object.keys(legacy).forEach(function (k) {
+        if (legacy[k] && typeof legacy[k] === 'object')
+          EDITS[k] = { s: legacy[k].s, p: legacy[k].p, t: 0 };
+      });
+      if (Object.keys(EDITS).length) saveEdits();
+    }
+  } catch (e) {}
+
+  /* ---------- server/file sync (cross-browser persistence) ----------
+     مشکل: localStorage برای هر origin جداست — file:// و localhost:8080 و
+     github.io سه حافظه جدا دارند؛ کاربر در یکی ویرایش می‌کند و در دیگری
+     نمی‌بیند. راه‌حل: ذخیره مرکزی data/radar/manual-edits.json.
+       - http(s)://localhost → GET/POST /api/edits (سرور محلی)
+       - github.io           → GET manual-edits.json (اسنپ‌شات bake شده توسط
+         build_radar_dashboard + push کرون؛ POST آنجا کار نمی‌کند و بی‌صدا
+         رد می‌شود)
+       - file://             → فقط localStorage
+     ادغام بر اساس t (timestamp): رکورد جدیدتر برنده است. */
+  var SYNC_URL = null, CAN_POST = false;
+  try {
+    var proto = location.protocol;
+    if (proto === 'http:' || proto === 'https:') {
+      if (location.hostname === 'localhost' || location.hostname === '127.0.0.1') {
+        SYNC_URL = '/api/edits'; CAN_POST = true;
+      } else {
+        SYNC_URL = 'manual-edits.json'; CAN_POST = false;
+      }
+    }
+  } catch (e) {}
+
+  function mergeServer(serverEdits) {
+    if (!serverEdits || typeof serverEdits !== 'object') return false;
+    var changed = false;
+    Object.keys(serverEdits).forEach(function (k) {
+      var se = serverEdits[k];
+      if (!se || typeof se !== 'object') return;
+      var le = EDITS[k];
+      var st = se.t || 0, lt = le ? (le.t || 0) : -1;
+      if (!le || st > lt) { EDITS[k] = se; changed = true; }
+    });
+    return changed;
+  }
+
+  function pullRemote() {
+    if (!SYNC_URL) return;
+    try {
+      fetch(SYNC_URL, { cache: 'no-store' })
+        .then(function (r) { return r.ok ? r.json() : null; })
+        .then(function (data) {
+          var payload = data && data.edits ? data.edits : data;
+          if (mergeServer(payload)) { saveEdits(); applyAll(); updCount(); refreshRevenue(); }
+        })
+        .catch(function () {});
+    } catch (e) {}
+  }
+
+  function pushRemote() {
+    if (!SYNC_URL || !CAN_POST) return;
+    try {
+      fetch(SYNC_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ edits: EDITS }),
+      }).catch(function () {});
+    } catch (e) {}
+  }
+
+  function saveEdits() {
+    try { localStorage.setItem(KEY, JSON.stringify(EDITS)); } catch (e) {}
+    try { localStorage.setItem(LEGACY_KEY, JSON.stringify(EDITS)); } catch (e) {}
+  }
 
   /* ---------- CSS ---------- */
   var style = document.createElement('style');
@@ -1068,7 +1144,7 @@ table.rev .hrev-detail td { background:#0f1f36; padding:10px 16px; text-align:ri
   /* ---------- helpers ---------- */
   var FA_D = { '۰': '0', '۱': '1', '۲': '2', '۳': '3', '۴': '4', '۵': '5', '۶': '6', '۷': '7', '۸': '8', '۹': '9' };
   function faToEn(s) { return String(s).replace(/[۰-۹٠-٩]/g, function (d) { return FA_D[d] || d; }); }
-  function save() { try { localStorage.setItem(KEY, JSON.stringify(EDITS)); } catch (e) {} }
+  function save() { saveEdits(); pushRemote(); }
   function keyOf(rid, d) { return rid + '|' + d; }
 
   /* ---------- RE API (consumed by revenue module) ---------- */
@@ -1151,7 +1227,7 @@ table.rev .hrev-detail td { background:#0f1f36; padding:10px 16px; text-align:ri
       var entry = {};
       if (selStatus) entry.s = selStatus;
       if (p !== '') entry.p = parseInt(p, 10);
-      if (entry.s || entry.p !== undefined) EDITS[keyOf(rid, d)] = entry;
+      if (entry.s || entry.p !== undefined) { entry.t = Date.now(); EDITS[keyOf(rid, d)] = entry; }
       else delete EDITS[keyOf(rid, d)];
       save(); applyAll(); updCount(); refreshRevenue();
     }
@@ -1450,6 +1526,7 @@ table.rev .hrev-detail td { background:#0f1f36; padding:10px 16px; text-align:ri
   setMode(false);
   applyAll();
   updCount();
+  pullRemote(); /* ویرایش‌های ذخیره‌شده مرکزی را بکش (localhost / Pages) */
 })();
 </script>
 
