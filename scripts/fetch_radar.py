@@ -190,17 +190,60 @@ def main():
             else:
                 failed.append((rid, err))
 
+    # --- ضد-اسنپ‌شات ناقص: اگر اتاقی فچ نشد، رکورد قبلی‌اش را نگه دار ---
+    # (قبلاً overwrite کامل بود؛ چند شکست موازی → اسنپ‌شات ۳/۳۵ اتاقی و
+    #  داشبورد آن روز تقریباً خالی. حالا فقط اتاق‌های تازه‌فچ شده «تازه»اند.)
+    if failed:
+        snap_file_prev = os.path.join(SNAPSHOT_DIR, today.isoformat() + ".json")
+        prev = {}
+        try:
+            if os.path.exists(snap_file_prev):
+                prev = (json.load(open(snap_file_prev, encoding="utf-8")).get("rooms")) or {}
+        except Exception:
+            prev = {}
+        carried = 0
+        for rid, _err in failed:
+            key = str(rid)
+            old = prev.get(key) or _prev_day_room(SNAPSHOT_DIR, today, key)
+            if old:
+                snapshot["rooms"][key] = {
+                    "meta": old.get("meta") or {},
+                    "nights": old.get("nights") or [],
+                    "carried_from_previous_fetch": True,
+                }
+                carried += 1
+        if carried:
+            print(f"carried {carried} room(s) from earlier fetch of today / yesterday", flush=True)
+
     snap_file = os.path.join(SNAPSHOT_DIR, today.isoformat() + ".json")
-    # همیشه overwrite: کرون هر ۶ ساعت اجرا می‌شود و باید داده تازه بنویسد
-    # (تاریخچه دقیق روز در SQLite توسط radar_history.py نگه داشته می‌شود)
+    # overwrite: هر اجرا داده تازه می‌نویسد، ولی اتاق‌های ناموفق از فچ قبلی
+    # همان روز (یا آخرین اسنپ‌شات موجود) حمل می‌شوند تا اسنپ‌شات ناقص نماند.
     with open(snap_file, "w", encoding="utf-8") as f:
         json.dump(snapshot, f, ensure_ascii=False, indent=2)
 
     print("\n" + "=" * 60)
-    print(f"Radar fetch: {ok}/{len(RADAR_ROOM_IDS)} OK, {len(failed)} failed")
+    print(f"Radar fetch: {ok}/{len(RADAR_ROOM_IDS)} fresh OK, "
+          f"{len(snapshot['rooms'])} rooms in snapshot, {len(failed)} failed")
     for rid, err in failed:
         print(f"  ERR {rid}: {err}")
     print(f"Saved: data/radar/*.json + snapshots/{today}.json")
+
+
+def _prev_day_room(snapshot_dir, today, rid_key):
+    """آخرین رکورد موجود برای این اتاق از اسنپ‌شات‌های روزهای قبل."""
+    import glob
+    files = sorted(glob.glob(os.path.join(snapshot_dir, "*.json")), reverse=True)
+    for fp in files[:5]:  # حداکثر ۵ روز عقب برو
+        base = os.path.basename(fp)[:10]
+        if base >= today.isoformat():
+            continue
+        try:
+            rooms = json.load(open(fp, encoding="utf-8")).get("rooms") or {}
+            if rid_key in rooms:
+                return rooms[rid_key]
+        except Exception:
+            continue
+    return None
 
 
 if __name__ == "__main__":

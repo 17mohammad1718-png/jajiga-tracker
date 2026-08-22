@@ -23,7 +23,7 @@
 اتاق‌ها: همه اتاق‌های موجود در اسنپ‌شات‌ها (نه فقط کانفیگ رادار) — تا با
     فایل revenue فعلی (۳۳ اتاق) هم‌پوشانی داشته باشه. برای اتاق‌هایی که در
     اسنپ‌شات نیستن → رکورد خالی (booked=0).
-کمیسیون: ۱۲٪ (فرض فعلی — هر بار تأیید شود).
+کمیسیون: اتاق خودت ۱۶٪، رقبا ۱۲٪.
 """
 import json
 import os
@@ -43,7 +43,13 @@ REVENUE_DIR = os.path.join(ROOT, "data", "revenue")
 OUT_FILE = os.path.join(REVENUE_DIR, "realized-seydkola-mordad-1405.json")
 PRICING_FILE = os.path.join(ROOT, "data", "pricing", "pricing-dataset.json")
 
-COMMISSION_RATE = 0.12
+# کمیسیون: اتاق خودت ۱۶٪، رقبا ۱۲٪
+COMMISSION_OWN = 0.16
+COMMISSION_OTHER = 0.12
+
+
+def commission_rate_for(rid):
+    return COMMISSION_OWN if rid in OWN_IDS else COMMISSION_OTHER
 
 try:
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -148,7 +154,8 @@ def compute_realized(snaps):
         gross = sum(b["price"] or 0 for b in booked)
         gross_disc = sum(b["effective_price"] for b in booked)
         discount_total = gross - gross_disc
-        commission = round(gross_disc * COMMISSION_RATE)
+        rate = commission_rate_for(rid)
+        commission = round(gross_disc * rate)
         net = gross_disc - commission
 
         results.append({
@@ -160,6 +167,7 @@ def compute_realized(snaps):
             "gross_discounted": gross_disc,
             "discount_total": discount_total,
             "commission": commission,
+            "commission_rate": rate,
             "net": net,
             "range_start": realized_days[0].isoformat(),
             "range_end": realized_days[-1].isoformat(),
@@ -196,7 +204,7 @@ def main():
     payload = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "source": "radar snapshots",
-        "commission_rate": COMMISSION_RATE,
+        "commission_rate": {"own": COMMISSION_OWN, "other": COMMISSION_OTHER},
         "snapshot_first": first.isoformat(),
         "snapshot_last": last.isoformat(),
         "realized_range": (
@@ -211,7 +219,7 @@ def main():
     tot_net = sum(r["net"] for r in results)
     print("=" * 60)
     print(f"Realized revenue: {len(results)} rooms | "
-          f"range {payload['realized_range']} | commission {int(COMMISSION_RATE*100)}%")
+          f"range {payload['realized_range']} | commission own 16% / others 12%")
     print(f"  rooms with bookings: {n_booked} | total net {tot_net:,}")
     print(f"Saved: {OUT_FILE}")
 

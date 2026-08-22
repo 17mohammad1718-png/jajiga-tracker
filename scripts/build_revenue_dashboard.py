@@ -9,7 +9,7 @@
 import json, os, html
 from datetime import date
 
-from radar_common import j_dm
+from radar_common import j_dm, OWN_IDS
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(SCRIPT_DIR)
@@ -35,15 +35,7 @@ for i, r in enumerate(ok, 1):
     nights_html = ""
     for n in sorted(r.get("nights", []), key=lambda x: x["date"]):
         g = n["date"]
-        base = date(2026, 7, 23)
-        gd_ = date.fromisoformat(g)
-        delta = (gd_ - base).days
-        if 0 <= delta < 31:
-            jl = f"{delta+1} مرداد"
-        elif 0 <= (gd_ - date(2026, 8, 23)).days < 31:
-            jl = f"{(gd_ - date(2026, 8, 23)).days + 1} شهریور"
-        else:
-            jl = g
+        jl = j_dm(g)  # برچسب شمسی — هر ماه، بدون هاردکد
         flags = []
         if n.get("weekend"): flags.append("آخر هفته")
         if n.get("holiday"): flags.append("تعطیل")
@@ -73,7 +65,11 @@ tot_booked = sum(r["booked"] for r in ok)
 n_booked = sum(1 for r in ok if r["booked"] > 0)
 
 _all_dates = sorted(n["date"] for r in ok for n in r.get("nights", []))
-range_label = f"{j_dm(_all_dates[0])} تا {j_dm(_all_dates[-1])} ۱۴۰۵" if _all_dates else "—"
+range_label = f"{j_dm(_all_dates[0])} تا {j_dm(_all_dates[-1])}" if _all_dates else "—"
+
+# برچسب کمیسیون: چون اتاق خودت ۱۶٪ و رقبا ۱۲٪ هستند
+own_in_data = any(r["id"] in OWN_IDS for r in ok)
+comm_label = "کمیسیون ۱۶٪ (کلبه شما) / ۱۲٪ (رقبا)" if own_in_data else "کمیسیون ۱۲٪"
 
 # ===== 3. میزبان‌ها (تخمین API) =====
 host_order = []
@@ -424,7 +420,7 @@ if realized_kpi:
         f'<div class="val en" style="color:#f87171">{realized_kpi.get("tot_disc",0):,}</div></div>\n'
         f'    <div class="rcard"><div class="label">ناخالص (گذشته)</div>'
         f'<div class="val en">{realized_kpi.get("tot_gross",0):,}</div></div>\n'
-        f'    <div class="rcard"><div class="label">کمیسیون ۱۲٪ (گذشته)</div>'
+        f'    <div class="rcard"><div class="label">کمیسیون (گذشته)</div>'
         f'<div class="val en" style="color:#f87171">{realized_kpi.get("tot_comm",0):,}</div></div>\n'
         f'    <div class="rcard"><div class="label">درآمد خالص (گذشته)</div>'
         f'<div class="val en" style="color:#34d399">{realized_kpi.get("tot_net",0):,}</div></div>\n'
@@ -585,7 +581,7 @@ html_out = f"""<!DOCTYPE html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>درآمد تخمینی کلبه‌های سیدکلا — تا ۳۱ مرداد ۱۴۰۵</title>
+<title>درآمد تخمینی کلبه‌های سیدکلا</title>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💵</text></svg>">
 <style>{CSS}</style>
 </head>
@@ -593,7 +589,7 @@ html_out = f"""<!DOCTYPE html>
 <div class="wrap">
   <div class="hero">
     <h1>📊 درآمد تخمینی کلبه‌های سیدکلا</h1>
-    <div class="sub">بازه: {range_label} &nbsp;•&nbsp; {len(ok)} کلبه &nbsp;•&nbsp; کمیسیون ۱۲٪ &nbsp;•&nbsp; با احتساب تخفیف هر شب &nbsp;•&nbsp; منبع: API تقویم جاجیگا</div>
+    <div class="sub">بازه: {range_label} &nbsp;•&nbsp; {len(ok)} کلبه &nbsp;•&nbsp; {comm_label} &nbsp;•&nbsp; با احتساب تخفیف هر شب &nbsp;•&nbsp; منبع: API تقویم جاجیگا</div>
   </div>
 
 {_RK_BLOCK}
@@ -603,7 +599,7 @@ html_out = f"""<!DOCTYPE html>
     <div class="card"><div class="label">کل شب‌های پر</div><div class="val en">{tot_booked}</div></div>
     <div class="card"><div class="label">جمع تخفیف</div><div class="val en" style="color:#f87171">{tot_disc:,}</div></div>
     <div class="card"><div class="label">ناخالص (با تخفیف)</div><div class="val en">{tot_gross:,}</div></div>
-    <div class="card"><div class="label">کمیسیون ۱۲٪</div><div class="val en" style="color:#f87171">{tot_comm:,}</div></div>
+    <div class="card"><div class="label">کمیسیون</div><div class="val en" style="color:#f87171">{tot_comm:,}</div></div>
     <div class="card"><div class="label">درآمد خالص</div><div class="val green en">{tot_net:,}</div></div>
   </div>
   <div class="table-wrap">

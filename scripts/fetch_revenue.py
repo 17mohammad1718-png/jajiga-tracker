@@ -5,7 +5,7 @@
 ورودی: data/revenue/seydkola-mordad-1405.json (اتاق‌ها + عنوان)
 خروجی: همان فایل با داده تازه — فقط شب‌های رزروشده در بازه پنجره
 
-بازه: مرداد ۱۴۰۵ = 2026-07-23 (۱ مرداد) .. 2026-08-22 (۳۱ مرداد)
+بازه: رولینگ — از امروز تا HORIZON_DAYS روز بعد (پیش‌فرض ۴۵)
 
 قوانین (مستند jajiga-revenue-estimation):
     - منبع: api.jajiga.com/api/nights?room_id={id}  (بدون auth)
@@ -14,7 +14,7 @@
     - قانون طلایی: روزهای گذشته (date < today) هرگز «پر» حساب نمی‌شوند
       (اولین شبِ پنجره در API همیشه is_unavailable=true — آرتیفکت است)
     - تخفیف هر شب اعمال می‌شود: effective_price = price × (1 − discount/100)
-    - کمیسیون ۱۲٪ (فرض فعلی کاربر — قبل از استناد تأیید شود)
+    - کمیسیون: اتاق خودت ۱۶٪، رقبا ۱۲٪
     - فچ موازی (۴ همزمان) + retry نمایی + jitter — مثل fetch_radar.py
 """
 import json
@@ -24,7 +24,9 @@ import sys
 import time
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from datetime import date, datetime, timezone
+from datetime import date, datetime, timedelta, timezone
+
+from radar_common import OWN_IDS
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(SCRIPT_DIR)
@@ -44,12 +46,24 @@ HEADERS = {
 DELAY_MIN, DELAY_MAX = 0.4, 1.2
 MAX_ATTEMPTS = 4
 CONCURRENCY = 4
-COMMISSION_RATE = 0.12
+
+# کمیسیون: اتاق‌های خودت ۱۶٪ (جاجیگا)، رقبا ۱۲٪ (فرض مقایسه‌ای)
+COMMISSION_OWN = 0.16
+COMMISSION_OTHER = 0.12
 MANUAL_BLOCKS = {}  # room_id_str -> set of ISO dates (بارگذاری در main)
 
-# پنجره مرداد ۱۴۰۵ (۱ مرداد = 2026-07-23، ۳۱ مرداد = 2026-08-22)
-PERIOD_START = date(2026, 7, 23)
-PERIOD_END = date(2026, 8, 22)
+# پنجره رولینگ: از امروز تا HORIZON_DAYS روز بعد (بدون هاردکد تاریخ)
+# — داشبورد همیشه زنده می‌ماند و بعد از پایان هر ماه شمسی نمی‌شکند.
+HORIZON_DAYS = 45
+
+
+def period_window():
+    """(start, end) پنجره تخمین: امروز .. امروز+HORIZON_DAYS."""
+    today = date.today()
+    return today, today + timedelta(days=HORIZON_DAYS)
+
+
+PERIOD_START, PERIOD_END = period_window()
 
 try:
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -115,6 +129,11 @@ def load_manual_blocks():
     return out
 
 
+def commission_rate_for(rid):
+    """نرخ کمیسیون هر اتاق: خودت ۱۶٪، رقبا ۱۲٪."""
+    return COMMISSION_OWN if rid in OWN_IDS else COMMISSION_OTHER
+
+
 def compute_room(rec):
     """فچ + محاسبه درآمد یک اتاق. Returns updated record (یا None در خطا)."""
     rid = rec["id"]
@@ -157,7 +176,8 @@ def compute_room(rec):
     gross = sum(b["price"] or 0 for b in booked)
     gross_disc = sum(b["effective_price"] for b in booked)
     discount_total = gross - gross_disc
-    commission = round(gross_disc * COMMISSION_RATE)
+    rate = commission_rate_for(rid)
+    commission = round(gross_disc * rate)
     net = gross_disc - commission
     window_days = (PERIOD_END - today).days + 1
     free = max(window_days - len(booked), 0)
@@ -171,6 +191,7 @@ def compute_room(rec):
         "gross_discounted": gross_disc,
         "discount_total": discount_total,
         "commission": commission,
+        "commission_rate": rate,
         "net": net,
         "nights": booked,
     }
@@ -183,8 +204,8 @@ def main():
     if not rooms:
         print("No rooms — create data/revenue/seydkola-mordad-1405.json first.")
         sys.exit(1)
-    print(f"Revenue rooms: {len(rooms)} | window {today_str()} .. {PERIOD_END} | "
-          f"commission {int(COMMISSION_RATE*100)}%", flush=True)
+    print(f"Revenue rooms: {len(rooms)} | window {today_str()} .. {PERIOD_END} "
+          f"(rolling +{HORIZON_DAYS}d) | commission own 16% / others 12%", flush=True)
 
     results = {}
     with ThreadPoolExecutor(max_workers=CONCURRENCY) as ex:
