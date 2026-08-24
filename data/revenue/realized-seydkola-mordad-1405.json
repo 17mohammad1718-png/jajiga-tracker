@@ -1,28 +1,38 @@
 {
-  "generated_at": "2026-08-24T14:32:42.722512+00:00",
+  "generated_at": "2026-08-24T20:31:23.196210+00:00",
   "source": "radar snapshots",
   "commission_rate": {
     "own": 0.16,
     "other": 0.12
   },
   "snapshot_first": "2026-08-08",
-  "snapshot_last": "2026-08-24",
-  "realized_range": "2026-08-08..2026-08-23",
+  "snapshot_last": "2026-08-25",
+  "realized_range": "2026-08-08..2026-08-24",
   "rooms": [
     {
       "id": 3297585,
       "title": "کلبه سوئیسی در بابلکنار - سیدکلا",
       "own": true,
-      "booked": 0,
-      "gross": 0,
-      "gross_discounted": 0,
-      "discount_total": 0,
-      "commission": 0,
+      "booked": 1,
+      "gross": 2400000,
+      "gross_discounted": 1920000,
+      "discount_total": 480000,
+      "commission": 307200,
       "commission_rate": 0.16,
-      "net": 0,
+      "net": 1612800,
       "range_start": "2026-08-08",
-      "range_end": "2026-08-23",
-      "nights": []
+      "range_end": "2026-08-24",
+      "nights": [
+        {
+          "date": "2026-08-24",
+          "price": 2400000,
+          "effective_price": 1920000,
+          "discount": 20,
+          "weekend": false,
+          "holiday": false,
+          "peak": false
+        }
+      ]
     },
     {
       "id": 3293951,
@@ -36,7 +46,7 @@
       "commission_rate": 0.12,
       "net": 0,
       "range_start": "2026-08-08",
-      "range_end": "2026-08-23",
+      "range_end": "2026-08-24",
       "nights": []
     },
     {
@@ -51,10 +61,10 @@
       "commission_rate": 0.12,
       "net": 2200000,
       "range_start": "2026-08-08",
-      "range_end": "2026-08-23",
+      "range_end": "2026-08-24",
       "nights": [
         {
-          "date": "2026-08-23",
+          "date": "2026-08-24",
           "price": 2500000,
           "effective_price": 2500000,
           "discount": 0,
@@ -68,16 +78,26 @@
       "id": 3181918,
       "title": "کلبه سوئیسی جکوزی دار نزدیک لفور - سیدکلا",
       "own": false,
-      "booked": 0,
-      "gross": 0,
-      "gross_discounted": 0,
+      "booked": 1,
+      "gross": 2500000,
+      "gross_discounted": 2500000,
       "discount_total": 0,
-      "commission": 0,
+      "commission": 300000,
       "commission_rate": 0.12,
-      "net": 0,
+      "net": 2200000,
       "range_start": "2026-08-08",
-      "range_end": "2026-08-23",
-      "nights": []
+      "range_end": "2026-08-24",
+      "nights": [
+        {
+          "date": "2026-08-24",
+          "price": 2500000,
+          "effective_price": 2500000,
+          "discount": 0,
+          "weekend": false,
+          "holiday": false,
+          "peak": false
+        }
+      ]
     },
     {
       "id": 3240255,
@@ -91,10 +111,10 @@
       "commission_rate": 0.12,
       "net": 8712000,
       "range_start": "2026-08-08",
-      "range_end": "2026-08-23",
+      "range_end": "2026-08-24",
       "nights": [
         {
-          "date": "2026-08-23",
+          "date": "2026-08-24",
           "price": 9900000,
           "effective_price": 9900000,
           "discount": 0,
@@ -116,10 +136,10 @@
       "commission_rate": 0.12,
       "net": 2200000,
       "range_start": "2026-08-08",
-      "range_end": "2026-08-23",
+      "range_end": "2026-08-24",
       "nights": [
         {
-          "date": "2026-08-23",
+          "date": "2026-08-24",
           "price": 2500000,
           "effective_price": 2500000,
           "discount": 0,
@@ -141,10 +161,10 @@
       "commission_rate": 0.12,
       "net": 2200000,
       "range_start": "2026-08-08",
-      "range_end": "2026-08-23",
+      "range_end": "2026-08-24",
       "nights": [
         {
-          "date": "2026-08-23",
+          "date": "2026-08-24",
           "price": 2500000,
           "effective_price": 2500000,
           "discount": 0,
@@ -158,31 +178,6 @@
       "id": 3225446,
       "title": "کلبه سوئیسی با جکوزی در بابلکنار - سیدکلا",
       "own": false,
-      "booked": 1,
-      "gross": 3480000,
-      "gross_discounted": 3480000,
-      "discount_total": 0,
-      "commission": 417600,
-      "commission_rate": 0.12,
-      "net": 3062400,
-      "range_start": "2026-08-08",
-      "range_end": "2026-08-23",
-      "nights": [
-        {
-          "date": "2026-08-23",
-          "price": 3480000,
-          "effective_price": 3480000,
-          "discount": 0,
-          "weekend": false,
-          "holiday": false,
-          "peak": false
-        }
-      ]
-    },
-    {
-      "id": 3215808,
-      "title": "کلبه سوئیسی جکوزی دار در بابلکنار - سید کلا",
-      "own": false,
       "booked": 0,
       "gross": 0,
       "gross_discounted": 0,
@@ -191,8 +186,33 @@
       "commission_rate": 0.12,
       "net": 0,
       "range_start": "2026-08-08",
-      "range_end": "2026-08-23",
+      "range_end": "2026-08-24",
       "nights": []
+    },
+    {
+      "id": 3215808,
+      "title": "کلبه سوئیسی جکوزی دار در بابلکنار - سید کلا",
+      "own": false,
+      "booked": 1,
+      "gross": 6000000,
+      "gross_discounted": 6000000,
+      "discount_total": 0,
+      "commission": 720000,
+      "commission_rate": 0.12,
+      "net": 5280000,
+      "range_start": "2026-08-08",
+      "range_end": "2026-08-24",
+      "nights": [
+        {
+          "date": "2026-08-24",
+          "price": 6000000,
+          "effective_price": 6000000,
+          "discount": 0,
+          "weekend": false,
+          "holiday": false,
+          "peak": false
+        }
+      ]
     },
     {
       "id": 3186964,
@@ -206,10 +226,10 @@
       "commission_rate": 0.12,
       "net": 2596000,
       "range_start": "2026-08-08",
-      "range_end": "2026-08-23",
+      "range_end": "2026-08-24",
       "nights": [
         {
-          "date": "2026-08-23",
+          "date": "2026-08-24",
           "price": 2950000,
           "effective_price": 2950000,
           "discount": 0,
@@ -223,16 +243,26 @@
       "id": 3169804,
       "title": "ویلا استخردار سیدابراهیم",
       "own": false,
-      "booked": 0,
-      "gross": 0,
-      "gross_discounted": 0,
+      "booked": 1,
+      "gross": 5300000,
+      "gross_discounted": 5300000,
       "discount_total": 0,
-      "commission": 0,
+      "commission": 636000,
       "commission_rate": 0.12,
-      "net": 0,
+      "net": 4664000,
       "range_start": "2026-08-08",
-      "range_end": "2026-08-23",
-      "nights": []
+      "range_end": "2026-08-24",
+      "nights": [
+        {
+          "date": "2026-08-24",
+          "price": 5300000,
+          "effective_price": 5300000,
+          "discount": 0,
+          "weekend": false,
+          "holiday": false,
+          "peak": false
+        }
+      ]
     },
     {
       "id": 3219516,
@@ -246,7 +276,7 @@
       "commission_rate": 0.12,
       "net": 0,
       "range_start": "2026-08-08",
-      "range_end": "2026-08-23",
+      "range_end": "2026-08-24",
       "nights": []
     },
     {
@@ -261,10 +291,10 @@
       "commission_rate": 0.12,
       "net": 3520000,
       "range_start": "2026-08-08",
-      "range_end": "2026-08-23",
+      "range_end": "2026-08-24",
       "nights": [
         {
-          "date": "2026-08-23",
+          "date": "2026-08-24",
           "price": 4000000,
           "effective_price": 4000000,
           "discount": 0,
@@ -286,10 +316,10 @@
       "commission_rate": 0.12,
       "net": 6160000,
       "range_start": "2026-08-08",
-      "range_end": "2026-08-23",
+      "range_end": "2026-08-24",
       "nights": [
         {
-          "date": "2026-08-23",
+          "date": "2026-08-24",
           "price": 7000000,
           "effective_price": 7000000,
           "discount": 0,
@@ -304,19 +334,19 @@
       "title": "اجاره کلبه چوبی در سوادکوه - سیدکلا",
       "own": false,
       "booked": 1,
-      "gross": 2600000,
-      "gross_discounted": 2600000,
+      "gross": 3500000,
+      "gross_discounted": 3500000,
       "discount_total": 0,
-      "commission": 312000,
+      "commission": 420000,
       "commission_rate": 0.12,
-      "net": 2288000,
+      "net": 3080000,
       "range_start": "2026-08-08",
-      "range_end": "2026-08-23",
+      "range_end": "2026-08-24",
       "nights": [
         {
-          "date": "2026-08-23",
-          "price": 2600000,
-          "effective_price": 2600000,
+          "date": "2026-08-24",
+          "price": 3500000,
+          "effective_price": 3500000,
           "discount": 0,
           "weekend": false,
           "holiday": false,
@@ -328,16 +358,26 @@
       "id": 3253520,
       "title": "اجاره کلبه سوئیسی در بابلکنار - سیدکلا",
       "own": false,
-      "booked": 0,
-      "gross": 0,
-      "gross_discounted": 0,
+      "booked": 1,
+      "gross": 5000000,
+      "gross_discounted": 5000000,
       "discount_total": 0,
-      "commission": 0,
+      "commission": 600000,
       "commission_rate": 0.12,
-      "net": 0,
+      "net": 4400000,
       "range_start": "2026-08-08",
-      "range_end": "2026-08-23",
-      "nights": []
+      "range_end": "2026-08-24",
+      "nights": [
+        {
+          "date": "2026-08-24",
+          "price": 5000000,
+          "effective_price": 5000000,
+          "discount": 0,
+          "weekend": false,
+          "holiday": false,
+          "peak": false
+        }
+      ]
     },
     {
       "id": 3299045,
@@ -351,10 +391,10 @@
       "commission_rate": 0.12,
       "net": 2640000,
       "range_start": "2026-08-08",
-      "range_end": "2026-08-23",
+      "range_end": "2026-08-24",
       "nights": [
         {
-          "date": "2026-08-23",
+          "date": "2026-08-24",
           "price": 3000000,
           "effective_price": 3000000,
           "discount": 0,
@@ -376,10 +416,10 @@
       "commission_rate": 0.12,
       "net": 1936000,
       "range_start": "2026-08-08",
-      "range_end": "2026-08-23",
+      "range_end": "2026-08-24",
       "nights": [
         {
-          "date": "2026-08-23",
+          "date": "2026-08-24",
           "price": 2200000,
           "effective_price": 2200000,
           "discount": 0,
@@ -401,7 +441,7 @@
       "commission_rate": 0.12,
       "net": 0,
       "range_start": "2026-08-08",
-      "range_end": "2026-08-23",
+      "range_end": "2026-08-24",
       "nights": []
     },
     {
@@ -416,7 +456,7 @@
       "commission_rate": 0.12,
       "net": 0,
       "range_start": "2026-08-08",
-      "range_end": "2026-08-23",
+      "range_end": "2026-08-24",
       "nights": []
     },
     {
@@ -431,10 +471,10 @@
       "commission_rate": 0.12,
       "net": 1408000,
       "range_start": "2026-08-08",
-      "range_end": "2026-08-23",
+      "range_end": "2026-08-24",
       "nights": [
         {
-          "date": "2026-08-23",
+          "date": "2026-08-24",
           "price": 1600000,
           "effective_price": 1600000,
           "discount": 0,
@@ -456,7 +496,7 @@
       "commission_rate": 0.12,
       "net": 0,
       "range_start": "2026-08-08",
-      "range_end": "2026-08-23",
+      "range_end": "2026-08-24",
       "nights": []
     },
     {
@@ -471,7 +511,7 @@
       "commission_rate": 0.12,
       "net": 0,
       "range_start": "2026-08-08",
-      "range_end": "2026-08-23",
+      "range_end": "2026-08-24",
       "nights": []
     },
     {
@@ -486,7 +526,7 @@
       "commission_rate": 0.12,
       "net": 0,
       "range_start": "2026-08-08",
-      "range_end": "2026-08-23",
+      "range_end": "2026-08-24",
       "nights": []
     },
     {
@@ -501,7 +541,7 @@
       "commission_rate": 0.12,
       "net": 0,
       "range_start": "2026-08-08",
-      "range_end": "2026-08-23",
+      "range_end": "2026-08-24",
       "nights": []
     },
     {
@@ -516,7 +556,7 @@
       "commission_rate": 0.12,
       "net": 0,
       "range_start": "2026-08-08",
-      "range_end": "2026-08-23",
+      "range_end": "2026-08-24",
       "nights": []
     },
     {
@@ -531,7 +571,7 @@
       "commission_rate": 0.12,
       "net": 0,
       "range_start": "2026-08-08",
-      "range_end": "2026-08-23",
+      "range_end": "2026-08-24",
       "nights": []
     },
     {
@@ -546,10 +586,10 @@
       "commission_rate": 0.12,
       "net": 2640000,
       "range_start": "2026-08-08",
-      "range_end": "2026-08-23",
+      "range_end": "2026-08-24",
       "nights": [
         {
-          "date": "2026-08-23",
+          "date": "2026-08-24",
           "price": 3000000,
           "effective_price": 3000000,
           "discount": 0,
@@ -571,7 +611,7 @@
       "commission_rate": 0.12,
       "net": 0,
       "range_start": "2026-08-08",
-      "range_end": "2026-08-23",
+      "range_end": "2026-08-24",
       "nights": []
     },
     {
@@ -586,58 +626,38 @@
       "commission_rate": 0.12,
       "net": 0,
       "range_start": "2026-08-08",
-      "range_end": "2026-08-23",
+      "range_end": "2026-08-24",
       "nights": []
     },
     {
       "id": 3232816,
       "title": "خانه روستایی",
       "own": false,
-      "booked": 1,
-      "gross": 1500000,
-      "gross_discounted": 1500000,
+      "booked": 0,
+      "gross": 0,
+      "gross_discounted": 0,
       "discount_total": 0,
-      "commission": 180000,
+      "commission": 0,
       "commission_rate": 0.12,
-      "net": 1320000,
+      "net": 0,
       "range_start": "2026-08-08",
-      "range_end": "2026-08-23",
-      "nights": [
-        {
-          "date": "2026-08-23",
-          "price": 1500000,
-          "effective_price": 1500000,
-          "discount": 0,
-          "weekend": false,
-          "holiday": false,
-          "peak": false
-        }
-      ]
+      "range_end": "2026-08-24",
+      "nights": []
     },
     {
       "id": 3262853,
       "title": "خانه مبله - طبقه دوم",
       "own": false,
-      "booked": 1,
-      "gross": 2500000,
-      "gross_discounted": 2500000,
+      "booked": 0,
+      "gross": 0,
+      "gross_discounted": 0,
       "discount_total": 0,
-      "commission": 300000,
+      "commission": 0,
       "commission_rate": 0.12,
-      "net": 2200000,
+      "net": 0,
       "range_start": "2026-08-08",
-      "range_end": "2026-08-23",
-      "nights": [
-        {
-          "date": "2026-08-23",
-          "price": 2500000,
-          "effective_price": 2500000,
-          "discount": 0,
-          "weekend": false,
-          "holiday": false,
-          "peak": false
-        }
-      ]
+      "range_end": "2026-08-24",
+      "nights": []
     },
     {
       "id": 3193646,
@@ -651,7 +671,7 @@
       "commission_rate": 0.12,
       "net": 0,
       "range_start": "2026-08-08",
-      "range_end": "2026-08-23",
+      "range_end": "2026-08-24",
       "nights": []
     },
     {
@@ -666,7 +686,7 @@
       "commission_rate": 0.12,
       "net": 0,
       "range_start": "2026-08-08",
-      "range_end": "2026-08-23",
+      "range_end": "2026-08-24",
       "nights": []
     },
     {
@@ -681,7 +701,7 @@
       "commission_rate": 0.12,
       "net": 0,
       "range_start": "2026-08-08",
-      "range_end": "2026-08-23",
+      "range_end": "2026-08-24",
       "nights": []
     }
   ]
