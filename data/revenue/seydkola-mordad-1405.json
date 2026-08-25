@@ -2,15 +2,24 @@
   {
     "id": 3219516,
     "title": "ویلا دوبلکس استخردار در بابل- سیدکلا",
-    "booked": 22,
-    "free": 24,
-    "gross": 203500000,
-    "gross_discounted": 203500000,
+    "booked": 25,
+    "free": 21,
+    "gross": 231500000,
+    "gross_discounted": 231500000,
     "discount_total": 0,
-    "commission": 24420000,
+    "commission": 27780000,
     "commission_rate": 0.12,
-    "net": 179080000,
+    "net": 203720000,
     "nights": [
+      {
+        "date": "2026-08-25",
+        "price": 9000000,
+        "effective_price": 9000000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
       {
         "date": "2026-08-27",
         "price": 10000000,
@@ -36,6 +45,15 @@
         "discount": 0,
         "weekend": false,
         "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-30",
+        "price": 10000000,
+        "effective_price": 10000000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": true,
         "peak": false
       },
       {
@@ -123,6 +141,15 @@
         "date": "2026-09-12",
         "price": 8500000,
         "effective_price": 8500000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-09-14",
+        "price": 9000000,
+        "effective_price": 9000000,
         "discount": 0,
         "weekend": false,
         "holiday": false,
@@ -1618,14 +1645,14 @@
   {
     "id": 3294040,
     "title": "ویلا با چشم انداز زیبا در بابلکنار - سیدکلا",
-    "booked": 5,
-    "free": 41,
-    "gross": 17000000,
-    "gross_discounted": 17000000,
+    "booked": 8,
+    "free": 38,
+    "gross": 24500000,
+    "gross_discounted": 24500000,
     "discount_total": 0,
-    "commission": 2040000,
+    "commission": 2940000,
     "commission_rate": 0.12,
-    "net": 14960000,
+    "net": 21560000,
     "nights": [
       {
         "date": "2026-08-25",
@@ -1667,6 +1694,33 @@
         "date": "2026-08-29",
         "price": 4000000,
         "effective_price": 4000000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-31",
+        "price": 2500000,
+        "effective_price": 2500000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-09-01",
+        "price": 2500000,
+        "effective_price": 2500000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-09-13",
+        "price": 2500000,
+        "effective_price": 2500000,
         "discount": 0,
         "weekend": false,
         "holiday": false,
@@ -2612,15 +2666,43 @@
   {
     "id": 3262853,
     "title": "خانه مبله در بابلکنار - سیدکلا - طبقه دوم",
-    "booked": 0,
-    "free": 46,
-    "gross": 0,
-    "gross_discounted": 0,
+    "booked": 3,
+    "free": 43,
+    "gross": 7500000,
+    "gross_discounted": 7500000,
     "discount_total": 0,
-    "commission": 0,
+    "commission": 900000,
     "commission_rate": 0.12,
-    "net": 0,
-    "nights": []
+    "net": 6600000,
+    "nights": [
+      {
+        "date": "2026-08-27",
+        "price": 2500000,
+        "effective_price": 2500000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-28",
+        "price": 2500000,
+        "effective_price": 2500000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-29",
+        "price": 2500000,
+        "effective_price": 2500000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      }
+    ]
   },
   {
     "id": 3297585,
@@ -2683,14 +2765,24 @@
   {
     "id": 3302232,
     "title": "ویلا دوبلکس در بابلکنار - سیدکلا",
-    "booked": 0,
-    "free": 46,
-    "gross": 0,
-    "gross_discounted": 0,
+    "booked": 1,
+    "free": 45,
+    "gross": 3000000,
+    "gross_discounted": 3000000,
     "discount_total": 0,
-    "commission": 0,
+    "commission": 360000,
     "commission_rate": 0.12,
-    "net": 0,
-    "nights": []
+    "net": 2640000,
+    "nights": [
+      {
+        "date": "2026-08-27",
+        "price": 3000000,
+        "effective_price": 3000000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": false,
+        "peak": false
+      }
+    ]
   }
 ]
