@@ -761,14 +761,14 @@
   {
     "id": 3190552,
     "title": "اجاره کلبه چوبی در سوادکوه - سیدکلا",
-    "booked": 22,
-    "free": 24,
-    "gross": 66900000,
-    "gross_discounted": 66900000,
+    "booked": 25,
+    "free": 21,
+    "gross": 78900000,
+    "gross_discounted": 78900000,
     "discount_total": 0,
-    "commission": 8028000,
+    "commission": 9468000,
     "commission_rate": 0.12,
-    "net": 58872000,
+    "net": 69432000,
     "nights": [
       {
         "date": "2026-08-25",
@@ -822,6 +822,15 @@
         "discount": 0,
         "weekend": false,
         "holiday": true,
+        "peak": false
+      },
+      {
+        "date": "2026-08-31",
+        "price": 4000000,
+        "effective_price": 4000000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
         "peak": false
       },
       {
@@ -938,6 +947,24 @@
         "effective_price": 2600000,
         "discount": 0,
         "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-09-16",
+        "price": 4000000,
+        "effective_price": 4000000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-09-17",
+        "price": 4000000,
+        "effective_price": 4000000,
+        "discount": 0,
+        "weekend": true,
         "holiday": false,
         "peak": false
       },
@@ -2386,15 +2413,33 @@
   {
     "id": 3149749,
     "title": "سوئیت در سیدکلا بابلکنار - همکف",
-    "booked": 6,
-    "free": 40,
-    "gross": 15000000,
-    "gross_discounted": 15000000,
+    "booked": 8,
+    "free": 38,
+    "gross": 22000000,
+    "gross_discounted": 22000000,
     "discount_total": 0,
-    "commission": 1800000,
+    "commission": 2640000,
     "commission_rate": 0.12,
-    "net": 13200000,
+    "net": 19360000,
     "nights": [
+      {
+        "date": "2026-08-26",
+        "price": 3500000,
+        "effective_price": 3500000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-27",
+        "price": 3500000,
+        "effective_price": 3500000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": false,
+        "peak": false
+      },
       {
         "date": "2026-09-05",
         "price": 2000000,
