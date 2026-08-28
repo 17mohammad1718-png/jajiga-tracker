@@ -2319,15 +2319,33 @@
   {
     "id": 3149749,
     "title": "سوئیت در سیدکلا بابلکنار - همکف",
-    "booked": 6,
-    "free": 40,
-    "gross": 15000000,
-    "gross_discounted": 15000000,
+    "booked": 8,
+    "free": 38,
+    "gross": 22000000,
+    "gross_discounted": 22000000,
     "discount_total": 0,
-    "commission": 1800000,
+    "commission": 2640000,
     "commission_rate": 0.12,
-    "net": 13200000,
+    "net": 19360000,
     "nights": [
+      {
+        "date": "2026-08-28",
+        "price": 3500000,
+        "effective_price": 3500000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-08-29",
+        "price": 3500000,
+        "effective_price": 3500000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
       {
         "date": "2026-09-05",
         "price": 2000000,
