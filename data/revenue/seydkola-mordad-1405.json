@@ -648,14 +648,14 @@
   {
     "id": 3240445,
     "title": "کلبه سوئیسی با وان جکوزی در بابلکنار - سیدکلا",
-    "booked": 12,
-    "free": 34,
-    "gross": 34480000,
-    "gross_discounted": 34480000,
+    "booked": 13,
+    "free": 33,
+    "gross": 36980000,
+    "gross_discounted": 36980000,
     "discount_total": 0,
-    "commission": 4137600,
+    "commission": 4437600,
     "commission_rate": 0.12,
-    "net": 30342400,
+    "net": 32542400,
     "nights": [
       {
         "date": "2026-08-29",
@@ -673,6 +673,15 @@
         "discount": 0,
         "weekend": false,
         "holiday": true,
+        "peak": false
+      },
+      {
+        "date": "2026-08-31",
+        "price": 2500000,
+        "effective_price": 2500000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
         "peak": false
       },
       {
@@ -1972,14 +1981,14 @@
   {
     "id": 3206573,
     "title": "کلبه چوبی دوبلکس نزدیک لفور - سیدکلا",
-    "booked": 4,
-    "free": 42,
-    "gross": 11000000,
-    "gross_discounted": 11000000,
+    "booked": 3,
+    "free": 43,
+    "gross": 9000000,
+    "gross_discounted": 9000000,
     "discount_total": 0,
-    "commission": 1320000,
+    "commission": 1080000,
     "commission_rate": 0.12,
-    "net": 9680000,
+    "net": 7920000,
     "nights": [
       {
         "date": "2026-08-29",
@@ -1988,15 +1997,6 @@
         "discount": 0,
         "weekend": false,
         "holiday": false,
-        "peak": false
-      },
-      {
-        "date": "2026-08-30",
-        "price": 2000000,
-        "effective_price": 2000000,
-        "discount": 0,
-        "weekend": false,
-        "holiday": true,
         "peak": false
       },
       {
@@ -2595,14 +2595,14 @@
   {
     "id": 3297585,
     "title": "کلبه سوئیسی در بابلکنار - سیدکلا",
-    "booked": 7,
-    "free": 39,
-    "gross": 21000000,
-    "gross_discounted": 18100000,
+    "booked": 9,
+    "free": 37,
+    "gross": 25800000,
+    "gross_discounted": 22900000,
     "discount_total": 2900000,
-    "commission": 2896000,
+    "commission": 3664000,
     "commission_rate": 0.16,
-    "net": 15204000,
+    "net": 19236000,
     "nights": [
       {
         "date": "2026-08-29",
@@ -2663,6 +2663,24 @@
         "price": 2400000,
         "effective_price": 1920000,
         "discount": 20,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-09-11",
+        "price": 2400000,
+        "effective_price": 2400000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-09-12",
+        "price": 2400000,
+        "effective_price": 2400000,
+        "discount": 0,
         "weekend": false,
         "holiday": false,
         "peak": false
