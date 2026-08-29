@@ -1,0 +1,9 @@
+{
+ "checked": 1200,
+ "missing_in_corpus": 0,
+ "fake_quotes_count": 0,
+ "fake_quotes_sample": [],
+ "invalid_themes": [],
+ "invalid_sentiment": [],
+ "pass": true
+}
