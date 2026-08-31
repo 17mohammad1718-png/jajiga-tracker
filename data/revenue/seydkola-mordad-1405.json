@@ -585,15 +585,24 @@
   {
     "id": 3240445,
     "title": "کلبه سوئیسی با وان جکوزی در بابلکنار - سیدکلا",
-    "booked": 10,
-    "free": 36,
-    "gross": 27000000,
-    "gross_discounted": 27000000,
+    "booked": 11,
+    "free": 35,
+    "gross": 29500000,
+    "gross_discounted": 29500000,
     "discount_total": 0,
-    "commission": 3240000,
+    "commission": 3540000,
     "commission_rate": 0.12,
-    "net": 23760000,
+    "net": 25960000,
     "nights": [
+      {
+        "date": "2026-08-31",
+        "price": 2500000,
+        "effective_price": 2500000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
       {
         "date": "2026-09-01",
         "price": 2500000,
