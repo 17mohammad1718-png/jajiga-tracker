@@ -29,18 +29,27 @@ _edits_lock = threading.Lock()
 
 
 def load_edits():
+    """Return the edits mapping from disk. Tolerates both the wrapped
+    format {"edits": {...}} (written by this server and expected by
+    build_radar_dashboard's merge step) and a bare {room|date: rec} map."""
     try:
         with open(EDITS_FILE, encoding="utf-8") as f:
-            return json.load(f)
+            data = json.load(f)
     except Exception:
         return {}
+    if isinstance(data, dict) and isinstance(data.get("edits"), dict):
+        return data["edits"]
+    return data if isinstance(data, dict) else {}
 
 
 def save_edits(edits):
+    """Persist as {"edits": {...}} — the wrapper format that GET returns,
+    build_radar_dashboard's merge step expects, and radar_edit_module.js
+    pulls on github.io (manual-edits.json next to the dashboard)."""
     os.makedirs(os.path.dirname(EDITS_FILE), exist_ok=True)
     tmp = EDITS_FILE + ".tmp"
     with open(tmp, "w", encoding="utf-8") as f:
-        json.dump(edits, f, ensure_ascii=False, indent=1)
+        json.dump({"edits": edits}, f, ensure_ascii=False, indent=1)
     os.replace(tmp, EDITS_FILE)
 
 
