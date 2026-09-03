@@ -386,14 +386,14 @@
   {
     "id": 3178910,
     "title": "ویلا استخردار در بابلکنار - سیدکلا",
-    "booked": 7,
-    "free": 39,
-    "gross": 52800000,
-    "gross_discounted": 52800000,
+    "booked": 8,
+    "free": 38,
+    "gross": 61100000,
+    "gross_discounted": 61100000,
     "discount_total": 0,
-    "commission": 6336000,
+    "commission": 7332000,
     "commission_rate": 0.12,
-    "net": 46464000,
+    "net": 53768000,
     "nights": [
       {
         "date": "2026-09-03",
@@ -401,6 +401,15 @@
         "effective_price": 10800000,
         "discount": 0,
         "weekend": true,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-09-04",
+        "price": 8300000,
+        "effective_price": 8300000,
+        "discount": 0,
+        "weekend": false,
         "holiday": false,
         "peak": false
       },
