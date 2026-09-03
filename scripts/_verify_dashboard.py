@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import re, json
 
-with open(r"C:\Users\Ma\projects\jajiga-tracker\داشبورد-تخمین-درآمد.html", encoding="utf-8") as f:
+with open(r"H:\projects\jajiga-tracker\داشبورد-تخمین-درآمد.html", encoding="utf-8") as f:
     c = f.read()
 
 # 1. چک کنیم بخش realized هست

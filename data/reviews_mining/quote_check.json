@@ -1,9 +1,20 @@
 {
- "checked": 1200,
+ "checked": 5500,
  "missing_in_corpus": 0,
- "fake_quotes_count": 0,
- "fake_quotes_sample": [],
+ "fake_quotes_count": 2,
+ "fake_quotes_sample": [
+  {
+   "shard_file": "data/reviews_mining\\tags_shard_1.jsonl",
+   "key": "3180749:736165",
+   "quote": "آب استخر کدر و کثیف بود و پتوها و ملافه‌ها هم تمیز نبود"
+  },
+  {
+   "shard_file": "data/reviews_mining\\tags_shard_1b_p09.jsonl",
+   "key": "3180749:736165",
+   "quote": "آب استخر کدر و کثیف بود و پتوها و ملافه‌ها هم تمیز نبود"
+  }
+ ],
  "invalid_themes": [],
  "invalid_sentiment": [],
- "pass": true
+ "pass": false
 }

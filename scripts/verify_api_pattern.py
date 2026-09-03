@@ -12,8 +12,8 @@ HEADERS = {
     "Accept": "application/json",
 }
 
-DATA_FILE = r"C:\Users\Ma\projects\jajiga-tracker\data\all-cabins.json"
-OUT_FILE = r"C:\Users\Ma\projects\jajiga-tracker\data\_api_verify.json"
+DATA_FILE = r"H:\projects\jajiga-tracker\data\all-cabins.json"
+OUT_FILE = r"H:\projects\jajiga-tracker\data\_api_verify.json"
 
 
 def fetch_room(rid, max_retries=3):
