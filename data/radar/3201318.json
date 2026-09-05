@@ -8,224 +8,266 @@
     "min_price": 2450000,
     "own": false
   },
-  "fetched_at": "2026-09-04T05:33:07.167925+00:00",
+  "fetched_at": "2026-09-05T11:18:32.967110+00:00",
   "nights": [
     {
-      "date": "2026-09-03",
-      "price": 3300000,
-      "is_weekend": true,
-      "is_unavailable": true
-    },
-    {
       "date": "2026-09-04",
-      "price": 3300000,
-      "discount": 20
+      "price": 3300000
     },
     {
       "date": "2026-09-05",
-      "price": 3300000,
-      "discount": 20
+      "price": 3000000,
+      "discount": 30,
+      "is_instant": true
     },
     {
       "date": "2026-09-06",
-      "price": 3300000
+      "price": 3000000,
+      "discount": 20,
+      "is_instant": true
     },
     {
       "date": "2026-09-07",
-      "price": 3300000
+      "price": 3000000,
+      "is_instant": true
     },
     {
       "date": "2026-09-08",
-      "price": 3300000
+      "price": 3000000,
+      "is_instant": true
     },
     {
       "date": "2026-09-09",
-      "price": 3300000,
+      "price": 3000000,
+      "is_instant": true,
       "is_weekend": true
     },
     {
       "date": "2026-09-10",
-      "price": 3300000,
+      "price": 3000000,
+      "is_instant": true,
       "is_weekend": true
     },
     {
       "date": "2026-09-11",
-      "price": 3300000
+      "price": 3000000,
+      "is_instant": true
     },
     {
       "date": "2026-09-12",
-      "price": 3300000
+      "price": 3000000,
+      "is_instant": true
     },
     {
       "date": "2026-09-13",
-      "price": 3300000
+      "price": 3000000,
+      "is_instant": true
     },
     {
       "date": "2026-09-14",
-      "price": 3300000
+      "price": 3000000,
+      "is_instant": true
     },
     {
       "date": "2026-09-15",
-      "price": 3300000
+      "price": 3000000,
+      "is_instant": true
     },
     {
       "date": "2026-09-16",
-      "price": 3300000,
+      "price": 3000000,
+      "is_instant": true,
       "is_weekend": true
     },
     {
       "date": "2026-09-17",
-      "price": 3300000,
+      "price": 3000000,
+      "is_instant": true,
       "is_weekend": true
     },
     {
       "date": "2026-09-18",
-      "price": 3300000
+      "price": 3000000,
+      "is_instant": true
     },
     {
       "date": "2026-09-19",
-      "price": 3300000
+      "price": 3000000,
+      "is_instant": true
     },
     {
       "date": "2026-09-20",
-      "price": 3300000
+      "price": 3000000,
+      "is_instant": true
     },
     {
       "date": "2026-09-21",
-      "price": 3300000
+      "price": 3000000,
+      "is_instant": true
     },
     {
       "date": "2026-09-22",
-      "price": 3300000
+      "price": 3000000,
+      "is_instant": true
     },
     {
       "date": "2026-09-23",
-      "price": 1500000,
+      "price": 1800000,
+      "is_instant": true,
       "is_weekend": true
     },
     {
       "date": "2026-09-24",
-      "price": 1500000,
+      "price": 1800000,
+      "is_instant": true,
       "is_weekend": true
     },
     {
       "date": "2026-09-25",
-      "price": 1500000
+      "price": 1800000,
+      "is_instant": true
     },
     {
       "date": "2026-09-26",
-      "price": 1500000
+      "price": 1800000,
+      "is_instant": true
     },
     {
       "date": "2026-09-27",
-      "price": 1500000
+      "price": 1800000,
+      "is_instant": true
     },
     {
       "date": "2026-09-28",
-      "price": 1500000
+      "price": 1800000,
+      "is_instant": true
     },
     {
       "date": "2026-09-29",
-      "price": 1500000
+      "price": 1800000,
+      "is_instant": true
     },
     {
       "date": "2026-09-30",
-      "price": 1500000,
+      "price": 1800000,
+      "is_instant": true,
       "is_weekend": true
     },
     {
       "date": "2026-10-01",
-      "price": 1500000,
+      "price": 1800000,
+      "is_instant": true,
       "is_weekend": true
     },
     {
       "date": "2026-10-02",
-      "price": 1500000
+      "price": 1800000,
+      "is_instant": true
     },
     {
       "date": "2026-10-03",
-      "price": 1500000
+      "price": 1800000,
+      "is_instant": true
     },
     {
       "date": "2026-10-04",
-      "price": 1500000
+      "price": 1800000,
+      "is_instant": true
     },
     {
       "date": "2026-10-05",
-      "price": 1500000
+      "price": 1800000,
+      "is_instant": true
     },
     {
       "date": "2026-10-06",
-      "price": 1500000
+      "price": 1800000,
+      "is_instant": true
     },
     {
       "date": "2026-10-07",
-      "price": 1500000,
+      "price": 1800000,
+      "is_instant": true,
       "is_weekend": true
     },
     {
       "date": "2026-10-08",
-      "price": 1500000,
+      "price": 1800000,
+      "is_instant": true,
       "is_weekend": true
     },
     {
       "date": "2026-10-09",
-      "price": 1500000
+      "price": 1800000,
+      "is_instant": true
     },
     {
       "date": "2026-10-10",
-      "price": 1500000
+      "price": 1800000,
+      "is_instant": true
     },
     {
       "date": "2026-10-11",
-      "price": 1500000
+      "price": 1800000,
+      "is_instant": true
     },
     {
       "date": "2026-10-12",
-      "price": 1500000
+      "price": 1800000,
+      "is_instant": true
     },
     {
       "date": "2026-10-13",
-      "price": 1500000
+      "price": 1800000,
+      "is_instant": true
     },
     {
       "date": "2026-10-14",
-      "price": 1500000,
+      "price": 1800000,
+      "is_instant": true,
       "is_weekend": true
     },
     {
       "date": "2026-10-15",
-      "price": 1500000,
+      "price": 1800000,
+      "is_instant": true,
       "is_weekend": true
     },
     {
       "date": "2026-10-16",
-      "price": 1500000
+      "price": 1800000,
+      "is_instant": true
     },
     {
       "date": "2026-10-17",
-      "price": 1500000
+      "price": 1800000,
+      "is_instant": true
     },
     {
       "date": "2026-10-18",
-      "price": 1500000
+      "price": 1800000,
+      "is_instant": true
     },
     {
       "date": "2026-10-19",
-      "price": 1500000
+      "price": 1800000,
+      "is_instant": true
     },
     {
       "date": "2026-10-20",
-      "price": 1500000
+      "price": 1800000,
+      "is_instant": true
     },
     {
       "date": "2026-10-21",
-      "price": 1500000,
+      "price": 1800000,
+      "is_instant": true,
       "is_weekend": true
     },
     {
       "date": "2026-10-22",
-      "price": 1500000,
+      "price": 1800000,
+      "is_instant": true,
       "is_weekend": true
     },
     {
