@@ -1348,14 +1348,14 @@
   {
     "id": 3294040,
     "title": "ویلا با چشم انداز زیبا در بابلکنار - سیدکلا",
-    "booked": 7,
-    "free": 39,
-    "gross": 28850000,
-    "gross_discounted": 28850000,
+    "booked": 11,
+    "free": 35,
+    "gross": 46350000,
+    "gross_discounted": 46350000,
     "discount_total": 0,
-    "commission": 3462000,
+    "commission": 5562000,
     "commission_rate": 0.12,
-    "net": 25388000,
+    "net": 40788000,
     "nights": [
       {
         "date": "2026-09-05",
@@ -1363,6 +1363,42 @@
         "effective_price": 4000000,
         "discount": 0,
         "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-09-06",
+        "price": 4000000,
+        "effective_price": 4000000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-09-07",
+        "price": 4000000,
+        "effective_price": 4000000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-09-08",
+        "price": 4000000,
+        "effective_price": 4000000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-09-09",
+        "price": 5500000,
+        "effective_price": 5500000,
+        "discount": 0,
+        "weekend": true,
         "holiday": false,
         "peak": false
       },

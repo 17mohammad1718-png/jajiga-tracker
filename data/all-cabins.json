@@ -5,7 +5,7 @@
     "region": "بابلکنار",
     "total_cabins": 152,
     "price_range": "1,400,000 - 12,000,000 تومان/شب",
-    "occupancy_updated": "2026-08-22"
+    "occupancy_updated": "2026-09-05"
   },
   "villages": {
     "سیدکلا": [
@@ -28,7 +28,7 @@
         "occupancy_30": 0,
         "occupancy_30_unavailable": 0,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:53:10.929624+00:00",
+        "last_occupancy_attempt": "2026-09-05T11:32:13.385079+00:00",
         "pool": 0,
         "jacuzzi": 0,
         "own": false
@@ -49,10 +49,10 @@
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-09-05T11:32:11.238837+00:00",
         "success_books": 200,
-        "occupancy_30": 0,
-        "occupancy_30_unavailable": 0,
+        "occupancy_30": 10,
+        "occupancy_30_unavailable": 3,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:53:14.920988+00:00",
+        "last_occupancy_attempt": "2026-09-05T11:32:17.687865+00:00",
         "pool": 0,
         "jacuzzi": 0,
         "own": false
@@ -73,10 +73,10 @@
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-09-05T11:32:11.234358+00:00",
         "success_books": 300,
-        "occupancy_30": 50,
-        "occupancy_30_unavailable": 15,
+        "occupancy_30": 83,
+        "occupancy_30_unavailable": 25,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:53:20.970723+00:00",
+        "last_occupancy_attempt": "2026-09-05T11:32:22.356282+00:00",
         "pool": 0,
         "jacuzzi": 1,
         "own": false
@@ -97,10 +97,10 @@
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-09-05T11:32:11.234358+00:00",
         "success_books": 500,
-        "occupancy_30": 50,
-        "occupancy_30_unavailable": 15,
+        "occupancy_30": 63,
+        "occupancy_30_unavailable": 19,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:53:26.082426+00:00",
+        "last_occupancy_attempt": "2026-09-05T11:32:27.622281+00:00",
         "pool": 0,
         "jacuzzi": 1,
         "own": false
@@ -121,10 +121,10 @@
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-09-05T11:32:11.238837+00:00",
         "success_books": 50,
-        "occupancy_30": 13,
-        "occupancy_30_unavailable": 4,
+        "occupancy_30": 27,
+        "occupancy_30_unavailable": 8,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:53:30.592510+00:00",
+        "last_occupancy_attempt": "2026-09-05T11:32:30.991692+00:00",
         "pool": 0,
         "jacuzzi": 1,
         "own": false
@@ -145,10 +145,10 @@
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-09-05T11:32:11.234358+00:00",
         "success_books": 50,
-        "occupancy_30": 27,
-        "occupancy_30_unavailable": 8,
+        "occupancy_30": 13,
+        "occupancy_30_unavailable": 4,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:53:36.111721+00:00",
+        "last_occupancy_attempt": "2026-09-05T11:32:34.479145+00:00",
         "pool": 0,
         "jacuzzi": 0,
         "own": false
@@ -172,7 +172,7 @@
         "occupancy_30": 0,
         "occupancy_30_unavailable": 0,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:53:40.718283+00:00",
+        "last_occupancy_attempt": "2026-09-05T11:32:38.357599+00:00",
         "pool": 0,
         "jacuzzi": 0,
         "own": false
@@ -196,7 +196,7 @@
         "occupancy_30": 13,
         "occupancy_30_unavailable": 4,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:53:49.862840+00:00",
+        "last_occupancy_attempt": "2026-09-05T11:32:42.461280+00:00",
         "pool": 0,
         "jacuzzi": 0,
         "own": false
@@ -217,10 +217,10 @@
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-09-05T11:32:11.234358+00:00",
         "success_books": 50,
-        "occupancy_30": 27,
-        "occupancy_30_unavailable": 8,
+        "occupancy_30": 20,
+        "occupancy_30_unavailable": 6,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:53:55.485044+00:00",
+        "last_occupancy_attempt": "2026-09-05T11:32:45.723942+00:00",
         "pool": 0,
         "jacuzzi": 0,
         "own": false
@@ -241,10 +241,10 @@
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-09-05T11:32:11.238837+00:00",
         "success_books": 50,
-        "occupancy_30": 27,
-        "occupancy_30_unavailable": 8,
+        "occupancy_30": 23,
+        "occupancy_30_unavailable": 7,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:54:00.082373+00:00",
+        "last_occupancy_attempt": "2026-09-05T11:32:50.121895+00:00",
         "pool": 0,
         "jacuzzi": 1,
         "own": false
@@ -266,10 +266,10 @@
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-09-05T11:32:11.247437+00:00",
         "success_books": 20,
-        "occupancy_30": 7,
-        "occupancy_30_unavailable": 2,
+        "occupancy_30": 30,
+        "occupancy_30_unavailable": 9,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:54:04.896981+00:00",
+        "last_occupancy_attempt": "2026-09-05T11:32:54.487954+00:00",
         "pool": 0,
         "jacuzzi": 0,
         "own": true
@@ -290,10 +290,10 @@
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-09-05T11:32:11.238837+00:00",
         "success_books": 20,
-        "occupancy_30": 13,
-        "occupancy_30_unavailable": 4,
+        "occupancy_30": 17,
+        "occupancy_30_unavailable": 5,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:54:08.787178+00:00",
+        "last_occupancy_attempt": "2026-09-05T11:32:59.262732+00:00",
         "pool": 0,
         "jacuzzi": 1,
         "own": false
@@ -314,10 +314,10 @@
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-09-05T11:32:11.238837+00:00",
         "success_books": 10,
-        "occupancy_30": 13,
-        "occupancy_30_unavailable": 4,
+        "occupancy_30": 17,
+        "occupancy_30_unavailable": 5,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:54:14.836764+00:00",
+        "last_occupancy_attempt": "2026-09-05T11:33:03.219059+00:00",
         "pool": 0,
         "jacuzzi": 1,
         "own": false
@@ -338,10 +338,10 @@
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-09-05T11:32:11.238837+00:00",
         "success_books": 0,
-        "occupancy_30": 10,
-        "occupancy_30_unavailable": 3,
+        "occupancy_30": 23,
+        "occupancy_30_unavailable": 7,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:54:19.947745+00:00",
+        "last_occupancy_attempt": "2026-09-05T11:33:06.578093+00:00",
         "pool": 0,
         "jacuzzi": 1,
         "own": false
@@ -365,7 +365,7 @@
         "occupancy_30": 0,
         "occupancy_30_unavailable": 0,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:54:24.710858+00:00",
+        "last_occupancy_attempt": "2026-09-05T11:33:09.912045+00:00",
         "pool": 0,
         "jacuzzi": 0,
         "own": false
@@ -386,10 +386,10 @@
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-09-05T11:32:11.234358+00:00",
         "success_books": 20,
-        "occupancy_30": 27,
-        "occupancy_30_unavailable": 8,
+        "occupancy_30": 20,
+        "occupancy_30_unavailable": 6,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:54:28.995347+00:00"
+        "last_occupancy_attempt": "2026-09-05T11:33:13.538243+00:00"
       },
       {
         "id": 3179404,
@@ -410,7 +410,7 @@
         "occupancy_30": 0,
         "occupancy_30_unavailable": 0,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:54:34.253514+00:00"
+        "last_occupancy_attempt": "2026-09-05T11:33:16.940494+00:00"
       },
       {
         "id": 3184142,
@@ -428,10 +428,10 @@
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-09-05T11:32:11.234358+00:00",
         "success_books": 20,
-        "occupancy_30": 10,
-        "occupancy_30_unavailable": 3,
+        "occupancy_30": 0,
+        "occupancy_30_unavailable": 0,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:54:38.270394+00:00",
+        "last_occupancy_attempt": "2026-09-05T11:33:46.747030+00:00",
         "jacuzzi": 0,
         "pool": 1
       },
@@ -454,7 +454,7 @@
         "occupancy_30": 0,
         "occupancy_30_unavailable": 0,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:54:44.120903+00:00"
+        "last_occupancy_attempt": "2026-09-05T11:33:50.122960+00:00"
       },
       {
         "id": 3198301,
@@ -475,7 +475,7 @@
         "occupancy_30": 0,
         "occupancy_30_unavailable": 0,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:54:48.128860+00:00"
+        "last_occupancy_attempt": "2026-09-05T11:33:54.267219+00:00"
       },
       {
         "id": 3294040,
@@ -493,10 +493,10 @@
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-09-05T11:32:11.247437+00:00",
         "success_books": 20,
-        "occupancy_30": 13,
-        "occupancy_30_unavailable": 4,
+        "occupancy_30": 23,
+        "occupancy_30_unavailable": 7,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:54:52.307191+00:00"
+        "last_occupancy_attempt": "2026-09-05T11:33:57.740034+00:00"
       },
       {
         "id": 3299045,
@@ -514,10 +514,10 @@
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-09-05T11:32:11.247437+00:00",
         "success_books": 0,
-        "occupancy_30": 10,
-        "occupancy_30_unavailable": 3,
+        "occupancy_30": 23,
+        "occupancy_30_unavailable": 7,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:54:57.392723+00:00",
+        "last_occupancy_attempt": "2026-09-05T11:34:27.007328+00:00",
         "jacuzzi": 1,
         "pool": 0
       },
@@ -540,10 +540,10 @@
         "pool": 1,
         "jacuzzi": 0,
         "own": false,
-        "occupancy_30": 23,
-        "occupancy_30_unavailable": 7,
+        "occupancy_30": 27,
+        "occupancy_30_unavailable": 8,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:55:03.673710+00:00"
+        "last_occupancy_attempt": "2026-09-05T11:34:30.100560+00:00"
       },
       {
         "id": 3193646,
@@ -564,10 +564,10 @@
         "pool": 0,
         "jacuzzi": 1,
         "own": false,
-        "occupancy_30": 0,
-        "occupancy_30_unavailable": 0,
+        "occupancy_30": 10,
+        "occupancy_30_unavailable": 3,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:55:08.806525+00:00"
+        "last_occupancy_attempt": "2026-09-05T11:34:33.267762+00:00"
       },
       {
         "id": 3201318,
@@ -588,10 +588,10 @@
         "pool": 0,
         "jacuzzi": 0,
         "own": false,
-        "occupancy_30": 7,
-        "occupancy_30_unavailable": 2,
+        "occupancy_30": 0,
+        "occupancy_30_unavailable": 0,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:55:13.215356+00:00"
+        "last_occupancy_attempt": "2026-09-05T11:34:37.261740+00:00"
       },
       {
         "id": 3219516,
@@ -612,10 +612,10 @@
         "pool": 1,
         "jacuzzi": 1,
         "own": false,
-        "occupancy_30": 50,
-        "occupancy_30_unavailable": 15,
+        "occupancy_30": 47,
+        "occupancy_30_unavailable": 14,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:55:19.642280+00:00"
+        "last_occupancy_attempt": "2026-09-05T11:34:41.974632+00:00"
       },
       {
         "id": 3227770,
@@ -636,10 +636,10 @@
         "pool": 0,
         "jacuzzi": 0,
         "own": false,
-        "occupancy_30": 60,
-        "occupancy_30_unavailable": 18,
+        "occupancy_30": 33,
+        "occupancy_30_unavailable": 10,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:55:25.173510+00:00"
+        "last_occupancy_attempt": "2026-09-05T11:34:46.635087+00:00"
       },
       {
         "id": 3230216,
@@ -663,7 +663,7 @@
         "occupancy_30": 0,
         "occupancy_30_unavailable": 0,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:55:32.220832+00:00"
+        "last_occupancy_attempt": "2026-09-05T11:34:51.190034+00:00"
       },
       {
         "id": 3232816,
@@ -684,10 +684,10 @@
         "pool": 0,
         "jacuzzi": 0,
         "own": false,
-        "occupancy_30": 23,
-        "occupancy_30_unavailable": 7,
+        "occupancy_30": 17,
+        "occupancy_30_unavailable": 5,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:55:37.462240+00:00"
+        "last_occupancy_attempt": "2026-09-05T11:34:55.591142+00:00"
       },
       {
         "id": 3262853,
@@ -708,10 +708,10 @@
         "pool": 0,
         "jacuzzi": 0,
         "own": false,
-        "occupancy_30": 3,
-        "occupancy_30_unavailable": 1,
+        "occupancy_30": 0,
+        "occupancy_30_unavailable": 0,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:55:42.381440+00:00"
+        "last_occupancy_attempt": "2026-09-05T11:35:55.612382+00:00"
       },
       {
         "id": 3302232,
@@ -735,7 +735,7 @@
         "occupancy_30": 0,
         "occupancy_30_unavailable": 0,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:55:48.429090+00:00"
+        "last_occupancy_attempt": "2026-09-05T11:36:00.325669+00:00"
       },
       {
         "id": 3190552,
@@ -756,10 +756,10 @@
         "pool": 0,
         "jacuzzi": 0,
         "own": false,
-        "occupancy_30": 70,
-        "occupancy_30_unavailable": 21,
+        "occupancy_30": 63,
+        "occupancy_30_unavailable": 19,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:55:53.543409+00:00"
+        "last_occupancy_attempt": "2026-09-05T11:36:03.836158+00:00"
       },
       {
         "id": 3310486,
@@ -777,10 +777,10 @@
         "host": "علی اصغر",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-09-05T11:32:11.248683+00:00",
-        "occupancy_30": 0,
-        "occupancy_30_unavailable": 0,
+        "occupancy_30": 3,
+        "occupancy_30_unavailable": 1,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:55:57.379070+00:00"
+        "last_occupancy_attempt": "2026-09-05T11:36:07.363378+00:00"
       },
       {
         "id": 3305556,
@@ -797,7 +797,11 @@
         "success_books": 0,
         "host": "علی",
         "last_scrape_status": "ok",
-        "last_scrape_attempt": "2026-09-05T11:32:11.248683+00:00"
+        "last_scrape_attempt": "2026-09-05T11:32:11.248683+00:00",
+        "occupancy_30": 33,
+        "occupancy_30_unavailable": 10,
+        "occupancy_30_total": 30,
+        "last_occupancy_attempt": "2026-09-05T11:36:11.676700+00:00"
       }
     ],
     "قرآن تالار": [
@@ -817,10 +821,10 @@
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-09-05T11:32:11.238837+00:00",
         "success_books": 20,
-        "occupancy_30": 3,
-        "occupancy_30_unavailable": 1,
+        "occupancy_30": 30,
+        "occupancy_30_unavailable": 9,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:56:05.217601+00:00",
+        "last_occupancy_attempt": "2026-09-05T11:36:16.084640+00:00",
         "pool": 0,
         "jacuzzi": 0,
         "own": false
@@ -841,10 +845,10 @@
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-09-05T11:32:11.238837+00:00",
         "success_books": 50,
-        "occupancy_30": 0,
-        "occupancy_30_unavailable": 0,
+        "occupancy_30": 27,
+        "occupancy_30_unavailable": 8,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:56:09.214168+00:00",
+        "last_occupancy_attempt": "2026-09-05T11:36:44.731943+00:00",
         "pool": 0,
         "jacuzzi": 0,
         "own": false
@@ -865,10 +869,10 @@
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-09-05T11:32:11.238837+00:00",
         "success_books": 20,
-        "occupancy_30": 7,
-        "occupancy_30_unavailable": 2,
+        "occupancy_30": 27,
+        "occupancy_30_unavailable": 8,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:56:14.444475+00:00",
+        "last_occupancy_attempt": "2026-09-05T11:36:50.198433+00:00",
         "pool": 0,
         "jacuzzi": 1,
         "own": false
@@ -889,10 +893,10 @@
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-09-05T11:32:11.246995+00:00",
         "success_books": 50,
-        "occupancy_30": 13,
-        "occupancy_30_unavailable": 4,
+        "occupancy_30": 7,
+        "occupancy_30_unavailable": 2,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:56:19.970015+00:00",
+        "last_occupancy_attempt": "2026-09-05T11:36:54.806899+00:00",
         "pool": 0,
         "jacuzzi": 1,
         "own": false
@@ -916,7 +920,7 @@
         "occupancy_30": 60,
         "occupancy_30_unavailable": 18,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:56:25.392326+00:00",
+        "last_occupancy_attempt": "2026-09-05T11:36:58.783175+00:00",
         "pool": 0,
         "jacuzzi": 1,
         "own": false
@@ -937,10 +941,10 @@
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-09-05T11:32:11.246995+00:00",
         "success_books": 50,
-        "occupancy_30": 30,
-        "occupancy_30_unavailable": 9,
+        "occupancy_30": 23,
+        "occupancy_30_unavailable": 7,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:56:30.110551+00:00",
+        "last_occupancy_attempt": "2026-09-05T11:37:02.385282+00:00",
         "pool": 0,
         "jacuzzi": 1,
         "own": false
@@ -961,10 +965,10 @@
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-09-05T11:32:11.247437+00:00",
         "success_books": 50,
-        "occupancy_30": 23,
-        "occupancy_30_unavailable": 7,
+        "occupancy_30": 13,
+        "occupancy_30_unavailable": 4,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:56:37.729236+00:00",
+        "last_occupancy_attempt": "2026-09-05T11:37:07.486889+00:00",
         "pool": 0,
         "jacuzzi": 1,
         "own": false
@@ -985,10 +989,10 @@
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-09-05T11:32:11.238837+00:00",
         "success_books": 300,
-        "occupancy_30": 23,
-        "occupancy_30_unavailable": 7,
+        "occupancy_30": 17,
+        "occupancy_30_unavailable": 5,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:56:41.769393+00:00",
+        "last_occupancy_attempt": "2026-09-05T11:37:12.915800+00:00",
         "pool": 0,
         "jacuzzi": 1,
         "own": false
@@ -1012,7 +1016,7 @@
         "occupancy_30": 0,
         "occupancy_30_unavailable": 0,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:56:49.761192+00:00",
+        "last_occupancy_attempt": "2026-09-05T11:37:16.908253+00:00",
         "pool": 0,
         "jacuzzi": 0,
         "own": false
@@ -1033,10 +1037,10 @@
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-09-05T11:32:11.238837+00:00",
         "success_books": 100,
-        "occupancy_30": 20,
-        "occupancy_30_unavailable": 6,
+        "occupancy_30": 40,
+        "occupancy_30_unavailable": 12,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:56:54.556915+00:00"
+        "last_occupancy_attempt": "2026-09-05T11:37:20.115318+00:00"
       },
       {
         "id": 3245010,
@@ -1054,10 +1058,10 @@
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-09-05T11:32:11.238837+00:00",
         "success_books": 10,
-        "occupancy_30": 13,
-        "occupancy_30_unavailable": 4,
+        "occupancy_30": 20,
+        "occupancy_30_unavailable": 6,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:56:59.800851+00:00",
+        "last_occupancy_attempt": "2026-09-05T11:38:12.435750+00:00",
         "jacuzzi": 1,
         "pool": 0
       }
@@ -1082,7 +1086,7 @@
         "occupancy_30": 3,
         "occupancy_30_unavailable": 1,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:57:05.225782+00:00",
+        "last_occupancy_attempt": "2026-09-05T11:38:30.100180+00:00",
         "pool": 0,
         "jacuzzi": 0,
         "own": false
@@ -1105,10 +1109,10 @@
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-09-05T11:32:11.238837+00:00",
         "success_books": 50,
-        "occupancy_30": 30,
-        "occupancy_30_unavailable": 9,
+        "occupancy_30": 33,
+        "occupancy_30_unavailable": 10,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:57:10.344210+00:00",
+        "last_occupancy_attempt": "2026-09-05T11:39:25.220551+00:00",
         "pool": 1,
         "jacuzzi": 0,
         "own": false
@@ -1129,10 +1133,10 @@
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-09-05T11:32:11.234358+00:00",
         "success_books": 100,
-        "occupancy_30": 30,
-        "occupancy_30_unavailable": 9,
+        "occupancy_30": 43,
+        "occupancy_30_unavailable": 13,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:57:14.862158+00:00",
+        "last_occupancy_attempt": "2026-09-05T11:39:28.960302+00:00",
         "pool": 0,
         "jacuzzi": 1,
         "own": false
@@ -1153,10 +1157,10 @@
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-09-05T11:32:11.247437+00:00",
         "success_books": 20,
-        "occupancy_30": 43,
-        "occupancy_30_unavailable": 13,
+        "occupancy_30": 23,
+        "occupancy_30_unavailable": 7,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:57:22.330002+00:00",
+        "last_occupancy_attempt": "2026-09-05T11:39:59.216408+00:00",
         "pool": 1,
         "jacuzzi": 0,
         "own": false
@@ -1177,10 +1181,10 @@
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-09-05T11:32:11.238837+00:00",
         "success_books": 20,
-        "occupancy_30": 30,
-        "occupancy_30_unavailable": 9,
+        "occupancy_30": 43,
+        "occupancy_30_unavailable": 13,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:57:28.058521+00:00",
+        "last_occupancy_attempt": "2026-09-05T11:40:20.272751+00:00",
         "pool": 1,
         "jacuzzi": 0,
         "own": false
@@ -1201,10 +1205,10 @@
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-09-05T11:32:11.238837+00:00",
         "success_books": 5,
-        "occupancy_30": 0,
-        "occupancy_30_unavailable": 0,
+        "occupancy_30": 10,
+        "occupancy_30_unavailable": 3,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:57:32.667405+00:00",
+        "last_occupancy_attempt": "2026-09-05T11:40:23.474298+00:00",
         "pool": 0,
         "jacuzzi": 1,
         "own": false
@@ -1225,10 +1229,10 @@
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-09-05T11:32:11.238837+00:00",
         "success_books": 5,
-        "occupancy_30": 23,
-        "occupancy_30_unavailable": 7,
+        "occupancy_30": 27,
+        "occupancy_30_unavailable": 8,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:57:37.787254+00:00",
+        "last_occupancy_attempt": "2026-09-05T11:40:47.406699+00:00",
         "pool": 0,
         "jacuzzi": 0,
         "own": false
@@ -1252,7 +1256,7 @@
         "occupancy_30": 0,
         "occupancy_30_unavailable": 0,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:57:42.084412+00:00",
+        "last_occupancy_attempt": "2026-09-05T11:41:16.700290+00:00",
         "pool": 0,
         "jacuzzi": 0,
         "own": false
@@ -1276,7 +1280,7 @@
         "occupancy_30": 10,
         "occupancy_30_unavailable": 3,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:57:46.077679+00:00",
+        "last_occupancy_attempt": "2026-09-05T11:41:21.137016+00:00",
         "pool": 0,
         "jacuzzi": 0,
         "own": false
@@ -1297,10 +1301,10 @@
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-09-05T11:32:11.234358+00:00",
         "success_books": 5,
-        "occupancy_30": 0,
-        "occupancy_30_unavailable": 0,
+        "occupancy_30": 23,
+        "occupancy_30_unavailable": 7,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:57:52.334108+00:00",
+        "last_occupancy_attempt": "2026-09-05T11:41:57.614485+00:00",
         "jacuzzi": 1,
         "pool": 0
       },
@@ -1385,10 +1389,10 @@
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-09-05T11:32:11.238837+00:00",
         "success_books": 20,
-        "occupancy_30": 17,
-        "occupancy_30_unavailable": 5,
+        "occupancy_30": 27,
+        "occupancy_30_unavailable": 8,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:58:17.411838+00:00",
+        "last_occupancy_attempt": "2026-09-05T11:45:05.292933+00:00",
         "jacuzzi": 0,
         "pool": 1
       },
@@ -1411,7 +1415,7 @@
         "occupancy_30": 0,
         "occupancy_30_unavailable": 0,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:58:22.829051+00:00",
+        "last_occupancy_attempt": "2026-09-05T11:45:08.629487+00:00",
         "jacuzzi": 1,
         "pool": 0
       },
@@ -1431,10 +1435,10 @@
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-09-05T11:32:11.238837+00:00",
         "success_books": 0,
-        "occupancy_30": 0,
-        "occupancy_30_unavailable": 0,
+        "occupancy_30": 7,
+        "occupancy_30_unavailable": 2,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:58:26.542227+00:00"
+        "last_occupancy_attempt": "2026-09-05T11:45:14.766262+00:00"
       },
       {
         "id": 3263833,
@@ -1452,10 +1456,10 @@
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-09-05T11:32:11.238837+00:00",
         "success_books": 0,
-        "occupancy_30": 0,
-        "occupancy_30_unavailable": 0,
+        "occupancy_30": 7,
+        "occupancy_30_unavailable": 2,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:58:30.916293+00:00",
+        "last_occupancy_attempt": "2026-09-05T11:45:42.095523+00:00",
         "jacuzzi": 1,
         "pool": 0
       },
@@ -1501,7 +1505,7 @@
         "occupancy_30": 0,
         "occupancy_30_unavailable": 0,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:58:38.161529+00:00"
+        "last_occupancy_attempt": "2026-09-05T11:47:54.531679+00:00"
       },
       {
         "id": 3284804,
@@ -1519,10 +1523,10 @@
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-09-05T11:32:11.238837+00:00",
         "success_books": 0,
-        "occupancy_30": 0,
-        "occupancy_30_unavailable": 0,
+        "occupancy_30": 17,
+        "occupancy_30_unavailable": 5,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:58:42.765720+00:00",
+        "last_occupancy_attempt": "2026-09-05T11:48:00.103019+00:00",
         "jacuzzi": 1,
         "pool": 0
       },
@@ -1545,7 +1549,7 @@
         "occupancy_30": 3,
         "occupancy_30_unavailable": 1,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:58:46.217447+00:00"
+        "last_occupancy_attempt": "2026-09-05T11:48:04.201049+00:00"
       },
       {
         "id": 3156478,
@@ -1569,7 +1573,7 @@
         "occupancy_30": 3,
         "occupancy_30_unavailable": 1,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:58:51.119823+00:00"
+        "last_occupancy_attempt": "2026-09-05T11:48:08.603171+00:00"
       },
       {
         "id": 3227914,
@@ -1590,10 +1594,10 @@
         "pool": 0,
         "jacuzzi": 0,
         "own": false,
-        "occupancy_30": 30,
-        "occupancy_30_unavailable": 9,
+        "occupancy_30": 23,
+        "occupancy_30_unavailable": 7,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:58:55.170501+00:00"
+        "last_occupancy_attempt": "2026-09-05T11:48:12.903720+00:00"
       },
       {
         "id": 3228452,
@@ -1617,7 +1621,7 @@
         "occupancy_30": 10,
         "occupancy_30_unavailable": 3,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:59:00.316877+00:00"
+        "last_occupancy_attempt": "2026-09-05T11:48:17.614808+00:00"
       },
       {
         "id": 3276640,
@@ -1638,10 +1642,10 @@
         "pool": 0,
         "jacuzzi": 0,
         "own": false,
-        "occupancy_30": 0,
-        "occupancy_30_unavailable": 0,
+        "occupancy_30": 27,
+        "occupancy_30_unavailable": 8,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:59:04.363356+00:00"
+        "last_occupancy_attempt": "2026-09-05T11:48:22.734978+00:00"
       },
       {
         "id": 3297115,
@@ -1665,7 +1669,7 @@
         "occupancy_30": 0,
         "occupancy_30_unavailable": 0,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:59:09.599918+00:00"
+        "last_occupancy_attempt": "2026-09-05T11:48:26.937142+00:00"
       },
       {
         "id": 3307485,
@@ -1689,7 +1693,7 @@
         "occupancy_30": 3,
         "occupancy_30_unavailable": 1,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:59:13.250098+00:00"
+        "last_occupancy_attempt": "2026-09-05T11:48:52.435940+00:00"
       }
     ],
     "شیردارکلا": [
@@ -1736,7 +1740,7 @@
         "occupancy_30": 0,
         "occupancy_30_unavailable": 0,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:59:22.992012+00:00",
+        "last_occupancy_attempt": "2026-09-05T11:50:33.751267+00:00",
         "pool": 0,
         "jacuzzi": 0,
         "own": false
@@ -1757,10 +1761,10 @@
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-09-05T11:32:11.238837+00:00",
         "success_books": 20,
-        "occupancy_30": 3,
-        "occupancy_30_unavailable": 1,
+        "occupancy_30": 7,
+        "occupancy_30_unavailable": 2,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:59:27.417451+00:00",
+        "last_occupancy_attempt": "2026-09-05T11:50:38.737294+00:00",
         "pool": 0,
         "jacuzzi": 0,
         "own": false
@@ -1781,10 +1785,10 @@
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-09-05T11:32:11.238837+00:00",
         "success_books": 0,
-        "occupancy_30": 10,
-        "occupancy_30_unavailable": 3,
+        "occupancy_30": 70,
+        "occupancy_30_unavailable": 21,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:59:32.104531+00:00",
+        "last_occupancy_attempt": "2026-09-05T11:51:31.255757+00:00",
         "pool": 0,
         "jacuzzi": 1,
         "own": false
@@ -1805,10 +1809,10 @@
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-09-05T11:32:11.238837+00:00",
         "success_books": 10,
-        "occupancy_30": 0,
-        "occupancy_30_unavailable": 0,
+        "occupancy_30": 10,
+        "occupancy_30_unavailable": 3,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:59:35.725629+00:00",
+        "last_occupancy_attempt": "2026-09-05T11:51:34.672316+00:00",
         "pool": 1,
         "jacuzzi": 0,
         "own": false
@@ -1832,7 +1836,7 @@
         "occupancy_30": 0,
         "occupancy_30_unavailable": 0,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:59:40.891028+00:00",
+        "last_occupancy_attempt": "2026-09-05T11:53:04.920975+00:00",
         "pool": 0,
         "jacuzzi": 0,
         "own": false
@@ -1853,10 +1857,10 @@
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-09-05T11:32:11.238837+00:00",
         "success_books": 20,
-        "occupancy_30": 7,
-        "occupancy_30_unavailable": 2,
+        "occupancy_30": 33,
+        "occupancy_30_unavailable": 10,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:59:45.430771+00:00",
+        "last_occupancy_attempt": "2026-09-05T11:53:09.051435+00:00",
         "pool": 0,
         "jacuzzi": 1,
         "own": false
@@ -1877,10 +1881,10 @@
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-09-05T11:32:11.238837+00:00",
         "success_books": 100,
-        "occupancy_30": 23,
-        "occupancy_30_unavailable": 7,
+        "occupancy_30": 37,
+        "occupancy_30_unavailable": 11,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:59:50.166272+00:00",
+        "last_occupancy_attempt": "2026-09-05T11:53:13.318836+00:00",
         "pool": 0,
         "jacuzzi": 1,
         "own": false
@@ -1901,10 +1905,10 @@
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-09-05T11:32:11.238837+00:00",
         "success_books": 0,
-        "occupancy_30": 33,
-        "occupancy_30_unavailable": 10,
+        "occupancy_30": 27,
+        "occupancy_30_unavailable": 8,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:59:54.611103+00:00",
+        "last_occupancy_attempt": "2026-09-05T11:53:17.471614+00:00",
         "pool": 0,
         "jacuzzi": 1,
         "own": false
@@ -1925,10 +1929,10 @@
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-09-05T11:32:11.238837+00:00",
         "success_books": 5,
-        "occupancy_30": 43,
-        "occupancy_30_unavailable": 13,
+        "occupancy_30": 53,
+        "occupancy_30_unavailable": 16,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T06:59:59.472603+00:00",
+        "last_occupancy_attempt": "2026-09-05T11:53:22.361782+00:00",
         "pool": 1,
         "jacuzzi": 0,
         "own": false
@@ -1949,10 +1953,10 @@
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-09-05T11:32:11.238837+00:00",
         "success_books": 50,
-        "occupancy_30": 47,
-        "occupancy_30_unavailable": 14,
+        "occupancy_30": 40,
+        "occupancy_30_unavailable": 12,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T07:00:04.795844+00:00",
+        "last_occupancy_attempt": "2026-09-05T11:53:38.746280+00:00",
         "pool": 1,
         "jacuzzi": 0,
         "own": false
@@ -1973,10 +1977,10 @@
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-09-05T11:32:11.234358+00:00",
         "success_books": 20,
-        "occupancy_30": 0,
-        "occupancy_30_unavailable": 0,
+        "occupancy_30": 10,
+        "occupancy_30_unavailable": 3,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T07:00:08.946735+00:00",
+        "last_occupancy_attempt": "2026-09-05T11:53:41.883457+00:00",
         "pool": 0,
         "jacuzzi": 1,
         "own": false
@@ -1997,10 +2001,10 @@
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-09-05T11:32:11.238837+00:00",
         "success_books": 50,
-        "occupancy_30": 0,
-        "occupancy_30_unavailable": 0,
+        "occupancy_30": 3,
+        "occupancy_30_unavailable": 1,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T07:00:12.990242+00:00",
+        "last_occupancy_attempt": "2026-09-05T11:53:45.818157+00:00",
         "pool": 0,
         "jacuzzi": 1,
         "own": false
@@ -2024,7 +2028,7 @@
         "occupancy_30": 10,
         "occupancy_30_unavailable": 3,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T07:00:17.336254+00:00",
+        "last_occupancy_attempt": "2026-09-05T11:54:41.109339+00:00",
         "pool": 1,
         "jacuzzi": 0,
         "own": false
@@ -2045,10 +2049,10 @@
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-09-05T11:32:11.234358+00:00",
         "success_books": 200,
-        "occupancy_30": 67,
-        "occupancy_30_unavailable": 20,
+        "occupancy_30": 80,
+        "occupancy_30_unavailable": 24,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T07:00:22.200942+00:00",
+        "last_occupancy_attempt": "2026-09-05T11:54:45.729343+00:00",
         "pool": 1,
         "jacuzzi": 0,
         "own": false
@@ -2069,10 +2073,10 @@
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-09-05T11:32:11.248683+00:00",
         "success_books": 10,
-        "occupancy_30": 10,
-        "occupancy_30_unavailable": 3,
+        "occupancy_30": 13,
+        "occupancy_30_unavailable": 4,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T07:00:27.576813+00:00",
+        "last_occupancy_attempt": "2026-09-05T11:54:49.559315+00:00",
         "pool": 1,
         "jacuzzi": 1,
         "own": false
@@ -2096,7 +2100,7 @@
         "occupancy_30": 0,
         "occupancy_30_unavailable": 0,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T07:00:32.587098+00:00",
+        "last_occupancy_attempt": "2026-09-05T11:54:54.179890+00:00",
         "pool": 0,
         "jacuzzi": 0,
         "own": false
@@ -2117,10 +2121,10 @@
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-09-05T11:32:11.238837+00:00",
         "success_books": 5,
-        "occupancy_30": 13,
-        "occupancy_30_unavailable": 4,
+        "occupancy_30": 3,
+        "occupancy_30_unavailable": 1,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T07:00:36.624113+00:00"
+        "last_occupancy_attempt": "2026-09-05T11:54:59.137679+00:00"
       },
       {
         "id": 3264676,
@@ -2138,10 +2142,10 @@
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-09-05T11:32:11.238837+00:00",
         "success_books": 50,
-        "occupancy_30": 53,
-        "occupancy_30_unavailable": 16,
+        "occupancy_30": 50,
+        "occupancy_30_unavailable": 15,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T07:00:40.582112+00:00",
+        "last_occupancy_attempt": "2026-09-05T11:55:21.046685+00:00",
         "jacuzzi": 0,
         "pool": 1
       },
@@ -2161,10 +2165,10 @@
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-09-05T11:32:11.238837+00:00",
         "success_books": 20,
-        "occupancy_30": 3,
-        "occupancy_30_unavailable": 1,
+        "occupancy_30": 30,
+        "occupancy_30_unavailable": 9,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T07:00:45.703452+00:00",
+        "last_occupancy_attempt": "2026-09-05T11:55:26.071400+00:00",
         "jacuzzi": 1,
         "pool": 0
       },
@@ -2184,10 +2188,10 @@
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-09-05T11:32:11.247437+00:00",
         "success_books": 10,
-        "occupancy_30": 23,
-        "occupancy_30_unavailable": 7,
+        "occupancy_30": 20,
+        "occupancy_30_unavailable": 6,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T07:00:50.989459+00:00",
+        "last_occupancy_attempt": "2026-09-05T11:55:30.877807+00:00",
         "jacuzzi": 0,
         "pool": 1
       },
@@ -2207,10 +2211,10 @@
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-09-05T11:32:11.247437+00:00",
         "success_books": 10,
-        "occupancy_30": 0,
-        "occupancy_30_unavailable": 0,
+        "occupancy_30": 13,
+        "occupancy_30_unavailable": 4,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T07:00:56.339590+00:00",
+        "last_occupancy_attempt": "2026-09-05T11:55:34.190915+00:00",
         "jacuzzi": 1,
         "pool": 0
       },
@@ -2260,7 +2264,7 @@
         "occupancy_30": 0,
         "occupancy_30_unavailable": 0,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T07:01:05.276689+00:00"
+        "last_occupancy_attempt": "2026-09-05T11:57:07.550771+00:00"
       },
       {
         "id": 3276165,
@@ -2281,10 +2285,10 @@
         "pool": 0,
         "jacuzzi": 0,
         "own": false,
-        "occupancy_30": 7,
-        "occupancy_30_unavailable": 2,
+        "occupancy_30": 17,
+        "occupancy_30_unavailable": 5,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T07:01:09.013789+00:00"
+        "last_occupancy_attempt": "2026-09-05T11:57:10.744951+00:00"
       },
       {
         "id": 3276226,
@@ -2305,10 +2309,10 @@
         "pool": 0,
         "jacuzzi": 0,
         "own": false,
-        "occupancy_30": 13,
-        "occupancy_30_unavailable": 4,
+        "occupancy_30": 17,
+        "occupancy_30_unavailable": 5,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T07:01:14.274844+00:00"
+        "last_occupancy_attempt": "2026-09-05T11:57:14.512305+00:00"
       },
       {
         "id": 3276228,
@@ -2329,10 +2333,10 @@
         "pool": 0,
         "jacuzzi": 0,
         "own": false,
-        "occupancy_30": 10,
-        "occupancy_30_unavailable": 3,
+        "occupancy_30": 7,
+        "occupancy_30_unavailable": 2,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T07:01:19.658595+00:00"
+        "last_occupancy_attempt": "2026-09-05T11:57:17.992390+00:00"
       },
       {
         "id": 3279016,
@@ -2356,7 +2360,7 @@
         "occupancy_30": 0,
         "occupancy_30_unavailable": 0,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T07:01:24.309421+00:00"
+        "last_occupancy_attempt": "2026-09-05T11:57:21.079149+00:00"
       },
       {
         "id": 3283346,
@@ -2377,10 +2381,10 @@
         "pool": 0,
         "jacuzzi": 0,
         "own": false,
-        "occupancy_30": 10,
-        "occupancy_30_unavailable": 3,
+        "occupancy_30": 0,
+        "occupancy_30_unavailable": 0,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T07:01:28.711092+00:00"
+        "last_occupancy_attempt": "2026-09-05T11:57:41.267561+00:00"
       },
       {
         "id": 3307484,
@@ -2401,10 +2405,10 @@
         "pool": 0,
         "jacuzzi": 0,
         "own": false,
-        "occupancy_30": 0,
-        "occupancy_30_unavailable": 0,
+        "occupancy_30": 10,
+        "occupancy_30_unavailable": 3,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T07:01:33.877486+00:00"
+        "last_occupancy_attempt": "2026-09-05T11:57:46.460037+00:00"
       },
       {
         "id": 3157383,
@@ -2428,7 +2432,7 @@
         "occupancy_30": 0,
         "occupancy_30_unavailable": 0,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T07:01:37.225483+00:00"
+        "last_occupancy_attempt": "2026-09-05T11:57:50.987258+00:00"
       },
       {
         "id": 3258434,
@@ -2446,10 +2450,10 @@
         "host": "محمدرضا",
         "last_scrape_status": "ok",
         "last_scrape_attempt": "2026-09-05T11:32:11.238837+00:00",
-        "occupancy_30": 3,
-        "occupancy_30_unavailable": 1,
+        "occupancy_30": 17,
+        "occupancy_30_unavailable": 5,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T07:01:41.146866+00:00"
+        "last_occupancy_attempt": "2026-09-05T11:58:20.056839+00:00"
       }
     ],
     "کاردرکلا": [
@@ -2475,7 +2479,7 @@
         "occupancy_30": 7,
         "occupancy_30_unavailable": 2,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T07:01:44.826328+00:00"
+        "last_occupancy_attempt": "2026-09-05T11:58:24.663084+00:00"
       },
       {
         "id": 3165107,
@@ -2496,10 +2500,10 @@
         "pool": 0,
         "jacuzzi": 0,
         "own": false,
-        "occupancy_30": 0,
-        "occupancy_30_unavailable": 0,
+        "occupancy_30": 10,
+        "occupancy_30_unavailable": 3,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T07:01:49.180772+00:00"
+        "last_occupancy_attempt": "2026-09-05T11:58:46.212545+00:00"
       },
       {
         "id": 3173539,
@@ -2520,10 +2524,10 @@
         "pool": 0,
         "jacuzzi": 0,
         "own": false,
-        "occupancy_30": 7,
-        "occupancy_30_unavailable": 2,
+        "occupancy_30": 0,
+        "occupancy_30_unavailable": 0,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T07:01:54.542946+00:00"
+        "last_occupancy_attempt": "2026-09-05T11:58:49.647177+00:00"
       },
       {
         "id": 3192184,
@@ -2544,10 +2548,10 @@
         "pool": 1,
         "jacuzzi": 0,
         "own": false,
-        "occupancy_30": 23,
-        "occupancy_30_unavailable": 7,
+        "occupancy_30": 17,
+        "occupancy_30_unavailable": 5,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T07:01:58.037770+00:00"
+        "last_occupancy_attempt": "2026-09-05T11:58:53.540079+00:00"
       },
       {
         "id": 3239918,
@@ -2568,10 +2572,10 @@
         "pool": 0,
         "jacuzzi": 1,
         "own": false,
-        "occupancy_30": 23,
-        "occupancy_30_unavailable": 7,
+        "occupancy_30": 13,
+        "occupancy_30_unavailable": 4,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T07:02:02.308636+00:00"
+        "last_occupancy_attempt": "2026-09-05T11:58:57.181737+00:00"
       },
       {
         "id": 3232417,
@@ -2595,7 +2599,7 @@
         "occupancy_30": 0,
         "occupancy_30_unavailable": 0,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T07:02:07.685528+00:00"
+        "last_occupancy_attempt": "2026-09-05T11:59:01.495253+00:00"
       },
       {
         "id": 3194752,
@@ -2616,10 +2620,10 @@
         "pool": 0,
         "jacuzzi": 0,
         "own": false,
-        "occupancy_30": 0,
-        "occupancy_30_unavailable": 0,
+        "occupancy_30": 13,
+        "occupancy_30_unavailable": 4,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T07:02:12.650693+00:00"
+        "last_occupancy_attempt": "2026-09-05T11:59:05.126209+00:00"
       },
       {
         "id": 3194756,
@@ -2640,10 +2644,10 @@
         "pool": 0,
         "jacuzzi": 0,
         "own": false,
-        "occupancy_30": 0,
-        "occupancy_30_unavailable": 0,
+        "occupancy_30": 10,
+        "occupancy_30_unavailable": 3,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T07:02:17.642849+00:00"
+        "last_occupancy_attempt": "2026-09-05T11:59:08.798821+00:00"
       },
       {
         "id": 3195049,
@@ -2664,10 +2668,10 @@
         "pool": 0,
         "jacuzzi": 0,
         "own": false,
-        "occupancy_30": 0,
-        "occupancy_30_unavailable": 0,
+        "occupancy_30": 13,
+        "occupancy_30_unavailable": 4,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T07:02:21.598593+00:00"
+        "last_occupancy_attempt": "2026-09-05T11:59:13.277770+00:00"
       },
       {
         "id": 3195053,
@@ -2688,10 +2692,10 @@
         "pool": 0,
         "jacuzzi": 0,
         "own": false,
-        "occupancy_30": 13,
-        "occupancy_30_unavailable": 4,
+        "occupancy_30": 10,
+        "occupancy_30_unavailable": 3,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T07:02:26.257232+00:00"
+        "last_occupancy_attempt": "2026-09-05T11:59:17.991470+00:00"
       },
       {
         "id": 3208040,
@@ -2712,10 +2716,10 @@
         "pool": 0,
         "jacuzzi": 0,
         "own": false,
-        "occupancy_30": 7,
-        "occupancy_30_unavailable": 2,
+        "occupancy_30": 27,
+        "occupancy_30_unavailable": 8,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T07:02:31.667822+00:00"
+        "last_occupancy_attempt": "2026-09-05T11:59:22.421393+00:00"
       },
       {
         "id": 3218424,
@@ -2736,10 +2740,10 @@
         "pool": 0,
         "jacuzzi": 1,
         "own": false,
-        "occupancy_30": 3,
-        "occupancy_30_unavailable": 1,
+        "occupancy_30": 0,
+        "occupancy_30_unavailable": 0,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T07:02:37.234950+00:00"
+        "last_occupancy_attempt": "2026-09-05T11:59:27.226201+00:00"
       },
       {
         "id": 3255794,
@@ -2760,10 +2764,10 @@
         "pool": 0,
         "jacuzzi": 1,
         "own": false,
-        "occupancy_30": 0,
-        "occupancy_30_unavailable": 0,
+        "occupancy_30": 10,
+        "occupancy_30_unavailable": 3,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T07:02:41.100839+00:00"
+        "last_occupancy_attempt": "2026-09-05T11:59:33.265936+00:00"
       },
       {
         "id": 3153216,
@@ -2784,10 +2788,10 @@
         "pool": 1,
         "jacuzzi": 0,
         "own": false,
-        "occupancy_30": 10,
-        "occupancy_30_unavailable": 3,
+        "occupancy_30": 17,
+        "occupancy_30_unavailable": 5,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T07:02:44.572851+00:00"
+        "last_occupancy_attempt": "2026-09-05T11:59:38.388358+00:00"
       },
       {
         "id": 3225855,
@@ -2808,10 +2812,10 @@
         "pool": 1,
         "jacuzzi": 0,
         "own": false,
-        "occupancy_30": 23,
-        "occupancy_30_unavailable": 7,
+        "occupancy_30": 47,
+        "occupancy_30_unavailable": 14,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T07:02:48.939128+00:00"
+        "last_occupancy_attempt": "2026-09-05T11:59:42.481702+00:00"
       },
       {
         "id": 3268668,
@@ -2832,10 +2836,10 @@
         "pool": 1,
         "jacuzzi": 0,
         "own": false,
-        "occupancy_30": 13,
-        "occupancy_30_unavailable": 4,
+        "occupancy_30": 30,
+        "occupancy_30_unavailable": 9,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T07:02:52.766979+00:00"
+        "last_occupancy_attempt": "2026-09-05T12:00:12.802654+00:00"
       },
       {
         "id": 3284570,
@@ -2856,10 +2860,10 @@
         "pool": 0,
         "jacuzzi": 1,
         "own": false,
-        "occupancy_30": 17,
-        "occupancy_30_unavailable": 5,
+        "occupancy_30": 13,
+        "occupancy_30_unavailable": 4,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T07:02:56.561311+00:00"
+        "last_occupancy_attempt": "2026-09-05T12:00:16.028650+00:00"
       },
       {
         "id": 3298314,
@@ -2880,10 +2884,10 @@
         "pool": 1,
         "jacuzzi": 0,
         "own": false,
-        "occupancy_30": 47,
-        "occupancy_30_unavailable": 14,
+        "occupancy_30": 73,
+        "occupancy_30_unavailable": 22,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T07:03:00.990048+00:00"
+        "last_occupancy_attempt": "2026-09-05T12:00:20.065833+00:00"
       },
       {
         "id": 3224873,
@@ -2904,10 +2908,10 @@
         "pool": 0,
         "jacuzzi": 0,
         "own": false,
-        "occupancy_30": 47,
-        "occupancy_30_unavailable": 14,
+        "occupancy_30": 53,
+        "occupancy_30_unavailable": 16,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T07:03:05.867491+00:00"
+        "last_occupancy_attempt": "2026-09-05T12:00:24.168723+00:00"
       },
       {
         "id": 3198108,
@@ -2928,10 +2932,10 @@
         "pool": 0,
         "jacuzzi": 0,
         "own": false,
-        "occupancy_30": 10,
-        "occupancy_30_unavailable": 3,
+        "occupancy_30": 20,
+        "occupancy_30_unavailable": 6,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T07:03:09.620119+00:00"
+        "last_occupancy_attempt": "2026-09-05T12:00:29.182920+00:00"
       },
       {
         "id": 3208548,
@@ -2952,10 +2956,10 @@
         "pool": 0,
         "jacuzzi": 0,
         "own": false,
-        "occupancy_30": 0,
-        "occupancy_30_unavailable": 0,
+        "occupancy_30": 3,
+        "occupancy_30_unavailable": 1,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T07:03:14.480340+00:00"
+        "last_occupancy_attempt": "2026-09-05T12:00:34.610066+00:00"
       },
       {
         "id": 3273745,
@@ -2976,10 +2980,10 @@
         "pool": 0,
         "jacuzzi": 1,
         "own": false,
-        "occupancy_30": 3,
-        "occupancy_30_unavailable": 1,
+        "occupancy_30": 17,
+        "occupancy_30_unavailable": 5,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T07:03:18.760169+00:00"
+        "last_occupancy_attempt": "2026-09-05T12:00:39.942089+00:00"
       },
       {
         "id": 3221027,
@@ -3000,10 +3004,10 @@
         "pool": 0,
         "jacuzzi": 1,
         "own": false,
-        "occupancy_30": 0,
-        "occupancy_30_unavailable": 0,
+        "occupancy_30": 13,
+        "occupancy_30_unavailable": 4,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T07:03:23.769230+00:00"
+        "last_occupancy_attempt": "2026-09-05T12:00:43.516625+00:00"
       },
       {
         "id": 3288637,
@@ -3027,7 +3031,7 @@
         "occupancy_30": 7,
         "occupancy_30_unavailable": 2,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T07:03:27.403182+00:00"
+        "last_occupancy_attempt": "2026-09-05T12:00:46.898371+00:00"
       },
       {
         "id": 3197092,
@@ -3048,10 +3052,10 @@
         "pool": 0,
         "jacuzzi": 0,
         "own": false,
-        "occupancy_30": 0,
-        "occupancy_30_unavailable": 0,
+        "occupancy_30": 3,
+        "occupancy_30_unavailable": 1,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T07:03:31.543767+00:00"
+        "last_occupancy_attempt": "2026-09-05T12:00:51.098615+00:00"
       },
       {
         "id": 3250799,
@@ -3072,10 +3076,10 @@
         "pool": 0,
         "jacuzzi": 0,
         "own": false,
-        "occupancy_30": 0,
-        "occupancy_30_unavailable": 0,
+        "occupancy_30": 7,
+        "occupancy_30_unavailable": 2,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T07:03:38.822504+00:00"
+        "last_occupancy_attempt": "2026-09-05T12:00:54.676555+00:00"
       },
       {
         "id": 3276112,
@@ -3099,7 +3103,7 @@
         "occupancy_30": 40,
         "occupancy_30_unavailable": 12,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T07:03:42.954690+00:00"
+        "last_occupancy_attempt": "2026-09-05T12:00:58.158560+00:00"
       },
       {
         "id": 3289080,
@@ -3120,10 +3124,10 @@
         "pool": 0,
         "jacuzzi": 1,
         "own": false,
-        "occupancy_30": 7,
-        "occupancy_30_unavailable": 2,
+        "occupancy_30": 17,
+        "occupancy_30_unavailable": 5,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T07:03:47.848481+00:00"
+        "last_occupancy_attempt": "2026-09-05T12:01:02.982756+00:00"
       },
       {
         "id": 3186780,
@@ -3144,10 +3148,10 @@
         "pool": 1,
         "jacuzzi": 1,
         "own": false,
-        "occupancy_30": 23,
-        "occupancy_30_unavailable": 7,
+        "occupancy_30": 3,
+        "occupancy_30_unavailable": 1,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T07:03:53.273550+00:00"
+        "last_occupancy_attempt": "2026-09-05T12:01:08.300158+00:00"
       },
       {
         "id": 3230009,
@@ -3168,10 +3172,10 @@
         "pool": 0,
         "jacuzzi": 0,
         "own": false,
-        "occupancy_30": 20,
-        "occupancy_30_unavailable": 6,
+        "occupancy_30": 30,
+        "occupancy_30_unavailable": 9,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T07:03:58.753509+00:00"
+        "last_occupancy_attempt": "2026-09-05T12:01:13.319142+00:00"
       },
       {
         "id": 3274129,
@@ -3192,10 +3196,10 @@
         "pool": 0,
         "jacuzzi": 0,
         "own": false,
-        "occupancy_30": 7,
-        "occupancy_30_unavailable": 2,
+        "occupancy_30": 23,
+        "occupancy_30_unavailable": 7,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T07:04:03.258976+00:00"
+        "last_occupancy_attempt": "2026-09-05T12:01:18.244381+00:00"
       },
       {
         "id": 3284033,
@@ -3216,10 +3220,10 @@
         "pool": 1,
         "jacuzzi": 0,
         "own": false,
-        "occupancy_30": 40,
-        "occupancy_30_unavailable": 12,
+        "occupancy_30": 33,
+        "occupancy_30_unavailable": 10,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T07:04:09.147329+00:00"
+        "last_occupancy_attempt": "2026-09-05T12:01:24.789426+00:00"
       },
       {
         "id": 3288689,
@@ -3240,10 +3244,10 @@
         "pool": 0,
         "jacuzzi": 1,
         "own": false,
-        "occupancy_30": 13,
-        "occupancy_30_unavailable": 4,
+        "occupancy_30": 30,
+        "occupancy_30_unavailable": 9,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T07:04:12.468666+00:00"
+        "last_occupancy_attempt": "2026-09-05T12:01:30.215604+00:00"
       },
       {
         "id": 3272410,
@@ -3264,10 +3268,10 @@
         "pool": 0,
         "jacuzzi": 1,
         "own": false,
-        "occupancy_30": 10,
-        "occupancy_30_unavailable": 3,
+        "occupancy_30": 3,
+        "occupancy_30_unavailable": 1,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T07:04:17.630870+00:00"
+        "last_occupancy_attempt": "2026-09-05T12:01:34.317460+00:00"
       },
       {
         "id": 3299010,
@@ -3291,7 +3295,7 @@
         "occupancy_30": 0,
         "occupancy_30_unavailable": 0,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T07:04:21.455411+00:00"
+        "last_occupancy_attempt": "2026-09-05T12:01:39.221414+00:00"
       },
       {
         "id": 3200148,
@@ -3315,7 +3319,7 @@
         "occupancy_30": 0,
         "occupancy_30_unavailable": 0,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T07:04:26.849376+00:00"
+        "last_occupancy_attempt": "2026-09-05T12:01:42.269447+00:00"
       },
       {
         "id": 3193647,
@@ -3339,7 +3343,7 @@
         "occupancy_30": 0,
         "occupancy_30_unavailable": 0,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T07:04:32.035954+00:00"
+        "last_occupancy_attempt": "2026-09-05T12:01:46.496304+00:00"
       },
       {
         "id": 3280166,
@@ -3360,10 +3364,10 @@
         "pool": 0,
         "jacuzzi": 0,
         "own": false,
-        "occupancy_30": 10,
-        "occupancy_30_unavailable": 3,
+        "occupancy_30": 20,
+        "occupancy_30_unavailable": 6,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T07:04:37.258748+00:00"
+        "last_occupancy_attempt": "2026-09-05T12:01:51.002720+00:00"
       },
       {
         "id": 3281915,
@@ -3384,10 +3388,10 @@
         "pool": 0,
         "jacuzzi": 0,
         "own": false,
-        "occupancy_30": 0,
-        "occupancy_30_unavailable": 0,
+        "occupancy_30": 33,
+        "occupancy_30_unavailable": 10,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T07:04:41.464738+00:00"
+        "last_occupancy_attempt": "2026-09-05T12:01:56.439945+00:00"
       },
       {
         "id": 3291369,
@@ -3411,7 +3415,7 @@
         "occupancy_30": 0,
         "occupancy_30_unavailable": 0,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T07:04:46.274512+00:00"
+        "last_occupancy_attempt": "2026-09-05T12:02:00.740026+00:00"
       },
       {
         "id": 3250644,
@@ -3435,7 +3439,7 @@
         "occupancy_30": 23,
         "occupancy_30_unavailable": 7,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T07:04:50.244561+00:00"
+        "last_occupancy_attempt": "2026-09-05T12:02:04.624792+00:00"
       },
       {
         "id": 3264107,
@@ -3456,10 +3460,10 @@
         "pool": 0,
         "jacuzzi": 1,
         "own": false,
-        "occupancy_30": 17,
-        "occupancy_30_unavailable": 5,
+        "occupancy_30": 10,
+        "occupancy_30_unavailable": 3,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T07:04:54.225894+00:00"
+        "last_occupancy_attempt": "2026-09-05T12:02:08.206547+00:00"
       },
       {
         "id": 3263733,
@@ -3480,10 +3484,10 @@
         "pool": 0,
         "jacuzzi": 1,
         "own": false,
-        "occupancy_30": 17,
-        "occupancy_30_unavailable": 5,
+        "occupancy_30": 47,
+        "occupancy_30_unavailable": 14,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T07:04:57.842950+00:00"
+        "last_occupancy_attempt": "2026-09-05T12:02:12.605437+00:00"
       },
       {
         "id": 3299964,
@@ -3504,10 +3508,10 @@
         "pool": 0,
         "jacuzzi": 1,
         "own": false,
-        "occupancy_30": 0,
-        "occupancy_30_unavailable": 0,
+        "occupancy_30": 3,
+        "occupancy_30_unavailable": 1,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T07:05:01.905462+00:00"
+        "last_occupancy_attempt": "2026-09-05T12:02:17.778522+00:00"
       },
       {
         "id": 3293591,
@@ -3528,10 +3532,10 @@
         "pool": 0,
         "jacuzzi": 0,
         "own": false,
-        "occupancy_30": 0,
-        "occupancy_30_unavailable": 0,
+        "occupancy_30": 50,
+        "occupancy_30_unavailable": 15,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T07:05:07.493539+00:00"
+        "last_occupancy_attempt": "2026-09-05T12:02:22.756064+00:00"
       },
       {
         "id": 3304871,
@@ -3552,10 +3556,10 @@
         "pool": 0,
         "jacuzzi": 0,
         "own": false,
-        "occupancy_30": 0,
-        "occupancy_30_unavailable": 0,
+        "occupancy_30": 33,
+        "occupancy_30_unavailable": 10,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T07:05:11.035706+00:00"
+        "last_occupancy_attempt": "2026-09-05T12:02:27.370294+00:00"
       }
     ],
     "امیرکلا": [
@@ -3578,10 +3582,10 @@
         "pool": 1,
         "jacuzzi": 0,
         "own": false,
-        "occupancy_30": 23,
-        "occupancy_30_unavailable": 7,
+        "occupancy_30": 50,
+        "occupancy_30_unavailable": 15,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T07:05:15.829616+00:00"
+        "last_occupancy_attempt": "2026-09-05T12:02:32.097577+00:00"
       },
       {
         "id": 3289537,
@@ -3605,7 +3609,7 @@
         "occupancy_30": 10,
         "occupancy_30_unavailable": 3,
         "occupancy_30_total": 30,
-        "last_occupancy_attempt": "2026-08-22T07:05:21.008361+00:00"
+        "last_occupancy_attempt": "2026-09-05T12:02:36.073077+00:00"
       }
     ]
   }
