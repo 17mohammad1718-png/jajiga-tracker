@@ -2,14 +2,14 @@
   {
     "id": 3219516,
     "title": "ویلا دوبلکس استخردار در بابل- سیدکلا",
-    "booked": 14,
-    "free": 32,
-    "gross": 127500000,
-    "gross_discounted": 127500000,
+    "booked": 15,
+    "free": 31,
+    "gross": 137500000,
+    "gross_discounted": 137500000,
     "discount_total": 0,
-    "commission": 15300000,
+    "commission": 16500000,
     "commission_rate": 0.12,
-    "net": 112200000,
+    "net": 121000000,
     "nights": [
       {
         "date": "2026-09-06",
@@ -35,6 +35,15 @@
         "effective_price": 9000000,
         "discount": 0,
         "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-09-10",
+        "price": 10000000,
+        "effective_price": 10000000,
+        "discount": 0,
+        "weekend": true,
         "holiday": false,
         "peak": false
       },
@@ -409,15 +418,24 @@
   {
     "id": 3215808,
     "title": "کلبه سوئیسی جکوزی دار در بابلکنار - سید کلا",
-    "booked": 6,
-    "free": 40,
-    "gross": 36500000,
-    "gross_discounted": 36500000,
+    "booked": 7,
+    "free": 39,
+    "gross": 44000000,
+    "gross_discounted": 44000000,
     "discount_total": 0,
-    "commission": 4380000,
+    "commission": 5280000,
     "commission_rate": 0.12,
-    "net": 32120000,
+    "net": 38720000,
     "nights": [
+      {
+        "date": "2026-09-06",
+        "price": 7500000,
+        "effective_price": 7500000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
       {
         "date": "2026-09-07",
         "price": 7500000,
@@ -2187,15 +2205,43 @@
   {
     "id": 3262853,
     "title": "خانه مبله در بابلکنار - سیدکلا - طبقه دوم",
-    "booked": 0,
-    "free": 46,
-    "gross": 0,
-    "gross_discounted": 0,
-    "discount_total": 0,
-    "commission": 0,
+    "booked": 3,
+    "free": 43,
+    "gross": 6000000,
+    "gross_discounted": 5400000,
+    "discount_total": 600000,
+    "commission": 648000,
     "commission_rate": 0.12,
-    "net": 0,
-    "nights": []
+    "net": 4752000,
+    "nights": [
+      {
+        "date": "2026-09-08",
+        "price": 2000000,
+        "effective_price": 1800000,
+        "discount": 10,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-09-09",
+        "price": 2000000,
+        "effective_price": 1800000,
+        "discount": 10,
+        "weekend": true,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-09-10",
+        "price": 2000000,
+        "effective_price": 1800000,
+        "discount": 10,
+        "weekend": true,
+        "holiday": false,
+        "peak": false
+      }
+    ]
   },
   {
     "id": 3297585,
