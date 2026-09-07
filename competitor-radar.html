@@ -1047,6 +1047,11 @@ table.rev .hrev-detail td { background:#0f1f36; padding:10px 16px; text-align:ri
       } else {
         SYNC_URL = 'manual-edits.json'; CAN_POST = false;
       }
+      /* aminsia.ir: فایل relative وجود ندارد (404) — fallback به اسنپ‌شات github.io */
+      if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1' &&
+          !location.hostname.endsWith('.github.io')) {
+        SYNC_URL = 'https://17mohammad1718-png.github.io/jajiga-tracker/manual-edits.json';
+      }
     }
   } catch (e) {}
 
