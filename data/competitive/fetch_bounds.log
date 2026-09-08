@@ -19,3 +19,9 @@ total 535 | done 0 | to fetch 535
 [425/535] ok=424 err=1 elapsed=2487s eta=644s
 [450/535] ok=449 err=1 elapsed=2641s eta=499s
 [475/535] ok=474 err=1 elapsed=2801s eta=354s
+[500/535] ok=499 err=1 elapsed=3003s eta=210s
+  err 3299360 p1: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING]
+[525/535] ok=523 err=2 elapsed=17689s eta=337s
+[535/535] ok=533 err=2 elapsed=17722s eta=0s
+DONE ok=533 err=2
+FINISHED
