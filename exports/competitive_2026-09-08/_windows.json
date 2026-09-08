@@ -1,0 +1,23 @@
+{
+ "midweek": {
+  "checkin": "2026-09-19",
+  "weekend_share": 0.0,
+  "holiday_n": 0,
+  "samples": 1070
+ },
+ "weekend": {
+  "checkin": "2026-09-16",
+  "weekend_share": 0.97,
+  "holiday_n": 0,
+  "samples": 1070
+ },
+ "weekend_flag_share_by_weekday": {
+  "0": 0.0,
+  "1": 0.0,
+  "2": 0.95,
+  "3": 1.0,
+  "4": 0.05,
+  "5": 0.0,
+  "6": 0.0
+ }
+}

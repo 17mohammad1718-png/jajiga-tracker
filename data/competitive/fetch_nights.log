@@ -1,0 +1,25 @@
+total 535 | already done 0 | to fetch 535
+[25/535] ok=25 err=0 elapsed=91s
+[50/535] ok=50 err=0 elapsed=262s
+[75/535] ok=75 err=0 elapsed=334s
+[100/535] ok=100 err=0 elapsed=403s
+[125/535] ok=125 err=0 elapsed=451s
+[150/535] ok=150 err=0 elapsed=616s
+[175/535] ok=175 err=0 elapsed=732s
+[200/535] ok=200 err=0 elapsed=829s
+[225/535] ok=225 err=0 elapsed=958s
+[250/535] ok=250 err=0 elapsed=1086s
+[275/535] ok=275 err=0 elapsed=1158s
+[300/535] ok=300 err=0 elapsed=1298s
+[325/535] ok=325 err=0 elapsed=1344s
+[350/535] ok=350 err=0 elapsed=1413s
+[375/535] ok=375 err=0 elapsed=1505s
+[400/535] ok=400 err=0 elapsed=1716s
+[425/535] ok=425 err=0 elapsed=1835s
+[450/535] ok=450 err=0 elapsed=1879s
+[475/535] ok=475 err=0 elapsed=1997s
+[500/535] ok=500 err=0 elapsed=2067s
+[525/535] ok=525 err=0 elapsed=2124s
+[535/535] ok=535 err=0 elapsed=2143s
+DONE ok=535 err=0
+FINISHED

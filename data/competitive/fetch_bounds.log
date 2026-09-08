@@ -1,0 +1,21 @@
+total 535 | done 0 | to fetch 535
+[25/535] ok=25 err=0 elapsed=96s eta=1968s
+[50/535] ok=50 err=0 elapsed=330s eta=3196s
+[75/535] ok=75 err=0 elapsed=532s eta=3265s
+[100/535] ok=100 err=0 elapsed=680s eta=2960s
+[125/535] ok=125 err=0 elapsed=801s eta=2627s
+[150/535] ok=150 err=0 elapsed=884s eta=2269s
+[175/535] ok=175 err=0 elapsed=1055s eta=2171s
+[200/535] ok=200 err=0 elapsed=1183s eta=1982s
+[225/535] ok=225 err=0 elapsed=1309s eta=1803s
+[250/535] ok=250 err=0 elapsed=1454s eta=1657s
+[275/535] ok=275 err=0 elapsed=1557s eta=1472s
+[300/535] ok=300 err=0 elapsed=1682s eta=1318s
+[325/535] ok=325 err=0 elapsed=1799s eta=1162s
+  err 3264107 p1: <urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE
+[350/535] ok=349 err=1 elapsed=2123s eta=1122s
+[375/535] ok=374 err=1 elapsed=2223s eta=948s
+[400/535] ok=399 err=1 elapsed=2344s eta=791s
+[425/535] ok=424 err=1 elapsed=2487s eta=644s
+[450/535] ok=449 err=1 elapsed=2641s eta=499s
+[475/535] ok=474 err=1 elapsed=2801s eta=354s

@@ -1,0 +1,23 @@
+total 535 | already done 37 | to fetch 498
+[25/498] ok=25 err=0 elapsed=107s eta=2016s
+[50/498] ok=50 err=0 elapsed=172s eta=1542s
+[75/498] ok=75 err=0 elapsed=298s eta=1682s
+[100/498] ok=100 err=0 elapsed=366s eta=1458s
+[125/498] ok=125 err=0 elapsed=490s eta=1461s
+[150/498] ok=150 err=0 elapsed=585s eta=1357s
+[175/498] ok=175 err=0 elapsed=680s eta=1255s
+[200/498] ok=200 err=0 elapsed=745s eta=1111s
+[225/498] ok=225 err=0 elapsed=817s eta=992s
+[250/498] ok=250 err=0 elapsed=884s eta=877s
+[275/498] ok=275 err=0 elapsed=957s eta=776s
+[300/498] ok=300 err=0 elapsed=1005s eta=663s
+[325/498] ok=325 err=0 elapsed=1148s eta=611s
+[350/498] ok=350 err=0 elapsed=1281s eta=542s
+[375/498] ok=375 err=0 elapsed=1469s eta=482s
+[400/498] ok=400 err=0 elapsed=1517s eta=372s
+[425/498] ok=425 err=0 elapsed=1635s eta=281s
+[450/498] ok=450 err=0 elapsed=1777s eta=189s
+[475/498] ok=475 err=0 elapsed=1913s eta=93s
+[498/498] ok=498 err=0 elapsed=2006s eta=0s
+DONE ok=498 err=0
+FINISHED

@@ -1,0 +1,36 @@
+3146451: n=50 (api) ok
+3148363: n=50 (api) ok
+  retry 3157431 p1 a0: <urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE
+3157431: n=50 (api) ok
+3164584: n=50 (api) ok
+3165107: n=50 (api) ok
+3168158: n=50 (api) ok
+3176580: n=50 (api) ok
+3178842: n=50 (api) ok
+3178917: n=50 (api) ok
+3179336: n=50 (api) ok
+  retry 3181918 p1 a0: <urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE
+3181918: n=50 (api) ok
+3190495: n=50 (api) ok
+  retry 3190552 p1 a0: <urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE
+3190552: n=50 (api+corpus) ok
+3193879: n=50 (api) ok
+3201318: n=50 (api) ok
+  retry 3203064 p1 a0: <urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE
+3203064: n=50 (api) ok
+3204245: n=50 (api) ok
+3212136: n=50 (api) ok
+  retry 3220977 p1 a0: <urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE
+3220977: n=50 (api) ok
+3222129: n=50 (api) ok
+3222143: n=50 (api) ok
+3224873: n=50 (api) ok
+3230204: n=50 (api+corpus) ok
+3232477: n=50 (api) ok
+3249208: n=50 (api+corpus) ok
+3254052: n=50 (api) ok
+3257474: n=50 (api) ok
+3259061: n=50 (api) ok
+3273471: n=50 (api) ok
+DONE
+FINISHED

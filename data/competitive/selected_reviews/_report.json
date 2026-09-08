@@ -1,0 +1,176 @@
+[
+ {
+  "room_id": 3146451,
+  "count": 50,
+  "source": "api",
+  "status": "ok"
+ },
+ {
+  "room_id": 3148363,
+  "count": 50,
+  "source": "api",
+  "status": "ok"
+ },
+ {
+  "room_id": 3157431,
+  "count": 50,
+  "source": "api",
+  "status": "ok"
+ },
+ {
+  "room_id": 3164584,
+  "count": 50,
+  "source": "api",
+  "status": "ok"
+ },
+ {
+  "room_id": 3165107,
+  "count": 50,
+  "source": "api",
+  "status": "ok"
+ },
+ {
+  "room_id": 3168158,
+  "count": 50,
+  "source": "api",
+  "status": "ok"
+ },
+ {
+  "room_id": 3176580,
+  "count": 50,
+  "source": "api",
+  "status": "ok"
+ },
+ {
+  "room_id": 3178842,
+  "count": 50,
+  "source": "api",
+  "status": "ok"
+ },
+ {
+  "room_id": 3178917,
+  "count": 50,
+  "source": "api",
+  "status": "ok"
+ },
+ {
+  "room_id": 3179336,
+  "count": 50,
+  "source": "api",
+  "status": "ok"
+ },
+ {
+  "room_id": 3181918,
+  "count": 50,
+  "source": "api",
+  "status": "ok"
+ },
+ {
+  "room_id": 3190495,
+  "count": 50,
+  "source": "api",
+  "status": "ok"
+ },
+ {
+  "room_id": 3190552,
+  "count": 50,
+  "source": "api+corpus",
+  "status": "ok"
+ },
+ {
+  "room_id": 3193879,
+  "count": 50,
+  "source": "api",
+  "status": "ok"
+ },
+ {
+  "room_id": 3201318,
+  "count": 50,
+  "source": "api",
+  "status": "ok"
+ },
+ {
+  "room_id": 3203064,
+  "count": 50,
+  "source": "api",
+  "status": "ok"
+ },
+ {
+  "room_id": 3204245,
+  "count": 50,
+  "source": "api",
+  "status": "ok"
+ },
+ {
+  "room_id": 3212136,
+  "count": 50,
+  "source": "api",
+  "status": "ok"
+ },
+ {
+  "room_id": 3220977,
+  "count": 50,
+  "source": "api",
+  "status": "ok"
+ },
+ {
+  "room_id": 3222129,
+  "count": 50,
+  "source": "api",
+  "status": "ok"
+ },
+ {
+  "room_id": 3222143,
+  "count": 50,
+  "source": "api",
+  "status": "ok"
+ },
+ {
+  "room_id": 3224873,
+  "count": 50,
+  "source": "api",
+  "status": "ok"
+ },
+ {
+  "room_id": 3230204,
+  "count": 50,
+  "source": "api+corpus",
+  "status": "ok"
+ },
+ {
+  "room_id": 3232477,
+  "count": 50,
+  "source": "api",
+  "status": "ok"
+ },
+ {
+  "room_id": 3249208,
+  "count": 50,
+  "source": "api+corpus",
+  "status": "ok"
+ },
+ {
+  "room_id": 3254052,
+  "count": 50,
+  "source": "api",
+  "status": "ok"
+ },
+ {
+  "room_id": 3257474,
+  "count": 50,
+  "source": "api",
+  "status": "ok"
+ },
+ {
+  "room_id": 3259061,
+  "count": 50,
+  "source": "api",
+  "status": "ok"
+ },
+ {
+  "room_id": 3273471,
+  "count": 50,
+  "source": "api",
+  "status": "ok"
+ }
+]
