@@ -25,14 +25,13 @@ SIG = BASE / "data" / "signals"
 SIG.mkdir(parents=True, exist_ok=True)
 HIST = SIG / "rank_history.json"
 
-# village search URLs (site search slugs) — rank is measured within each
+# village search URLs (site search slugs) — rank is measured within each.
+# Verified 2026-09-09: only 12 Babolkenar villages have their own slug; gune-kola /
+# ghoran-talar / amir-kola rooms rank only inside /s/babolkenar (no dedicated slug).
+# So each village entry gets either a dedicated slug or the babolkenar "catch-all".
 VILLAGES = {
     "سیدکلا": "https://www.jajiga.com/s/seyyedkolababolkenar/cottage",
-    "قرآن تالار": "https://www.jajiga.com/s/ghorantalarbabolkenar/cottage",
-    "گونه کلا": "https://www.jajiga.com/s/gunehkolababolkenar/cottage",
-    "شیردارکلا": "https://www.jajiga.com/s/shirdarekolababolkenar/cottage",
-    "کاردرکلا": "https://www.jajiga.com/s/kardarkolababolkenar/cottage",
-    "امیرکلا": "https://www.jajiga.com/s/amirkolababolkenar/cottage",
+    "بابلکنار (کل)": "https://www.jajiga.com/s/babolkenar",
 }
 API = "https://api.jajiga.com/api/search?per_page=18&url={}&with[]=rooms"
 
@@ -55,7 +54,7 @@ def curl_json(url, tries=3):
     return None
 
 
-def sweep_village(base_url, tracked_ids, max_pages=6):
+def sweep_village(base_url, tracked_ids, max_pages=40):
     """Walk pages until no new ids; return {room_id: rank} for tracked rooms + stats."""
     found = {}
     seen = set()
@@ -95,7 +94,8 @@ def main():
     for village, url in VILLAGES.items():
         found, stats = sweep_village(url, tracked_ids)
         for rid, rank in found.items():
-            day[rid] = {"village": village, "rank": rank}
+            d = day.setdefault(rid, {"villages": {}})
+            d["villages"][village] = rank
         day["_villages"][village] = stats
         hit = {tracked[rid]["short_label"]: r for rid, r in found.items()}
         print(f"{village}: pages={stats['pages']} seen={stats['seen']}/{stats['total']} tracked={hit}", flush=True)
