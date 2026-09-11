@@ -491,14 +491,14 @@
   {
     "id": 3190552,
     "title": "اجاره کلبه چوبی در سوادکوه - سیدکلا",
-    "booked": 14,
-    "free": 32,
-    "gross": 37800000,
-    "gross_discounted": 37800000,
+    "booked": 16,
+    "free": 30,
+    "gross": 44800000,
+    "gross_discounted": 44800000,
     "discount_total": 0,
-    "commission": 4536000,
+    "commission": 5376000,
     "commission_rate": 0.12,
-    "net": 33264000,
+    "net": 39424000,
     "nights": [
       {
         "date": "2026-09-11",
@@ -537,6 +537,15 @@
         "peak": false
       },
       {
+        "date": "2026-09-15",
+        "price": 3500000,
+        "effective_price": 3500000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
         "date": "2026-09-16",
         "price": 4000000,
         "effective_price": 4000000,
@@ -551,6 +560,15 @@
         "effective_price": 4000000,
         "discount": 0,
         "weekend": true,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-09-18",
+        "price": 3500000,
+        "effective_price": 3500000,
+        "discount": 0,
+        "weekend": false,
         "holiday": false,
         "peak": false
       },
