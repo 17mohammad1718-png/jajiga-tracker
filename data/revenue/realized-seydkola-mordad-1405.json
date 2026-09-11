@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T11:40:04.450192+00:00",
+  "generated_at": "2026-09-11T15:52:10.079174+00:00",
   "source": "radar snapshots",
   "commission_rate": {
     "own": 0.16,
@@ -867,6 +867,736 @@
           "date": "2026-09-10",
           "price": 4500000,
           "effective_price": 4500000,
+          "discount": 0,
+          "weekend": true,
+          "holiday": false,
+          "peak": false
+        }
+      ]
+    },
+    {
+      "id": 3209086,
+      "title": "اجاره کلبه سوئدی در نزدیکی لفور - قرآن تلار",
+      "own": false,
+      "booked": 1,
+      "gross": 5500000,
+      "gross_discounted": 5500000,
+      "discount_total": 0,
+      "commission": 660000,
+      "commission_rate": 0.12,
+      "net": 4840000,
+      "range_start": "2026-08-08",
+      "range_end": "2026-09-10",
+      "nights": [
+        {
+          "date": "2026-09-10",
+          "price": 5500000,
+          "effective_price": 5500000,
+          "discount": 0,
+          "weekend": true,
+          "holiday": false,
+          "peak": false
+        }
+      ]
+    },
+    {
+      "id": 3212136,
+      "title": "کلبه سوئیسی جکوزی دار در بابلکنار - قرآن تالار",
+      "own": false,
+      "booked": 1,
+      "gross": 3700000,
+      "gross_discounted": 3700000,
+      "discount_total": 0,
+      "commission": 444000,
+      "commission_rate": 0.12,
+      "net": 3256000,
+      "range_start": "2026-08-08",
+      "range_end": "2026-09-10",
+      "nights": [
+        {
+          "date": "2026-09-10",
+          "price": 3700000,
+          "effective_price": 3700000,
+          "discount": 0,
+          "weekend": true,
+          "holiday": false,
+          "peak": false
+        }
+      ]
+    },
+    {
+      "id": 3212511,
+      "title": "کلبه چوبی دوبلکس در بابلکنار - قرآن تالار",
+      "own": false,
+      "booked": 1,
+      "gross": 3000000,
+      "gross_discounted": 3000000,
+      "discount_total": 0,
+      "commission": 360000,
+      "commission_rate": 0.12,
+      "net": 2640000,
+      "range_start": "2026-08-08",
+      "range_end": "2026-09-10",
+      "nights": [
+        {
+          "date": "2026-09-10",
+          "price": 3000000,
+          "effective_price": 3000000,
+          "discount": 0,
+          "weekend": true,
+          "holiday": false,
+          "peak": false
+        }
+      ]
+    },
+    {
+      "id": 3245010,
+      "title": "کلبه سوئیسی با جکوزی در بابلکنار - قرآن تالار",
+      "own": false,
+      "booked": 1,
+      "gross": 5500000,
+      "gross_discounted": 5500000,
+      "discount_total": 0,
+      "commission": 660000,
+      "commission_rate": 0.12,
+      "net": 4840000,
+      "range_start": "2026-08-08",
+      "range_end": "2026-09-10",
+      "nights": [
+        {
+          "date": "2026-09-10",
+          "price": 5500000,
+          "effective_price": 5500000,
+          "discount": 0,
+          "weekend": true,
+          "holiday": false,
+          "peak": false
+        }
+      ]
+    },
+    {
+      "id": 3281922,
+      "title": "کلبه چوبی در در بابلکنار - قرآن تالار",
+      "own": false,
+      "booked": 1,
+      "gross": 3750000,
+      "gross_discounted": 3750000,
+      "discount_total": 0,
+      "commission": 450000,
+      "commission_rate": 0.12,
+      "net": 3300000,
+      "range_start": "2026-08-08",
+      "range_end": "2026-09-10",
+      "nights": [
+        {
+          "date": "2026-09-10",
+          "price": 3750000,
+          "effective_price": 3750000,
+          "discount": 0,
+          "weekend": true,
+          "holiday": false,
+          "peak": false
+        }
+      ]
+    },
+    {
+      "id": 3283885,
+      "title": "کلبه سوئیسی جکوزی دار در بابلکنار - قران تالار",
+      "own": false,
+      "booked": 1,
+      "gross": 3500000,
+      "gross_discounted": 3500000,
+      "discount_total": 0,
+      "commission": 420000,
+      "commission_rate": 0.12,
+      "net": 3080000,
+      "range_start": "2026-08-08",
+      "range_end": "2026-09-10",
+      "nights": [
+        {
+          "date": "2026-09-10",
+          "price": 3500000,
+          "effective_price": 3500000,
+          "discount": 0,
+          "weekend": true,
+          "holiday": false,
+          "peak": false
+        }
+      ]
+    },
+    {
+      "id": 3285158,
+      "title": "کلبه سوئیسی در بابلکنار - قران تالار",
+      "own": false,
+      "booked": 1,
+      "gross": 2500000,
+      "gross_discounted": 2500000,
+      "discount_total": 0,
+      "commission": 300000,
+      "commission_rate": 0.12,
+      "net": 2200000,
+      "range_start": "2026-08-08",
+      "range_end": "2026-09-10",
+      "nights": [
+        {
+          "date": "2026-09-10",
+          "price": 2500000,
+          "effective_price": 2500000,
+          "discount": 0,
+          "weekend": true,
+          "holiday": false,
+          "peak": false
+        }
+      ]
+    },
+    {
+      "id": 3289341,
+      "title": "کلبه سوئیسی رو به جنگل در بابلکنار - قرآن تالار",
+      "own": false,
+      "booked": 1,
+      "gross": 3600000,
+      "gross_discounted": 3600000,
+      "discount_total": 0,
+      "commission": 432000,
+      "commission_rate": 0.12,
+      "net": 3168000,
+      "range_start": "2026-08-08",
+      "range_end": "2026-09-10",
+      "nights": [
+        {
+          "date": "2026-09-10",
+          "price": 3600000,
+          "effective_price": 3600000,
+          "discount": 0,
+          "weekend": true,
+          "holiday": false,
+          "peak": false
+        }
+      ]
+    },
+    {
+      "id": 3289641,
+      "title": "کلبه سوئیسی با جکوزی در بابلکنار - قرآن تالار",
+      "own": false,
+      "booked": 1,
+      "gross": 3300000,
+      "gross_discounted": 3300000,
+      "discount_total": 0,
+      "commission": 396000,
+      "commission_rate": 0.12,
+      "net": 2904000,
+      "range_start": "2026-08-08",
+      "range_end": "2026-09-10",
+      "nights": [
+        {
+          "date": "2026-09-10",
+          "price": 3300000,
+          "effective_price": 3300000,
+          "discount": 0,
+          "weekend": true,
+          "holiday": false,
+          "peak": false
+        }
+      ]
+    },
+    {
+      "id": 3291421,
+      "title": "کلبه با وان‌ جکوزی در بابلکنار - قرآن‌ تالار",
+      "own": false,
+      "booked": 1,
+      "gross": 3100000,
+      "gross_discounted": 3100000,
+      "discount_total": 0,
+      "commission": 372000,
+      "commission_rate": 0.12,
+      "net": 2728000,
+      "range_start": "2026-08-08",
+      "range_end": "2026-09-10",
+      "nights": [
+        {
+          "date": "2026-09-10",
+          "price": 3100000,
+          "effective_price": 3100000,
+          "discount": 0,
+          "weekend": true,
+          "holiday": false,
+          "peak": false
+        }
+      ]
+    },
+    {
+      "id": 3293846,
+      "title": "کلبه بالکن دار با جکوزی در بابلکنار - قرآن تالار",
+      "own": false,
+      "booked": 1,
+      "gross": 3500000,
+      "gross_discounted": 3500000,
+      "discount_total": 0,
+      "commission": 420000,
+      "commission_rate": 0.12,
+      "net": 3080000,
+      "range_start": "2026-08-08",
+      "range_end": "2026-09-10",
+      "nights": [
+        {
+          "date": "2026-09-10",
+          "price": 3500000,
+          "effective_price": 3500000,
+          "discount": 0,
+          "weekend": true,
+          "holiday": false,
+          "peak": false
+        }
+      ]
+    },
+    {
+      "id": 3161999,
+      "title": "رزرو کلبه چوبی دوبلکس در بابلکنار - گونه کلا",
+      "own": false,
+      "booked": 1,
+      "gross": 5950000,
+      "gross_discounted": 5950000,
+      "discount_total": 0,
+      "commission": 714000,
+      "commission_rate": 0.12,
+      "net": 5236000,
+      "range_start": "2026-08-08",
+      "range_end": "2026-09-10",
+      "nights": [
+        {
+          "date": "2026-09-10",
+          "price": 5950000,
+          "effective_price": 5950000,
+          "discount": 0,
+          "weekend": true,
+          "holiday": false,
+          "peak": false
+        }
+      ]
+    },
+    {
+      "id": 3198940,
+      "title": "اجاره کلبه چوبی جکوزی دار در بابلکنار - گونه کلا",
+      "own": false,
+      "booked": 0,
+      "gross": 0,
+      "gross_discounted": 0,
+      "discount_total": 0,
+      "commission": 0,
+      "commission_rate": 0.12,
+      "net": 0,
+      "range_start": "2026-08-08",
+      "range_end": "2026-09-10",
+      "nights": []
+    },
+    {
+      "id": 3199786,
+      "title": "کلبه در بابلکنار - گونه کلا",
+      "own": false,
+      "booked": 1,
+      "gross": 6000000,
+      "gross_discounted": 6000000,
+      "discount_total": 0,
+      "commission": 720000,
+      "commission_rate": 0.12,
+      "net": 5280000,
+      "range_start": "2026-08-08",
+      "range_end": "2026-09-10",
+      "nights": [
+        {
+          "date": "2026-09-10",
+          "price": 6000000,
+          "effective_price": 6000000,
+          "discount": 0,
+          "weekend": true,
+          "holiday": false,
+          "peak": false
+        }
+      ]
+    },
+    {
+      "id": 3224334,
+      "title": "اجاره کلبه سوئیسی در بابلکنار - گونه کلا",
+      "own": false,
+      "booked": 1,
+      "gross": 6000000,
+      "gross_discounted": 6000000,
+      "discount_total": 0,
+      "commission": 720000,
+      "commission_rate": 0.12,
+      "net": 5280000,
+      "range_start": "2026-08-08",
+      "range_end": "2026-09-10",
+      "nights": [
+        {
+          "date": "2026-09-10",
+          "price": 6000000,
+          "effective_price": 6000000,
+          "discount": 0,
+          "weekend": true,
+          "holiday": false,
+          "peak": false
+        }
+      ]
+    },
+    {
+      "id": 3228478,
+      "title": "کلبه سوئیسی استخردار در بابلکنار - گونه کلا",
+      "own": false,
+      "booked": 1,
+      "gross": 13000000,
+      "gross_discounted": 13000000,
+      "discount_total": 0,
+      "commission": 1560000,
+      "commission_rate": 0.12,
+      "net": 11440000,
+      "range_start": "2026-08-08",
+      "range_end": "2026-09-10",
+      "nights": [
+        {
+          "date": "2026-09-10",
+          "price": 13000000,
+          "effective_price": 13000000,
+          "discount": 0,
+          "weekend": true,
+          "holiday": false,
+          "peak": false
+        }
+      ]
+    },
+    {
+      "id": 3228941,
+      "title": "اجاره کلبه چوبی در بابلکنار - گونه کلا",
+      "own": false,
+      "booked": 1,
+      "gross": 4500000,
+      "gross_discounted": 4500000,
+      "discount_total": 0,
+      "commission": 540000,
+      "commission_rate": 0.12,
+      "net": 3960000,
+      "range_start": "2026-08-08",
+      "range_end": "2026-09-10",
+      "nights": [
+        {
+          "date": "2026-09-10",
+          "price": 4500000,
+          "effective_price": 4500000,
+          "discount": 0,
+          "weekend": true,
+          "holiday": false,
+          "peak": false
+        }
+      ]
+    },
+    {
+      "id": 3235299,
+      "title": "اجاره کلبه سوئیسی در بابلکنار - گونه کلا",
+      "own": false,
+      "booked": 1,
+      "gross": 2600000,
+      "gross_discounted": 2600000,
+      "discount_total": 0,
+      "commission": 312000,
+      "commission_rate": 0.12,
+      "net": 2288000,
+      "range_start": "2026-08-08",
+      "range_end": "2026-09-10",
+      "nights": [
+        {
+          "date": "2026-09-10",
+          "price": 2600000,
+          "effective_price": 2600000,
+          "discount": 0,
+          "weekend": true,
+          "holiday": false,
+          "peak": false
+        }
+      ]
+    },
+    {
+      "id": 3236158,
+      "title": "کلبه سوئیسی با جکوزی در بابلکنار - گونه کلا",
+      "own": false,
+      "booked": 0,
+      "gross": 0,
+      "gross_discounted": 0,
+      "discount_total": 0,
+      "commission": 0,
+      "commission_rate": 0.12,
+      "net": 0,
+      "range_start": "2026-08-08",
+      "range_end": "2026-09-10",
+      "nights": []
+    },
+    {
+      "id": 3240990,
+      "title": "کلبه سوئیسی استخردار در بابلکنار - گونه کلا",
+      "own": false,
+      "booked": 1,
+      "gross": 10500000,
+      "gross_discounted": 10500000,
+      "discount_total": 0,
+      "commission": 1260000,
+      "commission_rate": 0.12,
+      "net": 9240000,
+      "range_start": "2026-08-08",
+      "range_end": "2026-09-10",
+      "nights": [
+        {
+          "date": "2026-09-10",
+          "price": 10500000,
+          "effective_price": 10500000,
+          "discount": 0,
+          "weekend": true,
+          "holiday": false,
+          "peak": false
+        }
+      ]
+    },
+    {
+      "id": 3252868,
+      "title": "کلبه چوبی جکوزی دار در بابلکنار - گونه کلا",
+      "own": false,
+      "booked": 1,
+      "gross": 4990000,
+      "gross_discounted": 4990000,
+      "discount_total": 0,
+      "commission": 598800,
+      "commission_rate": 0.12,
+      "net": 4391200,
+      "range_start": "2026-08-08",
+      "range_end": "2026-09-10",
+      "nights": [
+        {
+          "date": "2026-09-10",
+          "price": 4990000,
+          "effective_price": 4990000,
+          "discount": 0,
+          "weekend": true,
+          "holiday": false,
+          "peak": false
+        }
+      ]
+    },
+    {
+      "id": 3259364,
+      "title": "کلبه سوئیسی در بابلکنار - گونه کلا",
+      "own": false,
+      "booked": 1,
+      "gross": 4800000,
+      "gross_discounted": 4800000,
+      "discount_total": 0,
+      "commission": 576000,
+      "commission_rate": 0.12,
+      "net": 4224000,
+      "range_start": "2026-08-08",
+      "range_end": "2026-09-10",
+      "nights": [
+        {
+          "date": "2026-09-10",
+          "price": 4800000,
+          "effective_price": 4800000,
+          "discount": 0,
+          "weekend": true,
+          "holiday": false,
+          "peak": false
+        }
+      ]
+    },
+    {
+      "id": 3263831,
+      "title": "اجاره کلبه سوئیسی در بابلکنار - گونه کلا",
+      "own": false,
+      "booked": 1,
+      "gross": 5500000,
+      "gross_discounted": 5500000,
+      "discount_total": 0,
+      "commission": 660000,
+      "commission_rate": 0.12,
+      "net": 4840000,
+      "range_start": "2026-08-08",
+      "range_end": "2026-09-10",
+      "nights": [
+        {
+          "date": "2026-09-10",
+          "price": 5500000,
+          "effective_price": 5500000,
+          "discount": 0,
+          "weekend": true,
+          "holiday": false,
+          "peak": false
+        }
+      ]
+    },
+    {
+      "id": 3263833,
+      "title": "کلبه سوئیسی جکوزی دار در بابلکنار - گونه کلا",
+      "own": false,
+      "booked": 1,
+      "gross": 5550000,
+      "gross_discounted": 5550000,
+      "discount_total": 0,
+      "commission": 666000,
+      "commission_rate": 0.12,
+      "net": 4884000,
+      "range_start": "2026-08-08",
+      "range_end": "2026-09-10",
+      "nights": [
+        {
+          "date": "2026-09-10",
+          "price": 5550000,
+          "effective_price": 5550000,
+          "discount": 0,
+          "weekend": true,
+          "holiday": false,
+          "peak": false
+        }
+      ]
+    },
+    {
+      "id": 3273563,
+      "title": "کلبه سوئیسی جکوزی دار در بابلکنار - گونه کلا",
+      "own": false,
+      "booked": 1,
+      "gross": 5800000,
+      "gross_discounted": 5800000,
+      "discount_total": 0,
+      "commission": 696000,
+      "commission_rate": 0.12,
+      "net": 5104000,
+      "range_start": "2026-08-08",
+      "range_end": "2026-09-10",
+      "nights": [
+        {
+          "date": "2026-09-10",
+          "price": 5800000,
+          "effective_price": 5800000,
+          "discount": 0,
+          "weekend": true,
+          "holiday": false,
+          "peak": false
+        }
+      ]
+    },
+    {
+      "id": 3281370,
+      "title": "کلبه سوئیسی در بابلکنار - گونه کلا - واحد ۴",
+      "own": false,
+      "booked": 1,
+      "gross": 4850000,
+      "gross_discounted": 4850000,
+      "discount_total": 0,
+      "commission": 582000,
+      "commission_rate": 0.12,
+      "net": 4268000,
+      "range_start": "2026-08-08",
+      "range_end": "2026-09-10",
+      "nights": [
+        {
+          "date": "2026-09-10",
+          "price": 4850000,
+          "effective_price": 4850000,
+          "discount": 0,
+          "weekend": true,
+          "holiday": false,
+          "peak": false
+        }
+      ]
+    },
+    {
+      "id": 3284804,
+      "title": "کلبه سوئیسی با جکوزی در بابلکنار - گونه کلا",
+      "own": false,
+      "booked": 1,
+      "gross": 5550000,
+      "gross_discounted": 4995000,
+      "discount_total": 555000,
+      "commission": 599400,
+      "commission_rate": 0.12,
+      "net": 4395600,
+      "range_start": "2026-08-08",
+      "range_end": "2026-09-10",
+      "nights": [
+        {
+          "date": "2026-09-10",
+          "price": 5550000,
+          "effective_price": 4995000,
+          "discount": 10,
+          "weekend": true,
+          "holiday": false,
+          "peak": false
+        }
+      ]
+    },
+    {
+      "id": 3285480,
+      "title": "کلبه جکوزی دار در بابلکنار - گونه کلا",
+      "own": false,
+      "booked": 1,
+      "gross": 4950000,
+      "gross_discounted": 4950000,
+      "discount_total": 0,
+      "commission": 594000,
+      "commission_rate": 0.12,
+      "net": 4356000,
+      "range_start": "2026-08-08",
+      "range_end": "2026-09-10",
+      "nights": [
+        {
+          "date": "2026-09-10",
+          "price": 4950000,
+          "effective_price": 4950000,
+          "discount": 0,
+          "weekend": true,
+          "holiday": false,
+          "peak": false
+        }
+      ]
+    },
+    {
+      "id": 3292527,
+      "title": "کلبه جنگلی استخردار در گونه کلا - ۳ خوابه",
+      "own": false,
+      "booked": 1,
+      "gross": 15000000,
+      "gross_discounted": 15000000,
+      "discount_total": 0,
+      "commission": 1800000,
+      "commission_rate": 0.12,
+      "net": 13200000,
+      "range_start": "2026-08-08",
+      "range_end": "2026-09-10",
+      "nights": [
+        {
+          "date": "2026-09-10",
+          "price": 15000000,
+          "effective_price": 15000000,
+          "discount": 0,
+          "weekend": true,
+          "holiday": false,
+          "peak": false
+        }
+      ]
+    },
+    {
+      "id": 3298479,
+      "title": "کلبه سوئیسی در بابلکنار - گونه کلا",
+      "own": false,
+      "booked": 1,
+      "gross": 5000000,
+      "gross_discounted": 5000000,
+      "discount_total": 0,
+      "commission": 600000,
+      "commission_rate": 0.12,
+      "net": 4400000,
+      "range_start": "2026-08-08",
+      "range_end": "2026-09-10",
+      "nights": [
+        {
+          "date": "2026-09-10",
+          "price": 5000000,
+          "effective_price": 5000000,
           "discount": 0,
           "weekend": true,
           "holiday": false,
