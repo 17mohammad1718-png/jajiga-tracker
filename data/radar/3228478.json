@@ -8,25 +8,20 @@
     "min_price": 8000000,
     "own": false
   },
-  "fetched_at": "2026-09-15T23:32:19.374267+00:00",
+  "fetched_at": "2026-09-17T16:59:40.785443+00:00",
   "nights": [
-    {
-      "date": "2026-09-15",
-      "price": 9000000,
-      "is_instant": true,
-      "is_unavailable": true
-    },
     {
       "date": "2026-09-16",
       "price": 13000000,
-      "discount": 10,
       "is_weekend": true,
+      "is_unavailable": true,
       "stays_min": 2
     },
     {
       "date": "2026-09-17",
       "price": 13000000,
       "is_weekend": true,
+      "is_unavailable": true,
       "stays_min": 2
     },
     {
