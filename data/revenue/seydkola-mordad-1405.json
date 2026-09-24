@@ -147,14 +147,14 @@
   {
     "id": 3186964,
     "title": "کلبه سوئیسی با جکوزی در بابلکنار - گونه کلا",
-    "booked": 10,
-    "free": 36,
-    "gross": 51600000,
-    "gross_discounted": 51600000,
+    "booked": 4,
+    "free": 42,
+    "gross": 20600000,
+    "gross_discounted": 20600000,
     "discount_total": 0,
-    "commission": 6192000,
+    "commission": 2472000,
     "commission_rate": 0.12,
-    "net": 45408000,
+    "net": 18128000,
     "nights": [
       {
         "date": "2026-09-24",
@@ -189,60 +189,6 @@
         "effective_price": 4700000,
         "discount": 0,
         "weekend": false,
-        "holiday": false,
-        "peak": false
-      },
-      {
-        "date": "2026-10-03",
-        "price": 4700000,
-        "effective_price": 4700000,
-        "discount": 0,
-        "weekend": false,
-        "holiday": false,
-        "peak": false
-      },
-      {
-        "date": "2026-10-04",
-        "price": 4700000,
-        "effective_price": 4700000,
-        "discount": 0,
-        "weekend": false,
-        "holiday": false,
-        "peak": false
-      },
-      {
-        "date": "2026-10-05",
-        "price": 4700000,
-        "effective_price": 4700000,
-        "discount": 0,
-        "weekend": false,
-        "holiday": false,
-        "peak": false
-      },
-      {
-        "date": "2026-10-06",
-        "price": 4700000,
-        "effective_price": 4700000,
-        "discount": 0,
-        "weekend": false,
-        "holiday": false,
-        "peak": false
-      },
-      {
-        "date": "2026-10-07",
-        "price": 5700000,
-        "effective_price": 5700000,
-        "discount": 0,
-        "weekend": true,
-        "holiday": false,
-        "peak": false
-      },
-      {
-        "date": "2026-10-08",
-        "price": 6500000,
-        "effective_price": 6500000,
-        "discount": 0,
-        "weekend": true,
         "holiday": false,
         "peak": false
       }
@@ -694,14 +640,14 @@
   {
     "id": 3179336,
     "title": "کلبه سوئیسی با وان جکوزی در بابلکنار- سیدکلا",
-    "booked": 25,
-    "free": 21,
-    "gross": 64000000,
-    "gross_discounted": 64000000,
+    "booked": 27,
+    "free": 19,
+    "gross": 69000000,
+    "gross_discounted": 69000000,
     "discount_total": 0,
-    "commission": 7680000,
+    "commission": 8280000,
     "commission_rate": 0.12,
-    "net": 56320000,
+    "net": 60720000,
     "nights": [
       {
         "date": "2026-09-24",
@@ -835,6 +781,24 @@
         "effective_price": 3500000,
         "discount": 0,
         "weekend": true,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-10-09",
+        "price": 2500000,
+        "effective_price": 2500000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-10-10",
+        "price": 2500000,
+        "effective_price": 2500000,
+        "discount": 0,
+        "weekend": false,
         "holiday": false,
         "peak": false
       },
