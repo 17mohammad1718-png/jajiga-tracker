@@ -1282,14 +1282,14 @@
   {
     "id": 3227770,
     "title": "خانه روستایی در بابلکنار - سیدکلا",
-    "booked": 9,
-    "free": 37,
-    "gross": 17890000,
-    "gross_discounted": 17890000,
-    "discount_total": 0,
-    "commission": 2146800,
+    "booked": 11,
+    "free": 35,
+    "gross": 21590000,
+    "gross_discounted": 21400000,
+    "discount_total": 190000,
+    "commission": 2568000,
     "commission_rate": 0.12,
-    "net": 15743200,
+    "net": 18832000,
     "nights": [
       {
         "date": "2026-09-29",
@@ -1315,6 +1315,24 @@
         "effective_price": 2200000,
         "discount": 0,
         "weekend": true,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-10-02",
+        "price": 1900000,
+        "effective_price": 1710000,
+        "discount": 10,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-10-03",
+        "price": 1800000,
+        "effective_price": 1800000,
+        "discount": 0,
+        "weekend": false,
         "holiday": false,
         "peak": false
       },
