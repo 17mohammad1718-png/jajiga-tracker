@@ -265,14 +265,14 @@
   {
     "id": 3215808,
     "title": "کلبه سوئیسی جکوزی دار در بابلکنار - سید کلا",
-    "booked": 5,
-    "free": 41,
-    "gross": 38600000,
-    "gross_discounted": 38600000,
+    "booked": 6,
+    "free": 40,
+    "gross": 45950000,
+    "gross_discounted": 45950000,
     "discount_total": 0,
-    "commission": 4632000,
+    "commission": 5514000,
     "commission_rate": 0.12,
-    "net": 33968000,
+    "net": 40436000,
     "nights": [
       {
         "date": "2026-09-30",
@@ -296,6 +296,15 @@
         "date": "2026-10-02",
         "price": 6500000,
         "effective_price": 6500000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-10-03",
+        "price": 7350000,
+        "effective_price": 7350000,
         "discount": 0,
         "weekend": false,
         "holiday": false,
