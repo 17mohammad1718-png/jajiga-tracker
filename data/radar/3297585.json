@@ -8,45 +8,21 @@
     "min_price": 2400000,
     "own": true
   },
-  "fetched_at": "2026-09-30T17:30:08.801471+00:00",
+  "fetched_at": "2026-10-03T06:39:17.604415+00:00",
   "nights": [
-    {
-      "date": "2026-09-29",
-      "price": 2800000,
-      "discount": 20,
-      "is_instant": true,
-      "is_unavailable": true,
-      "stays_min": 2
-    },
-    {
-      "date": "2026-09-30",
-      "price": 3500000,
-      "discount": 10,
-      "is_instant": true,
-      "is_weekend": true,
-      "is_unavailable": true,
-      "stays_min": 2
-    },
-    {
-      "date": "2026-10-01",
-      "price": 3500000,
-      "discount": 10,
-      "is_instant": true,
-      "is_weekend": true,
-      "is_unavailable": true,
-      "stays_min": 2
-    },
     {
       "date": "2026-10-02",
       "price": 2800000,
       "discount": 20,
       "is_instant": true,
+      "is_unavailable": true,
       "stays_min": 2
     },
     {
       "date": "2026-10-03",
       "price": 2800000,
-      "is_instant": true
+      "is_instant": true,
+      "is_unavailable": true
     },
     {
       "date": "2026-10-04",
@@ -57,13 +33,15 @@
       "date": "2026-10-05",
       "price": 2800000,
       "discount": 10,
-      "is_instant": true
+      "is_instant": true,
+      "is_unavailable": true
     },
     {
       "date": "2026-10-06",
       "price": 2800000,
       "discount": 10,
-      "is_instant": true
+      "is_instant": true,
+      "is_unavailable": true
     },
     {
       "date": "2026-10-07",
@@ -95,7 +73,8 @@
     {
       "date": "2026-10-11",
       "price": 2800000,
-      "is_instant": true
+      "is_instant": true,
+      "is_unavailable": true
     },
     {
       "date": "2026-10-12",
@@ -111,13 +90,15 @@
       "date": "2026-10-14",
       "price": 3500000,
       "is_instant": true,
-      "is_weekend": true
+      "is_weekend": true,
+      "is_unavailable": true
     },
     {
       "date": "2026-10-15",
       "price": 3500000,
       "is_instant": true,
-      "is_weekend": true
+      "is_weekend": true,
+      "is_unavailable": true
     },
     {
       "date": "2026-10-16",
