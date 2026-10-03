@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-03T11:32:38.151883+00:00",
+  "generated_at": "2026-10-03T16:34:28.174030+00:00",
   "source": "radar snapshots",
   "commission_rate": {
     "own": 0.16,
@@ -14,19 +14,19 @@
       "title": "کلبه سوئیسی در بابلکنار - سیدکلا",
       "own": true,
       "booked": 1,
-      "gross": 2800000,
-      "gross_discounted": 2240000,
-      "discount_total": 560000,
-      "commission": 358400,
+      "gross": 2950000,
+      "gross_discounted": 2360000,
+      "discount_total": 590000,
+      "commission": 377600,
       "commission_rate": 0.16,
-      "net": 1881600,
+      "net": 1982400,
       "range_start": "2026-08-08",
       "range_end": "2026-10-02",
       "nights": [
         {
           "date": "2026-10-02",
-          "price": 2800000,
-          "effective_price": 2240000,
+          "price": 2950000,
+          "effective_price": 2360000,
           "discount": 20,
           "weekend": false,
           "holiday": false,
