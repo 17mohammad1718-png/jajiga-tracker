@@ -2,17 +2,44 @@
   {
     "id": 3219516,
     "title": "ویلا دوبلکس استخردار در بابل- سیدکلا",
-    "booked": 6,
-    "free": 40,
-    "gross": 54000000,
-    "gross_discounted": 54000000,
+    "booked": 9,
+    "free": 37,
+    "gross": 79500000,
+    "gross_discounted": 79500000,
     "discount_total": 0,
-    "commission": 6480000,
+    "commission": 9540000,
     "commission_rate": 0.12,
-    "net": 47520000,
+    "net": 69960000,
     "nights": [
       {
         "date": "2026-10-03",
+        "price": 8500000,
+        "effective_price": 8500000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-10-04",
+        "price": 8500000,
+        "effective_price": 8500000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-10-05",
+        "price": 8500000,
+        "effective_price": 8500000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-10-06",
         "price": 8500000,
         "effective_price": 8500000,
         "discount": 0,
