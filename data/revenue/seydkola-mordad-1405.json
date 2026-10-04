@@ -88,15 +88,33 @@
   {
     "id": 3206720,
     "title": "کلبه چوبی جکوزی دار در بابلکنار - سیدکلا",
-    "booked": 1,
-    "free": 45,
-    "gross": 5000000,
-    "gross_discounted": 5000000,
+    "booked": 3,
+    "free": 43,
+    "gross": 12000000,
+    "gross_discounted": 12000000,
     "discount_total": 0,
-    "commission": 600000,
+    "commission": 1440000,
     "commission_rate": 0.12,
-    "net": 4400000,
+    "net": 10560000,
     "nights": [
+      {
+        "date": "2026-10-04",
+        "price": 3500000,
+        "effective_price": 3500000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-10-05",
+        "price": 3500000,
+        "effective_price": 3500000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
       {
         "date": "2026-10-08",
         "price": 5000000,
@@ -884,15 +902,52 @@
   {
     "id": 3253520,
     "title": "اجاره کلبه سوئیسی در بابلکنار - سیدکلا",
-    "booked": 0,
-    "free": 46,
-    "gross": 0,
-    "gross_discounted": 0,
+    "booked": 4,
+    "free": 42,
+    "gross": 19000000,
+    "gross_discounted": 19000000,
     "discount_total": 0,
-    "commission": 0,
+    "commission": 2280000,
     "commission_rate": 0.12,
-    "net": 0,
-    "nights": []
+    "net": 16720000,
+    "nights": [
+      {
+        "date": "2026-10-04",
+        "price": 4000000,
+        "effective_price": 4000000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-10-06",
+        "price": 4000000,
+        "effective_price": 4000000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-10-07",
+        "price": 5500000,
+        "effective_price": 5500000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-10-08",
+        "price": 5500000,
+        "effective_price": 5500000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": false,
+        "peak": false
+      }
+    ]
   },
   {
     "id": 3294040,
@@ -947,17 +1002,26 @@
   {
     "id": 3225446,
     "title": "کلبه سوئیسی با جکوزی در بابلکنار - سیدکلا",
-    "booked": 8,
-    "free": 38,
-    "gross": 27840000,
-    "gross_discounted": 27840000,
+    "booked": 10,
+    "free": 36,
+    "gross": 33800000,
+    "gross_discounted": 33800000,
     "discount_total": 0,
-    "commission": 3340800,
+    "commission": 4056000,
     "commission_rate": 0.12,
-    "net": 24499200,
+    "net": 29744000,
     "nights": [
       {
         "date": "2026-10-04",
+        "price": 2980000,
+        "effective_price": 2980000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-10-05",
         "price": 2980000,
         "effective_price": 2980000,
         "discount": 0,
@@ -1021,6 +1085,15 @@
       },
       {
         "date": "2026-10-12",
+        "price": 2980000,
+        "effective_price": 2980000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-10-13",
         "price": 2980000,
         "effective_price": 2980000,
         "discount": 0,
@@ -1196,24 +1269,15 @@
   {
     "id": 3206573,
     "title": "کلبه چوبی دوبلکس نزدیک لفور - سیدکلا",
-    "booked": 5,
-    "free": 41,
-    "gross": 9700000,
-    "gross_discounted": 9700000,
+    "booked": 4,
+    "free": 42,
+    "gross": 7800000,
+    "gross_discounted": 7800000,
     "discount_total": 0,
-    "commission": 1164000,
+    "commission": 936000,
     "commission_rate": 0.12,
-    "net": 8536000,
+    "net": 6864000,
     "nights": [
-      {
-        "date": "2026-10-04",
-        "price": 1900000,
-        "effective_price": 1900000,
-        "discount": 0,
-        "weekend": false,
-        "holiday": false,
-        "peak": false
-      },
       {
         "date": "2026-10-05",
         "price": 1900000,
@@ -1255,41 +1319,71 @@
   {
     "id": 3198301,
     "title": "اجاره کلبه سوئدی نزدیک لفور - سیدکلا",
-    "booked": 0,
-    "free": 46,
-    "gross": 0,
-    "gross_discounted": 0,
+    "booked": 1,
+    "free": 45,
+    "gross": 2680000,
+    "gross_discounted": 2680000,
     "discount_total": 0,
-    "commission": 0,
+    "commission": 321600,
     "commission_rate": 0.12,
-    "net": 0,
-    "nights": []
+    "net": 2358400,
+    "nights": [
+      {
+        "date": "2026-10-04",
+        "price": 2680000,
+        "effective_price": 2680000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      }
+    ]
   },
   {
     "id": 3195220,
     "title": "اجاره کلبه سنتی نزدیک لفور - سیدکلا",
-    "booked": 0,
-    "free": 46,
-    "gross": 0,
-    "gross_discounted": 0,
+    "booked": 1,
+    "free": 45,
+    "gross": 3000000,
+    "gross_discounted": 3000000,
     "discount_total": 0,
-    "commission": 0,
+    "commission": 360000,
     "commission_rate": 0.12,
-    "net": 0,
-    "nights": []
+    "net": 2640000,
+    "nights": [
+      {
+        "date": "2026-10-04",
+        "price": 3000000,
+        "effective_price": 3000000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      }
+    ]
   },
   {
     "id": 3198234,
     "title": "اجاره کلبه سوئدی نزدیک لفور - سیدکلا - ۲",
-    "booked": 0,
-    "free": 46,
-    "gross": 0,
-    "gross_discounted": 0,
+    "booked": 1,
+    "free": 45,
+    "gross": 2680000,
+    "gross_discounted": 2680000,
     "discount_total": 0,
-    "commission": 0,
+    "commission": 321600,
     "commission_rate": 0.12,
-    "net": 0,
-    "nights": []
+    "net": 2358400,
+    "nights": [
+      {
+        "date": "2026-10-04",
+        "price": 2680000,
+        "effective_price": 2680000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      }
+    ]
   },
   {
     "id": 3195933,
@@ -1307,15 +1401,25 @@
   {
     "id": 3179404,
     "title": "اجاره کلبه چوبی نزدیک لفور - سیدکلا",
-    "booked": 0,
-    "free": 46,
-    "gross": 0,
-    "gross_discounted": 0,
+    "booked": 1,
+    "free": 45,
+    "gross": 2860000,
+    "gross_discounted": 2860000,
     "discount_total": 0,
-    "commission": 0,
+    "commission": 343200,
     "commission_rate": 0.12,
-    "net": 0,
-    "nights": []
+    "net": 2516800,
+    "nights": [
+      {
+        "date": "2026-10-04",
+        "price": 2860000,
+        "effective_price": 2860000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      }
+    ]
   },
   {
     "id": 3149747,
@@ -1655,14 +1759,14 @@
   {
     "id": 3262853,
     "title": "خانه مبله در بابلکنار - سیدکلا - طبقه دوم",
-    "booked": 2,
-    "free": 44,
-    "gross": 3000000,
-    "gross_discounted": 3000000,
+    "booked": 5,
+    "free": 41,
+    "gross": 7500000,
+    "gross_discounted": 7500000,
     "discount_total": 0,
-    "commission": 360000,
+    "commission": 900000,
     "commission_rate": 0.12,
-    "net": 2640000,
+    "net": 6600000,
     "nights": [
       {
         "date": "2026-10-04",
@@ -1675,6 +1779,33 @@
       },
       {
         "date": "2026-10-05",
+        "price": 1500000,
+        "effective_price": 1500000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-10-09",
+        "price": 1500000,
+        "effective_price": 1500000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-10-10",
+        "price": 1500000,
+        "effective_price": 1500000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-10-11",
         "price": 1500000,
         "effective_price": 1500000,
         "discount": 0,
