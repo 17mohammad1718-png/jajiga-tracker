@@ -1368,14 +1368,14 @@
   {
     "id": 3149747,
     "title": "کلبه دوبلکس در سیدکلا بابلکنار",
-    "booked": 7,
-    "free": 39,
-    "gross": 19000000,
-    "gross_discounted": 19000000,
+    "booked": 10,
+    "free": 36,
+    "gross": 26500000,
+    "gross_discounted": 26500000,
     "discount_total": 0,
-    "commission": 2280000,
+    "commission": 3180000,
     "commission_rate": 0.12,
-    "net": 16720000,
+    "net": 23320000,
     "nights": [
       {
         "date": "2026-10-09",
@@ -1419,6 +1419,33 @@
         "effective_price": 3000000,
         "discount": 0,
         "weekend": true,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-10-24",
+        "price": 2500000,
+        "effective_price": 2500000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-10-25",
+        "price": 2500000,
+        "effective_price": 2500000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-10-26",
+        "price": 2500000,
+        "effective_price": 2500000,
+        "discount": 0,
+        "weekend": false,
         "holiday": false,
         "peak": false
       },
@@ -1613,14 +1640,14 @@
   {
     "id": 3149749,
     "title": "سوئیت در سیدکلا بابلکنار - همکف",
-    "booked": 7,
-    "free": 39,
-    "gross": 15500000,
-    "gross_discounted": 15500000,
+    "booked": 10,
+    "free": 36,
+    "gross": 21500000,
+    "gross_discounted": 21500000,
     "discount_total": 0,
-    "commission": 1860000,
+    "commission": 2580000,
     "commission_rate": 0.12,
-    "net": 13640000,
+    "net": 18920000,
     "nights": [
       {
         "date": "2026-10-09",
@@ -1664,6 +1691,33 @@
         "effective_price": 2500000,
         "discount": 0,
         "weekend": true,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-10-24",
+        "price": 2000000,
+        "effective_price": 2000000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-10-25",
+        "price": 2000000,
+        "effective_price": 2000000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-10-26",
+        "price": 2000000,
+        "effective_price": 2000000,
+        "discount": 0,
+        "weekend": false,
         "holiday": false,
         "peak": false
       },
