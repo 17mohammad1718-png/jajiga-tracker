@@ -8,92 +8,34 @@
     "min_price": 2950000,
     "own": false
   },
-  "fetched_at": "2026-10-06T17:30:52.249003+00:00",
+  "fetched_at": "2026-10-19T16:39:21.459360+00:00",
   "nights": [
     {
-      "date": "2026-10-05",
-      "price": 3950000
-    },
-    {
-      "date": "2026-10-06",
-      "price": 3950000,
-      "is_unavailable": true
-    },
-    {
-      "date": "2026-10-07",
-      "price": 5950000,
-      "is_weekend": true,
-      "is_unavailable": true
-    },
-    {
-      "date": "2026-10-08",
-      "price": 5950000,
-      "is_weekend": true,
-      "is_unavailable": true
-    },
-    {
-      "date": "2026-10-09",
-      "price": 3950000,
-      "is_unavailable": true
-    },
-    {
-      "date": "2026-10-10",
-      "price": 3950000,
-      "is_unavailable": true
-    },
-    {
-      "date": "2026-10-11",
-      "price": 3950000,
-      "is_unavailable": true
-    },
-    {
-      "date": "2026-10-12",
-      "price": 3950000
-    },
-    {
-      "date": "2026-10-13",
-      "price": 3950000
-    },
-    {
-      "date": "2026-10-14",
-      "price": 5950000,
-      "is_weekend": true,
-      "is_unavailable": true
-    },
-    {
-      "date": "2026-10-15",
-      "price": 5950000,
-      "is_weekend": true
-    },
-    {
-      "date": "2026-10-16",
-      "price": 3950000
-    },
-    {
-      "date": "2026-10-17",
-      "price": 3950000
-    },
-    {
       "date": "2026-10-18",
-      "price": 3950000
+      "price": 3950000,
+      "is_unavailable": true
     },
     {
       "date": "2026-10-19",
-      "price": 3950000
+      "price": 3950000,
+      "is_unavailable": true
     },
     {
       "date": "2026-10-20",
-      "price": 3950000
+      "price": 3950000,
+      "is_unavailable": true
     },
     {
       "date": "2026-10-21",
       "price": 5950000,
-      "is_weekend": true
+      "is_weekend": true,
+      "is_unavailable": true
     },
     {
       "date": "2026-10-22",
       "price": 5950000,
-      "is_weekend": true
+      "is_weekend": true,
+      "is_unavailable": true
     },
     {
       "date": "2026-10-23",

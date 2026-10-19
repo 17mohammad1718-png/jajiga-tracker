@@ -8,112 +8,39 @@
     "min_price": 12000000,
     "own": false
   },
-  "fetched_at": "2026-10-06T17:31:06.652976+00:00",
+  "fetched_at": "2026-10-19T16:39:25.700670+00:00",
   "nights": [
-    {
-      "date": "2026-10-05",
-      "price": 10000000,
-      "is_instant": true,
-      "is_unavailable": true
-    },
-    {
-      "date": "2026-10-06",
-      "price": 10000000,
-      "is_instant": true,
-      "is_unavailable": true
-    },
-    {
-      "date": "2026-10-07",
-      "price": 11000000,
-      "is_instant": true,
-      "is_weekend": true,
-      "is_unavailable": true
-    },
-    {
-      "date": "2026-10-08",
-      "price": 13000000,
-      "is_instant": true,
-      "is_weekend": true,
-      "is_unavailable": true,
-      "stays_min": 2
-    },
-    {
-      "date": "2026-10-09",
-      "price": 10000000,
-      "is_instant": true,
-      "is_unavailable": true
-    },
-    {
-      "date": "2026-10-10",
-      "price": 10000000,
-      "is_instant": true,
-      "is_unavailable": true
-    },
-    {
-      "date": "2026-10-11",
-      "price": 10000000,
-      "is_instant": true,
-      "is_unavailable": true
-    },
-    {
-      "date": "2026-10-12",
-      "price": 10000000,
-      "is_instant": true
-    },
-    {
-      "date": "2026-10-13",
-      "price": 10000000,
-      "is_instant": true
-    },
-    {
-      "date": "2026-10-14",
-      "price": 10000000,
-      "is_instant": true,
-      "is_weekend": true
-    },
-    {
-      "date": "2026-10-15",
-      "price": 13000000,
-      "is_instant": true,
-      "is_weekend": true,
-      "is_unavailable": true
-    },
-    {
-      "date": "2026-10-16",
-      "price": 10000000,
-      "is_instant": true
-    },
-    {
-      "date": "2026-10-17",
-      "price": 10000000,
-      "is_instant": true
-    },
     {
       "date": "2026-10-18",
       "price": 10000000,
-      "is_instant": true
+      "is_instant": true,
+      "is_unavailable": true
     },
     {
       "date": "2026-10-19",
       "price": 10000000,
-      "is_instant": true
+      "is_instant": true,
+      "is_unavailable": true
     },
     {
       "date": "2026-10-20",
       "price": 10000000,
+      "discount": 10,
       "is_instant": true
     },
     {
       "date": "2026-10-21",
       "price": 13000000,
       "is_instant": true,
-      "is_weekend": true
+      "is_weekend": true,
+      "is_unavailable": true
     },
     {
       "date": "2026-10-22",
       "price": 13000000,
       "is_instant": true,
       "is_weekend": true,
+      "is_unavailable": true,
       "stays_min": 2
     },
     {
@@ -122,7 +49,8 @@
     },
     {
       "date": "2026-10-24",
-      "price": 10000000
+      "price": 10000000,
+      "is_unavailable": true
     },
     {
       "date": "2026-10-25",
@@ -144,7 +72,8 @@
     {
       "date": "2026-10-29",
       "price": 13000000,
-      "is_weekend": true
+      "is_weekend": true,
+      "is_unavailable": true
     },
     {
       "date": "2026-10-30",
