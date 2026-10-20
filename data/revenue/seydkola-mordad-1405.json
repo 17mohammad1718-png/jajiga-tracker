@@ -1237,14 +1237,14 @@
   {
     "id": 3190700,
     "title": "اجاره کلبه چوبی در بابلکنار - سیدکلا",
-    "booked": 2,
-    "free": 44,
-    "gross": 7960000,
-    "gross_discounted": 7960000,
+    "booked": 4,
+    "free": 42,
+    "gross": 16140000,
+    "gross_discounted": 16140000,
     "discount_total": 0,
-    "commission": 955200,
+    "commission": 1936800,
     "commission_rate": 0.12,
-    "net": 7004800,
+    "net": 14203200,
     "nights": [
       {
         "date": "2026-10-21",
@@ -1259,6 +1259,24 @@
         "date": "2026-10-22",
         "price": 3980000,
         "effective_price": 3980000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-10-28",
+        "price": 3800000,
+        "effective_price": 3800000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-10-29",
+        "price": 4380000,
+        "effective_price": 4380000,
         "discount": 0,
         "weekend": true,
         "holiday": false,
@@ -1538,15 +1556,24 @@
   {
     "id": 3293951,
     "title": "کلبه سوئیسی در بابلکنار - سیدکلا",
-    "booked": 1,
-    "free": 45,
-    "gross": 3200000,
-    "gross_discounted": 3200000,
+    "booked": 2,
+    "free": 44,
+    "gross": 6400000,
+    "gross_discounted": 6400000,
     "discount_total": 0,
-    "commission": 384000,
+    "commission": 768000,
     "commission_rate": 0.12,
-    "net": 2816000,
+    "net": 5632000,
     "nights": [
+      {
+        "date": "2026-10-21",
+        "price": 3200000,
+        "effective_price": 3200000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": false,
+        "peak": false
+      },
       {
         "date": "2026-10-22",
         "price": 3200000,
@@ -1765,15 +1792,24 @@
   {
     "id": 3262853,
     "title": "خانه مبله در بابلکنار - سیدکلا - طبقه دوم",
-    "booked": 4,
-    "free": 42,
-    "gross": 7500000,
-    "gross_discounted": 6900000,
-    "discount_total": 600000,
-    "commission": 828000,
+    "booked": 5,
+    "free": 41,
+    "gross": 9500000,
+    "gross_discounted": 8300000,
+    "discount_total": 1200000,
+    "commission": 996000,
     "commission_rate": 0.12,
-    "net": 6072000,
+    "net": 7304000,
     "nights": [
+      {
+        "date": "2026-10-21",
+        "price": 2000000,
+        "effective_price": 1400000,
+        "discount": 30,
+        "weekend": true,
+        "holiday": false,
+        "peak": false
+      },
       {
         "date": "2026-10-22",
         "price": 2000000,
