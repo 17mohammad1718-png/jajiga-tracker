@@ -8,12 +8,8 @@
     "min_price": 2550000,
     "own": false
   },
-  "fetched_at": "2026-10-21T15:06:50.394401+00:00",
+  "fetched_at": "2026-10-21T20:30:45.154169+00:00",
   "nights": [
-    {
-      "date": "2026-10-20",
-      "price": 2450000
-    },
     {
       "date": "2026-10-21",
       "price": 4560000,
@@ -53,12 +49,12 @@
     },
     {
       "date": "2026-10-28",
-      "price": 3250000,
+      "price": 5000000,
       "is_weekend": true
     },
     {
       "date": "2026-10-29",
-      "price": 3250000,
+      "price": 5000000,
       "is_weekend": true
     },
     {
@@ -83,12 +79,12 @@
     },
     {
       "date": "2026-11-04",
-      "price": 3250000,
+      "price": 5000000,
       "is_weekend": true
     },
     {
       "date": "2026-11-05",
-      "price": 3250000,
+      "price": 5000000,
       "is_weekend": true
     },
     {
@@ -113,12 +109,12 @@
     },
     {
       "date": "2026-11-11",
-      "price": 3250000,
+      "price": 5000000,
       "is_weekend": true
     },
     {
       "date": "2026-11-12",
-      "price": 3250000,
+      "price": 5000000,
       "is_weekend": true
     },
     {
@@ -143,12 +139,12 @@
     },
     {
       "date": "2026-11-18",
-      "price": 3250000,
+      "price": 5000000,
       "is_weekend": true
     },
     {
       "date": "2026-11-19",
-      "price": 3250000,
+      "price": 5000000,
       "is_weekend": true
     },
     {
