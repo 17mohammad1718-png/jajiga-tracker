@@ -1812,14 +1812,14 @@
   {
     "id": 3297585,
     "title": "کلبه سوئیسی در بابلکنار - سیدکلا",
-    "booked": 1,
-    "free": 45,
-    "gross": 3850000,
-    "gross_discounted": 3850000,
+    "booked": 2,
+    "free": 44,
+    "gross": 6800000,
+    "gross_discounted": 6800000,
     "discount_total": 0,
-    "commission": 616000,
+    "commission": 1088000,
     "commission_rate": 0.16,
-    "net": 3234000,
+    "net": 5712000,
     "nights": [
       {
         "date": "2026-10-22",
@@ -1827,6 +1827,15 @@
         "effective_price": 3850000,
         "discount": 0,
         "weekend": true,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-10-23",
+        "price": 2950000,
+        "effective_price": 2950000,
+        "discount": 0,
+        "weekend": false,
         "holiday": false,
         "peak": false
       }
