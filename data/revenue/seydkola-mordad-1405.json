@@ -1356,15 +1356,34 @@
   {
     "id": 3293951,
     "title": "کلبه سوئیسی در بابلکنار - سیدکلا",
-    "booked": 0,
-    "free": 46,
-    "gross": 0,
-    "gross_discounted": 0,
+    "booked": 2,
+    "free": 44,
+    "gross": 6400000,
+    "gross_discounted": 6400000,
     "discount_total": 0,
-    "commission": 0,
+    "commission": 768000,
     "commission_rate": 0.12,
-    "net": 0,
-    "nights": []
+    "net": 5632000,
+    "nights": [
+      {
+        "date": "2026-10-28",
+        "price": 3200000,
+        "effective_price": 3200000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-10-29",
+        "price": 3200000,
+        "effective_price": 3200000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": false,
+        "peak": false
+      }
+    ]
   },
   {
     "id": 3237859,
@@ -1568,17 +1587,35 @@
   {
     "id": 3297585,
     "title": "کلبه سوئیسی در بابلکنار - سیدکلا",
-    "booked": 1,
-    "free": 45,
-    "gross": 2950000,
-    "gross_discounted": 2950000,
+    "booked": 3,
+    "free": 43,
+    "gross": 8850000,
+    "gross_discounted": 8850000,
     "discount_total": 0,
-    "commission": 472000,
+    "commission": 1416000,
     "commission_rate": 0.16,
-    "net": 2478000,
+    "net": 7434000,
     "nights": [
       {
         "date": "2026-10-23",
+        "price": 2950000,
+        "effective_price": 2950000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-10-24",
+        "price": 2950000,
+        "effective_price": 2950000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-10-25",
         "price": 2950000,
         "effective_price": 2950000,
         "discount": 0,
