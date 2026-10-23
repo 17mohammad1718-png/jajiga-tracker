@@ -8,15 +8,8 @@
     "min_price": 12000000,
     "own": false
   },
-  "fetched_at": "2026-10-22T17:30:47.848919+00:00",
+  "fetched_at": "2026-10-23T08:03:39.362854+00:00",
   "nights": [
-    {
-      "date": "2026-10-21",
-      "price": 13000000,
-      "is_instant": true,
-      "is_weekend": true,
-      "is_unavailable": true
-    },
     {
       "date": "2026-10-22",
       "price": 13000000,
@@ -92,13 +85,15 @@
       "date": "2026-11-04",
       "price": 13000000,
       "is_instant": true,
-      "is_weekend": true
+      "is_weekend": true,
+      "is_unavailable": true
     },
     {
       "date": "2026-11-05",
       "price": 13000000,
       "is_instant": true,
-      "is_weekend": true
+      "is_weekend": true,
+      "is_unavailable": true
     },
     {
       "date": "2026-11-06",
@@ -448,6 +443,138 @@
       "date": "2027-01-20",
       "price": 13000000,
       "is_weekend": true
+    },
+    {
+      "date": "2027-01-21",
+      "price": 13000000,
+      "is_weekend": true
+    },
+    {
+      "date": "2027-01-22",
+      "price": 8350000
+    },
+    {
+      "date": "2027-01-23",
+      "price": 13000000
+    },
+    {
+      "date": "2027-01-24",
+      "price": 13000000,
+      "is_holiday": true
+    },
+    {
+      "date": "2027-01-25",
+      "price": 8350000
+    },
+    {
+      "date": "2027-01-26",
+      "price": 8350000
+    },
+    {
+      "date": "2027-01-27",
+      "price": 13000000,
+      "is_weekend": true
+    },
+    {
+      "date": "2027-01-28",
+      "price": 13000000,
+      "is_weekend": true
+    },
+    {
+      "date": "2027-01-29",
+      "price": 8350000
+    },
+    {
+      "date": "2027-01-30",
+      "price": 8350000
+    },
+    {
+      "date": "2027-01-31",
+      "price": 8350000
+    },
+    {
+      "date": "2027-02-01",
+      "price": 8350000
+    },
+    {
+      "date": "2027-02-02",
+      "price": 8350000
+    },
+    {
+      "date": "2027-02-03",
+      "price": 13000000,
+      "is_weekend": true
+    },
+    {
+      "date": "2027-02-04",
+      "price": 13000000,
+      "is_weekend": true
+    },
+    {
+      "date": "2027-02-05",
+      "price": 8350000
+    },
+    {
+      "date": "2027-02-06",
+      "price": 8350000
+    },
+    {
+      "date": "2027-02-07",
+      "price": 8350000
+    },
+    {
+      "date": "2027-02-08",
+      "price": 8350000
+    },
+    {
+      "date": "2027-02-09",
+      "price": 8350000
+    },
+    {
+      "date": "2027-02-10",
+      "price": 13000000,
+      "is_weekend": true
+    },
+    {
+      "date": "2027-02-11",
+      "price": 15000000,
+      "is_holiday": true,
+      "is_peak": true,
+      "is_weekend": true
+    },
+    {
+      "date": "2027-02-12",
+      "price": 8350000
+    },
+    {
+      "date": "2027-02-13",
+      "price": 8350000
+    },
+    {
+      "date": "2027-02-14",
+      "price": 8350000
+    },
+    {
+      "date": "2027-02-15",
+      "price": 8350000
+    },
+    {
+      "date": "2027-02-16",
+      "price": 8350000
+    },
+    {
+      "date": "2027-02-17",
+      "price": 13000000,
+      "is_weekend": true
+    },
+    {
+      "date": "2027-02-18",
+      "price": 13000000,
+      "is_weekend": true
+    },
+    {
+      "date": "2027-02-19",
+      "price": 8350000
     }
   ]
 }
