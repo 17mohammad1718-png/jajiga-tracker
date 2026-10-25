@@ -5626,5 +5626,41 @@
   "photo_count": 17,
   "first_review": null,
   "est_date": "2026-06-16"
+ },
+ "3315884": {
+  "id": 3315884,
+  "title": "کلبه سوئیسی در بابلکنار - سیدکلا",
+  "status": "active",
+  "host_id": 3442131,
+  "host_name": "عسگری",
+  "host_created_at": "2026-10-18",
+  "first_photo": "2026-10-16",
+  "photo_count": 14,
+  "first_review": null,
+  "est_date": "2026-10-18"
+ },
+ "3229810": {
+  "id": 3229810,
+  "title": "کلبه سوئیسی در شیرگاه - گونه کلا",
+  "status": "active",
+  "host_id": 2093623,
+  "host_name": "مانا",
+  "host_created_at": "2024-05-22",
+  "first_photo": "2024-04-12",
+  "photo_count": 28,
+  "first_review": null,
+  "est_date": "2024-05-22"
+ },
+ "3312689": {
+  "id": 3312689,
+  "title": "کلبه سوئیسی استخردار در بابلکنار - شیردار کلا",
+  "status": "active",
+  "host_id": 3349055,
+  "host_name": "پریوش",
+  "host_created_at": "2026-09-10",
+  "first_photo": "2026-09-05",
+  "photo_count": 26,
+  "first_review": null,
+  "est_date": "2026-09-10"
  }
 }

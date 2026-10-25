@@ -1,6 +1,6 @@
 {
  "meta": {
-  "built_at": "2026-10-18T10:30:04",
+  "built_at": "2026-10-25T10:01:42",
   "region": "بابلکنار (مازندران)",
   "hosts_total": 346,
   "rooms_total": 467,
@@ -3773,7 +3773,7 @@
    "status": "active",
    "price": 6000000,
    "success_books": 0,
-   "tracked": true
+   "tracked": false
   },
   {
    "id": 3304115,
@@ -4683,7 +4683,7 @@
    "status": "active",
    "price": 2200000,
    "success_books": 50,
-   "tracked": false
+   "tracked": true
   },
   {
    "id": 3289341,
@@ -5943,7 +5943,7 @@
    "status": "active",
    "price": 2500000,
    "success_books": 20,
-   "tracked": true
+   "tracked": false
   },
   {
    "id": 3267519,
@@ -6797,7 +6797,7 @@
    "status": "active",
    "price": 7950000,
    "success_books": 5,
-   "tracked": true
+   "tracked": false
   },
   {
    "id": 3250799,
