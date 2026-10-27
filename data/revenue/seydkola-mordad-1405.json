@@ -207,14 +207,14 @@
   {
     "id": 3240445,
     "title": "کلبه سوئیسی با وان جکوزی در بابلکنار - سیدکلا",
-    "booked": 2,
-    "free": 44,
-    "gross": 5500000,
-    "gross_discounted": 5500000,
+    "booked": 4,
+    "free": 42,
+    "gross": 12500000,
+    "gross_discounted": 12500000,
     "discount_total": 0,
-    "commission": 660000,
+    "commission": 1500000,
     "commission_rate": 0.12,
-    "net": 4840000,
+    "net": 11000000,
     "nights": [
       {
         "date": "2026-10-27",
@@ -231,6 +231,24 @@
         "effective_price": 3000000,
         "discount": 0,
         "weekend": true,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-10-29",
+        "price": 4500000,
+        "effective_price": 4500000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-10-30",
+        "price": 2500000,
+        "effective_price": 2500000,
+        "discount": 0,
+        "weekend": false,
         "holiday": false,
         "peak": false
       }
@@ -1002,14 +1020,14 @@
   {
     "id": 3227770,
     "title": "خانه روستایی در بابلکنار - سیدکلا",
-    "booked": 3,
-    "free": 43,
-    "gross": 6400000,
-    "gross_discounted": 6400000,
+    "booked": 5,
+    "free": 41,
+    "gross": 10800000,
+    "gross_discounted": 10800000,
     "discount_total": 0,
-    "commission": 768000,
+    "commission": 1296000,
     "commission_rate": 0.12,
-    "net": 5632000,
+    "net": 9504000,
     "nights": [
       {
         "date": "2026-10-27",
@@ -1026,6 +1044,24 @@
         "effective_price": 2000000,
         "discount": 0,
         "weekend": true,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-10-29",
+        "price": 2500000,
+        "effective_price": 2500000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-10-30",
+        "price": 1900000,
+        "effective_price": 1900000,
+        "discount": 0,
+        "weekend": false,
         "holiday": false,
         "peak": false
       },
