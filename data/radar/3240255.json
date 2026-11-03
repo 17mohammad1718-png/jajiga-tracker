@@ -8,21 +8,16 @@
     "min_price": 9000000,
     "own": false
   },
-  "fetched_at": "2026-11-02T14:30:05.251814+00:00",
+  "fetched_at": "2026-11-03T08:35:51.156486+00:00",
   "nights": [
     {
-      "date": "2026-11-01",
-      "price": 9990000,
-      "is_unavailable": true
-    },
-    {
       "date": "2026-11-02",
-      "price": 9990000,
-      "discount": 10
+      "price": 9990000
     },
     {
       "date": "2026-11-03",
-      "price": 9990000
+      "price": 9990000,
+      "is_unavailable": true
     },
     {
       "date": "2026-11-04",
@@ -61,12 +56,14 @@
     {
       "date": "2026-11-11",
       "price": 12800000,
-      "is_weekend": true
+      "is_weekend": true,
+      "is_unavailable": true
     },
     {
       "date": "2026-11-12",
       "price": 14500000,
-      "is_weekend": true
+      "is_weekend": true,
+      "is_unavailable": true
     },
     {
       "date": "2026-11-13",
@@ -90,12 +87,12 @@
     },
     {
       "date": "2026-11-18",
-      "price": 12800000,
+      "price": 13000000,
       "is_weekend": true
     },
     {
       "date": "2026-11-19",
-      "price": 14500000,
+      "price": 14700000,
       "is_weekend": true
     },
     {
@@ -120,12 +117,12 @@
     },
     {
       "date": "2026-11-25",
-      "price": 12800000,
+      "price": 13000000,
       "is_weekend": true
     },
     {
       "date": "2026-11-26",
-      "price": 14500000,
+      "price": 14700000,
       "is_weekend": true
     },
     {
@@ -150,12 +147,12 @@
     },
     {
       "date": "2026-12-02",
-      "price": 12800000,
+      "price": 13000000,
       "is_weekend": true
     },
     {
       "date": "2026-12-03",
-      "price": 14500000,
+      "price": 14700000,
       "is_weekend": true
     },
     {
@@ -180,12 +177,12 @@
     },
     {
       "date": "2026-12-09",
-      "price": 12800000,
+      "price": 13000000,
       "is_weekend": true
     },
     {
       "date": "2026-12-10",
-      "price": 14500000,
+      "price": 14700000,
       "is_weekend": true
     },
     {
@@ -210,12 +207,12 @@
     },
     {
       "date": "2026-12-16",
-      "price": 12800000,
+      "price": 13000000,
       "is_weekend": true
     },
     {
       "date": "2026-12-17",
-      "price": 14500000,
+      "price": 14700000,
       "is_weekend": true
     },
     {
