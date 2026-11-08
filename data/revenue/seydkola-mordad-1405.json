@@ -1573,27 +1573,37 @@
   {
     "id": 3299045,
     "title": "ویلا با جکوزی در بابلکنار - سیدکلا",
-    "booked": 0,
-    "free": 46,
-    "gross": 0,
-    "gross_discounted": 0,
+    "booked": 1,
+    "free": 45,
+    "gross": 5000000,
+    "gross_discounted": 5000000,
     "discount_total": 0,
-    "commission": 0,
+    "commission": 600000,
     "commission_rate": 0.12,
-    "net": 0,
-    "nights": []
+    "net": 4400000,
+    "nights": [
+      {
+        "date": "2026-11-12",
+        "price": 5000000,
+        "effective_price": 5000000,
+        "discount": 0,
+        "weekend": true,
+        "holiday": false,
+        "peak": false
+      }
+    ]
   },
   {
     "id": 3227770,
     "title": "خانه روستایی در بابلکنار - سیدکلا",
-    "booked": 8,
-    "free": 38,
-    "gross": 18900000,
-    "gross_discounted": 18500000,
+    "booked": 9,
+    "free": 37,
+    "gross": 20900000,
+    "gross_discounted": 20500000,
     "discount_total": 400000,
-    "commission": 2220000,
+    "commission": 2460000,
     "commission_rate": 0.12,
-    "net": 16280000,
+    "net": 18040000,
     "nights": [
       {
         "date": "2026-11-12",
@@ -1646,6 +1656,15 @@
         "effective_price": 2500000,
         "discount": 0,
         "weekend": true,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-11-27",
+        "price": 2000000,
+        "effective_price": 2000000,
+        "discount": 0,
+        "weekend": false,
         "holiday": false,
         "peak": false
       },
