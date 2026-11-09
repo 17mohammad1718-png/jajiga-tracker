@@ -1292,14 +1292,14 @@
   {
     "id": 3181918,
     "title": "کلبه سوئیسی جکوزی دار نزدیک لفور - سیدکلا",
-    "booked": 10,
-    "free": 36,
-    "gross": 22830000,
-    "gross_discounted": 22830000,
+    "booked": 12,
+    "free": 34,
+    "gross": 27830000,
+    "gross_discounted": 27830000,
     "discount_total": 0,
-    "commission": 2739600,
+    "commission": 3339600,
     "commission_rate": 0.12,
-    "net": 20090400,
+    "net": 24490400,
     "nights": [
       {
         "date": "2026-11-09",
@@ -1339,6 +1339,24 @@
       },
       {
         "date": "2026-11-13",
+        "price": 2500000,
+        "effective_price": 2500000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-11-14",
+        "price": 2500000,
+        "effective_price": 2500000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
+      {
+        "date": "2026-11-15",
         "price": 2500000,
         "effective_price": 2500000,
         "discount": 0,
@@ -1514,15 +1532,24 @@
   {
     "id": 3227770,
     "title": "خانه روستایی در بابلکنار - سیدکلا",
-    "booked": 10,
-    "free": 36,
-    "gross": 22900000,
-    "gross_discounted": 22100000,
+    "booked": 11,
+    "free": 35,
+    "gross": 24800000,
+    "gross_discounted": 24000000,
     "discount_total": 800000,
-    "commission": 2652000,
+    "commission": 2880000,
     "commission_rate": 0.12,
-    "net": 19448000,
+    "net": 21120000,
     "nights": [
+      {
+        "date": "2026-11-09",
+        "price": 1900000,
+        "effective_price": 1900000,
+        "discount": 0,
+        "weekend": false,
+        "holiday": false,
+        "peak": false
+      },
       {
         "date": "2026-11-11",
         "price": 2000000,
